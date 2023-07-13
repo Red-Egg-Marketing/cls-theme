@@ -3,44 +3,26 @@ const { Fragment, useState } = wp.element;
 const { RichText, MediaUpload, InnerBlocks, InspectorControls, useBlockProps, URLInputButton } = wp.blockEditor;
 const { Button, PanelBody, SelectControl, ColorPalette, ToggleControl, RangeControl, Flex, TextareaControl, TextControl } = wp.components;
 const { __ } = wp.i18n;
-import Content from '../../components/Content.js';
 import Icons from '../../components/Icons.js';
 import BackgroundColor from '../../components/BackgroundColor.js';
 
 const template = [
-	['core/heading', {'level' : 4, 'placeholder' : 'Card Title...'}],
-	['core/paragraph', {'placeholder' : 'Card Description...'}],
-	['core/buttons', {},
-		[
-			['core/button', {'placeholder' : 'Learn More...', 'className' : 'is-style-grey-box'}]
-		]
-	],
+	['core/paragraph', {'placeholder' : 'Callout Description...'}],
 ];
 
 const colors = [
     { name: 'Navy', color: 'rgba(0, 57, 92)', slug: 'navy' },
 ];
 
-const widthOptions = [
-    {
-        label: __( '--' ),
-        value: '',
-    },
-    {
-        label: __( 'Width 100%' ),
-        value: '100',
-    },
-];
 
-const EditCTA = ( { attributes, setAttributes } ) => {
+const EditCallout = ( { attributes, setAttributes } ) => {
 		const {
-			width, icons, bgColor, bgSlug, link, content, buttonText, iconSlug, iconColor, altSlug
+			icons, bgSlug, bgColor, iconSlug, iconColor, altSlug
 		} = attributes;
 
   		const [rowNumber, setRownumber] = useState(null);
 		const [currentIconList, setIconList] = useState(null);
 		const [searchActive, activateSearch] = useState({index: false, active: false});
-		const [flipCard, swapSide] = useState(false);
 
 		const updateIcon = (value, prefix) => {
   			let currentIcons = JSON.parse(JSON.stringify(icons));
@@ -112,45 +94,12 @@ const EditCTA = ( { attributes, setAttributes } ) => {
 		}
 
 		const blockProps = useBlockProps({
-			className: 'text-card' + ' width-' + width
+			className: 'callout'
 		});	
-
-		const setLink = (value) => {
-    		setAttributes({
-    			link: value
-    		});
-    	}
-
-    	const setContent = (value) => {
-    		setAttributes({
-    			content: value
-    		});
-    	}
-
-    	const setButtonText = (value) => {
-    		setAttributes({
-    			buttonText: value
-    		});
-    	}
 		
 		return (
 			<Fragment>
 				<InspectorControls>
-					<PanelBody
-						title={__('Card Width')}
-						initialOpen={ true }
-					>
-						<SelectControl
-							label={ __( 'Select Card Width' ) }
-            				options={ widthOptions }
-            				value={ width }
-            				onChange={ ( selectedWidth ) => {
-            					setAttributes({
-            						width: selectedWidth
-            					});
-            				}}
-        				/>
-					</PanelBody>
 					<BackgroundColor
 						bgColor={ bgColor }
 						bgSlug={ bgSlug }
@@ -163,7 +112,7 @@ const EditCTA = ( { attributes, setAttributes } ) => {
 					{...blockProps}
 				>
 					<div className="block-wrapper">
-						<div className="block-content">
+						<div className="icon-wrap">
 							<Icons 
 								rows={ icons }
 								addIcon={ addIcon }
@@ -183,9 +132,11 @@ const EditCTA = ( { attributes, setAttributes } ) => {
 								setIconList={ setIconList }
 								totalIcons={ 1 }
 							/>
+						</div>
+						<div className="content">
 							<InnerBlocks
 								template={ template }
-								allowedBlocks={ ['core/heading', 'core/paragraph', 'core/buttons'] }
+								allowedBlocks={ ['core/paragraph'] }
 							/>
 						</div>
 					</div>
@@ -194,4 +145,4 @@ const EditCTA = ( { attributes, setAttributes } ) => {
 		);
 }
 
-export default EditCTA;
+export default EditCallout;

@@ -100,7 +100,7 @@
 .edit-post-visual-editor__content-area p.has-large-font-size, .entry-content p.has-large-font-size {
   font-size: 24px !important;
   line-height: 34px;
-  color: #00304A;
+  color: #00395C;
 }
 
 @media screen and (min-width: 768px) {
@@ -183,7 +183,7 @@
 
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
-  color: #00304A;
+  color: #00395C;
   font-size: 23px;
   line-height: 31px;
   text-transform: none;
@@ -540,7 +540,7 @@ h4 {
 }
 
 .navy {
-  background: #00304A;
+  background: #00395C;
 }
 
 .resources-grid:not(.swiper-wrapper) .block-wrapper {
@@ -882,7 +882,7 @@ h4 {
 .entry-content .resource-card .tax-item {
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
-  color: #00304A;
+  color: #00395C;
   font-size: 15px;
   letter-spacing: 0.65px;
   margin-bottom: 0;
@@ -1210,7 +1210,7 @@ div.gs_team_area .gs-team-filter-cats li a:hover,
 a:hover[download],
 input[type="submit"]:hover,
 button.wp-button:hover {
-  background: #00304A;
+  background: #00395C;
   color: white;
 }
 
@@ -1389,7 +1389,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-gr
 .wp-block-button.is-style-solid-blue-green a:hover[download],
 .wp-block-button.is-style-solid-blue-green div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-blue-green input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  color: #00304A;
+  color: #00395C;
   background: #F99D33;
 }
 
@@ -1401,7 +1401,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a,
 .wp-block-button.is-style-solid-navy a[download],
 .wp-block-button.is-style-solid-navy div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  background: #00304A;
+  background: #00395C;
   color: white;
 }
 
@@ -1414,7 +1414,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a:
 .wp-block-button.is-style-solid-navy div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   color: white;
-  background: #00304A;
+  background: #00395C;
 }
 
 .wp-block-button__link.is-style-text-yellow-arrow, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow, a.is-style-text-yellow-arrow[download], div.gform_wrapper input.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -3292,7 +3292,7 @@ button.swiper-pagination-bullet {
 
 td.year-sum {
   font-weight: bold;
-  background: #00304A;
+  background: #00395C;
 }
 
 /*--------------------------------------------------------------
@@ -5457,7 +5457,7 @@ p.contact-item {
 }
 
 .text-card p {
-  color: #00304A;
+  color: #00395C;
   font-family: "Lato", sans-serif;
 }
 
@@ -5597,7 +5597,7 @@ p.contact-item {
 }
 
 .icon-icon.navy:hover svg {
-  color: #00304A !important;
+  color: #00395C !important;
 }
 
 .upload-icon,
@@ -5626,7 +5626,7 @@ p.contact-item {
   font-family: "Lato", sans-serif;
   display: block;
   cursor: pointer;
-  color: #00304A;
+  color: #00395C;
   font-weight: 900;
   margin-bottom: 0;
   position: relative;
@@ -6181,8 +6181,8 @@ p.contact-item {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  border-top: 1px solid #00304A;
-  border-bottom: 1px solid #00304A;
+  border-top: 1px solid #00395C;
+  border-bottom: 1px solid #00395C;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
@@ -6224,7 +6224,7 @@ p.contact-item {
 .form-filters .components-button {
   border: none;
   border-radius: 0;
-  color: #00304A;
+  color: #00395C;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   letter-spacing: 0.3px;

@@ -11,8 +11,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 // https://stackoverflow.com/questions/52625741/react-fontawesome-importing-all-icons
 
 const defcolors = [
-    { name: 'Teal', color: 'rgba(0, 129, 198, 1)', slug: 'rgba(0, 129, 198, 1)', alt: 'teal' },
-    { name: 'Orange', color: 'rgba(249, 157, 51, 1)', slug: 'rgba(249, 157, 51, 1)', alt: 'orange' },
+    { name: 'Blue', color: 'rgba(226, 240, 198, 247)', slug: 'rgba(226, 240, 198, 247)', alt: 'light-blue' },
 ];
 
 const UploadIcon = withFocusOutside(

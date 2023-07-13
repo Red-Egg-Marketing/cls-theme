@@ -13,6 +13,7 @@ import "./core/button";
 import "./table-compare";
 import "./table-row";
 import "./table-cell";
+import "./callout";
 // import "./hero-text";
 // import "./hero";
 // import "./image-text-columns";
