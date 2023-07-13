@@ -8487,7 +8487,7 @@ textarea {
 }
 
 .edit-post-visual-editor__content-area strong, .entry-content strong {
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .edit-post-visual-editor__content-area li, .entry-content li {
@@ -8513,7 +8513,7 @@ textarea {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #000000;
+  color: #910035;
   font-weight: 300;
 }
 
@@ -8525,7 +8525,7 @@ textarea {
 }
 
 .edit-post-visual-editor__content-area a, .entry-content a {
-  color: #000000;
+  color: #910035;
 }
 
 .edit-post-visual-editor__content-area strong, .entry-content strong {
@@ -8580,7 +8580,7 @@ textarea {
   line-height: 44px;
   color: #052C47;
   margin-top: 2rem;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: none;
   font-weight: 700;
   text-transform: uppercase;
@@ -8601,7 +8601,7 @@ textarea {
   line-height: 44px;
   color: #052C47;
   margin-top: 1.75rem;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: none;
   font-weight: 700;
   letter-spacing: 0.6px;
@@ -8693,11 +8693,11 @@ textarea {
 }
 
 .rigid {
-  font-family: "Jost", sans-serif !important;
+  font-family: "Lato", sans-serif !important;
 }
 
 .industry {
-  font-family: "Jost", sans-serif !important;
+  font-family: "Lato", sans-serif !important;
 }
 
 .has-light-blue-color p,
@@ -8833,7 +8833,7 @@ input[type="submit"],
 button.wp-button {
   background: #0081C6;
   color: white;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 22px;
   border: none;
@@ -9148,7 +9148,7 @@ li.menu-item.nav-button .wp-block-button.is-style-solid-yellow a,
 .wp-block-button.is-style-solid-yellow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-yellow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: #F79A6C;
-  color: #000000;
+  color: #910035;
 }
 
 .wp-block-button__link.is-style-solid-blue-green, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green, a.is-style-solid-blue-green[download], li.menu-item.nav-button a.is-style-solid-blue-green, div.gform_wrapper input.is-style-solid-blue-green[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -9705,7 +9705,7 @@ li.menu-item.nav-button a:hover {
 .main-navigation .menu-item a,
 .main-navigation .menu-item {
   color: #000000;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   text-align: left;
   text-transform: uppercase;
@@ -9892,7 +9892,7 @@ li.menu-item.nav-button a:hover {
   margin: 0;
   color: white;
   font-size: 14px;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   line-height: 18px;
   margin-left: 0;
   letter-spacing: 0.5px;
@@ -10819,7 +10819,7 @@ div.components-select-control {
 }
 
 .wp-block-quote p {
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   line-height: 2.15rem;
 }
@@ -10834,8 +10834,8 @@ div.components-select-control {
 h1 {
   font-size: 42px;
   line-height: 49px;
-  color: #000000;
-  font-family: "Jost", sans-serif;
+  color: #910035;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.75px;
@@ -10851,7 +10851,7 @@ h1 {
 }
 
 h3 {
-  color: #000000;
+  color: #910035;
   font-family: "Lato", sans-serif;
   font-size: 35px;
   line-height: 40px;
@@ -10871,7 +10871,7 @@ h3 {
 
 h4 {
   font-family: "Lato", sans-serif;
-  color: #000000;
+  color: #910035;
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
@@ -10899,7 +10899,7 @@ h4 {
 }
 
 .content p {
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #000000;
 }
 
@@ -11253,7 +11253,7 @@ h4 {
 
 .entry-content .resource-card .tax-item {
   text-transform: uppercase;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #00304A;
   font-size: 15px;
   letter-spacing: 0.65px;
@@ -11291,7 +11291,7 @@ h4.resource-type,
 
 h3.resource-title,
 .editor-styles-wrapper h3.resource-title {
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: none;
   margin-bottom: 0.75rem;
 }
@@ -11891,7 +11891,7 @@ div.gform_wrapper h2.gform_title {
   line-height: 35px;
   margin-top: 0;
   text-transform: uppercase;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   text-align: center;
   margin-bottom: 0;
@@ -12490,7 +12490,7 @@ div.gform_wrapper .gform_drop_area button.gform_button_select_files {
   text-transform: capitalize;
   font-size: 26px;
   line-height: 32px;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .site-footer {
@@ -12859,7 +12859,7 @@ a.footer-home {
 .footer-links a {
   text-decoration: none;
   color: white;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .site-footer .grid {
@@ -13092,7 +13092,7 @@ a.footer-home {
 .entry-header .entry-meta {
   color: #00304A;
   text-transform: uppercase;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
@@ -13132,7 +13132,7 @@ a.footer-home {
 
 .single .wp-block-image figcaption {
   text-align: center;
-  color: #000000;
+  color: #910035;
   margin-top: 0;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -13581,7 +13581,7 @@ body.archive .entry-header {
       align-content: center;
   position: relative;
   overflow: hidden;
-  background: #000000;
+  background: #910035;
 }
 
 @media screen and (min-width: 768px) {
@@ -13601,7 +13601,7 @@ body.archive .entry-header .wrapper {
 
 body.blog .entry-header h1,
 body.archive .entry-header h1 {
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: white;
   margin-top: 0;
@@ -13766,7 +13766,7 @@ div.gs_tm_theme23 .single-member-div {
 }
 
 .wp-block-table table th {
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 0.5rem;
@@ -14152,7 +14152,7 @@ button.slickwprev-prev:before {
 
 #gs_team_area_1 h3.gs-member-name {
   background: transparent;
-  color: #000000;
+  color: #910035;
   text-transform: none;
   padding: 0;
   margin-top: 15px;
@@ -15211,7 +15211,7 @@ div.image-columns.col-66 .content-columns .content-column,
   color: white;
   font-size: 16px;
   line-height: 25px;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
 }
 
@@ -15837,7 +15837,7 @@ p.contact-item {
 
 .cta .header-title {
   text-transform: none;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 23px;
   line-height: 32px;
   margin-bottom: 0;
@@ -16258,7 +16258,7 @@ p.contact-item {
 }
 
 .text-cards-grid .cta .content p {
-  color: #000000;
+  color: #910035;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -16286,7 +16286,7 @@ p.contact-item {
 }
 
 .text-cards-grid .cta .content-footer p {
-  color: #000000;
+  color: #910035;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -16439,7 +16439,7 @@ p.contact-item {
   margin-top: 10px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: "Jost", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #052C47;
   font-weight: 700;
 }
@@ -17471,8 +17471,8 @@ h2.no-success-header {
 
 .pagination span,
 .pagination a {
-  font-family: "Jost", sans-serif;
-  color: #000000;
+  font-family: "Lato", sans-serif;
+  color: #910035;
   font-size: 19px;
   text-decoration: none;
   margin-right: 5px;
@@ -17481,7 +17481,7 @@ h2.no-success-header {
 .pagination a.page-numbers:not(.prev):not(.next) {
   padding: 5px;
   display: inline-block;
-  border: 1px solid #000000;
+  border: 1px solid #910035;
 }
 
 header.section-header {
