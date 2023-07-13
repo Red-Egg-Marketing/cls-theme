@@ -66,7 +66,7 @@ const EditCTA = ( { attributes, setAttributes } ) => {
 			let newRow = {
 				title: '',
 				icon: 'address-book',
-				prefix: 'fal'
+				prefix: 'fad'
 			};
 
 			currentIcons.splice(index, 0, newRow);

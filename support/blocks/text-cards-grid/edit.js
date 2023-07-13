@@ -9,7 +9,7 @@ import Columns from '../../components/Columns.js';
 import PaddingSelector from '../../components/Padding.js';
 
 const template = [
-	['cls-blocks/section-header', {}],
+	['cls-blocks/header-intro', {}],
 	['cls-blocks/text-card', {}],
 	['cls-blocks/text-card', {}],
 	['cls-blocks/text-card', {}],

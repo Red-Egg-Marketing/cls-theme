@@ -72,7 +72,7 @@ registerBlockType( 'cls-blocks/text-card', {
       				source: 'attribute',
       				selector: '.icon-wrap',
       				attribute: 'data-prefix',
-      				default: 'fal'
+      				default: 'fad'
       			}
 			}
 		}

@@ -1,11 +1,9 @@
- import React from 'react';
+import React from 'react';
 const { Fragment } = wp.element;
 const { RichText, InspectorControls } = wp.blockEditor;
 const { Button, PanelBody, withFocusOutside, Popover, TextControl, TextareaControl, ColorPalette } = wp.components;
 const { __ } = wp.i18n;
-import * as IconList from '@fortawesome/pro-regular-svg-icons';
-import * as IconSolid from '@fortawesome/pro-solid-svg-icons';
-import * as IconLight from '@fortawesome/pro-light-svg-icons';
+import * as IconDuotone from '@fortawesome/pro-duotone-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -16,7 +14,6 @@ const defcolors = [
     { name: 'Teal', color: 'rgba(0, 129, 198, 1)', slug: 'rgba(0, 129, 198, 1)', alt: 'teal' },
     { name: 'Orange', color: 'rgba(249, 157, 51, 1)', slug: 'rgba(249, 157, 51, 1)', alt: 'orange' },
 ];
-
 
 const UploadIcon = withFocusOutside(
 	class extends React.Component {
@@ -149,21 +146,16 @@ const Icons = (props) => {
 
 	const { uploadActivated, uploadActive, bgColor, totalIcons, setAttributes, rows, activeText, setIconList, currentIconList, activeParent, colors, iconColor, iconSlug, altSlug } = props;
 
-  	const IconLightLibrary = Object
-  			.keys(IconLight)
-  			.filter(key => key !== "fal" && key !== "prefix" )
-  			.map(icon => IconLight[icon]);
+  	const IconDuotoneLibrary = Object
+  			.keys(IconDuotone)
+  			.filter(key => key !== "fad" && key !== "prefix" )
+  			.map(icon => IconDuotone[icon]);
 
-  	const IconSolidLibrary = Object
-  			.keys(IconSolid)
-  			.filter(key => key !== "fas" && key !== "prefix" )
-  			.map(icon => IconSolid[icon]);
-
-  	library.add(...IconLightLibrary, ...IconSolidLibrary);
+  	library.add(...IconDuotoneLibrary);
 
   	const customColors = colors == null ? defcolors : colors;
 
-  	const AllIcons = [...IconLightLibrary, ...IconSolidLibrary];
+  	const AllIcons = [...IconDuotoneLibrary];
 
   	const buttonLang = props.customButtonLang != '' ? props.customButtonLang : 'Add Icon';
 
@@ -216,8 +208,6 @@ const Icons = (props) => {
 		setAttributes({
 			altSlug: (iconColor != undefined) ? iconColor.alt : ''
 		});
-
-		console.log(altSlug);
 
 		setAttributes( {
 			iconColor: value
@@ -386,17 +376,12 @@ const Icons = (props) => {
 Icons.View = (props) => {
 
 
-  	const IconLightLibrary = Object
-  			.keys(IconLight)
-  			.filter(key => key !== "fal" && key !== "prefix" )
-  			.map(icon => IconLight[icon]);
+  	const IconDuotoneLibrary = Object
+  			.keys(IconDuotone)
+  			.filter(key => key !== "fad" && key !== "prefix" )
+  			.map(icon => IconDuotone[icon]);
 
-  	const IconSolidLibrary = Object
-  			.keys(IconSolid)
-  			.filter(key => key !== "fas" && key !== "prefix" )
-  			.map(icon => IconSolid[icon]);
-
-  	library.add(...IconLightLibrary, ...IconSolidLibrary);
+  	library.add(...IconDuotoneLibrary);
 
   	const { bgColor, rows, activeText, iconSlug, altSlug } = props;
 
