@@ -1,0 +1,66 @@
+.wp-block.icons-row {
+	max-width: 100%;
+	width: 100%;
+}
+
+.icons-row {
+	@extend .block-base;
+	padding-top: 0;
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+}
+
+.icons-row .block-wrapper {
+	max-width: $max-cont-w - 150px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: $small-width) {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+}
+
+.icons-row .section-header {
+	width: 100%;
+}
+
+.icons-row .icon-cta {
+	width: 50%;
+	text-align: center;
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		width: 33.3333%;
+	}
+	@media screen and (min-width: $med-width + 1px) {
+		width: 20%;
+	}
+}
+
+.icon-link {
+	text-decoration: none;
+}
+
+.icon-link h1,
+.icon-link h2,
+.icon-link h3,
+.icon-link h4,
+.icon-link h5,
+.icon-link h6 {
+	color: $dark-blue;
+	line-height: 24px;
+	margin-top: 0;
+	@media screen and (min-width: $small-width) {
+		line-height: 30px;
+	}
+}
+
+.wp-block.icons-row > .block-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wp-block.icon-cta {
+	max-width: 100%;
+	margin: 0;
+}

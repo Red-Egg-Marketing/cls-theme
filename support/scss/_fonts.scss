@@ -1,0 +1,307 @@
+.gs-sin-mem-desig,
+.gs_team p, .gs_team li,
+.edit-post-visual-editor__content-area p, .entry-content p,
+.edit-post-visual-editor__content-area li, .entry-content li,
+.edit-post-visual-editor__content-area dl, .entry-content dl,
+.edit-post-visual-editor__content-area dd, .entry-content dd {
+	font-family: $font-body-light;
+	font-size: 18px;
+	line-height: 24px;
+	color: $body-color;
+	font-weight: 300;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px;
+		line-height: 40px;
+	}
+}
+
+.edit-post-visual-editor__content-area strong, .entry-content strong {
+	font-family: $font-head;
+}
+
+.edit-post-visual-editor__content-area li, .entry-content li {
+	list-style-type: none;
+	padding-left: 25px;
+	position: relative;
+}
+
+.edit-post-visual-editor__content-area li, .entry-content li:before {
+	content: "\2022";
+	color: $orange;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.gs-sin-mem-desig,
+.gs_team b {
+	font-weight: bold;
+}
+
+.gstm-details span {
+	font-family: $font-body;
+	font-size: 16px;
+	line-height: 22px;
+	color: $head-color;
+	font-weight: 300;
+	@media screen and (min-width: $small-width) {
+		font-size: 18px;
+		line-height: 25px;
+	}
+}
+
+.edit-post-visual-editor__content-area a, .entry-content a {
+	color: $head-color;
+}
+
+.edit-post-visual-editor__content-area strong,.entry-content strong {
+	font-weight: bold;
+}
+
+.edit-post-visual-editor__content-area ul.has-large-font-size li, .entry-content ul.has-large-font-size li,
+.edit-post-visual-editor__content-area p.has-large-font-size, .entry-content p.has-large-font-size {
+	font-size: 24px !important;
+	line-height: 34px;
+	color: $bg-color-7;
+	@media screen and (min-width: $small-width) {
+		font-size: 30px !important;
+		line-height: 42px;
+	}
+}
+
+
+.edit-post-visual-editor__content-area ul, .entry-content ul {
+	margin: 0;
+}
+
+.edit-post-visual-editor__content-area li, .page .entry-content li,
+.post .post-content li {
+	position: relative;
+	margin-bottom: 5px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 10px;
+	}
+}
+
+.page .entry-content > ul {
+	padding-left: 2.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 2.5rem;
+	}
+}
+
+.gs_team h1, .gs_team h1,
+.edit-post-visual-editor__content-area h1, .entry-content h1 {
+	font-size: 35px;
+	line-height: 44px;
+	color: $dark-blue;
+	margin-top: 2rem;
+	font-family: $font-head;
+	text-transform: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	@media screen and (min-width: $small-width) {
+		font-size: 62px;
+		line-height: 80px;
+		margin-top: 3rem;
+	}
+}
+
+
+.gs_team h2,
+.edit-post-visual-editor__content-area h2, .entry-content h2 {
+	font-size: 30px;
+	line-height: 44px;
+	color: $dark-blue;
+	margin-top: 1.75rem;
+	font-family: $font-head;
+	text-transform: none;
+	font-weight: 700;
+	letter-spacing: 0.6px;
+	@media screen and (min-width: $small-width) {
+		font-size: 35px;
+		line-height: 50px;
+		margin-top: 2.5rem;
+		letter-spacing: 1px;
+	}
+}
+
+.gs_team h3,
+.edit-post-visual-editor__content-area h3, .entry-content h3 {
+	color: $bg-color-7;
+	font-size: 23px;
+	line-height: 31px;
+	text-transform: none;
+	font-family: $font-body;
+	font-weight: 900;
+	@media screen and (min-width: $small-width) {
+		font-size: 27px;
+		line-height: 38px;
+	}
+}
+
+.gs_team h4,
+.edit-post-visual-editor__content-area h4, .entry-content h4 {
+	color: $body-color;
+	line-height: 24px;
+	font-size: 21px;
+	font-family: $font-body;
+	font-weight: 900;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px;
+		line-height: 34px;
+	}
+}
+
+.gs_team h5, 
+.edit-post-visual-editor__content-area h5, .entry-content h5 {
+	color: $body-color;
+	line-height: 18px;
+	font-size: 19px;
+	font-family: $font-body;
+	font-weight: 900;
+	@media screen and (min-width: $small-width) {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.gs_team h6,
+.edit-post-visual-editor__content-area h6, .entry-content h6 {
+	color: $body-color;
+	line-height: 19px;
+	font-size: 24px;
+	font-weight: 700;
+	font-family: $font-body;
+	font-weight: 900;
+	@media screen and (min-width: $small-width) {
+		font-size: 20px;
+		line-height: 26px;
+	}
+}
+
+.entry-content h3 + h2,
+.edit-post-visual-editor__content-area h3 + h2 {
+	margin-top: 0;
+}
+
+.rigid {
+	font-family: $font-head !important;
+}
+
+.industry {
+	font-family: $font-head-2 !important;
+}
+
+.has-light-blue-color p,
+.has-light-blue-color,
+.entry-content .has-light-blue-color {
+	color: $light-blue;
+}
+
+background {
+	background: linear-gradient(to bottom, $tan 17.5%, transparent 17.5% );
+	background-size: 200% 200%;
+	background-position: 0 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: -10px;
+}
+
+background.active {
+	animation: backgroundShift 3s ease forwards;
+}
+
+.team-section background,
+.testimonials-section background,
+.contact-section background,
+.tan background,
+.light-grey background,
+.peach background,
+.light-blue background {
+	background: linear-gradient(to bottom, white 17.5%, transparent 17.5% );
+	background-size: 200% 200%;
+	background-position: 0 100%;
+}
+
+words {
+	font-weight: bold;
+	color: $bg-color-5;
+	display: inline;
+	white-space: nowrap;
+	position: relative;
+	padding-right: 3px;
+}
+
+words.highlight {
+	background: $bg-color-5;
+	color: white;
+}
+
+words:after {
+	content: "";
+	background: black;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	display: inline-block;
+}
+words:before {
+	content: "";
+	width: 50px;
+}
+
+words.highlight:after {
+	background: white;
+}
+
+words.waiting:after {
+	animation: opacityChange 0.5s infinite;
+}
+
+block {
+	display: block;
+	margin-top: 25px
+}
+
+a block {
+	color: $bg-color-5;
+	text-decoration: none;
+}
+
+a block:after,
+block a:after {
+	content: "";
+	background: url(img/right-chevron-yellow.svg) no-repeat center center / 100%;
+	width: 9px;
+	height: 14px;
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.entry-content block a {
+	color: $bg-color-5;
+	text-decoration: none;
+}
+
+
+.entry-content p.has-medium-font-size {
+	font-size: 20px !important;
+	line-height: 29px;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px !important;
+		line-height: 34px;
+	}
+}
+
+.entry-content p.has-large-font-size {
+	font-size: 24px !important;
+	line-height: 36px;
+	@media screen and (min-width: $small-width) {
+		font-size: 30px !important;
+		line-height: 42px;
+	}
+}
+
+

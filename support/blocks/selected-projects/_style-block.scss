@@ -1,0 +1,107 @@
+.wp-block.selected-resources {
+	width: 100%;
+	max-width: 100%;
+	padding-top: 8.125rem;
+	padding-bottom: 8.125rem;
+}
+
+.archive .resources-block {
+	background: none;
+}
+
+.resources-block {
+	padding-top: 4.25rem;
+	padding-bottom: 4.25rem;
+	background: linear-gradient(to right, $teal, $teal);
+	background-size: 150px 3px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6.75rem;
+		padding-bottom: 6.75rem;
+	}
+}
+
+@supports (display: grid) {
+
+	.selected-resources .grid {
+		@media screen and (min-width: $med-width + 1px) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+}
+
+.resources-block .section-header {
+	padding-top: 0;
+}
+
+.resources-block .section-header .wp-block-heading {
+	margin-top: 0;
+}
+
+.resources-block .header-description {
+	max-width: 1065px;
+	margin: 0 auto;
+}
+
+.resources-block .header {
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+	}
+}
+
+.resources-block .block-wrapper {
+	width: 100%;
+	max-width: $max-cont-w;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	margin: 0 auto;
+	@media screen and (min-width: $small-width) {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
+.resources-block .resources-slides {
+	position: relative;
+	width: calc(100% - 4rem);
+	margin-left: 2em;
+	margin-right: 2rem;
+	@media screen and (min-width: $small-width) {
+		width: calc(100% - 5rem);
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+	}
+}
+
+
+// .selected-resources {
+// 	margin-bottom: 2.5rem;
+// 	@media screen and (min-width: $small-width) {
+// 		margin-bottom: 3.5em;
+// 	}
+// }
+
+.selected-resources:last-child {
+	margin-bottom: 0;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 0;
+	}
+}
+
+.selected-resources header.section-header {
+	padding-top: 0;
+}
+
+.selected-resources .wp-block-buttons {
+	justify-content: center;
+	margin-top: 35px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 50px;
+	}
+}
+

@@ -1,0 +1,49 @@
+.wp-block.tabs {
+	width: 100%;
+	max-width: 100%;
+}
+
+.tabs .header-intro-block {
+	padding-bottom: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 2.5rem;
+	}
+}
+
+.tabs .content-cols {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.tabs .content {
+	width: 100%;
+	order: 1;
+	@media screen and (min-width: $small-width) {
+		width: 75%;
+		order: 0;
+		max-width: calc(100% - 220px);
+	}
+}
+
+.tabs .img-col {
+	width: 100%;
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	order: 0;
+	@media screen and (min-width: $small-width) {
+		width: 25%;
+		order: 1;
+		min-width: 220px;
+		margin-top: 3rem;
+	}
+}
+
+.tabs .wp-block-buttons {
+	margin-top: 25px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 35px;
+	}
+}

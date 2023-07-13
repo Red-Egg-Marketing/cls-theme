@@ -1,0 +1,106 @@
+.wp-block.title-image-group {
+	max-width: 100%;
+	width: 100%;
+}
+
+.title-image-group {
+	padding-bottom: 4rem;
+	padding-top: 4rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6.75rem;
+		padding-bottom: 6.75rem;
+	}
+}
+
+.title-image-group .wp-block-buttons,
+.title-image-group .header-intro-block {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.title-image-group .wp-block-buttons {
+	justify-content: center;
+}
+
+.title-image-group .links-wrapper {
+	max-width: $max-cont-w;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+}
+
+.img-container img {
+	// display: block;
+	height: auto;
+	// width: 100%;
+}
+
+.title-image-group .header-intro-block h2 {
+	margin-bottom: 0;
+}
+
+
+.cta-text .wp-block-buttons {
+	justify-content: center;
+	margin-top: 18px;
+	@media screen and (min-width: $small-width) {
+		justify-content: flex-start;
+		margin-top: 30px;
+	}
+}
+
+@supports (display: grid) {
+
+	.title-image-group.columns-3 .wp-block-buttons,
+	.title-image-group.columns-3 .header-intro-block {
+		@media screen and (min-width: $med-width + 1px) {
+			grid-column-start: 1;
+			grid-column-end: 4;
+		}
+	}
+
+	.title-image-group .wp-block-buttons,
+	.title-image-group .header-intro-block {
+		@media screen and (min-width: $small-width) {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+	}
+
+	.wp-block.title-image-group.columns-3 .links-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout {
+		@media screen and (min-width: $med-width + 1px) {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-row-gap: 70px;
+			grid-column-gap: 70px;
+		}
+		@media screen and (min-width: $small-width) and (max-width: $med-width) {
+			grid-template-columns: 1fr 1fr;
+			grid-row-gap: 40px;
+			grid-column-gap: 40px;
+		}
+	}
+
+	.wp-block.title-image-group .links-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout {
+		display: grid;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-row-gap: 35px;
+		grid-column-gap: 15px;
+		@media screen and (min-width: $med-width + 1px) {
+			grid-template-columns: 1fr 1fr;
+			grid-row-gap: 60px;
+			grid-column-gap: 60px;
+		}
+		@media screen and (min-width: $small-width) and (max-width: $med-width) {
+			grid-template-columns: 1fr 1fr;
+			grid-row-gap: 40px;
+			grid-column-gap: 40px;
+		}
+	}
+}

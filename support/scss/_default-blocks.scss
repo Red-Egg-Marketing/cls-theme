@@ -1,0 +1,49 @@
+.editor-styles-wrapper .wp-block {
+	max-width: 1120px;
+}
+
+
+.editor-styles-wrapper dl,
+.editor-styles-wrapper dd,
+.editor-styles-wrapper li,
+.editor-styles-wrapper p {
+	font-family: $font-body;
+	font-size: 16px;
+	line-height: 22px;
+	color: $body-color;
+	letter-spacing: 0.16px;
+	@media screen and (min-width: $small-width) {
+		font-size: 20px;
+		line-height: 34px;
+		letter-spacing: 0.25px;
+	}
+}
+
+.editor-styles-wrapper h2 {
+	font-weight: 700;
+	font-size: 21px;
+	letter-spacing: 0.16px;
+	line-height: 22px;
+	color: $head-color;
+	margin-top: 2.5rem;
+	@media screen and (min-width: $small-width) {
+		font-size: 32px;
+		line-height: 34px;
+		letter-spacing: 0.25px;
+		margin-top: 5rem;
+	}
+}
+
+
+.editor-styles-wrapper h3 {
+	color: $head-color;
+	line-height: 22px;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.16px;
+	@media screen and (min-width: $small-width) {
+		font-size: 26px;
+		line-height: 34px;
+		letter-spacing: 0.25px;
+	}
+}

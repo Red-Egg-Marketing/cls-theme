@@ -1,0 +1,26 @@
+.wp-block.image-link {
+	max-width: 100%;
+	width: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.image-background {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	text-decoration: none; 
+	cursor: pointer;
+}
+
+.image-background .img-container img {
+	display: block;
+	max-width: 300px;
+	width: 100%;
+}
+
+.image-link {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}

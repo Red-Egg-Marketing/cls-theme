@@ -1,0 +1,9 @@
+.section-header, 
+.wp-block.section-header {
+	width: 100%;
+	max-width: 100%;
+}
+
+.section-header *:first-of-type {
+	margin-top: 0;
+}

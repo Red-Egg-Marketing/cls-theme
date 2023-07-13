@@ -1,0 +1,88 @@
+.bio {
+	text-align: center;
+}
+
+.bio .header-title {
+	margin-bottom: 0;
+	margin-top: 25px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 40px;
+	}
+}
+
+.bio .image-column {
+	width: 100%;
+}
+
+.bio .img-container {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 28.5%;
+	padding-right: 28.5%;
+	position: relative;
+}
+
+.bio .img-container:before {
+	content: "";
+	width: 100%;
+	background: $bg-color-2;
+	height: 50%;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.bio .content-column {
+	width: 100%;
+	background: $bg-color-2;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.bio .img-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 5px;
+	position: relative;
+	z-index: 2;
+}
+
+.bio .header-subtitle {
+	margin-top: 0.65rem;
+	font-family: $font-body;
+	text-transform: none;
+	font-size: 18px;
+	line-height: 26px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 0.75rem;
+		font-size: 23px;
+		line-height: 30px;
+	}
+}
+
+.bio .content p {
+	font-size: 18px;
+	line-height: 30px;
+	@media screen and (min-width: $small-width) {
+		font-size: 23px;
+		line-height: 36px;
+	}
+}
+
+.bio .block-wrapper { 
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.bio .content {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+}

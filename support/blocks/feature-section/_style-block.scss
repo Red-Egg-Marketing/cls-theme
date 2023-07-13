@@ -1,0 +1,329 @@
+.wp-block.feature-section {
+	max-width: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.header-intro-block + .feature-section {
+	padding-top: 1.5675rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 3.375rem;
+	}
+}
+
+.feature-section {
+	width: 100%;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-top: 3.125rem;
+	padding-bottom: 3.125rem;
+	overflow: hidden;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6.75rem;
+		padding-bottom: 6.75rem;
+	}
+}
+
+.feature-section + .selected-case-studies {
+	padding-top: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 0;
+	}
+}
+
+.feature-section .block-wrapper {
+	max-width: $med-small-width;
+	width: 100%;
+	margin: 0 auto;
+	@media screen and (min-width: $small-width) {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+}
+
+.feature-section > .block-wrapper > .block-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.feature-section .faq:last-of-type {
+	margin-bottom: 0;
+}
+
+.feature-section .content-columns {
+	width: 100%;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		width: 50%;
+		padding-left: 2.5rem;
+	}
+}
+
+.feature-section.col-66 .content-columns {
+	width: 100%;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		width: 66.6666666%;
+		padding-left: 2.5rem;
+	}
+}
+
+.feature-section.col-66.img-right .content-columns {
+	width: 100%;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		width: 66.6666666%;
+		padding-right: 2.5rem;
+	}
+}
+
+.feature-section.col-66 .image-col {
+	@media screen and (min-width: $small-width) {
+		width: calc(33.3333% - 34px);
+		max-width: calc(33.3333% - 34px);
+	}
+}
+
+.feature-section .image-col {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-bottom: 35px;
+	@media screen and (min-width: $small-width) {
+		width: calc(50% - 34px);
+		max-width: calc(50% - 34px);
+		margin-bottom: 0;
+	}
+}
+
+.img-container img {
+	display: block;
+	margin: 0 auto;
+}
+
+.feature-section.img-right .content-columns {
+	margin-top: 25px;
+	@media screen and (min-width: $small-width) {
+		padding-left: 0;
+		padding-right: 1.25rem;
+		margin-top: 0;
+	}
+}
+
+.feature-section.img-right.no-ds .content-columns {
+	@media screen and (min-width: $small-width) {
+		padding-left: 1.25rem;
+	}
+}
+
+.feature-section.img-right .image-col {
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		margin-right: 15px;
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		margin-right: 20px;
+	}
+	@media screen and (min-width: $med-width) {
+		margin-right: 34px;
+	}
+}
+
+.feature-section .image-col {
+	position: relative;
+}
+
+.feature-section .image-col img,
+.feature-section .image-col picture {
+	position: relative;
+	max-height: 50vh;
+	@media screen and (min-width: $small-width) {
+		max-height: inherit;
+	}
+}
+
+.feature-section.animate-complete .image-col:before {
+	opacity: 1;
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		left: -15px;
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		left: -20px;
+	}
+	@media screen and (min-width: $med-width) {
+		left: -34px;
+	}
+}
+
+.feature-section.img-right.animate-complete .image-col:before {
+	left: initial;
+	opacity: 1;
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		right: -15px;
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		right: -20px;
+	}
+	@media screen and (min-width: $med-width) {
+		right: -34px;
+	}
+}
+
+
+.feature-section.light-grey .image-col:before,
+.feature-section.light-blue .image-col:before,
+.feature-section.peach .image-col:before {
+	background: white;
+}
+
+.feature-section .image-col:before {
+	content: "";
+	position: absolute;
+	border-radius: 30px;
+	background: $light-blue;
+	height: 100%;
+	opacity: 0;
+	transition-duration: 0.75s;
+	transition-property: left, right, opacity;
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		top: 15px;
+		left: 0;
+		width: calc(100% - 15px);
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		top: 20px;
+		left: 0;
+		width: calc(100% - 20px);
+	}
+	@media screen and (min-width: $med-width) {
+		top: 34px;
+		left: 0;
+		width: calc(100% - 34px);
+	}
+}
+
+.feature-section.img-right .image-col:before {
+	content: "";
+	position: absolute;
+	border-radius: 30px;
+	height: 100%;
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		width: calc(100% - 15px);
+		top: 15px;
+		right: 0;
+		left: inherit;
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		width: calc(100% - 20px);
+		top: 20px;
+		right: 0;
+		left: inherit;
+	}
+	@media screen and (min-width: $med-width) {
+		width: calc(100% - 34px);
+		top: 34px;
+		left: inherit;
+		right: 0;
+	}
+}
+
+.feature-section.img-right .image-col {
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		margin-right: 15px;
+		padding-left: 1.25rem;
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		margin-right: 20px;
+		padding-left: 1.25rem;
+	}
+	@media screen and (min-width: $med-width) {
+		margin-right: 34px;
+		padding-left: 2.5rem;
+	}
+}
+
+
+.feature-section.img-left .image-col {
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
+		margin-left: 15px;
+		padding-right: 1.25rem;
+	}
+	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+		margin-left: 20px;
+		padding-right: 1.25rem;
+	}
+	@media screen and (min-width: $med-width) {
+		margin-left: 34px;
+		padding-right: 2.5rem;
+	}
+}
+
+.feature-section.no-ds .image-col {
+	box-shadow: none;
+}
+
+.feature-section .image-comp {
+	margin-bottom: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 0;
+	}
+}
+
+
+.feature-section .wrap > *:first-child {
+	margin-top: 0;
+	margin-bottom: 15px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 20px;
+	}
+}
+
+
+.feature-section .wrap h1 {
+	font-size: 32px;
+	line-height: 44px;
+	letter-spacing: 0.4px;
+	@media screen and (min-width: $small-width) {
+		font-size: 40px;
+		line-height: 53px;
+		letter-spacing: 0.5px;
+	}
+}
+
+.feature-section .wrap h2 {
+	font-size: 26px;
+	line-height: 37px;
+	@media screen and (min-width: $small-width) {
+		font-size: 30px;
+		line-height: 42px;
+	}
+}
+
+.feature-section video {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	border-radius: 10px;
+}
+
+.feature-section .wp-block-buttons  {
+	margin-top: 25px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 60px;
+	}
+}
+
+.feature-section.img-right .image-col {
+	order: 1;
+	@media screen and (min-width: $small-width) {
+		order: 2;
+	}
+}
+
+.feature-section.img-right .content-columns {
+	order: 2;
+	@media screen and (min-width: $small-width) {
+		order: 1;
+	}
+}

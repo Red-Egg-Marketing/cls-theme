@@ -1,0 +1,263 @@
+.wp-block.text-card {
+	max-width: 100%;
+}
+
+.light-grey .text-card {
+	background: white;
+}
+
+.text-card {
+	width: 100%;
+	text-align: left;
+	position: relative;
+	margin-bottom: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	width: 100%;
+	margin-top: 85px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 0;
+		width: calc(50% - 45px);
+		margin-right: 45px;
+		margin-top: 105px;
+	}
+	
+}
+
+.columns-3 .text-card {
+	margin-top: 85px;
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		width: calc(50% - 45px);
+		margin-right: 45px;
+		margin-top: 105px;
+	}
+	@media screen and (min-width: $med-width + 1px) {
+		width: calc(33.33333% - 50px);
+		margin-right: 70px;
+		margin-top: 135px;
+	}
+}
+
+.text-card:nth-of-type(2n + 1) {
+	@media screen and (min-width: $med-width + 1px) {
+		margin-right: 0;
+	}
+}
+
+.columns-3 .text-card:nth-of-type(2n + 1) {
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		margin-right: 45px;
+	}
+	@media screen and (min-width: $med-width + 1px) {
+		margin-right: 70px;
+	}
+}
+
+.text-cards-grid .text-card:last-of-type {
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		margin-right: 0;
+	}
+	@media screen and (min-width: $med-width + 1px) {
+		margin-right: 0;
+	}
+}
+
+.columns-3 .text-card:nth-of-type(3n + 1) {
+	@media screen and (min-width: $med-width + 1px) {
+		margin-right: 0;
+	}
+}
+
+.text-card .block-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.text-card .block-wrapper .block-content {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+
+.text-card .content-card p:last-of-type {
+	margin-bottom: 0;
+}
+
+.text-card .wp-block-buttons {
+	margin-top: auto;
+	justify-content: center;
+}
+
+.text-card .img-container {
+	width: 100%;
+}
+
+.text-card h1,
+.text-card h2,
+.text-card h3,
+.text-card h4,
+.text-card h5,
+.text-card h6 {
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-transform: none;
+	font-family: $font-head-2;
+	color: $dark-blue;
+	font-weight: 700;
+	@media screen and (min-width: $small-width) {
+		margin-top: 15px;
+	}
+}
+
+.text-card h3 { 
+	font-size: 18px;
+	line-height: 27px;
+	margin-top: 20px;
+	letter-spacing: 0.25px;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px;
+		line-height: 31px;
+		margin-top: 25px;
+	}
+}
+
+.text-card p {
+	color: $bg-color-7;
+	font-family: $font-body;
+}
+
+.text-card p:first-of-type {
+	margin-top: 10px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 15px;
+	}
+}
+
+.text-card.width-100 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.columns-3 .text-card.width-100 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+.text-card .block-buttons {
+	margin-top: 25px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 35px;
+	}
+}
+
+.icon-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	left: 0;
+	top: 0;
+	margin-bottom: 10px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 15px;
+	}
+}
+
+.icon-wrap {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-icon {
+	width: 100%;	
+	height: 90px;
+	border:none;
+	max-width: 90px;
+	border-radius: 200px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 0;
+	transition-property: background;
+	transition-duration: 0.25s;
+	@media screen and (min-width: $small-width) {
+		height: 130px;
+		max-width: 130px;
+		margin: 0 auto 0;
+	}
+}
+
+.text-card .icon-icon {
+	margin: -45px auto 0;
+	@media screen and (min-width: $small-width) {
+		margin: -65px auto 0;
+	}
+}
+
+.text-card .block-wrapper {
+	text-align: center;
+	background: $lighter-blue;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-bottom: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 3rem;
+		padding-right: 3rem;
+		padding-bottom: 3rem;
+	}
+}
+
+.icon-icon svg {
+	transition-property: color;
+	transition-duration: 0.25s;
+}
+
+.icon-icon.navy:hover {
+	background: $light-blue;
+}
+
+.icon-icon.fill-orange.navy:hover {
+	background: $orange;
+}
+
+.icon-icon.navy:hover {
+	background: $light-blue;
+}
+
+.icon-icon.navy:hover svg {
+	color: $navy !important;
+}
+
+.upload-icon,
+.icon-icon svg {
+	max-width: 56px;
+	width: 100%;
+	max-height: 50px;
+	height: auto;
+}
+
+// .text-card .icon-icon lord-icon path {
+// 	fill: rgb(0, 143, 160) !important;
+// 	color: rgb(0, 143, 160) !important;
+// }
+
+
+.section-block.green .text-card .icon-icon,
+.section-block.lime-green .text-card .icon-icon {
+	color: white;
+}
+
+.section-block.green .text-card .icon-icon svg,
+.section-block.lime-green .text-card .icon-icon svg {
+	color: white;
+}

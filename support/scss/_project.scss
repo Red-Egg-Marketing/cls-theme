@@ -1,0 +1,90 @@
+.single-portfolio .post-content {
+	max-width: $max-cont-w;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+		padding-top: 8.125rem;
+	}
+}
+
+.single-portfolio .wp-block-gallery {
+	margin-top: 4rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+		margin-top: 7rem;
+	}
+}
+
+.single-portfolio h1.header-title {
+	text-transform: uppercase;
+	background: $bg-color-2;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-bottom: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 3.125rem;
+		padding-bottom: 3rem;
+	}
+}
+
+
+.single-portfolio h1.header-title + p {
+	background: $bg-color-2;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-top: 0;
+	padding-bottom: 1.85rem;
+	text-align: center;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 3rem;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
+
+.single-portfolio .post-content p,
+.single-portfolio .post-content > ul {
+	@media screen and (min-width: $small-width) {
+		padding-right: 2.5rem;
+		padding-left: 2.5rem;
+	}
+}
+
+.single .blocks-gallery-item img {
+	border-radius: 5px;
+}
+
+
+.single .blocks-gallery-grid.columns-3 .blocks-gallery-image, 
+.single .blocks-gallery-grid.columns-3 .blocks-gallery-item, 
+.single .wp-block-gallery.columns-3 .blocks-gallery-image,
+.single .wp-block-gallery.columns-3 .blocks-gallery-item {
+	@media screen and (min-width: $wp-min-width) {
+		width: calc(33.33333% - 1.333333333em);
+	    margin-right: 2em;
+	    margin-bottom: 2em;
+	}
+}
+
+.single .wp-block-gallery.columns-3 .blocks-gallery-item:nth-of-type(3n),
+.single .wp-block-gallery .blocks-gallery-item:last-child {
+	@media screen and (min-width: $wp-min-width) {
+		margin-right: 0;
+	}
+}
+
+.single-portfolio .footer-header {
+	color: $bg-color-1;
+	text-align: center;
+}

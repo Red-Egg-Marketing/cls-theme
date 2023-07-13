@@ -1,0 +1,59 @@
+body.archive .resources-grid .section-header {
+	display: none;
+}
+
+body.blog .entry-header,
+body.archive .entry-header {
+	min-height: 175px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	position: relative;
+	overflow: hidden;
+	background: $head-color;
+	@media screen and (min-width: $small-width) {
+		min-height: 200px;
+	}
+}
+
+body.blog .entry-header .wrapper,
+body.archive .entry-header .wrapper {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+body.blog .entry-header h1,
+body.archive .entry-header h1 {
+	@extend h1.header-title;
+	font-family: $font-head;
+	text-transform: uppercase;
+	color: white;
+	margin-top: 0;
+	position: relative;
+	margin-bottom: 0;
+}
+
+body.blog .resources-grid .block-wrapper,
+body.archive .resources-grid .block-wrapper {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+.resources-grid .button-wrapper .inner-wrap {
+	max-width: $max-cont-w;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 3.5rem;
+		margin-bottom: 3.5rem;
+	}
+}

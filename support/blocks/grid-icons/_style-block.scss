@@ -1,0 +1,115 @@
+.wp-block.grid-icons {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.grid-icons > .block-wrapper {
+    max-width: $max-cont-w;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 2.1875rem;
+    padding-right: 2.1875rem;
+    @media screen and (min-width: $small-width) {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+.grid-icons .icon-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background: $bg-color-3;
+    border-radius: 5px;
+    padding-top: 2.1875rem;
+    padding-bottom: 0;
+    @media screen and (min-width: $small-width) {
+        padding-top: 4.25rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.grid-icons .icon-icon {
+    background: none;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    transform: none;
+    max-width: 80px;
+    height: auto;
+}
+
+.section-block .grid-icons:last-child.light-grey  {
+    background: linear-gradient(to bottom, $bg-color-2 50%, white 50%);
+}
+
+.section-block .grid-icons:last-child.green  {
+    background: linear-gradient(to bottom, $bg-color-1 50%, white 50%);
+}
+
+.section-block .grid-icons:last-child.lime-green  {
+    background: linear-gradient(to bottom, $bg-color-3 50%, white 50%);
+}
+
+.grid-icons h4.header-title {
+    color: $head-color;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    align-self: flex-end;
+    @media screen and (min-width: $small-width) {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+}
+
+.grid-icons .icon-cta {
+    flex: 0 50%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-bottom: 2.1875rem;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    @media screen and (min-width: $small-width) {
+        flex: 0 25%;
+        border-right: 2px inset white;
+        margin-bottom: 1.5625rem;
+    }
+}
+
+.grid-icons .icon-cta:nth-of-type(odd) {
+    @media screen and (max-width: $small-width - 1px) {
+          border-right: 2px solid white;
+    }
+}
+
+.grid-icons .icon-cta:nth-of-type(4n) {
+    @media screen and (min-width: $small-width) {
+        border-right: 2px inset transparent;
+    }
+}
+
+.wp-block.grid-icons .icon-wrapper > .block-editor-inner-blocks {
+    width: 100%;
+}
+
+.wp-block.grid-icons .icon-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.grid-icons .wp-block-buttons {
+    align-self: center;
+    justify-self: center;
+}

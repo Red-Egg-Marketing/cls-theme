@@ -1,0 +1,109 @@
+.wp-block.tab {
+	width: 100%;
+	max-width: 100%;
+}
+
+.editor-styles-wrapper .wp-block.tab  .wp-block {
+	width: 100%;
+	max-width: 100%;
+}
+
+.wp-block.tab-group {
+	max-width: 100%;
+	width: 100%;
+}
+
+.tab-group .block-wrapper {
+	max-width: $max-cont-w;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.tab-group {
+	padding-bottom: 2rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 3.75rem;
+	}
+}
+
+.tab-group .tabs-wrap > .block-editor-inner-blocks >.block-editor-block-list__layout,
+.tab-group .tabs-wrap {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+
+.tab-group:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.tab-group .tab {
+	position: relative;
+	width: auto;
+	order: 0;
+	@media screen and (min-width: $small-width) {
+		width: auto;
+		position: static;
+		float: left;
+	}
+}
+
+.tab-group .tab-content {	
+	order: 2;
+}
+
+.tab-group .tab.loaded:first-of-type .header-title.active ~ .tab-content,
+.tab-group .header-title.active ~ .tab-content,
+.tab-group [type=radio]:checked ~ label ~ .tab-content {
+	z-index: 1;
+	display: block;
+}
+
+.tab-group .tab.loaded:first-of-type .header-title ~ .tab-content {
+	display: none;
+}
+
+.tab-group [type=radio] {
+	display: none;
+}
+
+.wp-block.tab-group .tab.has-child-selected .tab-content,
+.wp-block.tab-group .tab.is-selected .tab-content {
+	display: block;
+	background: $bg-color-2;
+}
+
+.wp-block.tab-group .tab .tab-content {
+	display: none;
+}
+
+.tab-group .tab .tab-content {
+	display: none;
+}
+
+.tab-group .tab:first-of-type .tab-content {
+	z-index: 1;
+	display: block;
+}
+
+.tabs.has-child-selected .tab:first-of-type .tab-content {
+	display: none;
+}
+
+.tabs.has-child-selected .tab.has-child-selected:first-of-type .tab-content,
+.tabs.has-child-selected .tab.is-selected:first-of-type .tab-content {
+	display: block;
+}
+
+
+// .tab-group .tab.loaded:first-of-type [type=radio]:not(:checked) ~ .header-title {
+// 	background: none;
+// 	color: inherit;
+// }

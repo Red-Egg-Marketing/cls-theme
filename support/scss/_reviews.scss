@@ -1,0 +1,144 @@
+div.wprevpro_t1_DIV_2 {
+	box-shadow: none;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	@media screen and (min-width: $small-width) {
+		padding-left: 42px;
+		padding-right: 42px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+}
+
+div.wprevpro_t1_DIV_2:after {
+	filter: none;
+}
+
+.wprevpro_star_imgs_T1 {
+	display: block;
+}
+
+div.wprevpro_t1_DIV_2:before {
+	display: none;
+}
+
+
+div.wprevpro_t1_P_3,
+span.wprs_rd_more_1,
+div.wprevpro_t1_DIV_2 p {
+	font-family: $font-body;
+	font-size: 18px;
+	line-height: 26px;
+	color: $body-color;
+	font-style: normal;
+	font-weight: 300;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px;
+		line-height: 40px;
+	}
+}
+
+.wprevpro button.slickwprev-arrow {
+	z-index: 998;
+}
+
+.wprevpro_star_imgs span.svgicons {
+	width: 20px !important;
+	height: 20px !important;
+	background: $yellow !important;
+	color: $yellow;
+	margin-right: 3px !important;
+}
+
+.wprs_rd_more {
+	font-weight: 400;
+	color: $light-blue !important;
+}
+
+.wprevpro_t1_DIV_2:after {
+	border-right: 44px solid transparent !important;
+	border-top: 44px solid white !important;
+	bottom: -44px !important;
+	width: 44px !important;
+}
+
+div.wprevpro_t1_SPAN_5 {
+	padding-top: 30px
+}
+
+div.wprev_preview_tcolor2_T1 > div.wprevpro_t1_rname {
+	color: $dark-blue;
+	font-family: $font-body;
+	font-weight: 700;
+	text-transform: none;
+	font-size: 18px;
+	line-height: 23px;
+	@media screen and (min-width: $small-width) {
+		font-size: 25px;
+		line-height: 32px;
+	}
+}
+
+button.slickwprev-prev {
+	right: -20px;
+	@media screen and (min-width: $small-width) {
+		left: -40px;
+	}
+}
+
+button.slickwprev-next {
+	right: -20px;
+	@media screen and (min-width: $small-width) {
+		right: -40px;
+	}
+}
+
+button.slickwprev-prev, 
+button.slickwprev-next {
+	width: 29px;
+	height: 29px;
+	@media screen and (min-width: $small-width) {
+		width: 38px;
+		height: 38px;
+	}
+}
+
+button.slickwprev-prev:before,
+button.slickwprev-next:before {
+	font-size: 0;
+	width: 29px;
+	height: 29px;
+	background: #BAC2C8;
+	border-radius: 29px;
+	opacity: 1;
+	display: inline-block;
+	@media screen and (min-width: $small-width) {
+		width: 38px;
+		height: 38px;
+		border-radius: 38px;
+	}
+}
+
+button.slickwprev-next:before {
+	background: #BAC2C8 url(img/right-chevron-1.svg) no-repeat calc(50% + 1px) center / 9px;
+	@media screen and (min-width: $small-width) {
+		background: #BAC2C8 url(img/right-chevron-1.svg) no-repeat calc(50% + 1px) center / 10px;
+	}
+}
+
+button.slickwprev-prev:before {
+	background: #BAC2C8 url(img/left-chevron-1.svg) no-repeat calc(50% + 1px) center / 9px;
+	@media screen and (min-width: $small-width) {
+		background: #BAC2C8 url(img/left-chevron-1.svg) no-repeat calc(50% + 1px) center / 10px;
+	}
+}
+
+.wprevpro .indrevdiv {
+	border: none;
+}
+
+.wprevpro span.wprevpro_t1_DIV_title {
+	display: none;
+}

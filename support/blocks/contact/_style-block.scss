@@ -1,0 +1,277 @@
+.contact-section {
+	width: 100%;
+	padding-top: 4.2rem;
+	padding-bottom: 4.2rem;
+	background: url(img/circuit-board.jpg) no-repeat center center / cover;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6.125rem;
+		padding-bottom: 6.125rem;
+	}
+}
+
+.contact-section.active {
+	animation: backgroundShift 6s ease forwards;
+}
+
+.contact-section .block-wrapper {
+	width: 100%;
+	max-width: $max-cont-w;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	margin: 0 auto;
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	@media screen and (min-width: $med-width + 1px) {
+		padding-left: 3.75rem;
+		padding-right: 3.75rem;
+	}
+}
+
+.contact-section div.gform_wrapper .gform_heading {
+	justify-content: flex-start;
+
+}
+
+.contact-section div.gform_wrapper .gform_heading,
+.contact-section .wp-block-heading {
+	margin-top: 0;
+}
+
+.contact-section .block-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.contact-section div.gform_wrapper fieldset {
+	padding: 0;
+	border: none;
+}
+
+.hidden_label .gfield_label {
+	display: none;
+}
+
+.contact-section .column {
+	width: 100%;
+	padding-bottom: 1.75rem;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		width: 50%;
+		max-width: 50%;
+		padding-bottom: 0;
+	}
+}
+
+.contact-section .gform_title {
+	margin-top: 2rem;
+}
+
+.contact-section .content-column {
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		padding-right: 2.5rem;
+	}
+}
+
+.contact-section .content p {
+	color: white;
+	font-size: 16px;
+	line-height: 25px;
+	font-family: $font-head;
+	font-weight: bold;
+	@media screen and (min-width: $small-width) {
+		font-size: 18px;
+		line-height: 29px;
+	}
+}
+
+.contact-icon.fa {
+	color: $button-color-1;
+	font-size: 32px;
+	line-height: 44px;
+	margin-right: 1rem;
+} 
+
+.contact-section .icon-row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 1.85rem;
+	}
+}
+
+p.contact-item a {
+	text-decoration: none;
+	
+}
+
+p.contact-item a,
+p.contact-item {
+	font-family: $font-body;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: 0;
+	margin-bottom: 0;
+	letter-spacing: 0.35px;
+	color: $dark-blue;
+	@media screen and (min-width: $small-width) {
+		font-size: 26px;
+		line-height: 30px;
+	}
+}
+
+.contact-section .header-suptitle {
+	color: $bg-color-5;
+	text-transform: none;
+	font-family: $font-body;
+	font-size: 20px;
+	margin-bottom: 15px;
+	@media screen and (min-width: $small-width) {
+		font-size: 25px;
+	}
+}
+
+.contact-section .header-title {
+	margin-top: 0;
+	color: white;
+	text-transform: capitalize;
+	font-size: 39px;
+	line-height: 45px;
+	margin-bottom: 20px;
+	@media screen and (min-width: $small-width) {
+		font-size: 34px;
+		line-height: 54px;
+	}
+}
+
+
+.contact-icon {
+	width: 17px;
+	margin-right: 9px;
+	@media screen and (min-width: $small-width) {
+		width: 30px;
+		margin-right: 10px;
+	}
+}
+
+.contact-icon svg {
+	max-width: 20px;
+	display: block;
+	height: auto;
+	margin-top: 2px;
+	@media screen and (min-width: $small-width) {
+		max-width: 25px;
+		margin-top: 10px;
+	}
+}
+
+.wp-block.is-reusable {
+	width: 100%;
+	max-width: 100%;
+}
+
+.wp-block.contact-section {
+	width: 100%;
+	max-width: 100%;
+	padding-top: 8.125rem;
+	padding-bottom: 8.125rem;
+}
+
+.contact-section .block-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.contact-section .block-content > .block-editor-inner-blocks {
+	width: 100%;
+}
+
+.contact-section .block-content > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: flex;
+	width: 100%;
+}
+
+.contact-section .content {
+	margin-bottom: 25px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 45px;
+	}
+}
+
+.contact-section .content-column {
+	@media screen and (min-width: $small-width) {
+		padding-right: 2.5rem;
+	}
+}
+
+.contact-section .content-column .wp-block-buttons {
+	margin-top: 30px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 60px;
+	}
+}
+
+.contact-icon.fa {
+	color: $button-color-1;
+	font-size: 32px;
+	line-height: 44px;
+	margin-right: 1rem;
+} 
+
+.contact-row {
+	display: flex;
+	align-items: flex-start;
+}
+
+.contact-controls {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1.85rem;
+}
+
+.contact-controls .remove-icon {
+	padding-left: 0;
+}
+
+.contact-section .header-title {
+	margin-top: 0;
+}
+
+.contact-section.white .form-column {
+	background: $bg-color-1;
+}
+
+.contact-section .icon-icon {
+	width: 25px;
+	height: 42px;
+	margin-right: 20px;
+	@media screen and (min-width: $small-width) {
+		width: 30px;
+		height: 50px;
+		margin-right: 25px;
+	}
+}
+
+p.contact-item {
+	width: calc(100% - 45px);
+	@media screen and (min-width: $small-width) {
+		width: calc(100% - 55px)
+	}
+}
+
+.contact-section .icon-icon svg {
+	max-width: 25px;
+	display: block;
+	height: auto;
+	margin-top: 8px;
+	@media screen and (min-width: $small-width) {
+		max-width: 30px;
+	}
+}

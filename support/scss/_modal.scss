@@ -1,0 +1,22 @@
+.fancybox__container {
+	border-radius: 5px;
+	overflow-y: auto;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;	
+	@media screen and (min-width: $small-width) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+.fancybox__container .wrapper {
+	max-width: $med-small-width;
+	margin: 0 auto;
+	@media screen and (min-width: $small-width) {
+		padding: 1.25rem;
+	}
+}
+
+.fancybox__container iframe {
+	border: none;
+}

@@ -1,0 +1,136 @@
+.hero__inner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: center;
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+			position: relative;
+	}
+}
+
+.hero .hero-asset { 
+	display: block;
+	width: 100%;
+}
+
+.wp-block.hero {
+	max-width: 100%;
+	width: 100%;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.hero .media-controls {
+	 position: absolute;
+	 z-index: 2;
+}
+
+.hero {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.hero .hero-block-wrap {
+	text-align: left;
+}
+
+.hero .img-container {
+	position: relative;
+}
+
+.hero .block-wrapper {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	@media screen and (min-width: $small-width) {
+		position: static;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+	}
+}
+
+.hero-block-image-wrap {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	overflow: hidden;
+}
+
+.hero lottie-player {
+	width: 100%;
+	height: auto;
+}
+
+.hero-block-content {
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		display: flex;
+		align-items: center;
+	}	
+}
+
+.hero .hero-block-content {
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.hero .hero-block-image,
+.hero .hero-block-wrap {
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 50%;
+	}
+}
+
+.hero .hero-block-wrap {
+	order: 2;
+	@media screen and (min-width: $small-width) {
+		order: 1;
+	}
+}
+
+.hero .hero-block-image {
+	order: 1;
+	@media screen and (min-width: $small-width) {
+		order: 2;
+	}
+}
+
+.hero-block-image-wrap .img-container {
+	width: 100%;
+	display: flex;
+}
+
+.hero__inner .content-wrap {
+	position: relative;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	width: 100%;
+	max-width: $max-cont-w;
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 2;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	@media screen and (min-width: $small-width) {
+		position: relative;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+.hero-block-wrap {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1120px;
+}

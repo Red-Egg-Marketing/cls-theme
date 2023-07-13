@@ -1,0 +1,12 @@
+.faq-section.wp-block {
+	width: 100%;
+	max-width: 100%;
+}
+
+
+.faq-section {
+	padding-top: 3rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6rem;
+	}
+}

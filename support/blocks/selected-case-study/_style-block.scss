@@ -1,0 +1,102 @@
+.selected-case-study,
+.selected-case-study.wp-block {
+	max-width: 100%;
+	width: 100%;
+	padding-top: 4.125rem;
+	padding-bottom: 4.125rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6.75rem;
+		padding-bottom: 6.75rem;
+	}
+}
+
+.selected-case-study .section-header {
+	padding-top: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 0;
+	}
+}
+
+
+.selected-case-study .header {
+	text-align: center;
+}
+
+.selected-case-study .block-wrapper {
+	width: 100%;
+	max-width: $max-cont-w;
+	margin: 0 auto;
+	box-sizing: border-box;
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+	@media screen and (min-width: $small-width) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+.case-studies-block .case-study {
+	padding-top: 0;
+	padding-bottom: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+.case-studies-block .swiper {
+	overflow: hidden;
+}
+
+.case-studies-block .swiper-button-next {
+	right: 15px;
+}
+
+.case-studies-block .swiper-button-prev {
+	left: 15px;
+}
+
+.case-studies-block .case-study .wp-block-button {
+	display: block;
+}
+
+.selected-case-study + .selected-resources .resources-block {
+	padding-top: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 0;
+	}
+}
+
+.selected-case-study .resources,
+.wp-block.selected-case-study .resources {
+	display: flex;
+	align-items: flex-wrap;
+	flex-wrap: wrap;
+	overflow: auto;
+}
+
+.selected-case-study .content-columns {
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 25px;
+	@media screen and (min-width: $small-width) {
+		width: 50%;
+		padding-left: 70px;
+		margin-top: 0;
+	}
+}
+
+.selected-case-study .content-columns h3 {
+	margin-top: 0;
+}
+
+.selected-case-study .image-col {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		width: 50%;
+		max-width: 50%;
+	}
+}

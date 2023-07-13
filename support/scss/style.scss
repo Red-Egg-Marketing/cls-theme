@@ -1,0 +1,68 @@
+/*
+Theme Name: cls
+Theme URI: https://redeggmarketing.com/
+Author: Red Egg Marketing
+Author URI: https://redeggmarketing.com/
+Description: cls Theme
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cls
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/*--------------------------------------------------------------
+ Import librareis
+--------------------------------------------------------------*/
+
+@import "./scss/libraries/fancybox";
+
+/*--------------------------------------------------------------
+ Styles for template, pages, variables
+--------------------------------------------------------------*/
+
+@import "./scss/variables";
+@import "./scss/animations";
+@import "./scss/base";
+@import "./scss/font-awesome";
+@import "./scss/fonts";
+@import "./scss/buttons";
+@import "./scss/navigation";
+@import "./scss/swiper";
+@import "./scss/block-base";
+@import "./scss/forms";
+@import "./scss/footer";
+@import "./scss/single";
+@import "./scss/taxonomy";
+@import "./scss/share";
+@import "./scss/page";
+@import "./scss/table";
+@import "./scss/project";
+@import "./scss/modal";
+@import "./scss/reviews";
+@import "./scss/bios";
+
+
+/*--------------------------------------------------------------
+ Custom Blocks
+--------------------------------------------------------------*/
+@import "../blocks/hero-text/style-block";
+@import "../blocks/hero/style-block";
+@import "../blocks/image-text-columns/style-block";
+@import "../blocks/section-columns/style-block";
+@import "../blocks/contact/style-block";
+@import "../blocks/selected-projects/style-block";
+@import "../blocks/selected-case-study/style-block";
+@import "../blocks/cta/style-block";
+@import "../blocks/columns-list/style-block";
+@import "../blocks/shortcode-section/style-block";
+@import "../blocks/text-cards-grid/style-block";
+@import "../blocks/text-card/style-block";
+@import "../blocks/tab/style-block";
+@import "../blocks/tab-group/style-block";
+@import "../blocks/tabs/style-block";
+@import "../blocks/icon-rows/style-block";
+@import "../blocks/filter-resources/style-block";
+@import "../blocks/section-header/style-block";

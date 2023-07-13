@@ -1,0 +1,153 @@
+.faq.wp-block {
+	width: 100%;
+	max-width: 100%;
+}
+
+html :where(.wp-block) {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.wp-block.is-reusable .faq:last-of-type {
+	margin-bottom: 0;
+}
+
+.faq + [class*="wp-block"]:not(.faq) {
+	margin-top: 5.25rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 8.25rem;
+	}
+}
+
+.faq {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.faq:last-of-type {
+	margin-bottom: 4.25rem;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 8.125rem;
+	}
+}
+
+.faq .block-wrapper {
+	max-width: 1000px;
+	width: 100%;
+	border: 2px solid $bg-color-2;
+}
+
+.faq:not(.wp-block) + .faq:not(.wp-block) .block-wrapper {
+	border-top: none;
+}
+
+
+.wp-block.faq .content-column.hide-this .header-title,
+.faq .header-title {
+	padding-left: 2.05rem;
+	background: url(img/down-chevron.svg) no-repeat 13px center / 10px;
+	padding-bottom: 0.35rem;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-transform: none;
+	color: #4D4D4D;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 500;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 0.35rem;
+		cursor: pointer;
+		padding-left: 3.5rem;
+		padding-right: 2.5rem;
+		background: url(img/down-chevron.svg) no-repeat 28px center / 14px;
+		font-size: 23px;
+		line-height: 30px;
+		padding-top: 1.625rem;
+		padding-bottom: 1.625rem;
+	}
+}
+
+.wp-block.faq .content-column .header-title,
+.faq .content-column[data-toggled="true"] .header-title {
+	color: $bg-color-7;
+	background: $bg-color-2 url(img/up-chevron.svg) no-repeat 13px center / 10px;
+	@media screen and (min-width: $small-width) {
+		background: $bg-color-2 url(img/up-chevron.svg) no-repeat 28px center/ 14px;
+	}
+}
+
+.faq .content-column {
+	width: 100%;
+}
+
+.answer .content {
+	margin-top: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 1.625rem;
+	}
+}
+
+.answer .content p {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+	@media screen and (min-width: $small-width) {
+		font-size: 23px;
+		line-height: 32px;
+	}
+}
+
+.wp-block.faq .content-column.hide-this .answer {
+	display: none;
+}
+
+.wp-block.faq .content-column[data-toggled="true"] .answer,
+.content-column[data-toggled="true"] .answer,
+.wp-block.faq .content-column .answer {
+	display: flex;
+	padding-left: calc(1.5rem - 12px);
+	padding-right: 1.5rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: calc(3.5rem - 33px);
+		padding-right: 2rem;
+	}
+}
+
+.wp-block.faq .content-column .answer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.answer {
+	display: none;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.answer .content-col {
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 100%;
+	}
+}
+
+.question-row {
+	position: relative;
+}
+
+.question-row button.toggle-button {
+	position: absolute;
+	top: 28px;
+	left: 30px;
+	width: 26px;
+	height: 25px;
+	z-index: 4;
+	text-indent: -10000px;
+}

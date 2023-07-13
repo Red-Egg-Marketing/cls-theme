@@ -1,0 +1,127 @@
+.section-columns > .block-wrapper {
+	max-width: $max-cont-w * .725;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.wp-block.section-columns {
+	max-width: 100%;
+	width: 100%;
+}
+
+.section-columns .image-columns .image-col {
+	margin-bottom: 0;
+}
+
+.section-columns {
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(to right, $teal, $teal);
+	background-size: 150px 3px;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.with-bg + .section-columns {
+	background: none;
+}
+
+.section-columns .image-columns > .block-wrapper > .block-content > .block-editor-inner-blocks > .block-editor-block-list__layout, 
+.section-columns .image-columns > .block-wrapper > .block-content {
+	align-items: flex-start;
+}
+
+.section-header {
+	text-align: center;
+	padding-top: 3.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6.875rem;
+	}
+}
+
+.section-columns .image-columns + .image-columns {
+	padding-top: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 0;
+	}
+}
+
+.cta + .section-columns {
+	background: none;
+}
+
+.section-columns .image-columns .image-col {
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 36%;
+	}
+}
+
+.section-columns .image-columns .content-columns {
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 64%;
+	}
+}
+
+.section-columns .image-columns {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.section-columns {
+	padding-bottom: 3.15rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 6.875rem;
+	}
+}
+
+.section-columns .section-header + .image-columns {
+	padding-top: 2rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 3.15rem;
+	}	
+}
+
+.section-columns .image-columns {
+	padding-bottom: 2.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 3.5rem;
+	}
+}
+
+.section-columns .image-columns:last-of-type {
+	padding-bottom: 0;
+}
+
+.section-columns:before {
+	content: "";
+	width: 50%;
+	max-width: 400px;
+	padding-bottom: unquote('min(400px, 50%)');
+	background: #E6E7E8;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	transform: translateX(-50%);
+	border-radius: 100%;
+	height: 0;
+}
+
+
+.section-columns:after {
+	content: "";
+	width: 50%;
+	max-width: 620px;
+	padding-bottom: unquote('min(620px, 50%)');
+	background: $lighter-blue;
+	position: absolute;
+	bottom: 8.5%;
+	right: 0;
+	transform: translateX(50%);
+	border-radius: 100%;
+	height: 0;
+}

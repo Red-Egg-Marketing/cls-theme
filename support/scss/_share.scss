@@ -1,0 +1,19 @@
+.grid-default {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+	@media screen and (min-width: $small-width) {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 25px;
+		grid-row-gap: 25px;
+	}
+}
+
+
+.share-content a svg {
+	max-width: 35px;
+	@media screen and (min-width: $small-width) {
+		max-width: 50px;
+	}
+}

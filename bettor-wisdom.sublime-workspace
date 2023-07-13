@@ -1,0 +1,1610 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"sor",
+				"sortVal"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"ta",
+				"table-row"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"table-r",
+				"table-row-group"
+			],
+			[
+				"tabl",
+				"table-header-group"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"un",
+				"units_wagered"
+			],
+			[
+				"units",
+				"units_wagered"
+			],
+			[
+				"blo",
+				"block_attributes"
+			],
+			[
+				"prin",
+				"print_r()"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"b",
+				"bg-color-4"
+			],
+			[
+				"bg",
+				"bg-color-3"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"font-",
+				"font-body"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"set",
+				"setAttributes"
+			],
+			[
+				"tra",
+				"translateY"
+			],
+			[
+				"f",
+				"faq_page"
+			],
+			[
+				"fun",
+				"function_exists"
+			],
+			[
+				"l",
+				"level"
+			],
+			[
+				"strto",
+				"strtolower()"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"p",
+				"padding-top"
+			],
+			[
+				"game",
+				"game_date"
+			],
+			[
+				"d",
+				"display_date"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"child",
+				"childNodes"
+			],
+			[
+				"par",
+				"parentElement"
+			],
+			[
+				"class",
+				"classList"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"quey",
+				"querying"
+			],
+			[
+				"row",
+				"rows_html"
+			],
+			[
+				"ye",
+				"years_selected"
+			],
+			[
+				"en",
+				"end_index"
+			],
+			[
+				"year",
+				"years_selected"
+			],
+			[
+				"upd",
+				"updateUrl"
+			],
+			[
+				"ap",
+				"apiUrl"
+			],
+			[
+				"ar",
+				"apiUrl"
+			],
+			[
+				"button",
+				"button_html"
+			],
+			[
+				"load",
+				"loadGames"
+			],
+			[
+				"inn",
+				"innerHTML"
+			],
+			[
+				"print",
+				"print_r()"
+			],
+			[
+				"tot",
+				"total_games"
+			],
+			[
+				"pagin",
+				"paginate_args"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"quer",
+				"querySelector"
+			],
+			[
+				"border-bo",
+				"border-bottom-color"
+			],
+			[
+				"li",
+				"list-style-type"
+			],
+			[
+				"odd",
+				"odds_games"
+			],
+			[
+				"total",
+				"total_odds"
+			],
+			[
+				"to",
+				"total_games"
+			],
+			[
+				"ave",
+				"average_odds"
+			],
+			[
+				"units_w",
+				"units_wagered"
+			],
+			[
+				"ne",
+				"next_key"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"fo",
+				"forEach"
+			],
+			[
+				"bloc",
+				"block_attributes"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"next",
+				"next_year"
+			],
+			[
+				"si",
+				"sizeof"
+			],
+			[
+				"nex",
+				"next_year"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"array_col",
+				"array_column()"
+			],
+			[
+				"json",
+				"json_decode()"
+			],
+			[
+				"jso",
+				"json_decode()"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"onc",
+				"onChange"
+			],
+			[
+				"tes",
+				"testimonial"
+			],
+			[
+				"test",
+				"testimonial"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"outlin",
+				"outline-green"
+			],
+			[
+				"Ic",
+				"IconLibrary"
+			],
+			[
+				"res",
+				"resources"
+			],
+			[
+				"update",
+				"updateProp"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"_tras",
+				"_transient_game_"
+			],
+			[
+				"post",
+				"post_status"
+			],
+			[
+				"units_won",
+				"units_won_lost_month"
+			],
+			[
+				"actua",
+				"actual_risk"
+			],
+			[
+				"month_r",
+				"month_risked"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"aver",
+				"average"
+			],
+			[
+				"total_games_",
+				"total_games_per_month"
+			],
+			[
+				"mont",
+				"month_format"
+			],
+			[
+				"form",
+				"format_date"
+			],
+			[
+				"mo",
+				"month"
+			],
+			[
+				"unit",
+				"units_won_lost"
+			],
+			[
+				"is_",
+				"is_numeric"
+			],
+			[
+				"is",
+				"is_numeric"
+			],
+			[
+				"win",
+				"win_per"
+			],
+			[
+				"tota",
+				"total_games_per_month"
+			],
+			[
+				"mon",
+				"month"
+			],
+			[
+				"g",
+				"group_year"
+			],
+			[
+				"gam",
+				"games_years"
+			],
+			[
+				"ga",
+				"games_years"
+			],
+			[
+				"arra",
+				"array_key_exists"
+			],
+			[
+				"get",
+				"get_the_ID"
+			],
+			[
+				"meta_va",
+				"meta_value_num"
+			],
+			[
+				"posts",
+				"posts_per_page"
+			],
+			[
+				"bord",
+				"border-collapse"
+			],
+			[
+				"wage",
+				"wager_string"
+			],
+			[
+				"recom",
+				"recom_string"
+			],
+			[
+				"r",
+				"recommendation"
+			],
+			[
+				"rec",
+				"recommendation"
+			],
+			[
+				"le",
+				"league"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"all",
+				"allowedFormats"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"Caro",
+				"Carousel"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"cu",
+				"custTax"
+			],
+			[
+				"data",
+				"data-fancybox"
+			],
+			[
+				"a",
+				"attributes"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jacoblang/Local Sites/bettor-wisdom",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/img",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/paid-memberships-pro",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/paid-memberships-pro/pages",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/filter-resources",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/games-overview",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/selected-projects",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-image-cta-group"
+	],
+	"file_history":
+	[
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_table.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/games-overview/_style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_games.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_base.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_membership.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/front-end.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-includes/blocks.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/games-overview/games.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc/games.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-config.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/games-overview/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/selected-projects/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/selected-projects/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/selected-projects/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-image-cta-group/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/games-overview/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/testimonials/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/testimonials/testimonials.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/filter-resources/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/plugins/mailpoet/lib/Form/BlockStylesRenderer.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-image-cta-group/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_navigation.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/paid-memberships-pro/pages/levels.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_variables.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_buttons.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/footer.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_footer.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/node_modules/lodash/_shortOut.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/header.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc/options.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/img/footer-logo.svg",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/img/nav-open.svg",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/img/nav-close.svg",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_taxonomy.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-image-cta-group/_style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/cta/_style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/components/Header.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/cta/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/cta/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/editor.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/components/Content.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/cta/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/hero/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/hero/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/style.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-image-cta/_style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-image-cta/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-image-cta/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc/media.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/components/ImageComp.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/text-cards-grid/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-image-cta-group/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/text-cards-grid/_style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-image-cta/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/img/question-box.svg",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/plugins/paid-memberships-pro/includes/functions.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/testimonials/_style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/testimonials/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/text-card/_style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/promo/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/text-card/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/text-cards-grid/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/text-card/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/text-cards-grid/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_swiper.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/selected-projects/selected-resources.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/testimonials/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/index-post.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/filter-resources/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/core/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/filter-resources/filter-resources.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-includes/general-template.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_modal.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/promo-image/style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/games-overview/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/promo-image/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/header-intro/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/grid-icons/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/components/Anchor.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/js-compile/fancybox-settings.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/js-compile/filter-posts.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc/custom-endpoints.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/template-parts/content-page.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/page.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/header-intro/_style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_fonts.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/header-intro/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/text-card/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-includes/js/dist/block-editor.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/core/styles.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_block-base.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/header-intro/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/components/Icons.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/components/BackgroundSelector.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/package.json",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/hero/style-block.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/section/index.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/functions.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/section/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/title-content/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/wrap/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/section/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/hero/save.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/promo/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/icon-cta/edit.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_page.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/blocks/hero/hero.js",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/plugins/mailpoet/lib/Newsletter/Renderer/Blocks/Header.php",
+		"/Users/jacoblang/Desktop/bettor-wisdom-logo.svg",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc/posts.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc/custom-header.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc/custom-walker.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/template-parts/content-games.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/single-games.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/object-cache.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-includes/cache.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/support/scss/_single.scss",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc/template-functions.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/inc/customizer.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/paid-memberships-pro/pages/confirmation.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/paid-memberships-pro/pages/member_profile_edit.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/plugins/paid-memberships-pro/includes/email-templates.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/plugins/paid-memberships-pro/pages/account.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/plugins/paid-memberships-pro/pages/confirmation.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/paid-memberships-pro/pages/login.php",
+		"/Users/jacoblang/Local Sites/bettor-wisdom/app/public/wp-content/plugins/paid-memberships-pro/pages/login.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"margin-top: 8.125rem;",
+			"    margin-top: 8.125rem;",
+			".wp-block-table table th",
+			"right",
+			"$units_wagered",
+			"float",
+			"$units_wagered",
+			"floor",
+			"round",
+			"false",
+			"get_transient",
+			"selected-projects",
+			"block_attributes",
+			"paged",
+			"updateUrl",
+			"paged",
+			"'paged'",
+			"cancel",
+			"invoice",
+			"checkout",
+			"visited",
+			"hover",
+			"member-levels",
+			"privacy",
+			"disclaimer",
+			"business_phone",
+			"bettor wisdom",
+			"margin-top: 14rem;",
+			"    margin-top: 14rem;",
+			"355663",
+			".menu-primary-menu-container",
+			"body.blog .entry-header",
+			"body.blog .entry-header, body.archive .entry-header",
+			"description",
+			"content",
+			"n",
+			"Content",
+			"morgan-custom-blocks",
+			"bottom",
+			".cta-text .header-title",
+			"absolute",
+			".entry-content",
+			"faq_page",
+			"checkout",
+			"promo-card",
+			".member-card",
+			"expiration-text",
+			"false",
+			"select",
+			".member-card",
+			"true",
+			"pmpro_btn",
+			"true",
+			"$pmpro_msg",
+			".text-cards-grid .header-intro-block",
+			"200",
+			"next",
+			"right",
+			"next",
+			"padding",
+			"resources-",
+			"overview",
+			"games",
+			"testimonial",
+			"resourcelist",
+			"testimonial",
+			"useState",
+			"fragment",
+			"placeholder",
+			"provide",
+			"$current_date",
+			"echo",
+			"$display_f",
+			" DateTime::createFromFormat",
+			"DateTime::createFromFormat",
+			"$current_date",
+			"month",
+			"date",
+			"current_date",
+			"$current_year",
+			"sortButton",
+			"searchButton",
+			"querySelectorAll",
+			"||",
+			"'year'",
+			"$total_games",
+			"$modulo",
+			"sizeof($years_array)",
+			"$end_index",
+			"sort_by",
+			"sort",
+			"href",
+			"searchParams",
+			"apiUrl",
+			"const",
+			"sort",
+			"year",
+			"searchParams",
+			"$paged",
+			"$paged ",
+			"years_array",
+			"$years_array",
+			"get_html_rows_years",
+			"$years",
+			"offset",
+			"get_query_object",
+			"end_size",
+			"paginate_links",
+			"const",
+			"get_html_rows_years",
+			"#3BC14B",
+			"get_games_years_data",
+			"get_games_data_table_total(",
+			"bottom",
+			"calculate_average_odds",
+			"$units_won_lost_month_ratio",
+			"$units_won_lost ",
+			"$units_won_lost_month",
+			"$units_won_lost_month_ratio",
+			"total_games",
+			"win",
+			"total_games",
+			"total_wins",
+			"false",
+			"current_year",
+			"boogger",
+			"false",
+			"$current_year"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Bettor_Wisdom",
+			"bettor wisdom",
+			"bettor-wisdom",
+			"bettor_wisdom"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.487168862475,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bettor-wisdom.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"_tab",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_table.scss"
+			],
+			[
+				"_gam",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_games.scss"
+			],
+			[
+				"_me",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_membership.scss"
+			],
+			[
+				"block",
+				"app/public/wp-includes/blocks.php"
+			],
+			[
+				"blocks.",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/blocks.php"
+			],
+			[
+				"games",
+				"app/public/wp-content/themes/Bettor-Wisdom/inc/games.php"
+			],
+			[
+				"_ta",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_table.scss"
+			],
+			[
+				"blocks.php",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/blocks.php"
+			],
+			[
+				"wp-con",
+				"app/public/wp-config.php"
+			],
+			[
+				"game",
+				"app/public/wp-content/themes/Bettor-Wisdom/inc/games.php"
+			],
+			[
+				"blocks",
+				"app/public/wp-content/plugins/mailpoet/lib/Form/BlockStylesRenderer.php"
+			],
+			[
+				"_m",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_membership.scss"
+			],
+			[
+				"_var",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_variables.scss"
+			],
+			[
+				"_v",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_variables.scss"
+			],
+			[
+				"_n",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_navigation.scss"
+			],
+			[
+				"_but",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_buttons.scss"
+			],
+			[
+				"_f",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_footer.scss"
+			],
+			[
+				"_foo",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_footer.scss"
+			],
+			[
+				"_so",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/node_modules/lodash/_shortOut.js"
+			],
+			[
+				"head",
+				"app/public/wp-content/themes/Bettor-Wisdom/header.php"
+			],
+			[
+				"footer.php",
+				"app/public/wp-content/themes/Bettor-Wisdom/footer.php"
+			],
+			[
+				"_bu",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_buttons.scss"
+			],
+			[
+				"_nav",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_navigation.scss"
+			],
+			[
+				"_va",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_variables.scss"
+			],
+			[
+				"_b",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_buttons.scss"
+			],
+			[
+				"wp-confi",
+				"app/public/wp-config.php"
+			],
+			[
+				"gam",
+				"app/public/wp-content/themes/Bettor-Wisdom/inc/games.php"
+			],
+			[
+				"_",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_variables.scss"
+			],
+			[
+				"games.ph",
+				"app/public/wp-content/themes/Bettor-Wisdom/inc/games.php"
+			],
+			[
+				"_butt",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_buttons.scss"
+			],
+			[
+				"backgroundse",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/components/BackgroundSelector.js"
+			],
+			[
+				"funct",
+				"app/public/wp-content/themes/Bettor-Wisdom/functions.php"
+			],
+			[
+				"fun",
+				"app/public/wp-content/themes/Bettor-Wisdom/functions.php"
+			],
+			[
+				"wp-",
+				"app/public/wp-config.php"
+			],
+			[
+				"games.php",
+				"app/public/wp-content/themes/Bettor-Wisdom/inc/games.php"
+			],
+			[
+				"func",
+				"app/public/wp-content/themes/Bettor-Wisdom/functions.php"
+			],
+			[
+				"function",
+				"app/public/wp-content/themes/Bettor-Wisdom/functions.php"
+			],
+			[
+				"_sing",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_single.scss"
+			],
+			[
+				"_vr",
+				"app/public/wp-admin/css/colors/_variables.scss"
+			],
+			[
+				"_blo",
+				"app/public/wp-content/themes/Bettor-Wisdom/support/scss/_block-base.scss"
+			],
+			[
+				"w",
+				"app/public/wp-config.php"
+			],
+			[
+				"pa",
+				"app/public/wp-includes/blocks/post-author.php"
+			],
+			[
+				"_pr",
+				"app/public/wp-content/themes/paint-denver/support/scss/_project.scss"
+			],
+			[
+				"footer",
+				"app/public/wp-content/themes/paint-denver/footer.php"
+			],
+			[
+				"_FORM",
+				"app/public/wp-content/themes/paint-denver/support/scss/_forms.scss"
+			],
+			[
+				"custom-en",
+				"app/public/wp-content/themes/paint-denver/inc/custom-endpoints.php"
+			],
+			[
+				"_fo",
+				"app/public/wp-content/themes/paint-denver/support/scss/_forms.scss"
+			],
+			[
+				"foo",
+				"app/public/wp-content/themes/paint-denver/footer.php"
+			],
+			[
+				"custom-wa",
+				"app/public/wp-content/themes/paint-denver/inc/custom-walker.php"
+			],
+			[
+				"media.php",
+				"app/public/wp-content/themes/paint-denver/inc/media.php"
+			],
+			[
+				"_for",
+				"app/public/wp-content/themes/paint-denver/support/scss/_forms.scss"
+			],
+			[
+				"cat",
+				"app/public/wp-includes/category.php"
+			],
+			[
+				"cate",
+				"app/public/wp-includes/category.php"
+			],
+			[
+				"_form",
+				"app/public/wp-content/themes/paint-denver/support/scss/_forms.scss"
+			],
+			[
+				"medi",
+				"app/public/wp-content/themes/paint-denver/inc/media.php"
+			],
+			[
+				"_fon",
+				"app/public/wp-content/themes/paint-denver/support/scss/_fonts.scss"
+			],
+			[
+				"blo",
+				"app/public/wp-includes/blocks.php"
+			],
+			[
+				"_na",
+				"app/public/wp-content/themes/paint-denver/support/scss/_navigation.scss"
+			],
+			[
+				"_font",
+				"app/public/wp-content/themes/paint-denver/support/scss/_fonts.scss"
+			],
+			[
+				"custom-",
+				"app/public/wp-content/themes/paint-denver/inc/custom-endpoints.php"
+			],
+			[
+				"_sin",
+				"app/public/wp-content/themes/paint-denver/support/scss/_single.scss"
+			],
+			[
+				"_Nav",
+				"app/public/wp-content/themes/paint-denver/support/scss/_navigation.scss"
+			],
+			[
+				"_si",
+				"app/public/wp-content/themes/paint-denver/support/scss/_single.scss"
+			],
+			[
+				"heade",
+				"app/public/wp-content/themes/paint-denver/header.php"
+			],
+			[
+				"header",
+				"app/public/wp-content/themes/paint-denver/header.php"
+			],
+			[
+				"template-fun",
+				"app/public/wp-content/themes/paint-denver/inc/template-functions.php"
+			],
+			[
+				"editor-posts",
+				"app/public/wp-content/themes/paint-denver/support/scss/editor-posts.scss"
+			],
+			[
+				"media.",
+				"app/public/wp-content/themes/paint-denver/inc/media.php"
+			],
+			[
+				"single",
+				"app/public/wp-content/plugins/listeo-core/templates/single-listing.php"
+			],
+			[
+				"page.php",
+				"app/public/wp-content/themes/listeo-child/page.php"
+			],
+			[
+				"html-gif",
+				"app/public/wp-content/themes/listeo-child/woocommerce/emails/html-gift-card-container.php"
+			],
+			[
+				"sideba",
+				"app/public/wp-content/themes/listeo/sidebar-listing.php"
+			],
+			[
+				"form-cou",
+				"app/public/wp-content/plugins/woocommerce/templates/checkout/form-coupon.php"
+			],
+			[
+				"booking",
+				"app/public/wp-content/plugins/listeo-core/templates/booking.php"
+			],
+			[
+				"form-p",
+				"app/public/wp-content/plugins/woocommerce/templates/checkout/form-pay.php"
+			],
+			[
+				"terms.php",
+				"app/public/wp-content/plugins/woocommerce/templates/checkout/terms.php"
+			],
+			[
+				"form-coup",
+				"app/public/wp-content/plugins/woocommerce/templates/checkout/form-coupon.php"
+			],
+			[
+				"single-listing-re",
+				"app/public/wp-content/plugins/listeo-core/templates/single-partials/single-listing-reviews.php"
+			],
+			[
+				"single-listing-fea",
+				"app/public/wp-content/plugins/listeo-core/templates/single-partials/single-listing-features.php"
+			],
+			[
+				"_edi",
+				"app/public/wp-content/themes/twentytwentyone/assets/sass/05-blocks/button/_editor.scss"
+			],
+			[
+				"page",
+				"app/public/wp-content/themes/listeo-child/page.php"
+			],
+			[
+				"booking.php",
+				"app/public/wp-content/plugins/listeo-core/templates/booking.php"
+			],
+			[
+				"single-lis",
+				"app/public/wp-content/plugins/listeo-core/templates/single-listing.php"
+			],
+			[
+				"sidebar-listing",
+				"app/public/wp-content/themes/listeo/sidebar-listing.php"
+			],
+			[
+				"rarewaters-comments.php",
+				"app/public/rarewaters-comments.php"
+			],
+			[
+				"giftcar",
+				"app/public/wp-content/themes/listeo-child/woocommerce/myaccount/giftcards.php"
+			],
+			[
+				"class-wc-gc-account.php",
+				"app/public/wp-content/plugins/woocommerce-gift-cards/includes/class-wc-gc-account.php"
+			],
+			[
+				"class-wc-gif",
+				"app/public/wp-content/plugins/woocommerce-gift-cards/includes/class-wc-gc-gift-card.php"
+			],
+			[
+				"gift-card-data.php",
+				"app/public/wp-content/plugins/woocommerce-gift-cards/includes/data-stores/class-wc-gc-gift-card-data.php"
+			],
+			[
+				"templa",
+				"app/public/wp-content/themes/morgan-rosel/inc/template-functions.php"
+			],
+			[
+				"web",
+				"app/public/wp-content/themes/morgan-rosel/support/webpack.config.js"
+			],
+			[
+				"_bi",
+				"app/public/wp-content/themes/morgan-rosel/support/scss/_bios.scss"
+			],
+			[
+				"main.js",
+				"app/public/wp-content/themes/morgan-rosel/support/assets/js/main.js"
+			],
+			[
+				"_foote",
+				"app/public/wp-content/themes/morgan-rosel/support/scss/_footer.scss"
+			],
+			[
+				"_t",
+				"app/public/wp-content/themes/morgan-rosel/support/scss/_table.scss"
+			],
+			[
+				"resourc",
+				"app/public/wp-content/themes/morgan-rosel/support/components/ResourceLoader.js"
+			],
+			[
+				"_bio",
+				"app/public/wp-content/themes/morgan-rosel/support/scss/_bios.scss"
+			],
+			[
+				"sing",
+				"app/public/wp-content/themes/morgan-rosel/single.php"
+			],
+			[
+				"page-b",
+				"app/public/wp-content/themes/morgan-rosel/page-boilerplate.php"
+			],
+			[
+				"singl",
+				"app/public/wp-content/themes/morgan-rosel/single.php"
+			],
+			[
+				"navigat",
+				"app/public/wp-content/themes/morgan-rosel/js/navigation.js"
+			],
+			[
+				"template",
+				"app/public/wp-content/themes/morgan-rosel/inc/template-functions.php"
+			],
+			[
+				"Resou",
+				"app/public/wp-content/themes/morgan-rosel/support/components/ResourceLoader.js"
+			],
+			[
+				"_bios",
+				"app/public/wp-content/themes/morgan-rosel/support/scss/_bios.scss"
+			],
+			[
+				"foote",
+				"app/public/wp-content/themes/morgan-rosel/footer.php"
+			],
+			[
+				"media",
+				"app/public/wp-content/themes/morgan-rosel/inc/media.php"
+			],
+			[
+				"med",
+				"app/public/wp-content/themes/morgan-rosel/inc/media.php"
+			],
+			[
+				"editor.sc",
+				"app/public/wp-content/themes/morgan-rosel/support/scss/editor.scss"
+			],
+			[
+				"_bas",
+				"app/public/wp-content/themes/morgan-rosel/support/scss/_base.scss"
+			],
+			[
+				"Icons",
+				"app/public/wp-content/themes/morgan-rosel/support/components/Icons.js"
+			],
+			[
+				"webpac",
+				"app/public/wp-content/themes/morgan-rosel/support/webpack.config.js"
+			],
+			[
+				"swiper-bundle.min.css",
+				"app/public/wp-content/themes/morgan-rosel/support/node_modules/swiper/swiper-bundle.min.css"
+			],
+			[
+				"content",
+				"app/public/wp-content/themes/morgan-rosel/template-parts/content-whitepaper.php"
+			],
+			[
+				"content-whi",
+				"app/public/wp-content/themes/morgan-rosel/template-parts/content-whitepaper.php"
+			],
+			[
+				"footer-post",
+				"app/public/wp-content/themes/morgan-rosel/template-parts/footer-post.php"
+			],
+			[
+				"temp",
+				"app/public/wp-content/themes/morgan-rosel/inc/template-functions.php"
+			],
+			[
+				"cont",
+				"app/public/wp-content/themes/morgan-rosel/template-parts/content.php"
+			],
+			[
+				"content.php",
+				"app/public/wp-content/themes/morgan-rosel/template-parts/content.php"
+			],
+			[
+				"media.p",
+				"app/public/wp-content/themes/morgan-rosel/inc/media.php"
+			],
+			[
+				"_button",
+				"app/public/wp-content/themes/twentynineteen/sass/forms/_buttons.scss"
+			],
+			[
+				"navi",
+				"app/public/wp-content/themes/concero-theme/js/navigation.js"
+			],
+			[
+				"he",
+				"app/public/wp-content/themes/concero-theme/header.php"
+			],
+			[
+				"arch",
+				"wp-content/themes/red-egg/app/Controllers/ArchiveCaseStudy.php"
+			],
+			[
+				"setup.php",
+				"wp-content/themes/red-egg/app/setup.php"
+			],
+			[
+				"social.bl",
+				"wp-content/themes/red-egg/resources/views/social.blade.php"
+			],
+			[
+				"filt",
+				"wp-content/themes/red-egg/app/filters.php"
+			],
+			[
+				"archive",
+				"wp-content/themes/red-egg/app/Controllers/ArchiveCaseStudy.php"
+			],
+			[
+				"archivecas",
+				"wp-content/themes/red-egg/app/Controllers/ArchiveCaseStudy.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "mor",
+		"selected_items":
+		[
+			[
+				"mor",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"mo",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"ag",
+				"~/Local Sites/agentsync/agent-sync.sublime-project"
+			],
+			[
+				"agn",
+				"~/Local Sites/agentsync/agent-sync.sublime-project"
+			],
+			[
+				"pai",
+				"~/Local Sites/paint-denver/paint-denver.sublime-project"
+			],
+			[
+				"red",
+				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
+			],
+			[
+				"re",
+				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
+			],
+			[
+				"pa",
+				"~/Local Sites/paint-denver/paint-denver.sublime-project"
+			],
+			[
+				"fa",
+				"~/Desktop/FAS-THEME/fas-theme.sublime-workspace"
+			],
+			[
+				"more",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"pip",
+				"~/Local Sites/piper-electric-new/piper-original-site.sublime-project"
+			],
+			[
+				"pain",
+				"~/Local Sites/paint-denver/paint-denver.sublime-project"
+			],
+			[
+				"agne",
+				"~/Local Sites/agentsync/agent-sync.sublime-project"
+			],
+			[
+				"ra",
+				"~/Local Sites/rarewaters/rarewaters.sublime-workspace"
+			],
+			[
+				"rare",
+				"~/Local Sites/rarewaters/rarewaters.sublime-workspace"
+			],
+			[
+				"a",
+				"~/Local Sites/agentsync/agent-sync.sublime-project"
+			],
+			[
+				"agen",
+				"~/Local Sites/agentsync/agent-sync.sublime-project"
+			],
+			[
+				"rar",
+				"~/Local Sites/rarewaters/rarewaters.sublime-workspace"
+			],
+			[
+				"am",
+				"~/Local Sites/amwa/amwa.sublime-project"
+			],
+			[
+				"rae",
+				"~/Local Sites/rarewaters/rarewaters.sublime-workspace"
+			],
+			[
+				"age",
+				"~/Local Sites/agentsync/agent-sync.sublime-project"
+			],
+			[
+				"sla",
+				"/Applications/MAMP/htdocs/slack-duplicate/slack.sublime-project"
+			],
+			[
+				"con",
+				"/Applications/MAMP/htdocs/concero/concero.sublime-project"
+			],
+			[
+				"per",
+				"~/Local Sites/perceptive-leaders/perceptive-leaders.sublime-project"
+			],
+			[
+				"pe",
+				"~/Local Sites/perceptive-leaders/perceptive-leaders.sublime-project"
+			],
+			[
+				"r",
+				"/Applications/MAMP/htdocs/redegg/redd-egg.sublime-project"
+			],
+			[
+				"reg",
+				"~/Local Sites/red-egg-marketing/red-egg-marketing.sublime-workspace"
+			],
+			[
+				"rm",
+				"~/Local Sites/rmlefcu/rmlefcu.sublime-project"
+			],
+			[
+				"v",
+				"~/Local Sites/vdk-tools-clone/vdk-clone.sublime-project"
+			],
+			[
+				"emu",
+				"/Applications/MAMP/htdocs/emulate-bio/emulate.sublime-project"
+			],
+			[
+				"gl",
+				"/Applications/MAMP/htdocs/glance-networks-master/glance-master.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 340.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

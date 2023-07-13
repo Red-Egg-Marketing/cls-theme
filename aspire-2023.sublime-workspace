@@ -1,0 +1,1530 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"ini",
+				"initialOpen"
+			],
+			[
+				"set",
+				"setAttributes"
+			],
+			[
+				"bg",
+				"bgColor"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"lig",
+				"lighter-blue"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"b",
+				"blockId"
+			],
+			[
+				"bloc",
+				"block_attributes"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"blo",
+				"block_attributes"
+			],
+			[
+				"block",
+				"blockId"
+			],
+			[
+				"v",
+				"View"
+			],
+			[
+				"Pa",
+				"PaddingSelector"
+			],
+			[
+				"In",
+				"InspectorControls"
+			],
+			[
+				"pa",
+				"paddingright"
+			],
+			[
+				"padd",
+				"paddingleft"
+			],
+			[
+				"padding",
+				"paddingright"
+			],
+			[
+				"Fle",
+				"FlexItem"
+			],
+			[
+				"Inp",
+				"InspectorControls"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"cat",
+				"category"
+			],
+			[
+				"re",
+				"resources"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"act",
+				"activateCategories"
+			],
+			[
+				"Stu",
+				"Study"
+			],
+			[
+				"ligh",
+				"lighter-blue"
+			],
+			[
+				"li",
+				"light-blue"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"dar",
+				"dark-blue"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"cas",
+				"case-studies"
+			],
+			[
+				"p",
+				"padding-bottom"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"I",
+				"IconSolidLibrary"
+			],
+			[
+				"sele",
+				"selectTax"
+			],
+			[
+				"col",
+				"columnwidth"
+			],
+			[
+				"colum",
+				"columnwidth"
+			],
+			[
+				"a",
+				"aspire-blocks"
+			],
+			[
+				"all",
+				"allowBlocks"
+			],
+			[
+				"icon",
+				"iconSlug"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"scr",
+				"scrolltrigger"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"tra",
+				"translateX"
+			],
+			[
+				"Text",
+				"TextareaControl"
+			],
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"light",
+				"light-blue"
+			],
+			[
+				"la",
+				"layer8"
+			],
+			[
+				"fore",
+				"foreground"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"layer",
+				"layer4"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"spe",
+				"speedModifier"
+			],
+			[
+				"for",
+				"formattedTime"
+			],
+			[
+				"ga",
+				"gameTime"
+			],
+			[
+				"fill",
+				"fillText"
+			],
+			[
+				"time",
+				"timeLimit"
+			],
+			[
+				"game",
+				"gameTime"
+			],
+			[
+				"win",
+				"winningScore"
+			],
+			[
+				"gam",
+				"gameOver"
+			],
+			[
+				"en",
+				"enemyTimer"
+			],
+			[
+				"enemy",
+				"enemyInterval"
+			],
+			[
+				"ene",
+				"enemies"
+			],
+			[
+				"speed",
+				"speedX"
+			],
+			[
+				"del",
+				"deltaTime"
+			],
+			[
+				"amm",
+				"ammoInterval"
+			],
+			[
+				"ammo",
+				"ammoTimer"
+			],
+			[
+				"pro",
+				"projectile"
+			],
+			[
+				"c",
+				"canvas"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"cont",
+				"container-fluid"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"list",
+				"list-style-position"
+			],
+			[
+				"fig",
+				"figcaption"
+			],
+			[
+				"att",
+				"attribute"
+			],
+			[
+				"class",
+				"classProp"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"o",
+				"opacity"
+			],
+			[
+				"translate",
+				"translateX"
+			],
+			[
+				"tran",
+				"translateY"
+			],
+			[
+				"ro",
+				"rotate3d"
+			],
+			[
+				"tr",
+				"translateY"
+			],
+			[
+				"left-p",
+				"left-partial-box-plane"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"bor",
+				"border-top-color"
+			],
+			[
+				"sel",
+				"selectTax"
+			],
+			[
+				"ta",
+				"taxId"
+			],
+			[
+				"Sea",
+				"searchParams"
+			],
+			[
+				"sear",
+				"searchParams"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"getElementsBy",
+				"getElementsByTagName"
+			],
+			[
+				"bui",
+				"buildQueryParam"
+			],
+			[
+				"se",
+				"searchParams"
+			],
+			[
+				"new",
+				"newUrl"
+			],
+			[
+				"tax",
+				"taxonomy"
+			],
+			[
+				"bu",
+				"buildSearchParams"
+			],
+			[
+				"build",
+				"buildSearchParams"
+			],
+			[
+				"resou",
+				"resources"
+			],
+			[
+				"case-t",
+				"case-study"
+			],
+			[
+				"poa",
+				"padding-bottom"
+			],
+			[
+				"seel",
+				"selectType"
+			],
+			[
+				"type",
+				"typePost"
+			],
+			[
+				"pos",
+				"postTruthy"
+			],
+			[
+				"post",
+				"postTaxes"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"s",
+				"selectTax"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"getElem",
+				"getElementsByName"
+			],
+			[
+				"typ",
+				"typePost"
+			],
+			[
+				"ite",
+				"iterator"
+			],
+			[
+				"po",
+				"post_value"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"resour",
+				"resourcelist"
+			],
+			[
+				"array_ke",
+				"array_key_exists"
+			],
+			[
+				"print",
+				"print_r()"
+			],
+			[
+				"bg-colo",
+				"bg-color-7"
+			],
+			[
+				"brand",
+				"branding-project"
+			],
+			[
+				"inn",
+				"innerHTML"
+			],
+			[
+				"quer",
+				"querySelector"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jacoblang/Local Sites/aspire-denver/app/public/wp-content/themes/aspire-2023/support/blocks/icon-rows/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire-denver/app/public/wp-content/themes/aspire-2023/support/package.json",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/icon-rows/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/icon-cta/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/_block-base.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/text-card/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/_variables.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/icon-rows/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/image-link/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/hero-text/style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/hero/style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/section-columns/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/image-text-columns/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/hero/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/text-cards-grid/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/image-embed/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/filter-resources/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/hero/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/image-embed/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/image-embed/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tab/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tab/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/grid-icons/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tab/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tab-content/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/BackgroundColor.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/columns-list/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/columns-list/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/columns-list/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/columns-list/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/SearchResources.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/ResourceCard.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/BackgroundSelector.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/Header.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/Content.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/Anchor.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/Columns-Widths.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/progress-block/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/bio/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/hero-text/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/editor.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/style.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/section-header/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/hero-text/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/section-header/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/selected-case-study/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/functions.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/_navigation.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/image-text-columns/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/_base.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/filter-resources/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/_single.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/selected-projects/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/selected-projects/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/template-parts/content.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/js-compile/filter-posts.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/inc/custom-endpoints.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/category.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/selected-projects/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/selected-projects/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/js-compile/filter-resources.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/cta/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/_fonts.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/_footer.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/filter-resources/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/footer.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/grid-icons/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tabs/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tabs/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tab-group/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tab-group/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tab-group/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/tabs/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/selected-case-study/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-includes/blocks.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/Padding.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/text-cards-grid/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/text-cards-grid/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/text-cards-grid/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/selected-case-study/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/selected-case-study/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/case-study/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/cta/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/section-header/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/section-header/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/cta/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/cta/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/image-text-columns/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/image-text-columns/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/header.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/plugins/gs-team-members-premium/assets/admin/js/gs-team-shortcode.min.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/template-parts/footer-post.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/inc/template-functions.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/twentytwentyone/inc/template-functions.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/sidebar.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/scss/_buttons.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/selected-case-study/selected-case-studies.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/case-study/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/case-study/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/template-parts/content-case-studies.php",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/savings-calculator/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/node_modules/lodash/_baseRandom.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/Icons.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/contact/_style-block.scss",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/front-end.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/filter-resources/index.js",
+		"/Users/jacoblang/Desktop/aspire-logo.svg",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/content-block/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/Columns.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/progress-block/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/ColorSelector.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/components/ImageComp.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/feature-section/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/feature-section/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/section-columns/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/icon-rows/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/content-block/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/icon-rows/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/contact-content/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/contact/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/content-block/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/contact/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/contact-content/edit.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/text-card/index.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/icon-cta/save.js",
+		"/Users/jacoblang/Local Sites/aspire/app/public/wp-content/themes/aspire-2023/support/blocks/icon-cta/index.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "aspire-2023.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"_b",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_block-base.scss"
+			],
+			[
+				"_var",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_variables.scss"
+			],
+			[
+				"function",
+				"app/public/wp-content/themes/aspire-2023/functions.php"
+			],
+			[
+				"_va",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_variables.scss"
+			],
+			[
+				"_na",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_navigation.scss"
+			],
+			[
+				"_bloc",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_block-base.scss"
+			],
+			[
+				"_sin",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_single.scss"
+			],
+			[
+				"funct",
+				"app/public/wp-content/themes/aspire-2023/functions.php"
+			],
+			[
+				"_nav",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_navigation.scss"
+			],
+			[
+				"_n",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_navigation.scss"
+			],
+			[
+				"custom-en",
+				"app/public/wp-content/themes/aspire-2023/inc/custom-endpoints.php"
+			],
+			[
+				"_font",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_fonts.scss"
+			],
+			[
+				"_block",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_block-base.scss"
+			],
+			[
+				"_foo",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_footer.scss"
+			],
+			[
+				"footer",
+				"app/public/wp-content/themes/aspire-2023/footer.php"
+			],
+			[
+				"_footer",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_footer.scss"
+			],
+			[
+				"blocks.php",
+				"app/public/wp-content/themes/aspire-2023/support/blocks.php"
+			],
+			[
+				"block",
+				"app/public/wp-includes/blocks.php"
+			],
+			[
+				"header",
+				"app/public/wp-content/themes/aspire-2023/header.php"
+			],
+			[
+				"template-fun",
+				"app/public/wp-content/themes/twentytwentyone/inc/template-functions.php"
+			],
+			[
+				"footer-po",
+				"app/public/wp-content/themes/aspire-2023/template-parts/footer-post.php"
+			],
+			[
+				"content",
+				"app/public/wp-content/themes/aspire-2023/template-parts/content.php"
+			],
+			[
+				"_sing",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_single.scss"
+			],
+			[
+				"side",
+				"app/public/wp-content/themes/aspire-2023/sidebar.php"
+			],
+			[
+				"_but",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_buttons.scss"
+			],
+			[
+				"content.php",
+				"app/public/wp-content/themes/aspire-2023/template-parts/content.php"
+			],
+			[
+				"_bl",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_block-base.scss"
+			],
+			[
+				"_bar",
+				"app/public/wp-content/themes/aspire-2023/support/node_modules/lodash/_baseRandom.js"
+			],
+			[
+				"icons",
+				"app/public/wp-content/themes/aspire-2023/support/components/Icons.js"
+			],
+			[
+				"custom-end",
+				"app/public/wp-content/themes/aspire-2023/inc/custom-endpoints.php"
+			],
+			[
+				"fun",
+				"app/public/wp-content/themes/aspire-2023/functions.php"
+			],
+			[
+				"func",
+				"app/public/wp-content/themes/aspire-2023/functions.php"
+			],
+			[
+				"_reve",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_reviews.scss"
+			],
+			[
+				"_bu",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_buttons.scss"
+			],
+			[
+				"options",
+				"app/public/wp-admin/options.php"
+			],
+			[
+				"_butt",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_buttons.scss"
+			],
+			[
+				"_form",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_forms.scss"
+			],
+			[
+				"icons.js",
+				"app/public/wp-content/themes/aspire-2023/support/components/Icons.js"
+			],
+			[
+				"_for",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_forms.scss"
+			],
+			[
+				"_fon",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_fonts.scss"
+			],
+			[
+				"_blo",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_block-base.scss"
+			],
+			[
+				"_v",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_variables.scss"
+			],
+			[
+				"_block-",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_block-base.scss"
+			],
+			[
+				"_tab",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_table.scss"
+			],
+			[
+				"_base",
+				"app/public/wp-content/themes/aspire-2023/support/scss/_base.scss"
+			],
+			[
+				"nav",
+				"app/public/wp-content/themes/red-egg-2022/js/navigation.js"
+			],
+			[
+				"navig",
+				"app/public/wp-content/themes/red-egg-2022/js/navigation.js"
+			],
+			[
+				"navigation.js",
+				"app/public/wp-content/themes/red-egg-2022/js/navigation.js"
+			],
+			[
+				"_an",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_animations.scss"
+			],
+			[
+				"hea",
+				"app/public/wp-content/themes/red-egg-2022/header.php"
+			],
+			[
+				"head",
+				"app/public/wp-content/themes/red-egg-2022/header.php"
+			],
+			[
+				"header.php",
+				"app/public/wp-content/themes/red-egg-2022/header.php"
+			],
+			[
+				"_ba",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_base.scss"
+			],
+			[
+				"_page",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_page.scss"
+			],
+			[
+				"_post",
+				"app/public/wp-content/themes/red-egg/resources/assets/styles/layouts/_posts.scss"
+			],
+			[
+				"Icons.",
+				"app/public/wp-content/themes/red-egg-2022/support/components/Icons.js"
+			],
+			[
+				"blocks.",
+				"app/public/wp-content/themes/red-egg-2022/support/blocks.php"
+			],
+			[
+				"_a",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_animations.scss"
+			],
+			[
+				"_ani",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_animations.scss"
+			],
+			[
+				"_rev",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_reviews.scss"
+			],
+			[
+				"nav-hover",
+				"app/public/wp-content/themes/red-egg-2022/img/nav-open-hover.svg"
+			],
+			[
+				"_bas",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_base.scss"
+			],
+			[
+				"_fonts",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_fonts.scss"
+			],
+			[
+				"filter",
+				"app/public/wp-content/themes/red-egg-2022/support/js-compile/filter-resources.js"
+			],
+			[
+				"filter-r",
+				"app/public/wp-content/themes/red-egg-2022/support/js-compile/filter-resources.js"
+			],
+			[
+				"filter-res",
+				"app/public/wp-content/themes/red-egg-2022/support/js-compile/filter-resources.js"
+			],
+			[
+				"filter-ico",
+				"app/public/wp-content/themes/red-egg-2022/img/filter-icon.svg"
+			],
+			[
+				"endpo",
+				"app/public/wp-content/themes/red-egg-2022/inc/custom-endpoints.php"
+			],
+			[
+				"_nv",
+				"app/public/wp-content/themes/red-egg/node_modules/core-js/modules/_a-number-value.js"
+			],
+			[
+				"_button",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_buttons.scss"
+			],
+			[
+				"flip-card",
+				"app/public/wp-content/themes/red-egg-2022/support/blocks/flip-card/_style-block.scss"
+			],
+			[
+				"nav-op",
+				"app/public/wp-content/themes/red-egg-2022/img/nav-open.svg"
+			],
+			[
+				"nav-clos",
+				"app/public/wp-content/themes/red-egg-2022/img/nav-close.svg"
+			],
+			[
+				"bloc",
+				"app/public/wp-includes/blocks.php"
+			],
+			[
+				"_bio",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_bios.scss"
+			],
+			[
+				"block-bas",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_block-base.scss"
+			],
+			[
+				"inde",
+				"app/public/wp-content/plugins/extend-gutenberg-blocks/blocks/index.js"
+			],
+			[
+				"right",
+				"app/public/wp-content/themes/red-egg-2022/img/right-chevron-grey.svg"
+			],
+			[
+				"blocks.ph",
+				"app/public/wp-content/themes/red-egg-2022/support/blocks.php"
+			],
+			[
+				"functions",
+				"app/public/wp-content/themes/red-egg-2022/functions.php"
+			],
+			[
+				"right-ch",
+				"app/public/wp-content/themes/red-egg-2022/img/right-chevron-orange.svg"
+			],
+			[
+				"calen",
+				"app/public/wp-content/themes/red-egg-2022/img/calendar-red.svg"
+			],
+			[
+				"red-check",
+				"app/public/wp-content/themes/red-egg-2022/img/red-check.svg"
+			],
+			[
+				"_",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_buttons.scss"
+			],
+			[
+				"cale",
+				"app/public/wp-content/themes/red-egg-2022/img/calendar.svg"
+			],
+			[
+				"",
+				"app/public/wp-content/themes/red-egg-2022/support/blocks.php"
+			],
+			[
+				"index.js",
+				"app/public/wp-content/plugins/extend-gutenberg-blocks/blocks/index.js"
+			],
+			[
+				"foote",
+				"app/public/wp-content/themes/red-egg-2022/footer.php"
+			],
+			[
+				"foo",
+				"app/public/wp-content/themes/red-egg-2022/footer.php"
+			],
+			[
+				"menu-fu",
+				"app/public/wp-content/themes/red-egg-2022/inc/menu-functions.php"
+			],
+			[
+				"nav-open",
+				"app/public/wp-content/themes/red-egg-2022/img/nav-open.svg"
+			],
+			[
+				"_fo",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_fonts.scss"
+			],
+			[
+				"_rvew",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_reviews.scss"
+			],
+			[
+				"_review",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_reviews.scss"
+			],
+			[
+				"custom-",
+				"app/public/wp-content/themes/red-egg-2022/inc/custom-endpoints.php"
+			],
+			[
+				"left-ch",
+				"app/public/wp-content/themes/red-egg-2022/img/left-chevron-1.svg"
+			],
+			[
+				"right-",
+				"app/public/wp-content/themes/red-egg-2022/img/right-chevron-1.svg"
+			],
+			[
+				"_rve",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_reviews.scss"
+			],
+			[
+				"calend",
+				"app/public/wp-content/themes/red-egg-2022/img/calendar.svg"
+			],
+			[
+				"fi",
+				"app/public/wp-content/themes/red-egg-2022/img/filter-icon.svg"
+			],
+			[
+				"blocks.p",
+				"app/public/wp-content/themes/red-egg-2022/support/blocks.php"
+			],
+			[
+				"functions.php",
+				"app/public/wp-content/themes/red-egg-2022/functions.php"
+			],
+			[
+				"templa",
+				"app/public/wp-content/themes/red-egg-2022/inc/template-functions.php"
+			],
+			[
+				"f",
+				"app/public/wp-content/themes/red-egg-2022/functions.php"
+			],
+			[
+				"_f",
+				"app/public/wp-content/themes/red-egg-2022/support/scss/_footer.scss"
+			],
+			[
+				"front-page",
+				"app/public/wp-content/themes/red-egg/resources/views/front-page.blade.php"
+			],
+			[
+				"about",
+				"app/public/wp-admin/about.php"
+			],
+			[
+				"save",
+				"app/public/wp-content/plugins/extend-gutenberg-blocks/blocks/blog-posts/save.js"
+			],
+			[
+				"front-",
+				"app/public/wp-content/themes/red-egg/resources/views/front-page.blade.php"
+			],
+			[
+				"front",
+				"app/public/wp-content/themes/red-egg/resources/views/front-page.blade.php"
+			],
+			[
+				"fron",
+				"app/public/wp-content/themes/red-egg/resources/views/front-page.blade.php"
+			],
+			[
+				"blogca",
+				"app/public/wp-content/plugins/extend-gutenberg-blocks/components/BlogCard.js"
+			],
+			[
+				"app/set",
+				"app/public/wp-content/themes/red-egg/app/setup.php"
+			],
+			[
+				"home.bla",
+				"app/public/wp-content/themes/red-egg/resources/views/home.blade.php"
+			],
+			[
+				"Home",
+				"app/public/wp-content/themes/red-egg/app/Controllers/Home.php"
+			],
+			[
+				"main.s",
+				"app/public/wp-content/themes/red-egg/resources/assets/styles/main.scss"
+			],
+			[
+				"home",
+				"app/public/wp-content/themes/red-egg/app/Controllers/Home.php"
+			],
+			[
+				"social.blad",
+				"app/public/wp-content/themes/red-egg/resources/views/social.blade.php"
+			],
+			[
+				"wp-con",
+				"wp-config.php"
+			],
+			[
+				"arch",
+				"wp-content/themes/red-egg/app/Controllers/ArchiveCaseStudy.php"
+			],
+			[
+				"setup.php",
+				"wp-content/themes/red-egg/app/setup.php"
+			],
+			[
+				"social.bl",
+				"wp-content/themes/red-egg/resources/views/social.blade.php"
+			],
+			[
+				"filt",
+				"wp-content/themes/red-egg/app/filters.php"
+			],
+			[
+				"archive",
+				"wp-content/themes/red-egg/app/Controllers/ArchiveCaseStudy.php"
+			],
+			[
+				"archivecas",
+				"wp-content/themes/red-egg/app/Controllers/ArchiveCaseStudy.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 682.0,
+		"last_filter": "aspire-fin",
+		"selected_items":
+		[
+			[
+				"aspire-fin",
+				"~/Local Sites/aspire-denver/app/public/wp-content/themes/aspire-2023/aspire-final.sublime-project"
+			],
+			[
+				"re",
+				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
+			],
+			[
+				"asp",
+				"~/Local Sites/aspire/aspire.sublime-workspace"
+			],
+			[
+				"p",
+				"~/Local Sites/paint-denver/paint-denver.sublime-project"
+			],
+			[
+				"red",
+				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
+			],
+			[
+				"more",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"gams",
+				"/Applications/MAMP/htdocs/red-egg-game/red-egg-game.sublime-project"
+			],
+			[
+				"game",
+				"/Applications/MAMP/htdocs/red-egg-game/red-egg-game.sublime-project"
+			],
+			[
+				"gam",
+				"/Applications/MAMP/htdocs/red-egg-game/red-egg-game.sublime-project"
+			],
+			[
+				"yo",
+				"~/Local Sites/yosi-health/app/public/wp-content/themes/Yosi/yosi.sublime-project"
+			],
+			[
+				"yos",
+				"~/Local Sites/yosi-health/app/public/wp-content/themes/Yosi/yosi.sublime-project"
+			],
+			[
+				"lat",
+				"~/Local Sites/latitude-fullsite/latitude-fullsite.sublime-project"
+			],
+			[
+				"you",
+				"~/Local Sites/yosi-health/app/public/wp-content/themes/Yosi/yosi.sublime-project"
+			],
+			[
+				"y",
+				"~/Local Sites/yosi/yosi-health.sublime-project"
+			],
+			[
+				"rest",
+				"~/Local Sites/restricted-stock/Restricted-Stock.sublime-project"
+			],
+			[
+				"bas",
+				"~/Local Sites/base-camp-cyclery-new/basecamp-2022.sublime-project"
+			],
+			[
+				"ar",
+				"~/Local Sites/arctic-warmers/arctic-warmer.sublime-project"
+			],
+			[
+				"be",
+				"~/Local Sites/bettor-wisdom-latest-version/bettor-wisdom.sublime-project"
+			],
+			[
+				"betto",
+				"~/Local Sites/bettor-wisdom-latest-version/bettor-wisdom.sublime-project"
+			],
+			[
+				"pain",
+				"~/Local Sites/paint-denver/paint-denver.sublime-project"
+			],
+			[
+				"amw",
+				"~/Local Sites/amwa/amwa.sublime-project"
+			],
+			[
+				"neb",
+				"~/Local Sites/nebraska-legal-group/nebraska-legal.sublime-project"
+			],
+			[
+				"car",
+				"~/Local Sites/car-test/car-test.sublime-project"
+			],
+			[
+				"b as",
+				"~/Local Sites/base-camp-cyclery-new/basecamp-2022.sublime-project"
+			],
+			[
+				"",
+				"~/Local Sites/piper-electric/piper-electric.sublime-project"
+			],
+			[
+				"restr",
+				"~/Local Sites/restricted-stock/Restricted-Stock.sublime-project"
+			],
+			[
+				"am",
+				"~/Local Sites/amwa/amwa.sublime-project"
+			],
+			[
+				"h1",
+				"~/Local Sites/h1h2-capital/h1h2.sublime-project"
+			],
+			[
+				"las",
+				"~/Local Sites/laser-cleanse/laser-cleanse.sublime-project"
+			],
+			[
+				"pii",
+				"~/Local Sites/piper-electric/piper-electric.sublime-project"
+			],
+			[
+				"yosi",
+				"~/Local Sites/yosi/yosi-health.sublime-project"
+			],
+			[
+				"pip",
+				"~/Local Sites/piper-electric/piper-electric.sublime-project"
+			],
+			[
+				"la",
+				"~/Local Sites/latitude-fullsite/latitude-fullsite.sublime-project"
+			],
+			[
+				"uyo",
+				"~/Local Sites/yosi-health/app/public/wp-content/themes/Yosi/yosi.sublime-project"
+			],
+			[
+				"bett",
+				"~/Local Sites/bettor-wisdom-latest-version/bettor-wisdom.sublime-project"
+			],
+			[
+				"leg",
+				"~/Local Sites/denver-legal/denver-legal-goup.sublime-project"
+			],
+			[
+				"l",
+				"~/Local Sites/latitude-fullsite/latitude-fullsite.sublime-project"
+			],
+			[
+				"fro",
+				"~/Local Sites/frost-fighter/frost-fighter.sublime-project"
+			],
+			[
+				"bio",
+				"/Applications/MAMP/htdocs/emulate-bio/emulate.sublime-workspace"
+			],
+			[
+				"mo",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"pa",
+				"~/Local Sites/paint-denver/paint-denver.sublime-project"
+			],
+			[
+				"bet",
+				"~/Local Sites/bettor-wisdom/app/public/wp-content/themes/Bettor-Wisdom/bettor-wisdom.sublime-project"
+			],
+			[
+				"in",
+				"~/Local Sites/paint-denver/paint-denver.sublime-project"
+			],
+			[
+				"rede",
+				"~/Local Sites/red-egg-production-clone/redegg-clone.sublime-project"
+			],
+			[
+				"rare",
+				"~/Local Sites/rarewaters/rarewaters.sublime-workspace"
+			],
+			[
+				"r",
+				"~/Local Sites/rarewaters/rarewaters.sublime-workspace"
+			],
+			[
+				"m",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"rm",
+				"~/Local Sites/rmlefcu/rmlefcu.sublime-project"
+			],
+			[
+				"mor",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"ag",
+				"~/Local Sites/agentsync/agent-sync.sublime-project"
+			],
+			[
+				"age",
+				"~/Local Sites/agentsync/agent-sync.sublime-project"
+			],
+			[
+				"rar",
+				"~/Local Sites/clone-rarewaters/rarewaters.sublime-project"
+			],
+			[
+				"v",
+				"~/Local Sites/vdk-tools-clone/vdk-clone.sublime-project"
+			],
+			[
+				"emu",
+				"/Applications/MAMP/htdocs/emulate-bio/emulate.sublime-project"
+			],
+			[
+				"gl",
+				"/Applications/MAMP/htdocs/glance-networks-master/glance-master.sublime-project"
+			]
+		],
+		"width": 470.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 438.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,102 @@
+.wp-block.promo {
+	width: 100%;
+	max-width: 100%;
+}
+
+.promo {
+	width: 100%;
+	max-width: 100%;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+}
+
+.promo .block-wrapper {
+	margin: 0 auto;
+	max-width: $max-cont-w;
+	width: 100%;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	@media screen and (min-width: $small-width) {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+}
+
+.promo .content-column {
+	flex: 0 100%;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	text-align: center;
+	@media screen and (min-width: $small-width) {
+		text-align: left;
+		flex: 0 82%;
+		padding-left: 4.5%;
+		padding-right: 0;
+	}
+}
+
+.promo .image {
+	flex: 0 100%;
+	@media screen and (min-width: $small-width) {
+		flex: 0 18%;
+	}
+}
+
+.promo .image {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.promo .img-container {
+	position: relative;
+	display: block;
+	width: 80%;
+	border: 5px solid white;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-top: -5.5%;
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (min-width: $small-width) {
+		width: 100%;
+		margin-bottom: -6.5%;
+		margin-top: -6.5%;
+		border: 8px solid white;
+	}
+}
+
+.promo .header-title {
+	margin-bottom: 0;
+}
+
+.promo .block-wrapper.with-bg .header-title,
+.promo .block-wrapper.with-bg .content p,
+ {
+	color: white;
+}
+
+.promo .content p {
+	font-weight: 500;
+	font-family: $font-head;
+	margin-top: 20px;
+	color: $bg-color-1;
+	font-size: 24px;
+	line-height: 30px;
+	@media screen and (min-width: $small-width) {
+		font-size: 30px;
+		line-height: 40px;
+		margin-top: 30px;
+	}
+}

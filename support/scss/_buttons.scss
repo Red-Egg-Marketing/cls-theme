@@ -1,0 +1,232 @@
+
+#CybotCookiebotDialogBodyButtonAccept,
+.buddypress .buddypress-wrap input[type=button],
+.buddypress .buddypress-wrap .button,
+.wp-block-button__link,
+a.wp-block-button__link,
+input[type="submit"],
+button.wp-button {
+	background: $light-blue;
+	color: white;
+	font-family: $font-head;
+	font-size: 14px;
+	line-height: 22px;
+	border: none;
+	padding: 13px 25px 13px;
+	border-radius: 35px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition-property: background, color;
+	transition-duration: .25s;
+	text-decoration: none;
+	letter-spacing: 0.85px;
+	&.is-small {
+		@media screen and (min-width: $small-width) {
+			font-size: 14px;
+			line-height: 19px;
+			padding: 10px 22px 11px;
+		}
+	}
+	&.bp-secondary-action, &.wp-cancel-pw {
+		background: none;
+		&:hover {
+			background: none;
+			color: $light-blue;
+		}
+	}
+	@media screen and (min-width: $small-width) {
+		font-size: 15px;
+		line-height: 26px;
+		letter-spacing: 1px;
+		padding: 14px 30px 14px;
+	}
+	&:visited {
+		color: white;
+	}
+	&:hover {
+		background: $navy;
+		color: white;
+	}
+	&[disabled] {
+		opacity: .5;
+		cursor: not-allowed;
+	}
+}
+
+div.gs_team_area .gs-team-filter-cats li a {
+	@extend .wp-block-button__link;
+	border-top: 2px solid $light-blue !important;
+	border-left: 2px solid $light-blue !important;
+	border-right: 2px solid $light-blue !important;
+	border-bottom: 4px solid $light-blue !important;
+	border-radius: 0 !important;
+	color: $light-blue !important;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px;
+		line-height: 22px !important;
+		padding: 17px 25px 17px !important;
+	}
+	&:hover {
+		background: $light-blue !important; 
+		color: white !important;
+	}
+}
+
+ul.gs-team-filter-cats li.filter.active>a {
+	background: $light-blue !important;
+	border-color: $light-blue !important;
+}
+
+
+.fixed-buttons {
+	position: relative;
+	@media screen and (min-width: $med-small-width) {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: 0;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		z-index: 9999;
+	}
+}
+
+.fixed-buttons .fixed-wrapper {
+	max-width: $max-cont-w;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	padding-left: 0;
+	padding-right: 0;
+	pointer-events: none;
+	@media screen and (min-width: $med-small-width) {
+		padding-right: 1.25rem;
+		padding-bottom: 1.25rem;
+		padding-left: 1.25rem;
+	}
+}
+
+.fixed-buttons .fixed-wrapper a.wp-block-button__link {
+	font-size: 14px;
+	line-height: 18px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	pointer-events: auto;
+	@media screen and (min-width: $small-width) {
+		font-size: 16px;
+		line-height: 20px;
+		padding: 13px 25px 13px;
+	}
+}
+
+.wp-button.is-style-solid-yellow-arrow:after,
+.wp-block-button.is-style-solid-yellow-arrow .wp-block-button__link:after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-left: 9px;
+	margin-bottom: -1px;
+	background: url(img/right-chevron-yellow.svg) no-repeat center center / 15px;
+	transition-property: transform;
+	transition-duration: .3s;
+}
+
+.wp-button.is-style-solid-yellow-arrow:hover:after,
+.wp-block-button.is-style-solid-yellow-arrow:hover .wp-block-button__link:after {
+	background: url(img/right-chevron-yellow.svg) no-repeat center center / 15px;
+}
+
+.wp-button.is-style-solid-yellow-arrow:hover:after,
+.wp-block-button.is-style-solid-yellow-arrow .wp-block-button__link:hover:after {
+	transform: translateX(5px);
+}
+
+
+.wp-button.is-style-solid-yellow,
+.wp-block-button.is-style-solid-yellow .wp-block-button__link {
+	background: $bg-color-5;
+	color: $head-color;
+}
+
+.wp-block-button__link.is-style-solid-blue-green,
+.wp-button.is-style-solid-blue-green,
+.wp-block-button.is-style-solid-blue-green .wp-block-button__link {
+	background: $teal-blue;
+	color: white;
+	&:hover {
+		color: $navy;
+		background: $orange;
+	}
+}
+
+.wp-block-button__link.is-style-solid-navy,
+.wp-button.is-style-solid-navy,
+.wp-block-button.is-style-solid-navy .wp-block-button__link {
+	background: $navy;
+	color: white;
+	&:hover {
+		color: white;
+		background: $bg-color-7;
+	}
+}
+
+.wp-block-button__link.is-style-text-yellow-arrow,
+.wp-button.is-style-text-yellow-arrow,
+.wp-block-button.is-style-text-yellow-arrow .wp-block-button__link {
+	background: none;
+	color: $light-blue;
+	padding: 0;
+	border-radius: 0;
+	border: none;
+	padding-right: 12px;
+	background:url(img/right-arrow.svg)  no-repeat center right / 7px;
+	&:hover {
+		color: navy;
+		background: transparent url(img/right-arrow-blue.svg) no-repeat center right / 7px;
+	}
+}
+
+.wp-button.is-style-text-yellow-arrow:hover:after,
+.wp-block-button.is-style-text-yellow-arrow .wp-block-button__link:hover:after {
+	transform: translateX(5px);
+}
+
+.wp-button.is-style-outline,
+.wp-block-button.is-style-outline .wp-block-button__link {
+	border: 2px solid white;
+	color: white;
+	&:hover {
+		background: white;
+		color: black;
+	}
+	&:visited {
+		color: white;
+	}
+}
+
+
+
+.wp-block-button__link:visited,
+button.wp-button:visited {	
+	color: $light-blue;
+}
+
+.wp-block-button__link:hover,
+button.wp-button:hover {
+	color: white;
+}
+
+a[download] {
+	@extend .wp-block-button__link;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 0;
+}

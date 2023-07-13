@@ -1,0 +1,63 @@
+.wp-block.shortcode-section {
+	width: 100%;
+	max-width: 100%;
+}
+
+.shortcode-section {
+	width: 100%;
+	max-width: 100%;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 6.75rem;
+	}
+}
+
+.shortcode-section > .block-wrapper {
+	width: 100%;
+	max-width: $max-cont-w;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		padding-left: 5.125rem;
+		padding-right: 5.125rem;
+	}
+}
+
+
+.shortcode-section .wprev-slick-slider {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.shortcode-section .header-intro-block {
+	padding-bottom: 0;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 0
+	}
+}
+
+.shortcode-section.testimonials-section {
+	background: url(img/paint-texture.jpg) no-repeat center center /cover;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 8rem;
+	}
+}
+
+.testimonials-section {
+	position: relative;
+}
+
+.single-member-div.active[data-category="remote"] {
+	display: block;
+}
+
+.single-member-div[data-category="remote"] {
+	display: none;
+}
+
+

@@ -1,0 +1,24 @@
+.wp-block.title-content { 
+	max-width: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	margin-top: 5.325rem;
+	margin-bottom: 4.325rem;
+}
+
+.title-content .block-wrapper {
+	max-width: 1120px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	@media screen and (min-width: $med-width + 1px) {
+		padding-left: 3.75rem;
+		padding-right: 3.75rem;
+	}
+}

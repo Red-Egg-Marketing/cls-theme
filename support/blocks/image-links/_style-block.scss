@@ -1,0 +1,130 @@
+.wp-block.image-links {
+	width: 100%;
+	max-width: 100%;
+}
+
+.image-links {
+	width: 100%;
+	padding-bottom: 4rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 6.1875rem;
+	}
+}
+
+.image-links > .block-wrapper {
+    max-width: $max-cont-w;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    @media screen and (min-width: $small-width) {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+.image-links .header-intro-block {
+	padding-bottom: 0;
+	padding-top: 1.9375rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 3.75rem;
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+.image-links .image-link {
+	height: auto;
+}
+
+.image-links .swiper-wrapper {
+	height: auto;
+}
+
+.image-swiper {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: 25px;
+	max-width: 100%;
+	@media screen and (min-width: $small-width) {
+		margin-top: 45px;
+	}
+}
+
+.image-swiper .swiper {
+	overflow: hidden;
+	width: calc(100% - 4rem);
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.swiper-button-prev {
+	// left: -2rem;
+	background: url(img/left-chevron.svg) no-repeat left center / 14px;
+	@media screen and (min-width: $small-width) {
+		// left: -2.5rem;
+		background: url(img/left-chevron.svg) no-repeat left center / 17px;
+	}
+}
+
+.swiper-button-next {
+	// right: -2rem;
+	background: url(img/right-chevron.svg) no-repeat right center / 14px;
+	@media screen and (min-width: $small-width) {
+		// right: -2.5rem;
+		background: url(img/right-chevron.svg) no-repeat right center / 17px;
+	}
+}
+
+.swiper-button-prev:after {
+	content: '';
+}
+
+.swiper-button-next:after {
+	content: '';
+}
+
+.image-swiper .swiper-wrapper > .block-editor-inner-blocks {
+	width: 100%;
+}
+
+.image-swiper .swiper-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: flex;
+	align-items: center;
+	overflow: auto;
+}
+
+.image-links.cols
+ .image-swiper .swiper-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	display: grid;
+	overflow: visible;
+	@media screen and (min-width: $small-width) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-row-gap: 45px;
+		grid-column-gap: 45px;
+	}
+}
+
+.image-links.cols [class*="swiper-button"] {
+	display: none;
+}
+
+.block-editor-block-list__block.image-links.cols .swiper-wrapper {
+	display: block;
+}
+
+.image-links.cols .swiper-wrapper {
+	display: grid;
+	@media screen and (min-width: $small-width) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-row-gap: 45px;
+		grid-column-gap: 45px;
+	}
+}
+
+.image-link .text-card {
+	text-align: center;
+}
+
+

@@ -1,0 +1,109 @@
+.wp-block.checklist {
+	max-width: 100%;
+	width: 100%;
+}
+
+.checklist {
+	width: 100%;
+	padding-bottom: 3.5rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 6.75rem;
+	}
+}
+
+.checklist h3 {
+	font-size: 24px;
+	@media screen and (min-width: $small-width) {
+		font-size: 30px;
+	}
+}
+
+.checklist > .block-wrapper > .block-editor-inner-blocks {
+	width: 100%;
+}
+
+.checklist .block-wrapper {
+	max-width: $max-cont-w;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+}
+
+.checklist .block-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.checklist .header-title, 
+.checklist .wp-block-buttons, 
+.checklist ul, {
+	width: 100%;
+	text-align: center;
+}
+
+.checklist .header-title {
+	text-transform: none;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 2.5rem;
+	}
+}
+.editor-styles-wrapper .checklist .wp-block-buttons,
+.checklist .wp-block-buttons {
+	justify-content: center;
+	margin-top: 1.875rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 3.125rem;
+	}
+}
+
+.editor-styles-wrapper .checklist ul {
+	max-width: 100%;
+}
+
+
+.editor-styles-wrapper .checklist ul,
+.editor-styles-wrapper .checklist ul li,
+.entry-content .checklist ul,
+.entry-content .checklist ul li {
+	padding-left: 0;
+}
+
+.checklist ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.checklist ul li:before,
+.editor-styles-wrapper .checklist ul li:before {
+	content: "✓";
+	color: $bg-color-7;
+}
+
+.editor-styles-wrapper .checklist ul li a,
+.editor-styles-wrapper .checklist ul li,
+.entry-content .checklist ul li,
+.entry-content .checklist ul li a, {
+	flex: 0 50%;
+	font-weight: 400;
+	color: $head-color;
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 30px;
+	list-style-type: none;
+	text-decoration: none;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 15px;
+		flex: 0 33.333333%;
+		font-size: 20px;
+		line-height: 32px;
+	}
+}

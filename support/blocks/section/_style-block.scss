@@ -1,0 +1,91 @@
+.wp-block.section-block {
+	width: 100%;
+	max-width: 100%;
+}
+
+.icon-wrapper {
+	width: 100%;
+}
+
+.icon-wrapper .icon-row {
+	width: 100%;
+	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-block.lime-green .icon-icon {
+	background: $bg-color-1;
+}
+
+.section-block .icon-icon {
+	background: $bg-color-3;
+	width: 55px;
+	height: 55px;
+	border-radius: 55px;
+	border: 4px solid white;
+	margin-bottom: -27.5px;
+	transform: translateY(-50%);
+	@media screen and (min-width: $small-width) {
+		width: 81px;
+		height: 81px;
+		border-radius: 81px;
+		border: 8px solid white;
+		margin-bottom: -40.5px;
+	}
+}
+
+.icon-icon {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-icon svg {
+	display: block;
+	width: 100% !important;
+	height: inherit;
+}
+
+.section-block .icon-icon svg {
+	max-width: 55%;
+	height: auto;
+	max-height: 40px;
+}
+
+.section-block .block-wrapper {
+	width: 100%;
+}
+
+.section-block {
+	margin-top: 3.25rem;
+	margin-bottom: 3.25rem;
+	display: flex;
+	align-items: center;
+	@media screen and (min-width: $small-width) {
+		margin-top: 7.825rem;
+		margin-bottom: 7.825rem;
+	}
+}
+
+.section-block:last-child {
+	margin-bottom: 0;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 0;
+	}
+}
+
+.section-block .block-wrapper h1,
+.section-block .block-wrapper h2,
+.section-block .block-wrapper h3,
+.section-block .block-wrapper h4,
+.section-block .block-wrapper h5,
+.section-block .block-wrapper h6,
+.section-block .block-wrapper p {
+	max-width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}

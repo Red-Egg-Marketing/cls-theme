@@ -1,0 +1,89 @@
+.page-template-page-boilerplate .entry-content {
+	max-width: 800px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	margin-top: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-template-page-boilerplate .entry-header .content-wrap {
+	padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: $small-width) {
+    	padding-left: 2.5rem;
+    	padding-right: 2.5rem;
+    }
+}
+
+.page-template-page-boilerplate .entry-header {
+	margin-top: 5.125rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 5.625rem;
+	}
+}
+
+.page-template-page-boilerplate .header-title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.single .disclosure {
+	margin-top: 2rem;
+	padding-top: 2rem;
+	border-top: 1px solid #F8AE2B;
+	@media screen and (min-width: $small-width) {
+		margin-top: 2.5rem;
+		padding-top: 2.5rem;
+	}
+}
+
+// .gs-containeer .single-member-div.col-lg-4:nth-of-type(1),  
+// .gs-containeer .single-member-div.col-lg-4:nth-of-type(2) {
+// 	@media (min-width: 1025px){
+// 		width: 50%;
+// 	}
+// }
+
+// .gs-team--fixed-height .gs-containeer .single-member-div.col-lg-4:nth-of-type(1) .single-member,
+// .gs-team--fixed-height .gs-containeer .single-member-div.col-lg-4:nth-of-type(2) .single-member {
+// 	max-height: 600px !important;
+// }
+
+.gs-team--fixed-height .single-member {
+	max-height: 450px !important;
+}
+
+.gs-team--fixed-height .single-member .gs_team_image__wrapper img {
+	object-position: top;
+}
+
+div.gs-member-name a {
+	font-weight: bold;
+	font-family: $font-body;
+	@media screen and (min-width: $small-width) {
+		font-size: 23px;
+		line-height: 36px;
+	}
+}
+
+div.gs_tm_theme23 .single-member-div {
+	margin-bottom: 45px;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.gs_team_image__wrapper {
+	height: 100%;
+}
+
+.prev-next-navigation .next a:hover, .prev-next-navigation .previous a:hover {
+	background: $bg-color-7;
+	border: 1px solid $bg-color-7;
+}

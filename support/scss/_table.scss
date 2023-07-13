@@ -1,0 +1,69 @@
+.wp-block-table table {
+	margin-bottom: 0;
+}
+
+.wp-block-table table th {
+	font-family: $font-head-2;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 0.5rem;
+	@media screen and (min-width: $small-width) {
+		font-size: 24px;
+		padding: 1rem;
+	}
+}
+
+.wp-block-table table td {
+	font-family: $font-body;
+	padding: 0.5rem 1rem;
+	font-weight: 300;
+	line-height: 27px;
+	font-size: 16px;
+	white-space: nowrap;
+	@media screen and (min-width: $small-width) {
+		padding: 1.25rem 1rem;
+		font-size: 18px;
+		line-height: 29px;
+		white-space: normal;
+	}
+}
+
+.wp-block-table table td > a,
+.wp-block-table table td > img {
+	display: inline-block;
+	margin-right: 2.5%;
+}
+
+.wp-block-table table td img {
+	max-width: 55px;
+	@media screen and (min-width: $small-width) {
+		max-width: inherit;
+	}
+}
+
+.wp-block-table table {
+	margin-top: 2rem;
+}
+
+.wp-block-table {
+	border-collapse: collapse;
+}
+
+.wp-block-table tr {
+	border-bottom: 1px solid black;
+}
+
+.wp-block-table td,
+.wp-block-table th {
+	text-align: left;
+}
+
+.wp-block-table th {
+	background: $light-blue;
+	color: white;
+}
+
+td.year-sum {
+	font-weight: bold;
+	background: $bg-color-7;
+}

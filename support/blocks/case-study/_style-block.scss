@@ -1,0 +1,130 @@
+.wp-block.case-study {
+	max-width: 100%;
+	width: 100%;
+}
+
+.case-study {
+	padding-top: 4.125rem;
+	padding-bottom: 4.125rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 7.1825rem;
+		padding-bottom: 7.1825rem;
+	}
+}
+
+.case-study .wp-block-button {
+	display: none;
+}
+
+.case-study .block-wrapper {
+	max-width: 1540px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.case-study .stat-description {
+	padding-left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		width: 70%;
+		padding-right: 2em;
+	}
+}
+
+.case-study .stats {
+	width: 100%;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		width: 30%;
+		padding-left: 2rem;
+	}
+}
+
+.case-study .stat {
+	margin-bottom: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 2rem;
+	}
+}
+
+.quote {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin-top: 1.75rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 2.75rem;
+	}
+}
+
+.quote .content {
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 87%;
+	}
+}
+
+.quote .image {
+	width: 90px;
+	padding-right: 0.75rem;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	@media screen and (min-width: $small-width) {
+		padding-right: 2rem;
+		margin-bottom: 0;
+		width: 13%;
+	}
+}
+
+.quote .img-container {
+	position: relative;
+	overflow: hidden;
+	border-radius: 150px;
+}
+
+.quote img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+p.quote-snippet {
+	font-size: 16px;
+	line-height: 23px;
+	color: $bg-color-7;
+	font-weight: 400;
+	@media screen and (min-width: $small-width) {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+p.quote-name {
+	color: $teal-blue;
+	margin-top: 0;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 0;
+	@media screen and (min-width: $small-width) {
+		font-size: 20px;
+		line-height: 25px;
+	}
+}
+
+p.quote-title {
+	color: $teal-blue;
+	font-size: 16px;
+	line-height: 26px;
+	margin-top: 0;
+	font-style: italic;
+	@media screen and (min-width: $small-width) {
+		font-size: 16px;
+		line-height: 30px;
+	}
+}

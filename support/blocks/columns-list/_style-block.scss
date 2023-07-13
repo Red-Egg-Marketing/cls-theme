@@ -1,0 +1,116 @@
+.wp-block.columns-list {
+	max-width: 100%;
+	width: 100%;
+}
+
+.columns-list h3 {
+	margin-bottom: 15px;
+}
+
+.columns-list {
+	width: 100%;
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6.75rem;
+		padding-bottom: 6.75rem;
+	}
+}
+
+.columns-list .section-header {
+	padding-top: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 0;
+	}
+}
+
+.columns-list .block-wrapper {
+	max-width: $max-cont-w;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	@media screen and (min-width: $small-width) {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+}
+
+.columns-list.narrow-width .block-wrapper {
+	max-width: $max-cont-w * .725;
+}
+
+.columns-list .section-header {
+	width: 100%;
+	max-width: 100%;
+}
+
+.columns-list > .block-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block-heading,
+.columns-list > .block-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout > ul,
+.columns-list .block-wrapper > ul,
+.columns-list .block-wrapper > .wp-block-heading {
+	width: 50%;
+	margin-bottom: 25px;
+	// padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		width: 33.3333%;
+		margin-bottom: 15px;
+	}
+}
+
+.columns-list .block-wrapper .wp-block-buttons {
+	width: 100%;
+}
+
+.columns-list > .block-wrapper > .block-editor-inner-blocks {
+	width: 100%;
+}
+
+.columns-list > .block-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.columns-list .header-title, 
+.columns-list .wp-block-buttons {
+	width: 100%;
+	text-align: center;
+}
+
+.columns-list .header-title {
+	text-transform: none;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 2.5rem;
+	}
+}
+.editor-styles-wrapper .columns-list .wp-block-buttons,
+.columns-list .wp-block-buttons {
+	justify-content: center;
+	margin-top: 1.875rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 3.125rem;
+	}
+}
+
+.editor-styles-wrapper .columns-list ul li {
+	position: relative;
+}
+
+.entry-content .columns-list ul,
+.editor-styles-wrapper .columns-list ul {
+	padding-left: 0;
+}
+
+.editor-styles-wrapper .columns-list ul,
+.editor-styles-wrapper .columns-list ul li,
+.entry-content .columns-list ul,
+.entry-content .columns-list ul li {
+	text-align: left;
+	@media screen and (min-width: $small-width) {
+		text-align: left;
+	}
+}

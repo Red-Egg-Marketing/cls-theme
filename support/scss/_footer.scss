@@ -1,0 +1,338 @@
+.site-footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: $bg-color-7;
+	@media screen and (min-width: $small-width) {
+		padding-top: 7.5rem;
+		padding-bottom: 25px;
+	}
+}
+
+.site-footer .wrapper {
+	max-width: $max-cont-w - 50px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.site-footer .custom-logo {
+	max-width: 55%;
+	margin: 0 auto 15px;
+	@media screen and (min-width: $small-width) {
+		max-width: 170px;
+		margin: 0 0 15px;
+	}
+}
+
+.site-footer .wrapper .col {
+	width: 100%;
+	margin-top: 2.5rem;
+	@media screen and (min-width: $small-width) {
+		flex: 0 calc(33.333% - 2.5rem);
+		margin-top: 0;
+		padding-right: 1.25rem;
+		padding-left: 1.25rem;
+	}
+}
+
+
+.site-footer .contact-col {
+	display: block;
+}
+
+.site-footer .menu ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.site-footer .menu-tertiary-footer-container {
+	width: 100%;
+}
+
+.site-footer .menu-tertiary-footer-container .menu {
+	width: 100%;
+}
+
+ul.social {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	justify-content: center;
+	margin-bottom: 25px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 30px;
+		justify-content: center;
+	}
+}
+
+ul.social a {
+	font-size: 35px;
+	text-decoration: none;
+}
+
+
+ul.social a:visited {
+	color: white;
+}
+
+ul.social a:hover {
+	color: $orange;
+}
+
+ul.social li {
+	flex: 0 15%;
+}
+
+.site-footer .logo-columns {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+a.footer-home {
+	width: 125px;
+	height: 73px;
+	display: block;
+	text-indent: -10000px;
+	margin: 0 auto;
+	background: url(img/cls-footer-logo.svg) no-repeat center center / 100%;
+	@media screen and (min-width: $small-width) {
+		width: 229px;
+		height: 134px;
+	}
+}
+
+.site-footer .col {
+	order: 1;
+	@media screen and (min-width: $small-width) {
+		order: 1;
+	}
+}
+
+.site-footer .col:nth-of-type(2) {
+	order: 0;
+	@media screen and (min-width: $small-width) {
+		order: 1;
+	}
+}
+
+.site-footer .footer-links .menu,
+.site-footer .footer-links .menu ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.site-footer .footer-links .menu li {
+	width: 100%;
+	text-align: center;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		width: calc(33.33333% - 2.5rem);
+		padding-right: 1.25rem;
+		padding-left: 1.25rem;
+	}
+}
+
+.logo-columns .inner-col {
+	flex: 0 50%;
+}
+
+.site-footer .col {
+	text-align: center;
+	@media screen and (min-width: $small-width) {
+		text-align: center;
+	}
+}
+
+.site-footer .menu {
+ 	padding: 0;
+ 	margin: 0 auto;
+ 	list-style-type: none;
+}
+
+.site-footer .menu .sub-menu {
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	list-style-type: none;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+
+.site-footer .menu a {
+	text-decoration: none;
+	font-family: $font-body;
+	font-size: 17px;
+	line-height: 26px;
+}
+
+.site-footer .menu-item.menu-item-has-children a {
+	font-weight: 700;
+}
+
+.site-footer .menu-item .sub-menu a {
+	font-weight: 400;
+}
+
+.site-footer p a {
+	text-decoration: none;
+}
+
+.site-footer p a:visited,
+.site-footer p a:hover,
+.site-footer .menu ul a:visited,
+.site-footer .menu ul a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.site-footer .contact-link {
+	display: block;
+}
+
+.site-footer p {
+	font-family: $font-body;
+	font-weight: 400;
+	line-height: 25px;
+	margin-top: 0;
+	font-size: 16px;
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		font-size: 19px;
+		margin-top: 1rem;
+	}
+}
+
+.site-footer address {
+	font-style: normal;
+	margin-bottom: 0;
+}
+
+.site-footer address p {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.site-footer * {
+	color: white;
+}
+
+.site-footer .inner-col {
+	flex: 0 calc(50% - 15px);
+	@media screen and (min-width: $small-width) {
+		flex: 0 50%;
+	}
+}
+
+.footer-menu {
+	width: 100%;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	border-top: 2px solid white;
+	margin-top: 45px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 7.5rem;
+	}
+}
+
+.footer-menu ul {
+	max-width: $max-cont-w;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.footer-menu ul li {
+	font-size: 18px;
+	width: 100%;
+	position: relative;
+	@media screen and (min-width: $small-width) {
+		font-size: 19px;
+		width: auto;
+	}
+}
+
+.footer-menu ul li:first-of-type:before {
+	display: none;
+}
+
+.footer-menu ul li:before {
+	@media screen and (min-width: $small-width) {
+		content: "|";
+		display: inline-block;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+}
+
+.footer-menu ul li a {
+	color: white;
+}
+
+.footer-links {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	list-style-type: none;
+	margin-top: 40px;
+	border-top: 1px solid white;
+	padding-top: 20px;
+	@media screen and (min-width: $small-width) {
+		padding-top: 20px;
+		margin-top: 50px;
+	}
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: white;
+	font-family: $font-head;
+}
+
+.site-footer .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-row-gap: initial;
+    grid-column-gap: initial;
+    gap: 15px 15px;
+	@media screen and (min-width: $small-width) {
+		grid-row-gap: 5px;
+    	grid-column-gap: 20px;
+    	display: grid;
+	}
+}
+
+.site-footer address p,
+.site-footer .contact-link,
+.site-footer .menu-item a {
+	color: white;
+	font-weight: 400;
+	text-decoration: none;
+	font-family: $font-body;
+	font-size: 16px;
+	line-height: 26px;
+	@media screen and (min-width: $med-small-width) {
+		font-size: 19px;
+		line-height: 26px;
+	}
+}
+
+.site-footer .menu {
+	margin-top: 20px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 25px;
+	}
+}

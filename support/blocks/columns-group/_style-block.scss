@@ -1,0 +1,13 @@
+.columns-group .header-intro-block {
+	padding-bottom: 0;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 0;
+	}
+}
+
+.columns-group .header-intro-block + .image-columns {
+	padding-top: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 0;
+	}
+}

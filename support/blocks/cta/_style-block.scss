@@ -1,0 +1,129 @@
+.wp-block.cta {
+	max-width: 100%;
+	width: 100%;
+}
+
+.cta {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.hero-text + .cta {
+	padding-top: 3.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6.25rem;
+	}
+}
+
+
+.cta .content-footer p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	@media screen and (min-width: $small-width) {
+		font-size: 18px;
+		line-height: 29px;
+	}
+}
+
+.editor-styles-wrapper .cta .wp-block-buttons {
+	justify-content: center;
+}
+
+.cta .block-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+}
+
+.cta .content *:first-of-type {
+	margin-top: 0;
+}
+
+.cta .content,
+.cta .links {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		width: 50%;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+.cta .links {
+	@media screen and (min-width: $small-width) {
+		justify-content: flex-start;
+	}
+}
+
+.cta .content {
+	margin-bottom: 25px;
+	@media screen and (min-width: $small-width) {
+		justify-content: flex-end;
+		margin-bottom: 0;
+	}
+}
+
+.cta .content * {
+	@media screen and (min-width: $small-width) {
+		padding-left: 34px;
+		padding-right: 34px;
+	}
+}
+
+.cta .block-wrapper {
+	max-width: 1050px;
+	margin: 0 auto;
+	background: $light-grey;
+	border-radius: 100px;
+	padding-top: 2.125rem;
+	padding-bottom: 2.125rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 4.375rem;
+		padding-bottom: 4.375rem;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
+.cta .wp-block-buttons {
+	margin: 0 auto;
+	justify-content: center;
+	@media screen and (min-width: $small-width) {
+		margin: 0;
+	}
+}
+
+.cta .header-title {
+	text-transform: none;
+	font-family: $font-head-2;
+	font-size: 23px;
+	line-height: 32px;
+	margin-bottom: 0;
+	@media screen and (min-width: $small-width) {
+		font-size: 28px;
+		line-height: 40px;
+	}
+}
+
+.cta .content-footer p {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px;
+		line-height: 34px;
+	}
+}
