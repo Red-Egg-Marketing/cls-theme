@@ -1,5 +1,5 @@
-1) Hero blocks with CTA (LATITUDE & H1H2)
-2) Image/Video Text (ASPIRE)
+1) Hero blocks with CTA (LATITUDE & H1H2) - added
+2) Image/Video Text (ASPIRE) - added
 3) Columns of Image/video text (NEW BLOCK)
 4) Reviews (ASPIRE)
 5) Icons (ASPIRE)

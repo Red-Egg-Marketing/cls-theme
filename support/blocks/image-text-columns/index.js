@@ -24,10 +24,6 @@ registerBlockType( 'cls-blocks/image-text', {
 			type: 'string',
 			default: ''
 		},
-		mask: {
-			type: 'boolean',
-			default: false
-		},
 		contentAlign: {
 			type: 'string',
 			default: 'img-right',
@@ -36,10 +32,6 @@ registerBlockType( 'cls-blocks/image-text', {
 		columnwidth: {
 			type: 'string',
 			default: ''
-		},
-		withDrop: {
-			type: 'boolean',
-			default: true
 		},
 		media: {
 			type: 'object',
@@ -52,10 +44,6 @@ registerBlockType( 'cls-blocks/image-text', {
 					small: '',
 				}
 			}
-		},
-		level: {
-			type: 'string',
-			default: 2
 		},
 		image : {
 			type: 'object',
@@ -91,15 +79,6 @@ registerBlockType( 'cls-blocks/image-text', {
 			source: 'attribute',
 			selector: '.source',
 			attribute: 'src',
-		},
-		animateScroll: {
-			type: 'boolean',
-			default: false
-		},
-		embed: {
-			type: 'string',
-			source: 'html',
-			selector: '.embed-asset'
 		},
 	},
 	supports: {

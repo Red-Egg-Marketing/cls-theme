@@ -14485,9 +14485,637 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   }
 }
 
+.hero-block-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+[class*="wp-block"][data-scrolled='1'] .img-container:after {
+  background: rgba(255, 255, 255, 0.01);
+  -webkit-backdrop-filter: blur(0.15px);
+          backdrop-filter: blur(0.15px);
+}
+
+[class*="wp-block"][data-scrolled='2'] .img-container:after {
+  background: rgba(255, 255, 255, 0.02);
+  -webkit-backdrop-filter: blur(0.3px);
+          backdrop-filter: blur(0.3px);
+}
+
+[class*="wp-block"][data-scrolled='3'] .img-container:after {
+  background: rgba(255, 255, 255, 0.03);
+  -webkit-backdrop-filter: blur(0.45px);
+          backdrop-filter: blur(0.45px);
+}
+
+[class*="wp-block"][data-scrolled='4'] .img-container:after {
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(0.6px);
+          backdrop-filter: blur(0.6px);
+}
+
+[class*="wp-block"][data-scrolled='5'] .img-container:after {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(0.75px);
+          backdrop-filter: blur(0.75px);
+}
+
+[class*="wp-block"][data-scrolled='6'] .img-container:after {
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(0.9px);
+          backdrop-filter: blur(0.9px);
+}
+
+[class*="wp-block"][data-scrolled='7'] .img-container:after {
+  background: rgba(255, 255, 255, 0.07);
+  -webkit-backdrop-filter: blur(1.05px);
+          backdrop-filter: blur(1.05px);
+}
+
+[class*="wp-block"][data-scrolled='8'] .img-container:after {
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(1.2px);
+          backdrop-filter: blur(1.2px);
+}
+
+[class*="wp-block"][data-scrolled='9'] .img-container:after {
+  background: rgba(255, 255, 255, 0.09);
+  -webkit-backdrop-filter: blur(1.35px);
+          backdrop-filter: blur(1.35px);
+}
+
+[class*="wp-block"][data-scrolled='10'] .img-container:after {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+}
+
+[class*="wp-block"][data-scrolled='11'] .img-container:after {
+  background: rgba(255, 255, 255, 0.11);
+  -webkit-backdrop-filter: blur(1.65px);
+          backdrop-filter: blur(1.65px);
+}
+
+[class*="wp-block"][data-scrolled='12'] .img-container:after {
+  background: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(1.8px);
+          backdrop-filter: blur(1.8px);
+}
+
+[class*="wp-block"][data-scrolled='13'] .img-container:after {
+  background: rgba(255, 255, 255, 0.13);
+  -webkit-backdrop-filter: blur(1.95px);
+          backdrop-filter: blur(1.95px);
+}
+
+[class*="wp-block"][data-scrolled='14'] .img-container:after {
+  background: rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(2.1px);
+          backdrop-filter: blur(2.1px);
+}
+
+[class*="wp-block"][data-scrolled='15'] .img-container:after {
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(2.25px);
+          backdrop-filter: blur(2.25px);
+}
+
+[class*="wp-block"][data-scrolled='16'] .img-container:after {
+  background: rgba(255, 255, 255, 0.16);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+}
+
+[class*="wp-block"][data-scrolled='17'] .img-container:after {
+  background: rgba(255, 255, 255, 0.17);
+  -webkit-backdrop-filter: blur(2.55px);
+          backdrop-filter: blur(2.55px);
+}
+
+[class*="wp-block"][data-scrolled='18'] .img-container:after {
+  background: rgba(255, 255, 255, 0.18);
+  -webkit-backdrop-filter: blur(2.7px);
+          backdrop-filter: blur(2.7px);
+}
+
+[class*="wp-block"][data-scrolled='19'] .img-container:after {
+  background: rgba(255, 255, 255, 0.19);
+  -webkit-backdrop-filter: blur(2.85px);
+          backdrop-filter: blur(2.85px);
+}
+
+[class*="wp-block"][data-scrolled='20'] .img-container:after {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+[class*="wp-block"][data-scrolled='21'] .img-container:after {
+  background: rgba(255, 255, 255, 0.21);
+  -webkit-backdrop-filter: blur(3.15px);
+          backdrop-filter: blur(3.15px);
+}
+
+[class*="wp-block"][data-scrolled='22'] .img-container:after {
+  background: rgba(255, 255, 255, 0.22);
+  -webkit-backdrop-filter: blur(3.3px);
+          backdrop-filter: blur(3.3px);
+}
+
+[class*="wp-block"][data-scrolled='23'] .img-container:after {
+  background: rgba(255, 255, 255, 0.23);
+  -webkit-backdrop-filter: blur(3.45px);
+          backdrop-filter: blur(3.45px);
+}
+
+[class*="wp-block"][data-scrolled='24'] .img-container:after {
+  background: rgba(255, 255, 255, 0.24);
+  -webkit-backdrop-filter: blur(3.6px);
+          backdrop-filter: blur(3.6px);
+}
+
+[class*="wp-block"][data-scrolled='25'] .img-container:after {
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(3.75px);
+          backdrop-filter: blur(3.75px);
+}
+
+[class*="wp-block"][data-scrolled='26'] .img-container:after {
+  background: rgba(255, 255, 255, 0.26);
+  -webkit-backdrop-filter: blur(3.9px);
+          backdrop-filter: blur(3.9px);
+}
+
+[class*="wp-block"][data-scrolled='27'] .img-container:after {
+  background: rgba(255, 255, 255, 0.27);
+  -webkit-backdrop-filter: blur(4.05px);
+          backdrop-filter: blur(4.05px);
+}
+
+[class*="wp-block"][data-scrolled='28'] .img-container:after {
+  background: rgba(255, 255, 255, 0.28);
+  -webkit-backdrop-filter: blur(4.2px);
+          backdrop-filter: blur(4.2px);
+}
+
+[class*="wp-block"][data-scrolled='29'] .img-container:after {
+  background: rgba(255, 255, 255, 0.29);
+  -webkit-backdrop-filter: blur(4.35px);
+          backdrop-filter: blur(4.35px);
+}
+
+[class*="wp-block"][data-scrolled='30'] .img-container:after {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(4.5px);
+          backdrop-filter: blur(4.5px);
+}
+
+[class*="wp-block"][data-scrolled='31'] .img-container:after {
+  background: rgba(255, 255, 255, 0.31);
+  -webkit-backdrop-filter: blur(4.65px);
+          backdrop-filter: blur(4.65px);
+}
+
+[class*="wp-block"][data-scrolled='32'] .img-container:after {
+  background: rgba(255, 255, 255, 0.32);
+  -webkit-backdrop-filter: blur(4.8px);
+          backdrop-filter: blur(4.8px);
+}
+
+[class*="wp-block"][data-scrolled='33'] .img-container:after {
+  background: rgba(255, 255, 255, 0.33);
+  -webkit-backdrop-filter: blur(4.95px);
+          backdrop-filter: blur(4.95px);
+}
+
+[class*="wp-block"][data-scrolled='34'] .img-container:after {
+  background: rgba(255, 255, 255, 0.34);
+  -webkit-backdrop-filter: blur(5.1px);
+          backdrop-filter: blur(5.1px);
+}
+
+[class*="wp-block"][data-scrolled='35'] .img-container:after {
+  background: rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(5.25px);
+          backdrop-filter: blur(5.25px);
+}
+
+[class*="wp-block"][data-scrolled='36'] .img-container:after {
+  background: rgba(255, 255, 255, 0.36);
+  -webkit-backdrop-filter: blur(5.4px);
+          backdrop-filter: blur(5.4px);
+}
+
+[class*="wp-block"][data-scrolled='37'] .img-container:after {
+  background: rgba(255, 255, 255, 0.37);
+  -webkit-backdrop-filter: blur(5.55px);
+          backdrop-filter: blur(5.55px);
+}
+
+[class*="wp-block"][data-scrolled='38'] .img-container:after {
+  background: rgba(255, 255, 255, 0.38);
+  -webkit-backdrop-filter: blur(5.7px);
+          backdrop-filter: blur(5.7px);
+}
+
+[class*="wp-block"][data-scrolled='39'] .img-container:after {
+  background: rgba(255, 255, 255, 0.39);
+  -webkit-backdrop-filter: blur(5.85px);
+          backdrop-filter: blur(5.85px);
+}
+
+[class*="wp-block"][data-scrolled='40'] .img-container:after {
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+[class*="wp-block"][data-scrolled='41'] .img-container:after {
+  background: rgba(255, 255, 255, 0.41);
+  -webkit-backdrop-filter: blur(6.15px);
+          backdrop-filter: blur(6.15px);
+}
+
+[class*="wp-block"][data-scrolled='42'] .img-container:after {
+  background: rgba(255, 255, 255, 0.42);
+  -webkit-backdrop-filter: blur(6.3px);
+          backdrop-filter: blur(6.3px);
+}
+
+[class*="wp-block"][data-scrolled='43'] .img-container:after {
+  background: rgba(255, 255, 255, 0.43);
+  -webkit-backdrop-filter: blur(6.45px);
+          backdrop-filter: blur(6.45px);
+}
+
+[class*="wp-block"][data-scrolled='44'] .img-container:after {
+  background: rgba(255, 255, 255, 0.44);
+  -webkit-backdrop-filter: blur(6.6px);
+          backdrop-filter: blur(6.6px);
+}
+
+[class*="wp-block"][data-scrolled='45'] .img-container:after {
+  background: rgba(255, 255, 255, 0.45);
+  -webkit-backdrop-filter: blur(6.75px);
+          backdrop-filter: blur(6.75px);
+}
+
+[class*="wp-block"][data-scrolled='46'] .img-container:after {
+  background: rgba(255, 255, 255, 0.46);
+  -webkit-backdrop-filter: blur(6.9px);
+          backdrop-filter: blur(6.9px);
+}
+
+[class*="wp-block"][data-scrolled='47'] .img-container:after {
+  background: rgba(255, 255, 255, 0.47);
+  -webkit-backdrop-filter: blur(7.05px);
+          backdrop-filter: blur(7.05px);
+}
+
+[class*="wp-block"][data-scrolled='48'] .img-container:after {
+  background: rgba(255, 255, 255, 0.48);
+  -webkit-backdrop-filter: blur(7.2px);
+          backdrop-filter: blur(7.2px);
+}
+
+[class*="wp-block"][data-scrolled='49'] .img-container:after {
+  background: rgba(255, 255, 255, 0.49);
+  -webkit-backdrop-filter: blur(7.35px);
+          backdrop-filter: blur(7.35px);
+}
+
+[class*="wp-block"][data-scrolled='50'] .img-container:after {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+}
+
+[class*="wp-block"][data-scrolled='51'] .img-container:after {
+  background: rgba(255, 255, 255, 0.51);
+  -webkit-backdrop-filter: blur(7.65px);
+          backdrop-filter: blur(7.65px);
+}
+
+[class*="wp-block"][data-scrolled='52'] .img-container:after {
+  background: rgba(255, 255, 255, 0.52);
+  -webkit-backdrop-filter: blur(7.8px);
+          backdrop-filter: blur(7.8px);
+}
+
+[class*="wp-block"][data-scrolled='53'] .img-container:after {
+  background: rgba(255, 255, 255, 0.53);
+  -webkit-backdrop-filter: blur(7.95px);
+          backdrop-filter: blur(7.95px);
+}
+
+[class*="wp-block"][data-scrolled='54'] .img-container:after {
+  background: rgba(255, 255, 255, 0.54);
+  -webkit-backdrop-filter: blur(8.1px);
+          backdrop-filter: blur(8.1px);
+}
+
+[class*="wp-block"][data-scrolled='55'] .img-container:after {
+  background: rgba(255, 255, 255, 0.55);
+  -webkit-backdrop-filter: blur(8.25px);
+          backdrop-filter: blur(8.25px);
+}
+
+[class*="wp-block"][data-scrolled='56'] .img-container:after {
+  background: rgba(255, 255, 255, 0.56);
+  -webkit-backdrop-filter: blur(8.4px);
+          backdrop-filter: blur(8.4px);
+}
+
+[class*="wp-block"][data-scrolled='57'] .img-container:after {
+  background: rgba(255, 255, 255, 0.57);
+  -webkit-backdrop-filter: blur(8.55px);
+          backdrop-filter: blur(8.55px);
+}
+
+[class*="wp-block"][data-scrolled='58'] .img-container:after {
+  background: rgba(255, 255, 255, 0.58);
+  -webkit-backdrop-filter: blur(8.7px);
+          backdrop-filter: blur(8.7px);
+}
+
+[class*="wp-block"][data-scrolled='59'] .img-container:after {
+  background: rgba(255, 255, 255, 0.59);
+  -webkit-backdrop-filter: blur(8.85px);
+          backdrop-filter: blur(8.85px);
+}
+
+[class*="wp-block"][data-scrolled='60'] .img-container:after {
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+}
+
+[class*="wp-block"][data-scrolled='61'] .img-container:after {
+  background: rgba(255, 255, 255, 0.61);
+  -webkit-backdrop-filter: blur(9.15px);
+          backdrop-filter: blur(9.15px);
+}
+
+[class*="wp-block"][data-scrolled='62'] .img-container:after {
+  background: rgba(255, 255, 255, 0.62);
+  -webkit-backdrop-filter: blur(9.3px);
+          backdrop-filter: blur(9.3px);
+}
+
+[class*="wp-block"][data-scrolled='63'] .img-container:after {
+  background: rgba(255, 255, 255, 0.63);
+  -webkit-backdrop-filter: blur(9.45px);
+          backdrop-filter: blur(9.45px);
+}
+
+[class*="wp-block"][data-scrolled='64'] .img-container:after {
+  background: rgba(255, 255, 255, 0.64);
+  -webkit-backdrop-filter: blur(9.6px);
+          backdrop-filter: blur(9.6px);
+}
+
+[class*="wp-block"][data-scrolled='65'] .img-container:after {
+  background: rgba(255, 255, 255, 0.65);
+  -webkit-backdrop-filter: blur(9.75px);
+          backdrop-filter: blur(9.75px);
+}
+
+[class*="wp-block"][data-scrolled='66'] .img-container:after {
+  background: rgba(255, 255, 255, 0.66);
+  -webkit-backdrop-filter: blur(9.9px);
+          backdrop-filter: blur(9.9px);
+}
+
+[class*="wp-block"][data-scrolled='67'] .img-container:after {
+  background: rgba(255, 255, 255, 0.67);
+  -webkit-backdrop-filter: blur(10.05px);
+          backdrop-filter: blur(10.05px);
+}
+
+[class*="wp-block"][data-scrolled='68'] .img-container:after {
+  background: rgba(255, 255, 255, 0.68);
+  -webkit-backdrop-filter: blur(10.2px);
+          backdrop-filter: blur(10.2px);
+}
+
+[class*="wp-block"][data-scrolled='69'] .img-container:after {
+  background: rgba(255, 255, 255, 0.69);
+  -webkit-backdrop-filter: blur(10.35px);
+          backdrop-filter: blur(10.35px);
+}
+
+[class*="wp-block"][data-scrolled='70'] .img-container:after {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10.5px);
+          backdrop-filter: blur(10.5px);
+}
+
+[class*="wp-block"][data-scrolled='71'] .img-container:after {
+  background: rgba(255, 255, 255, 0.71);
+  -webkit-backdrop-filter: blur(10.65px);
+          backdrop-filter: blur(10.65px);
+}
+
+[class*="wp-block"][data-scrolled='72'] .img-container:after {
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(10.8px);
+          backdrop-filter: blur(10.8px);
+}
+
+[class*="wp-block"][data-scrolled='73'] .img-container:after {
+  background: rgba(255, 255, 255, 0.73);
+  -webkit-backdrop-filter: blur(10.95px);
+          backdrop-filter: blur(10.95px);
+}
+
+[class*="wp-block"][data-scrolled='74'] .img-container:after {
+  background: rgba(255, 255, 255, 0.74);
+  -webkit-backdrop-filter: blur(11.1px);
+          backdrop-filter: blur(11.1px);
+}
+
+[class*="wp-block"][data-scrolled='75'] .img-container:after {
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(11.25px);
+          backdrop-filter: blur(11.25px);
+}
+
+[class*="wp-block"][data-scrolled='76'] .img-container:after {
+  background: rgba(255, 255, 255, 0.76);
+  -webkit-backdrop-filter: blur(11.4px);
+          backdrop-filter: blur(11.4px);
+}
+
+[class*="wp-block"][data-scrolled='77'] .img-container:after {
+  background: rgba(255, 255, 255, 0.77);
+  -webkit-backdrop-filter: blur(11.55px);
+          backdrop-filter: blur(11.55px);
+}
+
+[class*="wp-block"][data-scrolled='78'] .img-container:after {
+  background: rgba(255, 255, 255, 0.78);
+  -webkit-backdrop-filter: blur(11.7px);
+          backdrop-filter: blur(11.7px);
+}
+
+[class*="wp-block"][data-scrolled='79'] .img-container:after {
+  background: rgba(255, 255, 255, 0.79);
+  -webkit-backdrop-filter: blur(11.85px);
+          backdrop-filter: blur(11.85px);
+}
+
+[class*="wp-block"][data-scrolled='80'] .img-container:after {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+
+[class*="wp-block"][data-scrolled='81'] .img-container:after {
+  background: rgba(255, 255, 255, 0.81);
+  -webkit-backdrop-filter: blur(12.15px);
+          backdrop-filter: blur(12.15px);
+}
+
+[class*="wp-block"][data-scrolled='82'] .img-container:after {
+  background: rgba(255, 255, 255, 0.82);
+  -webkit-backdrop-filter: blur(12.3px);
+          backdrop-filter: blur(12.3px);
+}
+
+[class*="wp-block"][data-scrolled='83'] .img-container:after {
+  background: rgba(255, 255, 255, 0.83);
+  -webkit-backdrop-filter: blur(12.45px);
+          backdrop-filter: blur(12.45px);
+}
+
+[class*="wp-block"][data-scrolled='84'] .img-container:after {
+  background: rgba(255, 255, 255, 0.84);
+  -webkit-backdrop-filter: blur(12.6px);
+          backdrop-filter: blur(12.6px);
+}
+
+[class*="wp-block"][data-scrolled='85'] .img-container:after {
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: blur(12.75px);
+          backdrop-filter: blur(12.75px);
+}
+
+[class*="wp-block"][data-scrolled='86'] .img-container:after {
+  background: rgba(255, 255, 255, 0.86);
+  -webkit-backdrop-filter: blur(12.9px);
+          backdrop-filter: blur(12.9px);
+}
+
+[class*="wp-block"][data-scrolled='87'] .img-container:after {
+  background: rgba(255, 255, 255, 0.87);
+  -webkit-backdrop-filter: blur(13.05px);
+          backdrop-filter: blur(13.05px);
+}
+
+[class*="wp-block"][data-scrolled='88'] .img-container:after {
+  background: rgba(255, 255, 255, 0.88);
+  -webkit-backdrop-filter: blur(13.2px);
+          backdrop-filter: blur(13.2px);
+}
+
+[class*="wp-block"][data-scrolled='89'] .img-container:after {
+  background: rgba(255, 255, 255, 0.89);
+  -webkit-backdrop-filter: blur(13.35px);
+          backdrop-filter: blur(13.35px);
+}
+
+[class*="wp-block"][data-scrolled='90'] .img-container:after {
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(13.5px);
+          backdrop-filter: blur(13.5px);
+}
+
+[class*="wp-block"][data-scrolled='91'] .img-container:after {
+  background: rgba(255, 255, 255, 0.91);
+  -webkit-backdrop-filter: blur(13.65px);
+          backdrop-filter: blur(13.65px);
+}
+
+[class*="wp-block"][data-scrolled='92'] .img-container:after {
+  background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: blur(13.8px);
+          backdrop-filter: blur(13.8px);
+}
+
+[class*="wp-block"][data-scrolled='93'] .img-container:after {
+  background: rgba(255, 255, 255, 0.93);
+  -webkit-backdrop-filter: blur(13.95px);
+          backdrop-filter: blur(13.95px);
+}
+
+[class*="wp-block"][data-scrolled='94'] .img-container:after {
+  background: rgba(255, 255, 255, 0.94);
+  -webkit-backdrop-filter: blur(14.1px);
+          backdrop-filter: blur(14.1px);
+}
+
+[class*="wp-block"][data-scrolled='95'] .img-container:after {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(14.25px);
+          backdrop-filter: blur(14.25px);
+}
+
+[class*="wp-block"][data-scrolled='96'] .img-container:after {
+  background: rgba(255, 255, 255, 0.96);
+  -webkit-backdrop-filter: blur(14.4px);
+          backdrop-filter: blur(14.4px);
+}
+
+[class*="wp-block"][data-scrolled='97'] .img-container:after {
+  background: rgba(255, 255, 255, 0.97);
+  -webkit-backdrop-filter: blur(14.55px);
+          backdrop-filter: blur(14.55px);
+}
+
+[class*="wp-block"][data-scrolled='98'] .img-container:after {
+  background: rgba(255, 255, 255, 0.98);
+  -webkit-backdrop-filter: blur(14.7px);
+          backdrop-filter: blur(14.7px);
+}
+
+[class*="wp-block"][data-scrolled='99'] .img-container:after {
+  background: rgba(255, 255, 255, 0.99);
+  -webkit-backdrop-filter: blur(14.85px);
+          backdrop-filter: blur(14.85px);
+}
+
+[class*="wp-block"][data-scrolled='100'] .img-container:after {
+  background: white;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
 .hero .hero-asset {
   display: block;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero background {
+  background-image: linear-gradient(to bottom, rgba(235, 162, 58, 0.7) 17.5%, transparent 17.5%);
+}
+
+.hero background + br + background {
+  background-image: linear-gradient(to bottom, rgba(191, 91, 50, 0.7) 17.5%, transparent 17.5%);
+}
+
+.hero .img-container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .wp-block.hero {
@@ -14495,6 +15123,14 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   width: 100%;
   margin-bottom: 0;
   position: relative;
+  min-height: 450px;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-block.hero {
+    min-height: 729px;
+  }
 }
 
 .hero .media-controls {
@@ -14504,6 +15140,7 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 
 .hero {
   position: relative;
+  min-height: 450px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -14512,8 +15149,10 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
       align-items: stretch;
 }
 
-.hero .hero-block-wrap {
-  text-align: left;
+@media screen and (min-width: 768px) {
+  .hero {
+    min-height: 729px;
+  }
 }
 
 .hero .img-container {
@@ -14548,15 +15187,84 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   height: 100%;
   display: -ms-flexbox;
   display: flex;
+  min-height: 450px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
   overflow: hidden;
 }
 
-.hero lottie-player {
+@media screen and (min-width: 768px) {
+  .hero-block-image-wrap, .page-template-page-boilerplate .entry-header,
+  .single .entry-header {
+    min-height: 729px;
+  }
+}
+
+.hero h1 {
+  margin-top: 0;
+  color: white;
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 80px;
+    line-height: 95px;
+  }
+}
+
+.hero .description p {
+  font-size: 20px;
+  line-height: 29px;
+  color: white;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .description p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.hero-block-image:after {
+  content: "";
   width: 100%;
-  height: auto;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-block-image:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: .7;
+  background: url(img/mountains.svg) no-repeat center center/100%;
+  width: 60vw;
+  height: 30.78vw;
+  z-index: 2;
+  pointer-event: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-block-image:before {
+    width: 100vw;
+    height: 51.3vw;
+    max-width: 442px;
+    max-height: 227px;
+  }
+}
+
+.hero .description a {
+  color: white;
 }
 
 .hero-block-content {
@@ -14572,46 +15280,20 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   }
 }
 
-.hero .hero-block-content {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hero .hero-block-image,
-.hero .hero-block-wrap {
+.hero-block-form {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .hero .hero-block-image,
-  .hero .hero-block-wrap {
+@media screen and (min-width: 1251px) {
+  .hero-block-form {
+    width: 33.33333%;
+    margin-left: 16.66667%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+  .hero-block-form {
     width: 50%;
-  }
-}
-
-.hero .hero-block-wrap {
-  -ms-flex-order: 2;
-      order: 2;
-}
-
-@media screen and (min-width: 768px) {
-  .hero .hero-block-wrap {
-    -ms-flex-order: 1;
-        order: 1;
-  }
-}
-
-.hero .hero-block-image {
-  -ms-flex-order: 1;
-      order: 1;
-}
-
-@media screen and (min-width: 768px) {
-  .hero .hero-block-image {
-    -ms-flex-order: 2;
-        order: 2;
   }
 }
 
@@ -14639,18 +15321,17 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 @media screen and (min-width: 768px) {
   .hero__inner .content-wrap {
     position: relative;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 
 .hero-block-wrap {
   width: 100%;
   margin: 0 auto;
-  max-width: 1120px;
 }
 
 .wp-block.image-columns {

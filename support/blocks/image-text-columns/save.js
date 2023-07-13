@@ -9,7 +9,7 @@ import Header from '../../components/Header.js';
 
 const SaveImageColumns = ( { attributes } ) => {
 		const {
-			contentAlign, media, title, image,  bgColor, bgSlug, color, vidOrImg, videoID, videoURL, withDrop, videothumb, animateScroll, embed, columnwidth, mask
+			contentAlign, media, title, image, bgColor, bgSlug, color, vidOrImg, videoID, videoURL, videothumb, columnwidth
 		} = attributes;
 
 		const imageSize = image.size != '' ? image.size + image.unit : image.sizekey;
@@ -32,7 +32,7 @@ const SaveImageColumns = ( { attributes } ) => {
     	}
 
 		const blockProps = useBlockProps.save({
-			className: 'image-columns' + (vidOrImg == 'icons' ? ' with-icons' : '') + ' ' + contentAlign + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '') + (withDrop == false ? ' no-ds' : ' with-ds') + (animateScroll == true ? ' scroll-activate' : '') + (' ' + columnwidth),
+			className: 'image-columns' + (vidOrImg == 'icons' ? ' with-icons' : '') + ' ' + contentAlign  + (' ' + columnwidth),
 			style: backgroundSettings
 		});
 
@@ -46,45 +46,34 @@ const SaveImageColumns = ( { attributes } ) => {
 			<div {...blockProps}>
 				<div className="block-wrapper">
 					<div className={`block-content ${ contentAlign }`}>
-						{ vidOrImg != 'icons' && (
 						<Fragment>
-						<div className={`image-col column ${mask == true ? 'circle-mask' : ''}`}>
-							{ vidOrImg == 'image'  && (
-								<ImageComp.View
-									source={ media.srcSet.large }
-									alt={ __( media.alt ) }
-									srcSet={ srcSet }
-									sizes={ sizes }
-								/>
-							)}
-							{ (videoID && vidOrImg == 'video' ) && (
-								<Fragment>
-								<button className="custom-video-button">Play</button>
-									<video className="hero-asset"
-										poster={ videothumb.url }
-										playsinline
-									>
-										<source src={videoURL} className="source" type="video/mp4" />
-									</video>
-								</Fragment>
-							)}
-							{ vidOrImg == 'embed' && (
-									<div className="embed-asset"
-										dangerouslySetInnerHTML={{ __html: embed }}
-									>
-									</div>
-							)}
-						</div>
-						<div className="content-columns column">
-							<div className="wrap">
-								<InnerBlocks.Content />							
+							<div className="image-col column">
+								{ vidOrImg == 'image'  && (
+									<ImageComp.View
+										source={ media.srcSet.large }
+										alt={ __( media.alt ) }
+										srcSet={ srcSet }
+										sizes={ sizes }
+									/>
+								)}
+								{ (videoID && vidOrImg == 'video' ) && (
+									<Fragment>
+									<button className="custom-video-button">Play</button>
+										<video className="hero-asset"
+											poster={ videothumb.url }
+											playsinline
+										>
+											<source src={videoURL} className="source" type="video/mp4" />
+										</video>
+									</Fragment>
+								)}
 							</div>
-						</div>
+							<div className="content-columns column">
+								<div className="wrap">
+									<InnerBlocks.Content />							
+								</div>
+							</div>
 						</Fragment>
-						)}
-						{ vidOrImg == 'icons' && (
-							<InnerBlocks.Content />
-						)}
 					</div>
 				</div>
 			</div>

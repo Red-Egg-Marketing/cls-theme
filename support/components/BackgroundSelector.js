@@ -257,7 +257,7 @@ const BackgroundSelector = (props) => {
 		<Fragment>
 			<PanelBody
 					title={__('Background')}
-					initialOpen={true}
+					initialOpen={ false }
 				>
         			<label style={ labelStyle }>{__('Background Image')}</label>
         			<MediaUpload

@@ -2,22 +2,26 @@ const { registerBlockType } = wp.blocks;
 const { RichText, InnerBlocks, useBlockProps } = wp.blockEditor;
 const { Button } = wp.components;
 const { __ } = wp.i18n;
-import ImageComp from '../../components/ImageComp.js';
 
 const SaveHero = ( { attributes } ) => {
-
-		const { media, embed, vidOrImg } = attributes;
+		const { image, anchor, vidOrImg, videoID, videoURL } = attributes;
 
 		const blockProps = useBlockProps.save({
 			className: 'hero'
 		});
 
-		let sizes = "(min-width: 880px) 100vw, 400px";
+		const imageSize = image.size != '' ? image.size + '%' : image.sizekey;
 
-		let srcSet = ``;
+		const backgroundSettings = {
+    		"background-image" : image.url != '' ? 'url(' + image.url + ')' : '',
+    		"background-repeat" : image.repeat != '' ? image.repeat : '',
+    		"background-attachment" : image.attachment != '' ? image.attachment : '',
+    		"background-position" : image.position != '' ? image.position : '',
+    		"background-size" : imageSize,
+    	}
 		
 		return (
-			<div {...blockProps}>
+			<div {...blockProps} id={ anchor }>
 				<div className="block-wrapper">
 					<div className="hero__inner">
 						<div className="content-wrap">
@@ -25,24 +29,19 @@ const SaveHero = ( { attributes } ) => {
 								<div className="hero-block-wrap">
 									<InnerBlocks.Content />
 								</div>
-								<div className="hero-block-image">
-									{ vidOrImg == 'image' && (
-										<ImageComp.View
-											source={ media.srcSet.large }
-											alt={ __( media.alt ) }
-											srcSet={ srcSet }
-											sizes={ sizes }
-										/>
-									)}
-									{ vidOrImg == 'embed' && (
-										<div className="hero-asset"
-											dangerouslySetInnerHTML={{ __html: embed }}
-										>
-										</div>
-									)}
-								</div>	
 							</div>
 						</div>
+						<div className="hero-block-image">
+							{ (image && vidOrImg == 'image' ) && (
+								<div className="hero-block-image-wrap" style={ backgroundSettings }>
+								</div>
+							)}
+							{ (videoID && vidOrImg == 'video' ) && (
+								<video className="hero-asset" autoplay playsinline muted loop>
+									<source src={videoURL} className="hero-source" type="video/mp4" />
+								</video>
+							)}
+						</div>	
 					</div>
 				</div>
 			</div>

@@ -1,9 +1,10 @@
 const { registerBlockType } = wp.blocks;
 const { Fragment } = wp.element;
 const { RichText, MediaUpload, InnerBlocks, InspectorControls, useBlockProps } = wp.blockEditor;
-const { Button, PanelBody, TextControl, SelectControl, RangeControl, ToggleControl } = wp.components;
+const { Button, PanelBody, SelectControl, RangeControl, ToggleControl } = wp.components;
 const { __ } = wp.i18n;
-import ImageComp from '../../components/ImageComp.js';
+import BackgroundSelector from '../../components/BackgroundSelector.js';
+import Anchor from '../../components/Anchor.js';
 
 const VidImg = [
     {
@@ -11,50 +12,60 @@ const VidImg = [
         value: 'image',
     },
     {
-        label: __( 'Embed' ),
-        value: 'embed',
+        label: __( 'Video' ),
+        value: 'video',
     } 
-];
-
-const template = [
-	['core/heading', {'level': 1}],
-	['core/heading', {'level': 3}]
 ];
 
 const EditHero = ( { attributes, setAttributes } ) => {
 
-		const { media, embed, vidOrImg } = attributes;
+		const { image, anchor, vidOrImg, videoID, videoURL } = attributes;
 
         const blockProps = useBlockProps({
         	className: 'hero'
         });
 
-        const updateImageAttr = (media) => {
-			let large   = media.url,
-			    medium  = media.sizes['medium-small'] ? media.sizes['medium-small'].url : media.url;
+        const imageSize = image.size != '' ? image.size + '%' : image.sizekey;
 
-            	setAttributes({
-            	    media : {
-						srcSet: {
-							large : large,
-							medium : medium
-						},
-						id: media.id,
-						alt: media.alt
-					}
-            	});
-            	
+        let imagePos = '';
+
+        if (image.bgkeyword == 'keyword') {
+        	imagePos = image.position != '' ? image.position : '';
+        } else if(image.bgkeyword == 'values') {
+        	let unit = image.bgunit;
+        	imagePos = image.positionX + unit + ' ' + image.positionY + unit;
+        }
+
+    	const backgroundSettings = {
+    		"background-image" : image.url != '' ? 'url(' + image.url + ')' : '',
+    		"background-repeat" : image.repeat != '' ? image.repeat : '',
+    		"background-attachment" : image.attachment != '' ? image.attachment : '',
+    		"background-position" : imagePos,
+    		"background-size" : imageSize,
+    	}
+
+    	const updateVideoAttr = (media) => {
+            setAttributes({
+                videoURL : media.url + '#t=0.5',
+                videoID : media.id
+            });
         }
 
 		return (
 			<Fragment>
 				<InspectorControls>
+					{ vidOrImg == 'image' && (
+						<BackgroundSelector
+							setAttributes={ setAttributes }
+							image={ image }
+						/>
+					)}
 					<PanelBody
-						title={ __( 'With Image or Embed' ) }
+						title={ __( 'With Video or Image' ) }
 						initialOpen={ false }
 					>
 						<SelectControl
-							label={ __( 'Image or Embed' ) }
+							label={ __( 'Video or Image' ) }
 							value={ vidOrImg }
 							options={ VidImg }
 							onChange={ ( selectedVidImg ) => {
@@ -64,48 +75,52 @@ const EditHero = ( { attributes, setAttributes } ) => {
 							} }
 						/>
 					</PanelBody>
+					<Anchor
+						setAttributes={ setAttributes }
+						anchor={ anchor }
+					/>
 				</InspectorControls>
-				<div {...blockProps}>
+				<div {...blockProps} id={anchor}>
 					<div className="block-wrapper">
 						<div className="hero__inner">
 							<div className="content-wrap">
 								<div className="hero-block-content">
 									<div className="hero-block-wrap">
 										<InnerBlocks
-											allowedBlocks={ ['core/heading', 'core/paragraph'] }
-											template={ template }
+											allowedBlocks={ ['core/heading'] }
 										/>
 									</div>
-									<div className="hero-block-image">
-										{ vidOrImg == 'image' && (
-											<Fragment>
-												<ImageComp
-													id={ media.id }
-													source={ media.srcSet.large }
-													updateImageAttr={ updateImageAttr }
-													alt={ __( media.alt ) }
-												/>
-											</Fragment>
-										)}
-										{ vidOrImg == 'embed' && (
-											<Fragment>
-												<TextControl
-													label="Embed Code"
-													value={ embed }
-													onChange={ (content) => {
-														setAttributes({
-															embed: content
-														});
-													}}
-												/>
-												<div className="hero-asset"
-													dangerouslySetInnerHTML={{ __html: embed }}
-												>
-												</div>
-											</Fragment>
-										)}
-									</div>
 								</div>
+							</div>
+							<div className="hero-block-image">
+								{ vidOrImg == 'image' && (
+									<Fragment>
+										<div className="hero-block-image-wrap" style={ backgroundSettings }></div>
+									</Fragment>
+								)}
+								{ vidOrImg == 'video' && (
+									<Fragment>
+										<MediaUpload
+											onSelect={ updateVideoAttr }
+											allowedTypes="video/mp4"
+											value={ videoID }
+											render={ ( { open } ) => (
+												<Button
+													className="button"
+													onClick={ open }
+												>
+													Upload/Change Video
+												</Button>
+											) }
+										/>
+		
+										{ videoID && (
+											<video className="hero-asset" autoplay playsinline muted loop>
+												<source src={videoURL} className="hero-source" type="video/mp4" />
+											</video>
+										)}
+									</Fragment>
+								)}
 							</div>
 						</div>
 					</div>

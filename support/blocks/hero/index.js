@@ -10,30 +10,37 @@ registerBlockType( 'cls-blocks/hero', {
 	title: __( 'Hero', 'cls-blocks' ),
 	icon: 'id',
 	category: 'layout',
-	supports: {
-		anchor: true
-	},
 	attributes: {
-		media: {
+		image : {
 			type: 'object',
-			default: {
-				id: '',
-				alt: '',
-				srcSet: {
-					large: '',
-					medium: '',
-					small: '',
-				}
+			default : {
+				url : '',
+				width : '',
+				height : '',
+				repeat: 'no-repeat',
+				position: 'top left',
+				size: '100',
+				sizekey: '',
+				attachment: 'scroll',
+				bgkeyword: 'keyword'
 			}
 		},
-		embed: {
-			type: 'string',
-			source: 'html',
-			selector: '.hero-asset'
+		videoID: {
+			type: 'number',
 		},
 		vidOrImg: {
 			type: 'string',
 			default: 'image'
+		},
+		videoURL: {
+			type: 'string',
+			source: 'attribute',
+			selector: '.hero-source',
+			attribute: 'src',
+		},
+		anchor: {
+			type: 'string',
+			default: ''
 		},
 	},
 	edit: edit,

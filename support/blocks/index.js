@@ -15,7 +15,7 @@ import "./table-row";
 import "./table-cell";
 import "./callout";
 // import "./hero-text";
-// import "./hero";
+import "./hero";
 import "./image-text-columns";
 // import "./section-columns";
 // import "./section-header";

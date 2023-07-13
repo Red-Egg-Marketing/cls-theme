@@ -30,15 +30,7 @@ const VidImg = [
     {
         label: __( 'Video' ),
         value: 'video',
-    },
-    {
-        label: __( 'Embed' ),
-        value: 'embed',
-    },
-    {
-        label: __( 'Icons' ),
-        value: 'icons',
-    } 
+    }
 ];
 
 
@@ -46,7 +38,7 @@ let allowBlocks = ['cls-blocks/content'];
 
 const EditImageColumns = ( { attributes, setAttributes } ) => {
 		const {
-			contentAlign, media, level, title, image, bgColor, bgSlug, color, vidOrImg, videoID, videoURL, withDrop, videothumb, animateScroll, embed, columnwidth, mask
+			contentAlign, media, title, image, bgColor, bgSlug, color, vidOrImg, videoID, videoURL, videothumb, columnwidth
 		} = attributes;
 
 		const template = [
@@ -90,7 +82,7 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
     	}
 
 		const blockProps = useBlockProps({
-			className: 'image-columns' + (vidOrImg == 'icons' ? ' with-icons' : '') + ' ' + contentAlign + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '') + (withDrop == false ? ' no-ds' : ' with-ds') + (animateScroll == true ? ' scroll-activate' : '') + (' ' + columnwidth),
+			className: 'image-columns' + (vidOrImg == 'icons' ? ' with-icons' : '') + ' ' + contentAlign + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '')  + (' ' + columnwidth),
 			style: backgroundSettings
 		});	
 
@@ -174,24 +166,10 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
 					/>
 					{ vidOrImg == 'image' && (
 						<Fragment>
-						<BackgroundSelector
-							setAttributes={ setAttributes }
-							image={ image }
-						/>
-						<PanelBody
-							title={__('Mask')}
-							initialOpen={ true }
-						>
-							<ToggleControl
-								label={ __( 'Enable Circle Mask' ) }
-            					checked={ mask }
-            					onChange={ ( mask ) => {
-            						setAttributes({
-            							mask: !!mask
-            						});
-            					}}
-        					/>
-						</PanelBody>
+							<BackgroundSelector
+								setAttributes={ setAttributes }
+								image={ image }
+							/>
 						</Fragment>
 					)}
 					<PanelBody
@@ -286,9 +264,8 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
 				<div {...blockProps}>
 					<div className="block-wrapper">
 						<div className={`block-content ${ contentAlign }`}>
-							{ vidOrImg != 'icons' && (
 							<Fragment>
-							<div className={`image-col column ${mask == true ? 'circle-mask' : ''}`}>
+							<div className="image-col column">
 								{ vidOrImg == 'image' && (
 									<Fragment>
 										<ImageComp
@@ -325,23 +302,6 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
 										)}
 									</Fragment>
 								)}
-								{ vidOrImg == 'embed' && (
-									<Fragment>
-										<TextControl
-											label="Embed Code"
-											value={ embed }
-											onChange={ (content) => {
-												setAttributes({
-													embed: content
-												});
-											}}
-										/>
-										<div className="embed-asset"
-											dangerouslySetInnerHTML={{ __html: embed }}
-										>
-										</div>
-									</Fragment>
-								)}
 							</div>
 							<div className="content-columns column">
 								<div className="wrap">
@@ -352,13 +312,7 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
 								</div>
 							</div>
 							</Fragment>
-							)}
-							{ vidOrImg == 'icons' && (
-								<InnerBlocks 
-									template={ template }
-									allowedBlocks={ allowBlocks }
-								/>
-							)}
+							
 						</div>
 					</div>
 				</div>
