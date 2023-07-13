@@ -11,6 +11,6 @@
 12) Timeline (uses plugin)(ASPIRE)
 13) Comparison table (NEW BLOCK)
 14) Fun Fact Block (NEW BLOCK)
-14) Side by side table with icon (NEW BLOCK)
+14) Side by side table wi th icon (NEW BLOCK)
 15) Block section of text with Back ground (NEW BLOCK)
 16) Contact page block (NEW BLOCK)Z

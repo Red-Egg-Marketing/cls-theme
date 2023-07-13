@@ -10,12 +10,15 @@ import "../core/styles.js";
 import "./core/button";
 
 // Custom Blocks
+import "./table-compare";
+import "./table-row";
+import "./table-cell";
 // import "./hero-text";
 // import "./hero";
 // import "./image-text-columns";
 // import "./section-columns";
 // import "./section-header";
-// import "./header-intro";
+import "./header-intro";
 // import "./columns-group";
 // import "./columns-list";
 // import "./text-card";
