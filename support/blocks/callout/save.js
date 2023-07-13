@@ -8,7 +8,7 @@ import Icons from '../../components/Icons.js';
 
 const SaveCallout = ( { attributes } ) => {
 		const {
-			icons, bgSlug, iconSlug, altSlug
+			icons, iconSlug, altSlug
 		} = attributes;
 
 		const blockProps = useBlockProps.save({
@@ -23,7 +23,6 @@ const SaveCallout = ( { attributes } ) => {
 					<div className="icon-wrap">
 						<Icons.View 
 							rows={ icons }
-							bgColor={ bgSlug }
 							color={ iconSlug }
 							altSlug={ altSlug }
 						/>

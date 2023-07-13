@@ -10,14 +10,10 @@ const template = [
 	['core/paragraph', {'placeholder' : 'Callout Description...'}],
 ];
 
-const colors = [
-    { name: 'Navy', color: 'rgba(0, 57, 92)', slug: 'navy' },
-];
-
 
 const EditCallout = ( { attributes, setAttributes } ) => {
 		const {
-			icons, bgSlug, bgColor, iconSlug, iconColor, altSlug
+			icons, iconSlug, iconColor, altSlug
 		} = attributes;
 
   		const [rowNumber, setRownumber] = useState(null);
@@ -99,15 +95,6 @@ const EditCallout = ( { attributes, setAttributes } ) => {
 		
 		return (
 			<Fragment>
-				<InspectorControls>
-					<BackgroundColor
-						bgColor={ bgColor }
-						bgSlug={ bgSlug }
-						setAttributes={ setAttributes }
-						title="Icon Background Color"
-						colors={ colors }
-					/>
-				</InspectorControls>
 				<div 
 					{...blockProps}
 				>
@@ -128,7 +115,6 @@ const EditCallout = ( { attributes, setAttributes } ) => {
 								color={ iconSlug }
 								iconColor={ iconColor }
 								altSlug={ altSlug }
-								bgColor={ bgSlug }
 								setIconList={ setIconList }
 								totalIcons={ 1 }
 							/>

@@ -12,14 +12,6 @@ registerBlockType( 'cls-blocks/callout', {
 	icon: 'button',
 	category: 'layout',
 	attributes: {
-		bgColor: {
-			type: 'string',
-			default: ''
-		},
-		bgSlug: {
-			type: 'string',
-			default: ''
-		},
 		iconSlug: {
 			type: 'string',
 			default: ''

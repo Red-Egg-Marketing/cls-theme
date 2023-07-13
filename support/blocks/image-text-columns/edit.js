@@ -209,7 +209,6 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
 									if (selectedVidImg == 'icons') {
 										allowBlocks.push('cls-blocks/icon-rows');
 										template.push('cls-blocks/icon-rows');
-										console.log(template);
 
 									} else {
 										if (allowBlocks.includes('cls-blocks/icon-rows')){

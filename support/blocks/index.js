@@ -16,7 +16,7 @@ import "./table-cell";
 import "./callout";
 // import "./hero-text";
 // import "./hero";
-// import "./image-text-columns";
+import "./image-text-columns";
 // import "./section-columns";
 // import "./section-header";
 import "./header-intro";
@@ -37,7 +37,7 @@ import "./text-cards-grid";
 // import "./tab-group";
 // import "./icon-cta";
 // import "./icon-rows";
-// import "./content-block";
+import "./content-block";
 // import "./filter-resources";
 // import "./image-embed";
 
