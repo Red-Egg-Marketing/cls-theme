@@ -27,21 +27,7 @@ const SaveCTA = ( { attributes } ) => {
 				<div {...blockProps}>
 					<div className="block-wrapper">
 						<div className="block-content">
-							<div className="content">
-								<Header.View
-									tag="h3"
-									title={ content }
-								/>
-								<Content.View
-									tag="div"
-									content={ footer }
-									multiline="p"
-									classProp="content-footer"
-							/	>
-							</div>
-							<div className="links">
-								<InnerBlocks.Content />
-							</div>
+							<InnerBlocks.Content />
 						</div>
 					</div>
 				</div>

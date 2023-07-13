@@ -8,6 +8,8 @@ import Header from '../../components/Header.js';
 import PaddingSelector from '../../components/Padding.js';
 
 const template = [
+	['core/heading', {'level' : 2}],
+	['core/paragraph', {'placeholder': 'CTA text...'}],
 	['core/buttons', {},
 		[
 			['core/button', { 'placeholder' : 'CTA text...', 'className' : 'is-style-outline-green' }]
@@ -18,15 +20,8 @@ const template = [
 const EditCTA = ( { attributes, setAttributes, clientId } ) => {
 
 		const {
-			content, footer, padding, blockId
+			padding, blockId
 		} = attributes;
-
-		const onChangeFooter = (value) => {
-
-			setAttributes({
-				footer: value
-			});
-		}
 
 		const blockProps = useBlockProps({
 			className: 'cta',
@@ -48,30 +43,10 @@ const EditCTA = ( { attributes, setAttributes, clientId } ) => {
 				<div {...blockProps}>
 					<div className="block-wrapper">
 						<div className="block-content">
-							<div className="content">
-								<Header 
-									tag="h3"
-									title={ content }
-									setAttributes={ setAttributes }
-									placeholder={ __('CTA header...','cls-blocks/cta')}
-									updateProp="content"
-								/>
-								<Content 
-									tag="div"
-									content={ footer }
-									setAttributes={ setAttributes }
-									multiline="p"
-									placeholder={ __('CTA description...','cls-blocks/cta')}
-									classProp="content-footer"
-									updateProp="footer"
-								/>
-							</div>
-							<div className="links">
-								<InnerBlocks
-									template={ template }
-									allowedBlocks={ ['core/buttons'] }
-								/>
-							</div>
+							<InnerBlocks
+								template={ template }
+								allowedBlocks={ ['core/heading', 'core/paragraph', 'core/buttons'] }
+							/>
 						</div>
 					</div>
 				</div>

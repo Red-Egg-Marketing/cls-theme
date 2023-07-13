@@ -12,18 +12,6 @@ registerBlockType( 'cls-blocks/cta', {
 	icon: 'button',
 	category: 'layout',
 	attributes: {
-		content: {
-			type: 'string',
-			source: 'html',
-			selector: '.header-title',
-			default: ''
-		},
-		footer: {
-			type: 'string',
-			source: 'html',
-			selector: '.content-footer',
-			default: ''
-		},
 		padding: {
 			type: 'object',
 			default: {
