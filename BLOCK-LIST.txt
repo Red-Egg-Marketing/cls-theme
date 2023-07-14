@@ -6,11 +6,11 @@
 6) CTA block (ASPIRE) - added 
 8) Slider of Inventory (NEW BLOCK)
 9) Two column CTA with image (NEW BLOCK)
-10) Numbered list with icons (NEW BLOCK) 
+10) Numbered list with icons (NEW BLOCK) - added
 11) Contact Form with map (ASPIRE)
 12) Timeline (uses plugin)(ASPIRE)
 13) Comparison table (NEW BLOCK) - added
 14) Callout (NEW BLOCK) - added
 14) Side by side table with icon (NEW BLOCK) - added
-15) Block section of text with Back ground (NEW BLOCK)
+15) Block section of text with Background (NEW BLOCK)
 16) Contact page block (NEW BLOCK)
