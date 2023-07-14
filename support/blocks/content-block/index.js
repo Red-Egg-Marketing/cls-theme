@@ -9,7 +9,17 @@ registerBlockType( 'cls-blocks/content', {
 	title: __( 'Content Column', 'cls-blocks' ),
 	apiVersion: 2,
 	icon: 'button',
-	parent: ['cls-blocks/image-text'],
+	parent: ['cls-blocks/image-text', 'cls-blocks/grid-image'],
+	attributes: {
+		template: {
+			type: 'array',
+			default: [['core/heading'],['core/paragraph']]
+		},
+		allowBlocks: {
+			type: 'array',
+			default: [['core/heading', 'core/paragraph', 'core/list', 'core/buttons']]
+		}
+	},
 	category: 'layout',
 	edit: edit,
 	save: save,

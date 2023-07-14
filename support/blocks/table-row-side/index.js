@@ -5,18 +5,12 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'cls-blocks/table-cell', {
-	title: __( 'Table Cell', 'cls-blocks' ),
+registerBlockType( 'cls-blocks/table-row-side', {
+	title: __( 'Table Row Side', 'cls-blocks' ),
+	parent: ['cls-blocks/table-side'],
 	apiVersion: 2,
-	icon: 'align-center',
+	icon: 'grid-view',
 	category: 'layout',
-	attributes: {
-		template: {
-			type: 'array',
-			default: [['core/list']]
-		},
-	},
-	parent: ['cls-blocks/table-row', 'cls-blocks/table-row-side'],
 	edit: edit,
 	save: save,
 } );
