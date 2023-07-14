@@ -12,7 +12,9 @@ const SaveContactForms = ( { attributes } ) => {
 	
 		return (
 			<div {...blockProps}>
-				<InnerBlocks.Content />
+				<div className="form-wrap">
+					<InnerBlocks.Content />
+				</div>
 			</div>
 		);
 }
