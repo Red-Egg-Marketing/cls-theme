@@ -17,7 +17,7 @@ const template = [
 					]
 				],
 			],
-			'allowBlocks' : [['core/image', 'core/heading', 'core/paragraph', 'core/buttons']]
+			'allowBlocks' : ['core/image', 'core/heading', 'core/paragraph', 'core/buttons']
 		}
 	],
 	['cls-blocks/content',
@@ -32,7 +32,7 @@ const template = [
 					]
 				],
 			],
-			'allowBlocks' : [['core/image', 'core/heading', 'core/paragraph', 'core/buttons']]
+			'allowBlocks' : ['core/image', 'core/heading', 'core/paragraph', 'core/buttons']
 		}
 	],
 	['cls-blocks/content',
@@ -47,7 +47,7 @@ const template = [
 					]
 				],
 			],
-			'allowBlocks' : [['core/image', 'core/heading', 'core/paragraph', 'core/buttons']]
+			'allowBlocks' : ['core/image', 'core/heading', 'core/paragraph', 'core/buttons']
 		}
 	],
 ];

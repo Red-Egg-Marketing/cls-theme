@@ -24,6 +24,7 @@ const EditContact = ( { attributes, setAttributes } ) => {
 							<InnerBlocks 
 								allowedBlocks={ ['cls-blocks/contact-content', 'cls-blocks/contact-forms'] }
 								template={ template }
+								templateLock="all"
 							/>
 						</div>
 					</div>

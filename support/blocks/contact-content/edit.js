@@ -19,7 +19,7 @@ const EditContactContent = ( { attributes, setAttributes } ) => {
 					<InnerBlocks 
 						allowedBlocks={ allowBlocks }
 						template={ template }
-						templateLock="all"
+						templateLock={ false }
 					/>
 				</div>
 			</Fragment>

@@ -23,6 +23,7 @@ const EditContactForms = ( { attributes, setAttributes } ) => {
 						<InnerBlocks 
 							allowedBlocks={ ['gravityforms/form', 'cls-blocks/header-intro'] }
 							template={ template }
+							templateLock={ false }
 						/>
 					</div>
 				</div>
