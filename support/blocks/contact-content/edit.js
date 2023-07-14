@@ -4,11 +4,9 @@ const { RichText, MediaUpload, InnerBlocks, InspectorControls, useBlockProps } =
 const { Button, PanelBody, SelectControl, TextControl, ColorPalette, ToggleControl, RangeControl, Popover, withFocusOutside } = wp.components;
 const { __ } = wp.i18n;
 
-const template = [
-	['core/html']
-];
-
 const EditContactContent = ( { attributes, setAttributes } ) => {
+
+		const { template, allowBlocks } = attributes;
 
 		const blockProps = useBlockProps({
 			className: 'content-column column'
@@ -19,8 +17,9 @@ const EditContactContent = ( { attributes, setAttributes } ) => {
 			<Fragment>
 				<div {...blockProps}>							
 					<InnerBlocks 
-						allowedBlocks={ ['core/html'] }
+						allowedBlocks={ allowBlocks }
 						template={ template }
+						templateLock="all"
 					/>
 				</div>
 			</Fragment>

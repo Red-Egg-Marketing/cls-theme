@@ -6,10 +6,20 @@ import edit from './edit';
 import save from './save';
 
 registerBlockType( 'cls-blocks/contact-content', {
-	title: __( 'Header Intro in Columns', 'cls-blocks' ),
+	title: __( 'Contact Column', 'cls-blocks' ),
 	apiVersion: 2,
 	icon: 'align-center',
-	parent: ['cls-blocks/contact'],
+	parent: ['cls-blocks/contact', 'cls-blocks/contact-alt'],
+	attributes: {
+		template: {
+			type: 'array',
+			default: [['core/html']]
+		},
+		allowBlocks : {
+			type: 'array',
+			default: [['core/html']]
+		}
+	},
 	category: 'layout',
 	edit: edit,
 	save: save,

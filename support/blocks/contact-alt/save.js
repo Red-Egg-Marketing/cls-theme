@@ -4,10 +4,10 @@ const { RichText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
 const { __ } = wp.i18n;
 
-const SaveContact = ( { attributes } ) => {
+const SaveContactAlt = ( { attributes } ) => {
 
 		const blockProps = useBlockProps.save({
-			className: 'contact-section'
+			className: 'contact-alt-section'
 		});
 	
 		return (
@@ -21,4 +21,4 @@ const SaveContact = ( { attributes } ) => {
 		);
 }
 
-export default SaveContact;
+export default SaveContactAlt;

@@ -5,9 +5,9 @@ const { __ } = wp.i18n;
 import edit from './edit';
 import save from './save';
 
-registerBlockType( 'cls-blocks/contact', {
-	title: __( 'Contact Section with HTML (Map) Embed', 'cls-blocks' ),
-	description: __( 'Section for displaying HTML embed, and contact form (Gravity Form)', 'cls-blocks' ),
+registerBlockType( 'cls-blocks/contact-alt', {
+	title: __( 'Contact Section with text column .', 'cls-blocks' ),
+	description: __( 'Section for displaying contact info, and contact form (Gravity Form)', 'cls-blocks' ),
 	apiVersion: 2,
 	icon: 'forms',
 	category: 'layout',

@@ -5,17 +5,24 @@ const { Button, PanelBody, SelectControl, TextControl, ColorPalette, ToggleContr
 const { __ } = wp.i18n;
 
 const template = [
-	['cls-blocks/contact-content'],
-	['cls-blocks/contact-forms']
+	['cls-blocks/contact-forms'],
+	['cls-blocks/contact-content', {
+		'template': [
+			['core/heading', {'level' : 3, 'placeholder' : 'Contact heading...'}],
+			['core/paragraph', {'placeholder' : 'Contact description...'}],
+		],
+		'allowBlocks': [
+			['core/heading', 'core/paragraph']
+		]
+	}]
 ];
 
-const EditContact = ( { attributes, setAttributes } ) => {
+const EditContactAlt = ( { attributes, setAttributes } ) => {
 	
 		const blockProps = useBlockProps({
-			className: 'contact-section'
+			className: 'contact-alt-section'
 		});	
 
-		
 		return (
 			<Fragment>
 				<div {...blockProps}>
@@ -24,6 +31,7 @@ const EditContact = ( { attributes, setAttributes } ) => {
 							<InnerBlocks 
 								allowedBlocks={ ['cls-blocks/contact-content', 'cls-blocks/contact-forms'] }
 								template={ template }
+								templateLock="all"
 							/>
 						</div>
 					</div>
@@ -32,4 +40,4 @@ const EditContact = ( { attributes, setAttributes } ) => {
 		);
 }
 
-export default EditContact;
+export default EditContactAlt;

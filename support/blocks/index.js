@@ -30,6 +30,7 @@ import "./text-cards-grid";
 import "./shortcode-section";
 import "./section-list";
 import "./contact";
+import "./contact-alt";
 import "./contact-content";
 import "./contact-forms";
 import "./cta";

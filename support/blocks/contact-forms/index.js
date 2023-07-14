@@ -10,7 +10,7 @@ registerBlockType( 'cls-blocks/contact-forms', {
 	description: __( ' Can contain blocks for header and description in column format. Useful for introduction to section.', 'cls-blocks' ),
 	apiVersion: 2,
 	icon: 'align-center',
-	parent: ['cls-blocks/contact'],
+	parent: ['cls-blocks/contact', 'cls-blocks/contact-alt'],
 	category: 'layout',
 	edit: edit,
 	save: save,
