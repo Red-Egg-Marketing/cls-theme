@@ -14,4 +14,4 @@
 14) Side by side table with icon (NEW BLOCK) - added
 15) Block section of text with Background (NEW BLOCK)
 16) Contact page block (NEW BLOCK)
-17) Map embed - full width block (NEW BLOCK) - added 
+17) Map embed - full width block (NEW BLOCK) - added  
