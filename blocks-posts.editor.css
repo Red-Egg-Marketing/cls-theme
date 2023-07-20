@@ -240,7 +240,7 @@
 .has-light-blue-color p,
 .has-light-blue-color,
 .entry-content .has-light-blue-color {
-  color: #0081C6;
+  color: #910035;
 }
 
 background {
@@ -392,7 +392,7 @@ div.components-select-control {
 }
 
 .wp-block-quote {
-  background: #C7E1E8;
+  background: #E2F0F7;
   padding: 20px 25px;
   font-size: 1.25rem;
   margin-left: 0;
@@ -508,8 +508,8 @@ h4 {
   margin-top: 0;
 }
 
-.lighter-blue:before {
-  background: #C7E1E8;
+.lighter-blue {
+  background: #E2F0F7;
 }
 
 .navy {
@@ -534,16 +534,6 @@ h4 {
 
 .with-bg .block-wrapper {
   position: relative;
-}
-
-.with-bg:before {
-  content: "";
-  position: absolute;
-  right: -500px;
-  left: -500px;
-  top: -200px;
-  bottom: 0;
-  border-radius: 48.5%;
 }
 
 .with-overlay:before {
@@ -632,7 +622,7 @@ h4 {
         grid-template-columns: 1fr;
     grid-column-gap: 1.25rem;
     grid-row-gap: 1.25rem;
-    max-width: 1610px;
+    max-width: 1920px;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     width: 100%;
@@ -909,7 +899,7 @@ h3.resource-title,
 }
 
 div.wprs_unslider {
-  max-width: 1510px;
+  max-width: 1820px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
@@ -974,7 +964,7 @@ div.wprs_unslider {
 }
 
 .wp-block-columns {
-  max-width: 1610px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -1048,14 +1038,13 @@ div.gs_team_area .gs-team-filter-cats li a,
 a[download],
 input[type="submit"],
 button.wp-button {
-  background: #0081C6;
+  background: #910035;
   color: white;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 22px;
   border: none;
   padding: 13px 25px 13px;
-  border-radius: 35px;
   text-transform: uppercase;
   cursor: pointer;
   transition-property: background, color;
@@ -1133,7 +1122,7 @@ input[type="submit"].wp-cancel-pw:hover,
 button.wp-button.bp-secondary-action:hover,
 button.wp-button.wp-cancel-pw:hover {
   background: none;
-  color: #0081C6;
+  color: #910035;
 }
 
 @media screen and (min-width: 768px) {
@@ -1204,12 +1193,12 @@ button.wp-button[disabled] {
 }
 
 div.gs_team_area .gs-team-filter-cats li a {
-  border-top: 2px solid #0081C6 !important;
-  border-left: 2px solid #0081C6 !important;
-  border-right: 2px solid #0081C6 !important;
-  border-bottom: 4px solid #0081C6 !important;
+  border-top: 2px solid #910035 !important;
+  border-left: 2px solid #910035 !important;
+  border-right: 2px solid #910035 !important;
+  border-bottom: 4px solid #910035 !important;
   border-radius: 0 !important;
-  color: #0081C6 !important;
+  color: #910035 !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -1221,13 +1210,13 @@ div.gs_team_area .gs-team-filter-cats li a {
 }
 
 div.gs_team_area .gs-team-filter-cats li a:hover {
-  background: #0081C6 !important;
+  background: #910035 !important;
   color: white !important;
 }
 
 ul.gs-team-filter-cats li.filter.active > a {
-  background: #0081C6 !important;
-  border-color: #0081C6 !important;
+  background: #910035 !important;
+  border-color: #910035 !important;
 }
 
 .fixed-buttons {
@@ -1253,7 +1242,7 @@ ul.gs-team-filter-cats li.filter.active > a {
 }
 
 .fixed-buttons .fixed-wrapper {
-  max-width: 1610px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   display: -ms-flexbox;
@@ -1399,7 +1388,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-text-yellow-a
 .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: none;
-  color: #0081C6;
+  color: #910035;
   padding: 0;
   border-radius: 0;
   border: none;
@@ -1467,7 +1456,7 @@ div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:visited {
-  color: #0081C6;
+  color: #910035;
 }
 
 

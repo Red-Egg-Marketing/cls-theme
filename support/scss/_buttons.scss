@@ -6,14 +6,13 @@
 a.wp-block-button__link,
 input[type="submit"],
 button.wp-button {
-	background: $light-blue;
+	background: $red;
 	color: white;
 	font-family: $font-head;
 	font-size: 14px;
 	line-height: 22px;
 	border: none;
 	padding: 13px 25px 13px;
-	border-radius: 35px;
 	text-transform: uppercase;
 	cursor: pointer;
 	transition-property: background, color;
@@ -31,7 +30,7 @@ button.wp-button {
 		background: none;
 		&:hover {
 			background: none;
-			color: $light-blue;
+			color: $red;
 		}
 	}
 	@media screen and (min-width: $small-width) {
@@ -55,26 +54,26 @@ button.wp-button {
 
 div.gs_team_area .gs-team-filter-cats li a {
 	@extend .wp-block-button__link;
-	border-top: 2px solid $light-blue !important;
-	border-left: 2px solid $light-blue !important;
-	border-right: 2px solid $light-blue !important;
-	border-bottom: 4px solid $light-blue !important;
+	border-top: 2px solid $red !important;
+	border-left: 2px solid $red !important;
+	border-right: 2px solid $red !important;
+	border-bottom: 4px solid $red !important;
 	border-radius: 0 !important;
-	color: $light-blue !important;
+	color: $red !important;
 	@media screen and (min-width: $small-width) {
 		font-size: 22px;
 		line-height: 22px !important;
 		padding: 17px 25px 17px !important;
 	}
 	&:hover {
-		background: $light-blue !important; 
+		background: $red !important; 
 		color: white !important;
 	}
 }
 
 ul.gs-team-filter-cats li.filter.active>a {
-	background: $light-blue !important;
-	border-color: $light-blue !important;
+	background: $red !important;
+	border-color: $red !important;
 }
 
 
@@ -182,7 +181,7 @@ ul.gs-team-filter-cats li.filter.active>a {
 .wp-button.is-style-text-yellow-arrow,
 .wp-block-button.is-style-text-yellow-arrow .wp-block-button__link {
 	background: none;
-	color: $light-blue;
+	color: $red;
 	padding: 0;
 	border-radius: 0;
 	border: none;
@@ -216,7 +215,7 @@ ul.gs-team-filter-cats li.filter.active>a {
 
 .wp-block-button__link:visited,
 button.wp-button:visited {	
-	color: $light-blue;
+	color: $red;
 }
 
 .wp-block-button__link:hover,

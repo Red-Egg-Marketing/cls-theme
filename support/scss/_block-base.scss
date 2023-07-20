@@ -136,7 +136,7 @@ h4 {
 // Backgrounds
 
 
-.lighter-blue:before {
+.lighter-blue {
 	background: $lighter-blue;
 }
 
@@ -163,16 +163,6 @@ h4 {
 
 .with-bg .block-wrapper {
 	position: relative;
-}
-
-.with-bg:before {
-	content: "";
-	position: absolute;
-	right: -500px;
-  	left: -500px;
-  	top: -200px;
-  	bottom: 0;
-	border-radius: 48.5%;
 }
 
 .with-overlay:before {

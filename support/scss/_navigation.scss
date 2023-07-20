@@ -33,7 +33,7 @@ a.custom-logo-link {
 	height: auto;
 	display: block;
 	@media screen and (min-width: $small-width) {
-		max-width: 170px;
+		max-width: 325px;
 		min-width: 123px;
 	}
 }
@@ -310,26 +310,23 @@ li.menu-item.nav-button a {
 
 .main-navigation .menu-item a,
 .main-navigation .menu-item {
-	color: $body-color;
+	color: $red;
 	font-family: $font-head;
 	font-size: 18px;
 	text-align: left;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	display: inline-block;
 	width: 100%;
-	font-weight: 500;
+	font-weight: 700;
 	@media screen and (min-width: $small-width) and (max-width: $med-width) {
 		font-size: 16px;
-		letter-spacing: 0.15px;
 	}
 	@media screen and (min-width: $med-width + 1px) {
 		text-align: left;
-		color: $body-color;
 		display: inline;
 		width: auto;
 		font-size: 18px;
-		line-height: 26px;
-		letter-spacing: 0.2px;
+		line-height: 23px;
 	}
 }
 
@@ -373,8 +370,8 @@ li.menu-item.nav-button a {
 	@media screen and (min-width: $med-width + 1px) {
 		margin-bottom: 0;
 		width: auto;
-		margin-left: 1.6rem;
-		margin-right: 1.6rem;
+		margin-left: 1.25rem;
+		margin-right: 1.25rem;
 		padding-top: 26px;
 		padding-bottom: 26px;
 		justify-content: center;
@@ -502,7 +499,7 @@ li.menu-item.nav-button a {
 	line-height: 27px;
 	position: relative;
 	&:hover {
-		color: $light-blue;
+		color: $red;
 	}
 	@media screen and (min-width:  $med-small-width) {
 		font-size: 18px;
@@ -517,7 +514,7 @@ li.menu-item.nav-button a {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	background: $light-blue;
+	background: $red;
 	transition-duration: .3s;
 	transition-property: height;
 	@media screen and (min-width: $small-width) {

@@ -246,7 +246,7 @@ ul.tax-list .checkbox-component:checked + label:after {
 	left: 3px;
 	width: 16px;
 	height: 16px;
-	background: $light-blue;
+	background: $red;
 }
 
 ul.tax-list label {
@@ -275,7 +275,7 @@ ul.tax-list .tax-wrap:before {
 	width: 22px;
 	height: 22px;
 	background: white;
-	border: 1px solid $light-blue;
+	border: 1px solid $red;
 }
 
 h2.no-success-header {
@@ -283,7 +283,7 @@ h2.no-success-header {
 	text-align: center;
 	grid-column: 1/4;
 	font-size: 24px;
-	color: $light-blue;
+	color: $red;
 	font-family: $font-body;
 }
 

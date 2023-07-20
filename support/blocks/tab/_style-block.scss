@@ -19,7 +19,7 @@
 }
 
 .tab.active .header-title {
-	color: $light-blue;
+	color: $red;
 }
 
 .tab .header-title:before {
@@ -30,7 +30,7 @@
 	width: 0;
 	height: 0;
 	position: absolute;
-	background: $light-blue;
+	background: $red;
 	transition-property: width;
 	transition-duration: 0.65s;
 }
@@ -91,7 +91,7 @@
 
 .tab-content.content-cols ul li:before {
 	content: "";
-	background: $light-blue;
+	background: $red;
 	border-radius: 7px;
 	width: 7px;
 	height: 7px;

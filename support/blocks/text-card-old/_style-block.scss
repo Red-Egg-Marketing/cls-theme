@@ -14,7 +14,7 @@
 	align-items: stretch;
 	justify-content: center;
 	background: linear-gradient(to bottom, transparent 45px, white 0);
-	border-bottom: 6px solid $light-blue;
+	border-bottom: 6px solid $red;
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 	padding-bottom: 1.25rem;
@@ -72,7 +72,7 @@
 	font-size: 18px;
 	line-height: 27px;
 	margin-top: 20px;
-	color: $light-blue;
+	color: $red;
 	@media screen and (min-width: $small-width) {
 		font-size: 28px;
 		line-height: 31px;
