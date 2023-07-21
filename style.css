@@ -8943,7 +8943,7 @@ button.wp-button.wp-cancel-pw:hover {
   button.wp-button {
     font-size: 20px;
     line-height: 24px;
-    padding: 20px 30px;
+    padding: 15px 25px;
   }
 }
 
@@ -15381,7 +15381,7 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 }
 
 .image-columns .block-wrapper {
-  max-width: 1920px;
+  max-width: 1620px;
   width: 100%;
   margin: 0 auto;
 }
@@ -15390,6 +15390,55 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   .image-columns .block-wrapper {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+}
+
+.image-columns .img-container {
+  position: relative;
+  box-shadow: 20px 20px 0 #E2F0F7;
+}
+
+@media screen and (min-width: 768px) {
+  .image-columns .img-container {
+    box-shadow: 30px 30px 0 #E2F0F7;
+  }
+}
+
+.image-columns .img-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #E2F0F7;
+}
+
+@media screen and (min-width: 768px) {
+  .image-columns .img-container:after {
+    right: -30px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #E2F0F7;
+  }
+}
+
+.image-columns .img-container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #E2F0F7;
+}
+
+@media screen and (min-width: 768px) {
+  .image-columns .img-container:before {
+    bottom: -30px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #E2F0F7;
   }
 }
 
@@ -15567,6 +15616,8 @@ div.image-columns.col-66 .content-columns .content-column,
 
 .image-columns .image-comp {
   margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {

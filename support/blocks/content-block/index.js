@@ -17,7 +17,7 @@ registerBlockType( 'cls-blocks/content', {
 		},
 		allowBlocks: {
 			type: 'array',
-			default: [['core/heading', 'core/paragraph', 'core/list', 'core/buttons']]
+			default: ['core/heading', 'core/paragraph', 'core/list', 'core/buttons']
 		}
 	},
 	category: 'layout',
