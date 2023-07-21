@@ -17,6 +17,16 @@ const VidImg = [
     } 
 ];
 
+const template = [
+	['core/heading', {'level' : 1, 'placeholder' : 'Hero heading...'}],
+	['core/paragraph', {'placeholder' : 'Hero description...'}],
+	['core/buttons', {},
+		[
+			['core/button', {'placeholder' : 'Hero button...'}]
+		]
+	],
+];
+
 const EditHero = ( { attributes, setAttributes } ) => {
 
 		const { image, anchor, vidOrImg, videoID, videoURL } = attributes;
@@ -87,7 +97,8 @@ const EditHero = ( { attributes, setAttributes } ) => {
 								<div className="hero-block-content">
 									<div className="hero-block-wrap">
 										<InnerBlocks
-											allowedBlocks={ ['core/heading'] }
+											allowedBlocks={ ['core/heading', 'core/paragraph', 'core/buttons'] }
+											template={ template }
 										/>
 									</div>
 								</div>

@@ -144,7 +144,7 @@ add_action( 'widgets_init', 'cls_widgets_init' );
 function cls_scripts() {
 	global $post;
 
-	wp_enqueue_style('cls-fonts', 'https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;0,700;1,500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&display=swap', [], null);
+	wp_enqueue_style('cls-fonts', 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&display=swap', [], null);
 	wp_enqueue_style( 'cls-style', get_stylesheet_uri(), ['cls-fonts'], _S_VERSION );
 	wp_style_add_data( 'cls-style', 'rtl', 'replace' );
 

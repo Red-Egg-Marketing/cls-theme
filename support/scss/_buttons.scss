@@ -9,16 +9,16 @@ button.wp-button {
 	background: $red;
 	color: white;
 	font-family: $font-head;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 22px;
 	border: none;
 	padding: 13px 25px 13px;
-	text-transform: uppercase;
 	cursor: pointer;
 	transition-property: background, color;
 	transition-duration: .25s;
 	text-decoration: none;
 	letter-spacing: 0.85px;
+	border-radius: 0;
 	&.is-small {
 		@media screen and (min-width: $small-width) {
 			font-size: 14px;
@@ -34,10 +34,9 @@ button.wp-button {
 		}
 	}
 	@media screen and (min-width: $small-width) {
-		font-size: 15px;
-		line-height: 26px;
-		letter-spacing: 1px;
-		padding: 14px 30px 14px;
+		font-size: 20px;
+		line-height: 24px;
+		padding: 20px 30px;
 	}
 	&:visited {
 		color: white;
@@ -199,7 +198,9 @@ ul.gs-team-filter-cats li.filter.active>a {
 }
 
 .wp-button.is-style-outline,
-.wp-block-button.is-style-outline .wp-block-button__link {
+.wp-block-button.is-style-outline > .wp-block-button__link,
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color)
+ {
 	border: 2px solid white;
 	color: white;
 	&:hover {

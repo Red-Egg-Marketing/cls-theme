@@ -1,7 +1,7 @@
 wp.domReady( () => {
 
 	// wp.blocks.unregisterBlockStyle( 'core/button', 'fill' );
-	wp.blocks.unregisterBlockStyle( 'core/button', 'outline' );
+	// wp.blocks.unregisterBlockStyle( 'core/button', 'outline' );
 
 	// wp.blocks.registerBlockStyle( 'core/button', {
 	// 	name: 'solid-yellow-arrow',
