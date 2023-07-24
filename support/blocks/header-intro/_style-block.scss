@@ -16,11 +16,15 @@
 	}
 }
 
-.header-intro-block h3 {
-	margin-bottom: 15px;
+.header-intro-block h4  {
+	margin-bottom: 0.5rem;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 0.75rem;
+	}
 }
 
-.header-intro-block h3 + h2 { 
+
+.header-intro-block h4 + h2 { 
 	margin-top: 0;
 }
 
@@ -46,7 +50,7 @@
 	padding-bottom: 3.875rem;
 	@media screen and (min-width: $small-width) {
 		padding-bottom: 6.75rem;
-		padding-top: 8rem;
+		padding-top: 6.75rem;
 	}
 }
 

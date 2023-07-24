@@ -102,31 +102,19 @@
 .text-card h4,
 .text-card h5,
 .text-card h6 {
-	margin-top: 10px;
 	margin-bottom: 0;
-	text-transform: none;
-	font-family: $font-head-2;
-	color: $dark-blue;
-	font-weight: 700;
+	margin-top: 1.25rem;
 	@media screen and (min-width: $small-width) {
-		margin-top: 15px;
+		margin-top: 1.5rem;
 	}
 }
 
 .text-card h3 { 
-	font-size: 18px;
-	line-height: 27px;
-	margin-top: 20px;
-	letter-spacing: 0.25px;
-	@media screen and (min-width: $small-width) {
-		font-size: 22px;
-		line-height: 31px;
-		margin-top: 25px;
-	}
+	color: $red;
 }
 
 .text-card p {
-	color: $bg-color-7;
+	color: $body-color;
 	font-family: $font-body;
 }
 
@@ -250,7 +238,9 @@
 // 	fill: rgb(0, 143, 160) !important;
 // 	color: rgb(0, 143, 160) !important;
 // }
-
+.svg-inline--fa .fa-secondary {
+	opacity: 0.4;
+}
 
 .section-block.green .text-card .icon-icon,
 .section-block.lime-green .text-card .icon-icon {

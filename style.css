@@ -16918,16 +16918,6 @@ p.contact-item {
   display: none;
 }
 
-.shortcode-section h4 {
-  margin-bottom: 0.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  .shortcode-section h4 {
-    margin-bottom: 0.75rem;
-  }
-}
-
 .wp-block.text-cards-grid {
   width: 100%;
   max-width: 100%;
@@ -16993,7 +16983,7 @@ p.contact-item {
 }
 
 .text-cards-grid > .block-wrapper {
-  max-width: 1920px;
+  max-width: 1620px;
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto;
@@ -17040,6 +17030,8 @@ p.contact-item {
 
 .text-cards-grid .header-intro-block {
   padding-bottom: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -17274,12 +17266,8 @@ p.contact-item {
 .text-card h4,
 .text-card h5,
 .text-card h6 {
-  margin-top: 10px;
   margin-bottom: 0;
-  text-transform: none;
-  font-family: "Lato", sans-serif;
-  color: #052C47;
-  font-weight: 700;
+  margin-top: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -17289,27 +17277,16 @@ p.contact-item {
   .text-card h4,
   .text-card h5,
   .text-card h6 {
-    margin-top: 15px;
+    margin-top: 1.5rem;
   }
 }
 
 .text-card h3 {
-  font-size: 18px;
-  line-height: 27px;
-  margin-top: 20px;
-  letter-spacing: 0.25px;
-}
-
-@media screen and (min-width: 768px) {
-  .text-card h3 {
-    font-size: 22px;
-    line-height: 31px;
-    margin-top: 25px;
-  }
+  color: #910035;
 }
 
 .text-card p {
-  color: #00395C;
+  color: #000000;
   font-family: "Lato", sans-serif;
 }
 
@@ -17458,6 +17435,10 @@ p.contact-item {
   width: 100%;
   max-height: 50px;
   height: auto;
+}
+
+.svg-inline--fa .fa-secondary {
+  opacity: 0.4;
 }
 
 .section-block.green .text-card .icon-icon,
@@ -18450,6 +18431,16 @@ ul.tax-list .tax-wrap {
   margin-top: 0;
 }
 
+.section-header h4 {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-header h4 {
+    margin-bottom: 0.75rem;
+  }
+}
+
 .wp-block.grid-text-cards {
   max-width: 100%;
   width: 100%;
@@ -18555,4 +18546,122 @@ ul.tax-list .tax-wrap {
 
 .grid-text-cards .content-column p:first-of-type {
   margin-top: 0;
+}
+
+.wp-block.header-intro-block {
+  max-width: 100%;
+  width: 100%;
+}
+
+.header-intro-block .block-wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-intro-block .block-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.header-intro-block h4 {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-intro-block h4 {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.header-intro-block h4 + h2 {
+  margin-top: 0;
+}
+
+.header-intro-block .block-content > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+  max-width: 100%;
+}
+
+.header-intro-block h2 {
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header-intro-block h2 {
+    margin-bottom: 45px;
+  }
+}
+
+.header-intro-block ul {
+  text-align: left;
+}
+
+.header-intro-block {
+  padding-top: 3.875rem;
+  padding-bottom: 3.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-intro-block {
+    padding-bottom: 6.75rem;
+    padding-top: 6.75rem;
+  }
+}
+
+.header-intro-block .block-content .wp-block-buttons + p {
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-intro-block .block-content .wp-block-buttons + p {
+    margin-top: 65px;
+  }
+}
+
+.header-intro-block .block-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.header-intro-block .block-content {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-intro-block .block-content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.header-intro-block .block-wrapper.with-bg {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-intro-block .block-wrapper.with-bg {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.editor-styles-wrapper .header-intro-block .wp-block-buttons,
+.header-intro-block .wp-block-buttons {
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .editor-styles-wrapper .header-intro-block .wp-block-buttons,
+  .header-intro-block .wp-block-buttons {
+    margin-top: 55px;
+  }
 }

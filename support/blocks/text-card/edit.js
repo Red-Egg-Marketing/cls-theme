@@ -8,7 +8,7 @@ import Icons from '../../components/Icons.js';
 import BackgroundColor from '../../components/BackgroundColor.js';
 
 const template = [
-	['core/heading', {'level' : 4, 'placeholder' : 'Card Title...'}],
+	['core/heading', {'level' : 3, 'placeholder' : 'Card Title...'}],
 	['core/paragraph', {'placeholder' : 'Card Description...'}],
 	['core/buttons', {},
 		[
