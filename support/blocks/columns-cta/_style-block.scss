@@ -1,0 +1,100 @@
+.columns-cta {
+	width: 100%;
+	background: white;
+}
+
+.columns-cta .block-wrapper {
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.columns-cta .column-cta {
+	width: 100%;
+	cursor: pointer;
+	@media screen and (min-width: $small-width) {
+		width: 100%;
+		transition-duration: .45s;
+		transition-property: clip-path, margin;
+	}
+}
+
+.columns-cta .wp-block-cover {
+	@media screen and (min-width: $small-width) {
+		min-height: 640px;
+	}
+}
+
+.columns-cta .column-cta:nth-of-type(odd):hover {
+	@media screen and (min-width: $small-width) {
+		clip-path: polygon(0% 0, 0 100%, 100% 100%, 155% 100%, 137% 0);
+		margin-right: -50%;
+	}
+}
+
+.columns-cta .column-cta:nth-of-type(odd):hover + .column-cta {
+	@media screen and (min-width: $small-width) {
+		clip-path: polygon(137.5% 0%, 100% 0%, 100% 100%, 155.25% 100%);
+	}
+}
+
+.columns-cta .column-cta:nth-of-type(odd) {
+	@media screen and (min-width: $small-width) {
+		clip-path: polygon(0% 0, 0 100%, 100% 100%, 54.75% 100%, 37% 0);
+		margin-right: -50%;
+	}
+}
+
+.columns-cta .column-cta:nth-of-type(odd) .wp-block-cover {
+	@media screen and (min-width: $small-width) {
+		justify-content: flex-start;
+	}
+}
+
+.columns-cta .column-cta:nth-of-type(even):hover {
+	@media screen and (min-width: $small-width) {
+		clip-path: polygon(-137.5% 0%, 100% 0%, 100% 100%, -155.25% 100%);
+	}
+}
+
+.columns-cta .column-cta:nth-of-type(even) {
+	@media screen and (min-width: $small-width) {
+		margin-left: -50%;
+		clip-path: polygon(37.5% 0%, 100% 0%, 100% 100%, 55.25% 100%);
+	}
+}
+
+.columns-cta .column-cta:nth-of-type(even) .wp-block-cover {
+	@media screen and (min-width: $small-width) {
+		justify-content: flex-end;
+	}
+}
+
+.wp-block-cover .wp-block-cover__background {
+	opacity: .25;
+}
+
+.columns-cta .wp-block-cover__inner-container {
+	transition-duration: 0.45s;
+	transition-property: width;
+	@media screen and (min-width: $small-width) {
+		width: 50%;
+	}
+}
+
+.columns-cta .column-cta:hover .wp-block-cover__inner-container {
+	@media screen and (min-width: $small-width) {
+		width: 100%;
+	}
+}
+
+.columns-cta .wp-block-cover__inner-container p {
+	color: white;
+	font-weight: 900;
+	font-size: 28px;
+	@media screen and (min-width: $small-width) {
+		font-size: 35px;
+	}
+}
+
