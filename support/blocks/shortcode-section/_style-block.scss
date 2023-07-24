@@ -6,8 +6,13 @@
 .shortcode-section {
 	width: 100%;
 	max-width: 100%;
+	background-image: url(img/bg-triangles.svg);
+	background-position: bottom left;
+	background-size: 150px;
+	background-repeat: no-repeat;
 	@media screen and (min-width: $small-width) {
 		padding-bottom: 6.75rem;
+		background-size: 238px;
 	}
 }
 
@@ -21,6 +26,13 @@
 	@media screen and (min-width: $small-width) {
 		padding-left: 5.125rem;
 		padding-right: 5.125rem;
+	}
+}
+
+.shortcode-section .section-header {
+	padding-bottom: 1rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 1.25rem;
 	}
 }
 
@@ -58,6 +70,13 @@
 
 .single-member-div[data-category="remote"] {
 	display: none;
+}
+
+.shortcode-section h4  {
+	margin-bottom: 0.5rem;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 0.75rem;
+	}
 }
 
 

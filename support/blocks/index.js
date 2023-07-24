@@ -29,6 +29,7 @@ import "./text-card";
 import "./text-cards-grid";
 import "./shortcode-section";
 import "./section-list";
+import "./section-header";
 import "./contact";
 import "./contact-alt";
 import "./contact-content";

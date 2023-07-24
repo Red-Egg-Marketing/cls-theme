@@ -16,6 +16,7 @@
 	}
 }
 
+.wp-block.grid-text-cards > .block-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout,
 .grid-text-cards .block-wrapper {
 	max-width: $max-cont-w - 300px;
 	width: 100%;
@@ -30,6 +31,7 @@
 	text-align: center;
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
+	box-sizing: border-box;
 	@media screen and (min-width: $small-width) {
 		width: 33.3333%;
 		padding-right: 1.875rem;
