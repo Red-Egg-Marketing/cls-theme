@@ -16517,49 +16517,47 @@ p.contact-item {
 }
 
 .cta {
+  position: relative;
+  padding-bottom: 4.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cta {
+    padding-bottom: 7.125rem;
+  }
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -4.2%;
+  width: 25%;
+  height: 0;
+  transform: translateY(7.5%);
+  padding-bottom: min(185px, 48.4%);
+  background: url(img/car_top-view.png) no-repeat center center/contain;
+  z-index: 1;
+  max-width: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .cta:before {
+    padding-bottom: min(650px, 48.4%);
+    max-width: 315px;
+  }
+}
+
+.cta .block-wrapper {
   width: 100%;
   text-align: center;
   position: relative;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.hero-text + .cta {
-  padding-top: 3.25rem;
-}
-
-@media screen and (min-width: 768px) {
-  .hero-text + .cta {
-    padding-top: 6.25rem;
-  }
-}
-
-.cta .content-footer p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-@media screen and (min-width: 768px) {
-  .cta .content-footer p {
-    font-size: 18px;
-    line-height: 29px;
-  }
+  background: url(img/asphalt_bkg.jpg) no-repeat center center/cover;
 }
 
 .editor-styles-wrapper .cta .wp-block-buttons {
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-
-.cta .block-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
-  width: 100%;
   -ms-flex-pack: center;
       justify-content: center;
 }
@@ -16572,12 +16570,6 @@ p.contact-item {
 .cta .links {
   width: 100%;
   text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
   box-sizing: border-box;
 }
 
@@ -16616,21 +16608,20 @@ p.contact-item {
   }
 }
 
-.cta .block-wrapper {
-  max-width: 1050px;
+.cta .block-content {
+  width: 100%;
+  max-width: 1120px;
   margin: 0 auto;
-  background: #E6E7E8;
-  border-radius: 100px;
-  padding-top: 2.125rem;
-  padding-bottom: 2.125rem;
+  padding-top: 3.25rem;
+  padding-bottom: 4.25rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
-  .cta .block-wrapper {
-    padding-top: 4.375rem;
-    padding-bottom: 4.375rem;
+  .cta .block-content {
+    padding-top: 6.5rem;
+    padding-bottom: 7.5em;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
