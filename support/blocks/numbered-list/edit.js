@@ -5,9 +5,13 @@ const { Button, PanelBody, SelectControl, ColorPalette, ToggleControl, RangeCont
 const { __ } = wp.i18n;
 
 const template = [
+	['cls-blocks/section-header', {}],
 	['cls-blocks/list-item', {}],
 	['cls-blocks/list-item', {}],
-	['cls-blocks/list-item', {}],
+	['core/paragraph', {'placeholder' : 'Description...'}],
+	['core/buttons', {},[
+		['core/button', {'placeholder' : 'Learn More...'}]
+	]],
 ];
 
 const EditNumberedList = ( { attributes } ) => {
@@ -21,7 +25,7 @@ const EditNumberedList = ( { attributes } ) => {
 				<div className="block-wrapper">
 					<InnerBlocks
 						template={ template }
-						allowedBlocks={ ['cls-blocks/list-item'] }
+						allowedBlocks={ ['cls-blocks/list-item', 'cls-blocks/section-header', 'core/buttons', 'core/paragraph'] }
 					/>
 				</div>
 			</div>

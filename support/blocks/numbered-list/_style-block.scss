@@ -1,0 +1,34 @@
+.wp-block.numbered-list {
+	max-width: 100%;
+	width: 100%;
+}
+
+.numbered-list .block-wrapper {
+	max-width: 1120px;
+	margin: 0 auto;
+	width: 100%;
+	padding-bottom: 3.5rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 7rem;
+	}
+}
+
+.numbered-list .block-wrapper {
+	counter-reset: number-list;
+}
+
+.numbered-list .wp-block-buttons {
+	justify-content: center;
+	margin-top: 2rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 3.75rem;
+	}
+}
+
+
+.numbered-list .block-wrapper > p:first-of-type {
+	margin-top: 25px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 35px;
+	}
+}

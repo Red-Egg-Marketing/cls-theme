@@ -19,7 +19,7 @@ const SaveListItem = ( { attributes } ) => {
 			<div
 				{...blockProps}
 			>
-				<div className="icon-wrap">
+				<div className="wrap">
 					<Icons.View 
 						rows={ icons }
 						color={ iconSlug }

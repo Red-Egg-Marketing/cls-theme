@@ -97,7 +97,7 @@ const EditListItem = ( { attributes, setAttributes } ) => {
 				<div 
 					{...blockProps}
 				>
-					<div className="icon-wrap">
+					<div className="wrap">
 						<Icons 
 							rows={ icons }
 							addIcon={ addIcon }
