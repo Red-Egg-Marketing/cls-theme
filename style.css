@@ -11442,7 +11442,7 @@ div.gform_wrapper input[type=url],
 div.gform_wrapper input[type=week],
 div.gform_wrapper select,
 div.gform_wrapper textarea {
-  background: #FCF7EC;
+  background: #E2F0F7;
   border: none;
   border-radius: 0;
   font-family: "Lato", sans-serif;
@@ -11537,7 +11537,7 @@ div.gform_wrapper.gravity-theme .chosen-container-multi input.chosen-search-inpu
 div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices li.search-choice {
   background-image: none;
   border: none;
-  background: #000000;
+  background: #E2F0F7;
   font-size: 15px;
   color: white;
   border: none;
@@ -11568,7 +11568,7 @@ div.gform_wrapper input[type=week],
 div.gform_wrapper select,
 div.gform_wrapper textarea,
 div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):not([class=chosen-search-input]) {
-  background: white;
+  background: #E2F0F7;
   border-radius: 0;
   -webkit-appearance: none;
   padding-left: 15px;
@@ -11859,7 +11859,7 @@ div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):no
 }
 
 div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]):hover {
-  color: #F79A6C;
+  color: white;
 }
 
 div.gform_wrapper .gform_heading {
@@ -11905,7 +11905,7 @@ body div.gform_wrapper .top_label div.ginput_container.ginput_container_checkbox
   body div.gform_wrapper .top_label div.ginput_container,
   body div.gform_wrapper .top_label div.ginput_container.ginput_container_checkbox {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -15915,16 +15915,6 @@ div.image-columns.col-66 .content-columns .content-column,
 
 .contact-section {
   width: 100%;
-  padding-top: 4.2rem;
-  padding-bottom: 4.2rem;
-  background: url(img/circuit-board.jpg) no-repeat center center/cover;
-}
-
-@media screen and (min-width: 768px) {
-  .contact-section {
-    padding-top: 6.125rem;
-    padding-bottom: 6.125rem;
-  }
 }
 
 .contact-section.active {
@@ -15933,24 +15923,6 @@ div.image-columns.col-66 .content-columns .content-column,
 
 .contact-section .block-wrapper {
   width: 100%;
-  max-width: 1920px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1250px) {
-  .contact-section .block-wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media screen and (min-width: 1251px) {
-  .contact-section .block-wrapper {
-    padding-left: 3.75rem;
-    padding-right: 3.75rem;
-  }
 }
 
 .contact-section div.gform_wrapper .gform_heading {
@@ -15958,9 +15930,41 @@ div.image-columns.col-66 .content-columns .content-column,
       justify-content: flex-start;
 }
 
+.contact-section .header-intro-block .block-wrapper {
+  text-align: left;
+}
+
+.contact-section .header-intro-block .block-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-section .form-wrap {
+  max-width: 1100px;
+}
+
 .contact-section div.gform_wrapper .gform_heading,
 .contact-section .wp-block-heading {
   margin-top: 0;
+}
+
+.contact-section .header-intro-block {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.contact-section .header-intro-block .block-content {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section .header-intro-block .block-content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 3.75rem;
+  }
 }
 
 .contact-section .block-content {
@@ -15968,13 +15972,38 @@ div.image-columns.col-66 .content-columns .content-column,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+}
+
+.contact-section .form-column {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section .form-column {
+    padding-top: 6.5rem;
+    padding-bottom: 7.5rem;
+  }
 }
 
 .contact-section div.gform_wrapper fieldset {
   padding: 0;
   border: none;
+}
+
+.contact-section .form-wrap .block-content p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section .form-wrap .block-content p {
+    font-size: 26px;
+    line-height: 38px;
+  }
 }
 
 .hidden_label .gfield_label {
@@ -15983,15 +16012,17 @@ div.image-columns.col-66 .content-columns .content-column,
 
 .contact-section .column {
   width: 100%;
-  padding-bottom: 1.75rem;
   box-sizing: border-box;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
   .contact-section .column {
     width: 50%;
     max-width: 50%;
-    padding-bottom: 0;
+    padding-right: 5rem;
+    padding-left: 0;
   }
 }
 
@@ -16005,7 +16036,7 @@ div.image-columns.col-66 .content-columns .content-column,
 
 @media screen and (min-width: 768px) {
   .contact-section .content-column {
-    padding-right: 2.5rem;
+    padding-right: 5rem;
   }
 }
 
@@ -16087,18 +16118,8 @@ p.contact-item {
 
 .contact-section .header-title {
   margin-top: 0;
-  color: white;
   text-transform: capitalize;
-  font-size: 39px;
-  line-height: 45px;
-  margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .contact-section .header-title {
-    font-size: 34px;
-    line-height: 54px;
-  }
+  margin-bottom: 0;
 }
 
 .contact-icon {
@@ -16139,15 +16160,6 @@ p.contact-item {
   padding-bottom: 8.125rem;
 }
 
-.contact-section .block-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: start;
-      align-items: flex-start;
-}
-
 .contact-section .block-content > .block-editor-inner-blocks {
   width: 100%;
 }
@@ -16168,10 +16180,10 @@ p.contact-item {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contact-section .content-column {
-    padding-right: 2.5rem;
-  }
+.contact-section .content-column iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
 }
 
 .contact-section .content-column .wp-block-buttons {
@@ -18844,11 +18856,15 @@ ul.tax-list .tax-wrap {
   margin: 0 auto;
   width: 100%;
   padding-bottom: 3.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
   .numbered-list .block-wrapper {
     padding-bottom: 7rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
   }
 }
 
@@ -18878,9 +18894,14 @@ ul.tax-list .tax-wrap {
   }
 }
 
+.wp-block.list-item {
+  max-width: 100%;
+}
+
 .list-item .wrap {
   background: #00395C;
   width: 90px;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -18899,6 +18920,7 @@ ul.tax-list .tax-wrap {
   -ms-flex-align: center;
       align-items: center;
   padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {

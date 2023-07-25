@@ -14,7 +14,7 @@ div.gform_wrapper input[type=url],
 div.gform_wrapper input[type=week],
 div.gform_wrapper select,
 div.gform_wrapper textarea {
-	background: #FCF7EC;
+	background: $lighter-blue;
 	border: none;
 	border-radius: 0;
 	font-family: $font-body-light;
@@ -84,7 +84,7 @@ div.gform_wrapper.gravity-theme .chosen-container-multi input.chosen-search-inpu
 div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices li.search-choice {
 	background-image: none;
 	border: none;
-	background: $body-color;
+	background: $lighter-blue;
   font-size: 15px;
   color: white;
   border: none;
@@ -116,7 +116,7 @@ div.gform_wrapper select,
 div.gform_wrapper textarea,
 div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):not([class=chosen-search-input])
  {
-	background: white;
+	background: $lighter-blue;
 	border-radius: 0;
 	-webkit-appearance: none;
 	padding-left: 15px;
@@ -347,7 +347,7 @@ div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):no
 }
 
 div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]):hover {
-	color: $bg-color-5;
+	color: white;
 }
 
 div.gform_wrapper .gform_heading {
@@ -383,7 +383,7 @@ body div.gform_wrapper .top_label div.ginput_container.ginput_container_checkbox
 	margin-bottom: 6px;
 	@media screen and (min-width: $form-width) {
 		margin-top: 0;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 }
 

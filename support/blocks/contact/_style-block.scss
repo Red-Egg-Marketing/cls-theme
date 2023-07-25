@@ -1,12 +1,5 @@
 .contact-section {
 	width: 100%;
-	padding-top: 4.2rem;
-	padding-bottom: 4.2rem;
-	background: url(img/circuit-board.jpg) no-repeat center center / cover;
-	@media screen and (min-width: $small-width) {
-		padding-top: 6.125rem;
-		padding-bottom: 6.125rem;
-	}
 }
 
 .contact-section.active {
@@ -15,18 +8,6 @@
 
 .contact-section .block-wrapper {
 	width: 100%;
-	max-width: $max-cont-w;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-	margin: 0 auto;
-	@media screen and (min-width: $small-width) and (max-width: $med-width) {
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
-	@media screen and (min-width: $med-width + 1px) {
-		padding-left: 3.75rem;
-		padding-right: 3.75rem;
-	}
 }
 
 .contact-section div.gform_wrapper .gform_heading {
@@ -34,20 +15,68 @@
 
 }
 
+.contact-section .header-intro-block .block-wrapper {
+	text-align: left;
+}
+
+.contact-section .header-intro-block .block-wrapper {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.contact-section .form-wrap {
+	max-width: 1100px;
+}
+
 .contact-section div.gform_wrapper .gform_heading,
 .contact-section .wp-block-heading {
 	margin-top: 0;
 }
 
-.contact-section .block-content {
+.contact-section .header-intro-block {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.contact-section .header-intro-block .block-content {
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 1.875rem;
+	@media screen and (min-width: $small-width) {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 3.75rem;
+	}
+}
+
+.contact-section  .block-content {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	align-items: stretch;
+}
+
+.contact-section .form-column {
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 6.5rem;
+		padding-bottom: 7.5rem;
+	}
 }
 
 .contact-section div.gform_wrapper fieldset {
 	padding: 0;
 	border: none;
+}
+
+.contact-section .form-wrap .block-content p {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 700;
+	@media screen and (min-width: $small-width) {
+		font-size: 26px;
+		line-height: 38px;
+	}
 }
 
 .hidden_label .gfield_label {
@@ -56,12 +85,14 @@
 
 .contact-section .column {
 	width: 100%;
-	padding-bottom: 1.75rem;
 	box-sizing: border-box;
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
 	@media screen and (min-width: $small-width) {
 		width: 50%;
 		max-width: 50%;
-		padding-bottom: 0;
+		padding-right: 5rem;
+		padding-left: 0;
 	}
 }
 
@@ -72,7 +103,7 @@
 .contact-section .content-column {
 	box-sizing: border-box;
 	@media screen and (min-width: $small-width) {
-		padding-right: 2.5rem;
+		padding-right: 5rem;
 	}
 }
 
@@ -139,15 +170,8 @@ p.contact-item {
 
 .contact-section .header-title {
 	margin-top: 0;
-	color: white;
 	text-transform: capitalize;
-	font-size: 39px;
-	line-height: 45px;
-	margin-bottom: 20px;
-	@media screen and (min-width: $small-width) {
-		font-size: 34px;
-		line-height: 54px;
-	}
+	margin-bottom: 0;
 }
 
 
@@ -183,11 +207,6 @@ p.contact-item {
 	padding-bottom: 8.125rem;
 }
 
-.contact-section .block-content {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-}
 
 .contact-section .block-content > .block-editor-inner-blocks {
 	width: 100%;
@@ -205,10 +224,10 @@ p.contact-item {
 	}
 }
 
-.contact-section .content-column {
-	@media screen and (min-width: $small-width) {
-		padding-right: 2.5rem;
-	}
+.contact-section .content-column iframe {
+	width: 100%;
+	height: 100%;
+	min-height: 300px;
 }
 
 .contact-section .content-column .wp-block-buttons {

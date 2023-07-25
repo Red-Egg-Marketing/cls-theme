@@ -1,6 +1,11 @@
+.wp-block.list-item {
+	max-width: 100%;
+}
+
 .list-item .wrap {
 	background: $bg-color-7;
 	width: 90px;
+	margin: 0;
 	@media screen and (min-width: $small-width) {
 		width: 160px;
 	}
@@ -13,6 +18,7 @@
 	flex-wrap: wrap;
 	align-items: center;
 	padding: 10px 20px;
+	box-sizing: border-box;
 	@media screen and (min-width: $small-width) {
 		width: calc(100% - 160px);
 		padding: 15px 30px;
