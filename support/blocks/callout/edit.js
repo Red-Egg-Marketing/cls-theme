@@ -99,7 +99,7 @@ const EditCallout = ( { attributes, setAttributes } ) => {
 					{...blockProps}
 				>
 					<div className="block-wrapper">
-						<div className="icon-wrap">
+						<div className="wrap">
 							<Icons 
 								rows={ icons }
 								addIcon={ addIcon }

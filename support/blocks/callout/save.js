@@ -20,7 +20,7 @@ const SaveCallout = ( { attributes } ) => {
 				{...blockProps}
 			>
 				<div className="block-wrapper">
-					<div className="icon-wrap">
+					<div className="wrap">
 						<Icons.View 
 							rows={ icons }
 							color={ iconSlug }

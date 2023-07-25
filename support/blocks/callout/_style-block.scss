@@ -1,0 +1,80 @@
+.callout.wp-block {
+	max-width: 100%;
+}
+
+.callout {
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
+	}
+}
+
+.callout .block-wrapper {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	max-width: $max-cont-w - 300px;
+	margin: 0 auto;
+	@media screen and (min-width: $small-width) {
+		padding-left: 1.875rem;
+		padding-right: 1.875rem;
+	}
+}
+
+.callout .wrap {
+	width: 150px;
+	background: $bg-color-7;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+	@media screen and (min-width: $small-width) {
+		width: 250px;
+	}
+}
+
+.callout .content {
+	background: $lighter-blue;
+	width: calc(100% - 150px);
+	padding: 25px 35px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	box-sizing: border-box;
+	@media screen and (min-width: $small-width) {
+		width: calc(100% - 250px);
+		padding: 50px;
+	}
+}
+
+.callout .content p {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 24px;
+	@media screen and (min-width: $small-width) {
+		font-size: 28px;
+		line-height: 30px;
+	}
+}
+
+.callout .content p:first-of-type:last-of-type {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.callout .icon-row {
+	margin-bottom: 0;
+}
+
+.callout .icon-icon svg {
+	max-width: 65px;
+	max-height: 65px;
+	@media screen and (min-width: $small-width) {
+		max-width: 80px;
+		max-height: 80px;
+	}
+}
