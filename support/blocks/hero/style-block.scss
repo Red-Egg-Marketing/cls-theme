@@ -53,11 +53,6 @@
 	width: 100%;
 	margin-bottom: 0;
 	position: relative;
-	min-height: 450px;
-	height: 100vh;
-	@media screen and (min-width: $small-width) {
-		min-height: 729px;
-	}
 }
 
 .hero .media-controls {
@@ -67,16 +62,23 @@
 
 .hero {
 	position: relative;
-	min-height: 450px;
+	min-height: 375px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
 	@media screen and (min-width: $small-width) {
-		min-height: 729px;
+		min-height: 660px;
 	}
 }
 
-.hero:after {
+.hero.with-arrow {
+	min-height: 450px;
+	@media screen and (min-width: $small-width) {
+		min-height: 880px;
+	}
+}
+
+.hero.with-arrow:after {
 	content:"";
 	position: absolute;
 	bottom: 20px;
@@ -113,13 +115,20 @@
 .hero-block-image-wrap {
 	height: 100%;
 	display: flex;
-	min-height: 450px;
+	min-height: 375px;
 	flex-wrap: wrap;
 	width: 100%;
 	overflow: hidden;
 	@media screen and (min-width: $small-width) {
-		min-height: 729px;
+		min-height: 660px;
 	}
+}
+
+.hero.with-arrow .hero-block-image-wrap {
+		min-height: 450px;
+		@media screen and (min-width: $small-width) {
+			min-height: 880px;
+		}
 }
 
 .hero .wp-block-buttons {

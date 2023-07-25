@@ -4,10 +4,10 @@ const { Button } = wp.components;
 const { __ } = wp.i18n;
 
 const SaveHero = ( { attributes } ) => {
-		const { image, anchor, vidOrImg, videoID, videoURL } = attributes;
+		const { image, anchor, vidOrImg, videoID, videoURL, withArrow } = attributes;
 
 		const blockProps = useBlockProps.save({
-			className: 'hero'
+			className: 'hero' + (withArrow == true ? ' with-arrow' : '')
 		});
 
 		const imageSize = image.size != '' ? image.size + '%' : image.sizekey;

@@ -28,6 +28,10 @@ registerBlockType( 'cls-blocks/hero', {
 		videoID: {
 			type: 'number',
 		},
+		withArrow: {
+			type: 'boolean',
+			default: false
+		},
 		vidOrImg: {
 			type: 'string',
 			default: 'image'

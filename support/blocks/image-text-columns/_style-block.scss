@@ -14,15 +14,12 @@
 
 .image-columns {
 	width: 100%;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
 	padding-top: 3.125rem;
 	padding-bottom: 3.125rem;
 	@media screen and (min-width: $small-width) {
-		padding-top: 3.25rem;
-		padding-bottom: 4.25rem;
-		padding-left: 2.5rem;
-		padding-right: 2.5rem;
+		padding-top: 7.5rem;
+		padding-bottom: 7.5rem;
+	
 	}
 }
 
@@ -34,13 +31,15 @@
 	max-width: $max-cont-w - 300px;
 	width: 100%;
 	margin: 0 auto;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
 	@media screen and (min-width: $small-width) {
 		padding-left: 1.875rem;
 		padding-right: 1.875rem;
 	}
 }
 
-.image-columns .img-container {
+.image-columns.with-video .image-col {
 	position: relative;
 	box-shadow: 20px 20px 0 $lighter-blue;
 	@media screen and (min-width: $small-width) {
@@ -48,7 +47,7 @@
 	}
 }
 
-.image-columns .img-container:after {
+.image-columns.with-video .image-col:after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -64,7 +63,7 @@
  	}
 }
 
-.image-columns .img-container:before {
+.image-columns.with-video .image-col:before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -78,6 +77,51 @@
   		border-right: 30px solid transparent;
  		border-top: 30px solid $lighter-blue;
  	}
+}
+
+.image-columns .img-container {
+	position: relative;
+}
+
+.image-columns:not(.with-video) .img-container:before {
+	position: absolute;
+	content: "";
+	left: -43px;
+	bottom: -20px;
+	border-left: 45px solid transparent;
+  	border-right: 45px solid transparent;
+ 	border-top: 45px solid $lighter-blue;
+ 	transform: rotate(45deg);
+	@media screen and (min-width: $small-width) {
+		bottom: -35px;
+		left: -80px;
+		border-left: 90px solid transparent;
+  		border-right: 90px solid transparent;
+ 		border-top: 90px solid $lighter-blue;
+ 	}
+}
+
+.grid-text-cards .wp-block-image:not(empty):after {
+	position: absolute;
+	content: "";
+	left: -43px;
+	bottom: -20px;
+	border-left: 45px solid transparent;
+  	border-right: 45px solid transparent;
+ 	border-top: 45px solid $lighter-blue;
+ 	transform: rotate(45deg);
+	@media screen and (min-width: $small-width) {
+		bottom: -35px;
+		left: -80px;
+		border-left: 90px solid transparent;
+  		border-right: 90px solid transparent;
+ 		border-top: 90px solid $lighter-blue;
+ 	}
+}
+
+.image-columns .hero-asset {
+	position: relative;
+	z-index: 2;
 }
 
 .image-columns .icons-row {
@@ -234,7 +278,6 @@ div.image-columns.col-66 .content-columns .content-column,
 	max-width: 100%;
 	display: block;
 	height: auto;
-	border-radius: 10px;
 }
 
 .image-columns .wp-block-buttons  {

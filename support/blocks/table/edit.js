@@ -6,35 +6,30 @@ const { __ } = wp.i18n;
 
 const template = [
 	[
-		'cls-blocks/header-intro'
+		'cls-blocks/table-row', {}
 	],
 	[
-		'cls-blocks/table'
-	],
-	[
-		'core/paragraph'
+		'cls-blocks/table-row', {}
 	]
 ];
 
 
-const EditTableComparison = ( { attributes, setAttributes } ) => {
+const EditTableRow = ( { attributes, setAttributes } ) => {
 
 		const blockProps = useBlockProps({
-			className: 'comparison-table'
+			className: 'table'
 		});	
 		
 		return (
 			<Fragment>
 				<div {...blockProps}>
-					<div className="block-wrapper">
-						<InnerBlocks
-							template={ template }
-							allowedBlocks={['core/paragraph', 'cls-blocks/header-intro', 'cls-blocks/table']}
-						/>
-					</div>
+					<InnerBlocks
+						template={ template }
+						allowedBlocks={['cls-blocks/table-row']}
+					/>
 				</div>
 			</Fragment>
 		);
 }
 
-export default EditTableComparison;
+export default EditTableRow;

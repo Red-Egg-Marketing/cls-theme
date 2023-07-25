@@ -4,10 +4,10 @@ const { RichText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;
 const { __ } = wp.i18n;
 
-const SaveTableCell = ( { attributes } ) => {
+const SaveTableRow = ( { attributes } ) => {
 	
 		const blockProps = useBlockProps.save({
-			className: 'table-cell'
+			className: 'table'
 		});
 
 		return (
@@ -17,4 +17,4 @@ const SaveTableCell = ( { attributes } ) => {
 		);
 }
 
-export default SaveTableCell;
+export default SaveTableRow;

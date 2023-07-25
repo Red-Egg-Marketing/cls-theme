@@ -15,6 +15,7 @@ import "./table-row";
 import "./table-cell";
 import "./callout";
 import "./table-side";
+import "./table";
 import "./table-row-side";
 import "./table-row-head";
 import "./table-cell-icon";

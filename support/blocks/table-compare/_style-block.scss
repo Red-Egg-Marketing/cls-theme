@@ -1,0 +1,122 @@
+.comparison-table > .block-wrapper {
+	max-width: $max-cont-w - 300px;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-bottom: 4.5rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 7.5rem;
+		padding-left: 1.875rem;
+		padding-right: 1.875rem;
+	}
+}
+
+.wp-block.comparison-table {
+	max-width: 100%;
+}
+
+.comparison-table {
+	border-top: 2px solid $grey;
+}
+
+.comparison-table > .block-wrapper > p {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.comparison-table .header-intro-block {
+	padding-bottom: 0;
+}
+
+.wp-block.table-row {
+	max-width: 100%;
+}
+
+.table-row > .block-editor-inner-blocks > .block-editor-block-list__layout,
+.table-row:not(.wp-block) {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 8px;
+	margin-bottom: 8px;
+}
+
+.table-row:first-child .table-cell li,
+.table-row:first-child .table-cell p {
+	color: white;
+	font-weight: 900;
+}
+
+.table-row .table-cell p:last-of-type:first-of-type,
+.table-row .table-cell p:first-of-type {
+	margin-top: 0;
+}
+
+.table-row .table-cell p:last-of-type:first-of-type {
+	margin-bottom: 0;
+}
+
+.table-row .table-cell {
+	width: 100%;
+	margin: 0;
+}
+
+.table {
+	margin-bottom: 30px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 50px;
+	}
+}
+
+.table-row .table-cell {
+	position: relative;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	@media screen and (min-width: $small-width) {
+		padding-top: 30px;
+		padding-right: 30px;
+		padding-bottom: 30px;
+		padding-left: 30px;
+	}
+}
+
+
+.table-row:first-child .table-cell:nth-of-type(odd) {
+	background: $bg-color-7;
+}
+
+.table-row:first-child .table-cell:nth-of-type(even) {
+	background: $dark-grey;
+}
+
+.table-row .table-cell:nth-of-type(odd) {
+	background: $lighter-blue;
+}
+
+.table-row:not(:first-child) .table-cell:nth-of-type(odd):before {
+	content: "";
+	display: inline-block;
+	float: left;
+	width: 21px;
+	height: 15px;
+	margin-right: 8px;
+	margin-top: 10px;
+	background: url(img/v.svg) no-repeat center center / 100%;
+}
+
+.table-row:not(:first-child) .table-cell:nth-of-type(even):before {
+	content: "";
+	display: inline-block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin-right: 8px;
+	margin-top: 10px;
+	background: url(img/x.svg) no-repeat center center / 100%;
+}
+
+.table-row .table-cell:nth-of-type(even) {
+	background: $grey;
+}

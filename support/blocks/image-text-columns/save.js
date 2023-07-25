@@ -32,7 +32,7 @@ const SaveImageColumns = ( { attributes } ) => {
     	}
 
 		const blockProps = useBlockProps.save({
-			className: 'image-columns' + (vidOrImg == 'icons' ? ' with-icons' : '') + ' ' + contentAlign  + (' ' + columnwidth),
+			className: 'image-columns' + (vidOrImg == 'video' ? ' with-video' : '') + ' ' + contentAlign  + (' ' + columnwidth),
 			style: backgroundSettings
 		});
 

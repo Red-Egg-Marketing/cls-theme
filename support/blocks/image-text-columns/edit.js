@@ -82,7 +82,7 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
     	}
 
 		const blockProps = useBlockProps({
-			className: 'image-columns' + (vidOrImg == 'icons' ? ' with-icons' : '') + ' ' + contentAlign + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '')  + (' ' + columnwidth),
+			className: 'image-columns' + (vidOrImg == 'video' ? ' with-video' : '') + ' ' + contentAlign + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '')  + (' ' + columnwidth),
 			style: backgroundSettings
 		});	
 

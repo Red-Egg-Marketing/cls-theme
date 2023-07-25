@@ -8,12 +8,16 @@ const template = [
 	[
 		'cls-blocks/table-cell', {
 			'template' : [
-				['core/paragraph', {'placeholder': 'Table Head'}]
+				['core/paragraph', {'placeholder': 'Table Cell...'}]
 			]
 		}
 	],
 	[
-		'cls-blocks/table-cell'
+		'cls-blocks/table-cell', {
+			'template' : [
+				['core/paragraph', {'placeholder': 'Table Cell...'}]
+			]
+		}
 	]
 ];
 

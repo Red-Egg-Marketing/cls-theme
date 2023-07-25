@@ -15,11 +15,13 @@ const EditTableCell = ( { attributes, setAttributes } ) => {
 		
 		return (
 			<Fragment>
-				<InnerBlocks
-					template={ template }
-					allowedBlocks={['core/paragraph', 'core/list']}
-					{...blockProps}
-				/>
+				<div {...blockProps}>
+					<InnerBlocks
+						template={ template }
+						allowedBlocks={['core/paragraph', 'core/list']}
+						{...blockProps}
+					/>
+				</div>
 			</Fragment>
 		);
 }

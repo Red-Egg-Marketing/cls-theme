@@ -29,10 +29,10 @@ const template = [
 
 const EditHero = ( { attributes, setAttributes } ) => {
 
-		const { image, anchor, vidOrImg, videoID, videoURL } = attributes;
+		const { image, anchor, vidOrImg, videoID, videoURL, withArrow } = attributes;
 
         const blockProps = useBlockProps({
-        	className: 'hero'
+        	className: 'hero' + (withArrow == true ? ' with-arrow' : '')
         });
 
         const imageSize = image.size != '' ? image.size + '%' : image.sizekey;
@@ -84,6 +84,20 @@ const EditHero = ( { attributes, setAttributes } ) => {
 								} );
 							} }
 						/>
+					</PanelBody>
+					<PanelBody
+						title={ __( 'With Arrow' ) }
+						initialOpen={ false }
+					>
+						<ToggleControl
+        				    label="With Arrow"
+        				    checked={ withArrow }
+        				    onChange={ (value) => {
+        				       setAttributes({
+        				       	withArrow: !!value
+        				       });
+        				    } }
+        				/>
 					</PanelBody>
 					<Anchor
 						setAttributes={ setAttributes }
