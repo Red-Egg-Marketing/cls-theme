@@ -8235,3 +8235,23 @@ ul.tax-list .tax-wrap {
     max-height: 80px;
   }
 }
+
+.html-embed.wp-block {
+  max-width: 100%;
+}
+
+.html-embed {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .html-embed {
+    height: 441px;
+  }
+}
+
+.html-embed iframe {
+  width: 100%;
+  height: 100%;
+}

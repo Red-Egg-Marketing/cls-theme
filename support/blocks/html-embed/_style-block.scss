@@ -1,0 +1,16 @@
+.html-embed.wp-block {
+	max-width: 100%;
+}
+
+.html-embed {
+	width: 100%;
+	height: 300px;
+	@media screen and (min-width: $small-width) {
+		height: 441px;
+	}
+}
+
+.html-embed iframe {
+	width: 100%;
+	height: 100%;
+}
