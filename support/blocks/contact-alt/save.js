@@ -7,7 +7,7 @@ const { __ } = wp.i18n;
 const SaveContactAlt = ( { attributes } ) => {
 
 		const blockProps = useBlockProps.save({
-			className: 'contact-alt-section'
+			className: 'contact-alt-section contact-section'
 		});
 	
 		return (

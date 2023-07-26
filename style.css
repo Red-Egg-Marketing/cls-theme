@@ -16027,7 +16027,7 @@ div.image-columns.col-66 .content-columns .content-column,
 @media screen and (min-width: 768px) {
   .contact-section .header-intro-block .block-content {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 3rem;
     padding-bottom: 3.75rem;
   }
 }
@@ -16066,7 +16066,7 @@ div.image-columns.col-66 .content-columns .content-column,
 
 @media screen and (min-width: 768px) {
   .contact-section .form-wrap .block-content p {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 38px;
   }
 }
@@ -16185,6 +16185,7 @@ p.contact-item {
   margin-top: 0;
   text-transform: capitalize;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .contact-icon {
@@ -16232,6 +16233,8 @@ p.contact-item {
 .contact-section .block-content > .block-editor-inner-blocks > .block-editor-block-list__layout {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -19456,4 +19459,119 @@ ul.tax-list .tax-wrap {
   .table-cell-icon p.contact-item {
     margin-top: 10px;
   }
+}
+
+.contact-alt-section .block-wrapper {
+  max-width: 1650px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin: 0 auto;
+}
+
+.contact-alt-section .header-intro-block h2 {
+  margin-bottom: 20px;
+}
+
+.contact-section .header-intro-block p:first-of-type {
+  margin-top: 0;
+}
+
+.wp-block-separator {
+  border: none;
+  border-bottom: 2px dashed #E6E6E6;
+  background: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-block-separator {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+}
+
+.contact-section.contact-alt-section .form-column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-alt-section.contact-section {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-alt-section.contact-section {
+    padding-top: 6.875rem;
+    padding-bottom: 6.875rem;
+  }
+}
+
+.contact-section.contact-alt-section .form-column {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section.contact-alt-section .form-column {
+    width: 64%;
+    max-width: 64%;
+    padding-right: 3.75rem;
+  }
+}
+
+.contact-alt-section .content-column {
+  width: 100%;
+  border: 2px solid #E6E6E6;
+  padding: 25px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-alt-section .content-column {
+    width: 36%;
+    max-width: 36%;
+    padding: 50px 45px;
+    margin-top: 4.0625rem;
+  }
+}
+
+.contact-alt-section .content-column h1,
+.contact-alt-section .content-column h2,
+.contact-alt-section .content-column h3,
+.contact-alt-section .content-column h4,
+.contact-alt-section .content-column h5,
+.contact-alt-section .content-column h6 {
+  color: #910035;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-alt-section .content-column h1,
+  .contact-alt-section .content-column h2,
+  .contact-alt-section .content-column h3,
+  .contact-alt-section .content-column h4,
+  .contact-alt-section .content-column h5,
+  .contact-alt-section .content-column h6 {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.contact-alt-section .content-column p {
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-alt-section .content-column p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.contact-section.contact-alt-section .block-content {
+  -ms-flex-align: start;
+      align-items: flex-start;
 }

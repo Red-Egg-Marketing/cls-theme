@@ -12,7 +12,7 @@ const template = [
 			['core/paragraph', {'placeholder' : 'Contact description...'}],
 		],
 		'allowBlocks': [
-			'core/heading', 'core/paragraph'
+			'core/heading', 'core/paragraph', 'core/separator'
 		]
 	}]
 ];
@@ -20,7 +20,7 @@ const template = [
 const EditContactAlt = ( { attributes, setAttributes } ) => {
 	
 		const blockProps = useBlockProps({
-			className: 'contact-alt-section'
+			className: 'contact-alt-section contact-section'
 		});	
 
 		return (
