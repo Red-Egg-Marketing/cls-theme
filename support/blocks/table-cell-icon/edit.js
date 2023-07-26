@@ -114,6 +114,7 @@ const EditTableCellIcon = ( { attributes, setAttributes } ) => {
 						bgColor={ bgSlug }
 						setIconList={ setIconList }
 						totalIcons={ 1 }
+						activeText={ true }
 					/>
 					<InnerBlocks
 						template={ template }

@@ -20,6 +20,7 @@ const SaveTableCell = ( { attributes } ) => {
 				<Icons.View 
 					rows={ icons }
 					bgColor={ bgSlug }
+					activeText={ true }
 					color={ iconSlug }
 					altSlug={ altSlug }
 				/>

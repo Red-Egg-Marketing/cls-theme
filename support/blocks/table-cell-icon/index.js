@@ -59,6 +59,12 @@ registerBlockType( 'cls-blocks/table-cell-icon', {
 			default: [],
 			selector: '.icon-row',
 			query: {
+				title: {
+      				type: 'string',
+      				source: 'html',
+      				selector: '.contact-item',
+      				default: ''
+      			},
 				icon: {
 					type: 'string',
       				source: 'attribute',

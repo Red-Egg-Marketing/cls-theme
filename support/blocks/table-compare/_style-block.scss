@@ -70,32 +70,32 @@
 
 .table-row .table-cell {
 	position: relative;
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-right: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	padding-left: 20px;
 	@media screen and (min-width: $small-width) {
-		padding-top: 30px;
+		padding-top: 25px;
 		padding-right: 30px;
-		padding-bottom: 30px;
+		padding-bottom: 25px;
 		padding-left: 30px;
 	}
 }
 
 
-.table-row:first-child .table-cell:nth-of-type(odd) {
+.comparison-table .table-row:first-child .table-cell:nth-of-type(odd) {
 	background: $bg-color-7;
 }
 
-.table-row:first-child .table-cell:nth-of-type(even) {
+.comparison-table .table-row:first-child .table-cell:nth-of-type(even) {
 	background: $dark-grey;
 }
 
-.table-row .table-cell:nth-of-type(odd) {
+.comparison-table .table-row .table-cell:nth-of-type(odd) {
 	background: $lighter-blue;
 }
 
-.table-row:not(:first-child) .table-cell:nth-of-type(odd):before {
+.comparison-table .table-row:not(:first-child) .table-cell:nth-of-type(odd):before {
 	content: "";
 	display: inline-block;
 	float: left;
@@ -106,7 +106,7 @@
 	background: url(img/v.svg) no-repeat center center / 100%;
 }
 
-.table-row:not(:first-child) .table-cell:nth-of-type(even):before {
+.comparison-table .table-row:not(:first-child) .table-cell:nth-of-type(even):before {
 	content: "";
 	display: inline-block;
 	float: left;
@@ -117,6 +117,6 @@
 	background: url(img/x.svg) no-repeat center center / 100%;
 }
 
-.table-row .table-cell:nth-of-type(even) {
+.comparison-table .table-row .table-cell:nth-of-type(even) {
 	background: $grey;
 }

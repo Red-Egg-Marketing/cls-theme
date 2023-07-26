@@ -8075,34 +8075,34 @@ ul.tax-list .tax-wrap {
 
 .table-row .table-cell {
   position: relative;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .table-row .table-cell {
-    padding-top: 30px;
+    padding-top: 25px;
     padding-right: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     padding-left: 30px;
   }
 }
 
-.table-row:first-child .table-cell:nth-of-type(odd) {
+.comparison-table .table-row:first-child .table-cell:nth-of-type(odd) {
   background: #00395C;
 }
 
-.table-row:first-child .table-cell:nth-of-type(even) {
+.comparison-table .table-row:first-child .table-cell:nth-of-type(even) {
   background: #505050;
 }
 
-.table-row .table-cell:nth-of-type(odd) {
+.comparison-table .table-row .table-cell:nth-of-type(odd) {
   background: #E2F0F7;
 }
 
-.table-row:not(:first-child) .table-cell:nth-of-type(odd):before {
+.comparison-table .table-row:not(:first-child) .table-cell:nth-of-type(odd):before {
   content: "";
   display: inline-block;
   float: left;
@@ -8113,7 +8113,7 @@ ul.tax-list .tax-wrap {
   background: url(img/v.svg) no-repeat center center/100%;
 }
 
-.table-row:not(:first-child) .table-cell:nth-of-type(even):before {
+.comparison-table .table-row:not(:first-child) .table-cell:nth-of-type(even):before {
   content: "";
   display: inline-block;
   float: left;
@@ -8124,7 +8124,7 @@ ul.tax-list .tax-wrap {
   background: url(img/x.svg) no-repeat center center/100%;
 }
 
-.table-row .table-cell:nth-of-type(even) {
+.comparison-table .table-row .table-cell:nth-of-type(even) {
   background: #E6E6E6;
 }
 
@@ -8254,4 +8254,124 @@ ul.tax-list .tax-wrap {
 .html-embed iframe {
   width: 100%;
   height: 100%;
+}
+
+.side-table > .block-wrapper {
+  max-width: 1620px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 4.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .side-table > .block-wrapper {
+    padding-bottom: 7.5rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+}
+
+.wp-block.side-table {
+  max-width: 100%;
+}
+
+.side-table > .block-wrapper > p {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.side-table .header-intro-block {
+  padding-bottom: 0;
+}
+
+.side-table .table-row > .block-editor-inner-blocks > .block-editor-block-list__layout,
+.side-table .table-row:not(.wp-block) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 150px 1fr;
+      grid-template-columns: 1fr 150px 1fr;
+  grid-gap: 8px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .side-table .table-row > .block-editor-inner-blocks > .block-editor-block-list__layout,
+  .side-table .table-row:not(.wp-block) {
+    -ms-grid-columns: 1fr 300px 1fr;
+        grid-template-columns: 1fr 300px 1fr;
+  }
+}
+
+.side-table .table-row-head.table-row .table-cell {
+  background: #505050;
+}
+
+.side-table .table-row .table-cell {
+  background: #E6E6E6;
+}
+
+.side-table .table-row-head .table-cell li,
+.side-table .table-row-head .table-cell p {
+  color: white;
+  font-weight: 900;
+}
+
+.side-table .table-row-head .table-cell:nth-of-type(2) {
+  text-align: center;
+}
+
+.side-table .table-row .table-cell-icon {
+  background: #00395C;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .side-table .table-row .table-cell-icon {
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+  }
+}
+
+.side-table .icon-row {
+  margin-bottom: 0;
+}
+
+.side-table .icon-icon svg {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.table-cell-icon .icon-icon {
+  max-height: 60px;
+}
+
+.table-cell-icon p.contact-item {
+  text-align: center;
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  color: #E2F0F7;
+  margin-top: 5px;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+  .table-cell-icon p.contact-item {
+    margin-top: 10px;
+  }
 }

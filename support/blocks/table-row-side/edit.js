@@ -28,7 +28,7 @@ const template = [
 const EditTableRowSide = ( { attributes, setAttributes } ) => {
 
 		const blockProps = useBlockProps({
-			className: 'table-row-side'
+			className: 'table-row-side table-row'
 		});	
 		
 		return (

@@ -32,7 +32,7 @@ const template = [
 const EditTableRowHead = ( { attributes, setAttributes } ) => {
 
 		const blockProps = useBlockProps({
-			className: 'table-row-head'
+			className: 'table-row-head table-row'
 		});	
 		
 		return (

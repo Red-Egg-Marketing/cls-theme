@@ -7,7 +7,7 @@ const { __ } = wp.i18n;
 const SaveTableRowHead = ( { attributes } ) => {
 	
 		const blockProps = useBlockProps.save({
-			className: 'table-row-head'
+			className: 'table-row-head table-row'
 		});
 
 		return (
