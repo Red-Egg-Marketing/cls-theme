@@ -1,17 +1,17 @@
-1) Hero blocks with CTA (LATITUDE & H1H2) - added
-2) Image/Video Text (ASPIRE) - added
-3) Columns of Image (NEW BLOCK) added
-4) Reviews or shortcode (ASPIRE) - added
-5) Icons (ASPIRE) - added
-6) CTA block (ASPIRE) - added 
+1) Hero blocks with CTA (LATITUDE & H1H2) - added - styled
+2) Image/Video Text (ASPIRE) - added - styled
+3) Columns of Image (NEW BLOCK) added - styled
+4) Reviews or shortcode (ASPIRE) - added - styled
+5) Icons (ASPIRE) - added - styled
+6) CTA block (ASPIRE) - added  - styled
 8) Slider of Inventory (NEW BLOCK)
-9) Two column CTA with image (NEW BLOCK) - added
-10) Numbered list with icons (NEW BLOCK) - added
-11) Contact Form with map (ASPIRE) - added
+9) Two column CTA with image (NEW BLOCK) - added - styled
+10) Numbered list with icons (NEW BLOCK) - added - styled
+11) Contact Form with map (ASPIRE) - added - styled
 12) Timeline (uses plugin)(ASPIRE)
-13) Comparison table (NEW BLOCK) - added
-14) Callout (NEW BLOCK) - added
+13) Comparison table (NEW BLOCK) - added - styled
+14) Callout (NEW BLOCK) - added - styled
 14) Side by side table with icon (NEW BLOCK) - added
 15) Block section of text with Background (NEW BLOCK)
-16) Contact page block (NEW BLOCK) - added
+16) Contact page block (NEW BLOCK) - addved
 17) Map embed - full width block (NEW BLOCK) - added  

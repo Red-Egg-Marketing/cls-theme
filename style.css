@@ -10754,8 +10754,11 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
-.entry-content {
+body {
   overflow-x: hidden;
+}
+
+.entry-content {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;

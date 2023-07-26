@@ -1,9 +1,13 @@
-.entry-content {
+body {
 	overflow-x: hidden;
+}
+
+.entry-content {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
 }
+
 .entry-content > p, 
 .entry-content > h1, 
 .entry-content > h2,
