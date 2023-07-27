@@ -3,8 +3,8 @@
 }
 
 .callout {
-	padding-bottom: 3rem;
-	padding-top: 3rem;
+	padding-bottom: 2.25rem;
+	padding-top: 2.25rem;
 	@media screen and (min-width: $small-width) {
 		padding-top: 3.5rem;
 		padding-bottom: 3.5rem;
@@ -18,7 +18,8 @@
 	flex-wrap: wrap;
 	align-items: stretch;
 	max-width: $max-cont-w - 300px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	@media screen and (min-width: $small-width) {
 		padding-left: 1.875rem;
 		padding-right: 1.875rem;
@@ -26,7 +27,7 @@
 }
 
 .callout .wrap {
-	width: 150px;
+	width: 120px;
 	background: $bg-color-7;
 	display: flex;
 	flex-wrap: wrap;
@@ -37,10 +38,14 @@
 	}
 }
 
+.lighter-blue .callout .content {
+	background: white;
+}
+
 .callout .content {
 	background: $lighter-blue;
-	width: calc(100% - 150px);
-	padding: 25px 35px;
+	width: calc(100% - 120px);
+	padding: 25px 20px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -53,11 +58,11 @@
 
 .callout .content p {
 	font-weight: 700;
-	font-size: 22px;
-	line-height: 24px;
+	font-size: 20px;
+	line-height: 26px;
 	@media screen and (min-width: $small-width) {
 		font-size: 28px;
-		line-height: 30px;
+		line-height: 35px;
 	}
 }
 

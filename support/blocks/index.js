@@ -39,4 +39,5 @@ import "./cta";
 import "./content-block";
 import "./columns-cta";
 import "./column-cta";
+import "./section";
 

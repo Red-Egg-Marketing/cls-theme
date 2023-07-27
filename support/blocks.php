@@ -224,10 +224,14 @@ function cls_gutenberg_disable_custom_styles() {
         [
             [
                 'name' => esc_html('Light Blue', '@@textdomain'),
-                'slug' => 'light-blue',
-                'color' => '#0081C6'
+                'slug' => 'blue',
+                'color' => '#00395C'
             ],
-           
+            [
+                'name' => esc_html('Red', '@@textdomain'),
+                'slug' => 'red',
+                'color' => '#910035'
+            ]
         ]
     );
     add_theme_support( 'disable-custom-colors' );

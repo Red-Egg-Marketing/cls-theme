@@ -3,89 +3,71 @@
 	max-width: 100%;
 }
 
-.icon-wrapper {
-	width: 100%;
-}
-
-.icon-wrapper .icon-row {
-	width: 100%;
-	display: block;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-
-.section-block.lime-green .icon-icon {
-	background: $bg-color-1;
-}
-
-.section-block .icon-icon {
-	background: $bg-color-3;
-	width: 55px;
-	height: 55px;
-	border-radius: 55px;
-	border: 4px solid white;
-	margin-bottom: -27.5px;
-	transform: translateY(-50%);
+.section-block {
+	position: relative;
+	padding-bottom: 3.5rem;
 	@media screen and (min-width: $small-width) {
-		width: 81px;
-		height: 81px;
-		border-radius: 81px;
-		border: 8px solid white;
-		margin-bottom: -40.5px;
+		padding-bottom: 4.5rem;
 	}
-}
-
-.icon-icon {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-
-.icon-icon svg {
-	display: block;
-	width: 100% !important;
-	height: inherit;
-}
-
-.section-block .icon-icon svg {
-	max-width: 55%;
-	height: auto;
-	max-height: 40px;
 }
 
 .section-block .block-wrapper {
-	width: 100%;
+	max-width: $max-cont-w - 300px;
+	margin: 0 auto;
+	position: relative;
 }
 
-.section-block {
-	margin-top: 3.25rem;
-	margin-bottom: 3.25rem;
-	display: flex;
-	align-items: center;
-	@media screen and (min-width: $small-width) {
-		margin-top: 7.825rem;
-		margin-bottom: 7.825rem;
-	}
+
+.section-block .wp-block:not(.callout) {
+	max-width: 1120px;
 }
 
-.section-block:last-child {
-	margin-bottom: 0;
-	@media screen and (min-width: $small-width) {
-		margin-bottom: 0;
-	}
-}
-
-.section-block .block-wrapper h1,
-.section-block .block-wrapper h2,
-.section-block .block-wrapper h3,
-.section-block .block-wrapper h4,
-.section-block .block-wrapper h5,
-.section-block .block-wrapper h6,
-.section-block .block-wrapper p {
-	max-width: 950px;
+.section-block > .block-wrapper > .wp-block-buttons,
+.section-block > .block-wrapper > h1,
+.section-block > .block-wrapper > h2,
+.section-block > .block-wrapper > h3,
+.section-block > .block-wrapper > h4,
+.section-block > .block-wrapper > h5,
+.section-block > .block-wrapper > h6,
+.section-block > .block-wrapper > p,
+.section-block > .block-wrapper > ul {
+	max-width: 1120px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.section-block .callout {
+	margin-top: 2.5rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 4rem;
+	}
+}
+
+.section-block .section-header {
+	padding-bottom: 0.5rem;
+}
+
+.section-block.keys {
+	background-image: url(img/car_keys.png);
+	background-size: 175px;
+	background-repeat: no-repeat;
+	background-position: -10% 8.5%;
+	@media screen and (min-width: $small-width) {
+		background-size: 400px;
+		background-position: -105px 45%;
+	}
+}
+
+
+.section-block.wheel {
+	background-image: url(img/steering_wheel.png);
+	background-size: 175px;
+	background-repeat: no-repeat;
+	background-position: calc(100% + 25px) 10%;
+	@media screen and (min-width: $small-width) {
+		background-size: 425px;
+		background-position: calc(100% + 55px) 40%;
+	}
 }

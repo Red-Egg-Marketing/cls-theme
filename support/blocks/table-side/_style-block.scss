@@ -28,7 +28,7 @@
 .side-table .table-row > .block-editor-inner-blocks > .block-editor-block-list__layout,
 .side-table .table-row:not(.wp-block) {
 	display: grid;
-	grid-template-columns: 1fr 150px 1fr;
+	grid-template-columns: 1fr 110px 1fr;
 	grid-gap: 8px;
 	margin-bottom: 8px;
 	@media screen and (min-width: $small-width) {
@@ -62,9 +62,9 @@
 	margin: 0;
 	box-sizing: border-box;
 	padding-top: 15px;
-	padding-right: 20px;
+	padding-right: 10px;
 	padding-bottom: 15px;
-	padding-left: 20px;
+	padding-left: 10px;
 	@media screen and (min-width: $small-width) {
 		padding-top: 25px;
 		padding-right: 30px;

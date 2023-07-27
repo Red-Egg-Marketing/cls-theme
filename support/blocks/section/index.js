@@ -20,41 +20,9 @@ registerBlockType( 'cls-blocks/section', {
 			type: 'string',
 			default: ''
 		},
-		image : {
-			type: 'object',
-			default : {
-				url : '',
-				width : '',
-				height : '',
-				repeat: 'no-repeat',
-				position: 'top left',
-				size: '100',
-				sizekey: '',
-				attachment: 'scroll'
-			}
-		},
-		margin: {
-			type: 'object',
-			default : {
-				margintop : true,
-				marginbottom : true
-			}
-		},
-		icons : {
-			type: 'array',
-			source: 'query',
-			default: [],
-			selector: '.icon-row',
-			query: {
-				icon: {
-					type: 'string',
-      				source: 'attribute',
-      				default: 'address-book',
-      				selector: '.icon-icon',
-      				attribute: 'data-icon'
-      			}
-			}
-		}
+	},
+	supports: {
+		anchor: true
 	},
 	edit: edit,
 	save: save,

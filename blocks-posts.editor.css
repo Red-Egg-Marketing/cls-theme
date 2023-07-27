@@ -5,8 +5,8 @@
 .edit-post-visual-editor__content-area dl, .entry-content dl,
 .edit-post-visual-editor__content-area dd, .entry-content dd {
   font-family: "Lato", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
   color: #000000;
   font-weight: 400;
 }
@@ -27,15 +27,26 @@
   font-family: "Lato", sans-serif;
 }
 
-.edit-post-visual-editor__content-area li, .entry-content li {
+.edit-post-visual-editor__content-area ul li, .entry-content li {
   list-style-type: none;
   padding-left: 25px;
   position: relative;
 }
 
-.edit-post-visual-editor__content-area li, .entry-content li:before {
+.entry-content ul li li,
+.edit-post-visual-editor__content-area ul li li {
+  list-style-type: circle;
+  padding-left: 0;
+}
+
+.edit-post-visual-editor__content-area ul li li:before,
+.entry-content ul li li:before {
+  display: none;
+}
+
+.edit-post-visual-editor__content-area ul li:before, .entry-content ul li:before {
   content: "\2022";
-  color: #F99D33;
+  color: #910035;
   position: absolute;
   top: 0;
   left: 0;
@@ -73,7 +84,6 @@
 .edit-post-visual-editor__content-area p.has-large-font-size, .entry-content p.has-large-font-size {
   font-size: 24px !important;
   line-height: 34px;
-  color: #00395C;
 }
 
 @media screen and (min-width: 768px) {
@@ -91,13 +101,13 @@
 .edit-post-visual-editor__content-area li, .page .entry-content li,
 .post .post-content li {
   position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .edit-post-visual-editor__content-area li, .page .entry-content li,
   .post .post-content li {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 }
 
@@ -237,9 +247,9 @@
   font-family: "Lato", sans-serif !important;
 }
 
-.has-light-blue-color p,
-.has-light-blue-color,
-.entry-content .has-light-blue-color {
+.has-red-color p,
+.has-red-color,
+.entry-content .has-red-color {
   color: #910035;
 }
 
@@ -512,11 +522,11 @@ h4 {
 }
 
 .lighter-blue {
-  background: #E2F0F7;
+  background-color: #E2F0F7;
 }
 
 .navy {
-  background: #00395C;
+  background-color: #00395C;
 }
 
 .resources-grid:not(.swiper-wrapper) .block-wrapper {
