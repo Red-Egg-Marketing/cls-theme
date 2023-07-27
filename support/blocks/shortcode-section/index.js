@@ -20,6 +20,10 @@ registerBlockType( 'cls-blocks/shortcode-section', {
 			type: 'string',
 			default: ''
 		},
+		withBG: {
+			type: 'boolean',
+			default: false
+		}
 	},
 	supports: {
 		anchor: true

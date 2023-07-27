@@ -6,10 +6,10 @@ const { __ } = wp.i18n;
 
 const SaveShortcodeSection = ( { attributes } ) => {
 
-		const { bgSlug, bgColor } = attributes;
+		const { bgSlug, bgColor, withBG } = attributes;
 		
 		const blockProps = useBlockProps.save({
-			className: 'shortcode-section' + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '')
+			className: 'shortcode-section' + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '') + (withBG == true ? ' triangles' : '')
 		});
 		
 		return (

@@ -60,6 +60,11 @@
   position: relative;
 }
 
+i.fa {
+  font-size: 17px;
+  line-height: 18px;
+}
+
 .entry-content ul li li,
 .edit-post-visual-editor__content-area ul li li {
   list-style-type: circle;
@@ -71,7 +76,7 @@
   display: none;
 }
 
-.edit-post-visual-editor__content-area ul li:before, .entry-content ul li:before {
+.edit-post-visual-editor__content-area ul li:not([class]):before, .entry-content ul li:not([class]):before {
   content: "\2022";
   color: #910035;
   position: absolute;
@@ -5823,6 +5828,16 @@ p.contact-item {
 .shortcode-section {
   width: 100%;
   max-width: 100%;
+  padding-bottom: 3.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .shortcode-section {
+    padding-bottom: 6.75rem;
+  }
+}
+
+.triangles {
   background-image: url(img/bg-triangles.svg);
   background-position: bottom left;
   background-size: 150px;
@@ -5830,10 +5845,13 @@ p.contact-item {
 }
 
 @media screen and (min-width: 768px) {
-  .shortcode-section {
-    padding-bottom: 6.75rem;
+  .triangles {
     background-size: 238px;
   }
+}
+
+.wpex.horizontal-timeline .horizontal-nav li:before {
+  display: none;
 }
 
 .shortcode-section > .block-wrapper {
@@ -5902,8 +5920,124 @@ p.contact-item {
   display: block;
 }
 
+div.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current + li.prev_item span.tl-point:before,
+div.wpex.horizontal-timeline .horizontal-nav li span.tl-point i,
+div.wpex.horizontal-timeline .horizontal-nav li span.tl-point:before {
+  border-color: #E6E6E6;
+}
+
+div.wpex.horizontal-timeline .horizontal-nav li.prev_item span.tl-point:before {
+  border-color: #00395C;
+}
+
+div.wpex.horizontal-timeline .timeline-hr {
+  border-color: #E6E6E6;
+}
+
+.wpex.horizontal-timeline .timeline-pos-select:before,
+.wpex.horizontal-timeline .timeline-hr:before {
+  display: none;
+}
+
 .single-member-div[data-category="remote"] {
   display: none;
+}
+
+div.wpex.horizontal-timeline .timeline-pos-select {
+  border-bottom-color: #00395C;
+}
+
+div.wpex.horizontal-timeline .ex_s_lick-prev,
+div.wpex.horizontal-timeline .ex_s_lick-next {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+}
+
+div.wpex.horizontal-timeline .wpex-timeline-label .timeline-media img {
+  max-height: 375px;
+  margin: 0;
+}
+
+div.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media {
+  width: 35%;
+}
+
+div.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media + div {
+  width: 65%;
+  border: 2px solid #E6E6E6;
+}
+
+div.wpex h2 + .hidden-date + .wptl-excerpt,
+div.wpex h2 + .wptl-excerpt {
+  border-top: 2px dashed #E6E6E6;
+}
+
+div.wpex.horizontal-timeline .ex_s_lick-prev:hover,
+div.wpex.horizontal-timeline .ex_s_lick-next:hover {
+  color: white;
+  background: #00395C;
+  border-color: #00395C;
+}
+
+div.wpex.horizontal-timeline:not(.no-arr-top) .hor-container {
+  padding: 0 45px;
+}
+
+div.wpex.horizontal-timeline .horizontal-nav .ex_s_lick-prev {
+  left: -45px;
+}
+
+div.wpex.horizontal-timeline .horizontal-nav .ex_s_lick-next {
+  right: -45px;
+}
+
+div.wpex.horizontal-timeline:not(.ex-multi-item) .horizontal-nav .ex_s_lick-arrow.ex_s_lick-disabled,
+div.wpex.horizontal-timeline .ex_s_lick-prev,
+div.wpex.horizontal-timeline .ex_s_lick-next,
+div.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current span.tl-point:before {
+  color: #00395C;
+  border-color: #00395C;
+}
+
+div.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current span.tl-point:before {
+  background: #00395C;
+}
+
+div.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media + div {
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  div.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media + div {
+    padding: 35px;
+  }
+}
+
+div.wpex.horizontal-timeline .wpex-timeline-label h2 {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  div.wpex.horizontal-timeline .wpex-timeline-label h2 {
+    margin-bottom: 35px;
+  }
+}
+
+div.wpex.horizontal-timeline .wpex-timeline-label h2 a,
+div.wpex.horizontal-timeline .wpex-timeline-label h2 {
+  text-transform: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: #00395C;
+}
+
+@media screen and (min-width: 768px) {
+  div.wpex.horizontal-timeline .wpex-timeline-label h2 a,
+  div.wpex.horizontal-timeline .wpex-timeline-label h2 {
+    font-size: 26px;
+  }
 }
 
 .wp-block.text-cards-grid {

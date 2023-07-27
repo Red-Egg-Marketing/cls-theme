@@ -33,6 +33,11 @@
   position: relative;
 }
 
+i.fa {
+  font-size: 17px;
+  line-height: 18px;
+}
+
 .entry-content ul li li,
 .edit-post-visual-editor__content-area ul li li {
   list-style-type: circle;
@@ -44,7 +49,7 @@
   display: none;
 }
 
-.edit-post-visual-editor__content-area ul li:before, .entry-content ul li:before {
+.edit-post-visual-editor__content-area ul li:not([class]):before, .entry-content ul li:not([class]):before {
   content: "\2022";
   color: #910035;
   position: absolute;

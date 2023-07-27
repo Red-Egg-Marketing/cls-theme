@@ -12,10 +12,10 @@ const template = [
 
 const EditShortcodeSection = ( { attributes, setAttributes } ) => {
 
-		const { bgSlug, bgColor } = attributes;
+		const { bgSlug, bgColor, withBG } = attributes;
 
 		const blockProps = useBlockProps({
-			className: 'shortcode-section' + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '')
+			className: 'shortcode-section' + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '') + (withBG == true ? ' triangles' : '')
 		});	
 		
 		return (
@@ -26,6 +26,20 @@ const EditShortcodeSection = ( { attributes, setAttributes } ) => {
 						bgSlug={ bgSlug }
 						setAttributes={ setAttributes }
 					/>
+					<PanelBody
+						title={ __( 'With Background Triangles' ) }
+						initialOpen={ false }
+					>
+						<ToggleControl
+        				    label="With BG Triangles"
+        				    checked={ withBG }
+        				    onChange={ (value) => {
+        				       setAttributes({
+        				       	withBG: !!value
+        				       });
+        				    } }
+        				/>
+					</PanelBody>
 				</InspectorControls>
 				<div {...blockProps}>
 					<div className="block-wrapper">
