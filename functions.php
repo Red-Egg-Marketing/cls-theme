@@ -285,6 +285,12 @@ require get_template_directory() . '/inc/posts.php';
 require get_template_directory() . '/inc/menu-functions.php';
 
 
+/**
+ * Importing Functions and Cron Jobs
+ */
+require get_template_directory() . '/inc/import.php';
+
+
 
 /**
  * Load Jetpack compatibility file.
