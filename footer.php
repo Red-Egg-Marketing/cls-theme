@@ -19,7 +19,7 @@ if (function_exists('get_field')) {
         'areas'         => get_permalink(get_field('areas_served', 'options')),
         'icons'         => get_field('icons', 'options'),
     ];
-    
+
 ?>
 
     <footer id="colophon" class="site-footer">

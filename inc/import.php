@@ -17,8 +17,7 @@ add_action( "admin_notices", function() {
 
 add_action( "admin_init", function() {
     global $wpdb;
-    // I'd recommend replacing this with your own code to make sure
-    //  the post creation _only_ happens when you want it to.
+
     if ( ! isset( $_GET["insert_vehicles"] ) ) {
         return;
     }
@@ -57,7 +56,7 @@ add_action( "admin_init", function() {
         $errors = array();
 
         // Get array of CSV files
-        $files = glob( __DIR__ . "/*.csv" );
+        $files = glob( __DIR__ . "/cls.csv" );
 
         foreach ( $files as $file ) {
 
@@ -98,7 +97,7 @@ add_action( "admin_init", function() {
 
         if ( ! empty( $errors ) ) {
             // ... do stuff with the errors
-            print_r($errors);
+            // print_r($errors);
         }
 
         return $data;
@@ -107,44 +106,72 @@ add_action( "admin_init", function() {
 
     // Simple check to see if the current post exists within the
     //  database. This isn't very efficient, but it works.
-    $post_exists = function( $title ) use ( $wpdb, $vehicle ) {
+    $post_exists = function( $vin_number ) use ( $wpdb ) {
 
-        // Get an array of all posts within our custom post type
-        $posts = $wpdb->get_col( "SELECT post_title FROM {$wpdb->posts} WHERE post_type = '{$vehicle["custom-post-type"]}'" );
+        // check if post exists from vin number
+        $posts = $wpdb->get_col( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'vin' && meta_value = '{$vin_number}'" );
 
-        // Check if the passed title exists in array
-        return in_array( $title, $posts );
+        if(!empty($posts)) {
+            return $posts[0];
+        } else {
+            return false;
+        }
+
     };
+
+    $x = 0;
 
     foreach ( $posts() as $post ) {
         // If the post exists, skip this post and go to the next one
-        if ( $post_exists( $post["title"] ) ) {
-            continue;
+        $exists_id = $post_exists( $post["VIN"] );
+
+        if ( $exists_id !== false ) {
+            // if the vin number exists, update the post
+            wp_update_post(
+                [
+                    "ID" => $exists_id,
+                    "post_title" => $post["title"],
+                    "post_content" => $post["content"],
+                    "post_type" => $vehicle["custom-post-type"],
+                    "post_status" => "publish"
+                ]
+            );
+
+             // check images meta if post has already been inserted, but updating
+            $current_images = get_post_meta($exists_id, 'original_base');
+
+        } else {
+            // Insert the vehicle into the database
+            $post["id"] = wp_insert_post(
+                [
+                    "post_title" => $post["title"],
+                    "post_content" => $post["content"],
+                    "post_type" => $vehicle["custom-post-type"],
+                    "post_status" => "publish"
+                ]
+            );
         }
-
-        // Insert the post into the database
-        $post["id"] = wp_insert_post( array(
-            "post_title" => $post["title"],
-            "post_content" => $post["content"],
-            "post_type" => $vehicle["custom-post-type"],
-            "post_status" => "publish"
-        ));
-
 
         $images = explode(",", $post['images']);
 
         // Get the path to the upload directory.
         $wp_upload_dir = wp_upload_dir();
-        $x = 0;
         
+        $number = 1;
+        
+        // load images into upload directory
+        $i_array = [];
         foreach($images as $image) {
-            
-                $timeout_seconds = 5;
+
+                if (isset($current_images) && !in_array(basename($image), $current_images)) continue;
+                
+                $timeout_seconds = 1.5;
+
+                array_push($i_array, basename($image));
 
                 $temp_file = download_url( $image, $timeout_seconds );
 
                 if ( !is_wp_error( $temp_file ) ) {
-
 
                     $file = array(
                         'name'     => basename( $image ),
@@ -162,13 +189,14 @@ add_action( "admin_init", function() {
 
                     if( empty( $sideload[ 'error' ] ) ) {
                         // you may return error message if you want
+                        @unlink($temp_file);
 
                         $attachment_id = wp_insert_attachment(
                             array(
                                 'guid'           => $sideload[ 'url' ],
                                 'post_mime_type' => $sideload[ 'type' ],
-                                'post_title'     => basename( $sideload[ 'file' ] ),
-                                'post_content'   => '',
+                                'post_title'     => $post['title'] . ' Image #' . $number,
+                                'post_content'   => basename($image),
                                 'post_status'    => 'inherit',
                                 'post_parent'    => $post['id']
                             ),
@@ -183,19 +211,21 @@ add_action( "admin_init", function() {
                                 $attachment_id,
                                 wp_generate_attachment_metadata( $attachment_id, $sideload[ 'file' ] )
                             );
-                            if ($x == 0) {
+                            if ($number == 1) {
                                 set_post_thumbnail($post['id'], $attachment_id);
                             }
-                            $x++;
 
                         }
                     }
-                }
-    
-        }
 
-        // insert media into post
-        
+                }
+
+                $number++;
+    
+        } // end foreach
+
+        // add for checking if images are already added
+        update_post_meta($post['id'], 'original_base', json_encode($i_array));
         // Update post's custom field with attachment
         update_field( $vehicle["vin"], $post["VIN"], $post["id"] );
         update_field( $vehicle["stock"], $post["Stock"], $post["id"] );
@@ -207,7 +237,6 @@ add_action( "admin_init", function() {
         update_field( $vehicle["exterior_color"], $post["ExteriorColor"], $post["id"] );
         update_field( $vehicle["interior_color"], $post["InteriorColor"], $post["id"] );
         update_field( $vehicle["engine_cylinders"], $post["EngineCylinders"], $post["id"] );
-        update_field( $vehicle["engine_displacement"], $post["EngineDisplacement"], $post["id"] );
         update_field( $vehicle["engine_displacement"], $post["EngineDisplacement"], $post["id"] );
         update_field( $vehicle["transmission"], $post["Transmission"], $post["id"] );
         update_field( $vehicle["miles"], $post["SellingPrice"], $post["id"] );
