@@ -11328,6 +11328,8 @@ div.wprs_unslider {
 .flex {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .align-center {
@@ -12944,6 +12946,50 @@ a.footer-home {
   max-width: 1250px;
   margin: 0 auto;
   width: 100%;
+}
+
+.single.single-vehicle .entry-content {
+  background: #E6E6E6;
+}
+
+.single.single-vehicle .post-content {
+  max-width: 1620px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.post-content .col {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .post-content .col {
+    width: 50%;
+  }
+}
+
+.vehicle.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.vehicle-gallery {
+  position: relative;
+  width: 100%;
+}
+
+.post-content .col.col-full {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .post-content .col.col-full {
+    width: 100%;
+  }
 }
 
 .single .post-content {

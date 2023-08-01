@@ -955,6 +955,8 @@ div.wprs_unslider {
 .flex {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .align-center {

@@ -30,6 +30,7 @@ add_action( "admin_init", function() {
         "type"                  =>  "type",
         "body"                  =>  "body",
         "trim"                  =>  "trim",
+        "year"                  =>  "year",
         "model-number"          =>  "model-number",
         "doors"                 =>  "doors",
         "exterior_color"        =>  "exterior_color",
@@ -45,6 +46,7 @@ add_action( "admin_init", function() {
         "certified"             =>  "certified",
         "date_in_stock"         =>  "date_in_stock",
         "options"               =>  "options",
+        "categorized_options"   =>  "categorized_options",
         "city_mpg"              =>  "city_mpg",
         "highway_mpg"           =>  "highway_mpg",
         "drivetrain"            =>  "drivetrain",
@@ -80,7 +82,7 @@ add_action( "admin_init", function() {
                         $post[$key] = $row[$i];
                     }
 
-                    $title =  $post['Make'] . ' ' . $post['Model'] . ' ' . $post['Year'];
+                    $title =  $post['Make'] . ' ' . $post['Model'];
                     $post['title'] = $title;
                     $post['images'] = $post['ImageList'];
                     $post['content'] = $post['Description'];
@@ -224,31 +226,56 @@ add_action( "admin_init", function() {
     
         } // end foreach
 
+        $tax_array = [];
+
+        array_push($tax_array, 
+            ['make' => $post['Make']],
+            ['car_type' => $post['Type']],
+            ['model' => $post['Model']],
+            ['car_year' => $post['Year']],
+            ['body' => $post['Body']],
+            ['trim' => $post['Trim']],
+            ['doors' => $post['Doors']],
+            ['exterior_color' => $post['ExteriorColor']],
+            ['interior_color' => $post['InteriorColor']],
+            ['engine_cylinder' => $post['EngineCylinders']],
+            ['engine_displacement' => $post['EngineDisplacement']],
+            ['transmission' => $post['Transmission']],
+            ['drivetrain' => $post['Drivetrain']],
+        );
+
+        // add taxonomies
+        foreach($tax_array as $tax) {
+
+            foreach($tax as $key => $tax_value) {
+                wp_set_post_terms(
+                    $post['id'],
+                    $tax_value,
+                    $key,
+                    false
+                );
+            }
+        }
+
+        
+
         // add for checking if images are already added
         update_post_meta($post['id'], 'original_base', json_encode($i_array));
         // Update post's custom field with attachment
-        update_field( $vehicle["vin"], $post["VIN"], $post["id"] );
-        update_field( $vehicle["stock"], $post["Stock"], $post["id"] );
-        update_field( $vehicle["type"], $post["Type"], $post["id"] );
-        update_field( $vehicle["body"], $post["Body"], $post["id"] );
-        update_field( $vehicle["trim"], $post["Trim"], $post["id"] );
-        update_field( $vehicle["model_number"], $post["ModelNumber"], $post["id"] );
-        update_field( $vehicle["doors"], $post["Doors"], $post["id"] );
-        update_field( $vehicle["exterior_color"], $post["ExteriorColor"], $post["id"] );
-        update_field( $vehicle["interior_color"], $post["InteriorColor"], $post["id"] );
-        update_field( $vehicle["engine_cylinders"], $post["EngineCylinders"], $post["id"] );
-        update_field( $vehicle["engine_displacement"], $post["EngineDisplacement"], $post["id"] );
-        update_field( $vehicle["transmission"], $post["Transmission"], $post["id"] );
-        update_field( $vehicle["miles"], $post["SellingPrice"], $post["id"] );
-        update_field( $vehicle["msrp"], $post["MSRP"], $post["id"] );
-        update_field( $vehicle["book_value"], $post["BookValue"], $post["id"] );
-        update_field( $vehicle["invoice"], $post["Invoice"], $post["id"] );
-        update_field( $vehicle["certified"], $post["Certified"], $post["id"] );
-        update_field( $vehicle["date_in_stock"], $post["DateInStock"], $post["id"] );
-        update_field( $vehicle["options"], $post["Options"], $post["id"] );
-        update_field( $vehicle["city_mpg"], $post["CityMPG"], $post["id"] );
-        update_field( $vehicle["highway_mpg"], $post["HighwayMPG"], $post["id"] );
-        update_field( $vehicle["drivetrain"], $post["Drivetrain"], $post["id"] );
+        update_post_meta( $post['id'], $vehicle["vin"], $post["VIN"]);
+        update_post_meta( $post['id'], $vehicle["stock"], $post["Stock"]);
+        update_post_meta( $post['id'], $vehicle["model_number"], $post["ModelNumber"]);
+        update_post_meta( $post['id'], $vehicle["selling_price"], $post["SellingPrice"]);
+        update_post_meta( $post['id'], $vehicle["miles"], $post["Miles"]);
+        update_post_meta( $post['id'], $vehicle["msrp"], $post["MSRP"]);
+        update_post_meta( $post['id'], $vehicle["book_value"], $post["BookValue"]);
+        update_post_meta( $post['id'], $vehicle["invoice"], $post["Invoice"]);
+        update_post_meta( $post['id'], $vehicle["certified"], $post["Certified"]);
+        update_post_meta( $post['id'], $vehicle["date_in_stock"], $post["DateInStock"]);
+        update_post_meta( $post['id'], $vehicle["options"], $post["Options"]);
+        update_post_meta( $post['id'], $vehicle["categorized_options"], $post["Categorized Options"]);
+        update_post_meta( $post['id'], $vehicle["city_mpg"], $post["CityMPG"]);
+        update_post_meta( $post['id'], $vehicle["highway_mpg"], $post["HighwayMPG"]);
     
         
     }  

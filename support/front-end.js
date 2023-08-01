@@ -16,5 +16,6 @@ import "./js-compile/fancybox-settings.js";
 import "./js-compile/background.js";
 // import "./js-compile/stat-callout.js";
 import "./js-compile/filter-resources.js";
+import "./js-compile/swiper.js";
 // import "./js-compile/bios.js";
 

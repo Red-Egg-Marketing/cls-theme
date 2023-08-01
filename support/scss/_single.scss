@@ -19,6 +19,43 @@
 	width: 100%;
 }
 
+
+
+.single.single-vehicle .entry-content {
+	background: $grey;
+}
+
+.single.single-vehicle .post-content {
+	max-width: $max-cont-w - 300px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.post-content .col {
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 50%;
+	}
+}
+
+.vehicle.swiper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.vehicle-gallery {
+	position: relative;
+	width: 100%;
+}
+
+.post-content .col.col-full {
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 100%;
+	}
+}
+
 .single .post-content {
 	max-width: $med-width;
 	padding-left: 1.25rem;
