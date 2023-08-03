@@ -9,7 +9,6 @@
 
 $id = get_the_id();
 
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -18,12 +17,7 @@ $id = get_the_id();
 	<div class="post-content">
 		<div class="col flex">
 		<?php
-			if ( is_singular() ) :
-				the_title( '<h1 class="header-title">', '</h1>' );
-			else :
-				the_title( '<h2 class="header-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			endif;
-
+			the_title( '<h1 class="header-title">', '</h1>' );
 			$attachments = get_attached_media('image', $id);
 
 			if (!empty($attachments)) {
@@ -84,13 +78,17 @@ $id = get_the_id();
 					wp_kses_post( get_the_title() )
 				)
 			);
-			cls_posts_topics($id, 'project_category', 'View More Projects Tagged');
 			?>
 			</div>
 		</div>
 		<div class="col col-full">
 			<a class="wp-block-button__link wp-element-button">I'm Interested</a>
 		</div>
-	</div><!-- .entry-content -->
+	</div><!-- .post-content -->
+	<div class="related-posts">
+		<?php
+			cls_vehicle_footer($id, 'vehicle', $title = 'Related Inventory');
+		?>
 	</div>
+	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

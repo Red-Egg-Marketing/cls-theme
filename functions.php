@@ -291,6 +291,12 @@ require get_template_directory() . '/inc/menu-functions.php';
 require get_template_directory() . '/inc/import.php';
 
 
+/**
+ * Post Filters
+ */
+require get_template_directory() . '/inc/posts-filter.php';
+
+
 
 /**
  * Load Jetpack compatibility file.

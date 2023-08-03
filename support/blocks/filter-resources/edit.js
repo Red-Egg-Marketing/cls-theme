@@ -6,7 +6,7 @@ const { __ } = wp.i18n;
 import Header from '../../components/Header.js';
 import ResourceCard from '../../components/ResourceCard.js';
 import ResourceFilters from '../../components/ResourceLoader.js';
-const apiUrl  = '/wp-json/cls/v2/resources';
+const apiUrl  = '/wp-json/cls/v2/vehicles';
 
 const template = [
 	['core/heading', {'level' : 2}]
@@ -17,6 +17,7 @@ const EditResources = ( { attributes, setAttributes } ) => {
 	  	const [resources, selectResources] = useState(false);
 	  	const [taxonomy, setTaxes] = useState([]);
   		const [selectTax, setSelectTaxes] = useState([]);
+  		const [data, setData] = useState({});
   		const [toggleFilters, setToggleFilters] = useState({key: '', active: false});
 
 		const {
@@ -48,49 +49,32 @@ const EditResources = ( { attributes, setAttributes } ) => {
 			setAttributes({ anchor: removeSpace });
 		}
 
-		const filterCats = (value, id, tax) => {
 
+		const filterCats = (value, id, tax) => {
     		if (value == true) {
     		  if (selectTax.indexOf(id) == -1) {
     		    selectTax.push(id);
+    		    data[tax] = selectTax;
     		  }
     		} else {
     		  let index = selectTax.indexOf(id);
     		  selectTax.splice(index, 1);
+    		  data[tax] = selectTax;
     		}
     		setSelectTaxes(selectTax);
-
+    		setData(data);
+    		let test = {'make' : 108};
     		wp.apiRequest({
-        		url: apiUrl
+        		url: apiUrl,
+        		method: 'POST',
+        		data: test
     		}).then(resourcelist => {
-
-        		let posts = resourcelist[0].resources;
-        		let taxonomies = posts.taxonomies;
-        		// Filter based off selected taxonomies. For example, if topic A and topic B are selected. select posts that have both topice A AND topic B.
-        		let filterPosts = posts.filter((post) => {
-        	  		let postTax = Object.keys(post.taxonomies);
-        	  		let postTaxes = Object.entries(post.taxonomies);
-        	  		let postTruthy = [];
-        	  		let sizeTaxes = selectTax.length;
-        	  		// loop over all selected taxonomies
-        	  		selectTax.forEach((taxItem) => {
-        	  		    // loop over each posts' taxonomies
-        	  		    postTaxes.forEach((postTitem) => {
-        	  		      let indTax = postTitem[1];
-        	  		      indTax.forEach((anotherItem) => {
-        	  		        let aTerm_id = anotherItem.term_id;
-        	  		        if (aTerm_id == taxItem) {
-        	  		          postTruthy.push(true);
-        	  		        }
-        	  		      });
-        	  		    });
-        	  		});
-        	  
-        	  		return postTruthy.length == sizeTaxes ? true : false;
-        	  
-        			});
-        			selectResources(filterPosts);
-    			});
+    			console.log(resourcelist);
+    			selectResources(resourcelist[0].resources);
+        
+    		}).catch( error => {
+    			console.log(error);
+    		});
 	  	}
 
 	  	const toggleCats = (key, item) => {
@@ -139,15 +123,16 @@ const EditResources = ( { attributes, setAttributes } ) => {
 				<div { ...blockProps }>
 					<div className="resources-block">
 						<div className="block-wrapper" id={anchor}>
+							<header
+								className="header"
+							>
+								<InnerBlocks
+									template={ template }
+									allowedBlocks={['core/heading']}
+								/>
+							</header>
 							<div className="resources-wrap">
-								<header
-									className="header"
-								>
-									<InnerBlocks
-										template={ template }
-										allowedBlocks={['core/heading']}
-									/>
-								</header>
+								
 								<ResourceFilters
 									filterCats={ filterCats }
 									taxonomies={ taxonomy }

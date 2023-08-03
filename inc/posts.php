@@ -34,4 +34,33 @@ function cls_update_video() {
 	}
 }
 
+
+/**
+ * Tell WordPress how to interpret our project URL structure
+ *
+ * @param array $rules Existing rewrite rules
+ * @return array
+ */
+function cls_vehicle_add_rewrite_rules( $rules ) {
+  $new = array();
+  $new['vehicle/([^/]+)/(.+)/?$'] = 'index.php?vehicle=$matches[2]';
+  $new['vehicle/(.+)/?$'] = 'index.php?make=$matches[1]';
+
+  return array_merge( $new, $rules ); // Ensure our rules come first
+}
+add_filter( 'rewrite_rules_array', 'cls_vehicle_add_rewrite_rules' );
+
+// rewrite rules for vehicles, use make for url structure
+
+function cls_filter_post_type_link( $link, $post ) {
+  if ( $post->post_type == 'vehicle' ) {
+    if ( $make = get_the_terms( $post->ID, 'make' ) ) {
+      	$link = str_replace( '%make%', current( $make )->slug, $link );
+    }
+  }
+  return $link;
+}
+add_filter( 'post_type_link', 'cls_filter_post_type_link', 10, 2 );
+
+
 ?>

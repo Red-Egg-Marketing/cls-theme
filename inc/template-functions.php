@@ -289,8 +289,88 @@ function cls_posts_pagination() {
 	return $html;
 }
 
-function cls_posts_footer(int $id) {
-	$post_types = ['post'];
+function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inventory') {
+	$post_types = [$post_type];
+	$t = [];
+	$taxes = ['make', 'model', 'body'];
+	$make = get_the_terms($id, 'make');
+	$model = get_the_terms($id, 'model');
+
+	$args = [
+		'post_type' => $post_types,
+		'post_status' => 'publish',
+		'posts_per_page' => 15,
+		'post__not_in' => [$id]
+	];
+	$x = 0;
+	// build terms array of ids
+	foreach($taxes as $tax) {
+		// $c[] = $m->term_id;
+		$terms = get_the_terms($id, $tax);
+		if (!empty($terms)) {
+			if ($x == 0) $args['tax_query'] = [
+				'relation' => 'OR'
+			];
+			foreach($terms as $term) {
+				$args['tax_query'][] = [
+					'taxonomy' => $tax,
+					'field' => 'term_id',
+					'terms' => $term->term_id
+				];
+			}
+			$x++;
+		}
+	}
+
+	$query = new WP_Query($args);
+			if ($query->have_posts()) {
+			?>
+			<div class="resources-grid resources-block light-grey">
+				<header class="header">
+					<h2 class="header-title"><background class="bg-gradient"><?= $head_title; ?></background></h2>
+				</header>
+				<div class="block-wrapper">
+				<?php
+				while($query->have_posts()) {
+					$query->the_post();
+					$id = get_the_ID();
+					$permalink = get_the_permalink();
+					$title = get_the_title();
+					$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
+					$excerpt = get_the_excerpt();
+					$typeClass = '';
+					$cta = 'Read More';
+					?>
+						<div class="resource-card <?= $typeClass; ?>">
+							<div class="resource-extra">
+								<a class="resource-wrap" href="<?= $permalink ?>">
+									<div class="cont-wrap">
+										<?php if ($thumbnail != '') { ?>
+										<div class="image-cont">
+											<img class="resource-img" src="<?= $thumbnail ?>" />
+										</div>
+										<?php } ?>
+										<div class="content">
+											<h3 class="resource-title"><?= $title; ?></h3>
+											<?php if ($excerpt != '') { ?>
+											<?php } ?>
+										</div>
+									</div>
+									<button class="wp-button"><?= $cta; ?></button>
+								</a>
+							</div>
+						</div>
+					<?php
+				}
+				wp_reset_postdata();
+			} ?>
+				</div><!-- .block-wrapper -->
+			</div><!-- .resources-grid -->
+	<?php
+}
+
+function cls_posts_footer(int $id, $post_type = 'post') {
+	$post_types = [$post_type];
 	$t = [];
 	$cats = get_the_terms($id, 'category');
 	$c = [];

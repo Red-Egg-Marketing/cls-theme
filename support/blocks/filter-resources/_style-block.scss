@@ -24,31 +24,19 @@
 	}
 }
 
-.form-filters {
-	width: 100%;
-	max-width: $max-cont-w;
-	margin: 0 auto;
-	padding-top: 1.25rem;
-	padding-bottom: 1.25rem;
-	padding-left: 1.25rem;
-	padding-left: 1.25rem;
+.wp-block-cls-blocks-resources .resources-block .resources-wrap {
+	display: grid;
+	grid-template-columns: 1fr;
 	@media screen and (min-width: $small-width) {
-		padding-top: 0;
-		padding-bottom: 0;
-		padding-left: 2.5rem;
-    	padding-right: 2.5rem;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 }
 
-.form-filters .wrapper {
-	max-width: $max-cont-w;
-	margin: 0 auto 25px;
+.form-filters {
 	width: 100%;
-	display: flex;
-	border-top: 1px solid $navy;
-	border-bottom: 1px solid $navy;
-	align-items: center;
-	justify-content: center;
+	@media screen and (min-width: $small-width) {
+    	grid-column: 1;
+	}
 }
 
 .form-filters .wrapper.one-col {
@@ -84,14 +72,12 @@
 	letter-spacing: 0.3px;
 	line-height: 24px;
 	cursor: pointer;
-	background: url(img/filter-icon.svg) no-repeat center left / 14px;
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
 	padding-left: 1.25rem;
 	@media screen and (min-width: $small-width) {
 		font-size: 19px;
 		line-height: 24px;
-		background: url(img/filter-icon.svg) no-repeat center left / 18px;
 		padding-top: 1.85rem;
 		padding-bottom: 1.85rem;
 		padding-left: 1.75rem;
@@ -108,86 +94,14 @@
 
 .form-filters [class*="col"].active .tax-cont {
 	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: rgba(255, 255, 255, 0.65);
-	z-index: 9999;
 	@media screen and (min-width: $small-width) {
-		position: absolute;
-		top: 100%;
-		left: 0;
 		height: auto;
-		z-index: 998;
-		min-width: 300px;
-		max-width: 450px;
 		border-radius: 0;
-		border: 2px solid $lighter-blue;
-		border-top: 8px solid $lighter-blue;
-		box-shadow: 0 6px 6px rgba(0, 0, 0, .16);
 		background: white;
 	}
 }
 
-.form-filters [class*="col"].active .tax-cont:before {
-	@media screen and (min-width: $small-width) {
-		content: "";
-		display: inline-block;
-		position: absolute;
-		top: -24px;
-		left: 10%;
-		transform: translateX(-50%);
-  		border-bottom: solid 24px $lighter-blue;
-  		border-left: solid 16px transparent;
-  		border-right: solid 16px transparent;
-	}
-}
 
-.tax-cont .tax-wrapper {
-	padding: 5rem 1.25rem 4rem;
-	list-style-type: none;
-	margin: 1.25rem 0 0 1.25rem;
-	width: calc(100% - 2.5rem);
-	height: calc(100% - 2.5rem);
-	background: white;
-	position: relative;
-	border: 2px solid $lighter-blue;
-	border-top: 8px solid $lighter-blue;
-	@media screen and (min-width: $small-width) {
-		box-shadow: none;
-		background: transparent;
-		border: none;
-		border-radius: 0;
-		width: 100%;
-		height: auto;
-		margin: 0;
-		padding: 0;
-	}
-}
-
-ul.tax-list {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start; 
-	align-content: flex-start;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	overflow-y: auto;
-	list-style-type: none;
-	@media screen and (min-width: $small-width) {
-		padding: 1.5rem 2rem;
-		margin: 0;
-		display: grid;
-		width: 100%;
-		height: auto;
-		grid-template-columns: 1fr 1fr;
-		grid-row-gap: 15px;
-		grid-column-gap: 15px;
-	}
-}
 
 .tax-wrapper {
 	position: relative;
@@ -239,11 +153,12 @@ ul.tax-list .checkbox-component {
 }
 
 
-ul.tax-list .checkbox-component:checked + label:after {
+ul.tax-list input.checkbox-component:checked + label:after {
 	content: "";
 	position: absolute;
-	top: 9px;
-	left: 3px;
+	display: inline-block;
+	top: 10px;
+	left: 4px;
 	width: 16px;
 	height: 16px;
 	background: $red;
@@ -338,6 +253,7 @@ header.section-header {
 	padding-right: 1.25rem;
 	width: 100%;
 	margin: 0 auto;
+	grid-column: 2/5;
 }
 
 .form-filters {
@@ -363,14 +279,12 @@ header.section-header {
 .form-filters .components-button {
 	border: none;
 	border-radius: 0;
-	color: white;
 	text-transform: uppercase;
 	font-family: $font-body;
 	font-size: 22px;
 	letter-spacing: 0.35px;
 	line-height: 34px;
 	cursor: pointer;
-	background: url(img/filter-icon.svg) no-repeat center left / 18px;
 	padding-top: 1.85rem;
 	padding-bottom: 1.85rem;
 	padding-left: 1.75rem;
@@ -387,19 +301,24 @@ header.section-header {
 
 .form-filters [class*="col"].active .tax-cont {
 	display: block;
-	width: 100%;
-	z-index: 1003;
-	min-width: 400px;
 }
 
+
 ul.tax-list {
-	padding: 1.5rem 2rem;
 	list-style-type: none;
-	margin: 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-row-gap: 15px;
 	grid-column-gap: 15px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	@media screen and (min-width: $small-width) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 15px;
+		grid-column-gap: 15px;
+	}
 }
 
 ul.tax-list .checkbox-component {

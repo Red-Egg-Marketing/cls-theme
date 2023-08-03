@@ -37,6 +37,7 @@ const ResourceLoader = () => {
       let postTaxes = Object.entries(post.taxonomies);
       let postTruthy = [];
       let sizeTaxes = selectTax.length;
+
       // loop over all selected taxonomies
       selectTax.forEach((taxItem) => {
             // loop over each posts' taxonomies
@@ -57,34 +58,36 @@ const ResourceLoader = () => {
   }
 
 
-  const filterCats = (value, id, tax) => {
+  // const filterCats = (value, id, tax) => {
 
-    if (value == true) {
-      if (selectTax.indexOf(id) == -1) {
-        selectTax.push(id);
-      }
-    } else {
-      let index = selectTax.indexOf(id);
-      selectTax.splice(index, 1);
+  //   if (value == true) {
+  //     if (selectTax.indexOf(id) == -1) {
+  //       selectTax.push(id);
+  //     }
+  //   } else {
+  //     let index = selectTax.indexOf(id);
+  //     selectTax.splice(index, 1);
 
-    }
+  //   }
 
-    setSelectTaxes(selectTax);
+  //   setSelectTaxes(selectTax);
 
 
-    wp.apiRequest({
-          url: apiUrl
-      }).then(resourcelist => {
-          let posts = resourcelist[0].resources;
-          let taxonomies = posts.taxonomies;
-          // Filter based off selected taxonomies. For example, if topic A and topic B are selected. select posts that have both topice A AND topic B.
+  //   wp.apiRequest({
+  //         url: apiUrl
+  //     }).then(resourcelist => {
+
+  //       console.log('request is made');
+  //         let posts = resourcelist[0].resources;
+  //         let taxonomies = posts.taxonomies;
+  //         // Filter based off selected taxonomies. For example, if topic A and topic B are selected. select posts that have both topice A AND topic B.
         
-          let filterPosts = posts.filter(actionFilterPosts, this);
+  //         let filterPosts = posts.filter(actionFilterPosts, this);
 
-          selectResources(filterPosts);
+  //         selectResources(filterPosts);
 
-    });
-  }
+  //   });
+  // }
 
   const toggleCats = (key, item) => {
     // toggle state and index to determine what is active
@@ -103,8 +106,6 @@ const ResourceLoader = () => {
   }
 
   if (resources === false) {
-
-    console.log('get this thing');
     wp.apiRequest({
         url: apiUrl
     }).then(resourcelist => {
@@ -176,7 +177,8 @@ const ResourceLoader = () => {
 
 const ResourceFilters = (props) => {
 
-  const { taxonomies, currentFilter, currentTax } = props;
+  const { taxonomies, currentFilter, currentTax, filterCats } = props;
+  
   return (
       <Fragment>
         <form 
@@ -196,7 +198,7 @@ const ResourceFilters = (props) => {
 
                 return (
                     <Fragment>
-                      <div className={`col-6${ isActive } flex align-center j-center filter-block`}>
+                      <div className={`col-6${ isActive } filter-block`}>
                         <Button
                           className="tax-filter-button"
                           onClick={ (event) => { 
@@ -204,7 +206,7 @@ const ResourceFilters = (props) => {
                             }
                           }
                         >
-                          <span className="filt-icon"></span>Filter By { key }
+                          <span className="filt-icon"></span>{ key }
                         </Button>
                         <div className="tax-cont">
                           <div class="tax-wrapper">
@@ -220,7 +222,7 @@ const ResourceFilters = (props) => {
                           <ul className="tax-list">
                           { Object.entries(taxItem).map(([intKey, intValue]) => {
                               let taxName = intKey;
-                              let checked = (currentTax != undefined && currentTax.includes(intValue.tax_id) == true) ? true : false;
+                              {/*let checked = (currentTax != undefined && currentTax.includes(intValue.tax_id) == true) ? true : false;*/}
 
                               return (
                                 <Fragment>
@@ -230,11 +232,12 @@ const ResourceFilters = (props) => {
                                         id={ `inspector-control-box-${ intValue.tax_id }` }
                                         value={ intValue.tax_id }
                                         type="checkbox"
-                                        checked={ checked }
+                                        // checked={ checked }
                                         className="checkbox-component"
                                         onChange={ (box) => { 
-                                            let value = box.currentTarget.checked;
-                                            props.filterCats(value, intValue.tax_id, intValue.taxonomy);
+                                            let value = intValue.tax_id;
+                                            let check = box.target.checked;
+                                            filterCats(check, value, intValue.taxonomy);
                                           }
                                         }
                                       />
@@ -263,9 +266,13 @@ const ResourceFilters = (props) => {
   );
 };
 
+export default ResourceFilters;
+
 let grid = document.getElementById('ResourcesGrid');
 if (grid) {
   render(<ResourceLoader />, grid);
 }
 
-export default ResourceFilters;
+
+
+

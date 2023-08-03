@@ -5,8 +5,8 @@ import save from './save';
 
 registerBlockType( 'cls-blocks/resources', {
 	apiVersion: 2,
-	title: __( 'Filterable Resources', 'cls-blocks' ),
-	description: __( 'Block with filterable list of Resourcess', 'cls-blocks' ),
+	title: __( 'Filterable Vehicles', 'cls-blocks' ),
+	description: __( 'Block with filterable list of vehicles', 'cls-blocks' ),
 	icon: 'megaphone',
 	category: 'layout',
 	attributes: {

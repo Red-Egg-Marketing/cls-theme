@@ -7,19 +7,32 @@ function cls_return_taxonomies($post_types) {
 	$server = rest_get_server();
 	$taxes = $server->response_to_data( $response, false );
 	$tax_array = [];
+	$desired_taxes = ['car_year', 'make', 'body' , 'drivetrain', 'fuel_type'];
+	$sort_order = ['Year', 'Make', 'Body Style', 'Drivetrain', 'Fuel Type'];
 
 	foreach($post_types as $post_type) {
 		$type = $taxes[$post_type];
 		$type_tax = $type['taxonomies'];
 		for ($x = 0; $x < sizeof($type_tax); $x++) {
 			$tax = $type_tax[$x];
+			if (!in_array($tax, $desired_taxes)) continue;
 			if (!in_array($tax, $tax_array)) {
-				$tax_array[] = $tax;
+				$terms = get_terms([
+					'taxonomy' => $tax,
+					'hide_empty' => true
+				]);
+				$singular = get_object_taxonomies('vehicle', 'object');
+				$singular_name = $singular[$tax]->labels->singular_name;
+				foreach($terms as $term) {
+					$tax_array[$singular_name][$term->name]['tax_name'] = $term->name;
+					$tax_array[$singular_name][$term->name]['tax_id'] = $term->term_id;
+					$tax_array[$singular_name][$term->name]['tax_slug'] = $term->slug;
+					$tax_array[$singular_name][$term->name]['taxonomy'] = $term->taxonomy;
+				}
+				
 			}
 		}
 	}
-
-	sort($tax_array);
 
 	return $tax_array;
 }
@@ -41,45 +54,41 @@ function cls_build_post_tax_array($posts, $tax) {
 			$post_label = get_post_type_object($post_type);
 			$post_label = $post_label->labels->singular_name;
 			$post->label = $post_label;
-			if ($post_label == 'Whitepaper' ) {
-				$thumbnail = get_the_post_thumbnail_url($id, 'whitepaper-poster') != false ? get_the_post_thumbnail_url($id, 'whitepaper-poster') : get_the_post_thumbnail_url($id, 'thumbnail');
-			} else {
-				$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
-			}
+			$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
 			$post->media_url = $thumbnail;
 
-			for ($x = 0; $x < $len; $x++) {
-				$c_tax = $tax[$x];
-				$post_taxes = get_the_terms($id, $c_tax);
+			// for ($x = 0; $x < $len; $x++) {
+			// 	$c_tax = $tax[$x];
+			// 	$post_taxes = get_the_terms($id, $c_tax);
 				
-				if (!empty($post_taxes)) {
+			// 	if (!empty($post_taxes)) {
 
-					$singular = get_object_taxonomies($post_type, 'object');
-					$sing_label = $singular[$c_tax]->labels->singular_name;
+			// 		$singular = get_object_taxonomies($post_type, 'object');
+			// 		$sing_label = $singular[$c_tax]->labels->singular_name;
 
-					foreach($post_taxes as $post_tax) {
-						$term_id = $post_tax->term_id;
-						$term_slug = $post_tax->slug;
-						$term_tax = $post_tax->taxonomy;
-						$term_name = $post_tax->name;
-						$tax_array[$sing_label][$term_name]['tax_name'] = $term_name;
-						$tax_array[$sing_label][$term_name]['tax_id'] = $term_id;
-						$tax_array[$sing_label][$term_name]['tax_slug'] = $term_slug;
-						$tax_array[$sing_label][$term_name]['taxonomy'] = $term_tax;
-						$post->taxonomies[$sing_label][] = [
-							'term_name' => $term_name,
-							'term_id' => $term_id,
-							'taxonomy' => $term_tax
-						];
-					}
-				}
+			// 		foreach($post_taxes as $post_tax) {
+			// 			$term_id = $post_tax->term_id;
+			// 			$term_slug = $post_tax->slug;
+			// 			$term_tax = $post_tax->taxonomy;
+			// 			$term_name = $post_tax->name;
+			// 			$tax_array[$sing_label][$term_name]['tax_name'] = $term_name;
+			// 			$tax_array[$sing_label][$term_name]['tax_id'] = $term_id;
+			// 			$tax_array[$sing_label][$term_name]['tax_slug'] = $term_slug;
+			// 			$tax_array[$sing_label][$term_name]['taxonomy'] = $term_tax;
+			// 			$post->taxonomies[$sing_label][] = [
+			// 				'term_name' => $term_name,
+			// 				'term_id' => $term_id,
+			// 				'taxonomy' => $term_tax
+			// 			];
+			// 		}
+			// 	}
 
-			}
+			// }
 
 			$post_array['resources'][] = $post;
 			
 		}
-		return [$post_array, $tax_array];
+		return $post_array;
 
 	} else {
 		return false;
@@ -87,10 +96,12 @@ function cls_build_post_tax_array($posts, $tax) {
 }
 
 
-function cls_return_resources() {
-	$post_types = ['post', 'case-studies'];
+function cls_return_vehicles() {
+	$post_types = ['vehicle'];
 
-	$offset = isset($get['offset']) ? $get['offset'] : 0;
+	$post = $_POST;
+	$make = isset($post['make']) ? $post['make'] : false;
+	$body = isset($post['body']) ? $post['body'] : false;
 
 	$args = [
 		'post_type' => $post_types,
@@ -98,28 +109,55 @@ function cls_return_resources() {
 		'posts_per_page' => -1,
 	];
 
+	if ($make || $body) {
+		$args['tax_query'] = [
+			'relation' => 'AND'
+		];
+	}
+
+	if ($make){
+		$args['tax_query'][] = 
+			[
+				'terms' => $make,
+				'field' => 'term_id',
+				'taxonomy' => 'make',
+			];
+	}
+
+	if ($body){
+		$args['tax_query'][] =
+			[
+				'terms' => $body,
+				'field' => 'term_id',
+				'taxonomy' => 'body',
+			];
+	}
+
 	$query = new WP_Query($args);
+
+	$taxes = cls_return_taxonomies($post_types);
 
 	if ($query->have_posts()) {
 		$result = $query->posts;
 
-		$taxes = cls_return_taxonomies($post_types);
-
-		$resources = cls_build_post_tax_array($result, $taxes);
+		$vehicles = cls_build_post_tax_array($result, $taxes);
 
 		wp_reset_postdata();
 
-		return $resources;
+		return [$vehicles, $taxes];
+	} else {
+		$empty  = '<div class="warning">There are no available vehicles matching your filters. Please try something else.</div>';
+		return [$empty ,$taxes];
 	}
 
 }
 
 
 add_action( 'rest_api_init', function () {
-  register_rest_route( 'cls/v2', '/resources/', 
+  register_rest_route( 'cls/v2', '/vehicles/', 
   	[
-    	'methods' => 'GET',
-    	'callback' => 'cls_return_resources',
+    	'methods' => 'POST, GET',
+    	'callback' => 'cls_return_vehicles',
     	'permission_callback' => '__return_true'
   	] 
   );

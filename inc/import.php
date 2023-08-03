@@ -124,6 +124,8 @@ add_action( "admin_init", function() {
     $x = 0;
 
     foreach ( $posts() as $post ) {
+        if ($post["SellingPrice"] == '0') continue;
+        
         // If the post exists, skip this post and go to the next one
         $exists_id = $post_exists( $post["VIN"] );
 
@@ -149,7 +151,11 @@ add_action( "admin_init", function() {
                     "post_title" => $post["title"],
                     "post_content" => $post["content"],
                     "post_type" => $vehicle["custom-post-type"],
-                    "post_status" => "publish"
+                    "post_name" => $post['Year'] . ' ' . $post["Model"],
+                    "post_status" => "publish",
+                    "meta_input" => [
+                        "vin" => $post["VIN"]
+                    ]
                 ]
             );
         }
@@ -163,6 +169,7 @@ add_action( "admin_init", function() {
         
         // load images into upload directory
         $i_array = [];
+        
         foreach($images as $image) {
 
                 if (isset($current_images) && !in_array(basename($image), $current_images)) continue;
@@ -258,11 +265,9 @@ add_action( "admin_init", function() {
         }
 
         
-
         // add for checking if images are already added
         update_post_meta($post['id'], 'original_base', json_encode($i_array));
         // Update post's custom field with attachment
-        update_post_meta( $post['id'], $vehicle["vin"], $post["VIN"]);
         update_post_meta( $post['id'], $vehicle["stock"], $post["Stock"]);
         update_post_meta( $post['id'], $vehicle["model_number"], $post["ModelNumber"]);
         update_post_meta( $post['id'], $vehicle["selling_price"], $post["SellingPrice"]);
