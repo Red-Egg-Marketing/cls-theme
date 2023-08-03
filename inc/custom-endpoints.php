@@ -8,7 +8,7 @@ function cls_return_taxonomies($post_types) {
 	$taxes = $server->response_to_data( $response, false );
 	$tax_array = [];
 	$desired_taxes = ['car_year', 'make', 'body' , 'drivetrain', 'fuel_type'];
-	$sort_order = ['Year', 'Make', 'Body Style', 'Drivetrain', 'Fuel Type'];
+	$sort_order = ['Price', 'Miles', 'Year', 'Make', 'Body Style', 'Drivetrain', 'Fuel Type'];
 
 	foreach($post_types as $post_type) {
 		$type = $taxes[$post_type];
@@ -33,8 +33,9 @@ function cls_return_taxonomies($post_types) {
 			}
 		}
 	}
+	$ordered_array = array_merge(array_flip($sort_order), $tax_array);
 
-	return $tax_array;
+	return $ordered_array;
 }
 
 
@@ -56,35 +57,6 @@ function cls_build_post_tax_array($posts, $tax) {
 			$post->label = $post_label;
 			$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
 			$post->media_url = $thumbnail;
-
-			// for ($x = 0; $x < $len; $x++) {
-			// 	$c_tax = $tax[$x];
-			// 	$post_taxes = get_the_terms($id, $c_tax);
-				
-			// 	if (!empty($post_taxes)) {
-
-			// 		$singular = get_object_taxonomies($post_type, 'object');
-			// 		$sing_label = $singular[$c_tax]->labels->singular_name;
-
-			// 		foreach($post_taxes as $post_tax) {
-			// 			$term_id = $post_tax->term_id;
-			// 			$term_slug = $post_tax->slug;
-			// 			$term_tax = $post_tax->taxonomy;
-			// 			$term_name = $post_tax->name;
-			// 			$tax_array[$sing_label][$term_name]['tax_name'] = $term_name;
-			// 			$tax_array[$sing_label][$term_name]['tax_id'] = $term_id;
-			// 			$tax_array[$sing_label][$term_name]['tax_slug'] = $term_slug;
-			// 			$tax_array[$sing_label][$term_name]['taxonomy'] = $term_tax;
-			// 			$post->taxonomies[$sing_label][] = [
-			// 				'term_name' => $term_name,
-			// 				'term_id' => $term_id,
-			// 				'taxonomy' => $term_tax
-			// 			];
-			// 		}
-			// 	}
-
-			// }
-
 			$post_array['resources'][] = $post;
 			
 		}
@@ -102,6 +74,14 @@ function cls_return_vehicles() {
 	$post = $_POST;
 	$make = isset($post['make']) ? $post['make'] : false;
 	$body = isset($post['body']) ? $post['body'] : false;
+	$drive = isset($post['drivetrain']) ? $post['drivetrain'] : false;
+	$fuel = isset($post['fuel_type']) ? $post['fuel_type'] : false;
+	$min_year = isset($post['year_min']) ? $post['year_min'] : false;
+	$max_year = isset($post['year_max']) ? $post['year_max'] : false;
+	$min_miles = isset($post['miles_min']) ? $post['miles_min'] : false;
+	$max_miles = isset($post['miles_max']) ? $post['miles_max'] : false;
+	$min_price = isset($post['price_min']) ? $post['price_min'] : false;
+	$max_price = isset($post['price_max']) ? $post['price_max'] : false;
 
 	$args = [
 		'post_type' => $post_types,
@@ -109,7 +89,7 @@ function cls_return_vehicles() {
 		'posts_per_page' => -1,
 	];
 
-	if ($make || $body) {
+	if ($make || $body || $drive || $fuel || $min_year || $max_year) {
 		$args['tax_query'] = [
 			'relation' => 'AND'
 		];
@@ -133,6 +113,94 @@ function cls_return_vehicles() {
 			];
 	}
 
+	if ($drive){
+		$args['tax_query'][] =
+			[
+				'terms' => $drive,
+				'field' => 'term_id',
+				'taxonomy' => 'drivetrain',
+			];
+	}
+
+	if ($fuel){
+		$args['tax_query'][] =
+			[
+				'terms' => $fuel,
+				'field' => 'term_id',
+				'taxonomy' => 'fuel_type',
+			];
+	}
+
+	if ($min_year || $max_year){
+			
+		if ($min_year && $max_year) {
+			$years = range($min_year, $max_year);
+		} elseif($min_year && !$max_year) {
+			$current_year = date("Y");
+			$years = range($min_year, $current_year);
+		} elseif($max_year && !min_year) {
+			$years = range('1900', $max_year);
+		}
+
+		$args['tax_query'][] =
+			[
+				'terms' => $years,
+				'field' => 'name',
+				'taxonomy' => 'car_year',
+			];
+	}
+
+	if (($min_miles || $max_miles) && ($min_price || $max_price)) {
+		$args['meta_query'][] = [
+			'relation' => 'AND'
+		];
+	}
+
+	if ($min_miles || $max_miles) {
+	
+		if ($min_miles && $max_miles) {
+			$miles_values = [intval($min_miles), intval($max_miles)];
+			$compare = 'BETWEEN';	
+		} elseif($min_miles && !$max_miles) {
+			$miles_values = intval($min_miles);
+			$compare = '>=';
+		} elseif($max_miles && !$min_miles) {
+			$miles_values = intval($max_miles);
+			$compare = '<=';
+		}
+
+		$args['meta_query'][] = 
+			[
+				'key' => 'miles',
+				'value' => $miles_values,
+				'type' => 'numeric',
+				'compare' => $compare
+			];
+	}
+
+	if ($min_price || $max_price) {
+	
+		if ($min_price && $max_price) {
+			$price_values = [intval($min_price), intval($max_price)];
+			$compare = 'BETWEEN';	
+		} elseif($min_price && !$max_price) {
+			$price_values = intval($min_price);
+			$compare = '>=';
+		} elseif($max_price && !$min_price) {
+			$price_values = intval($max_price);
+			$compare = '<=';
+		}
+
+		$args['meta_query'][] = 
+			[
+				'key' => 'selling_price',
+				'value' => $price_values,
+				'type' => 'numeric',
+				'compare' => $compare
+			];
+
+	}
+
 	$query = new WP_Query($args);
 
 	$taxes = cls_return_taxonomies($post_types);
@@ -144,10 +212,12 @@ function cls_return_vehicles() {
 
 		wp_reset_postdata();
 
-		return [$vehicles, $taxes];
+		return [$vehicles, $taxes, 'empty' => false];
 	} else {
 		$empty  = '<div class="warning">There are no available vehicles matching your filters. Please try something else.</div>';
-		return [$empty ,$taxes];
+		$error = new stdClass();
+		$error->message = $empty;
+		return [$error ,$taxes, 'empty' => true];
 	}
 
 }

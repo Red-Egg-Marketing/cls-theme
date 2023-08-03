@@ -57,38 +57,6 @@ const ResourceLoader = () => {
       return postTruthy.length == sizeTaxes ? true : false;
   }
 
-
-  // const filterCats = (value, id, tax) => {
-
-  //   if (value == true) {
-  //     if (selectTax.indexOf(id) == -1) {
-  //       selectTax.push(id);
-  //     }
-  //   } else {
-  //     let index = selectTax.indexOf(id);
-  //     selectTax.splice(index, 1);
-
-  //   }
-
-  //   setSelectTaxes(selectTax);
-
-
-  //   wp.apiRequest({
-  //         url: apiUrl
-  //     }).then(resourcelist => {
-
-  //       console.log('request is made');
-  //         let posts = resourcelist[0].resources;
-  //         let taxonomies = posts.taxonomies;
-  //         // Filter based off selected taxonomies. For example, if topic A and topic B are selected. select posts that have both topice A AND topic B.
-        
-  //         let filterPosts = posts.filter(actionFilterPosts, this);
-
-  //         selectResources(filterPosts);
-
-  //   });
-  // }
-
   const toggleCats = (key, item) => {
     // toggle state and index to determine what is active
     // setToggleFilters({key: key, active: !toggleFilters.active });
@@ -177,7 +145,7 @@ const ResourceLoader = () => {
 
 const ResourceFilters = (props) => {
 
-  const { taxonomies, currentFilter, currentTax, filterCats } = props;
+  const { taxonomies, currentFilter, currentTax, filterCats, filterMin, filterMax } = props;
   
   return (
       <Fragment>
@@ -186,6 +154,8 @@ const ResourceFilters = (props) => {
           onChange={ props.testingFilter }
         >
           <div className="wrapper filter-items">
+
+
           { taxonomies && Object.entries(taxonomies).map(([key, value]) => {
                 let tax = key;
                 let taxItem = value;
@@ -195,7 +165,6 @@ const ResourceFilters = (props) => {
                 } else {
                   isActive = '';
                 }
-
                 return (
                     <Fragment>
                       <div className={`col-6${ isActive } filter-block`}>
@@ -219,40 +188,75 @@ const ResourceFilters = (props) => {
                           >
                             X
                           </Button>
-                          <ul className="tax-list">
-                          { Object.entries(taxItem).map(([intKey, intValue]) => {
-                              let taxName = intKey;
-                              {/*let checked = (currentTax != undefined && currentTax.includes(intValue.tax_id) == true) ? true : false;*/}
-
-                              return (
-                                <Fragment>
-                                  <li className="tax-item">
-                                    <div className="tax-wrap">
-                                      <input 
-                                        id={ `inspector-control-box-${ intValue.tax_id }` }
-                                        value={ intValue.tax_id }
-                                        type="checkbox"
-                                        // checked={ checked }
-                                        className="checkbox-component"
-                                        onChange={ (box) => { 
-                                            let value = intValue.tax_id;
-                                            let check = box.target.checked;
-                                            filterCats(check, value, intValue.taxonomy);
+                          { (tax != 'Year' && tax != 'Price' && tax != 'Miles') && (
+                            <ul className="tax-list">
+                            { Object.entries(taxItem).map(([intKey, intValue]) => {
+                                let taxName = intKey;
+                                {/*let checked = (currentTax != undefined && currentTax.includes(intValue.tax_id) == true) ? true : false;*/}
+                                return (
+                                  <Fragment>
+                                    <li className="tax-item">
+                                      <div className="tax-wrap">
+                                        <input 
+                                          id={ `inspector-control-box-${ intValue.tax_id }` }
+                                          value={ intValue.tax_id }
+                                          type="checkbox"
+                                          // checked={ checked }
+                                          className="checkbox-component"
+                                          onChange={ (box) => { 
+                                              let value = intValue.tax_id;
+                                              let check = box.target.checked;
+                                              filterCats(check, value, intValue.taxonomy);
+                                            }
                                           }
-                                        }
-                                      />
-                                      <label
-                                        for={ `inspector-control-box-${ intValue.tax_id }` }
-                                      >
-                                        { taxName }
-                                      </label>
-                                    </div>
-                                  </li>
-                                </Fragment>
-                              );
-                            })
-                          }
-                          </ul>
+                                        />
+                                        <label
+                                          for={ `inspector-control-box-${ intValue.tax_id }` }
+                                        >
+                                          { taxName }
+                                        </label>
+                                      </div>
+                                    </li>
+                                  </Fragment>
+                                );
+                              })
+                            }
+                            </ul>
+                          )}
+                          { (tax == 'Year' || tax == 'Price' || tax == 'Miles') && (
+                            <ul className="tax-inputs">
+                              <li className="tax-input">
+                                  <input 
+                                    id={ `inspector-control-box-min` }
+                                    type="number"
+                                    className="number-component"
+                                    placeholder="Min"
+                                    min="1000"
+                                    onChange={ (box) => { 
+                                        let tax_value = tax.toLowerCase();
+                                        let value = box.target.value;
+                                        let check = box.target.value != '' ? true : false;
+                                        filterMin(check, value, tax_value);
+                                      }
+                                    }
+                                  />
+                                  <input 
+                                    id={ `inspector-control-box-max` }
+                                    type="number"
+                                    className="number-component"
+                                    placeholder="Max"
+                                    min="1000"
+                                    onChange={ (box) => { 
+                                        let tax_value = tax.toLowerCase();
+                                        let value = box.target.value;
+                                        let check = box.target.value != '' ? true : false;
+                                        filterMax(check, value, tax_value);
+                                      }
+                                    }
+                                  />
+                              </li>
+                            </ul>
+                          )}
                           </div>
                         </div>
                       </div>

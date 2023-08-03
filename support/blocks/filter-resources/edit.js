@@ -3,7 +3,6 @@ const { Fragment, useState } = wp.element;
 const { RangeControl, PanelBody, TextControl, SelectControl, Button, Toolbar, ToolbarButton, Popover, withFocusOutside, Dashicon } = wp.components;
 const { useDispatch, useSelect, replaceInnerBlocks } = wp.data;
 const { __ } = wp.i18n;
-import Header from '../../components/Header.js';
 import ResourceCard from '../../components/ResourceCard.js';
 import ResourceFilters from '../../components/ResourceLoader.js';
 const apiUrl  = '/wp-json/cls/v2/vehicles';
@@ -17,6 +16,7 @@ const EditResources = ( { attributes, setAttributes } ) => {
 	  	const [resources, selectResources] = useState(false);
 	  	const [taxonomy, setTaxes] = useState([]);
   		const [selectTax, setSelectTaxes] = useState([]);
+  		const [resourcesEmpty, setEmpty] = useState(false);
   		const [data, setData] = useState({});
   		const [toggleFilters, setToggleFilters] = useState({key: '', active: false});
 
@@ -50,31 +50,61 @@ const EditResources = ( { attributes, setAttributes } ) => {
 		}
 
 
-		const filterCats = (value, id, tax) => {
-    		if (value == true) {
-    		  if (selectTax.indexOf(id) == -1) {
-    		    selectTax.push(id);
-    		    data[tax] = selectTax;
-    		  }
-    		} else {
-    		  let index = selectTax.indexOf(id);
-    		  selectTax.splice(index, 1);
-    		  data[tax] = selectTax;
-    		}
-    		setSelectTaxes(selectTax);
-    		setData(data);
-    		let test = {'make' : 108};
-    		wp.apiRequest({
+		const sendAPIrequest = (data) => {
+			wp.apiRequest({
         		url: apiUrl,
         		method: 'POST',
-        		data: test
+        		data: data
     		}).then(resourcelist => {
     			console.log(resourcelist);
-    			selectResources(resourcelist[0].resources);
+    			let empty = resourcelist.empty;
+    			setEmpty(empty);
+    			if (empty === false) {
+    				selectResources(resourcelist[0].resources);
+    			}
         
     		}).catch( error => {
     			console.log(error);
     		});
+		}
+
+		const filterMax = (value, id, tax) => {
+			if (!data[tax + '_max']) {
+				data[tax + '_max'] = '';
+			}
+			data[tax + '_max'] = id;
+			sendAPIrequest(data);
+		}
+
+		const filterMin = (value, id, tax) => {
+			if (!data[tax + '_min']) {
+				data[tax + '_min'] = '';
+			}
+			data[tax + '_min'] = id;
+			sendAPIrequest(data);
+		}
+
+
+		const filterCats = (value, id, tax) => {
+			if (!data[tax]) {
+				data[tax] = [];
+			}
+
+    		if (value == true) {
+    		  if (selectTax.indexOf(id) == -1) {
+    		    selectTax.push(id);
+    		   
+    		    data[tax].push(id);
+    		  }
+    		} else {
+    		  let index = selectTax.indexOf(id);
+    		  selectTax.splice(index, 1);
+    		  let dataIndex = data[tax].indexOf(id);
+    		  data[tax].splice(dataIndex, 1);
+    		}
+    		setSelectTaxes(selectTax);
+    		setData(data);
+    		sendAPIrequest(data);
 	  	}
 
 	  	const toggleCats = (key, item) => {
@@ -138,10 +168,11 @@ const EditResources = ( { attributes, setAttributes } ) => {
 									taxonomies={ taxonomy }
 									toggleCats={ toggleCats }
 									currentFilter={ toggleFilters }
+									filterMin={ filterMin }
+									filterMax={ filterMax }
 								/>
 								<div className="resources-grid">
-									{resources.length > 0 && resources.map((resource, resourceIndex) => {
-											
+									{ (resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {
 											return (
 												<Fragment>
 													<ResourceCard
@@ -161,6 +192,13 @@ const EditResources = ( { attributes, setAttributes } ) => {
 											)
 										})
 									}
+									{ resourcesEmpty && (
+										<Fragment>
+											<div className="error">
+												<h3>There are no available vehicles matching your filters. Please try something else.</h3>
+											</div>
+										</Fragment>
+									)}
 								</div>
 							</div>
 						</div>
