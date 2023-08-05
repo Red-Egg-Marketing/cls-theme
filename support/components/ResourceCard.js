@@ -82,14 +82,7 @@ const ResourceCard = (props) => {
 								} }
 							/>
 						)}
-						{ props.updateResourceType == null && (
-							<h5
-								className="resource-type"
-							>
-								{ props.resourceType }
-							</h5>
-						)}
-						
+				
 						{ (props.resourceID != 0 && (props.updateTitle != null && props.updateTile == true)) && (
             				<RichText
 								tagName="h4"
@@ -134,11 +127,7 @@ const ResourceCard = (props) => {
 								{ props.resourceExcerpt }
 							</p>
 						)}
-						<div className="wp-buttons">
-							<button className="wp-button">
-								{ buttonText }
-							</button>
-						</div>
+					
 					</div>	
 				</div>
 				</div>
@@ -156,6 +145,7 @@ ResourceCard.View = (props) => {
 	} else if(props.resourceType == 'Video') {
 		typeClass = 'video';
 	}
+
 	return(
 		<Fragment>
 			<div className={ `resource-card ${slideClass} ${typeClass}` } key={ props.resourceIndex }>
@@ -175,31 +165,39 @@ ResourceCard.View = (props) => {
 						className="content"
 						data-id={ props.resourceID }
 					>
-						<RichText.Content
-							tagName="h5"
-							className="resource-type"
-							value={
-								props.resourceType
-							}
-						/>
-						<RichText.Content
-							tagName="h4"
-							className="resource-title"
-							value={
-								props.resourceTitle
-							}
-						/>
-						<RichText.Content
-							tagName="p"
-							className="resource-excerpt"
-							allowedFormats={['']}
-							value={
-								props.resourceExcerpt
-							}
-						/>
-						<button className="wp-button">
-							{ buttonText }
-						</button>
+						<div className="top">
+							<RichText.Content
+								tagName="h4"
+								className="resource-title"
+								value={
+									props.resourceTitle
+								}
+							/>
+							<RichText.Content
+								tagName="p"
+								className="resource-year"
+								value={
+									props.resourceYear
+								}
+							/>
+						</div>
+						<div className="bottom">
+							<RichText.Content
+								tagName="p"
+								className="resource-miles"
+								value={
+									props.resourceMiles
+								}
+							/>
+							<RichText.Content
+								tagName="p"
+								className="resource-price"
+								value={
+									props.resourcePrice
+								}
+							/>
+						</div>
+						
 					</div>
 				</a>
 				</div>

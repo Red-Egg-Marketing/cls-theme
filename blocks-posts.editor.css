@@ -755,14 +755,14 @@ h4 {
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .resource-card .image-cont {
   width: 100%;
   position: relative;
-  padding-bottom: 50%;
+  padding-bottom: 66.66%;
   overflow: hidden;
 }
 
@@ -843,8 +843,8 @@ h4 {
   display: block;
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .resource-card .tax-links {

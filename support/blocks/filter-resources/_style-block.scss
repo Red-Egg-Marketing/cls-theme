@@ -232,7 +232,7 @@ header.section-header {
 }
 
 .filter-resources .resources-block .block-wrapper {
-	max-width: 100%;
+	max-width: 1680px;
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -243,6 +243,7 @@ header.section-header {
 	margin-top: 0;
 }
 
+.filter-resources .resources-grid,
 .wp-block.filter-resources .resources-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;

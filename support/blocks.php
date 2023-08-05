@@ -1,3 +1,4 @@
+
 <?php
  // enqueue custom blocks
 function cls_enqueue_block_editor_assets() {
@@ -42,44 +43,6 @@ add_action('enqueue_block_editor_assets', 'cls_enqueue_block_editor_assets');
 
 
 // For Dynamic blocks that are registered within blocks folder
-
-
-function cls_render_filtered_resources_callback($block_attributes, $content) {
-    global $is_IE;
-
-    $block_content = '<div class="wp-block-cls-blocks-resources">';
-        $block_content .= '<div class="resources-block">';
-            $block_content .= '<div class="resources-wrap">';
-                $block_content .= '<div id="ResourcesGrid" class="resources-grid">';
-                    $block_content .= '<header class="header">';
-                        $block_content .= $content;
-                    $block_content .= '</header>';
-                    $block_content .= '<div class="block-wrapper">';
-                    if ($is_IE) {
-                        $block_content .= cls_posts_pagination();
-                    }
-                    $block_content .= '</div>';
-                $block_content .= '</div>';
-            $block_content .= '</div>';
-        $block_content .= '</div>';
-    $block_content .= '</div>';
-
-    return $block_content; 
-}
-
-
-function cls_dynamic_resources_block() {
-    
-    register_block_type( 'cls-blocks/resources', [
-            'api_version' => 2,
-            'script' => 'wp-main-js',
-            'render_callback' => 'cls_render_filtered_resources_callback'
-        ] 
-    );
-}
-
-add_action('init', 'cls_dynamic_resources_block');
-
 
 function cls_render_filtered_projects_callback($block_attributes, $content) {
     $block_content = '';
@@ -155,7 +118,7 @@ function cls_dynamic_case_studies_grid_block() {
         wp_enqueue_script(
             'wp-main-js',
             get_template_directory_uri() . $front_path,
-            ['wp-api', 'tweenmax', 'scroll-magic', 'scrolltrigger', 'tweenmax-animation'],
+            ['wp-api', 'tweenmax', 'scroll-magic', 'scrolltrigger', 'tweenmax-animation', 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor'],
             'v1.0.1',
             true
        );

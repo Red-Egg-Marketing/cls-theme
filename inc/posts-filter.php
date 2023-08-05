@@ -8,7 +8,7 @@ function cls_vin_import_check( $post_id ) {
 
     $vin = get_post_meta($post_id, 'vin', true);
 
-    if ($vin == '' || $post_type != 'vehicle') exit;
+    if ($vin != '' && $post_type != 'vehicle') return;
 
     $postdata = http_build_query(
         array(
@@ -57,7 +57,7 @@ add_action('save_post', 'cls_vin_import_check');
 
 function cls_rewrite_rules_update( $post_id ) {
 
-    if ( ! isset( $_POST['post_type']) && $_POST['post_type'] != 'vehicle' ) {
+    if ( $_POST['post_type'] != 'vehicle' ) {
         return;
     }
     flush_rewrite_rules();

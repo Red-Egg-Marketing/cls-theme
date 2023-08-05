@@ -13,13 +13,13 @@ import PaddingSelector from '../../components/Padding.js';
 
 // import a component
 
-const apiUrl  = '/wp-json/cls/v2/posts';
-const catUrl  = '/wp-json/wp/v2/categories';
+const apiUrl  = '/wp-json/cls/v2/vehicles';
+const catUrl  = '/wp-json/wp/v2/car_year?per_page=100';
 
 const template = [
 	['cls-blocks/section-header']
 ]
-const count = 3;
+const count = 10;
 const buttonStyle = {
 	"margin-left" : "15px"
 }
@@ -100,10 +100,10 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 			wp.apiFetch({
 				url: apiUrl
 			}).then(resourcelist => {
-				let size = resourcelist.length <= count ? resourcelist.length : count;
+				let size = resourcelist[0].resources.length <= count ? resourcelist[0].resources : count;
 				let posts = [];
 				for (var x = 0; x < size; x++) {
-					posts[x] = resourcelist[x];
+					posts[x] = resourcelist[0].resources[x];
 				}
 
 				setAttributes({resources: posts });
@@ -119,8 +119,9 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 
 		if (currentCats == false || currentCats.length == 0) {
 			wp.apiFetch({
-				url: catUrl
+				url: catUrl,
 			}).then(categories => {
+
 				let cats = [];
 
 				categories.forEach((category, index) => {
@@ -141,12 +142,13 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 		const setCategoryPosts = (value) => {
 
 			wp.apiFetch({
-				url: apiUrl + '?category=' + value
+				url: apiUrl + '?year=' + value,
+				method: 'GET'
 			}).then(resourcelist => {
-				let size = resourcelist.length <= count ? resourcelist.length : count;
+				let size = resourcelist[0].resources.length <= count ? resourcelist[0].resources.length : count;
 				let posts = [];
 				for (var x = 0; x < size; x++) {
-					posts[x] = resourcelist[x];
+					posts[x] = resourcelist[0].resources[x];
 				}
 
 				setAttributes({resources: posts });
@@ -164,11 +166,11 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 			<Fragment>
 				<InspectorControls>
 					<PanelBody
-						title={ __('Select Category')}
+						title={ __('Select Year')}
 						initialOpen={ true }
 					>
 						<SelectControl
-							 label={ __('Category')}
+							 label={ __('Year')}
 							 value={ category }
 							 options={
 							 	currentCats
@@ -220,15 +222,14 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 														resourceIndex={ resourceIndex }
 														resourceURL={ resource.link }
 														resourceID={ resource.ID }
-														resourceImg={ resource.featured_image }
-														resourceTitle={ resource.title  }
+														resourceImg={ resource.media_url }
+														resourceTitle={ resource.post_title  }
 														resourceType={ resource.label  }
-														resourceExcerpt={ resource.excerpt }
+														resourceExcerpt={ resource.post_excerpt }
 														updateResourceImage={ null }
-														updateResourceText={ true }
+														updateResourceText={ false }
 														updateResourceExcerpt={ null }
 														updateResourceType={ null }
-														updateTitle={ false }
 													/>	
 												</Fragment>
 											);

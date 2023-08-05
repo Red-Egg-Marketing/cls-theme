@@ -1,5 +1,5 @@
-const { RichText, InnerBlocks, InspectorControls, BlockControls, URLInput, MediaUpload, useBlockProps } = wp.blockEditor;
-const { Fragment, useState } = wp.element;
+const { RichText, InnerBlocks, InspectorControls, BlockControls, URLInput, MediaUpload } = wp.blockEditor;
+const { render, Fragment, useState } = wp.element;
 const { RangeControl, PanelBody, TextControl, SelectControl, Button, Toolbar, ToolbarButton, Popover, withFocusOutside, Dashicon } = wp.components;
 const { useDispatch, useSelect, replaceInnerBlocks } = wp.data;
 const { __ } = wp.i18n;
@@ -7,11 +7,9 @@ import ResourceCard from '../../components/ResourceCard.js';
 import ResourceFilters from '../../components/ResourceLoader.js';
 const apiUrl  = '/wp-json/cls/v2/vehicles';
 
-const template = [
-	['core/heading', {'level' : 2}]
-];
+const ResourcesRoot = document.getElementById('ResourcesWrap');
 
-const EditResources = ( { attributes, setAttributes } ) => {
+const SaveResources = ( { attributes } ) => {
 	  	
 	  	const [resources, selectResources] = useState(false);
 	  	const [taxonomy, setTaxes] = useState([]);
@@ -20,9 +18,6 @@ const EditResources = ( { attributes, setAttributes } ) => {
   		const [data, setData] = useState({});
   		const [toggleFilters, setToggleFilters] = useState({key: '', active: false});
 
-		const {
-			taxonomies, anchor, mainTitle
-		} = attributes;
 
 		document.addEventListener('click', function(event) {
     		let target = event.target;
@@ -38,16 +33,6 @@ const EditResources = ( { attributes, setAttributes } ) => {
     		}
 
   		}, false);
-
-		const blockProps = useBlockProps({
-			className: 'filter-resources'
-		});
-
-		const updateAnchor = (value) => {
-			let removeSpace = value.replace(/\s+/g, '-');
-			setAttributes({ anchor: removeSpace });
-		}
-
 
 		const sendAPIrequest = (data) => {
 			wp.apiRequest({
@@ -107,7 +92,6 @@ const EditResources = ( { attributes, setAttributes } ) => {
 
 	  	const toggleCats = (key, item) => {
     		// toggle state and index to determine what is active
-    		// setToggleFilters({key: key, active: !toggleFilters.active });
     		let allFilt = document.querySelectorAll('.filter-block');
     		let parent = item.parentElement;
 
@@ -134,76 +118,46 @@ const EditResources = ( { attributes, setAttributes } ) => {
 		
 		return (
 			<Fragment>
-				<InspectorControls>
-					<PanelBody
-							title={ __( 'HTML Anchor' ) }
-							initialOpen={ false }
-						>
-							<TextControl
-								label={ __( 'HTML Anchor' ) }
-								value={ anchor }
-								onChange={ ( anchor ) => updateAnchor( anchor ) }
-								help={__('Enter a word or two — without spaces — to make a unique web address just for this heading, called an “anchor.”')}
-							/>
-						
-					</PanelBody>
-				</InspectorControls>
-				<div { ...blockProps }>
-					<div className="resources-block">
-						<div className="block-wrapper" id={anchor}>
-							<header
-								className="header"
-							>
-								<InnerBlocks
-									template={ template }
-									allowedBlocks={['core/heading']}
-								/>
-							</header>
-							<div className="resources-wrap">
-								
-								<ResourceFilters
-									filterCats={ filterCats }
-									taxonomies={ taxonomy }
-									toggleCats={ toggleCats }
-									currentFilter={ toggleFilters }
-									filterMin={ filterMin }
-									filterMax={ filterMax }
-								/>
-								<div className="resources-grid">
-									{ (resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {
-											return (
-												<Fragment>
-													<ResourceCard
-														resourceIndex={ resourceIndex }
-														resourceURL={ resource.link }
-														resourceID={ resource.ID }
-														resourceImg={ resource.media_url }
-														resourceTitle={ resource.post_title  }
-														resourceType={ resource.label  }
-														resourceExcerpt={ resource.post_excerpt }
-														updateResourceImage={ null }
-														updateResourceText={ false }
-														updateResourceExcerpt={ null }
-														updateResourceType={ null }
-													/>
-												</Fragment>
-											)
-										})
-									}
-									{ resourcesEmpty && (
-										<Fragment>
-											<div className="error">
-												<h3>There are no available vehicles matching your filters. Please try something else.</h3>
-											</div>
-										</Fragment>
-									)}
-								</div>
+				<ResourceFilters
+					filterCats={ filterCats }
+					taxonomies={ taxonomy }
+					toggleCats={ toggleCats }
+					currentFilter={ toggleFilters }
+					filterMin={ filterMin }
+					filterMax={ filterMax }
+				/>
+				<div className="resources-grid">
+					{ (resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {
+							return (
+								<Fragment>
+									<ResourceCard.View
+										resourceIndex={ resourceIndex }
+										resourceURL={ resource.link }
+										resourceID={ resource.ID }
+										resourceImg={ resource.media_url }
+										resourceTitle={ resource.post_title  }
+										resourceType={ resource.label  }
+										resourcePrice={ resource.price }
+										resourceMiles={ resource.miles }
+										resourceYear={ resource.year }
+									/>
+								</Fragment>
+							)
+						})
+					}
+					{ resourcesEmpty && (
+						<Fragment>
+							<div className="error">
+								<h3>There are no available vehicles matching your filters. Please try something else.</h3>
 							</div>
-						</div>
-					</div>
+						</Fragment>
+					)}
 				</div>
 			</Fragment>
 		);
 }
 
-export default EditResources;
+render(
+	<SaveResources />,
+	ResourcesRoot
+);

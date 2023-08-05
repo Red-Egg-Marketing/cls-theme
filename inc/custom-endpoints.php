@@ -55,6 +55,11 @@ function cls_build_post_tax_array($posts, $tax) {
 			$post_label = get_post_type_object($post_type);
 			$post_label = $post_label->labels->singular_name;
 			$post->label = $post_label;
+			$post->price = '$' . number_format(get_post_meta($id, 'selling_price', true), 0);
+			$post->miles = number_format(get_post_meta($id, 'miles', true), 0) . ' mi';
+			$year = get_the_terms($id, 'car_year');
+			$year = join(', ', wp_list_pluck($year, 'name'));
+			$post->year = $year;
 			$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
 			$post->media_url = $thumbnail;
 			$post_array['resources'][] = $post;
@@ -72,6 +77,7 @@ function cls_return_vehicles() {
 	$post_types = ['vehicle'];
 
 	$post = $_POST;
+	$get = $_GET;
 	$make = isset($post['make']) ? $post['make'] : false;
 	$body = isset($post['body']) ? $post['body'] : false;
 	$drive = isset($post['drivetrain']) ? $post['drivetrain'] : false;
@@ -82,6 +88,9 @@ function cls_return_vehicles() {
 	$max_miles = isset($post['miles_max']) ? $post['miles_max'] : false;
 	$min_price = isset($post['price_min']) ? $post['price_min'] : false;
 	$max_price = isset($post['price_max']) ? $post['price_max'] : false;
+
+	// get
+	$year = isset($get['year']) ? $get['year'] : false;
 
 	$args = [
 		'post_type' => $post_types,
@@ -129,6 +138,16 @@ function cls_return_vehicles() {
 				'field' => 'term_id',
 				'taxonomy' => 'fuel_type',
 			];
+	}
+
+	if ($year && $year != 'all') {
+		$args['tax_query'][] = [
+			[
+				'terms' => $year,
+				'field' => 'term_id',
+				'taxonomy' => 'car_year'
+			]
+		];
 	}
 
 	if ($min_year || $max_year){
@@ -423,7 +442,7 @@ function cls_return_case_studies($data) {
 				$postObj->link = get_the_permalink($id);
 				$post_type = get_post_type_object($post_types);
 				$postObj->label = $post_type->labels->singular_name;
-				$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
+				$thumbnail = get_the_post_thumbnail_url($id, 'large') != false ? get_the_post_thumbnail_url($id, 'large') : get_the_post_thumbnail_url($id, 'thumbnail');
 				$postObj->featured_image = $thumbnail;
 				$posts[] = $postObj;
 			} elseif($html == 'cards') {

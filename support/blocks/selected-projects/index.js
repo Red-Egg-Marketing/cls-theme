@@ -5,8 +5,8 @@ import save from './save';
 
 registerBlockType( 'cls-blocks/selected-projects', {
 	apiVersion: 2,
-	title: __( 'Selected Posts', 'cls-blocks' ),
-	description: __( 'Block for a selecting posts. Displays latest 3 from selected category.', 'cls-blocks' ),
+	title: __( 'Selected Vehicles', 'cls-blocks' ),
+	description: __( 'Block for a selecting Vehicles. Displays latest 10 from selected category.', 'cls-blocks' ),
 	icon: 'welcome-write-blog',
 	category: 'layout',
 	attributes: {

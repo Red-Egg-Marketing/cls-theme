@@ -41,4 +41,5 @@ import "./columns-cta";
 import "./column-cta";
 import "./section";
 import "./filter-resources";
+import "./selected-projects";
 
