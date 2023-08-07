@@ -88,14 +88,16 @@ function cls_return_vehicles() {
 	$max_miles = isset($post['miles_max']) ? $post['miles_max'] : false;
 	$min_price = isset($post['price_min']) ? $post['price_min'] : false;
 	$max_price = isset($post['price_max']) ? $post['price_max'] : false;
+	$ppp = isset($post['ppp']) ? $post['ppp'] : -1;
+	$ppp = isset($get['ppp']) ? $get['ppp'] : $ppp;
 
-	// get
 	$year = isset($get['year']) ? $get['year'] : false;
+	$year = isset($post['year']) ? $post['year'] : $year;
 
 	$args = [
 		'post_type' => $post_types,
 		'post_status' => 'publish',
-		'posts_per_page' => -1,
+		'posts_per_page' => $ppp
 	];
 
 	if ($make || $body || $drive || $fuel || $min_year || $max_year) {

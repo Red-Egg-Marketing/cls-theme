@@ -7,7 +7,7 @@ import ResourceCard from '../../components/ResourceCard.js';
 import ResourceFilters from '../../components/ResourceLoader.js';
 const apiUrl  = '/wp-json/cls/v2/vehicles';
 
-const ResourcesRoot = document.getElementById('ResourcesWrap');
+const ResourcesRootNew = document.getElementById('ResourcesWrap');
 
 const SaveResources = ( { attributes } ) => {
 	  	
@@ -17,7 +17,6 @@ const SaveResources = ( { attributes } ) => {
   		const [resourcesEmpty, setEmpty] = useState(false);
   		const [data, setData] = useState({});
   		const [toggleFilters, setToggleFilters] = useState({key: '', active: false});
-
 
 		document.addEventListener('click', function(event) {
     		let target = event.target;
@@ -157,7 +156,10 @@ const SaveResources = ( { attributes } ) => {
 		);
 }
 
-render(
-	<SaveResources />,
-	ResourcesRoot
-);
+
+if (ResourcesRootNew) {
+	render(
+		<SaveResources />,
+		ResourcesRootNew
+	);
+}

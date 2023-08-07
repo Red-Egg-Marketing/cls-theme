@@ -67,67 +67,38 @@ const ResourceCard = (props) => {
 						className="content"
 						data-id={ props.resourceID }
 					>
-						{ (props.resourceID != 0 && props.updateResourceType != null) && (
-            				<RichText
-								tagName="h5"
-								className="resource-type"
-								value={ props.resourceType }
-								allowedFormats={ [''] }
-								placeholder={ __(
-									'Resource type...',
-									'emulate-custom'
-								) }
-								onChange={ (val) => {
-									props.updateResourceType(val, props.resourceIndex);
-								} }
-							/>
-						)}
-				
-						{ (props.resourceID != 0 && (props.updateTitle != null && props.updateTile == true)) && (
-            				<RichText
+            			<div className="top">
+							<RichText.Content
 								tagName="h4"
 								className="resource-title"
-								value={ props.resourceTitle }
-								allowedFormats={ ['core/italic'] }
-								placeholder={ __(
-									'Resource text...',
-									'emulate-custom'
-								) }
-								onChange={ (val) => {
-									props.updateResourceText(val, props.resourceIndex);
-								} }
+								value={
+									props.resourceTitle
+								}
 							/>
-						)}
-						{ props.updateResourceText == true && (
-							<h3
-								className="resource-title"
-							>
-								{ props.resourceTitle }
-							</h3>
-						)}
-						{ (props.resourceID != 0 && props.updateResourceExcerpt != null) && (
-            				<RichText
+							<RichText.Content
 								tagName="p"
-								className="resource-excerpt"
-								value={ props.resourceExcerpt }
-								allowedFormats={ ['core/italic'] }
-								placeholder={ __(
-									'Resource excerpt...',
-									'emulate-custom'
-								) }
-								onChange={ (val) => {
-									props.updateResourceExcerpt(val, props.resourceIndex);
-								} }
+								className="resource-year"
+								value={
+									props.resourceYear
+								}
 							/>
-						)}
-						{ props.updateResourceExcerpt == null && (
-							<p
-								className="resource-excerpt"
-							>
-								{ props.resourceExcerpt }
-							</p>
-						)}
-					
+						</div>
+						<div className="bottom">
+							<RichText.Content
+								tagName="p"
+								className="resource-miles"
+								value={
+									props.resourceMiles
+								}
+							/>
+							<RichText.Content
+								tagName="p"
+								className="resource-price"
+								value={
+									props.resourcePrice
+								}
+							/>
+						</div>	
 					</div>	
 				</div>
 				</div>

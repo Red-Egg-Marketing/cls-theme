@@ -42,47 +42,6 @@ function cls_enqueue_block_editor_assets() {
 add_action('enqueue_block_editor_assets', 'cls_enqueue_block_editor_assets');
 
 
-// For Dynamic blocks that are registered within blocks folder
-
-function cls_render_filtered_projects_callback($block_attributes, $content) {
-    $block_content = '';
-
-    $cat = !empty($block_attributes['category']) ? $block_attributes['category'] : '';
-    $anchor = !empty($block_attributes['anchor']) ? $block_attributes['anchor'] : '';
-    $title = !empty($block_attributes['mainTitle']) ? $block_attributes['mainTitle'] : '';
-    $b_content = !empty($block_attributes['content']) ? $block_attributes['content'] : '';
-    $bg = !empty($block_attributes['bgSlug']) ? ' ' . $block_attributes['bgSlug'] : '';
-    $id = !empty($block_attributes['blockId']) ? $block_attributes['blockId'] : '';
-    
-    $block_content .= '<section class="selected-resources' . $bg . '" id="' . $id . '">';
-       $block_content .= '<div class="resources-block">';
-            $block_content .= '<div class="block-wrapper">';
-                $block_content .= '<div class="resources-wrap">';
-                    $block_content .= $content;
-                    $block_content .= '<div class="resources grid" data-append data-category="' . $cat . '">';
-                    $block_content .= '</div>';
-               $block_content .= '</div>';
-            $block_content .= '</div>';
-        $block_content .= '</div>';
-    $block_content .= '</section>';
-    
-    return $block_content;
-}
-
-
-function cls_dynamic_projects_block() {
-
-    register_block_type( 'cls-blocks/selected-projects', [
-            'api_version' => 2,
-            'script' => 'wp-main-js',
-            'render_callback' => 'cls_render_filtered_projects_callback'
-        ] 
-    );
-}
-
-add_action('init', 'cls_dynamic_projects_block');
-
-
 function cls_render_filtered_case_studies_callback($block_attributes, $content) {
     $block_content = '';
     $cat = !empty($block_attributes['category']) ? $block_attributes['category'] : '';

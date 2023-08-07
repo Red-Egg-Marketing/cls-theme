@@ -142,7 +142,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 		const setCategoryPosts = (value) => {
 
 			wp.apiFetch({
-				url: apiUrl + '?year=' + value,
+				url: apiUrl + '?year=' + value + '&ppp=10',
 				method: 'GET'
 			}).then(resourcelist => {
 				let size = resourcelist[0].resources.length <= count ? resourcelist[0].resources.length : count;
@@ -213,7 +213,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 									allowedBlocks={['cls-blocks/section-header']}
 								/>
 							</header>
-							<div className="resources grid">
+							<div className="resources">
 				
 									{ resources.length > 0 && resources.map( (resource, resourceIndex) => {
 											return(
@@ -225,7 +225,9 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 														resourceImg={ resource.media_url }
 														resourceTitle={ resource.post_title  }
 														resourceType={ resource.label  }
-														resourceExcerpt={ resource.post_excerpt }
+														resourcePrice={ resource.price }
+														resourceMiles={ resource.miles }
+														resourceYear={ resource.year }
 														updateResourceImage={ null }
 														updateResourceText={ false }
 														updateResourceExcerpt={ null }
