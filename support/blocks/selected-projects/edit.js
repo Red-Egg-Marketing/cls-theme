@@ -17,7 +17,7 @@ const apiUrl  = '/wp-json/cls/v2/vehicles';
 const catUrl  = '/wp-json/wp/v2/car_year?per_page=100';
 
 const template = [
-	['cls-blocks/section-header']
+	['cls-blocks/header-intro']
 ]
 const count = 10;
 const buttonStyle = {
@@ -107,6 +107,32 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 				}
 
 				setAttributes({resources: posts });
+
+
+				new Swiper('.resources.swiper', 
+						{
+							loop: true,
+							slidesPerView: 1,
+							autoplay: false,
+							effect: 'slide',
+							spaceBetween: 15,
+							speed: 800,
+							navigation: {
+    							nextEl: '.swiper-button-next',
+    							prevEl: '.swiper-button-prev',
+  							},
+  							breakpoints: {
+  								768: {
+  									slidesPerView: 2,
+  									spaceBetween: 30
+  								},
+  								1100: {
+  									slidesPerView: 3,
+  									spaceBetween: 60
+  								}
+  							}
+						}
+					);
 			});
 
 			return (
@@ -152,6 +178,31 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 				}
 
 				setAttributes({resources: posts });
+				console.log(Swiper);
+				new Swiper('.resources.swiper', 
+						{
+							loop: true,
+							slidesPerView: 1,
+							autoplay: false,
+							effect: 'slide',
+							spaceBetween: 15,
+							speed: 800,
+							navigation: {
+    							nextEl: '.swiper-button-next',
+    							prevEl: '.swiper-button-prev',
+  							},
+  							breakpoints: {
+  								768: {
+  									slidesPerView: 2,
+  									spaceBetween: 30
+  								},
+  								1100: {
+  									slidesPerView: 3,
+  									spaceBetween: 60
+  								}
+  							}
+						}
+					);
 
 			});
 
@@ -210,11 +261,11 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 							>
 								<InnerBlocks 
 									template={ template }
-									allowedBlocks={['cls-blocks/section-header']}
+									allowedBlocks={['cls-blocks/header-intro']}
 								/>
 							</header>
-							<div className="resources">
-				
+							<div className="resources swiper">
+									<div className="swiper-wrapper">
 									{ resources.length > 0 && resources.map( (resource, resourceIndex) => {
 											return(
 												<Fragment>
@@ -228,6 +279,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 														resourcePrice={ resource.price }
 														resourceMiles={ resource.miles }
 														resourceYear={ resource.year }
+														resourceClass="swiper-slide"
 														updateResourceImage={ null }
 														updateResourceText={ false }
 														updateResourceExcerpt={ null }
@@ -237,6 +289,10 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 											);
 										})
 									}
+									</div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+
 							</div>
 							{ resources.length == 0 && (
 								<p style={ warningStyle }>{__('No Posts found. Try a different category.', 'cls-blocks')}</p>

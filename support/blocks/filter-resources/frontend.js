@@ -41,6 +41,7 @@ const SaveResources = ( { attributes } ) => {
     		}).then(resourcelist => {
     			let empty = resourcelist.empty;
     			setEmpty(empty);
+    			console.log(resourcelist);
     			if (empty === false) {
     				selectResources(resourcelist[0].resources);
     			}
@@ -63,6 +64,24 @@ const SaveResources = ( { attributes } ) => {
 				data[tax + '_min'] = '';
 			}
 			data[tax + '_min'] = id;
+			sendAPIrequest(data);
+		}
+
+		const searchFilter = (value) => {
+
+			if (!data['search']) {
+				data['search'] = '';
+			}
+			data['search'] = value;
+			sendAPIrequest(data);
+		}
+
+		const orderFilter = (value) => {
+
+			if (!data['order']) {
+				data['order'] = '';
+			}
+			data['order'] = value;
 			sendAPIrequest(data);
 		}
 
@@ -117,6 +136,9 @@ const SaveResources = ( { attributes } ) => {
 		
 		return (
 			<Fragment>
+				<form
+					className="form-filters"
+				>
 				<ResourceFilters
 					filterCats={ filterCats }
 					taxonomies={ taxonomy }
@@ -124,6 +146,8 @@ const SaveResources = ( { attributes } ) => {
 					currentFilter={ toggleFilters }
 					filterMin={ filterMin }
 					filterMax={ filterMax }
+					searchFilter={ searchFilter }
+					orderFilter={ orderFilter }
 				/>
 				<div className="resources-grid">
 					{ (resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {
@@ -152,6 +176,7 @@ const SaveResources = ( { attributes } ) => {
 						</Fragment>
 					)}
 				</div>
+				</form>
 			</Fragment>
 		);
 }

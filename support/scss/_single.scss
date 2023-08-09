@@ -30,6 +30,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
+	padding-top: 3rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 7rem;
+	}
+
 }
 
 .post-content .col {
@@ -39,14 +44,172 @@
 	}
 }
 
+
 .vehicle.swiper {
-	width: 100%;
+	width: calc(100% - 40px);
+	margin-right: 40px;
+	position: relative;
 	overflow: hidden;
+	// padding-left: 30px;
+	// padding-right: 30px;
 }
 
 .vehicle-gallery {
 	position: relative;
 	width: 100%;
+}
+
+.post-content .price {
+	width: 100%;
+	margin-top: 0;
+	font-weight: 700;
+	color: $body-color;
+	line-height: 50px;
+	margin-bottom: 1.5rem;
+	@media screen and (min-width: $small-width) {
+		line-height: 60px;
+		margin-bottom: 3.125rem;
+	}
+}
+
+.miles {
+	background: url($clock) no-repeat center left / 12px;
+	padding-left: 17px;
+
+	margin-bottom: 0;
+	@media screen and (min-width: $small-width) {
+			background: url($clock) no-repeat center left / 21px;
+			padding-left: 30px;
+	}
+}
+
+.swiper-slide {
+	max-width: 100%;
+}
+
+.vehicle.swiper .swiper-button-prev, 
+.vehicle.swiper .swiper-button-next {
+	color: white;
+	text-shadow: 0 0px 5px rgba(0, 0, 0, .5);
+}
+
+.vehicle.swiper .swiper-button-prev {
+	left: 0;
+	@media screen and (min-width: $small-width) {
+		left: 5px;
+	}
+}
+
+.vehicle.swiper .swiper-button-next {
+	right:5px;
+	@media screen and (min-width: $small-width) {
+		right: 10px;
+	}
+}
+
+p.year,
+p.miles {
+	font-weight: 900;
+}
+
+.car-details .wp-element-button {
+	margin-bottom: 1.5rem;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 2.5rem;
+	}
+}
+
+.post-content > .col-full {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 2.25rem;
+	margin-bottom: 2.25rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 4.5rem;
+		margin-bottom: 4.5rem;
+	}
+}
+
+.single .resources-block .header {
+	padding-bottom: 1.5rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 2rem;
+	}
+}
+
+.single .resources-block {
+	padding-top: 3.5rem;
+	padding-bottom: 2.5rem;
+	max-width: $max-cont-w - 300px;
+	margin: 0 auto;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-top: 5rem;
+		padding-bottom: 4rem;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
+.related-vehicle.swiper {
+	position: relative;
+}
+
+.related-vehicle.swiper .swiper-button-prev {
+	left: -20px;
+	@media screen and (min-width: $small-width) {
+		left: -35px;
+	}
+}
+
+.related-vehicle.swiper .swiper-button-next {
+	right: -20px;
+	@media screen and (min-width: $small-width) {
+		right: -35px;
+	}
+}
+
+.car-details + .col-full {
+	margin-top: 2.5rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 5rem;
+	}
+}
+
+.post-content .col-full h4:first-of-type {
+	margin-top: 0;
+	font-weight: 900;
+	color: $body-color;
+	letter-spacing: 0;
+	margin-bottom: 5px;
+}
+
+.year {
+	background: url($calendar) no-repeat center left / 12px;
+	padding-left: 17px;
+	font-weight: 900;
+	margin-bottom: 0;
+	@media screen and (min-width: $small-width) {
+			background: url($calendar) no-repeat center left / 21px;
+			padding-left: 30px;
+	}
+}
+
+.phone {
+	background: url($phone) no-repeat center left / 15px;
+	padding-left: 20px;
+	@media screen and (min-width: $small-width) {
+			background: url($phone) no-repeat center left / 30px;
+			padding-left: 35px;
+	}
+}
+
+p.phone {
+	color: $red;
+	font-weight: 700;
+
 }
 
 .post-content .col.col-full {
@@ -595,4 +758,13 @@ Single Video
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+.single.single-vehicle .header-title {
+	font-size: 28px;
+	margin-bottom: 1.75rem;
+	@media screen and (min-width: $small-width) {
+		font-size: 36px;
+		margin-bottom: 3.125rem;
+	}
 }

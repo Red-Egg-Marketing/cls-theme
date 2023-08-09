@@ -223,13 +223,13 @@ add_action( "admin_init", function() {
                             if ($number == 1) {
                                 set_post_thumbnail($post['id'], $attachment_id);
                             }
-
+                            $number+=1;
                         }
                     }
 
                 }
 
-                $number++;
+                
     
         } // end foreach
 
@@ -272,6 +272,7 @@ add_action( "admin_init", function() {
         update_post_meta( $post['id'], $vehicle["model_number"], $post["ModelNumber"]);
         update_post_meta( $post['id'], $vehicle["selling_price"], $post["SellingPrice"]);
         update_post_meta( $post['id'], $vehicle["miles"], $post["Miles"]);
+        update_post_meta( $post['id'], $vehicle["year"], $post["Year"]);
         update_post_meta( $post['id'], $vehicle["msrp"], $post["MSRP"]);
         update_post_meta( $post['id'], $vehicle["book_value"], $post["BookValue"]);
         update_post_meta( $post['id'], $vehicle["invoice"], $post["Invoice"]);

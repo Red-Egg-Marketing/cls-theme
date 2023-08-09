@@ -38,6 +38,24 @@ div.components-select-control {
 	height: auto;
 }
 
+.swiper-button-next {
+	right: -5px;
+}
+
+.swiper-button-prev {
+	left: -5px;
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+	color: $dark-grey;
+	font-weight: 900;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+	font-size: 30px;
+}
+
 .wp-block-quote {
 	background: $lighter-blue;
 	padding: 20px 25px;
@@ -195,9 +213,67 @@ h4 {
 	}
 }
 
-.resource-card .content {
-	margin-top: 20px;
+.resource-card .resource-miles,
+.resource-card .resource-price,
+.resource-card .resource-year,
+.resource-card .resource-title {
+	margin: 0;
+	color: $body-color;
 }
+
+.resource-card .resource-price,
+.resource-card .resource-year {
+	text-align: right;
+}
+
+.resource-card .resource-miles,
+.resource-card .resource-price {
+	font-size: 18px;
+	@media screen and (min-width: $small-width) {
+		font-size: 19px;
+	}
+}
+
+.resource-card .resource-year {
+	font-size: 19px;
+	letter-spacing: 0;
+	font-weight: 700;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px;
+	}
+}
+
+.resource-card .resource-title {
+	color: $red;
+	font-size: 19px;
+	letter-spacing: 0;
+	font-weight: 700;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px;
+	}
+}
+
+.resource-card .content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin-top: 10px;
+}
+
+
+.resource-card .top {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+.resource-card .bottom {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr;
+}
+
 
 .resource-card h4 {
 	color: $dark-blue;
@@ -330,7 +406,7 @@ h4 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 .resource-card .image-cont {
@@ -545,6 +621,10 @@ i.fa.fa-external-link:before {
 
 .single-member--wraper {
 	margin: 20px 15px;
+}
+
+.light-blue {
+	background: $lighter-blue;
 }
 
 

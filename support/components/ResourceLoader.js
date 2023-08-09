@@ -145,16 +145,35 @@ const ResourceLoader = () => {
 
 const ResourceFilters = (props) => {
 
-  const { taxonomies, currentFilter, currentTax, filterCats, filterMin, filterMax } = props;
+  const { taxonomies, currentFilter, currentTax, filterCats, filterMin, filterMax, searchFilter, orderFilter } = props;
   
   return (
       <Fragment>
-        <form 
-          className="form-filters"
-          onChange={ props.testingFilter }
-        >
-          <div className="wrapper filter-items">
+          <div className="search-cont">
+            <input 
+              type="search" 
+              placeholder="Search" 
+              onChange={ (input) => { 
+                let value = input.currentTarget.value;
+                searchFilter(value);
+                }
+              }
+            />
 
+            <select
+              onChange={ (input) => { 
+                let value = input.currentTarget.value;
+                orderFilter(value);
+                }
+              }
+            >
+              <option value="" disabled selected>Order By</option>
+              <option value="price">Price</option>
+              <option value="miles">Miles</option>
+              <option value="year">Year</option>
+            </select>
+          </div>
+          <div className="wrapper filter-items">
 
           { taxonomies && Object.entries(taxonomies).map(([key, value]) => {
                 let tax = key;
@@ -265,7 +284,6 @@ const ResourceFilters = (props) => {
               })
           }
           </div>
-        </form>
       </Fragment>
   );
 };

@@ -32,9 +32,9 @@ const SaveSelectedProjects = () => {
 						{
 							loop: true,
 							slidesPerView: 1,
-							autoplay: true,
+							autoplay: false,
 							effect: 'slide',
-							spaceBetween: 10,
+							spaceBetween: 15,
 							speed: 800,
 							navigation: {
     							nextEl: '.swiper-button-next',
@@ -43,11 +43,11 @@ const SaveSelectedProjects = () => {
   							breakpoints: {
   								768: {
   									slidesPerView: 2,
-  									spaceBetween: 20
+  									spaceBetween: 30
   								},
   								1100: {
   									slidesPerView: 3,
-  									spaceBetween: 40
+  									spaceBetween: 60
   								}
   							}
 						}

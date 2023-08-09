@@ -90,15 +90,45 @@ function cls_return_vehicles() {
 	$max_price = isset($post['price_max']) ? $post['price_max'] : false;
 	$ppp = isset($post['ppp']) ? $post['ppp'] : -1;
 	$ppp = isset($get['ppp']) ? $get['ppp'] : $ppp;
-
 	$year = isset($get['year']) ? $get['year'] : false;
 	$year = isset($post['year']) ? $post['year'] : $year;
+	$search = isset($post['search']) ? $post['search'] : false;
+	$order = isset($post['order']) ? $post['order'] : false;
 
 	$args = [
 		'post_type' => $post_types,
 		'post_status' => 'publish',
-		'posts_per_page' => $ppp
+		'posts_per_page' => $ppp,
+		'orderby' => 'meta_value',
+		'meta_key' => 'year',
+		'meta_type' => 'NUMERIC',
+		'order' => 'DESC'
 	];
+
+	if ($order) {
+		$args['orderby'] = 'meta_value';
+		
+		if ($order == 'price') {
+			$args['meta_key'] = 'selling_price';
+			$args['meta_type'] = 'NUMERIC';
+			$args['order'] = 'ASC';
+		}
+		if ($order == 'year') {
+			$args['meta_key'] = 'year';
+			$args['meta_type'] = 'NUMERIC';
+			$args['order'] = 'DESC';
+		}
+		if ($order == 'miles') {
+			$args['meta_key'] = 'miles';
+			$args['meta_type'] = 'NUMERIC';
+			$args['order'] = 'ASC';
+		}
+	
+	}
+
+	if ($search) {
+		$args['s'] = $search;
+	}
 
 	if ($make || $body || $drive || $fuel || $min_year || $max_year) {
 		$args['tax_query'] = [
@@ -159,7 +189,7 @@ function cls_return_vehicles() {
 		} elseif($min_year && !$max_year) {
 			$current_year = date("Y");
 			$years = range($min_year, $current_year);
-		} elseif($max_year && !min_year) {
+		} elseif($max_year && !$min_year) {
 			$years = range('1900', $max_year);
 		}
 
@@ -233,7 +263,7 @@ function cls_return_vehicles() {
 
 		wp_reset_postdata();
 
-		return [$vehicles, $taxes, 'empty' => false];
+		return [$vehicles, $taxes, 'empty' => false, $args];
 	} else {
 		$empty  = '<div class="warning">There are no available vehicles matching your filters. Please try something else.</div>';
 		$error = new stdClass();
