@@ -3,7 +3,6 @@
 	max-width: 100%;
 }
 
-
 .columns-cta {
 	width: 100%;
 	background: white;
@@ -12,7 +11,6 @@
 .columns-cta > .block-wrapper > .block-editor-inner-blocks {
 	width: 100%;
 }
-
 
 .columns-cta .column-cta.wp-block,
 .columns-cta .wp-block-cover.wp-block {
@@ -37,17 +35,20 @@
 	}
 }
 
-.columns-cta .wp-block-cover__inner-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-}
 
 .columns-cta .wp-block-cover {
 	align-items: stretch;
 	@media screen and (min-width: $small-width) {
 		min-height: 640px;
 	}
+}
+
+.columns-cta .wp-block-cover__inner-container {
+	align-self: center;
+}
+
+.columns-cta .column-cta:hover p {
+	opacity: 1;
 }
 
 .columns-cta .column-cta:nth-of-type(odd):hover {
@@ -112,30 +113,48 @@
 		width: 100%;
 	}
 }
+.columns-cta .wp-block-cover__inner-container h1:first-of-type,
+.columns-cta .wp-block-cover__inner-container h2:first-of-type,
+.columns-cta .wp-block-cover__inner-container h3:first-of-type,
+.columns-cta .wp-block-cover__inner-container h4:first-of-type,
+.columns-cta .wp-block-cover__inner-container h5:first-of-type,
+.columns-cta .wp-block-cover__inner-container h6:first-of-type {
+	opacity: 1;
+}
 
 .columns-cta .wp-block-cover__inner-container p {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+}
+
+.columns-cta .wp-block-cover__inner-container * {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
 	justify-content: center;
 }
 
-.columns-cta .wp-block-cover__inner-container p a {
+.columns-cta .wp-block-cover__inner-container * a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
 }
 
+.columns-cta .wp-block-cover__inner-container a {
+	color: white;
+	text-decoration: none;
+}
+
 .columns-cta .wp-block-cover__inner-container p a,
 .columns-cta .wp-block-cover__inner-container p {
 	color: white;
-	font-weight: 900;
 	text-decoration: none;
-	font-size: 28px;
+	font-size: 18px !important;
 	width: 100%;
 	@media screen and (min-width: $small-width) {
-		font-size: 35px;
+		font-size: 20px !important;
 	}
 }
 

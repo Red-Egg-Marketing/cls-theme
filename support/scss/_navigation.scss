@@ -12,6 +12,20 @@ body.nav-active {
 	}
 }
 
+body.nav-active .site-header:after {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	content: "";
+	top: 0;
+	left: 0;
+	display: block;
+	@media screen and (min-width: $med-small-width) {
+		display: none;
+	}
+}
+
 .site-header {
 	width: 100%;
 }
@@ -21,10 +35,13 @@ a.custom-logo-link {
 }
 
 .main-content-nav {
-	position: relative;
 	background: $bg-color-6;
 	z-index: 999;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+	display: block;
+	@media screen and (min-width: $med-small-width) {
+		position: relative;
+	}
 }
 
 .site-header .custom-logo {
@@ -83,6 +100,7 @@ a.custom-logo-link {
 .main-navigation .nav-menu > .menu-item > .sub-menu {
 	display: flex;
 	flex-wrap: wrap;
+	padding-left: 15px;
 	@media screen and (min-width: $med-small-width) {
 		padding: 2rem;
 	}
@@ -92,7 +110,7 @@ a.custom-logo-link {
 	font-style: italic;
 	font-weight: bold;
 	text-transform: capitalize;
-	font-size: 16px;
+	font-size: 17px;
 	position: relative;
 	@media screen and (min-width: $med-small-width) {
 		font-size: 19px;
@@ -140,6 +158,7 @@ a.custom-logo-link {
 
 .main-navigation .nav-menu > .menu-item > .sub-menu > .menu-item {
 	width: 100%;
+	color: $bg-color-7;
 	@media screen and (min-width: $med-small-width) {
 		width: 50%;
 		padding-right: 1.25rem;
@@ -181,7 +200,11 @@ a.custom-logo-link {
 }
 
 .menu-toggle[aria-expanded="true"] {
-	background: url(img/nav-close.svg) no-repeat center center / 85%;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 11;
+	background: url(img/nav-close.svg) no-repeat center center / 20px;
 }
 
 .menu-primary-button-menu-container .menu {
@@ -251,6 +274,10 @@ a.custom-logo-link {
 .main-navigation.toggled .menu-logged-in-container,
 .main-navigation.toggled .menu-all-pages-container {
 	display: flex;
+	right: 0;
+	transition-duration: 0.3s;
+	transition-property: right;
+
 }
 
 
@@ -258,22 +285,22 @@ a.custom-logo-link {
 .menu-logged-out-container,
 .menu-logged-in-container,
 .menu-all-pages-container {
-	display: none;
 	align-items: flex-start;
 	justify-content: flex-start;
 	position: fixed;
 	background: white;
-	top: 155px;
-	left: 0;
+	top: 0;
+	right: -10000px;
 	overflow: auto;
 	flex: 1;
-	width: 100%;
-	height: calc(100vh - 155px);
+	width: 80%;
+	height: 100vh;
+	z-index: 10;
 	@media screen and (min-width: $small-width) and (max-width: $med-small-width) {
-		top: 140px;
 		overflow: visible;
 	}
 	@media screen and (min-width: $med-small-width) {
+		right: 0;
 		display: flex;
 		position: relative;
 		top: inherit;
@@ -312,15 +339,12 @@ li.menu-item.nav-button a {
 .main-navigation .menu-item {
 	color: $red;
 	font-family: $font-head;
-	font-size: 18px;
+	font-size: 17px;
 	text-align: left;
 	text-transform: capitalize;
 	display: inline-block;
 	width: 100%;
 	font-weight: 700;
-	@media screen and (min-width: $small-width) and (max-width: $med-width) {
-		font-size: 16px;
-	}
 	@media screen and (min-width: $med-width + 1px) {
 		text-align: left;
 		display: inline;
@@ -336,7 +360,7 @@ li.menu-item.nav-button a {
 
 .menu-primary-menu-container .menu-item,
 .menu-all-pages-container .menu-item {
-	margin-bottom: 1.25rem;
+	margin-bottom: 0.5rem;
 	@media screen and (min-width: $med-small-width) {
 		margin-bottom: 0;
 	}
@@ -392,9 +416,9 @@ li.menu-item.nav-button a {
 	width: 100%;
 	justify-content: flex-end;
 	flex-wrap:wrap;
-	padding-top: 15px;
+	padding-top: 45px;
 	padding-bottom: 100px;
-	padding-left: 1.25rem;
+	padding-left: 2.5rem;
 	padding-right: 1.25rem;
 	@media screen and (min-width:  $med-small-width) {
 		padding-bottom: 0;
@@ -413,7 +437,6 @@ li.menu-item.nav-button a {
 
 .main-navigation .nav-menu > .menu-item > .sub-menu {
 	padding-top: 10px;
-	padding-bottom: 10px;
 	display: block;
 	@media screen and (min-width:  $med-small-width) {
 		background: white;
@@ -427,8 +450,11 @@ li.menu-item.nav-button a {
 .main-navigation .sub-menu li.menu-item a {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-weight: 400;
+	color: $bg-color-7;
 	@media screen and (min-width:  $med-small-width) {
 		margin-top: 0;
+		font-weight: normal;
 		margin-bottom: 0;
 		background: white;
 		padding-top: 0;
@@ -492,7 +518,7 @@ li.menu-item.nav-button a {
 
 .main-navigation .sub-menu .menu-item a {
 	width: 100%;
-	font-size: 16px;
+	font-size: 17px;
 	color: $bg-color-4;
 	font-family: $font-body;
 	text-transform: none;

@@ -7964,15 +7964,6 @@ ul.tax-list .tax-wrap {
   }
 }
 
-.columns-cta .wp-block-cover__inner-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-align: stretch;
-      align-items: stretch;
-}
-
 .columns-cta .wp-block-cover {
   -ms-flex-align: stretch;
       align-items: stretch;
@@ -7982,6 +7973,16 @@ ul.tax-list .tax-wrap {
   .columns-cta .wp-block-cover {
     min-height: 640px;
   }
+}
+
+.columns-cta .wp-block-cover__inner-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.columns-cta .column-cta:hover p {
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -8057,7 +8058,22 @@ ul.tax-list .tax-wrap {
   }
 }
 
+.columns-cta .wp-block-cover__inner-container h1:first-of-type,
+.columns-cta .wp-block-cover__inner-container h2:first-of-type,
+.columns-cta .wp-block-cover__inner-container h3:first-of-type,
+.columns-cta .wp-block-cover__inner-container h4:first-of-type,
+.columns-cta .wp-block-cover__inner-container h5:first-of-type,
+.columns-cta .wp-block-cover__inner-container h6:first-of-type {
+  opacity: 1;
+}
+
 .columns-cta .wp-block-cover__inner-container p {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+.columns-cta .wp-block-cover__inner-container * {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -8068,7 +8084,7 @@ ul.tax-list .tax-wrap {
       justify-content: center;
 }
 
-.columns-cta .wp-block-cover__inner-container p a {
+.columns-cta .wp-block-cover__inner-container * a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -8078,19 +8094,23 @@ ul.tax-list .tax-wrap {
   width: 100%;
 }
 
+.columns-cta .wp-block-cover__inner-container a {
+  color: white;
+  text-decoration: none;
+}
+
 .columns-cta .wp-block-cover__inner-container p a,
 .columns-cta .wp-block-cover__inner-container p {
   color: white;
-  font-weight: 900;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 18px !important;
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .columns-cta .wp-block-cover__inner-container p a,
   .columns-cta .wp-block-cover__inner-container p {
-    font-size: 35px;
+    font-size: 20px !important;
   }
 }
 
