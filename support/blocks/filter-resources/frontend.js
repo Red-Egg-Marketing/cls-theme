@@ -15,8 +15,10 @@ const SaveResources = ( { attributes } ) => {
 	  	const [taxonomy, setTaxes] = useState([]);
   		const [selectTax, setSelectTaxes] = useState([]);
   		const [resourcesEmpty, setEmpty] = useState(false);
+  		const [triggered, setTriggered] = useState(false);
   		const [data, setData] = useState({});
   		const [toggleFilters, setToggleFilters] = useState({key: '', active: false});
+  		let searchParams =  new URLSearchParams(window.location.search);
 
 		document.addEventListener('click', function(event) {
     		let target = event.target;
@@ -33,15 +35,53 @@ const SaveResources = ( { attributes } ) => {
 
   		}, false);
 
+  		const buildQueryString = (data = data) => {
+  			let newUrl = '';
+  			Object.keys(data).forEach(function(type, key){
+        		let tax = type;
+        		let value = data[type];
+        		
+        		if (key == 0) {
+        			newUrl += '?'
+        		}
+        		if (Array.isArray(value)) {
+        			let len = value.length;
+        			
+        			value.forEach((v, key) => {
+        				let del = key == len - 1 ? '' : ',';
+        				if (newUrl.includes(tax) == false) {
+        					newUrl += '&' + tax + '=' + v + del
+        				} else {
+        					newUrl += v + del
+        				}
+        			})
+        		} else {
+
+        			if (value != '') {
+        				if (newUrl.includes(tax) == false) {
+        					newUrl += '&' + tax + '=' + value
+        				} else {
+        					newUrl += value
+        				} 
+        			} else {
+        				newUrl = newUrl.replace('&' + tax + '=', '');
+        			}
+        		}
+        		
+        	});
+
+        	window.history.pushState({}, 'CLS Vehicle Selectin', newUrl);
+        	return newUrl;
+  		}
+
 		const sendAPIrequest = (data) => {
+			let string = buildQueryString(data);
 			wp.apiRequest({
-        		url: apiUrl,
-        		method: 'POST',
-        		data: data
+        		url: apiUrl + string,
+        		method: 'GET',
     		}).then(resourcelist => {
     			let empty = resourcelist.empty;
     			setEmpty(empty);
-    			console.log(resourcelist);
     			if (empty === false) {
     				selectResources(resourcelist[0].resources);
     			}
@@ -90,7 +130,6 @@ const SaveResources = ( { attributes } ) => {
 			if (!data[tax]) {
 				data[tax] = [];
 			}
-
     		if (value == true) {
     		  if (selectTax.indexOf(id) == -1) {
     		    selectTax.push(id);
@@ -122,14 +161,49 @@ const SaveResources = ( { attributes } ) => {
     		parent.classList.toggle('active');
   		}
 
-		if (resources === false) {
+  		const buildSearchQueryString = (params) => {
+  			params.forEach(function(value, key) {
+          		let allValues = value.split(',');
+          		let taxKey = Object.keys(taxonomy);
+          		taxKey = taxKey.map(function(word){
+          			return word.replace(' ', '_').toLowerCase();
+          		});
+
+          		allValues.forEach(function(allvalue, allkey){
+          			// if (taxKey.includes(key)) {
+          				if (allvalue != '') {
+          					if (!data[key]) {
+          						data[key] = [];
+          					}
+          					if (!data[key].includes(allvalue)) {
+          						data[key].push(allvalue);
+          					}
+
+		          		}
+          			// }
+          		});
+  			});
+
+    		setData(data);
+  		}
+
+		if (resources === false && triggered == false) {
+			
     		wp.apiRequest({
-    		    url: apiUrl
+    		    url: apiUrl + window.location.search,
+    		    method: 'GET',
     		}).then(resourcelist => {
     		    let posts = resourcelist[0].resources;
     		    let taxes = resourcelist[1];
-    		    selectResources(posts);
     		    setTaxes(taxes);
+    		    let empty = resourcelist.empty;
+    			setEmpty(empty);
+    		    setTriggered(true);
+
+    			if (empty === false) {
+    				selectResources(posts);
+    			}
+    		    buildSearchQueryString(searchParams);
     		});
 
   		}
@@ -148,6 +222,7 @@ const SaveResources = ( { attributes } ) => {
 					filterMax={ filterMax }
 					searchFilter={ searchFilter }
 					orderFilter={ orderFilter }
+					selectedValues={ data }
 				/>
 				<div className="resources-grid">
 					{ (resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {

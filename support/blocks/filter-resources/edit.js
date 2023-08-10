@@ -152,12 +152,14 @@ const EditResources = ( { attributes, setAttributes } ) => {
 					<div className="resources-block">
 						<div className="block-wrapper" id={anchor}>
 							<header
-								className="header"
+								className="header triangles-grey"
 							>
-								<InnerBlocks
-									template={ template }
-									allowedBlocks={['core/heading']}
-								/>
+								<div className="header-wrap">
+									<InnerBlocks
+										template={ template }
+										allowedBlocks={['core/heading']}
+									/>
+								</div>
 							</header>
 							<div className="resources-wrap">
 								

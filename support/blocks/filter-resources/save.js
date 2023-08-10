@@ -16,9 +16,11 @@ const SaveResources = ( { attributes }  ) => {
 			<div className="resources-block">
 				<div className="block-wrapper" id={anchor}>
 					<header
-						className="header"
+						className="header triangles-grey"
 					>
-						<InnerBlocks.Content />
+						<div className="header-wrap">
+							<InnerBlocks.Content />
+						</div>
 					</header>
 					<div className="resources-wrap" id="ResourcesWrap">
 					</div>

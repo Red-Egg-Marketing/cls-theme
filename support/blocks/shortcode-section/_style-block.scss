@@ -22,6 +22,17 @@
 	}
 }
 
+
+.triangles-grey {
+	background-image: url($triangle);
+	background-position: bottom left;
+	background-size: 125px;	
+	background-repeat: no-repeat;
+	@media screen and (min-width: $small-width) {
+		background-size: 200px;
+	}
+}
+
 .wpex.horizontal-timeline .horizontal-nav li:before {
 	display: none;
 }

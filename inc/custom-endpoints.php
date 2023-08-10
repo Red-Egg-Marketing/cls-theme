@@ -7,7 +7,7 @@ function cls_return_taxonomies($post_types) {
 	$server = rest_get_server();
 	$taxes = $server->response_to_data( $response, false );
 	$tax_array = [];
-	$desired_taxes = ['car_year', 'make', 'body' , 'drivetrain', 'fuel_type'];
+	$desired_taxes = ['car_year', 'make', 'body_style' , 'drivetrain', 'fuel_type'];
 	$sort_order = ['Price', 'Miles', 'Year', 'Make', 'Body Style', 'Drivetrain', 'Fuel Type'];
 
 	foreach($post_types as $post_type) {
@@ -61,6 +61,7 @@ function cls_build_post_tax_array($posts, $tax) {
 			$year = join(', ', wp_list_pluck($year, 'name'));
 			$post->year = $year;
 			$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
+			$thumbnail = $thumbnail == false ? get_stylesheet_directory_uri() . '/img/listing_vehicle_placeholder.jpg' : $thumbnail;
 			$post->media_url = $thumbnail;
 			$post_array['resources'][] = $post;
 			
@@ -72,28 +73,49 @@ function cls_build_post_tax_array($posts, $tax) {
 	}
 }
 
+function cls_add_custom_query_vars( $vars ){
+  $vars[] = "miles_min";
+  $vars[] = "miles_max";
+  $vars[] = "price_min";
+  $vars[] = "price_max";
+  return $vars;
+}
+add_filter( 'query_vars', 'cls_add_custom_query_vars' );
+
 
 function cls_return_vehicles() {
 	$post_types = ['vehicle'];
 
 	$post = $_POST;
 	$get = $_GET;
-	$make = isset($post['make']) ? $post['make'] : false;
-	$body = isset($post['body']) ? $post['body'] : false;
-	$drive = isset($post['drivetrain']) ? $post['drivetrain'] : false;
-	$fuel = isset($post['fuel_type']) ? $post['fuel_type'] : false;
+	$make = isset($post['make']) ? explode(',', $post['make']) : false;
+	$make = isset($get['make']) ? explode(',', $get['make']) : $make;
+	$body = isset($post['body_style']) ? explode(',',$post['body_style']) : false;
+	$body = isset($get['body_style']) ? explode(',',$get['body_style']) : $body;
+	$drive = isset($post['drivetrain']) ? explode(',', $post['drivetrain']) : false;
+	$drive = isset($get['drivetrain']) ? explode(',', $get['drivetrain']) : $drive;
+	$fuel = isset($post['fuel_type']) ? explode(',',$post['fuel_type']) : false;
+	$fuel = isset($get['fuel_type']) ? explode(',', $get['fuel_type']) : $fuel;
 	$min_year = isset($post['year_min']) ? $post['year_min'] : false;
+	$min_year = isset($get['year_min']) ? $get['year_min'] : $min_year;
 	$max_year = isset($post['year_max']) ? $post['year_max'] : false;
+	$max_year = isset($get['year_max']) ? $get['year_max'] : $max_year;
 	$min_miles = isset($post['miles_min']) ? $post['miles_min'] : false;
+	$min_miles = isset($get['miles_min']) ? $get['miles_min'] : $min_miles;
 	$max_miles = isset($post['miles_max']) ? $post['miles_max'] : false;
+	$max_miles = isset($get['miles_max']) ? $get['miles_max'] : $max_miles;
 	$min_price = isset($post['price_min']) ? $post['price_min'] : false;
+	$min_price = isset($get['price_min']) ? $get['price_min'] : $min_price;
 	$max_price = isset($post['price_max']) ? $post['price_max'] : false;
-	$ppp = isset($post['ppp']) ? $post['ppp'] : -1;
+	$max_price = isset($get['price_max']) ? $get['price_max'] : $max_price;
+	$ppp = isset($post['ppp']) ? explode(',',$post['ppp']) : -1;
 	$ppp = isset($get['ppp']) ? $get['ppp'] : $ppp;
 	$year = isset($get['year']) ? $get['year'] : false;
 	$year = isset($post['year']) ? $post['year'] : $year;
 	$search = isset($post['search']) ? $post['search'] : false;
+	$search = isset($get['search']) ? $get['search'] : $search;
 	$order = isset($post['order']) ? $post['order'] : false;
+	$order = isset($get['order']) ? $get['order'] : $order;
 
 	$args = [
 		'post_type' => $post_types,
@@ -140,7 +162,7 @@ function cls_return_vehicles() {
 		$args['tax_query'][] = 
 			[
 				'terms' => $make,
-				'field' => 'term_id',
+				'field' => 'slug',
 				'taxonomy' => 'make',
 			];
 	}
@@ -149,8 +171,8 @@ function cls_return_vehicles() {
 		$args['tax_query'][] =
 			[
 				'terms' => $body,
-				'field' => 'term_id',
-				'taxonomy' => 'body',
+				'field' => 'slug',
+				'taxonomy' => 'body_style',
 			];
 	}
 
@@ -158,7 +180,7 @@ function cls_return_vehicles() {
 		$args['tax_query'][] =
 			[
 				'terms' => $drive,
-				'field' => 'term_id',
+				'field' => 'slug',
 				'taxonomy' => 'drivetrain',
 			];
 	}
@@ -167,7 +189,7 @@ function cls_return_vehicles() {
 		$args['tax_query'][] =
 			[
 				'terms' => $fuel,
-				'field' => 'term_id',
+				'field' => 'slug',
 				'taxonomy' => 'fuel_type',
 			];
 	}
@@ -176,7 +198,7 @@ function cls_return_vehicles() {
 		$args['tax_query'][] = [
 			[
 				'terms' => $year,
-				'field' => 'term_id',
+				'field' => 'name',
 				'taxonomy' => 'car_year'
 			]
 		];
@@ -268,7 +290,7 @@ function cls_return_vehicles() {
 		$empty  = '<div class="warning">There are no available vehicles matching your filters. Please try something else.</div>';
 		$error = new stdClass();
 		$error->message = $empty;
-		return [$error ,$taxes, 'empty' => true];
+		return [$error ,$taxes, 'empty' => true, $args];
 	}
 
 }
@@ -371,25 +393,6 @@ add_action( 'rest_api_init', function () {
   );
  });
 
-function cls_case_study_card($id) {
-		$permalink = get_the_permalink($id);
-		$title = get_the_title($id);
-		$excerpt = get_the_excerpt($id);
-		$image = get_the_post_thumbnail($id,'post-landscape');
-
-		$html = '<div class="image-col column">';
-			$html .= $image;
-		$html .= '</div>';
-		$html .= '<div class="content-columns column">';
-			$html .= '<h3>' . $title . '</h3>';
-			$html .= '<p>' . $excerpt . '</p>';
-			$html .= '<div class="wp-buttons">';
-				$html .= '<a href="' . $permalink . '" class="wp-block-button__link">Read More</a>';
-			$html .= '</div>';
-		$hthl = '</div>';
-
-		return $html;
-}
 
 function cls_resource_card($id, $cats = false) {
 	if ($id != null) {
@@ -424,78 +427,3 @@ function cls_resource_card($id, $cats = false) {
 		return $html;
 	}
 }
-
-
-function cls_return_case_studies($data) {
-
-	$get = $_GET;
-	$post_types = [];
-	$industry = isset($get['industry']) ? explode(',', $get['industry']) : false;
-	$post_id = isset($get['id']) ? $get['id'] : false;
-	$html = isset($get['html']) ? $get['html'] : false;
-	$offset = isset($get['offset']) ? $get['offset'] : 0;
-	$posts_per_page = isset($get['ppp']) ? $get['ppp'] : -1;
-	$post_types = 'case-studies';
-		
-	$args = [
-		'post_type' => $post_types,
-		'post_status' => 'publish',
-		'posts_per_page' => $posts_per_page,
-		'offset'	=> $offset
-	];
-
-	if ($post_id != false){
-		$args['p'] = $post_id;
-	}
-
-	if ($industry != false) {
-		$args['tax_query'] = [
-			[
-				'taxonomy' 	=> 'industry',
-				'field'			=> 'id',
-				'terms'			=> $industry,
-			]
-		];
-	}
-
-	$posts = $html == false ? [] : '';
-	$query = new WP_Query($args);
-
-	if ($query->have_posts()) {
-		while($query->have_posts()) {
-			$query->the_post();
-			$id = get_the_ID();
-			if ($html == false) {
-				$post = $query->post;
-				$postObj = new stdClass;
-				$postObj->ID = $id;
-				$postObj->title = $post->post_title;
-				$postObj->excerpt = wp_trim_words($post->post_content, 25, '...');
-				$postObj->link = get_the_permalink($id);
-				$post_type = get_post_type_object($post_types);
-				$postObj->label = $post_type->labels->singular_name;
-				$thumbnail = get_the_post_thumbnail_url($id, 'large') != false ? get_the_post_thumbnail_url($id, 'large') : get_the_post_thumbnail_url($id, 'thumbnail');
-				$postObj->featured_image = $thumbnail;
-				$posts[] = $postObj;
-			} elseif($html == 'cards') {
-				$posts .= cls_resource_card($id, false);
-			} elseif($html == true && $html != 'cards') {
-				$posts .= cls_case_study_card($id);
-			} 
-		}
-
-		wp_reset_postdata();
-
-	}
-	return $posts;
-}
-
-add_action( 'rest_api_init', function () {
-  register_rest_route( 'cls/v2', '/case-studies/', 
-  	[
-    	'methods' => 'GET',
-    	'callback' => 'cls_return_case_studies',
-    	'permission_callback' => '__return_true'
-  	] 
-  );
- });

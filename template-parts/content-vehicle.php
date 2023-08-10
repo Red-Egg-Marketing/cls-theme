@@ -27,7 +27,7 @@ $id = get_the_id();
 					<div class="swiper-wrapper">
 					<?
 					foreach($attachments as $attachment) {
-					?>
+				?>
 						<div class="swiper-slide">
 						<?php
 							echo wp_get_attachment_image($attachment->ID, 'full');
@@ -41,6 +41,16 @@ $id = get_the_id();
   				</div>
   				</div>
   			<?php
+			} else {
+				?>
+				<div class="vehicle-gallery">
+					<div class="vehicle">
+				<?php
+				echo '<img src="' . get_stylesheet_directory_uri() . '/img/listing_vehicle_placeholder.jpg" />';
+				?>
+					</div>
+				</div>
+				<?php
 			}
 		?>
 		</div>
@@ -85,7 +95,7 @@ $id = get_the_id();
 			<a class="wp-block-button__link wp-element-button">I'm Interested</a>
 		</div>
 	</div><!-- .post-content -->
-	<div class="related-posts">
+	<div class="related-posts light-blue">
 		<?php
 			cls_vehicle_footer($id, 'vehicle', $title = 'Related Inventory');
 		?>

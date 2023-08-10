@@ -342,6 +342,7 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
 					$miles = number_format(get_post_meta($id, 'miles', true), 0) . ' mi';
 					$price = '$' . number_format(get_post_meta($id, 'selling_price', true), 0);
 					$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
+					$thumbnail = $thumbnail == false ? get_stylesheet_directory_uri() . '/img/listing_vehicle_placeholder.jpg' : $thumbnail;
 
 					?>
 						<div class="resource-card swiper-slide">

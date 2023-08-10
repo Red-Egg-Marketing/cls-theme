@@ -379,6 +379,10 @@ body {
   word-break: break-word;
 }
 
+.swiper-slide img {
+  width: 100%;
+}
+
 .entry-content > p,
 .entry-content > h1,
 .entry-content > h2,

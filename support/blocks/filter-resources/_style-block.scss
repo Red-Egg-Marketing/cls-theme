@@ -1,11 +1,7 @@
-.wp-block-cls-blocks-resources {
-	padding-bottom: 8.125rem;
-}
 
 .wp-block-cls-blocks-resources .resources-block {
 	padding-top: 0;
 }
-
 
 .wp-block-cls-blocks-resources .resources-block {
 	background: none;
@@ -15,22 +11,51 @@
 	grid-column: 1/1;
 	display: grid;
 	grid-template-columns: 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
 	@media screen and (min-width: $small-width) {
 		grid-column: 1/5;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-column-gap: 2rem;
-    	grid-row-gap: 2rem;
+		grid-column-gap: 40px;
+    	grid-row-gap: 40px;
 	}
+}
+
+.resources-block .filter-block {
+	border-bottom: 2px solid $grey;
 }
 
 .resources-block .search-cont input[type="search"] {
 	grid-column: 1/1;
-	background: $lighter-blue;
+	background: $lighter-blue url($search) no-repeat calc(100% - 15px) center / 25px;
 	border: none;
 	border-radius: 0;
+	min-height: 50px;
+	font-size: 20px;
+	padding-left: 20px;
 	@media screen and (min-width: $small-width) {
 		grid-column: 1/4;
 	}
+}
+
+.resources-block .search-cont select {
+	background: $lighter-blue url($down_arrow) no-repeat calc(100% - 15px) center / 15px;
+	border: none;
+	padding-left: 20px;
+	color: black;
+	font-size: 20px;
+	font-family: $font-body;
+	appearance: none;
+	min-height: 50px;
+}
+
+.resources-block .search-cont input[type="search"]:focus {
+	background: $lighter-blue;
+}
+
+.resources-block .search-cont input[type="search"]::placeholder {
+	color: $body-color;
+	font-family: $font-head;
 }
 
 .wp-block-cls-blocks-resources .resources-block .header-title {
@@ -49,11 +74,20 @@
 .wp-block-cls-blocks-resources .resources-block .form-filters {
 	display: grid;
 	grid-template-columns: 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	align-items: flex-start;
 	@media screen and (min-width: $small-width) and (max-width: $med-width) {
 		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
 	}
 	@media screen and (min-width: $med-width + 1px) {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 40px;
+		grid-row-gap: 40px;
 	}
 }
 
@@ -91,33 +125,46 @@
 	grid-column: 1;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 15px;
 	@media screen and (min-width: $small-width) {
 		display: block;
 	}
+}
+.resources-block .filter-block:first-of-type .tax-filter-button {
+	@media screen and (min-width: $small-width) {
+		margin-top: 0;
+	}
+}
+
+.filter-block.active .tax-filter-button,
+.filter-block.active .components-button {
+	background-image: url($up_arrow);
 }
 
 .form-filters .tax-filter-button, 
 .form-filters .components-button {
 	border: none;
 	border-radius: 0;
-	color: $navy;
+	color: $body-color;
 	font-family: $font-body;
 	font-size: 18px;
 	letter-spacing: 0.3px;
 	line-height: 24px;
 	cursor: pointer;
-	background: white;
+	background: white url($down_arrow) no-repeat center right / 15px;
 	width: 100%;
 	text-align: left;
-	padding-top: 1.25rem;
-	padding-bottom: 1.25rem;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
 	padding-left: 0;
 	padding-right: 0;
+	padding-bottom: 0;
+	padding-top: 0;
 	@media screen and (min-width: $small-width) {
-		font-size: 19px;
+		font-size: 20px;
 		line-height: 24px;
-		padding-top: 1.85rem;
-		padding-bottom: 1.85rem;
+		margin-top: 1.85rem;
+		margin-bottom: 1.85rem;
 	}
 }
 
@@ -161,8 +208,8 @@
 }
 
 ul.tax-list li.tax-item {
-	width: 50%;
-	margin-bottom: 1.25rem;
+	width: 100%;
+	margin-bottom: 0.5rem;
 	line-height: 22px;
 	@media screen and (min-width: $small-width) {
 		width: auto;
@@ -194,8 +241,8 @@ ul.tax-list input.checkbox-component:checked + label:after {
 	content: "";
 	position: absolute;
 	display: inline-block;
-	top: 10px;
-	left: 4px;
+	top: 9px;
+	left: 3px;
 	width: 16px;
 	height: 16px;
 	background: $red;
@@ -269,9 +316,13 @@ header.section-header {
 }
 
 .filter-resources .resources-block .block-wrapper {
-	max-width: 1680px;
 	padding-left: 0;
 	padding-right: 0;
+}
+
+.filter-resources .resources-block .resources-wrap {
+	max-width: 1680px;
+	margin: 0 auto;
 }
 
 .wp-block.filter-resources {
@@ -283,27 +334,25 @@ header.section-header {
 .filter-resources .resources-grid,
 .wp-block.filter-resources .resources-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 1.25rem;
-	grid-row-gap: 1.25rem;
+	grid-template-columns: 1fr;
 	max-width: 1680px;
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
 	width: 100%;
 	margin: 0 auto;
 	grid-column: 1;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
 	@media screen and (min-width: $small-width) and (max-width: $med-width) {
 		grid-column: 2/4;
 		grid-template-columns: 1fr 1fr;
-		grid-column-gap: 2rem;
-		grid-row-gap: 2rem;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
 	}
 
 	@media screen and (min-width: $med-width + 1px) {
 		grid-column: 2/5;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-column-gap: 2.5rem;
-		grid-row-gap: 2.5rem;
+		grid-column-gap: 40px;
+		grid-row-gap: 40px;
 	}
 }
 
@@ -333,23 +382,76 @@ header.section-header {
 
 .form-filters [class*="col"].active {
 	position: relative;
+	padding-bottom: 1.25rem;
+	@media screen and (min-width: $small-width) {
+		padding-bottom: 2.5rem;
+	}
 }
 
 .form-filters [class*="col"].active .tax-cont {
 	display: block;
 }
 
+.tax-cont input[type=number] {
+	border: 1px solid $body-color;
+	padding-left: 20px;
+	border-radius: 0;
+	font-size: 18px;
+	width: 100%;
+	margin-bottom: 15px;
+	color: $body-color;
+	@media screen and (min-width: $small-width) {
+		width: calc(50% - 10px);
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+}
+
+.tax-cont input[type=number]:nth-of-type(odd) {
+	@media screen and (min-width: $small-width) {
+		margin-right: 10px;
+	}
+}
+
+.tax-cont input[type=number]:nth-of-type(even) {
+	@media screen and (min-width: $small-width) {
+		margin-left: 10px;
+	}
+}
+
+.tax-cont input[type=number]::placeholder {
+	color: $body-color;
+	font-family: $font-body;
+	font-size: 18px;
+	@media screen and (min-width: $small-width) {
+		font-size: 20px;
+	}
+}
+
+.form-filters .tax-inputs {
+	padding-left: 0;
+}
+
+.form-filters .tax-inputs .tax-input {
+	padding-left: 0;
+	margin-bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 100%;
+}
 
 ul.tax-list {
 	list-style-type: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-row-gap: 15px;
-	grid-column-gap: 15px;
+	grid-template-columns: 1fr;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	max-height: 300px;
+	overflow: auto;
 	@media screen and (min-width: $small-width) {
+		max-height: inherit;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-row-gap: 15px;
@@ -371,4 +473,31 @@ ul.tax-list .checkbox-component {
 ul.tax-list .tax-wrap {
 	padding-left: 2rem;
 	position: relative;
+}
+
+.filter-resources header.header *:first-of-type {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.filter-resources header.header {
+	background-color: $grey;
+	min-height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 0;
+	margin-bottom: 3.75rem;
+	@media screen and (min-width: $small-width) {
+		min-height: 350px;
+		margin-bottom: 7.5rem;
+	}
+}
+
+.filter-resources header.header .header-wrap {
+	max-width: $max-cont-w - 300px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
 }

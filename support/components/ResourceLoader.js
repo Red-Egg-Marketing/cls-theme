@@ -145,14 +145,13 @@ const ResourceLoader = () => {
 
 const ResourceFilters = (props) => {
 
-  const { taxonomies, currentFilter, currentTax, filterCats, filterMin, filterMax, searchFilter, orderFilter } = props;
-  
+  const { taxonomies, currentFilter, currentTax, filterCats, filterMin, filterMax, searchFilter, orderFilter, selectedValues } = props;
   return (
       <Fragment>
           <div className="search-cont">
             <input 
               type="search" 
-              placeholder="Search" 
+              placeholder="Search Our Inventory" 
               onChange={ (input) => { 
                 let value = input.currentTarget.value;
                 searchFilter(value);
@@ -174,15 +173,28 @@ const ResourceFilters = (props) => {
             </select>
           </div>
           <div className="wrapper filter-items">
-
           { taxonomies && Object.entries(taxonomies).map(([key, value]) => {
                 let tax = key;
                 let taxItem = value;
                 let isActive = '';
+                let place = '';
+                let place_max = '';
                 if (currentFilter.key == key && currentFilter.active == true) {
                   isActive = ' active';
                 } else {
                   isActive = '';
+                }
+                if (tax == 'Year') {
+                  place = selectedValues['year_min'] ? selectedValues['year_min'][0] : 'Min';
+                  place_max = selectedValues['year_max'] ? selectedValues['year_max'][0] : 'Max';
+                }
+                else if (tax == 'Price') {
+                  place = selectedValues['price_min'] ? selectedValues['price_min'][0] : 'Min';
+                  place_max = selectedValues['price_max'] ? selectedValues['price_max'][0] : 'Max';
+                }
+                else if (tax == 'Miles') {
+                  place = selectedValues['miles_min'] ? selectedValues['miles_min'][0] : 'Min';
+                  place_max = selectedValues['miles_max'] ? selectedValues['miles_max'][0] : 'Max';
                 }
                 return (
                     <Fragment>
@@ -198,39 +210,37 @@ const ResourceFilters = (props) => {
                         </Button>
                         <div className="tax-cont">
                           <div class="tax-wrapper">
-                          <Button
-                            className="tax-close"
-                            onClick={ (event) => {
-                                  props.toggleCats(key, event.currentTarget);
-                                }
-                            }
-                          >
-                            X
-                          </Button>
+            
                           { (tax != 'Year' && tax != 'Price' && tax != 'Miles') && (
                             <ul className="tax-list">
                             { Object.entries(taxItem).map(([intKey, intValue]) => {
                                 let taxName = intKey;
-                                {/*let checked = (currentTax != undefined && currentTax.includes(intValue.tax_id) == true) ? true : false;*/}
+                                let taxSelect = intValue.taxonomy;
+                                let checked = false;
+                                let valueArray = selectedValues[taxSelect];
+                                if (Array.isArray(valueArray)) {
+                                  checked = valueArray.includes(intValue.tax_slug);
+                                }
+
                                 return (
                                   <Fragment>
                                     <li className="tax-item">
                                       <div className="tax-wrap">
                                         <input 
-                                          id={ `inspector-control-box-${ intValue.tax_id }` }
-                                          value={ intValue.tax_id }
+                                          id={ `inspector-control-box-${ intValue.tax_slug }` }
+                                          value={ intValue.tax_slug }
                                           type="checkbox"
-                                          // checked={ checked }
+                                          checked={ checked }
                                           className="checkbox-component"
                                           onChange={ (box) => { 
-                                              let value = intValue.tax_id;
+                                              let value = intValue.tax_slug;
                                               let check = box.target.checked;
                                               filterCats(check, value, intValue.taxonomy);
                                             }
                                           }
                                         />
                                         <label
-                                          for={ `inspector-control-box-${ intValue.tax_id }` }
+                                          for={ `inspector-control-box-${ intValue.tax_slug }` }
                                         >
                                           { taxName }
                                         </label>
@@ -243,13 +253,14 @@ const ResourceFilters = (props) => {
                             </ul>
                           )}
                           { (tax == 'Year' || tax == 'Price' || tax == 'Miles') && (
+
                             <ul className="tax-inputs">
                               <li className="tax-input">
                                   <input 
                                     id={ `inspector-control-box-min` }
                                     type="number"
                                     className="number-component"
-                                    placeholder="Min"
+                                    placeholder={ place }
                                     min="1000"
                                     onChange={ (box) => { 
                                         let tax_value = tax.toLowerCase();
@@ -263,7 +274,7 @@ const ResourceFilters = (props) => {
                                     id={ `inspector-control-box-max` }
                                     type="number"
                                     className="number-component"
-                                    placeholder="Max"
+                                    placeholder={ place_max }
                                     min="1000"
                                     onChange={ (box) => { 
                                         let tax_value = tax.toLowerCase();
