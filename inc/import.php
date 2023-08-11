@@ -5,14 +5,14 @@ require_once( ABSPATH . '/wp-admin/includes/file.php' );
 /**
  * Show 'insert posts' button on backend
  */
-add_action( "admin_notices", function() {
-    echo "<div class='updated'>";
-        echo "<p>";
-            echo "To insert the posts into the database, click the button to the right.";
-            echo "<a class='button button-primary' style='margin:0.25em 1em' href='{$_SERVER["REQUEST_URI"]}&insert_vehicles'>Insert Vehicles</a>";
-        echo "</p>";
-    echo "</div>";
-});
+// add_action( "admin_notices", function() {
+//     echo "<div class='updated'>";
+//         echo "<p>";
+//             echo "To insert the posts into the database, click the button to the right.";
+//             echo "<a class='button button-primary' style='margin:0.25em 1em' href='{$_SERVER["REQUEST_URI"]}&insert_vehicles'>Insert Vehicles</a>";
+//         echo "</p>";
+//     echo "</div>";
+// });
 // script for importing car data
 
 add_action( "admin_init", function() {
@@ -28,7 +28,7 @@ add_action( "admin_init", function() {
         "vin"                   =>  "vin",
         "stock"                 =>  "stock",
         "type"                  =>  "type",
-        "body"                  =>  "body",
+        "body_style"            =>  "body_style",
         "trim"                  =>  "trim",
         "year"                  =>  "year",
         "model-number"          =>  "model-number",
@@ -240,7 +240,7 @@ add_action( "admin_init", function() {
             ['car_type' => $post['Type']],
             ['model' => $post['Model']],
             ['car_year' => $post['Year']],
-            ['body' => $post['Body']],
+            ['body_style' => $post['Body']],
             ['trim' => $post['Trim']],
             ['doors' => $post['Doors']],
             ['exterior_color' => $post['ExteriorColor']],

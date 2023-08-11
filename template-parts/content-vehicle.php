@@ -30,7 +30,7 @@ $id = get_the_id();
 				?>
 						<div class="swiper-slide">
 						<?php
-							echo wp_get_attachment_image($attachment->ID, 'full');
+							echo wp_get_attachment_image($attachment->ID, 'post-landscape');
 						?>
 						</div>
 					<?php

@@ -2,8 +2,8 @@
 // add custom image sizes
 
 add_image_size('whitepaper-poster', 280, 390, array('center', 'center'), true);
-add_image_size('post-landscape', 786, 393, array('center', 'center'), true);
-add_image_size('post-landscape-medium', 348, 174, array('center', 'center'), true);
+add_image_size('post-landscape', 580, 446, array('center', 'center'), true);
+add_image_size('post-landscape-medium', 348, 267, array('center', 'center'), true);
 add_image_size('image-text-block-small', 480, 250, array('center', 'center'), true);
 add_image_size('image-text-block', 960, 500, array('center', 'center'), true);
 add_image_size('hero-landscape-large', 1920, 729, array('center', 'center'), true);

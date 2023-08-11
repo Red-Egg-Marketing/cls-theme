@@ -9792,6 +9792,22 @@ li.menu-item.nav-button a:hover {
   }
 }
 
+@media screen and (min-width: 1080px) and (max-width: 1250px) {
+  .menu-primary-menu-container .menu-item,
+  .menu-all-pages-container .menu-item {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1251px) {
+  .menu-primary-menu-container .menu-item,
+  .menu-all-pages-container .menu-item {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+
 @media screen and (min-width: 1080px) {
   .main-navigation .nav-menu > .menu-item.nav-button {
     padding-top: 22px;
@@ -9799,8 +9815,7 @@ li.menu-item.nav-button a:hover {
   }
 }
 
-.main-navigation .nav-menu > .menu-item {
-  width: 100%;
+.main-navigation .nav-menu .menu-item {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -9809,6 +9824,10 @@ li.menu-item.nav-button a:hover {
       align-items: center;
   -ms-flex-pack: start;
       justify-content: flex-start;
+}
+
+.main-navigation .nav-menu > .menu-item {
+  width: 100%;
   padding-top: 6px;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -9818,8 +9837,6 @@ li.menu-item.nav-button a:hover {
   .main-navigation .nav-menu > .menu-item {
     margin-bottom: 0;
     width: auto;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
     padding-top: 26px;
     padding-bottom: 26px;
     -ms-flex-pack: center;
@@ -9831,8 +9848,6 @@ li.menu-item.nav-button a:hover {
   .main-navigation .nav-menu > .menu-item {
     margin-bottom: 0;
     width: auto;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
     padding-top: 26px;
     padding-bottom: 26px;
     -ms-flex-pack: center;
