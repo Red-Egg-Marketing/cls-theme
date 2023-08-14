@@ -643,10 +643,7 @@ textarea {
 		float: left;
 		position: absolute;
 		top: 100%;
-		background: white;
-		min-width: 600px;
-		border: 2px solid $lighter-blue;
-		border-top: 8px solid $lighter-blue;
+		min-width: 200px;
 		width: auto;
 		left: -999em;
 		z-index: 99999;

@@ -102,7 +102,7 @@ a.custom-logo-link {
 	flex-wrap: wrap;
 	padding-left: 15px;
 	@media screen and (min-width: $med-small-width) {
-		padding: 2rem;
+		padding: 1.5rem;
 	}
 }
 
@@ -115,7 +115,7 @@ a.custom-logo-link {
 	@media screen and (min-width: $med-small-width) {
 		font-size: 19px;
 		line-height: 24px;
-		margin-bottom: 15px;
+		margin-bottom: 8px;
 	}
 }
 
@@ -160,8 +160,7 @@ a.custom-logo-link {
 	width: 100%;
 	color: $bg-color-7;
 	@media screen and (min-width: $med-small-width) {
-		width: 50%;
-		padding-right: 1.25rem;
+		margin-left: 0;
 	}
 }
 
@@ -222,7 +221,7 @@ a.custom-logo-link {
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	padding-left: .25rem;
 	padding-right: .25rem;
 	@media screen and (min-width: $small-width) {
@@ -446,27 +445,24 @@ li.menu-item.nav-button a {
 }
 
 .main-navigation .nav-menu > .menu-item > .sub-menu {
-	padding-top: 10px;
 	display: block;
+	padding-top: 15px;
 	@media screen and (min-width:  $med-small-width) {
-		background: white;
-		padding-top: 2rem;
-		padding-bottom: 1.5rem;
-		display: flex;
-		box-shadow: 0 6px 6px rgba(0, 0, 0, .16);
+		padding-top: 0;
+		background: rgba(255, 255, 255, 0.75);
+		display: block;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
 	}
 }
 
 .main-navigation .sub-menu li.menu-item a {
-	margin-top: 10px;
-	margin-bottom: 10px;
 	font-weight: 400;
 	color: $bg-color-7;
 	@media screen and (min-width:  $med-small-width) {
 		margin-top: 0;
 		font-weight: normal;
 		margin-bottom: 0;
-		background: white;
 		padding-top: 0;
 		padding-bottom: 0;
 		display: block;
@@ -546,7 +542,7 @@ li.menu-item.nav-button a {
 }
 
 .secondary-navigation {
-	height: 75px;
+	height: 40px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -591,24 +587,60 @@ li.menu-item.nav-button a {
 	text-decoration: none;
 	font-family: $font-body;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 24px;
 	letter-spacing: 0;
+	text-indent: -10000px;
+	display: block;
+	position: relative;
 	@media screen and (min-width: $med-width + 1px) {
 		font-size: 16px;
-		line-height: 20px;
+		line-height: 24px;
 		letter-spacing: 0.2px;
+		text-indent: 0;
 	}
 	@media screen and (min-width: $small-width) and (max-width: $med-width) {
 		font-size: 14px;
-		line-height: 18px;
+		line-height: 24px;
 		letter-spacing: 0.2px;
+		text-indent: 0;
 	}
 }
 
+.menu-secondary-menu-container .menu-item a {
+	width: 18px;
+	height: 18px;
+	@media screen and (min-width: $small-width) {
+		width: auto;
+		height: auto;
+	}
+}
 
 .menu-item.phone {
-	padding-left: 22px;
-	background: url(img/phone.svg)  no-repeat center left / 15px;
+	padding-left: 0;
+}
+
+.menu-item.phone a {
+	padding-left: 26px;
+	background: url($phone-white)  no-repeat center left / 18px;
+	@media screen and (min-width: $small-width) {
+		background: url($phone-white)  no-repeat center left / 20px;
+	}
+}
+
+.menu-item.location a {
+	padding-left: 26px;
+	background: url($location)  no-repeat center left / 14px;
+	@media screen and (min-width: $small-width) {
+		background: url($location)  no-repeat center left / 16px;
+	}
+}
+
+.menu-item.hours a {
+	padding-left: 26px;
+	background: url($clock-white)  no-repeat center left / 17px;
+	@media screen and (min-width: $small-width) {
+		background: url($clock-white)  no-repeat center left / 19px;
+	}
 }
 
 .menu-secondary-menu-container .menu-item {
@@ -633,32 +665,4 @@ li.menu-item.nav-button a {
 		left: 50%;
 		transform: translateX(-50%);
 	}
-}
-
-.main-navigation ul.nav-menu > li:hover > ul:before {
-	@media screen and (min-width: $med-small-width) {
-		content: "";
-		display: inline-block;
-		position: absolute;
-		top: -24px;
-		left: 50%;
-		transform: translateX(-50%);
-  		border-bottom: solid 24px $lighter-blue;
-  		border-left: solid 16px transparent;
-  		border-right: solid 16px transparent;
-  	}
-}
-
-.main-navigation ul.nav-menu > li:hover > ul:after {
-	@media screen and (min-width: $med-small-width) {
-		content: "";
-		display: inline-block;
-		position: absolute;
-		top: -20px;
-		left: 50%;
-		transform: translateX(-50%);
-  		border-bottom: solid 20px $lighter-blue;
-  		border-left: solid 14px transparent;
-  		border-right: solid 14px transparent;
-  	}
 }
