@@ -9,6 +9,8 @@
 
 $id = get_the_id();
 
+$modal_form = get_field('menu_form', 'options');
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -56,15 +58,19 @@ $id = get_the_id();
 		</div>
 		<div class="col flex">
 		<?php
-			$price = number_format(get_post_meta($id, 'selling_price', true), 0);
+			$price = number_format(floatval(get_post_meta($id, 'selling_price', true)), 0);
 			$year = get_the_terms($id, 'car_year');
 			$year = join(', ', wp_list_pluck($year, 'name'));
-			$miles = number_format(get_post_meta($id, 'miles', true), 0);
+			$miles = number_format(floatval(get_post_meta($id, 'miles', true)), 0);
 			$phone = get_field('business_phone', 'options');
 			echo '<h2 class="price">$' . $price . '</h2>';
 		?>
 			<div class="col car-details">
-				<a class="wp-block-button__link wp-element-button">I'm Interested</a>
+				<a 
+					class="wp-block-button__link wp-element-button" 
+					href="javascript;" 
+					data-src="#modal-form-<?= $modal_form  ?>" 
+					data-fancybox>I'm Interested</a>
 				<p class="year"><? echo $year; ?></p>
 				<p class="miles"><? echo $miles; ?> mi</p>
 			</div>
@@ -92,7 +98,11 @@ $id = get_the_id();
 			</div>
 		</div>
 		<div class="col col-full">
-			<a class="wp-block-button__link wp-element-button">I'm Interested</a>
+			<a 
+				class="wp-block-button__link wp-element-button" 
+				href="javascript;" 
+				data-src="#modal-form-<?= $modal_form  ?>" 
+				data-fancybox>I'm Interested</a>
 		</div>
 	</div><!-- .post-content -->
 	<div class="related-posts light-blue">

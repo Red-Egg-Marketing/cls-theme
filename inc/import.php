@@ -2,25 +2,35 @@
 
 // Gives us access to the download_url() and wp_handle_sideload() functions
 require_once( ABSPATH . '/wp-admin/includes/file.php' );
-/**
- * Show 'insert posts' button on backend
- */
-// add_action( "admin_notices", function() {
-//     echo "<div class='updated'>";
-//         echo "<p>";
-//             echo "To insert the posts into the database, click the button to the right.";
-//             echo "<a class='button button-primary' style='margin:0.25em 1em' href='{$_SERVER["REQUEST_URI"]}&insert_vehicles'>Insert Vehicles</a>";
-//         echo "</p>";
-//     echo "</div>";
-// });
-// script for importing car data
 
-add_action( "admin_init", function() {
-    global $wpdb;
-
-    if ( ! isset( $_GET["insert_vehicles"] ) ) {
-        return;
+function cls_cron_schedules($schedules){
+    if(!isset($schedules["30min"])){
+        $schedules["30min"] = array(
+            'interval' => 30*60,
+            'display' => __('Once every 30 minutes'));
     }
+    if(!isset($schedules["6hrs"])){
+        $schedules["6hrs"] = array(
+            'interval' => 6*60*60,
+            'display' => __('Once every 6 hours'));
+    }
+    if(!isset($schedules["12hrs"])){
+        $schedules["12hrs"] = array(
+            'interval' => 12*60*60,
+            'display' => __('Once every 12 hours'));
+    }
+    return $schedules;
+}
+add_filter('cron_schedules','cls_cron_schedules');
+
+if (!wp_next_scheduled('cls_vehicles_csv_hook')) {
+    wp_schedule_event( time(), '6hrs', 'cls_vehicles_csv_hook' );
+}
+add_action ( 'cls_vehicles_csv_hook', 'cls_import_vehicles_from_csv' );
+
+
+function cls_import_vehicles_from_csv() {
+    global $wpdb;
 
     // Change these to whatever you set
     $vehicle = array(
@@ -58,7 +68,7 @@ add_action( "admin_init", function() {
         $errors = array();
 
         // Get array of CSV files
-        $files = glob( __DIR__ . "/cls.csv" );
+        $files = glob( get_template_directory() . "/csv/cls.csv" );
 
         foreach ( $files as $file ) {
 
@@ -99,12 +109,40 @@ add_action( "admin_init", function() {
 
         if ( ! empty( $errors ) ) {
             // ... do stuff with the errors
-            // print_r($errors);
+            print_r($errors);
         }
 
         return $data;
     };
 
+    $import_posts = $posts();
+
+
+    $all_vehicles = function() use ( $wpdb ) {
+        $vs = $wpdb->get_results("SELECT post_id, meta_value FROM {$wpdb->postmeta} WHERE meta_key = 'vin'", ARRAY_A);
+
+        return $vs;
+    };
+
+    // check all vehicles for vin number, if not in posts array, remove from wordpress
+    $remove_vehicles = array_filter($all_vehicles(), function($vehicle) use ($import_posts){
+        $truthy = true;
+        foreach($import_posts as $post) {
+            if ($vehicle['meta_value'] == $post["VIN"]) {
+                $truthy = false;
+                break;
+            }
+        }
+        return $truthy;
+    });
+
+    // remove vehicles that don't have vin in import
+    foreach ($remove_vehicles as $vtest) {
+        $v_id = $vtest['post_id'];
+
+        wp_delete_post($v_id, false);
+
+    }
 
     // Simple check to see if the current post exists within the
     //  database. This isn't very efficient, but it works.
@@ -123,11 +161,14 @@ add_action( "admin_init", function() {
 
     $x = 0;
 
-    foreach ( $posts() as $post ) {
+    foreach ( $import_posts as $post ) {
+
         if ($post["SellingPrice"] == '0') continue;
-        
+
         // If the post exists, skip this post and go to the next one
         $exists_id = $post_exists( $post["VIN"] );
+
+        $current_images = false;
 
         if ( $exists_id !== false ) {
             // if the vin number exists, update the post
@@ -143,6 +184,8 @@ add_action( "admin_init", function() {
 
              // check images meta if post has already been inserted, but updating
             $current_images = get_post_meta($exists_id, 'original_base');
+
+            $current_images = json_decode($current_images[0]);
 
         } else {
             // Insert the vehicle into the database
@@ -172,9 +215,11 @@ add_action( "admin_init", function() {
         
         foreach($images as $image) {
 
-                if (isset($current_images) && !in_array(basename($image), $current_images)) continue;
+                if (is_array($current_images) && in_array(basename($image), $current_images)) {
+                    continue;
+                }
                 
-                $timeout_seconds = 1.5;
+                $timeout_seconds = 3;
 
                 array_push($i_array, basename($image));
 
@@ -182,9 +227,16 @@ add_action( "admin_init", function() {
 
                 if ( !is_wp_error( $temp_file ) ) {
 
+                    $new_base = str_replace(" ", "-", $post["title"]);
+                    $base_year = str_replace(" ", "-", $post['Year']);
+
+                    $path_ext = pathinfo($image, PATHINFO_EXTENSION);
+
+                    $image_type = getimagesize($image, $info);
+
                     $file = array(
-                        'name'     => basename( $image ),
-                        'type'     => mime_content_type( $temp_file ),
+                        'name'     => $new_base . '-' . $base_year . '.' . $path_ext,
+                        'type'     => $info['mime'],
                         'tmp_name' => $temp_file,
                         'size'     => filesize( $temp_file ),
                     );
@@ -214,7 +266,7 @@ add_action( "admin_init", function() {
 
                         if( !is_wp_error( $attachment_id ) || $attachment_id ) {
                             
-                            require_once( ABSPATH . 'wp-admin/includes/image.php' );
+                            require_once( ABSPATH . '/wp-admin/includes/image.php' );
 
                             wp_update_attachment_metadata(
                                 $attachment_id,
@@ -285,4 +337,19 @@ add_action( "admin_init", function() {
     
         
     }  
-});
+}
+
+
+function cls_vehicle_trash_attachments( $delete, $post, $force_delete ) {
+  // Is it my post type someone is trying to delete?
+  if ( 'vehicle' === $post->post_type && ! $force_delete ) {
+
+    $attachments = get_attached_media( 'image', $post->ID );
+
+    foreach ($attachments as $attachment) {
+        wp_delete_attachment( $attachment->ID, true );
+    }
+  }
+  return $delete;  
+}
+add_filter('pre_delete_post', 'cls_vehicle_trash_attachments', 10, 3);

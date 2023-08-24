@@ -371,14 +371,15 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
 					<?php
 				}
 				wp_reset_postdata();
-			} ?>
+			?>
 				</div><!-- .swiper-wrapper -->
 				<div class="swiper-button-prev"></div>
   				<div class="swiper-button-next"></div>
 				</div>
 				
 			</div><!-- .resources-grid -->
-	<?php
+			<?php
+			}
 }
 
 function cls_posts_footer(int $id, $post_type = 'post') {

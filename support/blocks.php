@@ -1,4 +1,3 @@
-
 <?php
  // enqueue custom blocks
 function cls_enqueue_block_editor_assets() {
@@ -205,5 +204,3 @@ function cls_progress_block_assets() {
 
 }
 add_action( 'enqueue_block_assets', 'cls_progress_block_assets' );
-
-?>

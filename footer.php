@@ -20,6 +20,11 @@ if (function_exists('get_field')) {
         'icons'         => get_field('icons', 'options'),
     ];
 
+
+$image = getimagesize("https://denvercls.redeggstaging.com/wp-content/themes/cls-theme/img/car_top-view.png", $info);
+
+print_r($image);
+
 ?>
 
     <footer id="colophon" class="site-footer">
@@ -78,6 +83,24 @@ if (function_exists('get_field')) {
 <?php 
 
 } // end if
+
+ if (function_exists('get_field')){
+        $modal_form = get_field('menu_form', 'options');
+        if ($modal_form != 0) {
+        ?>
+        <div style="display: none;">
+        <div 
+            id="modal-form-<?= $modal_form ?>"
+        >
+            <div class="wrapper">
+                <?php echo do_shortcode('[gravityform id="' . $modal_form . '" title="true" description="true" ajax="true"]'); ?>
+            </div>
+        </div>
+        </div>
+        <?php
+        }
+
+}
 wp_footer(); 
 
 ?>
