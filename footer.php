@@ -21,10 +21,6 @@ if (function_exists('get_field')) {
     ];
 
 
-$image = getimagesize("https://denvercls.redeggstaging.com/wp-content/themes/cls-theme/img/car_top-view.png", $info);
-
-print_r($image);
-
 ?>
 
     <footer id="colophon" class="site-footer">

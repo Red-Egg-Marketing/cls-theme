@@ -42,4 +42,6 @@ import "./column-cta";
 import "./section";
 import "./filter-resources";
 import "./selected-projects";
+import "./faq";
+import "./faq-section";
 

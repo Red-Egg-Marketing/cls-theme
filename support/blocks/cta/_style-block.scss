@@ -5,10 +5,6 @@
 
 .cta {
 	position: relative;
-	padding-bottom: 4.5rem;
-	@media screen and (min-width: $small-width) {
-		padding-bottom: 7.125rem;
-	}
 }
 
 .cta:before {
@@ -19,11 +15,11 @@
 	width: 25%;
 	height: 0;
 	transform: translateY(7.5%);
-	padding-bottom: #{'min(185px, 48.4%)'};
+	padding-bottom: #{'min(150px, 48.4%)'};
 	background: url(img/car_top-view.png) no-repeat center center / contain;
 	z-index: 1;
 	max-width: 125px;
-	@media screen and (min-width: $small-width) {
+	@media screen and (min-width: $med-width + 200px) {
 		padding-bottom: #{'min(650px, 48.4%)'};
 		max-width: 315px;
 	}

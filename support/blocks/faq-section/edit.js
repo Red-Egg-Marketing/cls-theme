@@ -8,7 +8,7 @@ import BackgroundSelector from '../../components/BackgroundSelector.js';
 import Columns from '../../components/Columns.js';
 
 const template = [
-	['core/heading', {'level' : 2, 'placeholder' : 'Heading...'}],
+	['cls-blocks/header-intro', {}],
 	['cls-blocks/faq', {}],
 	['cls-blocks/faq', {}],
 ];
@@ -25,7 +25,7 @@ const EditFAQSection = ( { attributes, setAttributes } ) => {
 					<div className="block-wrapper">
 						<InnerBlocks
 							template={ template }
-							allowedBlocks={['cls-blocks/faq', 'core/heading']}
+							allowedBlocks={['cls-blocks/faq', 'cls-blocks/header-intro']}
 						/>
 					</div>
 				</div>

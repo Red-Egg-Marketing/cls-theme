@@ -47,6 +47,7 @@
 	align-self: center;
 }
 
+.columns-cta .column-cta:hover .wp-block-buttons,
 .columns-cta .column-cta:hover p {
 	opacity: 1;
 }
@@ -122,10 +123,12 @@
 	opacity: 1;
 }
 
+.columns-cta .wp-block-cover__inner-container .wp-block-buttons,
 .columns-cta .wp-block-cover__inner-container p {
 	opacity: 0;
 	transition-property: opacity;
 	transition-duration: 0.3s;
+	height: 0;
 }
 
 .columns-cta .wp-block-cover__inner-container * {

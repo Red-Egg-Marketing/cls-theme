@@ -8,7 +8,7 @@ import save from "./save";
 registerBlockType("cls-blocks/faq", {
 	title: __("FAQ", "cls-blocks"),
 	description: __("Block for displaying FAQ."),
-	parent: ['cls-blocks/faq'],
+	parent: ['cls-blocks/faq-section'],
 	apiVersion: 2,
 	icon: "info",
 	category: "layout",
@@ -17,12 +17,6 @@ registerBlockType("cls-blocks/faq", {
 			type: "string",
 			source: "text",
 			selector: ".header-title",
-			default: "",
-		},
-		content: {
-			type: "string",
-			source: "html",
-			selector: ".content",
 			default: "",
 		},
 		open: {

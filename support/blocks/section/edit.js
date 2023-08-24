@@ -42,7 +42,8 @@ const EditSection = ( { attributes, setAttributes } ) => {
 							allowedBlocks={ [
 							 'cls-blocks/section-header',
 							 'core/heading',
-							 'core/list', 
+							 'core/list',
+							 'core/spacer',
 							 'core/buttons', 
 							 'core/paragraph',
 							 'cls-blocks/callout',

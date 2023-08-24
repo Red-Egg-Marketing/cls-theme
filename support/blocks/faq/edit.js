@@ -7,9 +7,13 @@ import Header from '../../components/Header.js';
 import Content from '../../components/Content.js';
 
 
+const template = [
+	['core/paragraph', {'placeholder' : 'Frequently asked answer...'}],
+];
+
 const EditFAQ = ( { attributes, setAttributes } ) => {
 		const {
-			title, content, open
+			title, open
 		} = attributes;
 
 		const [openQuestion, activateQuestion] = useState(false);
@@ -69,13 +73,9 @@ const EditFAQ = ( { attributes, setAttributes } ) => {
 									<div 
 										className="content-col"
 									>
-										<Content 
-											tag="div"
-											content={ content }
-											placeholder={__('Answer...')}
-											setAttributes={ setAttributes }
-											multiline="p"
-											classProp="content"
+										<InnerBlocks
+											template={ template }
+											allowedBlocks={['core/paragraph', 'core/list']}
 										/>
 									</div>
 								</div>

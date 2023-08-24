@@ -12,6 +12,13 @@ body {
 	width: 100%;
 }
 
+.entry-content > iframe {
+	display: block;
+	min-height: 800px;
+}
+
+.entry-content > iframe,
+.entry-content > .gform_wrapper,
 .entry-content > p, 
 .entry-content > h1, 
 .entry-content > h2,
@@ -32,6 +39,7 @@ body {
 .entry-content > .wp-block-buttons {
 	max-width: 950px;
 	margin-left: auto;
+	width: 100%;
 	margin-right: auto;
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;

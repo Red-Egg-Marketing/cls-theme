@@ -8,7 +8,7 @@ import Content from '../../components/Content.js';
 
 const SaveFAQ = ( { attributes } ) => {
 		const {
-			title, content, open
+			title, open
 		} = attributes;
 
 		const blockProps = useBlockProps.save({
@@ -29,12 +29,7 @@ const SaveFAQ = ( { attributes } ) => {
 							/>
 							<div className="answer">
 								<div class="content-col">
-									<Content.View
-										tag="div"
-										content={ content }
-										multiline="p"
-										classProp="content"
-									/>
+									<InnerBlocks.Content />
 								</div>
 							</div>
 						</div>

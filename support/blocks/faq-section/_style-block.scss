@@ -8,6 +8,11 @@ html :where(.wp-block) {
 	margin-bottom: 0;
 }
 
+.faq-section .header-intro-block {
+	padding-top: 0;
+	padding-bottom: 2.25rem;
+}
+
 .wp-block.is-reusable .faq:last-of-type {
 	margin-bottom: 0;
 }

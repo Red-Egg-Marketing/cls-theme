@@ -23,10 +23,6 @@
 .text-cards-grid {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
-	background: linear-gradient(to right, $teal, $teal);
-	background-size: 150px 3px;
-	background-position: center top;
-	background-repeat: no-repeat;
 	padding-bottom: 3.25rem;
 	@media screen and (min-width: $small-width) {
 		padding-left: 30px;

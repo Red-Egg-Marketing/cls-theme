@@ -383,6 +383,13 @@ body {
   width: 100%;
 }
 
+.entry-content > iframe {
+  display: block;
+  min-height: 800px;
+}
+
+.entry-content > iframe,
+.entry-content > .gform_wrapper,
 .entry-content > p,
 .entry-content > h1,
 .entry-content > h2,
@@ -403,6 +410,7 @@ body {
 .entry-content > .wp-block-buttons {
   max-width: 950px;
   margin-left: auto;
+  width: 100%;
   margin-right: auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1752,6 +1760,7 @@ div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]
   font-family: "Lato", sans-serif;
   font-weight: 300;
   width: 100%;
+  min-height: 55px;
 }
 
 @media screen and (min-width: 641px) {
@@ -1778,6 +1787,7 @@ div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]
     padding-right: 25px;
     padding-left: 25px;
     padding-top: 17px;
+    min-height: 76px;
     padding-bottom: 17px;
   }
 }
@@ -1828,7 +1838,7 @@ div.gform_wrapper .ginput_container_select select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: white url(img/down-chevron.svg) no-repeat calc(100% - 25px) center/10px;
+  background: #E2F0F7 url(img/down-chevron.svg) no-repeat calc(100% - 25px) center/10px;
   border-radius: 0;
   padding-right: 15px;
   padding-left: 15px;
