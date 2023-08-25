@@ -173,7 +173,7 @@ const ResourceFilters = (props) => {
             </select>
           </div>
           <div className="wrapper filter-items">
-          { taxonomies && Object.entries(taxonomies).map(([key, value]) => {
+          { taxonomies && taxonomies.length > 0 && Object.entries(taxonomies).map(([key, value]) => {
                 let tax = key;
                 let taxItem = value;
                 let isActive = '';

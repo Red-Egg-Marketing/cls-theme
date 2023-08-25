@@ -157,7 +157,7 @@ const EditResources = ( { attributes, setAttributes } ) => {
 								<div className="header-wrap">
 									<InnerBlocks
 										template={ template }
-										allowedBlocks={['core/heading']}
+										allowedBlocks={['core/heading', 'core/paragraph']}
 									/>
 								</div>
 							</header>
@@ -172,7 +172,7 @@ const EditResources = ( { attributes, setAttributes } ) => {
 									filterMax={ filterMax }
 								/>
 								<div className="resources-grid">
-									{ (resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {
+									{ (resources && resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {
 											return (
 												<Fragment>
 													<ResourceCard

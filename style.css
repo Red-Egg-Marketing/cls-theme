@@ -8829,6 +8829,7 @@ block a:after {
   }
 }
 
+button.wprevpro_load_more_btn,
 #CybotCookiebotDialogBodyButtonAccept,
 .buddypress .buddypress-wrap input[type=button],
 .buddypress .buddypress-wrap .button,
@@ -8859,6 +8860,7 @@ button.wp-button {
 }
 
 @media screen and (min-width: 768px) {
+  button.wprevpro_load_more_btn.is-small,
   #CybotCookiebotDialogBodyButtonAccept.is-small,
   .buddypress .buddypress-wrap input[type=button].is-small,
   .buddypress .buddypress-wrap .button.is-small,
@@ -8879,7 +8881,9 @@ button.wp-button {
   }
 }
 
-#CybotCookiebotDialogBodyButtonAccept.bp-secondary-action, #CybotCookiebotDialogBodyButtonAccept.wp-cancel-pw,
+button.wprevpro_load_more_btn.bp-secondary-action, button.wprevpro_load_more_btn.wp-cancel-pw,
+#CybotCookiebotDialogBodyButtonAccept.bp-secondary-action,
+#CybotCookiebotDialogBodyButtonAccept.wp-cancel-pw,
 .buddypress .buddypress-wrap input[type=button].bp-secondary-action,
 .buddypress .buddypress-wrap input[type=button].wp-cancel-pw,
 .buddypress .buddypress-wrap .button.bp-secondary-action,
@@ -8909,7 +8913,9 @@ button.wp-button.wp-cancel-pw {
   background: none;
 }
 
-#CybotCookiebotDialogBodyButtonAccept.bp-secondary-action:hover, #CybotCookiebotDialogBodyButtonAccept.wp-cancel-pw:hover,
+button.wprevpro_load_more_btn.bp-secondary-action:hover, button.wprevpro_load_more_btn.wp-cancel-pw:hover,
+#CybotCookiebotDialogBodyButtonAccept.bp-secondary-action:hover,
+#CybotCookiebotDialogBodyButtonAccept.wp-cancel-pw:hover,
 .buddypress .buddypress-wrap input[type=button].bp-secondary-action:hover,
 .buddypress .buddypress-wrap input[type=button].wp-cancel-pw:hover,
 .buddypress .buddypress-wrap .button.bp-secondary-action:hover,
@@ -8941,6 +8947,7 @@ button.wp-button.wp-cancel-pw:hover {
 }
 
 @media screen and (min-width: 768px) {
+  button.wprevpro_load_more_btn,
   #CybotCookiebotDialogBodyButtonAccept,
   .buddypress .buddypress-wrap input[type=button],
   .buddypress .buddypress-wrap .button,
@@ -8961,6 +8968,7 @@ button.wp-button.wp-cancel-pw:hover {
   }
 }
 
+button.wprevpro_load_more_btn:visited,
 #CybotCookiebotDialogBodyButtonAccept:visited,
 .buddypress .buddypress-wrap input[type=button]:visited,
 .buddypress .buddypress-wrap .button:visited,
@@ -8978,6 +8986,7 @@ button.wp-button:visited {
   color: white;
 }
 
+button.wprevpro_load_more_btn:hover,
 #CybotCookiebotDialogBodyButtonAccept:hover,
 .buddypress .buddypress-wrap input[type=button]:hover,
 .buddypress .buddypress-wrap .button:hover,
@@ -8996,6 +9005,7 @@ button.wp-button:hover {
   color: white;
 }
 
+button.wprevpro_load_more_btn[disabled],
 #CybotCookiebotDialogBodyButtonAccept[disabled],
 .buddypress .buddypress-wrap input[type=button][disabled],
 .buddypress .buddypress-wrap .button[disabled],
@@ -9659,9 +9669,16 @@ a.custom-logo-link {
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  -ms-flex-align: stretch;
-      align-items: stretch;
+  -ms-flex-align: center;
+      align-items: center;
   width: 100%;
+}
+
+@media screen and (min-width: 1080px) {
+  .main-navigation {
+    -ms-flex-align: stretch;
+        align-items: stretch;
+  }
 }
 
 .site-header .main-wrapper {
@@ -9815,13 +9832,13 @@ li.menu-item.nav-button a:hover {
 }
 
 @media screen and (min-width: 1080px) {
-  .main-navigation .nav-menu > .menu-item.nav-button {
+  .main-navigation .menu > .menu-item.nav-button {
     padding-top: 22px;
     padding-bottom: 22px;
   }
 }
 
-.main-navigation .nav-menu .menu-item {
+.main-navigation .menu .menu-item {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -9832,7 +9849,7 @@ li.menu-item.nav-button a:hover {
       justify-content: flex-start;
 }
 
-.main-navigation .nav-menu > .menu-item {
+.main-navigation .menu .menu-item {
   width: 100%;
   padding-top: 6px;
   margin-bottom: 15px;
@@ -9840,7 +9857,7 @@ li.menu-item.nav-button a:hover {
 }
 
 @media screen and (min-width: 1080px) and (max-width: 1250px) {
-  .main-navigation .nav-menu > .menu-item {
+  .main-navigation .menu .menu-item {
     margin-bottom: 0;
     width: auto;
     padding-top: 26px;
@@ -9851,7 +9868,7 @@ li.menu-item.nav-button a:hover {
 }
 
 @media screen and (min-width: 1251px) {
-  .main-navigation .nav-menu > .menu-item {
+  .main-navigation .menu .menu-item {
     margin-bottom: 0;
     width: auto;
     padding-top: 26px;
@@ -9906,13 +9923,18 @@ li.menu-item.nav-button a:hover {
   }
 }
 
-.main-navigation .nav-menu > .menu-item > .sub-menu {
+.main-navigation .menu .sub-menu .menu-item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.main-navigation .menu > .menu-item > .sub-menu {
   display: block;
   padding-top: 15px;
 }
 
 @media screen and (min-width: 1080px) {
-  .main-navigation .nav-menu > .menu-item > .sub-menu {
+  .main-navigation .menu > .menu-item > .sub-menu {
     padding-top: 0;
     background: rgba(255, 255, 255, 0.9);
     display: block;
@@ -16059,8 +16081,8 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 
 .image-columns .faq:last-of-type {
@@ -17484,7 +17506,7 @@ html :where(.wp-block) {
 
 .shortcode-section > .block-wrapper {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1620px;
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto;
@@ -19263,14 +19285,18 @@ ul.tax-list .tax-wrap {
   position: relative;
 }
 
-.filter-resources header.header *:first-of-type {
+.filter-resources header.header h1:first-of-type,
+.filter-resources header.header h2:first-of-type,
+.filter-resources header.header h3:first-of-type,
+.filter-resources header.header h4:first-of-type,
+.filter-resources header.header h5:first-of-type,
+.filter-resources header.header h6:first-of-type {
   margin-top: 0;
-  margin-bottom: 0;
 }
 
 .filter-resources header.header {
   background-color: #E6E6E6;
-  min-height: 200px;
+  min-height: 250px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -19292,7 +19318,7 @@ ul.tax-list .tax-wrap {
 }
 
 .filter-resources header.header .header-wrap {
-  max-width: 1620px;
+  max-width: 875px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }

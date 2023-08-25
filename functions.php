@@ -297,6 +297,12 @@ require get_template_directory() . '/inc/import.php';
 require get_template_directory() . '/inc/posts-filter.php';
 
 
+/**
+ * Form Filters
+ */
+require get_template_directory() . '/inc/form-filters.php';
+
+
 
 /**
  * Load Jetpack compatibility file.

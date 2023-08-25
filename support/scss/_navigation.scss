@@ -263,8 +263,11 @@ a.custom-logo-link {
 .main-navigation {
 	display: flex;
 	justify-content: flex-end;
-	align-items: stretch;
+	align-items: center;
 	width: 100%;
+	@media screen and (min-width: $med-small-width) {
+		align-items: stretch;
+	}
 }
 
 .site-header .main-wrapper {
@@ -380,21 +383,21 @@ li.menu-item.nav-button a {
 	}
 }
 
-.main-navigation .nav-menu > .menu-item.nav-button {
+.main-navigation .menu > .menu-item.nav-button {
 	@media screen and (min-width: $med-small-width) {
 		padding-top: 22px;
 		padding-bottom: 22px;
 	}
 }
 
-.main-navigation .nav-menu .menu-item {
+.main-navigation .menu .menu-item {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: flex-start;	
 }
 
-.main-navigation .nav-menu > .menu-item {
+.main-navigation .menu .menu-item {
 	width: 100%;
 
 	padding-top: 6px;
@@ -451,7 +454,12 @@ li.menu-item.nav-button a {
 	}
 }
 
-.main-navigation .nav-menu > .menu-item > .sub-menu {
+.main-navigation .menu .sub-menu .menu-item {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.main-navigation .menu > .menu-item > .sub-menu {
 	display: block;
 	padding-top: 15px;
 	@media screen and (min-width:  $med-small-width) {

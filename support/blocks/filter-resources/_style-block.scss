@@ -475,14 +475,18 @@ ul.tax-list .tax-wrap {
 	position: relative;
 }
 
-.filter-resources header.header *:first-of-type {
+.filter-resources header.header h1:first-of-type,
+.filter-resources header.header h2:first-of-type,
+.filter-resources header.header h3:first-of-type,
+.filter-resources header.header h4:first-of-type,
+.filter-resources header.header h5:first-of-type,
+.filter-resources header.header h6:first-of-type {
 	margin-top: 0;
-	margin-bottom: 0;
 }
 
 .filter-resources header.header {
 	background-color: $grey;
-	min-height: 200px;
+	min-height: 250px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -497,7 +501,7 @@ ul.tax-list .tax-wrap {
 }
 
 .filter-resources header.header .header-wrap {
-	max-width: $max-cont-w - 300px;
+	max-width: $small-med-width;
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }

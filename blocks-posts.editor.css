@@ -1152,6 +1152,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   max-width: 750px;
 }
 
+button.wprevpro_load_more_btn,
 #CybotCookiebotDialogBodyButtonAccept,
 .buddypress .buddypress-wrap input[type=button],
 .buddypress .buddypress-wrap .button,
@@ -1180,6 +1181,7 @@ button.wp-button {
 }
 
 @media screen and (min-width: 768px) {
+  button.wprevpro_load_more_btn.is-small,
   #CybotCookiebotDialogBodyButtonAccept.is-small,
   .buddypress .buddypress-wrap input[type=button].is-small,
   .buddypress .buddypress-wrap .button.is-small,
@@ -1198,7 +1200,9 @@ button.wp-button {
   }
 }
 
-#CybotCookiebotDialogBodyButtonAccept.bp-secondary-action, #CybotCookiebotDialogBodyButtonAccept.wp-cancel-pw,
+button.wprevpro_load_more_btn.bp-secondary-action, button.wprevpro_load_more_btn.wp-cancel-pw,
+#CybotCookiebotDialogBodyButtonAccept.bp-secondary-action,
+#CybotCookiebotDialogBodyButtonAccept.wp-cancel-pw,
 .buddypress .buddypress-wrap input[type=button].bp-secondary-action,
 .buddypress .buddypress-wrap input[type=button].wp-cancel-pw,
 .buddypress .buddypress-wrap .button.bp-secondary-action,
@@ -1224,7 +1228,9 @@ button.wp-button.wp-cancel-pw {
   background: none;
 }
 
-#CybotCookiebotDialogBodyButtonAccept.bp-secondary-action:hover, #CybotCookiebotDialogBodyButtonAccept.wp-cancel-pw:hover,
+button.wprevpro_load_more_btn.bp-secondary-action:hover, button.wprevpro_load_more_btn.wp-cancel-pw:hover,
+#CybotCookiebotDialogBodyButtonAccept.bp-secondary-action:hover,
+#CybotCookiebotDialogBodyButtonAccept.wp-cancel-pw:hover,
 .buddypress .buddypress-wrap input[type=button].bp-secondary-action:hover,
 .buddypress .buddypress-wrap input[type=button].wp-cancel-pw:hover,
 .buddypress .buddypress-wrap .button.bp-secondary-action:hover,
@@ -1252,6 +1258,7 @@ button.wp-button.wp-cancel-pw:hover {
 }
 
 @media screen and (min-width: 768px) {
+  button.wprevpro_load_more_btn,
   #CybotCookiebotDialogBodyButtonAccept,
   .buddypress .buddypress-wrap input[type=button],
   .buddypress .buddypress-wrap .button,
@@ -1270,6 +1277,7 @@ button.wp-button.wp-cancel-pw:hover {
   }
 }
 
+button.wprevpro_load_more_btn:visited,
 #CybotCookiebotDialogBodyButtonAccept:visited,
 .buddypress .buddypress-wrap input[type=button]:visited,
 .buddypress .buddypress-wrap .button:visited,
@@ -1285,6 +1293,7 @@ button.wp-button:visited {
   color: white;
 }
 
+button.wprevpro_load_more_btn:hover,
 #CybotCookiebotDialogBodyButtonAccept:hover,
 .buddypress .buddypress-wrap input[type=button]:hover,
 .buddypress .buddypress-wrap .button:hover,
@@ -1301,6 +1310,7 @@ button.wp-button:hover {
   color: white;
 }
 
+button.wprevpro_load_more_btn[disabled],
 #CybotCookiebotDialogBodyButtonAccept[disabled],
 .buddypress .buddypress-wrap input[type=button][disabled],
 .buddypress .buddypress-wrap .button[disabled],
