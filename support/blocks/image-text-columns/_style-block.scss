@@ -12,6 +12,14 @@
 	max-width: 100%;
 }
 
+.image-columns + .image-columns {
+	padding-top: 0;
+	@media screen and (min-width: $small-width) {
+		padding-top: 0;
+	}
+
+}
+
 .image-columns {
 	width: 100%;
 	padding-top: 3.125rem;
@@ -217,11 +225,11 @@ div.image-columns.col-66 .content-columns .content-column,
 	position: relative;
 }
 
-.image-columns.img-right .content-column,
+// .image-columns.img-right .content-column,
 .image-columns.img-right .content-columns {
 	@media screen and (min-width: $small-width) {
 		padding-left: 0;
-		padding-right: 1.25rem;
+		padding-right: 4.375rem;
 	}
 }
 

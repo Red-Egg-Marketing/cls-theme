@@ -4487,6 +4487,16 @@ td.year-sum {
   max-width: 100%;
 }
 
+.image-columns + .image-columns {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .image-columns + .image-columns {
+    padding-top: 0;
+  }
+}
+
 .image-columns {
   width: 100%;
   padding-top: 3.125rem;
@@ -4744,10 +4754,9 @@ div.image-columns.col-66 .content-columns .content-column,
 }
 
 @media screen and (min-width: 768px) {
-  .image-columns.img-right .content-column,
   .image-columns.img-right .content-columns {
     padding-left: 0;
-    padding-right: 1.25rem;
+    padding-right: 4.375rem;
   }
 }
 
@@ -6471,6 +6480,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   max-width: 100%;
 }
 
+.lighter-blue .text-card,
 .light-grey .text-card {
   background: white;
 }
@@ -6486,6 +6496,8 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: stretch;
+      justify-content: stretch;
   -ms-flex-align: stretch;
       align-items: stretch;
   width: 100%;
@@ -6562,6 +6574,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
   -ms-flex-align: stretch;
       align-items: stretch;
 }
@@ -6571,6 +6584,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
+  width: 100%;
 }
 
 .text-card .content-card p:last-of-type {
@@ -6717,6 +6731,10 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   .text-card .icon-icon {
     margin: -65px auto 0;
   }
+}
+
+.lighter-blue .text-card .block-wrapper {
+  background: white;
 }
 
 .text-card .block-wrapper {
