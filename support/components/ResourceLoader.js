@@ -146,6 +146,7 @@ const ResourceLoader = () => {
 const ResourceFilters = (props) => {
 
   const { taxonomies, currentFilter, currentTax, filterCats, filterMin, filterMax, searchFilter, orderFilter, selectedValues } = props;
+  console.log(selectedValues);
   return (
       <Fragment>
           <div className="search-cont">
@@ -173,7 +174,7 @@ const ResourceFilters = (props) => {
             </select>
           </div>
           <div className="wrapper filter-items">
-          { taxonomies && taxonomies.length > 0 && Object.entries(taxonomies).map(([key, value]) => {
+          { taxonomies && Object.entries(taxonomies).map(([key, value]) => {
                 let tax = key;
                 let taxItem = value;
                 let isActive = '';

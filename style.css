@@ -14780,7 +14780,7 @@ div.gs_tm_theme12 .single-member {
 div.gs_team_area .gs-containeer .gs-roow {
   margin-left: 0;
   margin-right: 0;
-  max-width: 1120px;
+  max-width: 1620px;
   margin: 0 auto;
   width: 100%;
 }
@@ -17515,8 +17515,8 @@ html :where(.wp-block) {
 
 @media screen and (min-width: 768px) {
   .shortcode-section > .block-wrapper {
-    padding-left: 5.125rem;
-    padding-right: 5.125rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 

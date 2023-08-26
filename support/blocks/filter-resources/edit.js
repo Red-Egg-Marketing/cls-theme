@@ -170,6 +170,7 @@ const EditResources = ( { attributes, setAttributes } ) => {
 									currentFilter={ toggleFilters }
 									filterMin={ filterMin }
 									filterMax={ filterMax }
+									selectedValues={ data }
 								/>
 								<div className="resources-grid">
 									{ (resources && resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {

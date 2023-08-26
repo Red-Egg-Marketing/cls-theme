@@ -97,7 +97,7 @@ div.gs_tm_theme12 .single-member {
 div.gs_team_area .gs-containeer .gs-roow {
 	margin-left: 0;
 	margin-right: 0;
-	max-width: 1120px;
+	max-width: $max-cont-w - 300px;
 	margin: 0 auto;
 	width: 100%;
 }

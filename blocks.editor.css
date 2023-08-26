@@ -6093,8 +6093,8 @@ html :where(.wp-block) {
 
 @media screen and (min-width: 768px) {
   .shortcode-section > .block-wrapper {
-    padding-left: 5.125rem;
-    padding-right: 5.125rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 

@@ -7,12 +7,12 @@ function cls_populate_member_dropdown($form){
     foreach($form["fields"] as &$field)
         if($field["cssClass"] == "preferred-consultant" && $field["type"] == "select"){
             $args = [
-                "post_type"     => "gs_team",
-                "post_status"   => "publish",
-                "ppp"           => -1,
-                "orderby"       => "title",
-                "order"         => "ASC",
-                "tax_query"     => [
+                "post_type"         => "gs_team",
+                "post_status"       => "publish",
+                "posts_per_page"    => -1,
+                "orderby"           => "title",
+                "order"             => "ASC",
+                "tax_query"         => [
                     [
                         "taxonomy"  => "team_group",
                         "field"     => "slug",
