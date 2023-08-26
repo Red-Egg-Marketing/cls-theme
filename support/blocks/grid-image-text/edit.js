@@ -3,6 +3,7 @@ const { Fragment, useState } = wp.element;
 const { RichText, MediaUpload, InnerBlocks, InspectorControls, useBlockProps } = wp.blockEditor;
 const { Button, PanelBody, SelectControl, TextControl, ColorPalette, ToggleControl, RangeControl, Popover, withFocusOutside } = wp.components;
 const { __ } = wp.i18n;
+import PaddingSelector from '../../components/Padding.js';
 
 const template = [
 	['cls-blocks/content',
@@ -54,16 +55,25 @@ const template = [
 
 const allowBlocks = ['cls-blocks/content'];
 
-const EditGrid = ( { attributes, setAttributes } ) => {
+const EditGrid = ( { attributes, setAttributes, clientId } ) => {
+
+		const {
+			padding, blockId
+		} = attributes;
 
 		const blockProps = useBlockProps({
 			className: 'grid-text-cards'
-		});	
+		});
 
+		React.useEffect( () => {
+        	if ( ! blockId ) {
+        	    setAttributes( { blockId: clientId } );
+        	}
+    	}, [] );
 		
 		return (
 			<Fragment>
-				<div {...blockProps}>
+				<div {...blockProps} id={blockId}>
 					<div className="block-wrapper">
 						<InnerBlocks 
 							allowedBlocks={ allowBlocks }

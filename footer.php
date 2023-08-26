@@ -20,7 +20,6 @@ if (function_exists('get_field')) {
         'icons'         => get_field('icons', 'options'),
     ];
 
-
 ?>
 
     <footer id="colophon" class="site-footer">

@@ -3,6 +3,7 @@ const { Fragment } = wp.element;
 const { RichText, MediaUpload, InnerBlocks, InspectorControls, useBlockProps } = wp.blockEditor;
 const { Button, PanelBody, TextControl, SelectControl, ColorPalette, ToggleControl, RangeControl, ResponsiveWrapper } = wp.components;
 const { __ } = wp.i18n;
+import PaddingSelector from '../../components/Padding.js';
 import ImageComp from '../../components/ImageComp.js';
 import Header from '../../components/Header.js';
 import BackgroundColor from '../../components/BackgroundColor.js';
@@ -36,9 +37,9 @@ const VidImg = [
 
 let allowBlocks = ['cls-blocks/content'];
 
-const EditImageColumns = ( { attributes, setAttributes } ) => {
+const EditImageColumns = ( { attributes, setAttributes, clientId } ) => {
 		const {
-			contentAlign, media, title, image, bgColor, bgSlug, color, vidOrImg, videoID, videoURL, videothumb, columnwidth
+			contentAlign, media, title, image, bgColor, bgSlug, color, vidOrImg, videoID, videoURL, videothumb, columnwidth, padding, blockId
 		} = attributes;
 
 		const template = [
@@ -83,7 +84,8 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
 
 		const blockProps = useBlockProps({
 			className: 'image-columns' + (vidOrImg == 'video' ? ' with-video' : '') + ' ' + contentAlign + (bgSlug != '' ? ' ' + bgSlug + ' with-bg' : '')  + (' ' + columnwidth),
-			style: backgroundSettings
+			style: backgroundSettings,
+			id: blockId
 		});	
 
 		const updateVideoAttr = (media) => {
@@ -136,9 +138,20 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
     			videothumb: newBody
     		});
     	}
+
+    	React.useEffect( () => {
+        	if ( ! blockId ) {
+        	    setAttributes( { blockId: clientId } );
+        	}
+    	}, [] );
 		
 		return (
 			<Fragment>
+				<PaddingSelector
+					setAttributes={ setAttributes }
+					padding={ padding }
+					id={ blockId }
+				/>
 				<InspectorControls>
 					<PanelBody 
 						title={ __( 'Align Content' ) }
@@ -261,7 +274,7 @@ const EditImageColumns = ( { attributes, setAttributes } ) => {
 						)
 					}
 				</InspectorControls>
-				<div {...blockProps}>
+				<div {...blockProps} id={blockId}>
 					<div className="block-wrapper">
 						<div className={`block-content ${ contentAlign }`}>
 							<Fragment>

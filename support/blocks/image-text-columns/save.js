@@ -6,10 +6,11 @@ const { Button } = wp.components;
 const { __ } = wp.i18n;
 import ImageComp from '../../components/ImageComp.js';
 import Header from '../../components/Header.js';
+import PaddingSelector from '../../components/Padding.js';
 
 const SaveImageColumns = ( { attributes } ) => {
 		const {
-			contentAlign, media, title, image, bgColor, bgSlug, color, vidOrImg, videoID, videoURL, videothumb, columnwidth
+			contentAlign, media, title, image, bgColor, bgSlug, color, vidOrImg, videoID, videoURL, videothumb, columnwidth, padding, blockId
 		} = attributes;
 
 		const imageSize = image.size != '' ? image.size + image.unit : image.sizekey;
@@ -33,7 +34,7 @@ const SaveImageColumns = ( { attributes } ) => {
 
 		const blockProps = useBlockProps.save({
 			className: 'image-columns' + (vidOrImg == 'video' ? ' with-video' : '') + ' ' + contentAlign  + (' ' + columnwidth),
-			style: backgroundSettings
+			style: backgroundSettings,
 		});
 
 		let srcObj = media.srcSet;
@@ -43,7 +44,12 @@ const SaveImageColumns = ( { attributes } ) => {
 		let srcSet = ``;
 	
 		return (
-			<div {...blockProps}>
+			<Fragment>
+			<PaddingSelector.View 
+					padding={ padding }
+					id={ blockId }
+			/>
+			<div {...blockProps} id={ blockId }>
 				<div className="block-wrapper">
 					<div className={`block-content ${ contentAlign }`}>
 						<Fragment>
@@ -77,6 +83,7 @@ const SaveImageColumns = ( { attributes } ) => {
 					</div>
 				</div>
 			</div>
+			</Fragment>
 		);
 }
 

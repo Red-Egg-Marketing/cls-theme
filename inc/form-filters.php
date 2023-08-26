@@ -27,14 +27,14 @@ function cls_populate_member_dropdown($form){
 
             $items[] = array("text" => "No Preference", "value" => "no preference");
 
-
             if ($bio_query->have_posts()) {
                 while($bio_query->have_posts()) {
                     $bio_query->the_post();
                     $title = get_the_title();
+                    $id = get_the_ID();
 
                     $items[] = [
-                        "value" => $title,
+                        "value" => $id,
                         "text"  => $title
                     ];
                 }
@@ -47,4 +47,23 @@ function cls_populate_member_dropdown($form){
         }
 
     return $form;
+}
+
+
+add_filter( 'gform_notification', 'cls_notify_consultant', 10, 3 );
+
+function cls_notify_consultant($notification, $form, $entry) {
+    foreach($form["fields"] as &$field) {
+        if($field["cssClass"] == "preferred-consultant" && $field["type"] == "select"){
+            $f_id = $field["id"];
+            $value = rgar($entry, $f_id);
+            $email  = get_post_meta( $value, '_gs_email', true );
+            // send consultant an email about client
+            if ($email != '' && $notification['name'] == 'Admin Notification') {
+                $notification['to'] = $email;
+            }
+
+        }
+    }
+    return $notification;
 }

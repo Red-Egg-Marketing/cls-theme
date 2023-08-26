@@ -33,6 +33,14 @@ registerBlockType( 'cls-blocks/image-text', {
 			type: 'string',
 			default: ''
 		},
+		padding: {
+			type: 'object',
+			default: {
+			}
+		},
+		blockId: {
+			type: 'string'
+		},
 		media: {
 			type: 'object',
 			default: {

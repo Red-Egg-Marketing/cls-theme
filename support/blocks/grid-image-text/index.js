@@ -10,6 +10,16 @@ registerBlockType( 'cls-blocks/grid-image', {
 	apiVersion: 2,
 	icon: 'button',
 	category: 'layout',
+	attributes: {
+		padding: {
+			type: 'object',
+			default: {
+			}
+		},
+		blockId: {
+			type: 'string'
+		},
+	},
 	edit: edit,
 	save: save,
 } );
