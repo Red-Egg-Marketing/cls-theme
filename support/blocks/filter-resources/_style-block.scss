@@ -25,6 +25,13 @@
 	border-bottom: 2px solid $grey;
 }
 
+.form-filters .wp-block-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 25px;
+	justify-content: flex-end;
+}
+
 .resources-block .search-cont input[type="search"] {
 	grid-column: 1/1;
 	background: $lighter-blue url($search) no-repeat calc(100% - 15px) center / 25px;
@@ -128,6 +135,8 @@
 	grid-column-gap: 15px;
 	@media screen and (min-width: $small-width) {
 		display: block;
+		position: sticky;
+		top: 160px;
 	}
 }
 .resources-block .filter-block:first-of-type .tax-filter-button {
@@ -184,8 +193,6 @@
 		background: white;
 	}
 }
-
-
 
 .tax-wrapper {
 	position: relative;

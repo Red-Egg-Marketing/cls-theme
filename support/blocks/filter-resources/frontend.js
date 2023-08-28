@@ -79,7 +79,8 @@ const SaveResources = ( { attributes } ) => {
 			wp.apiRequest({
         		url: apiUrl + string,
         		method: 'GET',
-    		}).then(resourcelist => {
+    		})
+    		.then(resourcelist => {
     			let empty = resourcelist.empty;
     			setEmpty(empty);
     			if (empty === false) {
@@ -96,7 +97,6 @@ const SaveResources = ( { attributes } ) => {
 				data[tax + '_max'] = '';
 			}
 			data[tax + '_max'] = id;
-			sendAPIrequest(data);
 		}
 
 		const filterMin = (value, id, tax) => {
@@ -104,7 +104,6 @@ const SaveResources = ( { attributes } ) => {
 				data[tax + '_min'] = '';
 			}
 			data[tax + '_min'] = id;
-			sendAPIrequest(data);
 		}
 
 		const searchFilter = (value) => {
@@ -113,7 +112,6 @@ const SaveResources = ( { attributes } ) => {
 				data['search'] = '';
 			}
 			data['search'] = value;
-			sendAPIrequest(data);
 		}
 
 		const orderFilter = (value) => {
@@ -122,7 +120,6 @@ const SaveResources = ( { attributes } ) => {
 				data['order'] = '';
 			}
 			data['order'] = value;
-			sendAPIrequest(data);
 		}
 
 
@@ -142,9 +139,13 @@ const SaveResources = ( { attributes } ) => {
     		  let dataIndex = data[tax].indexOf(id);
     		  data[tax].splice(dataIndex, 1);
     		}
+    		let label = tax;
     		setSelectTaxes(selectTax);
-    		setData(data);
-    		sendAPIrequest(data);
+    		setData({
+    			...data
+    		}
+    		);
+
 	  	}
 
 	  	const toggleCats = (key, item) => {
@@ -159,6 +160,7 @@ const SaveResources = ( { attributes } ) => {
     		});
     
     		parent.classList.toggle('active');
+    		setData(data);
   		}
 
   		const buildSearchQueryString = (params) => {
@@ -187,8 +189,12 @@ const SaveResources = ( { attributes } ) => {
     		setData(data);
   		}
 
+  		const filterFormSubmitted = (event) => {
+  			sendAPIrequest(data);
+  			event.preventDefault();
+  		}
+
 		if (resources === false && triggered == false) {
-			
     		wp.apiRequest({
     		    url: apiUrl + window.location.search,
     		    method: 'GET',
@@ -205,13 +211,13 @@ const SaveResources = ( { attributes } ) => {
     			}
     		    buildSearchQueryString(searchParams);
     		});
-
   		}
-		
+
 		return (
 			<Fragment>
 				<form
 					className="form-filters"
+					onSubmit={ filterFormSubmitted }
 				>
 				<ResourceFilters
 					filterCats={ filterCats }

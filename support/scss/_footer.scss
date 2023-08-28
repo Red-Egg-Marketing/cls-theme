@@ -1,5 +1,5 @@
 .site-footer {
-	padding-top: 30px;
+	padding-top: 60px;
 	padding-bottom: 30px;
 	background: $bg-color-7;
 	@media screen and (min-width: $small-width) {
@@ -29,7 +29,7 @@
 
 .site-footer .wrapper .col {
 	width: 100%;
-	margin-top: 2.5rem;
+	margin-top: 0.5rem;
 	@media screen and (min-width: $small-width) {
 		flex: 0 calc(33.333% - 2.5rem);
 		margin-top: 0;
@@ -64,7 +64,7 @@ ul.social {
 	flex-wrap: wrap;
 	list-style-type: none;
 	justify-content: center;
-	margin-bottom: 25px;
+	margin-bottom: 0;
 	@media screen and (min-width: $small-width) {
 		margin-bottom: 30px;
 		justify-content: center;
@@ -90,7 +90,9 @@ ul.social li {
 }
 
 .footer-menu p {
-	display: inline;
+	@media screen and (min-width: $small-width) {
+		display: inline;
+	}
 }
 
 .site-footer .logo-columns {
@@ -102,12 +104,14 @@ ul.social li {
 
 .footer-menu .menu li,
 .footer-menu .menu {
-	display: inline;
+	@media screen and (min-width: $small-width) {
+		display: inline;
+	}
 }
 
 a.footer-home {
-	width: 125px;
-	height: 26px;
+	width: 200px;
+	height: 42px;
 	display: block;
 	text-indent: -10000px;
 	margin: 0 auto;
@@ -216,6 +220,7 @@ a.footer-home {
 	margin-top: 0;
 	font-size: 16px;
 	width: 100%;
+	text-align: center;
 	@media screen and (min-width: $small-width) {
 		font-size: 19px;
 		margin-top: 1rem;
@@ -343,7 +348,7 @@ a.footer-home {
 }
 
 .site-footer .menu {
-	margin-top: 20px;
+	margin-top: 0;
 	@media screen and (min-width: $small-width) {
 		margin-top: 25px;
 	}

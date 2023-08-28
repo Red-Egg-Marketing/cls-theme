@@ -32,73 +32,6 @@ const ResourceLoader = () => {
   }, false);
 
 
-   const actionFilterPosts = (post) => {
-      let postTax = Object.keys(post.taxonomies);
-      let postTaxes = Object.entries(post.taxonomies);
-      let postTruthy = [];
-      let sizeTaxes = selectTax.length;
-
-      // loop over all selected taxonomies
-      selectTax.forEach((taxItem) => {
-            // loop over each posts' taxonomies
-            postTaxes.forEach((postTitem) => {
-              let indTax = postTitem[1];
-
-              indTax.forEach((anotherItem) => {
-                  let aTerm_id = anotherItem.term_id;
-                  if (aTerm_id == taxItem) {
-                    postTruthy.push(true);
-                  }
-              });
-
-            });
-      });
-          
-      return postTruthy.length == sizeTaxes ? true : false;
-  }
-
-  const toggleCats = (key, item) => {
-    // toggle state and index to determine what is active
-    // setToggleFilters({key: key, active: !toggleFilters.active });
-    let allFilt = document.querySelectorAll('.filter-block');
-    let parent = item.parentElement;
-
-    allFilt.forEach( (filt) => {
-        if (parent != filt) {
-          filt.classList.remove('active');
-        }
-    });
-    
-    
-    parent.classList.toggle('active');
-  }
-
-  if (resources === false) {
-    wp.apiRequest({
-        url: apiUrl
-    }).then(resourcelist => {
-        let posts = resourcelist[0].resources;
-        let taxes = resourcelist[1];
-
-        // load archive id if it exits
-        if (archiveId != false) {
-          selectTax.push(archiveId);
-          setSelectTaxes(selectTax);
-
-          let filterPosts = posts.filter(actionFilterPosts ,this);
-
-          selectResources(filterPosts);
-
-        } else {
-          selectResources(posts);
-        }
-
-        setTaxes(taxes);
-        
-    });
-
-  }
-
   return (
     <Fragment>
       <ResourceFilters 
@@ -146,6 +79,7 @@ const ResourceLoader = () => {
 const ResourceFilters = (props) => {
 
   const { taxonomies, currentFilter, currentTax, filterCats, filterMin, filterMax, searchFilter, orderFilter, selectedValues } = props;
+  console.log(selectedValues);
   return (
       <Fragment>
           <div className="search-cont">
@@ -216,12 +150,11 @@ const ResourceFilters = (props) => {
                             { Object.entries(taxItem).map(([intKey, intValue]) => {
                                 let taxName = intKey;
                                 let taxSelect = intValue.taxonomy;
-                                let checked = false;
                                 let valueArray = selectedValues[taxSelect];
-                                if (Array.isArray(valueArray)) {
+                                let checked = false;
+                                if (selectedValues[taxSelect]) {
                                   checked = valueArray.includes(intValue.tax_slug);
                                 }
-
                                 return (
                                   <Fragment>
                                     <li className="tax-item">
@@ -230,12 +163,14 @@ const ResourceFilters = (props) => {
                                           id={ `inspector-control-box-${ intValue.tax_slug }` }
                                           value={ intValue.tax_slug }
                                           type="checkbox"
-                                          checked={ checked }
                                           className="checkbox-component"
-                                          onChange={ (box) => { 
+                                          checked={ checked }
+                                          onChange={ (box) => {
                                               let value = intValue.tax_slug;
                                               let check = box.target.checked;
+                                              box.currentTarget.checked =  !!box.currentTarget.checked;
                                               filterCats(check, value, intValue.taxonomy);
+                                              // checked = false;
                                             }
                                           }
                                         />
@@ -294,6 +229,14 @@ const ResourceFilters = (props) => {
                 );
               })
           }
+          <div className="wp-block-buttons">
+            <input 
+              type="submit"
+              className="wp-button"
+              value="Submit"
+             />
+          </div>
+
           </div>
       </Fragment>
   );

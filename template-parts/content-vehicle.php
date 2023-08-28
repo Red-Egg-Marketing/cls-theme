@@ -20,7 +20,13 @@ $modal_form = get_field('menu_form', 'options');
 		<div class="col flex">
 		<?php
 			the_title( '<h1 class="header-title">', '</h1>' );
-			$attachments = get_attached_media('image', $id);
+			$attachments = get_posts(array(
+			    'post_parent' => $id,
+			    'post_type' => 'attachment',
+			    'post_mime_type' => 'image',
+			    'orderby' => 'date',
+			    'order' => 'ASC'
+			));
 
 			if (!empty($attachments)) {
 				?>

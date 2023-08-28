@@ -641,7 +641,7 @@ li.menu-item.nav-button a {
 
 .menu-item.phone a {
 	padding-left: 26px;
-	background: url($phone-white)  no-repeat center left / 18px;
+	background: url($phone-white)  no-repeat center center / 18px;
 	@media screen and (min-width: $small-width) {
 		background: url($phone-white)  no-repeat center left / 20px;
 	}
@@ -649,7 +649,7 @@ li.menu-item.nav-button a {
 
 .menu-item.location a {
 	padding-left: 26px;
-	background: url($location)  no-repeat center left / 14px;
+	background: url($location)  no-repeat center center / 14px;
 	@media screen and (min-width: $small-width) {
 		background: url($location)  no-repeat center left / 16px;
 	}
@@ -657,7 +657,7 @@ li.menu-item.nav-button a {
 
 .menu-item.hours a {
 	padding-left: 26px;
-	background: url($clock-white)  no-repeat center left / 17px;
+	background: url($clock-white)  no-repeat center center / 17px;
 	@media screen and (min-width: $small-width) {
 		background: url($clock-white)  no-repeat center left / 19px;
 	}
