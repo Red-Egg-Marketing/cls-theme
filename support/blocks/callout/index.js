@@ -12,6 +12,14 @@ registerBlockType( 'cls-blocks/callout', {
 	icon: 'button',
 	category: 'layout',
 	attributes: {
+		padding: {
+			type: 'object',
+			default: {
+			}
+		},
+		blockId: {
+			type: 'string'
+		},
 		iconSlug: {
 			type: 'string',
 			default: ''

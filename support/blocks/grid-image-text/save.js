@@ -1,4 +1,5 @@
 const { useBlockProps } = wp.blockEditor;
+const { Fragment } = wp.element;
 const { registerBlockType } = wp.blocks;
 const { RichText, MediaUpload, InnerBlocks } = wp.blockEditor;
 const { Button } = wp.components;

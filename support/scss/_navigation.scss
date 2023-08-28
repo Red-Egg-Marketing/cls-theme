@@ -45,13 +45,14 @@ a.custom-logo-link {
 }
 
 .site-header .custom-logo {
-	max-width: 300px;
-	width: 100%;
+	width: 300px;
 	height: auto;
 	display: block;
-	@media screen and (min-width: $small-width) {
-		max-width: 325px;
-		min-width: 123px;
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		width: 200px;
+	}
+	@media screen and (min-width: $med-width + 1px) {
+		width: 325px;
 	}
 }
 .fixed-buttons {
@@ -348,13 +349,13 @@ li.menu-item.nav-button a {
 .main-navigation .menu-item {
 	color: $red;
 	font-family: $font-head;
-	font-size: 17px;
+	font-size: 16px;
 	text-align: left;
 	text-transform: capitalize;
 	display: inline-block;
 	width: 100%;
 	font-weight: 700;
-	@media screen and (min-width: $med-width + 1px) {
+	@media screen and (min-width: $large-width + 1px) {
 		text-align: left;
 		display: inline;
 		width: auto;
@@ -373,11 +374,15 @@ li.menu-item.nav-button a {
 	@media screen and (min-width: $med-small-width) {
 		margin-bottom: 0;
 	}
-	@media screen and (min-width: $med-small-width) and (max-width: $med-width) {
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		margin-left: 0.4rem;
+		margin-right: 0.4rem;
+	}
+	@media screen and (min-width: $med-width + 1px) and (max-width: $large-width) {
 		margin-left: 0.75rem;
 		margin-right: 0.75rem;
 	}
-		@media screen and (min-width: $med-width + 1px) {
+	@media screen and (min-width: $large-width + 1px) {
 		margin-left: 1.25rem;
 		margin-right: 1.25rem;
 	}

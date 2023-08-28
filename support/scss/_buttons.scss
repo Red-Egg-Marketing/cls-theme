@@ -210,6 +210,10 @@ ul.gs-team-filter-cats li.filter.active>a {
 	&:visited {
 		color: white;
 	}
+	&:hover:visited {
+		background: white;
+		color: black;
+	}
 }
 
 

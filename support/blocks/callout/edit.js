@@ -5,15 +5,17 @@ const { Button, PanelBody, SelectControl, ColorPalette, ToggleControl, RangeCont
 const { __ } = wp.i18n;
 import Icons from '../../components/Icons.js';
 import BackgroundColor from '../../components/BackgroundColor.js';
+import PaddingSelector from '../../components/Padding.js';
+
 
 const template = [
 	['core/paragraph', {'placeholder' : 'Callout Description...'}],
 ];
 
 
-const EditCallout = ( { attributes, setAttributes } ) => {
+const EditCallout = ( { attributes, setAttributes, clientId } ) => {
 		const {
-			icons, iconSlug, iconColor, altSlug
+			icons, iconSlug, iconColor, altSlug, padding, blockId
 		} = attributes;
 
   		const [rowNumber, setRownumber] = useState(null);
@@ -91,12 +93,24 @@ const EditCallout = ( { attributes, setAttributes } ) => {
 
 		const blockProps = useBlockProps({
 			className: 'callout'
-		});	
+		});
+
+		React.useEffect( () => {
+        	if ( ! blockId ) {
+        	    setAttributes( { blockId: clientId } );
+        	}
+    	}, [] );
 		
 		return (
 			<Fragment>
+				<PaddingSelector
+					setAttributes={ setAttributes }
+					padding={ padding }
+					id={ blockId }
+				/>
 				<div 
 					{...blockProps}
+					id={ blockId }
 				>
 					<div className="block-wrapper">
 						<div className="wrap">

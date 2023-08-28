@@ -1577,6 +1577,19 @@ div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color)
   color: white;
 }
 
+.wp-button.is-style-outline:hover:visited,
+.wp-block-button.is-style-outline > .wp-block-button__link:hover:visited,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:hover:visited,
+.wp-block-button.is-style-outline > a:hover:visited[download],
+div.gform_wrapper .wp-block-button.is-style-outline > input:hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):hover:visited,
+div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited,
+.wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited[download],
+div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
+  background: white;
+  color: black;
+}
+
 
 .wp-block-button__link:visited,
 div.gs_team_area .gs-team-filter-cats li a:visited,
