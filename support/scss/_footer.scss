@@ -3,7 +3,7 @@
 	padding-bottom: 30px;
 	background: $bg-color-7;
 	@media screen and (min-width: $small-width) {
-		padding-top: 7.5rem;
+		padding-top: 6.25rem;
 		padding-bottom: 25px;
 	}
 }
@@ -82,11 +82,15 @@ ul.social a:visited {
 }
 
 ul.social a:hover {
-	color: $orange;
+	color: $lighter-blue;
 }
 
 ul.social li {
-	flex: 0 15%;
+	margin: 0 7.5px;
+}
+
+.footer-menu p {
+	display: inline;
 }
 
 .site-footer .logo-columns {
@@ -95,16 +99,22 @@ ul.social li {
 	align-items: flex-start;
 }
 
+
+.footer-menu .menu li,
+.footer-menu .menu {
+	display: inline;
+}
+
 a.footer-home {
 	width: 125px;
-	height: 73px;
+	height: 26px;
 	display: block;
 	text-indent: -10000px;
 	margin: 0 auto;
 	background: url(img/cls-footer-logo.svg) no-repeat center center / 100%;
 	@media screen and (min-width: $small-width) {
-		width: 229px;
-		height: 134px;
+		width: 357px;
+		height: 75px;
 	}
 }
 
@@ -239,8 +249,10 @@ a.footer-home {
 	padding-right: 1.25rem;
 	border-top: 2px solid white;
 	margin-top: 45px;
+	text-align: center;
+	padding-top: 25px;
 	@media screen and (min-width: $small-width) {
-		margin-top: 7.5rem;
+		margin-top: 6.25rem;
 	}
 }
 
@@ -262,10 +274,6 @@ a.footer-home {
 		font-size: 19px;
 		width: auto;
 	}
-}
-
-.footer-menu ul li:first-of-type:before {
-	display: none;
 }
 
 .footer-menu ul li:before {
@@ -325,9 +333,13 @@ a.footer-home {
 	font-size: 16px;
 	line-height: 26px;
 	@media screen and (min-width: $med-small-width) {
-		font-size: 19px;
+		font-size: 20px;
 		line-height: 26px;
 	}
+}
+
+.site-info .col .menu li {
+	margin-bottom: 10px;
 }
 
 .site-footer .menu {

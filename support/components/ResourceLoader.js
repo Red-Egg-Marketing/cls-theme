@@ -146,7 +146,6 @@ const ResourceLoader = () => {
 const ResourceFilters = (props) => {
 
   const { taxonomies, currentFilter, currentTax, filterCats, filterMin, filterMax, searchFilter, orderFilter, selectedValues } = props;
-  console.log(selectedValues);
   return (
       <Fragment>
           <div className="search-cont">

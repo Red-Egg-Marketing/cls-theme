@@ -29,21 +29,9 @@ if (function_exists('get_field')) {
                     <address>
                         <p>
                             <a href="tel:<?= $company_settings['phone']; ?>" class="contact-link"><?= $company_settings['phone'] ?></a><br />
-                            <a href="mailto:<?= $company_settings['email']; ?>" class="contact-link"><?= $company_settings['email'] ?></a><br />
-                            <?= $company_settings['street']; ?><br />
-                            <?= $company_settings['city']; ?>, <?= $company_settings['state']; ?> <?= $company_settings['zip']; ?>
-                             
                         </p>
                     </address>
-                </div>
-                <div class="col">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="footer-home"><?php bloginfo( 'name' ); ?></a>    
-                </div>
-                <div class="col">
-                    <p>
-                        <a href="<?= $company_settings['areas']; ?>">Areas Served</a><br />
-                    </p>
-                    <ul class="social">
+                     <ul class="social">
                         <?php
                         if (is_array($company_settings['icons']) && sizeof($company_settings['icons']) > 0) {
                             foreach($company_settings['icons'] as $icon) {
@@ -56,17 +44,31 @@ if (function_exists('get_field')) {
                         }
                         ?>
                     </ul>
-                    <p>
-                        &copy;<?php echo date("Y"); ?> Copyright
-                    </p> 
+                </div>
+                <div class="col">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="footer-home"><?php bloginfo( 'name' ); ?></a>    
+                </div>
+                <div class="col">
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-13',
+                            'menu_id'        => 'footer-menu-2',
+                        )
+                    );
+                    ?>
                 </div>
             </div>
             <div class="footer-menu">
+                <p>
+                       Copyright &copy;<?php echo date("Y"); ?> Centennial Leasing & Sales
+                </p> 
                 <?php
                     wp_nav_menu(
                         array(
                             'theme_location' => 'menu-12',
                             'menu_id'        => 'footer-menu',
+                            'container'      => ''
                         )
                     );
                 ?>

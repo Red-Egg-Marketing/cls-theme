@@ -853,18 +853,9 @@ h4 {
   width: 100%;
 }
 
-.resource-card img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .resource-card .image-cont {
   width: 100%;
   position: relative;
-  padding-bottom: 66.66%;
   overflow: hidden;
 }
 
@@ -882,11 +873,6 @@ h4 {
 }
 
 .resource-card.whitepaper .image-cont img {
-  position: absolute;
-  top: 22%;
-  width: 42.5%;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 2;
 }
 

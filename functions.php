@@ -53,6 +53,7 @@ if ( ! function_exists( 'cls_setup' ) ) :
 				'menu-1' => esc_html__( 'Primary', 'cls' ),
 				'menu-2' => esc_html__( 'Secondary Menu', 'cls' ),
 				'menu-12' => esc_html__( 'Footer Menu', 'cls' ),
+				'menu-13' => esc_html__( 'Footer Menu #2', 'cls' ),
 			)
 		);
 
