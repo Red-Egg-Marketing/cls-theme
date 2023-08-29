@@ -79,7 +79,7 @@ const ResourceLoader = () => {
 const ResourceFilters = (props) => {
 
   const { taxonomies, currentFilter, currentTax, filterCats, filterMin, filterMax, searchFilter, orderFilter, selectedValues } = props;
-  console.log(selectedValues);
+  console.log(taxonomies);
   return (
       <Fragment>
           <div className="search-cont">
@@ -153,6 +153,7 @@ const ResourceFilters = (props) => {
                                 let taxSelect = intValue.taxonomy;
                                 let valueArray = selectedValues[taxSelect];
                                 let checked = false;
+                                let count = intValue.count;
                                 if (selectedValues[taxSelect]) {
                                   checked = valueArray.includes(intValue.tax_slug);
                                 }
@@ -178,7 +179,7 @@ const ResourceFilters = (props) => {
                                         <label
                                           for={ `inspector-control-box-${ intValue.tax_slug }` }
                                         >
-                                          { taxName }
+                                          { taxName + " (" + count + ")" }
                                         </label>
                                       </div>
                                     </li>

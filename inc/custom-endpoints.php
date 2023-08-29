@@ -28,6 +28,7 @@ function cls_return_taxonomies($post_types) {
 					$tax_array[$singular_name][$term->name]['tax_id'] = $term->term_id;
 					$tax_array[$singular_name][$term->name]['tax_slug'] = $term->slug;
 					$tax_array[$singular_name][$term->name]['taxonomy'] = $term->taxonomy;
+					$tax_array[$singular_name][$term->name]['count'] = $term->count;
 				}
 				
 			}
