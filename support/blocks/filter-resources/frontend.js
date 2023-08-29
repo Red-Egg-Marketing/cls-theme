@@ -16,6 +16,7 @@ const SaveResources = ( { attributes } ) => {
   		const [selectTax, setSelectTaxes] = useState([]);
   		const [resourcesEmpty, setEmpty] = useState(false);
   		const [triggered, setTriggered] = useState(false);
+  		const [loading, setLoading] = useState(false);
   		const [data, setData] = useState({});
   		const [toggleFilters, setToggleFilters] = useState({key: '', active: false});
   		let searchParams =  new URLSearchParams(window.location.search);
@@ -76,6 +77,7 @@ const SaveResources = ( { attributes } ) => {
 
 		const sendAPIrequest = (data) => {
 			let string = buildQueryString(data);
+			setLoading(true);
 			wp.apiRequest({
         		url: apiUrl + string,
         		method: 'GET',
@@ -86,7 +88,7 @@ const SaveResources = ( { attributes } ) => {
     			if (empty === false) {
     				selectResources(resourcelist[0].resources);
     			}
-        
+        		setLoading(false);
     		}).catch( error => {
     			console.log(error);
     		});
@@ -145,6 +147,7 @@ const SaveResources = ( { attributes } ) => {
     			...data
     		}
     		);
+    		sendAPIrequest(data);
 
 	  	}
 
@@ -231,7 +234,7 @@ const SaveResources = ( { attributes } ) => {
 					selectedValues={ data }
 				/>
 				<div className="resources-grid">
-					{ (resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {
+					{ (resourcesEmpty == false && resources.length > 0 && loading == false) && resources.map((resource, resourceIndex) => {
 							return (
 								<Fragment>
 									<ResourceCard.View
@@ -249,7 +252,14 @@ const SaveResources = ( { attributes } ) => {
 							)
 						})
 					}
-					{ resourcesEmpty && (
+					{loading == true && (
+						<Fragment>
+							<div className="loading">
+							<h2>...Loading</h2>
+							</div>
+						</Fragment>
+					)}
+					{ (resourcesEmpty && loading == false) && (
 						<Fragment>
 							<div className="error">
 								<h3>There are no available vehicles matching your filters. Please try something else.</h3>

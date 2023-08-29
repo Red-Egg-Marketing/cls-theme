@@ -107,6 +107,7 @@ const ResourceFilters = (props) => {
             </select>
           </div>
           <div className="wrapper filter-items">
+          <div className="container">
           { taxonomies && Object.entries(taxonomies).map(([key, value]) => {
                 let tax = key;
                 let taxItem = value;
@@ -236,7 +237,7 @@ const ResourceFilters = (props) => {
               value="Submit"
              />
           </div>
-
+          </div>
           </div>
       </Fragment>
   );

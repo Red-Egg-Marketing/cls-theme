@@ -21,8 +21,20 @@
 	}
 }
 
+.resources-block .loading {
+	text-indent: -10000px;
+	background: url(img/loading-car.gif) no-repeat center center / 200px;
+	height: 250px;
+	@media screen and (min-width: $small-width) {
+		height: 500px;
+		grid-column: 1/4;
+		background: url(img/loading-car.gif) no-repeat center center / 400px;
+	}
+}
+
 .resources-block .filter-block {
 	border-bottom: 2px solid $grey;
+	width: 100%;
 }
 
 .form-filters .wp-block-buttons {
@@ -130,15 +142,29 @@
 
 .form-filters .filter-items {
 	grid-column: 1;
+	@media screen and (min-width: $small-width) {
+		display: block;
+		position: sticky;	
+		top: 160px;
+	}
+}
+
+.form-filters .filter-items .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 15px;
 	@media screen and (min-width: $small-width) {
-		display: block;
-		position: sticky;
-		top: 160px;
+		height: 100%;
+		max-height: 75vh;
+		padding-right: 20px;
+		overflow: auto;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
 	}
 }
+
 .resources-block .filter-block:first-of-type .tax-filter-button {
 	@media screen and (min-width: $small-width) {
 		margin-top: 0;

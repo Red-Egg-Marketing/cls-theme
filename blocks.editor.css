@@ -7366,8 +7366,23 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   }
 }
 
+.resources-block .loading {
+  text-indent: -10000px;
+  background: url(img/loading-car.gif) no-repeat center center/200px;
+  height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .resources-block .loading {
+    height: 500px;
+    grid-column: 1/4;
+    background: url(img/loading-car.gif) no-repeat center center/400px;
+  }
+}
+
 .resources-block .filter-block {
   border-bottom: 2px solid #E6E6E6;
+  width: 100%;
 }
 
 .form-filters .wp-block-buttons {
@@ -7491,6 +7506,17 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 .form-filters .filter-items {
   -ms-grid-column: 1;
       grid-column: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .form-filters .filter-items {
+    display: block;
+    position: sticky;
+    top: 160px;
+  }
+}
+
+.form-filters .filter-items .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -7499,10 +7525,18 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 @media screen and (min-width: 768px) {
-  .form-filters .filter-items {
-    display: block;
-    position: sticky;
-    top: 160px;
+  .form-filters .filter-items .container {
+    height: 100%;
+    max-height: 75vh;
+    padding-right: 20px;
+    overflow: auto;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: stretch;
+        align-items: stretch;
   }
 }
 
