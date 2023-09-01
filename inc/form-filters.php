@@ -1,5 +1,4 @@
 <?php
-
 add_filter('gform_pre_render', 'cls_populate_member_dropdown');
 function cls_populate_member_dropdown($form){
 
@@ -48,6 +47,25 @@ function cls_populate_member_dropdown($form){
 
     return $form;
 }
+
+// add_filter( 'gform_field_input', 'cls_add_oninput', 10, 5 );
+// function cls_add_oninput( $input, $field, $value, $lead_id, $form_id ) {
+//     if ($field['cssClass'] == 'vehicle-selector' && $field['type'] == 'text') {
+//         $dom = new DOMDocument();
+//         $new_input = $input;
+//         @$dom->loadHTML();
+//         $x = new DOMXPath($dom);
+//         foreach($x->query("//input") as $node)
+//         {   
+//             $node->setAttribute("style","xxxx");
+//         }
+
+//         $input = $dom->saveHtml();
+
+//     }
+//     return $input;
+
+// }
 
 
 add_filter( 'gform_notification', 'cls_notify_consultant', 10, 3 );

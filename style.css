@@ -20997,7 +20997,7 @@ html :where(.wp-block) {
   height: 0;
   transform: translateY(7.5%);
   padding-bottom: min(150px, 48.4%);
-  background: url(img/car_top-view.png) no-repeat center center/contain;
+  background: url(img/car_top-view.png.webp) no-repeat center center/contain;
   z-index: 1;
   max-width: 125px;
 }
@@ -21015,7 +21015,7 @@ html :where(.wp-block) {
   position: relative;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  background: url(img/asphalt_bkg.jpg) no-repeat center center/cover;
+  background: url(img/asphalt_bkg.jpg.webp) no-repeat center center/cover;
 }
 
 .editor-styles-wrapper .cta .wp-block-buttons {
