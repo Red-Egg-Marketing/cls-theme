@@ -153,7 +153,7 @@ p.contact-item {
 	letter-spacing: 0.35px;
 	color: $dark-blue;
 	@media screen and (min-width: $small-width) {
-		font-size: 26px;
+		font-size: 20px;
 		line-height: 30px;
 	}
 }
@@ -172,7 +172,7 @@ p.contact-item {
 .contact-section .header-title {
 	margin-top: 0;
 	text-transform: capitalize;
-	margin-bottom: 0;
+	margin-bottom: 20px;
 	width: 100%;
 }
 

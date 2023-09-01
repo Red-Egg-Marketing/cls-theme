@@ -116,13 +116,13 @@ div.wprev_preview_tcolor2_T1 > div.wprevpro_t1_rname {
 }
 
 .wprevpro_badge img.wppro_badge3_IMG_4 {
-	min-height: 35px;
-	max-height-height: 35px;
+	min-height: 20px;
+	max-height: 20px;
 	margin-right: 0;
 	margin-bottom: 10px;
 	@media screen and (min-width: $small-width) {
-		max-height: 49px;
-		min-height: 49px;
+		max-height: 25px;
+		min-height: 25px;
 	}
 }
 

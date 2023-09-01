@@ -365,7 +365,7 @@ li.menu-item.nav-button a {
 }
 
 .main-navigation .menu-item a:hover {
-	color: $body-color;
+	color: $navy;
 }
 
 .menu-primary-menu-container .menu-item,
@@ -468,7 +468,7 @@ li.menu-item.nav-button a {
 	display: block;
 	padding-top: 15px;
 	@media screen and (min-width:  $med-small-width) {
-		padding-top: 0;
+		padding-top: 15px;
 		background: rgba(255, 255, 255, 0.9);
 		display: block;
 		border-bottom-right-radius: 5px;

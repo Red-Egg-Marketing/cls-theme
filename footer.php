@@ -90,7 +90,7 @@ if (function_exists('get_field')) {
             id="modal-form-<?= $modal_form ?>"
         >
             <div class="wrapper">
-                <?php echo do_shortcode('[gravityform id="' . $modal_form . '" title="true" description="true" ajax="true"]'); ?>
+                <?php echo do_shortcode('[gravityform id="' . $modal_form . '" title="true" description="false" ajax="true"]'); ?>
             </div>
         </div>
         </div>

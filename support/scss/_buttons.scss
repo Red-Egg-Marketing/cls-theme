@@ -204,15 +204,16 @@ ul.gs-team-filter-cats li.filter.active>a {
 	border: 2px solid white;
 	color: white;
 	&:hover {
-		background: white;
-		color: black;
+		background: rgba(255, 255, 255, 0.8);
+		color: $red;
 	}
 	&:visited {
+		background: rgba(255, 255, 255, 0.8);
 		color: white;
 	}
 	&:hover:visited {
-		background: white;
-		color: black;
+		background: rgba(255, 255, 255, 0.8);
+		color: $red;
 	}
 }
 

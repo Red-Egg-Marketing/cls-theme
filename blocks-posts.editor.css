@@ -377,6 +377,7 @@ body {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
+  overflow: hidden;
 }
 
 .swiper-slide img {
@@ -1561,8 +1562,8 @@ div.gform_wrapper .wp-block-button.is-style-outline > input:hover[type="submit"]
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:not(.has-text-color):hover,
 .wp-block-button.is-style-outline > a:not(.has-text-color):hover[download],
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  background: white;
-  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  color: #910035;
 }
 
 .wp-button.is-style-outline:visited,
@@ -1574,6 +1575,7 @@ div.gform_wrapper .wp-block-button.is-style-outline > input:visited[type="submit
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:not(.has-text-color):visited,
 .wp-block-button.is-style-outline > a:not(.has-text-color):visited[download],
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
+  background: rgba(255, 255, 255, 0.8);
   color: white;
 }
 
@@ -1586,8 +1588,8 @@ div.gform_wrapper .wp-block-button.is-style-outline > input:hover:visited[type="
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited,
 .wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited[download],
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  background: white;
-  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  color: #910035;
 }
 
 
@@ -1640,7 +1642,7 @@ div.gform_wrapper textarea {
   padding-left: 0.75rem;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1250px) {
   div.gform_wrapper input[type=color],
   div.gform_wrapper input[type=date],
   div.gform_wrapper input[type=datetime-local],
@@ -1657,7 +1659,7 @@ div.gform_wrapper textarea {
   div.gform_wrapper input[type=week],
   div.gform_wrapper select,
   div.gform_wrapper textarea {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
     padding-left: 1.3125rem;
     padding-right: 25px;
@@ -1791,7 +1793,7 @@ div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]
   div.gform_wrapper select,
   div.gform_wrapper textarea,
   div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):not([class=chosen-search-input]) {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
     padding-right: 25px;
     padding-left: 25px;
@@ -1861,9 +1863,9 @@ div.gform_wrapper .ginput_container_select select {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1250px) {
   div.gform_wrapper .ginput_container_select select {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
     margin-bottom: 0;
     padding-right: 25px;
@@ -1924,7 +1926,7 @@ div.gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container 
   margin-bottom: 6px;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1250px) {
   div.gform_wrapper.gravity-theme .gfield.gfield--width-half,
   div.gform_wrapper li.hidden_label input,
   div.gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container input[type=text] {
@@ -1937,7 +1939,7 @@ div.gform_wrapper.gravity-theme .gfield.gfield--width-half {
       grid-column: span 12;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1250px) {
   div.gform_wrapper.gravity-theme .gfield.gfield--width-half {
     -ms-grid-column: span 6;
         grid-column: span 6;
@@ -2256,9 +2258,9 @@ div.gform_wrapper .gform_fields {
   font-size: 18px;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1250px) {
   .gform_wrapper ::-webkit-input-placeholder {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
   }
 }
@@ -2271,9 +2273,9 @@ div.gform_wrapper .gform_fields {
   font-size: 18px;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1250px) {
   .gform_wrapper ::-moz-placeholder {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
   }
 }
@@ -2286,9 +2288,9 @@ div.gform_wrapper .gform_fields {
   font-size: 18px;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1250px) {
   .gform_wrapper :-ms-input-placeholder {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
   }
 }
@@ -2301,9 +2303,9 @@ div.gform_wrapper .gform_fields {
   font-size: 18px;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 1250px) {
   .gform_wrapper :-moz-placeholder {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
   }
 }

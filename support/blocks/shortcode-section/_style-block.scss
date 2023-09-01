@@ -45,8 +45,8 @@
 	margin: 0 auto;
 	box-sizing: border-box;
 	@media screen and (min-width: $small-width) {
-		padding-left: 1.25rem;
-		padding-right: 1.25rem;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
 	}
 }
 
@@ -129,12 +129,18 @@ div.wpex.horizontal-timeline .wpex-timeline-label .timeline-media img {
 }
 
 div.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media {
-	width: 35%;
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 35%;
+	}
 }
 
 div.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media + div {
-	width: 65%;
-	border: 2px solid $grey;
+	width: 100%;
+	@media screen and (min-width: $small-width) {
+		width: 65%;
+		border: 2px solid $grey;
+	}
 }
 
 div.wpex h2 + .hidden-date + .wptl-excerpt,
@@ -151,6 +157,15 @@ div.wpex.horizontal-timeline .ex_s_lick-next:hover {
 
 div.wpex.horizontal-timeline:not(.no-arr-top) .hor-container {
 	padding: 0 45px;
+	margin: 0 1.25rem;
+	@media screen and (min-width: $small-width) {
+		margin: 0 auto;
+	}
+}
+
+div.wpex.horizontal-timeline .horizontal-content .ex_s_lick-slide {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
 }
 
 div.wpex.horizontal-timeline .horizontal-nav .ex_s_lick-prev {

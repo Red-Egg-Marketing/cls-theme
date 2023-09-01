@@ -140,9 +140,7 @@ const EditImageColumns = ( { attributes, setAttributes, clientId } ) => {
     	}
 
     	React.useEffect( () => {
-        	if ( ! blockId ) {
-        	    setAttributes( { blockId: clientId } );
-        	}
+        	setAttributes( { blockId: 'image-col-' + clientId } );
     	}, [] );
 		
 		return (
