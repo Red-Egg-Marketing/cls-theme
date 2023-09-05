@@ -8419,12 +8419,14 @@ ul.tax-list .tax-wrap {
   opacity: 1;
 }
 
-.columns-cta .wp-block-cover__inner-container .wp-block-buttons,
-.columns-cta .wp-block-cover__inner-container p {
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 0.3s;
-  height: 0;
+@media screen and (min-width: 768px) {
+  .columns-cta .wp-block-cover__inner-container .wp-block-buttons,
+  .columns-cta .wp-block-cover__inner-container p {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    height: 0;
+  }
 }
 
 .columns-cta .wp-block-cover__inner-container * {
