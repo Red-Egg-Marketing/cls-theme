@@ -70,7 +70,7 @@ function cls_add_oninput( $input, $field, $value, $lead_id, $form_id ) {
        $classes = $field['size'];
        $id = $field['id'];
        $value = '';
-       if (is_single($post->ID) && $post->post_type == 'vehicle') {
+       if ($post && is_single($post->ID) && $post->post_type == 'vehicle') {
             $car = get_the_title($post->ID);
             $year = get_the_terms($post->ID, 'car_year');
             $year = join(', ', wp_list_pluck($year, 'name'));

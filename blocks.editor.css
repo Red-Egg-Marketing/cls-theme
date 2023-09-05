@@ -9232,31 +9232,23 @@ ul.tax-list .tax-wrap {
 
 .section-block .section-header {
   padding-bottom: 0.5rem;
-}
-
-.section-block.keys {
-  background-image: url(img/car_keys.png);
-  background-size: 175px;
-  background-repeat: no-repeat;
-  background-position: -10% 8.5%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
   .section-block.keys {
+    background-image: url(img/car_keys.png);
     background-size: 18%;
+    background-repeat: no-repeat;
     background-position: -105px 45%;
   }
 }
 
-.section-block.wheel {
-  background-image: url(img/steering_wheel.png);
-  background-size: 175px;
-  background-repeat: no-repeat;
-  background-position: calc(100% + 25px) 10%;
-}
-
 @media screen and (min-width: 768px) {
   .section-block.wheel {
+    background-image: url(img/steering_wheel.png);
+    background-repeat: no-repeat;
     background-size: 18%;
     background-position: calc(100% + 55px) 40%;
   }
