@@ -1669,6 +1669,52 @@ div.gform_wrapper textarea {
   }
 }
 
+.gform_wrapper .results-wrapper {
+  position: relative;
+}
+
+.gform_wrapper .results-wrapper .clear-input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.gform_wrapper .results.active {
+  display: block;
+}
+
+.gform_wrapper .results {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: none;
+  background: white;
+  border-left: 1px solid #910035;
+  border-right: 1px solid #910035;
+  border-bottom: 1px solid #910035;
+  overflow: auto;
+  max-height: 350px;
+}
+
+.gform_wrapper .results .result p:hover {
+  background: #E2F0F7;
+  cursor: pointer;
+}
+
+.gform_wrapper .results .result p {
+  color: #052C47;
+  padding: 15px;
+  margin: 0;
+}
+
 div.gform_wrapper.gravity-theme .gfield textarea.small,
 .gform_wrapper.gravity-theme .gfield textarea {
   font-size: 18px;
@@ -2201,6 +2247,14 @@ div.gform_wrapper.gravity-theme .gfield-choice-input + label {
   .radio-cont {
     margin-right: 35px;
   }
+}
+
+input[value=false] ~ button.clear-input {
+  display: none;
+}
+
+input:focus ~ button.clear-input {
+  display: block;
 }
 
 .radio-cont label {

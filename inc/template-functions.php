@@ -307,7 +307,7 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
 	foreach($taxes as $tax) {
 		// $c[] = $m->term_id;
 		$terms = get_the_terms($id, $tax);
-		if (!empty($terms)) {
+		if (!empty($terms) && !is_object($terms)) {
 			if ($x == 0) $args['tax_query'] = [
 				'relation' => 'OR'
 			];

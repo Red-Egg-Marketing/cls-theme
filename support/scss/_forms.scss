@@ -33,6 +33,52 @@ div.gform_wrapper textarea {
   }
 }
 
+.gform_wrapper .results-wrapper {
+	position: relative;
+}
+
+.gform_wrapper .results-wrapper .clear-input {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 5px;
+	font-family: $font-body;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $body-color;
+	border: none;
+	border-radius: 0;
+	background: transparent;
+}
+
+.gform_wrapper .results.active {
+	display: block;
+}
+
+.gform_wrapper .results {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	display: none;
+	background: white;
+	border-left: 1px solid $red;
+	border-right: 1px solid $red;
+	border-bottom: 1px solid $red;
+	overflow: auto;
+	max-height: 350px;
+}
+
+.gform_wrapper .results .result p:hover {
+	background: $lighter-blue;
+	cursor: pointer;
+}
+
+.gform_wrapper .results .result p {
+	color: $dark-blue;
+	padding: 15px;
+	margin: 0;
+}
+
 div.gform_wrapper.gravity-theme .gfield textarea.small,
 .gform_wrapper.gravity-theme .gfield textarea {
 	font-size: 18px;
@@ -477,6 +523,15 @@ div.gform_wrapper .gfield.gf_list_2col .gfield_radio {
 		margin-right: 35px;
 	}
 }
+
+input[value=false] ~ button.clear-input {
+	display: none;
+}
+
+input:focus ~ button.clear-input {
+	display: block;
+}
+
 
 .radio-cont label {
 	font-size: 18px;

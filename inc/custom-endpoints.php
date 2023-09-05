@@ -63,6 +63,8 @@ function cls_build_post_tax_array($posts, $tax) {
 			$post->year = $year;
 			$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
 			$thumbnail = $thumbnail == false ? get_stylesheet_directory_uri() . '/img/listing_vehicle_placeholder.jpg' : $thumbnail;
+			$tiny_thumb = get_the_post_thumbnail_url($id, 'post-landscape-tiny') != false ? get_the_post_thumbnail_url($id, 'post-landscape-tiny') : get_the_post_thumbnail_url($id, 'thumbnail');
+			$post->thumb = $tiny_thumb;
 			$post->media_url = $thumbnail;
 			$post_array['resources'][] = $post;
 			
