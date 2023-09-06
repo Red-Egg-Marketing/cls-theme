@@ -416,6 +416,20 @@ body {
   min-height: 800px;
 }
 
+/* Image with 'data' attribute is hidden */
+img[data-lazy-src] {
+  /* we set the opacity to 0 */
+  opacity: 0;
+}
+
+/* Image without 'data' attribute is (or becomes) visible */
+img.lazyloaded {
+  /* prepare the future animation */
+  transition: opacity .5s linear 0.2s;
+  /* we set the opacity to 1 to do the magic */
+  opacity: 1;
+}
+
 .entry-content > iframe,
 .entry-content > .gform_wrapper,
 .entry-content > p,
@@ -6155,6 +6169,8 @@ html :where(.wp-block) {
 
 .shortcode-section .section-header {
   padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -8162,15 +8178,6 @@ ul.tax-list .tax-wrap {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-@media screen and (min-width: 768px) {
-  .header-intro-block .block-wrapper {
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
 
 .header-intro-block h4 {

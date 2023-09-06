@@ -24,6 +24,12 @@
 	background: $grey;
 }
 
+div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
+	color: $body-color;
+	font-size: 21px;
+	text-transform: uppercase;
+}
+
 .single.single-vehicle .post-content {
 	max-width: $max-cont-w - 300px;
 	display: flex;
@@ -45,13 +51,13 @@
 
 
 .vehicle-gallery .vehicle {
-	width: calc(100% - 40px);
-	margin-right: 40px;
+	width: 100%;
 	position: relative;
 	overflow: hidden;
-	
-	// padding-left: 30px;
-	// padding-right: 30px;
+	@media screen and (min-width: $small-width) {
+		width: calc(100% - 40px);
+		margin-right: 40px;
+	}
 }
 
 .vehicle-gallery {
@@ -636,9 +642,9 @@ h3.footer-header {
 }
 
 .single .gs-containeer .gs_team {
-	margin-top: 8.75rem;
+	margin-top: 1.75rem;
 	@media screen and (min-width: $small-width) {
-		margin-top: 8.75rem;
+		margin-top: 3.75rem;
 	}
 }
 
