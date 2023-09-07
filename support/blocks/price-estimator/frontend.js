@@ -1,0 +1,150 @@
+const { RichText, InnerBlocks, InspectorControls, BlockControls, URLInput, MediaUpload } = wp.blockEditor;
+const { render, Fragment, useState } = wp.element;
+const { RangeControl, PanelBody, TextControl, SelectControl, Button, Toolbar, ToolbarButton, Popover, withFocusOutside, Dashicon } = wp.components;
+const { useDispatch, useSelect, replaceInnerBlocks } = wp.data;
+const { __ } = wp.i18n;
+import ResourceCard from '../../components/ResourceCard.js';
+const apiUrl  = '/wp-json/cls/v2/vehicles';
+
+const ResourcesRoot = document.getElementById('PaymentVehicles');
+
+const SaveVehiclesPayment = () => {
+	  	const [resources, selectResources] = useState(false);
+  		const [resourcesEmpty, setEmpty] = useState(false);
+  		const [data, setData] = useState({});
+  		const [payment, setPayment] = useState(false);
+
+
+  		const sendAPIrequest = (data) => {
+			wp.apiRequest({
+        		url: apiUrl,
+        		method: 'POST',
+        		data: data
+    		}).then(resourcelist => {
+    			let empty = resourcelist.empty;
+    			setEmpty(empty);
+    			if (empty === false) {
+    				selectResources(resourcelist[0].resources);
+    			}
+        
+    		}).catch( error => {
+    			console.log(error);
+    		});
+		}
+
+  		const getValue = (event) => {
+  			let target = event.target;
+  			let id = target.id;
+  			let value = target.value;
+
+  			if (id == 'price') {
+  				data['price_max'] = value;
+  			}
+  			if (id == 'down') {
+  				data['down'] = value;
+  			}
+  			if (id == 'apr') {
+  				data['apr'] = value;
+  			}
+  			if (id == 'term') {
+  				data['term'] = value;
+  			}
+  			setData(data);
+
+  		}
+
+  		const calculateSavings = (event) => {
+
+  			let price = data['price_max'];
+  			let down = data['down'];
+  			let apr = data['apr'];
+  			apr = (apr/100)/12;
+  			let term = data['term'];
+  			// A=P*(r(1+r)^{n})/((1+r)^{n}-1)
+  			let payment = (price - down) * ((apr * Math.pow(1 + apr, term)) / (Math.pow(1 + apr, term) - 1));
+  			payment = Math.round(payment, 2);
+  			payment = new Intl.NumberFormat('en-US').format(payment)
+  			setPayment(payment);
+  			sendAPIrequest(data);
+  			event.preventDefault();
+  		}
+
+		React.useEffect( () => {
+			let form = document.getElementById('PriceCalculator');
+			let inputs = form.elements;
+			Object.keys(inputs).forEach((key) => {
+				let input = inputs[key];
+				let name = inputs[key].name;
+				let type = inputs[key].type;
+				if (name != '') data[name] = input.value;
+				input.addEventListener('input', getValue);
+			});
+			form.addEventListener('submit', calculateSavings, false);
+
+			if (resources === false) {
+				data['price_max'] = "30000";
+				setData(data);
+    			wp.apiRequest({
+        			url: apiUrl,
+    			    method: 'POST',
+    			    data: data
+    			}).then(resourcelist => {
+    				let empty = resourcelist.empty;
+    			    let posts = resourcelist[0].resources;
+    			    selectResources(posts);
+    			   
+    			});
+  			}
+  		}, [] );
+		
+		return (
+			<Fragment>
+				<div className="resources-grid">
+					{ (payment && resources.length > 0) && (
+						<Fragment>
+							<div className="payment">
+								<div className="payment_interior">
+									<h5>Estimated Payment</h5>
+									<h3>${ payment }/<span>mo</span><sup>*</sup></h3>
+									<p className="small">*These calculations are for reference purposes only.</p>
+								</div>
+							</div>
+						</Fragment>
+					)}
+					{ (resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {
+							return (
+								<Fragment>
+									<ResourceCard.View
+										resourceIndex={ resourceIndex }
+										resourceURL={ resource.link }
+										resourceID={ resource.ID }
+										resourceImg={ resource.media_url }
+										resourceTitle={ resource.post_title  }
+										resourceType={ resource.label  }
+										resourcePrice={ resource.price }
+										resourceMiles={ resource.miles }
+										resourceYear={ resource.year }
+									/>
+								</Fragment>
+							)
+						})
+					}
+					{ resourcesEmpty && (
+						<Fragment>
+							<div className="error">
+								<h3>There are no available vehicles matching your filters. Please try something else.</h3>
+							</div>
+						</Fragment>
+					)}
+				</div>
+			</Fragment>
+		);
+}
+
+
+if (ResourcesRoot) {
+	render(
+		<SaveVehiclesPayment />,
+		ResourcesRoot
+	);
+}

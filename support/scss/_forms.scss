@@ -1,3 +1,24 @@
+.form-row {
+	display: block;
+	width: 100%;
+}
+
+.form-row input[type="submit"] {
+	width: auto;
+}
+
+.form-row input[type="submit"] {
+	min-height: auto;
+}
+
+.form-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin-top: 35px;
+}
+
+form input,
 div.gform_wrapper input[type=color],
 div.gform_wrapper input[type=date],
 div.gform_wrapper input[type=datetime-local],
@@ -143,6 +164,7 @@ div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices li.searc
 	background-position: -42px -10px;
 }
 
+form input, 
 div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices,
 div.gform_wrapper input[type=color], .blue div.gform_wrapper input[type=color], [class*="wp-block"].white div.gform_wrapper input[type=color],
 div.gform_wrapper input[type=date], .blue div.gform_wrapper input[type=date], [class*="wp-block"].white div.gform_wrapper input[type=date],
@@ -226,6 +248,7 @@ body div.gform_wrapper .ginput_complex {
 	}
 }
 
+form select,
 div.gform_wrapper .ginput_container_select select {
  	appearance: none;
  	background: $lighter-blue url(img/down-chevron.svg) no-repeat calc(100% - 25px) center / 10px;
@@ -353,6 +376,8 @@ body div.gform_wrapper ul li.gfield {
 	}
 }
 
+
+form label,
 div.gform_wrapper label.gfield_label {
 	font-size: 18px;
 	line-height: 27px;

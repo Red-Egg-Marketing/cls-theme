@@ -63,6 +63,22 @@ function cls_populate_member_dropdown($form){
     return $form;
 }
 
+add_filter( 'gform_field_input', 'cls_add_readonly', 10, 5 );
+function cls_add_readonly( $input, $field, $value, $lead_id, $form_id ) {
+    global $post;
+    if ($field['cssClass'] == 'gf_readonly' && $field['type'] == 'text') {
+       $classes = $field['size'];
+       $id = $field['id'];
+       $value = '';       
+       $name = 'input_' . $id;
+       $id = 'input_'. $form_id . '_' . $id;
+       $input = '<input type="text" class="' . $classes . '" name="' . $name .'" id="' . $form_id . '_' . '_' . $field['id'] . '" readonly="readonly" tabindex="0" />';
+
+    }
+    return $input;
+
+}
+
 add_filter( 'gform_field_input', 'cls_add_oninput', 10, 5 );
 function cls_add_oninput( $input, $field, $value, $lead_id, $form_id ) {
     global $post;

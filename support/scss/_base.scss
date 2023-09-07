@@ -539,9 +539,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
+	border: none;
 	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
 	background: #e6e6e6;
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
@@ -582,10 +581,23 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
+	background: $lighter-blue;
+	border: none;
+	border-radius: 0;
+	font-family: $font-body-light;
+  color: $body-color;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 0.75rem;
+  @media screen and (min-width: $med-width) {
+  	font-size: 20px;
+  	line-height: 40px;
+		padding-left: 1.3125rem;
+		padding-right: 25px;
+ 		padding-left: 25px;
+ 		padding-top: 17px;
+		padding-bottom: 17px;
+  }
 }
 
 input[type="text"]:focus,
@@ -608,7 +620,31 @@ textarea:focus {
 }
 
 select {
-	border: 1px solid #ccc;
+	width: 100%;
+	display: block;
+	appearance: none;
+ 	background: $lighter-blue url(img/down-chevron.svg) no-repeat calc(100% - 25px) center / 10px;
+ 	border-radius: 0;
+ 	padding-right: 15px;
+ 	padding-left: 15px;
+ 	padding-top: 15px;
+	padding-bottom: 15px;
+ 	font-size: 18px;
+	line-height: 27px;
+	color: $body-color;
+	font-family: $font-body-light;
+	font-weight: 300;
+	margin-bottom: 0;
+	border: none;
+ 	@media screen and (min-width: $med-width) {
+		font-size: 20px;
+		line-height: 40px;
+		margin-bottom: 0;
+		padding-right: 25px;
+ 		padding-left: 25px;
+ 		padding-top: 17px;
+		padding-bottom: 17px;
+	}
 }
 
 textarea {

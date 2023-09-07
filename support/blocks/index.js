@@ -44,4 +44,7 @@ import "./filter-resources";
 import "./selected-projects";
 import "./faq";
 import "./faq-section";
+import "./price-estimator";
+import "./price-header";
+import "./price-form";
 

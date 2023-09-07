@@ -1,4 +1,4 @@
-function gfromWrapperFunction() {
+function gformVehicleSearch() {
 	let apiUrl  = '/wp-json/cls/v2/vehicles';
 
 	jQuery(document).on('gform_post_render', function(event, form_id, current_page){
@@ -113,5 +113,5 @@ function gfromWrapperFunction() {
 
 }
 
-gfromWrapperFunction();
+gformVehicleSearch();
 

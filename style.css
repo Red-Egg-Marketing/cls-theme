@@ -1477,9 +1477,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
+  border: none;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
@@ -1520,10 +1519,41 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 3px;
+  background: #E2F0F7;
+  border: none;
+  border-radius: 0;
+  font-family: "Lato", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 0.75rem;
+}
+
+@media screen and (min-width: 1250px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="range"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="color"],
+  textarea {
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 1.3125rem;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
 }
 
 input[type="text"]:focus,
@@ -1546,7 +1576,36 @@ textarea:focus {
 }
 
 select {
-  border: 1px solid #ccc;
+  width: 100%;
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #E2F0F7 url(img/down-chevron.svg) no-repeat calc(100% - 25px) center/10px;
+  border-radius: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0;
+  border: none;
+}
+
+@media screen and (min-width: 1250px) {
+  select {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 0;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
 }
 
 textarea {
@@ -15464,6 +15523,30 @@ h2#CybotCookiebotDialogBodyContentTitle {
   max-width: 750px;
 }
 
+.form-row {
+  display: block;
+  width: 100%;
+}
+
+.form-row input[type="submit"] {
+  width: auto;
+}
+
+.form-row input[type="submit"] {
+  min-height: auto;
+}
+
+.form-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  margin-top: 35px;
+}
+
+form input,
 div.gform_wrapper input[type=color],
 div.gform_wrapper input[type=date],
 div.gform_wrapper input[type=datetime-local],
@@ -15491,6 +15574,7 @@ div.gform_wrapper textarea {
 }
 
 @media screen and (min-width: 1250px) {
+  form input,
   div.gform_wrapper input[type=color],
   div.gform_wrapper input[type=date],
   div.gform_wrapper input[type=datetime-local],
@@ -15634,6 +15718,7 @@ div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices li.searc
   background-position: -42px -10px;
 }
 
+form input,
 div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices,
 div.gform_wrapper input[type=color], .blue div.gform_wrapper input[type=color], [class*="wp-block"].white div.gform_wrapper input[type=color],
 div.gform_wrapper input[type=date], .blue div.gform_wrapper input[type=date], [class*="wp-block"].white div.gform_wrapper input[type=date],
@@ -15669,6 +15754,7 @@ div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]
 }
 
 @media screen and (min-width: 641px) {
+  form input,
   div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices,
   div.gform_wrapper input[type=color], .blue div.gform_wrapper input[type=color], [class*="wp-block"].white div.gform_wrapper input[type=color],
   div.gform_wrapper input[type=date], .blue div.gform_wrapper input[type=date], [class*="wp-block"].white div.gform_wrapper input[type=date],
@@ -15739,6 +15825,7 @@ body div.gform_wrapper .ginput_complex {
   }
 }
 
+form select,
 div.gform_wrapper .ginput_container_select select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -15758,6 +15845,7 @@ div.gform_wrapper .ginput_container_select select {
 }
 
 @media screen and (min-width: 1250px) {
+  form select,
   div.gform_wrapper .ginput_container_select select {
     font-size: 20px;
     line-height: 40px;
@@ -15899,6 +15987,7 @@ body div.gform_wrapper ul li.gfield {
   }
 }
 
+form label,
 div.gform_wrapper label.gfield_label {
   font-size: 18px;
   line-height: 27px;
@@ -15907,6 +15996,7 @@ div.gform_wrapper label.gfield_label {
 }
 
 @media screen and (min-width: 641px) {
+  form label,
   div.gform_wrapper label.gfield_label {
     font-size: 20px;
     line-height: 32px;
@@ -22642,12 +22732,63 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   margin: 0;
 }
 
-.wp-block-cls-blocks-resources .resources-block {
+.filter-resources .resources-block {
   padding-top: 0;
 }
 
 .wp-block-cls-blocks-resources .resources-block {
   background: none;
+}
+
+#gform_ajax_spinner_8 {
+  display: none;
+}
+
+.payment {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border: 3px solid #910035;
+  padding: 15px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.payment h5 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 0;
+  border-top: 4px solid #052C47;
+  border-bottom: 1px solid #052C47;
+  margin-bottom: 10px;
+}
+
+.payment h3 {
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 45px;
+  border-bottom: 4px solid #052C47;
+  margin-top: 0;
+}
+
+.payment h3 span {
+  font-size: 14px;
+}
+
+.payment h3 sup {
+  font-size: 14px;
+  display: inline-block;
+  line-height: 45px;
+}
+
+.payment p.small {
+  font-size: 14px;
+  line-height: 18px;
+  font-style: italic;
+  margin-bottom: 0;
 }
 
 .resources-block .search-cont {
@@ -22681,6 +22822,16 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
     height: 500px;
     grid-column: 1/4;
     background: url(img/loading-car.gif) no-repeat center center/400px;
+  }
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-row {
+    margin-bottom: 20px;
   }
 }
 
@@ -24517,5 +24668,20 @@ ul.tax-list .tax-wrap {
     background-repeat: no-repeat;
     background-size: 18%;
     background-position: calc(100% + 55px) 40%;
+  }
+}
+
+.wp-block.wp-block-cls-blocks-price-header {
+  max-width: 100%;
+}
+
+.wp-block-cls-blocks-price-form.resources-wrap {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-resources.price-estimator .resources-block .resources {
+    grid-column: 2/5;
   }
 }

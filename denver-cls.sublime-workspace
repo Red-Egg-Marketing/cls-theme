@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"cons",
+				"console"
+			],
+			[
+				"re",
+				"resources-grid"
+			],
+			[
+				"for",
+				"form-wrap"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
 				"pad",
 				"padding-left"
 			],
@@ -24,16 +52,8 @@
 				"append"
 			],
 			[
-				"con",
-				"console"
-			],
-			[
 				"active",
 				"activeElement"
-			],
-			[
-				"cons",
-				"console"
 			],
 			[
 				"app",
@@ -96,10 +116,6 @@
 				"previewElements"
 			],
 			[
-				"prin",
-				"print_r"
-			],
-			[
 				"v",
 				"vehicle"
 			],
@@ -138,14 +154,6 @@
 			[
 				"tab",
 				"tabIndex"
-			],
-			[
-				"for",
-				"forEach"
-			],
-			[
-				"re",
-				"resources"
 			],
 			[
 				"appen",
@@ -206,10 +214,6 @@
 			[
 				"ind",
 				"indexOf"
-			],
-			[
-				"pa",
-				"padding-top"
 			],
 			[
 				"cont",
@@ -496,10 +500,6 @@
 				"padding-bottom"
 			],
 			[
-				"text",
-				"text-decoration"
-			],
-			[
 				"margi",
 				"margin-right"
 			],
@@ -519,6 +519,682 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "inc/form-filters.php",
+			"settings":
+			{
+				"buffer_size": 4236,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAI4QAAAAAAAAkRAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAChEAAAAAAAAKEQAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					5,
+					1,
+					"toggle_comment",
+					{
+						"block": false
+					},
+					"AQAAAMsQAAAAAAAAzhAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADhEAAAAAAAAOEQAAAAAAAAAAAAAAAAZkA"
+				],
+				[
+					10,
+					3,
+					"left_delete",
+					null,
+					"AwAAAI4QAAAAAAAAjhAAAAAAAAB4AAAALy8gYWRkX2ZpbHRlciggJ2dmb3JtX3N1Ym1pdF9idXR0b25fMTEnLCAnX19yZXR1cm5fZmFsc2UnICk7Ci8vIGFkZF9maWx0ZXIoICdnZm9ybV9zdWJtaXRfYnV0dG9uXzgnLCAnX19yZXR1cm5fZmFsc2UnICk7jRAAAAAAAACNEAAAAAAAAAEAAAAKjBAAAAAAAACMEAAAAAAAAAEAAAAK",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAGEQAAAAAAAI4QAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "\n\n\n"
+					},
+					"AwAAAIwQAAAAAAAAjRAAAAAAAAAAAAAAjRAAAAAAAACOEAAAAAAAAAAAAACOEAAAAAAAAI8QAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACMEAAAAAAAAIwQAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					22,
+					1,
+					"paste",
+					null,
+					"AQAAAI8QAAAAAAAAhBIAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACPEAAAAAAAAI8QAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": "cls_"
+					},
+					"CAAAANMQAAAAAAAA1BAAAAAAAAAAAAAAsxAAAAAAAAC0EAAAAAAAAAAAAADVEAAAAAAAANYQAAAAAAAAAAAAALQQAAAAAAAAtRAAAAAAAAAAAAAA1xAAAAAAAADYEAAAAAAAAAAAAAC1EAAAAAAAALYQAAAAAAAAAAAAANkQAAAAAAAA2hAAAAAAAAAAAAAAthAAAAAAAAC3EAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAIAAACzEAAAAAAAALMQAAAAAAAAAAAAAAAA8L/TEAAAAAAAANMQAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAPoQAAAAAAAA+xAAAAAAAAAAAAAA+xAAAAAAAAD/EAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD6EAAAAAAAAPoQAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					53,
+					3,
+					"left_delete",
+					null,
+					"AwAAAI8QAAAAAAAAjxAAAAAAAAACAgAAYWRkX2ZpbHRlciggJ2dmb3JtX3N1Ym1pdF9idXR0b24nLCAnY2xzX2FkZF9vbmNsaWNrJywgMTAsIDIgKTsKZnVuY3Rpb24gY2xzX2FkZF9vbmNsaWNrKCAkYnV0dG9uLCAkZm9ybSApIHsKICAgIAogICAgJGRvbSA9IG5ldyBET01Eb2N1bWVudCgpOwogICAgJGRvbS0+bG9hZEhUTUwoICc8P3htbCBlbmNvZGluZz0idXRmLTgiID8+JyAuICRidXR0b24gKTsKICAgICRpbnB1dCA9ICRkb20tPmdldEVsZW1lbnRzQnlUYWdOYW1lKCAnaW5wdXQnICktPml0ZW0oMCk7CiAgICAkb25jbGljayA9ICRpbnB1dC0+Z2V0QXR0cmlidXRlKCAnb25jbGljaycgKTsKICAgICRvbmNsaWNrIC49ICIgYWRkQWRkaXRpb25hbEFjdGlvbignQWRkaXRpb25hbCBBY3Rpb24nKTsiOyAvLyBIZXJlJ3MgdGhlIEpTIGZ1bmN0aW9uIHdlJ3JlIGNhbGxpbmcgb24gY2xpY2suCiAgICAkaW5wdXQtPnNldEF0dHJpYnV0ZSggJ29uY2xpY2snLCAkb25jbGljayApOwogICAgcmV0dXJuICRkb20tPnNhdmVIdG1sKCAkaW5wdXQgKTsKfY4QAAAAAAAAjhAAAAAAAAABAAAACo0QAAAAAAAAjRAAAAAAAAABAAAACg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACREgAAAAAAAI8QAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					54,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIwQAAAAAAAAjBAAAAAAAAABAAAACg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACNEAAAAAAAAI0QAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "support/blocks/price-estimator/frontend.js",
+			"settings":
+			{
+				"buffer_size": 2718,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"cut",
+					null,
+					"AQAAABUDAAAAAAAAFQMAAAAAAAAdAAAAICAJCQljb25zb2xlLmxvZygnd2hhdCB1cCcpOwo",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAxAwAAAAAAADEDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"BQAAABkDAAAAAAAAGgMAAAAAAAAAAAAAGgMAAAAAAAAeAwAAAAAAAAAAAAAeAwAAAAAAAB8DAAAAAAAAAAAAAB8DAAAAAAAAIwMAAAAAAAAAAAAAGgMAAAAAAAAaAwAAAAAAAAQAAAAgIAkJ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAZAwAAAAAAABkDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					9,
+					1,
+					"reindent",
+					null,
+					"AQAAABoDAAAAAAAAHwMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAaAwAAAAAAABoDAAAAAAAAAAAAAAAAUEA"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": "cons"
+					},
+					"BAAAAB8DAAAAAAAAIAMAAAAAAAAAAAAAIAMAAAAAAAAhAwAAAAAAAAAAAAAhAwAAAAAAACIDAAAAAAAAAAAAACIDAAAAAAAAIwMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAfAwAAAAAAAB8DAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					12,
+					1,
+					"insert_completion",
+					{
+						"completion": "console",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "console"
+					},
+					"AgAAAB8DAAAAAAAAHwMAAAAAAAAEAAAAY29ucx8DAAAAAAAAJgMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAjAwAAAAAAACMDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": ".o"
+					},
+					"AgAAACYDAAAAAAAAJwMAAAAAAAAAAAAAJwMAAAAAAAAoAwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAmAwAAAAAAACYDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					14,
+					1,
+					"left_delete",
+					null,
+					"AQAAACcDAAAAAAAAJwMAAAAAAAABAAAAbw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAoAwAAAAAAACgDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "log"
+					},
+					"AwAAACcDAAAAAAAAKAMAAAAAAAAAAAAAKAMAAAAAAAApAwAAAAAAAAAAAAApAwAAAAAAACoDAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAnAwAAAAAAACcDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					16,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAACoDAAAAAAAALAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAqAwAAAAAAACoDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "valu"
+					},
+					"BAAAAA4DAAAAAAAADwMAAAAAAAAAAAAADwMAAAAAAAAQAwAAAAAAAAAAAAAQAwAAAAAAABEDAAAAAAAAAAAAABEDAAAAAAAAEgMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAOAwAAAAAAAA4DAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					20,
+					4,
+					"left_delete",
+					null,
+					"BAAAABEDAAAAAAAAEQMAAAAAAAABAAAAdRADAAAAAAAAEAMAAAAAAAABAAAAbA8DAAAAAAAADwMAAAAAAAABAAAAYQ4DAAAAAAAADgMAAAAAAAABAAAAdg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAASAwAAAAAAABIDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAACwDAAAAAAAALQMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAwAAAAAAACwDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					26,
+					1,
+					"insert_snippet",
+					{
+						"contents": "'$0'"
+					},
+					"AQAAACsDAAAAAAAALQMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArAwAAAAAAACsDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "okay"
+					},
+					"BAAAACwDAAAAAAAALQMAAAAAAAAAAAAALQMAAAAAAAAuAwAAAAAAAAAAAAAuAwAAAAAAAC8DAAAAAAAAAAAAAC8DAAAAAAAAMAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAwAAAAAAACwDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					29,
+					1,
+					"left_delete",
+					null,
+					"AQAAABgDAAAAAAAAGAMAAAAAAAABAAAACQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAZAwAAAAAAABkDAAAAAAAAAAAAAAAAbUA"
+				],
+				[
+					36,
+					1,
+					"insert",
+					{
+						"characters": "\n\nconst"
+					},
+					"CgAAADgDAAAAAAAAOQMAAAAAAAAAAAAAOQMAAAAAAAA9AwAAAAAAAAAAAAA9AwAAAAAAAD4DAAAAAAAAAAAAAD4DAAAAAAAAQgMAAAAAAAAAAAAAOQMAAAAAAAA5AwAAAAAAAAQAAAAgIAkJPgMAAAAAAAA/AwAAAAAAAAAAAAA/AwAAAAAAAEADAAAAAAAAAAAAAEADAAAAAAAAQQMAAAAAAAAAAAAAQQMAAAAAAABCAwAAAAAAAAAAAABCAwAAAAAAAEMDAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA4AwAAAAAAADgDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					37,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAEMDAAAAAAAARAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABDAwAAAAAAAEMDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					38,
+					1,
+					"paste",
+					null,
+					"AQAAAEQDAAAAAAAAVwMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABEAwAAAAAAAEQDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					39,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAFcDAAAAAAAAWQMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABXAwAAAAAAAFcDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					41,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAFkDAAAAAAAAWgMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABZAwAAAAAAAFkDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					42,
+					3,
+					"left_delete",
+					null,
+					"AwAAAFkDAAAAAAAAWQMAAAAAAAABAAAAIFgDAAAAAAAAWAMAAAAAAAABAAAAKVcDAAAAAAAAVwMAAAAAAAABAAAAKA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABaAwAAAAAAAFoDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					43,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAAFcDAAAAAAAAWAMAAAAAAAAAAAAAWAMAAAAAAABZAwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABXAwAAAAAAAFcDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAFkDAAAAAAAAWgMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABZAwAAAAAAAFkDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					45,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAFoDAAAAAAAAXAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABaAwAAAAAAAFoDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					47,
+					1,
+					"insert",
+					{
+						"characters": " =>"
+					},
+					"AwAAAFwDAAAAAAAAXQMAAAAAAAAAAAAAXQMAAAAAAABeAwAAAAAAAAAAAABeAwAAAAAAAF8DAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABcAwAAAAAAAFwDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					48,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAF8DAAAAAAAAYAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABfAwAAAAAAAF8DAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					49,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAGADAAAAAAAAYgMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABgAwAAAAAAAGADAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					50,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BgAAAGEDAAAAAAAAYgMAAAAAAAAAAAAAYgMAAAAAAABmAwAAAAAAAAAAAABmAwAAAAAAAGcDAAAAAAAAAAAAAGcDAAAAAAAAawMAAAAAAAAAAAAAYgMAAAAAAABiAwAAAAAAAAQAAAAgIAkJYgMAAAAAAABnAwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABhAwAAAAAAAGEDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					51,
+					1,
+					"insert",
+					{
+						"characters": "cons"
+					},
+					"BAAAAGcDAAAAAAAAaAMAAAAAAAAAAAAAaAMAAAAAAABpAwAAAAAAAAAAAABpAwAAAAAAAGoDAAAAAAAAAAAAAGoDAAAAAAAAawMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABnAwAAAAAAAGcDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					55,
+					1,
+					"insert_completion",
+					{
+						"completion": "console",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "console"
+					},
+					"AgAAAGcDAAAAAAAAZwMAAAAAAAAEAAAAY29uc2cDAAAAAAAAbgMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABrAwAAAAAAAGsDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					56,
+					1,
+					"insert",
+					{
+						"characters": ".lopg"
+					},
+					"BQAAAG4DAAAAAAAAbwMAAAAAAAAAAAAAbwMAAAAAAABwAwAAAAAAAAAAAABwAwAAAAAAAHEDAAAAAAAAAAAAAHEDAAAAAAAAcgMAAAAAAAAAAAAAcgMAAAAAAABzAwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABuAwAAAAAAAG4DAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					57,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAHMDAAAAAAAAdQMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzAwAAAAAAAHMDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					58,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete Left Right.sublime-macro"
+					},
+					"AgAAAHMDAAAAAAAAcwMAAAAAAAABAAAAKHMDAAAAAAAAcwMAAAAAAAABAAAAKQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB0AwAAAAAAAHQDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					59,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHIDAAAAAAAAcgMAAAAAAAABAAAAZw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzAwAAAAAAAHMDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					60,
+					1,
+					"insert",
+					{
+						"characters": "g"
+					},
+					"AQAAAHIDAAAAAAAAcwMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAByAwAAAAAAAHIDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					61,
+					2,
+					"left_delete",
+					null,
+					"AgAAAHIDAAAAAAAAcgMAAAAAAAABAAAAZ3EDAAAAAAAAcQMAAAAAAAABAAAAcA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzAwAAAAAAAHMDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					62,
+					1,
+					"insert",
+					{
+						"characters": "g"
+					},
+					"AQAAAHEDAAAAAAAAcgMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABxAwAAAAAAAHEDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					63,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAHIDAAAAAAAAdAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAByAwAAAAAAAHIDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					64,
+					1,
+					"insert_snippet",
+					{
+						"contents": "'$0'"
+					},
+					"AQAAAHMDAAAAAAAAdQMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzAwAAAAAAAHMDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					65,
+					1,
+					"insert",
+					{
+						"characters": "what"
+					},
+					"BAAAAHQDAAAAAAAAdQMAAAAAAAAAAAAAdQMAAAAAAAB2AwAAAAAAAAAAAAB2AwAAAAAAAHcDAAAAAAAAAAAAAHcDAAAAAAAAeAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB0AwAAAAAAAHQDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					66,
+					1,
+					"insert",
+					{
+						"characters": " is"
+					},
+					"AwAAAHgDAAAAAAAAeQMAAAAAAAAAAAAAeQMAAAAAAAB6AwAAAAAAAAAAAAB6AwAAAAAAAHsDAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB4AwAAAAAAAHgDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					67,
+					1,
+					"insert",
+					{
+						"characters": " upp"
+					},
+					"BAAAAHsDAAAAAAAAfAMAAAAAAAAAAAAAfAMAAAAAAAB9AwAAAAAAAAAAAAB9AwAAAAAAAH4DAAAAAAAAAAAAAH4DAAAAAAAAfwMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB7AwAAAAAAAHsDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					69,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAIEDAAAAAAAAggMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACBAwAAAAAAAIEDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					72,
+					1,
+					"insert",
+					{
+						"characters": "evnt"
+					},
+					"BAAAAFsDAAAAAAAAXAMAAAAAAAAAAAAAXAMAAAAAAABdAwAAAAAAAAAAAABdAwAAAAAAAF4DAAAAAAAAAAAAAF4DAAAAAAAAXwMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABbAwAAAAAAAFsDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					73,
+					3,
+					"left_delete",
+					null,
+					"AwAAAF4DAAAAAAAAXgMAAAAAAAABAAAAdF0DAAAAAAAAXQMAAAAAAAABAAAAblwDAAAAAAAAXAMAAAAAAAABAAAAdg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABfAwAAAAAAAF8DAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					74,
+					1,
+					"insert",
+					{
+						"characters": "ent"
+					},
+					"AwAAAFwDAAAAAAAAXQMAAAAAAAAAAAAAXQMAAAAAAABeAwAAAAAAAAAAAABeAwAAAAAAAF8DAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABcAwAAAAAAAFwDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					75,
+					3,
+					"left_delete",
+					null,
+					"AwAAAF4DAAAAAAAAXgMAAAAAAAABAAAAdF0DAAAAAAAAXQMAAAAAAAABAAAAblwDAAAAAAAAXAMAAAAAAAABAAAAZQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABfAwAAAAAAAF8DAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					76,
+					1,
+					"insert",
+					{
+						"characters": "vent"
+					},
+					"BAAAAFwDAAAAAAAAXQMAAAAAAAAAAAAAXQMAAAAAAABeAwAAAAAAAAAAAABeAwAAAAAAAF8DAAAAAAAAAAAAAF8DAAAAAAAAYAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABcAwAAAAAAAFwDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					81,
+					1,
+					"insert",
+					{
+						"characters": "\ncons"
+					},
+					"BgAAAIcDAAAAAAAAiAMAAAAAAAAAAAAAiAMAAAAAAACNAwAAAAAAAAAAAACNAwAAAAAAAI4DAAAAAAAAAAAAAI4DAAAAAAAAjwMAAAAAAAAAAAAAjwMAAAAAAACQAwAAAAAAAAAAAACQAwAAAAAAAJEDAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACHAwAAAAAAAIcDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					82,
+					1,
+					"insert_completion",
+					{
+						"completion": "console",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "console"
+					},
+					"AgAAAI0DAAAAAAAAjQMAAAAAAAAEAAAAY29uc40DAAAAAAAAlAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACRAwAAAAAAAJEDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					83,
+					1,
+					"insert",
+					{
+						"characters": ".lpog"
+					},
+					"BQAAAJQDAAAAAAAAlQMAAAAAAAAAAAAAlQMAAAAAAACWAwAAAAAAAAAAAACWAwAAAAAAAJcDAAAAAAAAAAAAAJcDAAAAAAAAmAMAAAAAAAAAAAAAmAMAAAAAAACZAwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACUAwAAAAAAAJQDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					84,
+					3,
+					"left_delete",
+					null,
+					"AwAAAJgDAAAAAAAAmAMAAAAAAAABAAAAZ5cDAAAAAAAAlwMAAAAAAAABAAAAb5YDAAAAAAAAlgMAAAAAAAABAAAAcA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACZAwAAAAAAAJkDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					85,
+					1,
+					"insert",
+					{
+						"characters": "g"
+					},
+					"AQAAAJYDAAAAAAAAlwMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACWAwAAAAAAAJYDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					86,
+					10,
+					"left_delete",
+					null,
+					"CgAAAJYDAAAAAAAAlgMAAAAAAAABAAAAZ5UDAAAAAAAAlQMAAAAAAAABAAAAbJQDAAAAAAAAlAMAAAAAAAABAAAALpMDAAAAAAAAkwMAAAAAAAABAAAAZZIDAAAAAAAAkgMAAAAAAAABAAAAbJEDAAAAAAAAkQMAAAAAAAABAAAAb5ADAAAAAAAAkAMAAAAAAAABAAAAc48DAAAAAAAAjwMAAAAAAAABAAAAbo4DAAAAAAAAjgMAAAAAAAABAAAAb40DAAAAAAAAjQMAAAAAAAABAAAAYw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACXAwAAAAAAAJcDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					87,
+					1,
+					"insert",
+					{
+						"characters": "event.pre"
+					},
+					"CQAAAI0DAAAAAAAAjgMAAAAAAAAAAAAAjgMAAAAAAACPAwAAAAAAAAAAAACPAwAAAAAAAJADAAAAAAAAAAAAAJADAAAAAAAAkQMAAAAAAAAAAAAAkQMAAAAAAACSAwAAAAAAAAAAAACSAwAAAAAAAJMDAAAAAAAAAAAAAJMDAAAAAAAAlAMAAAAAAAAAAAAAlAMAAAAAAACVAwAAAAAAAAAAAACVAwAAAAAAAJYDAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACNAwAAAAAAAI0DAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					88,
+					1,
+					"insert_completion",
+					{
+						"completion": "preventDefault",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "preventDefault"
+					},
+					"AgAAAJMDAAAAAAAAkwMAAAAAAAADAAAAcHJlkwMAAAAAAAChAwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACWAwAAAAAAAJYDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					89,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAKEDAAAAAAAAowMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAChAwAAAAAAAKEDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					91,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAKMDAAAAAAAApAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACjAwAAAAAAAKMDAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -561,54 +1237,79 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/img",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/webfonts"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support"
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/gform.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/save.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/_style-block.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/style.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/editor.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/numbered-list/_style-block.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/save.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/frontend.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact-forms/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/save.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/index.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/index.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-header/save.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/index.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-header/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/content-block/index.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/grid-image-text/index.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/index.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/frontend.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/_style-block.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/front-end.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/save.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/save.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/scrolling.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/forms.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-walker.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/functions.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/payment.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_single.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact/_style-block.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/header-intro/_style-block.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/shortcode-section/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/columns-cta/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/text-cards-grid/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/text-card/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/grid-image-text/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/section/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/gform.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_forms.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-config.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-page.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/page.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/media.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/frontend.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/media.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/front-end.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/forms.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/wp-timelines/templates/content-timeline-bg.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/wp-timelines/templates/content-timeline.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table-compare/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table-side/_style-block.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/shortcode-section/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/cta/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_buttons.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_reviews.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/components/Icons.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_navigation.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/filter-posts.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-search.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/cls.csv",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/components/ResourceLoader.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/feature-section/edit.js",
@@ -630,12 +1331,8 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/webfonts/fa-brands-400.ttf",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_font-awesome.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/libraries/fancybox.css",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_bios.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/grid-image-text/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/save.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/columns-cta/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/columns-cta/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/columns-cta/index.js",
@@ -644,10 +1341,7 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-grid-style-five.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/gs-team-members-premium/templates/partials/gs-team-layout-meta-details.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/csv/cls.csv",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/content-block/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/content-block/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact-forms/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/navigation.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/section/edit.js",
@@ -658,8 +1352,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/faq-section/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/faq/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/faq/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/editor.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/style.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/faq-section/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/faq/save.js",
 		"/Users/jacoblang/Desktop/cls-logo.svg",
@@ -669,7 +1361,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table-row/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table-compare/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/frontend.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts.php",
@@ -677,23 +1368,7 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-header.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/menu-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/gravityforms/js/components/form_editor/conditional_flyout/views/accordion_header.html",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/header.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_base.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/img/nav-open.svg",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/img/nav-close.svg",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/update.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-activate.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_single.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/components/ResourceCard.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/swiper.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/section-header/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/css/colors/_variables.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_table.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_swiper.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/selected-projects.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/components/Padding.js"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/header.php"
 	],
 	"find":
 	{
@@ -712,6 +1387,51 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"addAdditionalAction",
+			"add_onclick",
+			"gravityforms",
+			"section",
+			"EditForm",
+			"header",
+			"SavePrice",
+			"EditPrice",
+			"Header",
+			"header",
+			"estimator",
+			"SavePrice",
+			"EditPrice",
+			".wp-block-cls-blocks-resources .resources-block",
+			"ResourcesWrap",
+			"PaymentVehicles",
+			"resources",
+			"mainTitle",
+			"taxonomies",
+			"EditResources",
+			"SaveResources",
+			"resources",
+			"checkVehicles",
+			"ResourcesRoot",
+			"selectResources",
+			"SaveSelectedProjects",
+			"VehiclesWrap",
+			"PaymentVehicles",
+			"VehiclesWrap",
+			"PaymentVehicles",
+			"gformVehicleSearch",
+			"gformPaymentEstimator",
+			"gformVehicleSearch",
+			"gformPaymentEstimator",
+			"gfromWrapperFunction",
+			".vehicle-gallery .vehicle",
+			"get",
+			"post",
+			"ajax",
+			"paymentCalculatorPresets",
+			".gs-single-default .gs-team-single-content .gs-sin-mem-desig",
+			".single .gs-containeer .gs_team",
+			".header-intro-block .block-wrapper",
+			".header-intro-block .block-wrapper.header-intro-block .block-wrapper",
+			".shortcode-section .section-header",
 			".columns-cta .wp-block-cover__inner-container p",
 			".text-cards-grid {",
 			".text-cards-grid",
@@ -794,52 +1514,7 @@
 			"$form-width",
 			"placeholder",
 			"$form-width",
-			".contact-section .content-column",
-			".shortcode-section > .block-wrapper",
-			"input",
-			"html",
-			"input",
-			"html",
-			"input",
-			"tabindex",
-			"html",
-			"button",
-			"searchFunction",
-			"searchVehicles",
-			"gfromWrapperFunction",
-			"input",
-			"field",
-			"input",
-			"cls_add_oninput",
-			"input",
-			"button",
-			"add_onclick",
-			"swiper",
-			"options",
-			"gppt_swiper_options",
-			"cls_populate_vehicle_search",
-			"cls_populate_member_dropdown",
-			"set_time_limit",
-			"1FTBR1Y85MKA26828",
-			"console.log",
-			"console",
-			"selectedValues",
-			"false",
-			"true",
-			".resources-block .filter-block",
-			"false",
-			"true",
-			"false",
-			"loading",
-			"false",
-			"setTriggered",
-			"triggered",
-			"setLoaded",
-			"selectedValues",
-			"data",
-			"loaded",
-			"onChange",
-			"console.log"
+			".contact-section .content-column"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -866,6 +1541,75 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "inc/form-filters.php",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4236,
+								4236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 873.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "support/blocks/price-estimator/frontend.js",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								792,
+								792
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -886,11 +1630,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.464857021518,
 			1.0
 		],
 		"rows":
@@ -918,16 +1669,48 @@
 		"selected_items":
 		[
 			[
-				"footer",
-				"app/public/wp-content/themes/cls-theme/footer.php"
+				"gform.",
+				"app/public/wp-content/themes/cls-theme/support/js-compile/gform.js"
+			],
+			[
+				"form-fil",
+				"app/public/wp-content/themes/cls-theme/inc/form-filters.php"
+			],
+			[
+				"custom-en",
+				"app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
 			],
 			[
 				"form",
 				"app/public/wp-content/themes/cls-theme/inc/form-filters.php"
 			],
 			[
+				"_blo",
+				"app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss"
+			],
+			[
+				"impor",
+				"app/public/wp-content/themes/cls-theme/inc/import.php"
+			],
+			[
+				"_bl",
+				"app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss"
+			],
+			[
+				"front",
+				"app/public/wp-content/themes/cls-theme/support/front-end.js"
+			],
+			[
 				"_var",
 				"app/public/wp-content/themes/cls-theme/support/scss/_variables.scss"
+			],
+			[
+				"_sing",
+				"app/public/wp-content/themes/cls-theme/support/scss/_single.scss"
+			],
+			[
+				"footer",
+				"app/public/wp-content/themes/cls-theme/footer.php"
 			],
 			[
 				"form-",
@@ -936,10 +1719,6 @@
 			[
 				"_for",
 				"app/public/wp-content/themes/cls-theme/support/scss/_forms.scss"
-			],
-			[
-				"impor",
-				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
 				"imp",
@@ -978,20 +1757,12 @@
 				"app/public/wp-admin/media.php"
 			],
 			[
-				"custom-en",
-				"app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
-			],
-			[
 				"FORM-FI",
 				"app/public/wp-content/themes/cls-theme/inc/form-filters.php"
 			],
 			[
 				"_bu",
 				"app/public/wp-content/themes/cls-theme/support/scss/_buttons.scss"
-			],
-			[
-				"_blo",
-				"app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss"
 			],
 			[
 				"_nav",
@@ -1040,10 +1811,6 @@
 			[
 				"_na",
 				"app/public/wp-content/themes/cls-theme/support/scss/_navigation.scss"
-			],
-			[
-				"form-fil",
-				"app/public/wp-content/themes/cls-theme/inc/form-filters.php"
 			],
 			[
 				"_but",
@@ -1158,10 +1925,6 @@
 				"app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
 			],
 			[
-				"_bl",
-				"app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss"
-			],
-			[
 				"_sin",
 				"app/public/wp-content/themes/cls-theme/support/scss/_single.scss"
 			],
@@ -1216,10 +1979,6 @@
 			[
 				"content-ve",
 				"app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php"
-			],
-			[
-				"_sing",
-				"app/public/wp-content/themes/cls-theme/support/scss/_single.scss"
 			],
 			[
 				"footer.php",
@@ -1420,14 +2179,6 @@
 			[
 				"block-bas",
 				"app/public/wp-content/themes/red-egg-2022/support/scss/_block-base.scss"
-			],
-			[
-				"inde",
-				"app/public/wp-content/plugins/extend-gutenberg-blocks/blocks/index.js"
-			],
-			[
-				"right",
-				"app/public/wp-content/themes/red-egg-2022/img/right-chevron-grey.svg"
 			]
 		],
 		"width": 0.0
@@ -1435,16 +2186,20 @@
 	"select_project":
 	{
 		"height": 682.0,
-		"last_filter": "as",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"as",
-				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
+				"",
+				"~/Local Sites/tax-tamer/tax-tamer.sublime-project"
 			],
 			[
-				"",
-				"~/Local Sites/restricted-stock-clone/restricted-stock-new.sublime-project"
+				"tax",
+				"~/Local Sites/tax-tamer/tax-tamer.sublime-project"
+			],
+			[
+				"as",
+				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
 			],
 			[
 				"res",
@@ -1456,10 +2211,6 @@
 			],
 			[
 				"t",
-				"~/Local Sites/tax-tamer/tax-tamer.sublime-project"
-			],
-			[
-				"tax",
 				"~/Local Sites/tax-tamer/tax-tamer.sublime-project"
 			],
 			[
@@ -1714,7 +2465,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 339.0,
+	"side_bar_width": 333.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

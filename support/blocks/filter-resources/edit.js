@@ -48,7 +48,6 @@ const EditResources = ( { attributes, setAttributes } ) => {
 			setAttributes({ anchor: removeSpace });
 		}
 
-
 		const sendAPIrequest = (data) => {
 			wp.apiRequest({
         		url: apiUrl,
