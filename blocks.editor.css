@@ -7457,57 +7457,6 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   background: none;
 }
 
-#gform_ajax_spinner_8 {
-  display: none;
-}
-
-.payment {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  border: 3px solid #910035;
-  padding: 15px;
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-
-.payment h5 {
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-top: 0;
-  border-top: 4px solid #052C47;
-  border-bottom: 1px solid #052C47;
-  margin-bottom: 10px;
-}
-
-.payment h3 {
-  text-transform: uppercase;
-  font-size: 45px;
-  line-height: 45px;
-  border-bottom: 4px solid #052C47;
-  margin-top: 0;
-}
-
-.payment h3 span {
-  font-size: 14px;
-}
-
-.payment h3 sup {
-  font-size: 14px;
-  display: inline-block;
-  line-height: 45px;
-}
-
-.payment p.small {
-  font-size: 14px;
-  line-height: 18px;
-  font-style: italic;
-  margin-bottom: 0;
-}
-
 .resources-block .search-cont {
   grid-column: 1/1;
   display: -ms-grid;
@@ -7528,14 +7477,14 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   }
 }
 
-.resources-block .loading {
+.loading {
   text-indent: -10000px;
   background: url(img/loading-car.gif) no-repeat center center/200px;
   height: 250px;
 }
 
 @media screen and (min-width: 768px) {
-  .resources-block .loading {
+  .loading {
     height: 500px;
     grid-column: 1/4;
     background: url(img/loading-car.gif) no-repeat center center/400px;
@@ -9364,8 +9313,63 @@ ul.tax-list .tax-wrap {
   padding-right: 1.25rem;
 }
 
+.filter-resources.price-estimator .resources-block .resources {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .filter-resources.price-estimator .resources-block .resources {
     grid-column: 2/5;
   }
+}
+
+#gform_ajax_spinner_8 {
+  display: none;
+}
+
+.payment {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border: 3px solid #910035;
+  padding: 15px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.payment h5 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 0;
+  border-top: 4px solid #052C47;
+  border-bottom: 1px solid #052C47;
+  margin-bottom: 10px;
+}
+
+.payment h3 {
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 45px;
+  border-bottom: 4px solid #052C47;
+  margin-top: 0;
+}
+
+.payment h3 span {
+  font-size: 14px;
+}
+
+.payment h3 sup {
+  font-size: 14px;
+  display: inline-block;
+  line-height: 45px;
+}
+
+.payment p.small {
+  font-size: 14px;
+  line-height: 18px;
+  font-style: italic;
+  margin-bottom: 0;
 }

@@ -8,8 +8,7 @@ import ResourceFilters from '../../components/ResourceLoader.js';
 const apiUrl  = '/wp-json/cls/v2/vehicles';
 
 const template = [
-	['core/header', {'placeholder': 'Heading...'}],
-	['gravityforms/form']
+	['core/heading', {'placeholder': 'Heading...'}],
 ];
 
 const EditHeader = ( { attributes, setAttributes } ) => {

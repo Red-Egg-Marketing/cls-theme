@@ -11,11 +11,13 @@ const ResourcesRoot = document.getElementById('PaymentVehicles');
 const SaveVehiclesPayment = () => {
 	  	const [resources, selectResources] = useState(false);
   		const [resourcesEmpty, setEmpty] = useState(false);
+  		const [loading, setLoading] = useState(false);
   		const [data, setData] = useState({});
   		const [payment, setPayment] = useState(false);
 
 
   		const sendAPIrequest = (data) => {
+  			setLoading(true);
 			wp.apiRequest({
         		url: apiUrl,
         		method: 'POST',
@@ -26,6 +28,7 @@ const SaveVehiclesPayment = () => {
     			if (empty === false) {
     				selectResources(resourcelist[0].resources);
     			}
+    			setLoading(false);
         
     		}).catch( error => {
     			console.log(error);
@@ -95,12 +98,12 @@ const SaveVehiclesPayment = () => {
     			   
     			});
   			}
-  		}, [] );
+  		}, []);
 		
 		return (
 			<Fragment>
 				<div className="resources-grid">
-					{ (payment && resources.length > 0) && (
+					{ (payment && resources.length > 0 && loading == false) && (
 						<Fragment>
 							<div className="payment">
 								<div className="payment_interior">
@@ -111,7 +114,7 @@ const SaveVehiclesPayment = () => {
 							</div>
 						</Fragment>
 					)}
-					{ (resourcesEmpty == false && resources.length > 0) && resources.map((resource, resourceIndex) => {
+					{ (resourcesEmpty == false && resources.length > 0 && loading == false) && resources.map((resource, resourceIndex) => {
 							return (
 								<Fragment>
 									<ResourceCard.View
@@ -129,7 +132,14 @@ const SaveVehiclesPayment = () => {
 							)
 						})
 					}
-					{ resourcesEmpty && (
+					{loading == true && (
+						<Fragment>
+							<div className="loading">
+							<h2>...Loading</h2>
+							</div>
+						</Fragment>
+					)}
+					{ (resourcesEmpty && loading == false) && (
 						<Fragment>
 							<div className="error">
 								<h3>There are no available vehicles matching your filters. Please try something else.</h3>

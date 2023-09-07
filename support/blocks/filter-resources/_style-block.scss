@@ -7,54 +7,6 @@
 	background: none;
 }
 
-#gform_ajax_spinner_8 {
-	display: none;
-}
-
-.payment {
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-	border: 3px solid $red;
-	padding: 15px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.payment h5 {
-	font-weight: 300;
-	text-transform: uppercase;
-	margin-top: 0;
-	border-top: 4px solid $dark-blue;
-	border-bottom: 1px solid $dark-blue;
-	margin-bottom: 10px;
-}
-
-.payment h3 {
-	text-transform: uppercase;
-	font-size: 45px;
-	line-height: 45px;
-	border-bottom: 4px solid $dark-blue;
-	margin-top: 0;
-}
-
-.payment h3 span {
-	font-size: 14px;
-}
-
-.payment h3 sup {
-	font-size: 14px;
-	display: inline-block;
-	line-height: 45px;
-}
-
-.payment p.small {
-	font-size: 14px;
-	line-height: 18px;
-	font-style: italic;
-	margin-bottom: 0;
-}
-
 .resources-block .search-cont {
 	grid-column: 1/1;
 	display: grid;
@@ -69,7 +21,7 @@
 	}
 }
 
-.resources-block .loading {
+.loading {
 	text-indent: -10000px;
 	background: url(img/loading-car.gif) no-repeat center center / 200px;
 	height: 250px;
