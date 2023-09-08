@@ -24646,7 +24646,7 @@ ul.tax-list .tax-wrap {
 .payment {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border: 3px solid #910035;
-  padding: 15px;
+  padding: 25px;
   text-align: center;
   display: -ms-flexbox;
   display: flex;
@@ -24656,6 +24656,35 @@ ul.tax-list .tax-wrap {
       justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .payment {
+    padding: 15px;
+  }
+}
+
+.payment .payment_interior {
+  width: 100%;
+}
+
+.lead-banner h3 {
+  margin-bottom: 0;
+}
+
+.lead-banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .lead-banner {
+    grid-column: 2/4;
+  }
+}
+
 .payment h5 {
   font-weight: 300;
   text-transform: uppercase;
@@ -24663,6 +24692,29 @@ ul.tax-list .tax-wrap {
   border-top: 4px solid #052C47;
   border-bottom: 1px solid #052C47;
   margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.payment table {
+  border-collapse: collapse;
+}
+
+.payment td {
+  border-bottom: 1px solid #052C47;
+}
+
+.payment td {
+  font-family: "Lato", sans-serif;
+  color: #052C47;
+}
+
+.payment td:nth-of-type(odd) {
+  text-align: left;
+}
+
+.payment td:nth-of-type(even) {
+  text-align: right;
 }
 
 .payment h3 {

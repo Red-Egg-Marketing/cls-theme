@@ -4,24 +4,76 @@
 		"selected_items":
 		[
 			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
 				"cons",
 				"console"
+			],
+			[
+				"p",
+				"pow"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"inpu",
+				"input"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"onS",
+				"onSubmit"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"for",
+				"form_id"
 			],
 			[
 				"re",
 				"resources-grid"
 			],
 			[
-				"for",
-				"form-wrap"
-			],
-			[
 				"pa",
 				"padding-left"
-			],
-			[
-				"con",
-				"console"
 			],
 			[
 				"prin",
@@ -88,14 +140,6 @@
 				"querySelector"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
-				"te",
-				"text-transform"
-			],
-			[
 				"fon",
 				"font-body"
 			],
@@ -116,10 +160,6 @@
 				"previewElements"
 			],
 			[
-				"v",
-				"vehicle"
-			],
-			[
 				"Vhe",
 				"VehicleSelector"
 			],
@@ -132,20 +172,12 @@
 				"onclick"
 			],
 			[
-				"add",
-				"addEventListener"
-			],
-			[
 				"lig",
 				"lighter-blue"
 			],
 			[
 				"tr",
 				"translateY"
-			],
-			[
-				"ma",
-				"max-height"
 			],
 			[
 				"dark",
@@ -174,10 +206,6 @@
 			[
 				"print",
 				"print_r()"
-			],
-			[
-				"mar",
-				"margin-bottom"
 			],
 			[
 				"text-",
@@ -254,10 +282,6 @@
 			[
 				"get_templ",
 				"get_template_directory"
-			],
-			[
-				"tex",
-				"text-indent"
 			],
 			[
 				"marg",
@@ -346,10 +370,6 @@
 			[
 				"Sear",
 				"searchFilter"
-			],
-			[
-				"p",
-				"padding-bottom"
 			],
 			[
 				"l",
@@ -494,707 +514,11 @@
 			[
 				"border-b",
 				"border-bottom-color"
-			],
-			[
-				"padi",
-				"padding-bottom"
-			],
-			[
-				"margi",
-				"margin-right"
-			],
-			[
-				"mx",
-				"max-height"
-			],
-			[
-				"temp",
-				"templateLock"
-			],
-			[
-				"H",
-				"HTML"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "inc/form-filters.php",
-			"settings":
-			{
-				"buffer_size": 4236,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					3,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAI4QAAAAAAAAkRAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAChEAAAAAAAAKEQAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					5,
-					1,
-					"toggle_comment",
-					{
-						"block": false
-					},
-					"AQAAAMsQAAAAAAAAzhAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADhEAAAAAAAAOEQAAAAAAAAAAAAAAAAZkA"
-				],
-				[
-					10,
-					3,
-					"left_delete",
-					null,
-					"AwAAAI4QAAAAAAAAjhAAAAAAAAB4AAAALy8gYWRkX2ZpbHRlciggJ2dmb3JtX3N1Ym1pdF9idXR0b25fMTEnLCAnX19yZXR1cm5fZmFsc2UnICk7Ci8vIGFkZF9maWx0ZXIoICdnZm9ybV9zdWJtaXRfYnV0dG9uXzgnLCAnX19yZXR1cm5fZmFsc2UnICk7jRAAAAAAAACNEAAAAAAAAAEAAAAKjBAAAAAAAACMEAAAAAAAAAEAAAAK",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAGEQAAAAAAAI4QAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					21,
-					1,
-					"insert",
-					{
-						"characters": "\n\n\n"
-					},
-					"AwAAAIwQAAAAAAAAjRAAAAAAAAAAAAAAjRAAAAAAAACOEAAAAAAAAAAAAACOEAAAAAAAAI8QAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACMEAAAAAAAAIwQAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					22,
-					1,
-					"paste",
-					null,
-					"AQAAAI8QAAAAAAAAhBIAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACPEAAAAAAAAI8QAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					30,
-					1,
-					"insert",
-					{
-						"characters": "cls_"
-					},
-					"CAAAANMQAAAAAAAA1BAAAAAAAAAAAAAAsxAAAAAAAAC0EAAAAAAAAAAAAADVEAAAAAAAANYQAAAAAAAAAAAAALQQAAAAAAAAtRAAAAAAAAAAAAAA1xAAAAAAAADYEAAAAAAAAAAAAAC1EAAAAAAAALYQAAAAAAAAAAAAANkQAAAAAAAA2hAAAAAAAAAAAAAAthAAAAAAAAC3EAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAIAAACzEAAAAAAAALMQAAAAAAAAAAAAAAAA8L/TEAAAAAAAANMQAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					35,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AgAAAPoQAAAAAAAA+xAAAAAAAAAAAAAA+xAAAAAAAAD/EAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD6EAAAAAAAAPoQAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					53,
-					3,
-					"left_delete",
-					null,
-					"AwAAAI8QAAAAAAAAjxAAAAAAAAACAgAAYWRkX2ZpbHRlciggJ2dmb3JtX3N1Ym1pdF9idXR0b24nLCAnY2xzX2FkZF9vbmNsaWNrJywgMTAsIDIgKTsKZnVuY3Rpb24gY2xzX2FkZF9vbmNsaWNrKCAkYnV0dG9uLCAkZm9ybSApIHsKICAgIAogICAgJGRvbSA9IG5ldyBET01Eb2N1bWVudCgpOwogICAgJGRvbS0+bG9hZEhUTUwoICc8P3htbCBlbmNvZGluZz0idXRmLTgiID8+JyAuICRidXR0b24gKTsKICAgICRpbnB1dCA9ICRkb20tPmdldEVsZW1lbnRzQnlUYWdOYW1lKCAnaW5wdXQnICktPml0ZW0oMCk7CiAgICAkb25jbGljayA9ICRpbnB1dC0+Z2V0QXR0cmlidXRlKCAnb25jbGljaycgKTsKICAgICRvbmNsaWNrIC49ICIgYWRkQWRkaXRpb25hbEFjdGlvbignQWRkaXRpb25hbCBBY3Rpb24nKTsiOyAvLyBIZXJlJ3MgdGhlIEpTIGZ1bmN0aW9uIHdlJ3JlIGNhbGxpbmcgb24gY2xpY2suCiAgICAkaW5wdXQtPnNldEF0dHJpYnV0ZSggJ29uY2xpY2snLCAkb25jbGljayApOwogICAgcmV0dXJuICRkb20tPnNhdmVIdG1sKCAkaW5wdXQgKTsKfY4QAAAAAAAAjhAAAAAAAAABAAAACo0QAAAAAAAAjRAAAAAAAAABAAAACg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACREgAAAAAAAI8QAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					54,
-					1,
-					"left_delete",
-					null,
-					"AQAAAIwQAAAAAAAAjBAAAAAAAAABAAAACg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACNEAAAAAAAAI0QAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		},
-		{
-			"file": "support/blocks/price-estimator/frontend.js",
-			"settings":
-			{
-				"buffer_size": 2718,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					3,
-					1,
-					"cut",
-					null,
-					"AQAAABUDAAAAAAAAFQMAAAAAAAAdAAAAICAJCQljb25zb2xlLmxvZygnd2hhdCB1cCcpOwo",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAxAwAAAAAAADEDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					7,
-					1,
-					"insert",
-					{
-						"characters": "\n\n"
-					},
-					"BQAAABkDAAAAAAAAGgMAAAAAAAAAAAAAGgMAAAAAAAAeAwAAAAAAAAAAAAAeAwAAAAAAAB8DAAAAAAAAAAAAAB8DAAAAAAAAIwMAAAAAAAAAAAAAGgMAAAAAAAAaAwAAAAAAAAQAAAAgIAkJ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAZAwAAAAAAABkDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					9,
-					1,
-					"reindent",
-					null,
-					"AQAAABoDAAAAAAAAHwMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAaAwAAAAAAABoDAAAAAAAAAAAAAAAAUEA"
-				],
-				[
-					10,
-					1,
-					"insert",
-					{
-						"characters": "cons"
-					},
-					"BAAAAB8DAAAAAAAAIAMAAAAAAAAAAAAAIAMAAAAAAAAhAwAAAAAAAAAAAAAhAwAAAAAAACIDAAAAAAAAAAAAACIDAAAAAAAAIwMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAfAwAAAAAAAB8DAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					12,
-					1,
-					"insert_completion",
-					{
-						"completion": "console",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "console"
-					},
-					"AgAAAB8DAAAAAAAAHwMAAAAAAAAEAAAAY29ucx8DAAAAAAAAJgMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAjAwAAAAAAACMDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					13,
-					1,
-					"insert",
-					{
-						"characters": ".o"
-					},
-					"AgAAACYDAAAAAAAAJwMAAAAAAAAAAAAAJwMAAAAAAAAoAwAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAmAwAAAAAAACYDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					14,
-					1,
-					"left_delete",
-					null,
-					"AQAAACcDAAAAAAAAJwMAAAAAAAABAAAAbw",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAoAwAAAAAAACgDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					15,
-					1,
-					"insert",
-					{
-						"characters": "log"
-					},
-					"AwAAACcDAAAAAAAAKAMAAAAAAAAAAAAAKAMAAAAAAAApAwAAAAAAAAAAAAApAwAAAAAAACoDAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAnAwAAAAAAACcDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					16,
-					1,
-					"insert_snippet",
-					{
-						"contents": "($0)"
-					},
-					"AQAAACoDAAAAAAAALAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAqAwAAAAAAACoDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					19,
-					1,
-					"insert",
-					{
-						"characters": "valu"
-					},
-					"BAAAAA4DAAAAAAAADwMAAAAAAAAAAAAADwMAAAAAAAAQAwAAAAAAAAAAAAAQAwAAAAAAABEDAAAAAAAAAAAAABEDAAAAAAAAEgMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAOAwAAAAAAAA4DAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					20,
-					4,
-					"left_delete",
-					null,
-					"BAAAABEDAAAAAAAAEQMAAAAAAAABAAAAdRADAAAAAAAAEAMAAAAAAAABAAAAbA8DAAAAAAAADwMAAAAAAAABAAAAYQ4DAAAAAAAADgMAAAAAAAABAAAAdg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAASAwAAAAAAABIDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					24,
-					1,
-					"insert",
-					{
-						"characters": ";"
-					},
-					"AQAAACwDAAAAAAAALQMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAwAAAAAAACwDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					26,
-					1,
-					"insert_snippet",
-					{
-						"contents": "'$0'"
-					},
-					"AQAAACsDAAAAAAAALQMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArAwAAAAAAACsDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					27,
-					1,
-					"insert",
-					{
-						"characters": "okay"
-					},
-					"BAAAACwDAAAAAAAALQMAAAAAAAAAAAAALQMAAAAAAAAuAwAAAAAAAAAAAAAuAwAAAAAAAC8DAAAAAAAAAAAAAC8DAAAAAAAAMAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAwAAAAAAACwDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					29,
-					1,
-					"left_delete",
-					null,
-					"AQAAABgDAAAAAAAAGAMAAAAAAAABAAAACQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAZAwAAAAAAABkDAAAAAAAAAAAAAAAAbUA"
-				],
-				[
-					36,
-					1,
-					"insert",
-					{
-						"characters": "\n\nconst"
-					},
-					"CgAAADgDAAAAAAAAOQMAAAAAAAAAAAAAOQMAAAAAAAA9AwAAAAAAAAAAAAA9AwAAAAAAAD4DAAAAAAAAAAAAAD4DAAAAAAAAQgMAAAAAAAAAAAAAOQMAAAAAAAA5AwAAAAAAAAQAAAAgIAkJPgMAAAAAAAA/AwAAAAAAAAAAAAA/AwAAAAAAAEADAAAAAAAAAAAAAEADAAAAAAAAQQMAAAAAAAAAAAAAQQMAAAAAAABCAwAAAAAAAAAAAABCAwAAAAAAAEMDAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA4AwAAAAAAADgDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					37,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAEMDAAAAAAAARAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABDAwAAAAAAAEMDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					38,
-					1,
-					"paste",
-					null,
-					"AQAAAEQDAAAAAAAAVwMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABEAwAAAAAAAEQDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					39,
-					1,
-					"insert_snippet",
-					{
-						"contents": "($0)"
-					},
-					"AQAAAFcDAAAAAAAAWQMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABXAwAAAAAAAFcDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					41,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAFkDAAAAAAAAWgMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABZAwAAAAAAAFkDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					42,
-					3,
-					"left_delete",
-					null,
-					"AwAAAFkDAAAAAAAAWQMAAAAAAAABAAAAIFgDAAAAAAAAWAMAAAAAAAABAAAAKVcDAAAAAAAAVwMAAAAAAAABAAAAKA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABaAwAAAAAAAFoDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					43,
-					1,
-					"insert",
-					{
-						"characters": " ="
-					},
-					"AgAAAFcDAAAAAAAAWAMAAAAAAAAAAAAAWAMAAAAAAABZAwAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABXAwAAAAAAAFcDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					44,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAFkDAAAAAAAAWgMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABZAwAAAAAAAFkDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					45,
-					1,
-					"insert_snippet",
-					{
-						"contents": "($0)"
-					},
-					"AQAAAFoDAAAAAAAAXAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABaAwAAAAAAAFoDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					47,
-					1,
-					"insert",
-					{
-						"characters": " =>"
-					},
-					"AwAAAFwDAAAAAAAAXQMAAAAAAAAAAAAAXQMAAAAAAABeAwAAAAAAAAAAAABeAwAAAAAAAF8DAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABcAwAAAAAAAFwDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					48,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAF8DAAAAAAAAYAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABfAwAAAAAAAF8DAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					49,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAAGADAAAAAAAAYgMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABgAwAAAAAAAGADAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					50,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
-					},
-					"BgAAAGEDAAAAAAAAYgMAAAAAAAAAAAAAYgMAAAAAAABmAwAAAAAAAAAAAABmAwAAAAAAAGcDAAAAAAAAAAAAAGcDAAAAAAAAawMAAAAAAAAAAAAAYgMAAAAAAABiAwAAAAAAAAQAAAAgIAkJYgMAAAAAAABnAwAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABhAwAAAAAAAGEDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					51,
-					1,
-					"insert",
-					{
-						"characters": "cons"
-					},
-					"BAAAAGcDAAAAAAAAaAMAAAAAAAAAAAAAaAMAAAAAAABpAwAAAAAAAAAAAABpAwAAAAAAAGoDAAAAAAAAAAAAAGoDAAAAAAAAawMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABnAwAAAAAAAGcDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					55,
-					1,
-					"insert_completion",
-					{
-						"completion": "console",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "console"
-					},
-					"AgAAAGcDAAAAAAAAZwMAAAAAAAAEAAAAY29uc2cDAAAAAAAAbgMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABrAwAAAAAAAGsDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					56,
-					1,
-					"insert",
-					{
-						"characters": ".lopg"
-					},
-					"BQAAAG4DAAAAAAAAbwMAAAAAAAAAAAAAbwMAAAAAAABwAwAAAAAAAAAAAABwAwAAAAAAAHEDAAAAAAAAAAAAAHEDAAAAAAAAcgMAAAAAAAAAAAAAcgMAAAAAAABzAwAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABuAwAAAAAAAG4DAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					57,
-					1,
-					"insert_snippet",
-					{
-						"contents": "($0)"
-					},
-					"AQAAAHMDAAAAAAAAdQMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzAwAAAAAAAHMDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					58,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Delete Left Right.sublime-macro"
-					},
-					"AgAAAHMDAAAAAAAAcwMAAAAAAAABAAAAKHMDAAAAAAAAcwMAAAAAAAABAAAAKQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB0AwAAAAAAAHQDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					59,
-					1,
-					"left_delete",
-					null,
-					"AQAAAHIDAAAAAAAAcgMAAAAAAAABAAAAZw",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzAwAAAAAAAHMDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					60,
-					1,
-					"insert",
-					{
-						"characters": "g"
-					},
-					"AQAAAHIDAAAAAAAAcwMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAByAwAAAAAAAHIDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					61,
-					2,
-					"left_delete",
-					null,
-					"AgAAAHIDAAAAAAAAcgMAAAAAAAABAAAAZ3EDAAAAAAAAcQMAAAAAAAABAAAAcA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzAwAAAAAAAHMDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					62,
-					1,
-					"insert",
-					{
-						"characters": "g"
-					},
-					"AQAAAHEDAAAAAAAAcgMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABxAwAAAAAAAHEDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					63,
-					1,
-					"insert_snippet",
-					{
-						"contents": "($0)"
-					},
-					"AQAAAHIDAAAAAAAAdAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAByAwAAAAAAAHIDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					64,
-					1,
-					"insert_snippet",
-					{
-						"contents": "'$0'"
-					},
-					"AQAAAHMDAAAAAAAAdQMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzAwAAAAAAAHMDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					65,
-					1,
-					"insert",
-					{
-						"characters": "what"
-					},
-					"BAAAAHQDAAAAAAAAdQMAAAAAAAAAAAAAdQMAAAAAAAB2AwAAAAAAAAAAAAB2AwAAAAAAAHcDAAAAAAAAAAAAAHcDAAAAAAAAeAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB0AwAAAAAAAHQDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					66,
-					1,
-					"insert",
-					{
-						"characters": " is"
-					},
-					"AwAAAHgDAAAAAAAAeQMAAAAAAAAAAAAAeQMAAAAAAAB6AwAAAAAAAAAAAAB6AwAAAAAAAHsDAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB4AwAAAAAAAHgDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					67,
-					1,
-					"insert",
-					{
-						"characters": " upp"
-					},
-					"BAAAAHsDAAAAAAAAfAMAAAAAAAAAAAAAfAMAAAAAAAB9AwAAAAAAAAAAAAB9AwAAAAAAAH4DAAAAAAAAAAAAAH4DAAAAAAAAfwMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB7AwAAAAAAAHsDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					69,
-					1,
-					"insert",
-					{
-						"characters": ";"
-					},
-					"AQAAAIEDAAAAAAAAggMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACBAwAAAAAAAIEDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					72,
-					1,
-					"insert",
-					{
-						"characters": "evnt"
-					},
-					"BAAAAFsDAAAAAAAAXAMAAAAAAAAAAAAAXAMAAAAAAABdAwAAAAAAAAAAAABdAwAAAAAAAF4DAAAAAAAAAAAAAF4DAAAAAAAAXwMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABbAwAAAAAAAFsDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					73,
-					3,
-					"left_delete",
-					null,
-					"AwAAAF4DAAAAAAAAXgMAAAAAAAABAAAAdF0DAAAAAAAAXQMAAAAAAAABAAAAblwDAAAAAAAAXAMAAAAAAAABAAAAdg",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABfAwAAAAAAAF8DAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					74,
-					1,
-					"insert",
-					{
-						"characters": "ent"
-					},
-					"AwAAAFwDAAAAAAAAXQMAAAAAAAAAAAAAXQMAAAAAAABeAwAAAAAAAAAAAABeAwAAAAAAAF8DAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABcAwAAAAAAAFwDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					75,
-					3,
-					"left_delete",
-					null,
-					"AwAAAF4DAAAAAAAAXgMAAAAAAAABAAAAdF0DAAAAAAAAXQMAAAAAAAABAAAAblwDAAAAAAAAXAMAAAAAAAABAAAAZQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABfAwAAAAAAAF8DAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					76,
-					1,
-					"insert",
-					{
-						"characters": "vent"
-					},
-					"BAAAAFwDAAAAAAAAXQMAAAAAAAAAAAAAXQMAAAAAAABeAwAAAAAAAAAAAABeAwAAAAAAAF8DAAAAAAAAAAAAAF8DAAAAAAAAYAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABcAwAAAAAAAFwDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					81,
-					1,
-					"insert",
-					{
-						"characters": "\ncons"
-					},
-					"BgAAAIcDAAAAAAAAiAMAAAAAAAAAAAAAiAMAAAAAAACNAwAAAAAAAAAAAACNAwAAAAAAAI4DAAAAAAAAAAAAAI4DAAAAAAAAjwMAAAAAAAAAAAAAjwMAAAAAAACQAwAAAAAAAAAAAACQAwAAAAAAAJEDAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACHAwAAAAAAAIcDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					82,
-					1,
-					"insert_completion",
-					{
-						"completion": "console",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "console"
-					},
-					"AgAAAI0DAAAAAAAAjQMAAAAAAAAEAAAAY29uc40DAAAAAAAAlAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACRAwAAAAAAAJEDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					83,
-					1,
-					"insert",
-					{
-						"characters": ".lpog"
-					},
-					"BQAAAJQDAAAAAAAAlQMAAAAAAAAAAAAAlQMAAAAAAACWAwAAAAAAAAAAAACWAwAAAAAAAJcDAAAAAAAAAAAAAJcDAAAAAAAAmAMAAAAAAAAAAAAAmAMAAAAAAACZAwAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACUAwAAAAAAAJQDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					84,
-					3,
-					"left_delete",
-					null,
-					"AwAAAJgDAAAAAAAAmAMAAAAAAAABAAAAZ5cDAAAAAAAAlwMAAAAAAAABAAAAb5YDAAAAAAAAlgMAAAAAAAABAAAAcA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACZAwAAAAAAAJkDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					85,
-					1,
-					"insert",
-					{
-						"characters": "g"
-					},
-					"AQAAAJYDAAAAAAAAlwMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACWAwAAAAAAAJYDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					86,
-					10,
-					"left_delete",
-					null,
-					"CgAAAJYDAAAAAAAAlgMAAAAAAAABAAAAZ5UDAAAAAAAAlQMAAAAAAAABAAAAbJQDAAAAAAAAlAMAAAAAAAABAAAALpMDAAAAAAAAkwMAAAAAAAABAAAAZZIDAAAAAAAAkgMAAAAAAAABAAAAbJEDAAAAAAAAkQMAAAAAAAABAAAAb5ADAAAAAAAAkAMAAAAAAAABAAAAc48DAAAAAAAAjwMAAAAAAAABAAAAbo4DAAAAAAAAjgMAAAAAAAABAAAAb40DAAAAAAAAjQMAAAAAAAABAAAAYw",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACXAwAAAAAAAJcDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					87,
-					1,
-					"insert",
-					{
-						"characters": "event.pre"
-					},
-					"CQAAAI0DAAAAAAAAjgMAAAAAAAAAAAAAjgMAAAAAAACPAwAAAAAAAAAAAACPAwAAAAAAAJADAAAAAAAAAAAAAJADAAAAAAAAkQMAAAAAAAAAAAAAkQMAAAAAAACSAwAAAAAAAAAAAACSAwAAAAAAAJMDAAAAAAAAAAAAAJMDAAAAAAAAlAMAAAAAAAAAAAAAlAMAAAAAAACVAwAAAAAAAAAAAACVAwAAAAAAAJYDAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACNAwAAAAAAAI0DAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					88,
-					1,
-					"insert_completion",
-					{
-						"completion": "preventDefault",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "preventDefault"
-					},
-					"AgAAAJMDAAAAAAAAkwMAAAAAAAADAAAAcHJlkwMAAAAAAAChAwAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACWAwAAAAAAAJYDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					89,
-					1,
-					"insert_snippet",
-					{
-						"contents": "($0)"
-					},
-					"AQAAAKEDAAAAAAAAowMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAChAwAAAAAAAKEDAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					91,
-					1,
-					"insert",
-					{
-						"characters": ";"
-					},
-					"AQAAAKMDAAAAAAAApAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACjAwAAAAAAAKMDAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -1237,48 +561,54 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator"
 	],
 	"file_history":
 	[
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/gform.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/save.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/frontend.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/frontend.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/_style-block.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/save.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/frontend.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_forms.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-header/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/save.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/gform.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_base.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/style.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/editor.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/numbered-list/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/save.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/frontend.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact-forms/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-header/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-header/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/content-block/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/grid-image-text/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/frontend.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/front-end.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/scrolling.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/forms.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-walker.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/payment.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_single.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/header-intro/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/shortcode-section/_style-block.scss",
@@ -1288,7 +618,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/grid-image-text/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/section/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_forms.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-config.php",
@@ -1330,7 +659,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/grid-image-text/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/webfonts/fa-brands-400.ttf",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_font-awesome.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/libraries/fancybox.css",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_bios.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/columns-cta/edit.js",
@@ -1362,13 +690,11 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table-row/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table-compare/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/frontend.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/customizer.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-header.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/menu-functions.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/gravityforms/js/components/form_editor/conditional_flyout/views/accordion_header.html",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/header.php"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/gravityforms/js/components/form_editor/conditional_flyout/views/accordion_header.html"
 	],
 	"find":
 	{
@@ -1387,6 +713,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"payment",
+			"googleapis",
+			"true",
+			"false",
+			"true",
+			"s",
+			"false",
+			"setLoading",
+			".loading {",
+			".loading",
+			"true",
+			"setLoading",
+			"loading",
+			"setLoading",
+			";\n",
+			".payment",
+			"bottom",
+			"items",
+			"price",
+			"span",
+			"term",
+			"apr",
+			"price_max",
+			"price",
+			"key",
+			"input",
+			"checkVehicles",
+			"inputs",
+			"data",
+			"calculateSavings",
+			"PriceCalculator",
+			"paymentCalculator",
+			"calculateSavings",
+			"label",
+			"select",
+			"price",
+			"Price",
+			"price",
+			"r",
+			"down",
+			"price",
+			"down_payment",
+			"target",
+			"console.log",
 			"addAdditionalAction",
 			"add_onclick",
 			"gravityforms",
@@ -1470,51 +840,7 @@
 			"event",
 			"currentTarget",
 			"value",
-			"target",
-			"event",
-			"value",
-			"target",
-			"bottom",
-			"left",
-			"\"",
-			"tabIndex",
-			"cadrs",
-			"parent",
-			"thumbnail",
-			"data",
-			"change",
-			"keyup",
-			"change",
-			"input",
-			"consultant",
-			"select",
-			"cls_add_class_vehicle_selector",
-			"form",
-			".side-table .icon-icon svg",
-			".table-row .table-cell",
-			".table-row .table-cell {",
-			".table-row .table-cell",
-			".side-table .table-row .table-cell",
-			".side-table .table-row .table-cell-icon",
-			".contact-section .header-title",
-			"p.contact-item",
-			".table-cell-icon p.contact-item",
-			"div.wpex.horizontal-timeline:not(.no-arr-top) .hor-container",
-			".cta .block-content {",
-			".cta .block-content",
-			".icon-icon.navy:hover",
-			"white",
-			".wprevpro_badge img.wppro_badge3_IMG_4",
-			"198,",
-			"true",
-			":hover",
-			".entry-content",
-			".grid-text-cards .content-column",
-			"@media screen and (min-width: $form-width) {",
-			"$form-width",
-			"placeholder",
-			"$form-width",
-			".contact-section .content-column"
+			"target"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1541,75 +867,11 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "inc/form-filters.php",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4236,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4236,
-								4236
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 873.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		},
 		{
 			"sheets":
 			[
-				{
-					"buffer": 1,
-					"file": "support/blocks/price-estimator/frontend.js",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2718,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								792,
-								792
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1641,7 +903,7 @@
 		"cols":
 		[
 			0.0,
-			0.464857021518,
+			0.481169667533,
 			1.0
 		],
 		"rows":
@@ -1669,12 +931,44 @@
 		"selected_items":
 		[
 			[
-				"gform.",
+				"function",
+				"app/public/wp-content/themes/cls-theme/functions.php"
+			],
+			[
+				"_form",
+				"app/public/wp-content/themes/cls-theme/support/scss/_forms.scss"
+			],
+			[
+				"_v",
+				"app/public/wp-content/themes/cls-theme/support/scss/_variables.scss"
+			],
+			[
+				"_var",
+				"app/public/wp-content/themes/cls-theme/support/scss/_variables.scss"
+			],
+			[
+				"gform",
 				"app/public/wp-content/themes/cls-theme/support/js-compile/gform.js"
 			],
 			[
 				"form-fil",
 				"app/public/wp-content/themes/cls-theme/inc/form-filters.php"
+			],
+			[
+				"_bas",
+				"app/public/wp-content/themes/cls-theme/support/scss/_base.scss"
+			],
+			[
+				"_blo",
+				"app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss"
+			],
+			[
+				"_fo",
+				"app/public/wp-content/themes/cls-theme/support/scss/_forms.scss"
+			],
+			[
+				"gform.",
+				"app/public/wp-content/themes/cls-theme/support/js-compile/gform.js"
 			],
 			[
 				"custom-en",
@@ -1683,10 +977,6 @@
 			[
 				"form",
 				"app/public/wp-content/themes/cls-theme/inc/form-filters.php"
-			],
-			[
-				"_blo",
-				"app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss"
 			],
 			[
 				"impor",
@@ -1699,10 +989,6 @@
 			[
 				"front",
 				"app/public/wp-content/themes/cls-theme/support/front-end.js"
-			],
-			[
-				"_var",
-				"app/public/wp-content/themes/cls-theme/support/scss/_variables.scss"
 			],
 			[
 				"_sing",
@@ -1739,14 +1025,6 @@
 			[
 				"page",
 				"app/public/wp-content/themes/cls-theme/page.php"
-			],
-			[
-				"_v",
-				"app/public/wp-content/themes/cls-theme/support/scss/_variables.scss"
-			],
-			[
-				"_form",
-				"app/public/wp-content/themes/cls-theme/support/scss/_forms.scss"
 			],
 			[
 				"media.php",
@@ -1797,10 +1075,6 @@
 				"app/public/wp-content/themes/cls-theme/support/scss/_footer.scss"
 			],
 			[
-				"_fo",
-				"app/public/wp-content/themes/cls-theme/support/scss/_forms.scss"
-			],
-			[
 				"content-",
 				"app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php"
 			],
@@ -1823,10 +1097,6 @@
 			[
 				"functions",
 				"app/public/wp-content/themes/cls-theme/functions.php"
-			],
-			[
-				"function",
-				"app/public/wp-includes/functions.php"
 			],
 			[
 				"func",
@@ -2129,10 +1399,6 @@
 				"app/public/wp-content/themes/red-egg-2022/img/nav-open-hover.svg"
 			],
 			[
-				"_bas",
-				"app/public/wp-content/themes/red-egg-2022/support/scss/_base.scss"
-			],
-			[
 				"_fonts",
 				"app/public/wp-content/themes/red-egg-2022/support/scss/_fonts.scss"
 			],
@@ -2175,10 +1441,6 @@
 			[
 				"block",
 				"app/public/wp-includes/blocks.php"
-			],
-			[
-				"block-bas",
-				"app/public/wp-content/themes/red-egg-2022/support/scss/_block-base.scss"
 			]
 		],
 		"width": 0.0
@@ -2191,7 +1453,7 @@
 		[
 			[
 				"",
-				"~/Local Sites/tax-tamer/tax-tamer.sublime-project"
+				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
 			],
 			[
 				"tax",
@@ -2465,7 +1727,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 333.0,
+	"side_bar_width": 370.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

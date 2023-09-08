@@ -14,7 +14,10 @@ const SaveVehiclesPayment = () => {
   		const [loading, setLoading] = useState(false);
   		const [data, setData] = useState({});
   		const [payment, setPayment] = useState(false);
-
+  		const [totalPrice, setPrice] = useState(false);
+  		const [totalMonths, setMonths] = useState(false);
+  		const [totalAPR, setAPR] = useState(false);
+  		const [down, setDown] = useState(false);
 
   		const sendAPIrequest = (data) => {
   			setLoading(true);
@@ -61,13 +64,20 @@ const SaveVehiclesPayment = () => {
   			let price = data['price_max'];
   			let down = data['down'];
   			let apr = data['apr'];
+  			let origApr = apr;
   			apr = (apr/100)/12;
   			let term = data['term'];
   			// A=P*(r(1+r)^{n})/((1+r)^{n}-1)
   			let payment = (price - down) * ((apr * Math.pow(1 + apr, term)) / (Math.pow(1 + apr, term) - 1));
   			payment = Math.round(payment, 2);
-  			payment = new Intl.NumberFormat('en-US').format(payment)
+  			payment = new Intl.NumberFormat('en-US').format(payment);
+  			price = new Intl.NumberFormat('en-US').format(price);
+  			down = new Intl.NumberFormat('en-US').format(down);
   			setPayment(payment);
+  			setPrice(price);
+  			setMonths(term);
+  			setAPR(origApr);
+  			setDown(down);
   			sendAPIrequest(data);
   			event.preventDefault();
   		}
@@ -109,8 +119,29 @@ const SaveVehiclesPayment = () => {
 								<div className="payment_interior">
 									<h5>Estimated Payment</h5>
 									<h3>${ payment }/<span>mo</span><sup>*</sup></h3>
+									<table>
+										<tr>
+											<td>Total Price</td>
+											<td>${ totalPrice }</td>
+										</tr>
+										<tr>
+											<td>Down payment</td>
+											<td>${ down }</td>
+										</tr>
+										<tr>
+											<td>APR</td>
+											<td>{ totalAPR }%</td>
+										</tr>
+										<tr>
+											<td>Term</td>
+											<td>{ totalMonths } Months</td>
+										</tr>
+									</table>
 									<p className="small">*These calculations are for reference purposes only.</p>
 								</div>
+							</div>
+							<div className="lead-banner">
+								<h3>The following vehicles match your budget criteria</h3>
 							</div>
 						</Fragment>
 					)}
