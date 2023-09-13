@@ -9416,9 +9416,14 @@ ul.tax-list .tax-wrap {
   color: white;
 }
 
+.payment .small-print {
+  margin-top: 15px;
+}
+
 @media screen and (min-width: 768px) {
   .payment .small-print {
     grid-column: 1/4;
+    margin-top: 20px;
   }
 }
 
@@ -9426,6 +9431,12 @@ ul.tax-list .tax-wrap {
   .payment_table {
     grid-column: 2/4;
   }
+}
+
+.payment_table table {
+  margin-bottom: 0;
+  border-top: 4px solid #052C47;
+  border-bottom: 4px solid #052C47;
 }
 
 .lead-banner {
@@ -9506,7 +9517,7 @@ ul.tax-list .tax-wrap {
 .payment p.small {
   font-size: 14px;
   line-height: 18px;
-  text-align: left;
+  text-align: right;
   font-style: italic;
   margin-top: 0;
   margin-bottom: 0;
