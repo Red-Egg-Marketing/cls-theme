@@ -26,24 +26,46 @@
 	align-items: center;
 	justify-content: center;
 	@media screen and (min-width: $small-width) {
-		padding: 15px;
+		padding: 35px;
+		grid-column: 1/4;
 	}
 }
 
 .payment .payment_interior {
 	width: 100%;
+	@media screen and (min-width: $small-width) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+    	grid-column-gap: 20px;
+    	grid-row-gap: 0;
+	}
 }
 
 .lead-banner h3 {
-	margin-bottom: 0;
+	text-align: center;
+	color: white;
+}
+
+.payment .small-print {
+	@media screen and (min-width: $small-width) { 
+		grid-column: 1/4;
+	}
+}
+
+.payment_table {
+	@media screen and (min-width: $small-width) { 
+		grid-column: 2/4;
+	}
 }
 
 .lead-banner {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
+	justify-content: center;
+	background: $dark-blue;
 	@media screen and (min-width: $small-width) {
-		grid-column: 2/4;
+		grid-column: 1/4;
 	}
 }
 
@@ -85,6 +107,7 @@
 	line-height: 45px;
 	border-bottom: 4px solid $dark-blue;
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .payment h3 span {
@@ -100,6 +123,8 @@
 .payment p.small {
 	font-size: 14px;
 	line-height: 18px;
+	text-align: left;
 	font-style: italic;
+	margin-top: 0;
 	margin-bottom: 0;
 }

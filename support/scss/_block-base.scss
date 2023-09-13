@@ -229,6 +229,34 @@ h4 {
 	position: relative;
 }
 
+.resource-card .price-cont span {
+	color: $body-color;
+	font-family: $font-body;
+}
+
+.resource-card span.monthly-est {
+	text-transform: uppercase;
+	color: #ccc;
+	font-size: 11px;
+	line-height: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.resource-card .price-cont {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-top: 15px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 20px;
+	}
+}
+
+.price-cont .monthly-price {
+	text-align: right;
+}
+
 .resource-card .wp-button {
 	align-self: end;
 }

@@ -7,6 +7,7 @@ const SaveForm = ( { attributes }  ) => {
 	const blockProps = useBlockProps.save({
 			className: 'resources-wrap'
 	});
+
 	return ( 
 		<div { ...blockProps }>
 			<div className="resources-grid">
@@ -15,15 +16,34 @@ const SaveForm = ( { attributes }  ) => {
 					<form id="PriceCalculator">
 						<div className="form-row">
 							<label for="price_max">Price</label>
-							<input type="number" id="price" name="price_max" value="30000" />
+							<input 
+								type="number"
+								id="price"
+								name="price_max"
+								placeholder="$30,000"
+							/>
+
 						</div>
 						<div className="form-row">
 							<label for="down">Down Payment</label>
-							<input type="number" id="down" name="down" value="1000" />
+							<input 
+								type="number"
+								id="down"
+								name="down"
+								placeholder="$1,000"
+							/>
 						</div>
 						<div className="form-row">
-							<label for="apr">A.P.R. (estimated financing rate)</label>
-							<input type="number" id="apr" value="6.9" name="apr" min="0" max="100" step="0.01" />
+							<label for="apr">A.P.R (estimated financing rate)</label>
+							<input
+								type="number"
+								id="apr"
+								value="6.9"
+								name="apr"
+								min="0"
+								max="100"
+								step="0.01"
+							/>
 						</div>
 						<div className="form-row">
 							<label for="term">Term</label>

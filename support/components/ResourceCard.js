@@ -110,11 +110,28 @@ const ResourceCard = (props) => {
 ResourceCard.View = (props) => {
 	let buttonText = props.resourceType == 'Videos' ? 'Watch Video' : 'Read More';
 	let slideClass = props.resourceClass != null ? props.resourceClass : '';
+	let calculate = props.calculatePrice != null ? props.calculatePrice : false;
 	let typeClass= '';
+	let payment;
 	if (props.resourceType == 'Whitepaper') {
 		typeClass = 'whitepaper';
 	} else if(props.resourceType == 'Video') {
 		typeClass = 'video';
+	}
+
+	if (calculate == true) {
+		let price = props.resourcePrice;
+		price = price.replace(',', '');
+		price = price.replace('$', '');
+		let down = props.data['down'];
+		let apr = props.data['apr'];
+		apr = (apr/100)/12;
+		let term = props.data['term'];
+		payment = props.savingsFormula(price, down, apr, term);
+		payment = payment > 0 ? payment : 0;
+  		payment = Math.round(payment, 2);
+  		payment = new Intl.NumberFormat('en-US').format(payment);
+
 	}
 
 	return(
@@ -168,7 +185,20 @@ ResourceCard.View = (props) => {
 								}
 							/>
 						</div>
-						
+						{ calculate && (
+							<div className="bottom price-cont">
+								<RichText.Content
+									tagName="span"
+									className="monthly-est"
+									value={__("Est. Payment")}
+								/>
+								<RichText.Content
+									tagName="span"
+									className="monthly-price"
+									value={ '$' + payment + '/mo' }
+								/>
+							</div>
+						)}
 					</div>
 				</a>
 				</div>

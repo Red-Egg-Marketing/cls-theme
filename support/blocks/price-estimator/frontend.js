@@ -14,12 +14,14 @@ const SaveVehiclesPayment = () => {
   		const [loading, setLoading] = useState(false);
   		const [data, setData] = useState({});
   		const [payment, setPayment] = useState(false);
-  		const [totalPrice, setPrice] = useState(false);
+  		const [totalPrice, setPrice] = useState([]);
   		const [totalMonths, setMonths] = useState(false);
   		const [totalAPR, setAPR] = useState(false);
   		const [down, setDown] = useState(false);
+  		const [shit, setShit] = useState({});
 
   		const sendAPIrequest = (data) => {
+
   			setLoading(true);
 			wp.apiRequest({
         		url: apiUrl,
@@ -36,18 +38,31 @@ const SaveVehiclesPayment = () => {
     		}).catch( error => {
     			console.log(error);
     		});
+
 		}
 
   		const getValue = (event) => {
-  			let target = event.target;
-  			let id = target.id;
-  			let value = target.value;
 
+  			let target = event.target;
+  			let name = target.name;
+  			let id = target.id;  		
+  			let value = parseInt(target.value);
   			if (id == 'price') {
   				data['price_max'] = value;
+  				if (data['down'] > data['price_max']) {
+  					let tempDown = document.getElementById('down');
+  					tempDown.value = 0;
+  				}
+  				let replace = data['price_max'];
+  				// replace = parseFloat(replace).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g,'$1,');
+  				// target.value = replace;
   			}
   			if (id == 'down') {
+  				target.setAttribute('max', data['price_max']);
   				data['down'] = value;
+  				if (data['down'] > data['price_max']) {
+  					target.value = data['price_max'];
+  				}
   			}
   			if (id == 'apr') {
   				data['apr'] = value;
@@ -59,6 +74,11 @@ const SaveVehiclesPayment = () => {
 
   		}
 
+  		const savingsFormula = (price, down, apr, term) => {
+  			let payment = (price - down) * ((apr * Math.pow(1 + apr, term)) / (Math.pow(1 + apr, term) - 1));
+  			return payment;
+  		}
+
   		const calculateSavings = (event) => {
 
   			let price = data['price_max'];
@@ -68,7 +88,8 @@ const SaveVehiclesPayment = () => {
   			apr = (apr/100)/12;
   			let term = data['term'];
   			// A=P*(r(1+r)^{n})/((1+r)^{n}-1)
-  			let payment = (price - down) * ((apr * Math.pow(1 + apr, term)) / (Math.pow(1 + apr, term) - 1));
+  			let payment = savingsFormula(price, down, apr, term);
+  			payment = payment > 0 ? payment : 0;
   			payment = Math.round(payment, 2);
   			payment = new Intl.NumberFormat('en-US').format(payment);
   			price = new Intl.NumberFormat('en-US').format(price);
@@ -80,6 +101,7 @@ const SaveVehiclesPayment = () => {
   			setDown(down);
   			sendAPIrequest(data);
   			event.preventDefault();
+
   		}
 
 		React.useEffect( () => {
@@ -96,7 +118,12 @@ const SaveVehiclesPayment = () => {
 
 			if (resources === false) {
 				data['price_max'] = "30000";
+				data['down'] = "1000";
+				data['apr'] = "6.9";
+				data['term'] = "12";
 				setData(data);
+				calculateSavings(event);
+
     			wp.apiRequest({
         			url: apiUrl,
     			    method: 'POST',
@@ -113,35 +140,49 @@ const SaveVehiclesPayment = () => {
 		return (
 			<Fragment>
 				<div className="resources-grid">
+					{loading == false && resources == false && (
+						<Fragment>
+								<div className="loading">
+									<h2>...Loading</h2>
+								</div>
+						</Fragment>
+					)}
 					{ (payment && resources.length > 0 && loading == false) && (
 						<Fragment>
 							<div className="payment">
 								<div className="payment_interior">
-									<h5>Estimated Payment</h5>
-									<h3>${ payment }/<span>mo</span><sup>*</sup></h3>
-									<table>
-										<tr>
-											<td>Total Price</td>
-											<td>${ totalPrice }</td>
-										</tr>
-										<tr>
-											<td>Down payment</td>
-											<td>${ down }</td>
-										</tr>
-										<tr>
-											<td>APR</td>
-											<td>{ totalAPR }%</td>
-										</tr>
-										<tr>
-											<td>Term</td>
-											<td>{ totalMonths } Months</td>
-										</tr>
-									</table>
-									<p className="small">*These calculations are for reference purposes only.</p>
+									<div className="payment_main">
+										<h5>Estimated Payment</h5>
+										<h3>${ payment }/<span>mo</span><sup>*</sup></h3>
+									</div>
+									<div className="payment_table">
+										<table>
+											<tr>
+												<td>Total Price</td>
+												<td>${ totalPrice }</td>
+											</tr>
+											<tr>
+												<td>Down payment</td>
+												<td>${ down }</td>
+											</tr>
+											<tr>
+												<td>APR</td>
+												<td>{ totalAPR }%</td>
+											</tr>
+											<tr>
+												<td>Term</td>
+												<td>{ totalMonths } Months</td>
+											</tr>
+										</table>
+									</div>
+									<div className="small-print">
+										<p className="small">*These calculations are for reference purposes only.</p>
+									</div>
+
 								</div>
 							</div>
 							<div className="lead-banner">
-								<h3>The following vehicles match your budget criteria</h3>
+								<h3>The following vehicles are good matches</h3>
 							</div>
 						</Fragment>
 					)}
@@ -158,6 +199,9 @@ const SaveVehiclesPayment = () => {
 										resourcePrice={ resource.price }
 										resourceMiles={ resource.miles }
 										resourceYear={ resource.year }
+										data={ data }
+										calculatePrice={ true }
+										savingsFormula={ savingsFormula }
 									/>
 								</Fragment>
 							)

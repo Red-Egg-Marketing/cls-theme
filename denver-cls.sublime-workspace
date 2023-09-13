@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"cons",
+				"console"
+			],
+			[
+				"ta",
+				"target"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"in",
+				"includes"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"mon",
+				"moneyMask"
+			],
+			[
+				"onc",
+				"onChange"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"border-col",
+				"border-collapse"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
 				"ma",
 				"margin-top"
 			],
@@ -20,24 +68,12 @@
 				"text-transform"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"te",
 				"text-transform"
 			],
 			[
-				"cons",
-				"console"
-			],
-			[
 				"p",
 				"pow"
-			],
-			[
-				"con",
-				"console"
 			],
 			[
 				"v",
@@ -50,10 +86,6 @@
 			[
 				"add",
 				"addEventListener"
-			],
-			[
-				"get",
-				"getElementById"
 			],
 			[
 				"onS",
@@ -82,10 +114,6 @@
 			[
 				"text",
 				"text-transform"
-			],
-			[
-				"pad",
-				"padding-left"
 			],
 			[
 				"a",
@@ -196,10 +224,6 @@
 				"nextElementSibling"
 			],
 			[
-				"in",
-				"input"
-			],
-			[
 				"veh",
 				"vehicle-selector"
 			],
@@ -254,10 +278,6 @@
 			[
 				"em",
 				"email"
-			],
-			[
-				"ta",
-				"taxonomy"
 			],
 			[
 				"post",
@@ -380,10 +400,6 @@
 				"margin-top"
 			],
 			[
-				"m",
-				"margin-top"
-			],
-			[
 				"ar",
 				"margin-bottom"
 			],
@@ -460,10 +476,6 @@
 				"filterCats"
 			],
 			[
-				"onc",
-				"onChange"
-			],
-			[
 				"ve",
 				"vehicle"
 			],
@@ -502,18 +514,6 @@
 			[
 				"bg",
 				"bg-color-7"
-			],
-			[
-				"b",
-				"bg-color-7"
-			],
-			[
-				"bad",
-				"background-color"
-			],
-			[
-				"border-b",
-				"border-bottom-color"
 			]
 		]
 	},
@@ -563,22 +563,23 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form"
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/frontend.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/hero/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-header/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/frontend.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/_style-block.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/frontend.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_forms.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-header/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/save.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
@@ -642,7 +643,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/feature-section/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/hero/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_page.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/404.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_footer.scss",
@@ -713,6 +713,35 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"value",
+			"updatedNum",
+			"updateNum",
+			"count",
+			"calculateSavings",
+			"value",
+			"newValue",
+			"value",
+			"data",
+			"input",
+			"allowedChars",
+			"currentTarget",
+			"replace",
+			"format",
+			"mask",
+			"moneyMask",
+			"inputmask",
+			"getValue",
+			"moneyMask",
+			"true",
+			"number",
+			"string",
+			"bottom",
+			"totalPrice",
+			"price",
+			"origApr",
+			"term",
+			"totalPrice",
+			"price",
 			"payment",
 			"googleapis",
 			"true",
@@ -811,36 +840,7 @@
 			"click",
 			"input",
 			"append",
-			"active",
-			"input",
-			"window",
-			"input",
-			"append",
-			"window",
-			"appendInput",
-			"event",
-			"updateValue",
-			"keyUpdateValue",
-			"addEventListener",
-			"window",
-			"updateValue",
-			"event",
-			"removeValue",
-			"context",
-			"background",
-			"search",
-			"true",
-			"car_year",
-			"false",
-			"true",
-			"global",
-			"VehicleSelector",
-			"size",
-			"cliasses",
-			"event",
-			"currentTarget",
-			"value",
-			"target"
+			"active"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -868,11 +868,6 @@
 			"sheets":
 			[
 			]
-		},
-		{
-			"sheets":
-			[
-			]
 		}
 	],
 	"incremental_find":
@@ -892,18 +887,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.481169667533,
 			1.0
 		],
 		"rows":
@@ -1448,20 +1436,24 @@
 	"select_project":
 	{
 		"height": 682.0,
-		"last_filter": "",
+		"last_filter": "as",
 		"selected_items":
 		[
+			[
+				"as",
+				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
+			],
 			[
 				"",
 				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
 			],
 			[
-				"tax",
-				"~/Local Sites/tax-tamer/tax-tamer.sublime-project"
+				"asp",
+				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
 			],
 			[
-				"as",
-				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
+				"tax",
+				"~/Local Sites/tax-tamer/tax-tamer.sublime-project"
 			],
 			[
 				"res",
@@ -1549,10 +1541,6 @@
 			],
 			[
 				"a",
-				"~/Local Sites/aspire/aspire.sublime-project"
-			],
-			[
-				"asp",
 				"~/Local Sites/aspire/aspire.sublime-project"
 			],
 			[

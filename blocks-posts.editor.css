@@ -612,6 +612,40 @@ h4 {
   position: relative;
 }
 
+.resource-card .price-cont span {
+  color: #000000;
+  font-family: "Lato", sans-serif;
+}
+
+.resource-card span.monthly-est {
+  text-transform: uppercase;
+  color: #ccc;
+  font-size: 11px;
+  line-height: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.resource-card .price-cont {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .resource-card .price-cont {
+    margin-top: 20px;
+  }
+}
+
+.price-cont .monthly-price {
+  text-align: right;
+}
+
 .resource-card .wp-button {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
