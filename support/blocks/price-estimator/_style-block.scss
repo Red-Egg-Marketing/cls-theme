@@ -17,6 +17,10 @@
 	display: none;
 }
 
+.form-wrap .wp-block-heading:first-of-type {
+	margin-top: 0;
+}
+
 .payment {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 	border: 3px solid $red;
@@ -27,6 +31,11 @@
 	justify-content: center;
 	@media screen and (min-width: $small-width) {
 		padding: 35px;
+	}
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		grid-column: 1/3;
+	}
+	@media screen and (min-width: $med-width + 1px) {
 		grid-column: 1/4;
 	}
 }
@@ -64,7 +73,10 @@
 	align-items: flex-end;
 	justify-content: center;
 	background: $dark-blue;
-	@media screen and (min-width: $small-width) {
+	@media screen and (min-width: $small-width) and (max-width: $med-width) {
+		grid-column: 1/3;
+	}
+	@media screen and (min-width: $med-width + 1px) {
 		grid-column: 1/4;
 	}
 }

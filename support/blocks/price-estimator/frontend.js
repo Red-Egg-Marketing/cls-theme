@@ -42,12 +42,14 @@ const SaveVehiclesPayment = () => {
 		}
 
   		const getValue = (event) => {
+  			console.log(event);
 
   			let target = event.target;
   			let name = target.name;
   			let id = target.id;  		
-  			let value = parseInt(target.value);
+  			let value = target.value;
   			if (id == 'price') {
+  				value = parseInt(value);
   				data['price_max'] = value;
   				if (data['down'] > data['price_max']) {
   					let tempDown = document.getElementById('down');
@@ -59,6 +61,7 @@ const SaveVehiclesPayment = () => {
   			}
   			if (id == 'down') {
   				target.setAttribute('max', data['price_max']);
+  				value = parseInt(value);
   				data['down'] = value;
   				if (data['down'] > data['price_max']) {
   					target.value = data['price_max'];

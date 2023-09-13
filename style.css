@@ -24677,6 +24677,10 @@ ul.tax-list .tax-wrap {
   display: none;
 }
 
+.form-wrap .wp-block-heading:first-of-type {
+  margin-top: 0;
+}
+
 .payment {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border: 3px solid #910035;
@@ -24693,6 +24697,17 @@ ul.tax-list .tax-wrap {
 @media screen and (min-width: 768px) {
   .payment {
     padding: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+  .payment {
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (min-width: 1251px) {
+  .payment {
     grid-column: 1/4;
   }
 }
@@ -24741,7 +24756,13 @@ ul.tax-list .tax-wrap {
   background: #052C47;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+  .lead-banner {
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (min-width: 1251px) {
   .lead-banner {
     grid-column: 1/4;
   }
