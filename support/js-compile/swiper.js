@@ -4,7 +4,7 @@ import Swiper from 'swiper/bundle';
 
 	new Swiper('.related-vehicle.swiper', 
 		{
-			loop: false,
+			loop: true,
 			slidesPerView: 1,
 			autoplay: true,
 			effect: 'slide',
@@ -27,13 +27,17 @@ import Swiper from 'swiper/bundle';
 		}
 	);
 
-	new Swiper('.vehicle.swiper', 
+	let count = document.querySelectorAll('.vehicle.swiper .swiper-slide');
+	count = count.length;
+
+	let vehicles = new Swiper('.vehicle.swiper', 
 		{
-			loop: false,
+			loop: true,
 			slidesPerView: 1,
-			autoplay: true,
+			autoplay: false,
 			effect: 'slide',
-			spaceBetween: 0,
+			spaceBetween: 15,
+			loopedSlides: count,
 			speed: 800,
 			navigation: {
     			nextEl: '.swiper-button-next',
@@ -41,5 +45,22 @@ import Swiper from 'swiper/bundle';
   			}
 		}
 	);
+
+	let thumbnails = new Swiper('.thumbnails.swiper', 
+		{
+			loop: true,
+			slidesPerView: 6,
+			autoplay: false,
+			effect: 'slide',
+			spaceBetween: 0,
+			loopedSlides: count,
+			slideToClickedSlide: true,
+			spaceBetween: 5,
+		}
+	);
+
+	thumbnails.controller.control = vehicles;
+	vehicles.controller.control = thumbnails;
+
 	
 })();

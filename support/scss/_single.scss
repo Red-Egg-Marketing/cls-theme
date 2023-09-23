@@ -50,6 +50,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 }
 
 
+.vehicle-gallery .thumbnails,
 .vehicle-gallery .vehicle {
 	width: 100%;
 	position: relative;
@@ -58,6 +59,22 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 		width: calc(100% - 40px);
 		margin-right: 40px;
 	}
+}
+
+.vehicle-gallery .thumbnails .swiper-slide img {
+	filter: grayscale(100%);
+}
+
+.vehicle-gallery .thumbnails .swiper-slide {
+	cursor: pointer;
+}
+
+.vehicle-gallery .thumbnails .swiper-slide img:hover {
+	filter: none;
+}
+
+.vehicle-gallery .thumbnails .swiper-slide.swiper-slide-active img {
+	filter: none;
 }
 
 .vehicle-gallery {
@@ -87,10 +104,6 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 			background: url($clock) no-repeat center left / 21px;
 			padding-left: 30px;
 	}
-}
-
-.swiper-slide {
-	max-width: 100%;
 }
 
 .vehicle.swiper .swiper-button-prev, 

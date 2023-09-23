@@ -25,7 +25,8 @@ $modal_form = get_field('menu_form', 'options');
 			    'post_type' => 'attachment',
 			    'post_mime_type' => 'image',
 			    'orderby' => 'date',
-			    'order' => 'ASC'
+			    'order' => 'ASC',
+			    'numberposts' => -1
 			));
 
 			if (!empty($attachments)) {
@@ -35,7 +36,7 @@ $modal_form = get_field('menu_form', 'options');
 					<div class="swiper-wrapper">
 					<?
 					foreach($attachments as $attachment) {
-				?>
+					?>
 						<div class="swiper-slide">
 						<?php
 							echo wp_get_attachment_image($attachment->ID, 'post-landscape');
@@ -47,6 +48,21 @@ $modal_form = get_field('menu_form', 'options');
 					<div class="swiper-button-prev"></div>
   					<div class="swiper-button-next"></div>
   				</div>
+  				<!-- Gallery Thumbs -->
+  				<div class="thumbnails swiper">
+  					<div class="swiper-wrapper">
+  						<?
+						foreach($attachments as $attachment) {
+						?>
+								<div class="swiper-slide">
+								<?php
+									echo wp_get_attachment_image($attachment->ID, 'thumbnail');
+								?>
+								</div>
+							<?php
+						}?>
+					</div>
+				</div>
   				</div>
   			<?php
 			} else {
