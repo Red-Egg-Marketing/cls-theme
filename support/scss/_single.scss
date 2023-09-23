@@ -77,6 +77,10 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 	filter: none;
 }
 
+.vehicle-gallery .thumbnails .swiper-slide.swiper-slide-active {
+	border-bottom: 3px solid $red;
+}
+
 .vehicle-gallery {
 	position: relative;
 	width: 100%;
