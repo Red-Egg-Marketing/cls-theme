@@ -2,9 +2,9 @@
 // add custom image sizes
 
 add_image_size('whitepaper-poster', 280, 390, array('center', 'center'), true);
-add_image_size('post-landscape-tiny', 85, 65, false);
-add_image_size('post-landscape', 580, 446, false);
-add_image_size('post-landscape-medium', 348, 267, false);
+add_image_size('post-landscape-tiny', 85, 65, array('center', 'center'), true);
+add_image_size('post-landscape', 580, 446, array('center', 'center'), true);
+add_image_size('post-landscape-medium', 348, 267, array('center', 'center'), true);
 add_image_size('image-text-block-small', 480, 250, array('center', 'center'), true);
 add_image_size('image-text-block', 960, 500, array('center', 'center'), true);
 add_image_size('hero-landscape-large', 1920, 729, array('center', 'center'), true);
@@ -15,6 +15,25 @@ add_image_size('medium-landscape', 920, 460, array('center', 'center'), true);
 add_image_size('medium-small', 350, 350, array('center', 'center'), true);
 
 add_filter( 'image_size_names_choose', 'emulate_custom_sizes' );
+
+if(!function_exists('cls_thumbnail_upscale')) {
+function cls_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ){
+
+    if ( !$crop ) return null; // let the wordpress default function handle this
+
+    $aspect_ratio = $orig_w / $orig_h;
+    $size_ratio = max($new_w / $orig_w, $new_h / $orig_h);
+
+    $crop_w = round($new_w / $size_ratio);
+    $crop_h = round($new_h / $size_ratio);
+
+    $s_x = floor( ($orig_w - $crop_w) / 2 );
+    $s_y = floor( ($orig_h - $crop_h) / 2 );
+
+    return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
+}
+}
+add_filter( 'image_resize_dimensions', 'cls_thumbnail_upscale', 10, 6 );
  
 function emulate_custom_sizes( $sizes ) {
     return array_merge( $sizes, array(
