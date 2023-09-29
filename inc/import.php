@@ -68,7 +68,7 @@ function cls_import_vehicles_from_csv() {
         $errors = array();
 
         // Get array of CSV files
-        $files = glob( get_template_directory() . "/csv/cls.csv" );
+        $files = glob( get_home_path() . "/csv/cls.csv" );
 
         foreach ( $files as $file ) {
 
@@ -92,7 +92,7 @@ function cls_import_vehicles_from_csv() {
                         $post[$key] = $row[$i];
                     }
 
-                    $title =  $post['Make'] . ' ' . $post['Model'];
+                    $title = $post['Year'] . ' ' . $post['Make'] . ' ' . $post['Model'];
                     $post['title'] = $title;
                     $post['images'] = $post['ImageList'];
                     $post['content'] = $post['Description'];
