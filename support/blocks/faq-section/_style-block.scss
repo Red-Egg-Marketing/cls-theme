@@ -83,7 +83,7 @@ html :where(.wp-block) {
 	color: $bg-color-7;
 	background: $bg-color-2 url(img/up-chevron.svg) no-repeat 13px center / 10px;
 	@media screen and (min-width: $small-width) {
-		background: $bg-color-2 url(img/up-chevron.svg) no-repeat 28px center/ 14px;
+		background: $bg-color-2 url(img/up-chevron.svg) no-repeat 28px 36px/ 14px;
 	}
 }
 

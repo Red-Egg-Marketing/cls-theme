@@ -122,8 +122,8 @@ const SaveVehiclesPayment = () => {
 			if (resources === false) {
 				data['price_max'] = "30000";
 				data['down'] = "1000";
-				data['apr'] = "6.9";
-				data['term'] = "12";
+				data['apr'] = "8";
+				data['term'] = "72";
 				setData(data);
 				calculateSavings(event);
 
@@ -161,7 +161,7 @@ const SaveVehiclesPayment = () => {
 									<div className="payment_table">
 										<table>
 											<tr>
-												<td>Total Price</td>
+												<td>Price</td>
 												<td>${ totalPrice }</td>
 											</tr>
 											<tr>
@@ -181,9 +181,9 @@ const SaveVehiclesPayment = () => {
 									<div className="small-print">
 										<p className="small">*These calculations are for reference purposes only.</p>
 									</div>
-
 								</div>
 							</div>
+
 							<div className="lead-banner">
 								<h3>The following vehicles are good matches</h3>
 							</div>
@@ -206,6 +206,17 @@ const SaveVehiclesPayment = () => {
 										calculatePrice={ true }
 										savingsFormula={ savingsFormula }
 									/>
+									{ resourceIndex == 1 && (
+										<div className="alternatives">
+											<div className="wrapper">
+												<h3>Don’t see a good match?</h3>
+												<p>We can find it! Fill out a vehicle request form here.</p>
+												<div className="wp-block-button">
+													<a href="/lease-or-buy-new-vehicle/vehicle-request/" className="wp-block-button__link">Click Here</a>
+												</div>
+											</div>
+										</div>
+									)}
 								</Fragment>
 							)
 						})

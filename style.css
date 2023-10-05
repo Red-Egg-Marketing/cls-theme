@@ -20984,7 +20984,7 @@ html :where(.wp-block) {
 @media screen and (min-width: 768px) {
   .wp-block.faq .content-column .header-title,
   .faq .content-column[data-toggled="true"] .header-title {
-    background: #F0F0F0 url(img/up-chevron.svg) no-repeat 28px center/14px;
+    background: #F0F0F0 url(img/up-chevron.svg) no-repeat 28px 36px/14px;
   }
 }
 
@@ -24719,6 +24719,22 @@ ul.tax-list .tax-wrap {
   margin-top: 0;
 }
 
+.alternatives h3 {
+  margin-top: 0;
+}
+
+.alternatives {
+  background: #E2F0F7;
+  text-align: center;
+  padding: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 .payment {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border: 3px solid #910035;
@@ -24791,6 +24807,10 @@ ul.tax-list .tax-wrap {
   margin-bottom: 0;
   border-top: 4px solid #052C47;
   border-bottom: 4px solid #052C47;
+}
+
+.resources-grid .resource-card {
+  padding-bottom: 0;
 }
 
 .lead-banner {
