@@ -57,7 +57,7 @@ add_action('save_post', 'cls_vin_import_check');
 
 function cls_rewrite_rules_update( $post_id ) {
 
-    if ( $_POST['post_type'] != 'vehicle' ) {
+    if ( array_key_exists('post_type', $_POST) && $_POST['post_type'] != 'vehicle' ) {
         return;
     }
     flush_rewrite_rules();

@@ -164,8 +164,10 @@ div.image-columns.col-66 .content-columns .content-column,
 .image-columns .content-columns .content-column {
 	width: 100%;
 	max-width: 100%;
+	text-align: center;
 	@media screen and (min-width: $small-width) {
 		padding-left: 0;
+		text-align: left;
 		width: 100%;
 		max-width: 100%;
 	}
@@ -289,9 +291,9 @@ div.image-columns.col-66 .content-columns .content-column,
 }
 
 .image-columns .wp-block-buttons  {
-	margin-top: 25px;
+	justify-content: center;
 	@media screen and (min-width: $small-width) {
-		margin-top: 60px;
+		justify-content: flex-start;
 	}
 }
 

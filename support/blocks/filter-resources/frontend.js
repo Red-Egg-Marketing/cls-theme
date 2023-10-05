@@ -262,7 +262,11 @@ const SaveResources = ( { attributes } ) => {
 					{ (resourcesEmpty && loading == false) && (
 						<Fragment>
 							<div className="error">
-								<h3>There are no available vehicles matching your filters. Please try something else.</h3>
+								<h3>There are no available vehicles matching your filters.</h3>
+								<p>Our inventory changes daily and our auto brokers can help find the car you’re looking for.</p>
+								<div className="wp-block-button">
+									<a href="/lease-or-buy-new-vehicle/vehicle-request/" className="wp-block-button__link">Request a vehicle here!</a>
+								</div>
 							</div>
 						</Fragment>
 					)}

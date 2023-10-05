@@ -568,6 +568,7 @@
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
 		"/Users/jacoblang/Desktop/cls.csv",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
@@ -577,7 +578,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/csv/cls.csv",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/media.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_single.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
@@ -920,6 +920,10 @@
 		"selected_items":
 		[
 			[
+				"func",
+				"app/public/wp-content/themes/cls-theme/functions.php"
+			],
+			[
 				"custom-end",
 				"app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
 			],
@@ -1098,10 +1102,6 @@
 			[
 				"_but",
 				"app/public/wp-content/themes/cls-theme/support/scss/_buttons.scss"
-			],
-			[
-				"func",
-				"app/public/wp-content/themes/cls-theme/functions.php"
 			],
 			[
 				"_f",
@@ -1437,9 +1437,13 @@
 	"select_project":
 	{
 		"height": 682.0,
-		"last_filter": "aspi",
+		"last_filter": "con",
 		"selected_items":
 		[
+			[
+				"con",
+				"~/Local Sites/confluence-land-update/confluence-land.sublime-project"
+			],
 			[
 				"aspi",
 				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
@@ -1454,10 +1458,6 @@
 			],
 			[
 				"conf",
-				"~/Local Sites/confluence-land-update/confluence-land.sublime-project"
-			],
-			[
-				"con",
 				"~/Local Sites/confluence-land-update/confluence-land.sublime-project"
 			],
 			[

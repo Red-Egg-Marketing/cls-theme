@@ -178,13 +178,16 @@ function cls_browser_body_class($classes) {
             	}
         } else $classes[] = 'unknown';
         if($is_iphone) $classes[] = 'iphone';
-        if ( stristr( $_SERVER['HTTP_USER_AGENT'],"mac") ) {
-                 $classes[] = 'osx';
-           } elseif ( stristr( $_SERVER['HTTP_USER_AGENT'],"linux") ) {
-                 $classes[] = 'linux';
-           } elseif ( stristr( $_SERVER['HTTP_USER_AGENT'],"windows") ) {
-                 $classes[] = 'windows';
-           }
+
+        if (array_key_exists('HTTP_USER_AGENT', $_SERVER)) {
+        	if ( stristr( $_SERVER['HTTP_USER_AGENT'],"mac") ) {
+        	         $classes[] = 'osx';
+        	   } elseif ( stristr( $_SERVER['HTTP_USER_AGENT'],"linux") ) {
+        	         $classes[] = 'linux';
+        	   } elseif ( stristr( $_SERVER['HTTP_USER_AGENT'],"windows") ) {
+        	         $classes[] = 'windows';
+        	   }
+       	}
         return $classes;
 }
 add_filter('body_class','cls_browser_body_class');

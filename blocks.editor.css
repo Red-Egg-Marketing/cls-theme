@@ -4413,6 +4413,7 @@ td.year-sum {
   position: absolute;
   bottom: 20px;
   right: 50%;
+  left: 50%;
   transform: translateX(-50%);
   height: 30px;
   width: 17px;
@@ -4811,12 +4812,14 @@ div.image-columns.col-66 .content-columns .content-column,
 .image-columns .content-columns .content-column {
   width: 100%;
   max-width: 100%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   div.image-columns.col-66 .content-columns .content-column,
   .image-columns .content-columns .content-column {
     padding-left: 0;
+    text-align: left;
     width: 100%;
     max-width: 100%;
   }
@@ -4974,12 +4977,14 @@ div.image-columns.col-66 .content-columns .content-column,
 }
 
 .image-columns .wp-block-buttons {
-  margin-top: 25px;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .image-columns .wp-block-buttons {
-    margin-top: 60px;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
   }
 }
 
@@ -8132,6 +8137,21 @@ ul.tax-list .tax-wrap {
   max-width: 875px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.form-filters .error {
+  grid-column: 1/3;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border: 3px solid #910035;
+}
+
+@media screen and (min-width: 768px) {
+  .form-filters .error {
+    grid-column: 1/4;
+    padding: 25px;
+  }
 }
 
 .wp-block.grid-text-cards {
