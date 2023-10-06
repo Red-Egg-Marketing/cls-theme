@@ -430,3 +430,30 @@ function cls_resource_card($id, $cats = false) {
 		return $html;
 	}
 }
+
+
+function cls_return_reviews() {
+	global $wpdb;
+	$name = 'Aimee Ferris';
+	
+	$results = $wpdb->get_results( 
+		"
+			SELECT *
+			FROM {$wpdb->prefix}wpfb_reviews 
+			WHERE review_text LIKE '%" . $name . "%'
+		", OBJECT );
+
+
+	return $results;
+}
+
+
+add_action( 'rest_api_init', function () {
+  register_rest_route( 'cls/v2', '/reviews/', 
+  	[
+    	'methods' => 'POST, GET',
+    	'callback' => 'cls_return_reviews',
+    	'permission_callback' => '__return_true'
+  	] 
+  );
+ });
