@@ -154,3 +154,90 @@ div.gs-team-popup--default .mfp-content--container .gs_team_popup_left__wrapper 
 	position: relative;
 	display: block;
 }
+
+div.gs-single-default .gs-team-single-content {
+	box-shadow: none;
+	width: 100%;
+	display: block;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	padding-left: 1.25rem !important;
+	padding-right: 1.25rem !important;
+	@media screen and (min-width: $small-width) {
+		width: 33.333%;
+		padding-left: 1.25rem !important;
+		padding-right: 2.5rem !important;
+	}
+}
+
+div.gs-single-default .reviews {
+	width: 100%;
+	background: $lighter-blue;
+	padding: 20px;
+	@media screen and (min-width: $small-width) {
+		width: 66.666%;
+		padding: 35px;
+	}
+}
+
+body.single-gs_team .gs_member_img {
+	width: 100%;
+}
+
+body.single-gs_team .gs_member_details {
+	width: 100%;
+	padding-left: 0;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-top: 1px solid $navy;
+}
+
+div.gs-single-default .gs-team-single-content .gs_ribon_wrapper::after {
+	display: none;
+}
+
+body.single .gs-containeer .gs_team {
+	margin-top: 0;
+}
+
+.single .gs-containeer .gs_team {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reviews header {
+	text-align: center;
+	border-bottom: 1px solid $navy;
+	margin-bottom: 25px;
+}
+
+div.gs-single-default .gs-team-single-content .gs_ribon_wrapper img {
+	position: relative;
+	max-width: 400px !important;
+}
+
+div.gs-single-container {
+	width: 100%;
+	max-width: $max-cont-w;
+}
+
+div.gs-archive-container, div.gs-single-container {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.reviews .resources-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	@media screen and (min-width: $med-width) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+}
+
+div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
+	font-size: 30px;
+	@media screen and (min-width: $small-width) {
+		font-size: 44px;
+	}
+}

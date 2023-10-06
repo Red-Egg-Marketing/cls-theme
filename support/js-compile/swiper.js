@@ -58,9 +58,11 @@ import Swiper from 'swiper/bundle';
 			spaceBetween: 5,
 		}
 	);
-
-	thumbnails.controller.control = vehicles;
-	vehicles.controller.control = thumbnails;
+	
+	if (thumbnails.slides || vehicles.slides) {
+		thumbnails.controller.control = vehicles;
+		vehicles.controller.control = thumbnails;
+	}
 
 	
 })();

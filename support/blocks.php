@@ -63,7 +63,9 @@ function cls_render_filtered_case_studies_callback($block_attributes, $content) 
 }
 
 
-function cls_dynamic_case_studies_grid_block() {
+function cls_enqueue_main_script() {
+    global $post;
+
     if (!is_admin()) {
         wp_enqueue_script(
             'fancybox',
@@ -80,17 +82,25 @@ function cls_dynamic_case_studies_grid_block() {
             'v1.0.1',
             true
        );
+
+        wp_localize_script(
+            'wp-main-js',
+            'postData' ,
+            [
+                'id' => $post->ID
+            ]
+        );
     }
 
-    register_block_type( 'cls-blocks/selected-case-studies', [
-            'api_version' => 2,
-            'script' => 'wp-main-js',
-            'render_callback' => 'cls_render_filtered_case_studies_callback'
-        ] 
-    );
+    // register_block_type( 'cls-blocks/selected-case-studies', [
+    //         'api_version' => 2,
+    //         'script' => 'wp-main-js',
+    //         'render_callback' => 'cls_render_filtered_case_studies_callback'
+    //     ] 
+    // );
 }
 
-add_action('init', 'cls_dynamic_case_studies_grid_block');
+add_action('wp_enqueue_scripts', 'cls_enqueue_main_script');
 
 
 function cls_render_filtered_case_study_callback($block_attributes, $content) {

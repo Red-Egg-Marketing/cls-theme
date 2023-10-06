@@ -20,5 +20,6 @@ import "./blocks/filter-resources/frontend.js";
 import "./blocks/selected-projects/frontend.js";
 import "./blocks/price-estimator/frontend.js";
 import "./js-compile/swiper.js";
+import "./js-compile/bio-reviews.js";
 // import "./js-compile/bios.js";
 

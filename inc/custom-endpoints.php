@@ -434,17 +434,36 @@ function cls_resource_card($id, $cats = false) {
 
 function cls_return_reviews() {
 	global $wpdb;
-	$name = 'Aimee Ferris';
-	
-	$results = $wpdb->get_results( 
-		"
-			SELECT *
-			FROM {$wpdb->prefix}wpfb_reviews 
-			WHERE review_text LIKE '%" . $name . "%'
-		", OBJECT );
+	$id = array_key_exists('post_id', $_POST) ? $_POST['post_id'] : false;
+
+	if ($id) {
+			$name = get_the_title($id);
+			$full = $name;
+			$name = explode(" ", $name);
+			$length = sizeof($name);
+			$first = $name[0];
+			$last = $name[$length - 1];
+			$middle = '';
+			if ($length >= 3) {
+				$middle = $name[$length - 2];
+			} else if ($length < 3) {
+				$middle = $last;
+			}
+			$name = $first . " " . $last;
+			$first_middle = $first . " " . $middle;
+			$results = $wpdb->get_results( 
+			"
+				SELECT *
+				FROM {$wpdb->prefix}wpfb_reviews 
+				WHERE review_text LIKE '%" . $name . "%' OR review_text LIKE '%" . $first_middle . "%'
+			", OBJECT );
 
 
-	return $results;
+		return $results;
+	} else {
+		return false;
+	}
+
 }
 
 
