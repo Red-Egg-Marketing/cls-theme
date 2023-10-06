@@ -18929,7 +18929,7 @@ div.gs-single-default .gs-team-single-content {
 
 @media screen and (min-width: 768px) {
   div.gs-single-default .gs-team-single-content {
-    width: 33.333%;
+    width: 50%;
     padding-left: 1.25rem !important;
     padding-right: 2.5rem !important;
   }
@@ -18943,7 +18943,7 @@ div.gs-single-default .reviews {
 
 @media screen and (min-width: 768px) {
   div.gs-single-default .reviews {
-    width: 66.666%;
+    width: 50%;
     padding: 35px;
   }
 }
@@ -18988,7 +18988,7 @@ div.gs-single-default .gs-team-single-content .gs_ribon_wrapper img {
 
 div.gs-single-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1620px;
 }
 
 div.gs-archive-container, div.gs-single-container {
@@ -19005,8 +19005,8 @@ div.gs-archive-container, div.gs-single-container {
 
 @media screen and (min-width: 1250px) {
   .reviews .resources-grid {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 

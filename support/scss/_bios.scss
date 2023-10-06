@@ -171,7 +171,7 @@ div.gs-single-default .gs-team-single-content {
 	padding-left: 1.25rem !important;
 	padding-right: 1.25rem !important;
 	@media screen and (min-width: $small-width) {
-		width: 33.333%;
+		width: 50%;
 		padding-left: 1.25rem !important;
 		padding-right: 2.5rem !important;
 	}
@@ -182,7 +182,7 @@ div.gs-single-default .reviews {
 	background: $lighter-blue;
 	padding: 20px;
 	@media screen and (min-width: $small-width) {
-		width: 66.666%;
+		width: 50%;
 		padding: 35px;
 	}
 }
@@ -225,7 +225,7 @@ div.gs-single-default .gs-team-single-content .gs_ribon_wrapper img {
 
 div.gs-single-container {
 	width: 100%;
-	max-width: $max-cont-w;
+	max-width: $max-cont-w - 300px;
 }
 
 div.gs-archive-container, div.gs-single-container {
@@ -237,7 +237,7 @@ div.gs-archive-container, div.gs-single-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	@media screen and (min-width: $med-width) {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 
 }

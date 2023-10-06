@@ -92,7 +92,7 @@ function gformVehicleSearch() {
     				div.setAttribute('class', 'result');
     				let p = document.createElement('p');
     				p.setAttribute('tabindex', 0);
-    				p.innerHTML = car.year + ' ' + car.post_title + ' (' + car.miles + ')';
+    				p.innerHTML = car.post_title + ' (' + car.miles + ')';
     				div.append(p);
     				append.append(div);
     				p.addEventListener('click', updateValue, false);
