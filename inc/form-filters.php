@@ -17,6 +17,9 @@ function cls_add_class_vehicle_selector($form) {
 add_filter('gform_pre_render', 'cls_populate_member_dropdown');
 function cls_populate_member_dropdown($form){
 
+    global $post;
+    $post_id = $post->ID;
+
     //Adding items to field with class of preferred consultant
     foreach($form["fields"] as &$field)
         if($field["cssClass"] == "preferred-consultant" && $field["type"] == "select"){
@@ -46,10 +49,12 @@ function cls_populate_member_dropdown($form){
                     $bio_query->the_post();
                     $title = get_the_title();
                     $id = get_the_ID();
+                    $selected = $post_id === $id ? true : false;
 
                     $items[] = [
                         "value" => $id,
-                        "text"  => $title
+                        "text"  => $title,
+                        "isSelected" => $selected
                     ];
                 }
                 wp_reset_postdata();

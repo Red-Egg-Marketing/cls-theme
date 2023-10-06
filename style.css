@@ -18787,6 +18787,16 @@ button.slickwprev-prev:before {
   display: none;
 }
 
+.gs_team .col-full {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .gs_team .col-full {
+    margin-bottom: 35px;
+  }
+}
+
 .gs_team_area {
   padding-left: 1.25rem;
   padding-right: 1.25rem;

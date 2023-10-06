@@ -13,8 +13,11 @@ global $post;
 $title = get_the_title($post->ID);
 $title = explode(" ", $title);
 $title = $title[0];
+$terms = wp_list_pluck(get_the_terms($post->ID, 'team_group'), 'slug');
 
 $designation = get_post_meta( get_the_id(), '_gs_des', true );
+
+$modal_form = get_field('menu_form', 'options');
 
 ?>
 
@@ -35,7 +38,15 @@ $designation = get_post_meta( get_the_id(), '_gs_des', true );
 
         <!-- Meta Details -->
         <?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-meta-details.php' ); ?>
-
+        <?php if (in_array('sales', $terms)) { ?>
+            <div class="col col-full">
+                <a 
+                    class="wp-block-button__link wp-element-button" 
+                    href="javascript;" 
+                    data-src="#modal-form-<?= $modal_form  ?>" 
+                    data-fancybox>Contact <?= $title; ?></a>
+            </div>
+        <?php } ?>
     </div>
 
     <div class="gs_member_details gs-tm-sicons">
