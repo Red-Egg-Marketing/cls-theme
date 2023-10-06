@@ -171,7 +171,10 @@ div.gs-single-default .gs-team-single-content {
 	padding-left: 1.25rem !important;
 	padding-right: 1.25rem !important;
 	@media screen and (min-width: $small-width) {
+		position: sticky;
+		top: 175px;
 		width: 50%;
+		align-self: flex-start;
 		padding-left: 1.25rem !important;
 		padding-right: 2.5rem !important;
 	}
@@ -210,6 +213,7 @@ body.single .gs-containeer .gs_team {
 .single .gs-containeer .gs_team {
 	display: flex;
 	flex-wrap: wrap;
+	height: auto;
 }
 
 .reviews header {
