@@ -108,7 +108,7 @@ const SaveBioReviews = () => {
 												</span>
 												<span className="wprs_rd_more_1">{intro}</span>
 												<span className="wprs_rd_more"> read more</span>
-												<span className="wprs_rd_more_text" style={ style }>{ more }</span>
+												<span className="wprs_rd_more_text" style={ style }>{intro}{ more }</span>
 												<span className="wprs_rd_less" style={ style }> read less</span>
 											</div>
 										</div>

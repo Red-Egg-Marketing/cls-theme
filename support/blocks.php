@@ -79,7 +79,7 @@ function cls_enqueue_main_script() {
             'wp-main-js',
             get_template_directory_uri() . $front_path,
             ['wp-api', 'tweenmax', 'scroll-magic', 'scrolltrigger', 'tweenmax-animation', 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor'],
-            'v1.0.1',
+            'v1.0.2',
             true
        );
 
