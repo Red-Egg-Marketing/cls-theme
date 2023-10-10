@@ -14,6 +14,18 @@
 
 	var navWrapper = document.getElementById( 'masthead' );
 
+	var numbers = document.getElementsByClassName(' wppro_badge1_SPAN_15 ');
+
+	for(var x = 0; x < numbers.length; x++) {
+		var number = numbers[0].innerText;
+
+		var newNum = new Intl.NumberFormat().format(number);
+
+		numbers[0].innerText = newNum;
+
+	}
+
+
 
 	if (isTouch == true) {
 		document.addEventListener('touchend', removeMenuToggle);
