@@ -13,11 +13,11 @@ import ColumnsWidths from '../../components/Columns-Widths.js';
 // Available alignment control options
 const alignOptions = [
 	{
-        label: __( 'Image Right' ),
+        label: __( 'Text Right' ),
         value: 'img-right',
     },
     {
-        label: __( 'Image Left' ),
+        label: __( 'Text Left' ),
         value: 'img-left',
     },
 ];

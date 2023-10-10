@@ -12,7 +12,7 @@ const template = [
 			['core/paragraph', {'placeholder' : 'Contact description...'}],
 		],
 		'allowBlocks': [
-			'core/heading', 'core/paragraph', 'core/separator'
+			'core/heading', 'core/paragraph', 'core/separator', 'core/buttons'
 		]
 	}]
 ];
