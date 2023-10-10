@@ -24872,6 +24872,10 @@ ul.tax-list .tax-wrap {
       align-items: center;
 }
 
+.alternatives .wrapper {
+  width: 100%;
+}
+
 .payment {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border: 3px solid #910035;

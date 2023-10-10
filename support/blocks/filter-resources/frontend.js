@@ -237,6 +237,36 @@ const SaveResources = ( { attributes } ) => {
 					{ (resourcesEmpty == false && resources.length > 0 && loading == false) && resources.map((resource, resourceIndex) => {
 							return (
 								<Fragment>
+									{ (resourceIndex == 10) && (
+										<div className="alternatives">
+											<div className="wrapper">
+												<h3>Need to Terminate Your Lease?</h3>
+												<div className="wp-block-button">
+													<a href="/lease-termination/" className="wp-block-button__link">Learn More</a>
+												</div>
+											</div>
+										</div>
+									)}
+									{ (resourceIndex == 20) && (
+										<div className="alternatives">
+											<div className="wrapper">
+												<h3>Looking to Sell Your Car?</h3>
+												<div className="wp-block-button">
+													<a href="/sell-us-your-car/" className="wp-block-button__link">Learn More</a>
+												</div>
+											</div>
+										</div>
+									)}
+									{ (resourceIndex == 30) && (
+										<div className="alternatives">
+											<div className="wrapper">
+												<h3>Need Extended Service Contract Info?</h3>
+												<div className="wp-block-button">
+													<a href="/extended-service-agreements/" className="wp-block-button__link">Learn More</a>
+												</div>
+											</div>
+										</div>
+									)}
 									<ResourceCard.View
 										resourceIndex={ resourceIndex }
 										resourceURL={ resource.link }
@@ -248,6 +278,16 @@ const SaveResources = ( { attributes } ) => {
 										resourceMiles={ resource.miles }
 										resourceYear={ resource.year }
 									/>
+									{ (resourceIndex == resources.length - 1) && (
+										<div className="alternatives">
+											<div className="wrapper">
+												<h3>Can't Find a Car?</h3>
+												<div className="wp-block-button">
+													<a href="/lease-or-buy-new-vehicle/vehicle-request/" className="wp-block-button__link">Let Us Help</a>
+												</div>
+											</div>
+										</div>
+									)}
 								</Fragment>
 							)
 						})
