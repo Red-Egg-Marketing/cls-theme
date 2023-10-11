@@ -64,7 +64,7 @@ const SavePaymentCalc = () => {
 
   		const calcPercentage = () => {
   			let diff = data['price_max'] - data['down'];
-  			let perc = (diff/data['price_max']).toFixed(2) * 100;
+  			let perc = Math.ceil((diff/data['price_max']).toFixed(2) * 100);
   			setPercent(perc);
   		}
 
@@ -152,6 +152,7 @@ const SavePaymentCalc = () => {
 						<div className="form-row term-row">
 							<div className="inner-row flex">
 								<div className="col">
+									<label for="term">Term</label>
 									<select id="term" name="term">
 										<option value="12">12 Months</option>
 										<option value="24">24 Months</option>
@@ -163,6 +164,7 @@ const SavePaymentCalc = () => {
 									</select>
 								</div>
 								<div className="col">
+									<label for="term">APR %</label>
 									<input
 										type="number"
 										id="apr"
@@ -188,14 +190,7 @@ const SavePaymentCalc = () => {
 								<td>Down payment</td>
 								<td>${ down }</td>
 							</tr>
-							<tr>
-								<td>APR</td>
-								<td>{ totalAPR }%</td>
-							</tr>
-							<tr>
-								<td>Term</td>
-								<td>{ totalMonths } Months</td>
-							</tr>
+
 						</table>
 					</div>
 					{/*{loading == false && resources == false && resourcesEmpty == false && (

@@ -816,19 +816,26 @@ Single Video
 	text-transform: uppercase;
 	font-family: $font-body;
 	font-weight: 300;
+	text-align: center;
+	display: block;
+	width: 100%;
 }
 
 #Calculator {
+	margin-top: 25px;
 	position: relative;
 	background: 
-		linear-gradient(to left, $red, $red) no-repeat top left / 50px 1px,
-		linear-gradient(to left, $red, $red) no-repeat top left / 1px 50px,
-		linear-gradient(to left, $red, $red) no-repeat top right / 1px 50px,
-		linear-gradient(to left, $red, $red) no-repeat top right / 50px 1px,
-		linear-gradient(to left, $red, $red) no-repeat right calc(100% - 15px) / 1px 20px,
-		linear-gradient(to left, $red, $red) no-repeat right calc(100% - 15px) / 50px 1px,
-		linear-gradient(to left, $red, $red) no-repeat left calc(100% - 15px) / 50px 1px,
-		linear-gradient(to left, $red, $red) no-repeat left calc(100% - 15px) / 1px 20px,
+		linear-gradient(to left, $red, $red) no-repeat top left / 50px 2px,
+		linear-gradient(to left, $red, $red) no-repeat top left / 2px 50px,
+		linear-gradient(to left, $red, $red) no-repeat top right / 2px 50px,
+		linear-gradient(to left, $red, $red) no-repeat top right / 50px 2px,
+		linear-gradient(to left, $red, $red) no-repeat right calc(100% - 15px) / 2px 20px,
+		linear-gradient(to left, $red, $red) no-repeat right calc(100% - 15px) / 50px 2px,
+		linear-gradient(to left, $red, $red) no-repeat left calc(100% - 15px) / 50px 2px,
+		linear-gradient(to left, $red, $red) no-repeat left calc(100% - 15px) / 2px 20px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 0;
+	}
 }
 
 #Payment {

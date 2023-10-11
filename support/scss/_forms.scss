@@ -18,6 +18,20 @@
 	margin-top: 35px;
 }
 
+@for $i from 0 through 100 {
+  .slide-container[data-percent='#{$i}']:before {
+    // background-color: lig($base-color, $i * 5%);
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: 35px;
+    background: $red;
+    height: 6px;
+    width: calc(#{$i}#{'%'});
+    border-radius: 6px;
+  }
+}
+
 form input,
 div.gform_wrapper input[type=color],
 div.gform_wrapper input[type=date],
@@ -966,6 +980,10 @@ form .inner-row.end {
 form .inner-row .col {
 	padding-left: 5px;
 	padding-right: 5px;
+	margin-bottom: 10px;
+	@media screen and (min-width: $small-width) {
+		margin-bottom: 0;
+	}
 }
 
 form .inner-row input[type="number"],
