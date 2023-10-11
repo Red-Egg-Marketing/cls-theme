@@ -18,7 +18,6 @@ const SaveVehiclesPayment = () => {
   		const [totalMonths, setMonths] = useState(false);
   		const [totalAPR, setAPR] = useState(false);
   		const [down, setDown] = useState(false);
-  		const [shit, setShit] = useState({});
 
   		const sendAPIrequest = (data) => {
 
@@ -42,7 +41,6 @@ const SaveVehiclesPayment = () => {
 		}
 
   		const getValue = (event) => {
-  			console.log(event);
 
   			let target = event.target;
   			let name = target.name;
@@ -103,7 +101,9 @@ const SaveVehiclesPayment = () => {
   			setAPR(origApr);
   			setDown(down);
   			sendAPIrequest(data);
-  			event.preventDefault();
+  			if (event) {
+  				event.preventDefault();
+  			}
 
   		}
 
@@ -117,12 +117,12 @@ const SaveVehiclesPayment = () => {
 				if (name != '') data[name] = input.value;
 				input.addEventListener('input', getValue);
 			});
-			form.addEventListener('submit', calculateSavings, false);
+			form.addEventListener('submit', calculateSavings);
 
 			if (resources === false) {
 				data['price_max'] = "30000";
 				data['down'] = "1000";
-				data['apr'] = "8";
+				data['apr'] = "7.2";
 				data['term'] = "72";
 				setData(data);
 				calculateSavings(event);

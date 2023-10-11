@@ -16,13 +16,12 @@ const SaveForm = ( { attributes }  ) => {
 					<form id="PriceCalculator">
 						<div className="form-row">
 							<label for="price_max">Price</label>
-							<input 
-								type="number"
-								id="price"
-								name="price_max"
-								placeholder="$30,000"
-							/>
-
+								<input 
+									type="number"
+									id="price"
+									name="price_max"
+									placeholder="$30,000"
+								/>
 						</div>
 						<div className="form-row">
 							<label for="down">Down Payment</label>
@@ -38,7 +37,7 @@ const SaveForm = ( { attributes }  ) => {
 							<input
 								type="number"
 								id="apr"
-								value="8.0"
+								value="7.2"
 								name="apr"
 								min="0"
 								max="100"

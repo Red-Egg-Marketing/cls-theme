@@ -1948,6 +1948,28 @@ textarea {
   margin-bottom: 1.5em;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center-margin {
+  margin: 0 auto;
+}
+
+.align-start {
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.flex-end {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
 /*!
  * Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -12336,6 +12358,10 @@ readers do not read off random characters that represent icons */
   }
 }
 
+table td {
+  font-family: "Lato", sans-serif;
+}
+
 .edit-post-visual-editor__content-area strong, .entry-content strong {
   font-family: "Lato", sans-serif;
 }
@@ -16599,8 +16625,8 @@ div.gform_wrapper p {
 }
 
 input[type="range"] {
-  background: white;
-  background-image: linear-gradient(#F79A6C, #F79A6C);
+  background: transparent;
+  background-image: linear-gradient(#910035, #910035);
   background-size: 0% 100%;
   background-repeat: no-repeat;
   -webkit-appearance: none;
@@ -16616,7 +16642,7 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: transparent;
+  background: white;
   border-radius: 6px;
 }
 
@@ -16624,27 +16650,31 @@ input[type=range]::-moz-range-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: transparent;
+  background: white;
   border-radius: 6px;
 }
 
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
   border-radius: 28px;
-  background: #F79A6C;
+  background: #910035;
   cursor: pointer;
-  margin-top: -12px;
+  margin-top: -7.5px;
   /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+form .slide-container {
+  position: relative;
 }
 
 input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
   border-radius: 28px;
-  background: #F79A6C;
+  background: #910035;
   cursor: pointer;
 }
 
@@ -16700,6 +16730,47 @@ div.gform_wrapper .gform_drop_area button.gform_button_select_files {
   font-size: 26px;
   line-height: 32px;
   font-family: "Lato", sans-serif;
+}
+
+form .inner-row {
+  width: 100%;
+}
+
+form .inner-row.end {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+form .inner-row .col {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+form .inner-row input[type="number"],
+form .inner-row select {
+  height: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 30px;
+  min-height: auto;
+  background-color: white;
+  font-size: 20px;
+}
+
+.inner-row label,
+.inner-row p {
+  width: 50%;
+}
+
+#PaymentCalculator {
+  margin-bottom: 25px;
+}
+
+#Payment {
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .site-footer {
@@ -17200,6 +17271,12 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .post-content .main-col {
+    padding-right: 40px;
+  }
+}
+
 .vehicle-gallery .thumbnails,
 .vehicle-gallery .vehicle {
   width: 100%;
@@ -17210,8 +17287,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 @media screen and (min-width: 768px) {
   .vehicle-gallery .thumbnails,
   .vehicle-gallery .vehicle {
-    width: calc(100% - 40px);
-    margin-right: 40px;
+    width: 100%;
   }
 }
 
@@ -17643,6 +17719,17 @@ p.phone {
   padding-bottom: 0.5rem;
 }
 
+.single .term-row {
+  width: 60%;
+  margin: -20px auto 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .single .term-row {
+    margin: -30px auto 30px;
+  }
+}
+
 .entry-footer .resources-grid {
   background: none;
 }
@@ -18070,14 +18157,94 @@ Single Video
 }
 
 .single.single-vehicle .header-title {
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 1.75rem;
 }
 
 @media screen and (min-width: 768px) {
   .single.single-vehicle .header-title {
-    font-size: 36px;
+    font-size: 33px;
     margin-bottom: 3.125rem;
+  }
+}
+
+#PaymentCalculator {
+  width: 100%;
+}
+
+#Calculator label {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+#Calculator {
+  position: relative;
+  background: linear-gradient(to left, #910035, #910035) no-repeat top left/50px 1px, linear-gradient(to left, #910035, #910035) no-repeat top left/1px 50px, linear-gradient(to left, #910035, #910035) no-repeat top right/1px 50px, linear-gradient(to left, #910035, #910035) no-repeat top right/50px 1px, linear-gradient(to left, #910035, #910035) no-repeat right calc(100% - 15px)/1px 20px, linear-gradient(to left, #910035, #910035) no-repeat right calc(100% - 15px)/50px 1px, linear-gradient(to left, #910035, #910035) no-repeat left calc(100% - 15px)/50px 1px, linear-gradient(to left, #910035, #910035) no-repeat left calc(100% - 15px)/1px 20px;
+}
+
+#Payment {
+  color: #910035;
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #Payment {
+    font-size: 37px;
+  }
+}
+
+#Calculator + .payment_table table {
+  border-top: 0;
+  border-collapse: collapse;
+  border-bottom: 0;
+}
+
+#Calculator + .payment_table table td:nth-of-type(even) {
+  text-align: right;
+}
+
+#Calculator + .payment_table table td {
+  border-bottom: 1px solid #000000;
+}
+
+#Payment span {
+  font-size: 14px;
+}
+
+article.type-vehicle .cols {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  width: 100%;
+}
+
+article.type-vehicle .header-title {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  article.type-vehicle .header-title {
+    width: 65%;
+  }
+}
+
+article.type-vehicle h2.price {
+  font-size: 26px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  article.type-vehicle h2.price {
+    font-size: 33px;
+    width: 35%;
+    text-align: right;
   }
 }
 
