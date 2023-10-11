@@ -980,6 +980,10 @@ form .inner-row.end {
 	justify-content: flex-end;
 }
 
+form .inner-row .col.estimate {
+	width: 75%;
+}
+
 form .inner-row .col {
 	padding-left: 5px;
 	padding-right: 5px;
@@ -994,19 +998,17 @@ form .inner-row select {
 	height: 40px;
 	padding-top: 0;
 	padding-bottom: 0;
+	padding-left: 5px;
+	padding-right: 5px;
 	line-height: 30px;
 	min-height: auto;
-	background-color: white;
+	background: white;
 	font-size: 20px;
 }
 
 .inner-row label,
 .inner-row p {
 	width: 50%;
-}
-
-#PaymentCalculator {
-	margin-bottom: 25px;
 }
 
 #Payment {

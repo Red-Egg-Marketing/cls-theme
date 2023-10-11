@@ -16,6 +16,31 @@
 
 	var numbers = document.getElementsByClassName(' wppro_badge1_SPAN_15 ');
 
+	var readMore = document.querySelectorAll('.read-less-block .read-more')
+	var readLess = document.querySelectorAll('.read-more-block .read-less')
+
+	for(var x = 0; x < readMore.length; x++) {
+		let read = readMore[x];
+		read.addEventListener('click', function(){
+			let grand = read.parentElement.parentElement;
+			let more = grand.nextElementSibling;
+			grand.classList.add('hide');
+			more.classList.remove('hide');
+		});
+	}
+
+	for(var x = 0; x < readLess.length; x++) {
+		let read = readLess[x];
+		read.addEventListener('click', function(){
+			let grand = read.parentElement;
+			let more = grand.previousElementSibling;
+			grand.classList.add('hide');
+			more.classList.remove('hide');
+		});
+	}
+
+
+
 	for(var x = 0; x < numbers.length; x++) {
 		var number = numbers[0].innerText;
 

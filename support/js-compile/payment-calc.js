@@ -135,7 +135,7 @@ const SavePaymentCalc = () => {
 					<form id="Calculator">
 						<div className="form-row">
 							<div className="inner-row flex">
-								<div className="col end text-center center-margin">
+								<div className="col estimate end text-center center-margin">
 									<label>Estimated Payment</label>
 									<p id="Payment">${ payment }/<span>mo</span></p>
 								</div>

@@ -112,21 +112,21 @@ $year = join(', ', wp_list_pluck($year, 'name'));
 			<div class="col col-full">
 			<?php
 			echo '<h4>Dealer Notes</h4>';
-			the_content(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'paint-denver' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					wp_kses_post( get_the_title() )
-				)
-			);
 			?>
+			<div class="read-less-block">
+			<?php
+			$cont = get_the_content($id);
+			$content = htmlentities( wpautop($cont));
+			echo html_entity_decode(wp_trim_words($content, 25, '...<button class="read-more">Read More</button>'));
+
+			?>
+			</div>
+			<div class="read-more-block hide">
+				<?php
+					the_content();
+				?>
+				<button class="read-less">Read Less</button>
+			</div>
 			</div>
 		</div>
 		<div class="col col-full">
