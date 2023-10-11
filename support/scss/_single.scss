@@ -24,6 +24,13 @@
 	background: $grey;
 }
 
+.car-details.flex-end {
+	justify-content: flex-start;
+	@media screen and (min-width: $small-width) {
+		justify-content: flex-end;
+	}
+}
+
 div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 	color: $body-color;
 	font-size: 21px;
@@ -801,7 +808,7 @@ Single Video
 
 .single.single-vehicle .header-title {
 	font-size: 26px;
-	margin-bottom: 1.75rem;
+	margin-bottom: 10px;
 	@media screen and (min-width: $small-width) {
 		font-size: 33px;
 		margin-bottom: 3.125rem;

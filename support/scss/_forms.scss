@@ -24,11 +24,14 @@
     content: "";
     position: absolute;
     pointer-events: none;
-    top: 35px;
     background: $red;
     height: 6px;
+    top: 25px;
     width: calc(#{$i}#{'%'});
     border-radius: 6px;
+    @media screen and (min-width: $small-width) {
+    	top: 35px;
+    }
   }
 }
 
