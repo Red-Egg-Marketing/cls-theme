@@ -93,7 +93,7 @@ $year = join(', ', wp_list_pluck($year, 'name'));
 			$phone = get_field('business_phone', 'options');
 			
 		?>
-			<div id="PaymentCalculator">
+			<div id="PaymentCalculator" class="loading">
 			</div>
 			<div class="col car-details">
 				<a 

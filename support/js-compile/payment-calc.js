@@ -10,7 +10,7 @@ const ResourcesRoot = document.getElementById('PaymentCalculator');
 const SavePaymentCalc = () => {
 	  	const [initialLoad, setLoaded] = useState(false);
   		const [resourcesEmpty, setEmpty] = useState(false);
-  		const [loading, setLoading] = useState(false);
+  		const [loading, setLoading] = useState('loading');
   		const [data, setData] = useState({});
   		const [payment, setPayment] = useState(false);
   		const [totalPrice, setPrice] = useState(false);
@@ -110,6 +110,8 @@ const SavePaymentCalc = () => {
 			form.addEventListener('submit', calculateSavings);
 
 			if (initialLoad === false) {
+				ResourcesRoot.classList.remove('loading');
+				setLoading('loaded');
 				price = price.getAttribute('data-price');
 				data['price_max'] = price;
 				data['down'] = Math.ceil(0.15 * price);
@@ -193,13 +195,6 @@ const SavePaymentCalc = () => {
 
 						</table>
 					</div>
-					{/*{loading == false && resources == false && resourcesEmpty == false && (
-						<Fragment>
-								<div className="loading">
-									<h2>...Loading</h2>
-								</div>
-						</Fragment>
-					)}*/}
 				</div>
 			</Fragment>
 		);
