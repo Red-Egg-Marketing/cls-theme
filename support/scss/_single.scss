@@ -24,6 +24,20 @@
 	background: $grey;
 }
 
+.post-content .car-details:first-of-type {
+	width: 100%;
+	@media screen and (min-width: $small-width) and (max-width: $med-small-width - 1px) {
+		width: 100%;
+	}
+	@media screen and (min-width: $med-small-width) {
+		width: 50%;
+	}
+}
+
+.car-details:first-of-type p {
+	width: 50%;
+}
+
 .car-details.flex-end {
 	justify-content: flex-start;
 	@media screen and (min-width: $small-width) {
@@ -147,12 +161,21 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 p.year,
 p.miles {
 	font-weight: 900;
+	margin-top: 0;
+	margin-bottom: 15px;
 }
 
 .car-details .wp-element-button {
 	margin-bottom: 1.5rem;
 	@media screen and (min-width: $small-width) {
 		margin-bottom: 2.5rem;
+	}
+}
+
+.post-content .second-col {
+	margin-top: 45px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 110px;
 	}
 }
 
@@ -817,10 +840,11 @@ Single Video
 
 #PaymentCalculator {
 	width: 100%;
-	max-width: 425px;
-	margin-right: auto;
-	margin-left: auto;
 	margin-bottom: 35px;
+	@media screen and (min-width: $med-small-width) {
+		width: 50%;
+		max-width: 425px;
+	}
 }
 
 #Calculator label {

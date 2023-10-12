@@ -86,13 +86,20 @@ $year = join(', ', wp_list_pluck($year, 'name'));
 			}
 		?>
 		</div>
-		<div class="col flex">
+		<div class="col flex second-col">
 		<?php
 			
 			$miles = number_format(floatval(get_post_meta($id, 'miles', true)), 0);
 			$phone = get_field('business_phone', 'options');
 			
 		?>
+			
+			<div class="col car-details flex align-start">
+				<div class="flex align-start width-100">
+					<p class="year"><? echo $year; ?></p>
+					<p class="miles"><? echo $miles; ?> mi</p>
+				</div>
+			</div>
 			<div id="PaymentCalculator" class="loading">
 			</div>
 			<div class="col car-details">
@@ -101,9 +108,6 @@ $year = join(', ', wp_list_pluck($year, 'name'));
 					href="javascript;" 
 					data-src="#modal-form-<?= $modal_form  ?>" 
 					data-fancybox>I'm Interested</a>
-				
-				<p class="year"><? echo $year; ?></p>
-				<p class="miles"><? echo $miles; ?> mi</p>
 			</div>
 			<div class="col car-details flex-end align-start flex">
 				<p class="phone"><? echo $phone; ?></p>
