@@ -239,7 +239,7 @@ div.gs-archive-container, div.gs-single-container {
 
 .reviews .resources-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	@media screen and (min-width: $med-width) {
 		grid-template-columns: 1fr 1fr;
 	}
