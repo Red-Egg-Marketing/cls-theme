@@ -21996,6 +21996,10 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
   color: white;
 }
 
+.hero .hero-block-wrap {
+  max-width: 1000px;
+}
+
 .hero-block-content {
   position: relative;
   z-index: 2;

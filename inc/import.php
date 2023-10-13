@@ -170,6 +170,23 @@ function cls_import_vehicles_from_csv() {
 
         $current_images = false;
 
+        $meta_info = [
+            "vin" => $post["VIN"],
+            "miles" => $post["Miles"],
+            "stock" => $post["Stock"],
+            "model_number" => $post["ModelNumber"],
+            "selling_price" => $post["SellingPrice"],
+            "msrp" => $post["MSRP"],
+            "book_value" => $post["BookValue"],
+            "invoice" => $post["Invoice"],
+            "certified" => $post["Certified"],
+            "date_in_stock" => $post["DateInStock"],
+            "options" => $post["Options"],
+            "categorized_options" => $post["Categorized Options"],
+            "city_mpg" => $post["CityMPG"],
+            "highway_mpg" => $post["HighwayMPG"],
+        ];
+
         if ( $exists_id !== false ) {
             // if the vin number exists, update the post
             wp_update_post(
@@ -178,16 +195,17 @@ function cls_import_vehicles_from_csv() {
                     "post_title" => $post["title"],
                     "post_content" => $post["content"],
                     "post_type" => $vehicle["custom-post-type"],
-                    "post_status" => "publish"
+                    "post_status" => "publish",
+                    "meta_input" => $meta_info,
                 ]
             );
 
              // check images meta if post has already been inserted, but updating
-            $current_images = get_post_meta($exists_id, 'original_base');
+            $current_images = get_post_meta($exists_id, 'original_base', true);
 
-            $current_images = json_decode($current_images[0]);
+            $current_images = json_decode($current_images, true);
 
-        } else {
+        } elseif ($exists_id === false ) {
             // Insert the vehicle into the database
             $post["id"] = wp_insert_post(
                 [
@@ -196,9 +214,7 @@ function cls_import_vehicles_from_csv() {
                     "post_type" => $vehicle["custom-post-type"],
                     "post_name" => $post['Year'] . ' ' . $post["Model"],
                     "post_status" => "publish",
-                    "meta_input" => [
-                        "vin" => $post["VIN"]
-                    ]
+                    "meta_input" => $meta_info
                 ]
             );
         }
@@ -212,16 +228,25 @@ function cls_import_vehicles_from_csv() {
         
         // load images into upload directory
         $i_array = [];
-        
+
+        $base_images = [];
+
+    
         foreach($images as $image) {
 
-                if (is_array($current_images) && in_array(basename($image), $current_images)) {
+                $actual_id = $exists_id !== false ? $exists_id : $post['id'];
+
+                $base = basename($image);
+
+                array_push($base_images, $base);
+
+                if (is_array($current_images) && in_array($base, $current_images)) {
                     continue;
                 }
                 
                 $timeout_seconds = 3;
 
-                array_push($i_array, basename($image));
+                array_push($i_array, $base);
 
                 $temp_file = download_url( $image, $timeout_seconds );
 
@@ -257,9 +282,9 @@ function cls_import_vehicles_from_csv() {
                                 'guid'           => $sideload[ 'url' ],
                                 'post_mime_type' => $sideload[ 'type' ],
                                 'post_title'     => $post['title'] . ' Image #' . $number,
-                                'post_content'   => basename($image),
+                                'post_content'   => $base,
                                 'post_status'    => 'inherit',
-                                'post_parent'    => $post['id']
+                                'post_parent'    => $actual_id
                             ),
                             $sideload[ 'file' ]
                         );
@@ -284,6 +309,57 @@ function cls_import_vehicles_from_csv() {
                 
     
         } // end foreach
+
+        if ( $exists_id !== false && is_array($current_images)) {
+
+
+            $missing_images = array_filter($current_images, function($image) use ($base_images) {
+                if (!in_array($image, $base_images)) {
+                    return true;
+                }
+            });
+
+            $intersect = array_filter($current_images, function($image) use ($base_images) {
+                if (in_array($image, $base_images)) {
+                    return true;
+                }
+            });
+            
+            // remove missing images
+            foreach($missing_images as $missing_image) {
+
+                $image_query = $wpdb->get_col( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' && post_parent = '{$exists_id}' && post_content = '{$missing_image}'" );
+                wp_delete_attachment( $image_query[0], true );
+
+
+                 wp_update_post(
+                [
+                    'ID' => $actual_id,
+                    'meta_input' => [
+                        'original_base' => json_encode($intersect)
+                    ]
+                ]
+            );
+
+            }
+
+           
+
+           
+        }
+
+
+        if ( $exists_id === false ) {
+            wp_update_post(
+                [
+                    'ID' => $actual_id,
+                    'meta_input' => [
+                        'original_base' => json_encode($i_array)
+                    ]
+                ]
+            );
+             
+        } 
 
         $tax_array = [];
 
@@ -315,25 +391,6 @@ function cls_import_vehicles_from_csv() {
                 );
             }
         }
-
-        
-        // add for checking if images are already added
-        update_post_meta($post['id'], 'original_base', json_encode($i_array));
-        // Update post's custom field with attachment
-        update_post_meta( $post['id'], $vehicle["stock"], $post["Stock"]);
-        update_post_meta( $post['id'], $vehicle["model_number"], $post["ModelNumber"]);
-        update_post_meta( $post['id'], $vehicle["selling_price"], $post["SellingPrice"]);
-        update_post_meta( $post['id'], $vehicle["miles"], $post["Miles"]);
-        update_post_meta( $post['id'], $vehicle["year"], $post["Year"]);
-        update_post_meta( $post['id'], $vehicle["msrp"], $post["MSRP"]);
-        update_post_meta( $post['id'], $vehicle["book_value"], $post["BookValue"]);
-        update_post_meta( $post['id'], $vehicle["invoice"], $post["Invoice"]);
-        update_post_meta( $post['id'], $vehicle["certified"], $post["Certified"]);
-        update_post_meta( $post['id'], $vehicle["date_in_stock"], $post["DateInStock"]);
-        update_post_meta( $post['id'], $vehicle["options"], $post["Options"]);
-        update_post_meta( $post['id'], $vehicle["categorized_options"], $post["Categorized Options"]);
-        update_post_meta( $post['id'], $vehicle["city_mpg"], $post["CityMPG"]);
-        update_post_meta( $post['id'], $vehicle["highway_mpg"], $post["HighwayMPG"]);
     
         
     }  

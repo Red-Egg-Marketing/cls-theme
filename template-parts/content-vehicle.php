@@ -37,6 +37,7 @@ $year = join(', ', wp_list_pluck($year, 'name'));
 			    'numberposts' => -1
 			));
 
+
 			if (!empty($attachments)) {
 				?>
 				<div class="vehicle-gallery">
