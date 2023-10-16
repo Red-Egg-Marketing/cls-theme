@@ -17,7 +17,7 @@ const SaveBioReviews = () => {
   		const [totalMonths, setMonths] = useState(false);
   		const [totalAPR, setAPR] = useState(false);
   		const [down, setDown] = useState(false);
-  		const [shit, setShit] = useState({});
+  		const [total, setTotal] = useState(false);
 
   		const sendAPIrequest = (data) => {
 
@@ -40,6 +40,10 @@ const SaveBioReviews = () => {
 
 		}
 
+		const loadAll = () => {
+			setTotal(true);
+		}
+
 		React.useEffect( () => {
 			
 			if (resources === false) {
@@ -56,6 +60,10 @@ const SaveBioReviews = () => {
     				setEmpty(empty);
     				if (empty === true) {
     			    	selectResources(posts);
+    			    	let filtered = posts.filter((post)=>{
+    			    		return post.rating >= 4;
+    			    	});
+    			    	selectResources(filtered);
     			    }
     			 	setLoading(true);
 
@@ -88,42 +96,88 @@ const SaveBioReviews = () => {
 							let style = {
 								"display" : "none"
 							}
-							if (rating >= 4) {
-							return (
-								<Fragment>
-									<div className="wprevpro_t1_DIV_1 w3_wprs-col outerrevdiv">
-										<div className="indrevdiv wprevpro_t1_DIV_2 wprev_preview_bg1_T1 wprev_preview_bradius_T1">
-											<div className="wprevpro_t1_P_3 wprev_preview_tcolor1_T1">
-												<span className="wprevpro_star_imgs_T1">
-													<span className="starloc1 wprevpro_star_imgs wprevpro_star_imgsloc1">
-													{ ratingArray.map((item, index) => {
-														return(
-															<span
-																className="svgicons svg-wprsp-star"
-															>
-															</span>
-														);
-													})}
+							if (resourceIndex < 6 && total == false) {
+								return (
+									<Fragment>
+										<div className="wprevpro_t1_DIV_1 w3_wprs-col outerrevdiv">
+											<div className="indrevdiv wprevpro_t1_DIV_2 wprev_preview_bg1_T1 wprev_preview_bradius_T1">
+												<div className="wprevpro_t1_P_3 wprev_preview_tcolor1_T1">
+													<span className="wprevpro_star_imgs_T1">
+														<span className="starloc1 wprevpro_star_imgs wprevpro_star_imgsloc1">
+														{ ratingArray.map((item, index) => {
+															return(
+																<span
+																	className="svgicons svg-wprsp-star"
+																>
+																</span>
+															);
+														})}
+														</span>
 													</span>
+													<span className="wprs_rd_more_1">{intro}</span>
+													<span className="wprs_rd_more"> read more</span>
+													<span className="wprs_rd_more_text" style={ style }>{intro}{ more }</span>
+													<span className="wprs_rd_less" style={ style }> read less</span>
+												</div>
+											</div>
+											{ image && (
+												<span className="wprevpro_t1_A_8">
+													<img loading="lazy" src={ image } alt={`${ name } Avatar`} className="wprevpro_t1_IMG_4 wprevpro_avatarimg" />
 												</span>
-												<span className="wprs_rd_more_1">{intro}</span>
-												<span className="wprs_rd_more"> read more</span>
-												<span className="wprs_rd_more_text" style={ style }>{intro}{ more }</span>
-												<span className="wprs_rd_less" style={ style }> read less</span>
+											)}
+											<div className="wprevpro_t1_SPAN_5 wprev_preview_tcolor2_T1">
+												<div class="wprevpro_t1_rname wprevname">{ name }</div>
 											</div>
 										</div>
-										{ image && (
-											<span className="wprevpro_t1_A_8">
-												<img loading="lazy" src={ image } alt={`${ name } Avatar`} className="wprevpro_t1_IMG_4 wprevpro_avatarimg" />
-											</span>
+										{ (resourceIndex == 5 && total == false) && (
+											<div className="wp-block-button">
+												<button 	
+													className="wp-block-button__link"
+													onClick={ loadAll }
+												>
+													Load More
+												</button>
+											</div>
 										)}
-										<div className="wprevpro_t1_SPAN_5 wprev_preview_tcolor2_T1">
-											<div class="wprevpro_t1_rname wprevname">{ name }</div>
+									</Fragment>
+								)
+							} else if(total == true) {
+								return(
+									<Fragment>
+										<div className="wprevpro_t1_DIV_1 w3_wprs-col outerrevdiv">
+											<div className="indrevdiv wprevpro_t1_DIV_2 wprev_preview_bg1_T1 wprev_preview_bradius_T1">
+												<div className="wprevpro_t1_P_3 wprev_preview_tcolor1_T1">
+													<span className="wprevpro_star_imgs_T1">
+														<span className="starloc1 wprevpro_star_imgs wprevpro_star_imgsloc1">
+														{ ratingArray.map((item, index) => {
+															return(
+																<span
+																	className="svgicons svg-wprsp-star"
+																>
+																</span>
+															);
+														})}
+														</span>
+													</span>
+													<span className="wprs_rd_more_1">{intro}</span>
+													<span className="wprs_rd_more"> read more</span>
+													<span className="wprs_rd_more_text" style={ style }>{intro}{ more }</span>
+													<span className="wprs_rd_less" style={ style }> read less</span>
+												</div>
+											</div>
+											{ image && (
+												<span className="wprevpro_t1_A_8">
+													<img loading="lazy" src={ image } alt={`${ name } Avatar`} className="wprevpro_t1_IMG_4 wprevpro_avatarimg" />
+												</span>
+											)}
+											<div className="wprevpro_t1_SPAN_5 wprev_preview_tcolor2_T1">
+												<div class="wprevpro_t1_rname wprevname">{ name }</div>
+											</div>
 										</div>
-									</div>
-								</Fragment>
-							)
+									</Fragment>
+								)
 							}
+
 						})
 					}
 				
