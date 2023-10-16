@@ -154,15 +154,15 @@ const SavePaymentCalc = () => {
 						<div className="form-row term-row">
 							<div className="inner-row flex">
 								<div className="col">
-									<label for="term">Term</label>
+									<label for="term">Months</label>
 									<select id="term" name="term">
-										<option value="12">12 Months</option>
-										<option value="24">24 Months</option>
-										<option value="36">36 Months</option>
-										<option value="48">48 Months</option>
-										<option value="60">60 Months</option>
-										<option value="72" selected>72 Months</option>
-										<option value="84">84 Months</option>
+										<option value="12">12</option>
+										<option value="24">24</option>
+										<option value="36">36</option>
+										<option value="48">48</option>
+										<option value="60">60</option>
+										<option value="72" selected>72</option>
+										<option value="84">84</option>
 									</select>
 								</div>
 								<div className="col">
