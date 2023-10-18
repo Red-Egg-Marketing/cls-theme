@@ -299,7 +299,7 @@ function cls_import_vehicles_from_csv() {
                                 wp_generate_attachment_metadata( $attachment_id, $sideload[ 'file' ] )
                             );
                             if ($number == 1) {
-                                set_post_thumbnail($post['id'], $attachment_id);
+                                set_post_thumbnail($actual_id, $attachment_id);
                             }
                             $number+=1;
                         }
