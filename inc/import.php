@@ -385,7 +385,7 @@ function cls_import_vehicles_from_csv() {
 
             foreach($tax as $key => $tax_value) {
                 wp_set_post_terms(
-                    $post['id'],
+                    $actual_id,
                     $tax_value,
                     $key,
                     false
