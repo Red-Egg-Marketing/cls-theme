@@ -131,6 +131,7 @@
 
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );
+			body.classList.remove( 'nav-active' );
 			button.setAttribute( 'aria-expanded', 'false' );
 		}
 	} );
