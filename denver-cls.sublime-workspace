@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"get_the",
+				"get_the_terms"
+			],
+			[
+				"prin",
+				"print_r()"
+			],
+			[
 				"res",
 				"resourceIndex"
 			],
@@ -30,10 +38,6 @@
 			[
 				"ret",
 				"return"
-			],
-			[
-				"prin",
-				"print_r"
 			],
 			[
 				"re",
@@ -118,10 +122,6 @@
 			[
 				"add",
 				"addClass"
-			],
-			[
-				"get_the",
-				"get_the_content"
 			],
 			[
 				"class",
@@ -519,17 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "support/js-compile/swiper.js",
-			"settings":
-			{
-				"buffer_size": 1259,
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -573,15 +562,19 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/assets",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/assets/js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts"
 	],
 	"file_history":
 	[
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/navigation.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_single.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles/gs-team-single-default.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_bios.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_reviews.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/swiper.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/navigation.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/payment-calc.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/bio-reviews.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
@@ -591,19 +584,14 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/tabs/scrolling.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/feature-section/scrolling.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/front-end.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_bios.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles/gs-team-single-default.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/stat-callout.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/frontend.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/csv/cls.csv",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/theme-compat/footer.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/hero/style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_forms.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_single.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/media.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_base.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/twentytwentyone/assets/sass/05-blocks/latest-posts/_style.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/twentytwentyone/assets/sass/05-blocks/latest-posts/_editor.scss",
@@ -640,10 +628,8 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/filter-posts.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/gform.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_reviews.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/css/colors/_variables.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/style.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/swiper.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/words.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/bios.js",
@@ -726,6 +712,41 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"drivetrain",
+			"drive",
+			"xml",
+			"calendar",
+			"year",
+			"p.year, p.miles",
+			"p.year",
+			"p.year, p.miles",
+			"city",
+			"CityMPG",
+			"city",
+			"selling_price",
+			"CityMPG",
+			"drivetrain",
+			"trans",
+			"drivetrain",
+			"transmission",
+			"trans",
+			"displace",
+			"displacement",
+			"engine_displacement",
+			"displace",
+			"engine",
+			"\">",
+			"engine",
+			"engine_cylinder",
+			"engine",
+			"exterior",
+			"doors",
+			"exterior_color",
+			"exterior",
+			"interior",
+			"get_the_terms",
+			".single .gs-containeer .gs_team",
+			"div.gs-single-default .gs-team-single-content",
 			"post['id']",
 			"tabs",
 			"tweenmax",
@@ -818,42 +839,7 @@
 			"JTEBU5JR5G5372062",
 			"continue",
 			"$current_images",
-			"SellingPrice",
-			"$post[\"id\"]",
-			"true",
-			"false",
-			"$tax_info",
-			"year",
-			"CityMPG",
-			"HighwayMPG",
-			"city_mpg",
-			"highway_mpg",
-			"CityMPG",
-			"Options",
-			"Categorized",
-			"categorized_options",
-			"Options",
-			"options",
-			"DateInStock",
-			"date_in_stock",
-			"Certified",
-			"DateInStock",
-			"certified",
-			"date_in_stock",
-			"Invoice",
-			"Certified",
-			"invoice",
-			"BookValue",
-			"book_value",
-			"MSRP",
-			"BookValue",
-			"msrp",
-			"Year",
-			"MSRP",
-			"year",
-			"SellingPrice",
-			"selling_price",
-			"ModelNumber"
+			"SellingPrice"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -880,38 +866,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "support/js-compile/swiper.js",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1259,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								1259
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		},
 		{
@@ -948,7 +902,7 @@
 		"cols":
 		[
 			0.0,
-			0.464085153248,
+			0.438859960372,
 			1.0
 		],
 		"rows":
@@ -976,15 +930,19 @@
 		"selected_items":
 		[
 			[
+				"_var",
+				"app/public/wp-content/themes/cls-theme/support/scss/_variables.scss"
+			],
+			[
+				"impo",
+				"app/public/wp-content/themes/cls-theme/inc/import.php"
+			],
+			[
 				"navig",
 				"app/public/wp-content/themes/cls-theme/js/navigation.js"
 			],
 			[
 				"impor",
-				"app/public/wp-content/themes/cls-theme/inc/import.php"
-			],
-			[
-				"impo",
 				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
@@ -1038,10 +996,6 @@
 			[
 				"_form",
 				"cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_forms.scss"
-			],
-			[
-				"_var",
-				"app/public/wp-content/themes/cls-theme/support/scss/_variables.scss"
 			],
 			[
 				"_ba",
@@ -1493,9 +1447,13 @@
 	"select_project":
 	{
 		"height": 682.0,
-		"last_filter": "",
+		"last_filter": "mi",
 		"selected_items":
 		[
+			[
+				"mi",
+				"~/Local Sites/mimms/mimms-properties.sublime-project"
+			],
 			[
 				"",
 				"~/Local Sites/amwa/amwa.sublime-project"
@@ -1784,7 +1742,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

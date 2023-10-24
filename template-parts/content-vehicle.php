@@ -12,6 +12,7 @@ $modal_form = get_field('menu_form', 'options');
 $orig_price = get_post_meta($id, 'selling_price', true);
 $city = get_post_meta($id, 'city_mpg', true);
 $highway = get_post_meta($id, 'highway_mpg', true);
+$seats = get_post_meta($id, 'seats', true);
 $price = number_format(floatval($orig_price), 0);
 $year = get_the_terms($id, 'car_year');
 $year = join(', ', wp_list_pluck($year, 'name'));
@@ -19,8 +20,6 @@ $interior = get_the_terms($id, 'interior_color');
 $interior = join(', ', wp_list_pluck($interior, 'name'));
 $exterior = get_the_terms($id, 'exterior_color');
 $exterior = join(', ', wp_list_pluck($exterior, 'name'));
-$doors = get_the_terms($id, 'doors');
-$doors = join(', ', wp_list_pluck($doors, 'name'));
 $engine = get_the_terms($id, 'engine_cylinder');
 $engine = join(', ', wp_list_pluck($engine, 'name'));
 $displace = get_the_terms($id, 'engine_displacement');
@@ -116,14 +115,15 @@ $trim = join(', ', wp_list_pluck($trim, 'name'));
 				<div class="flex align-start width-100">
 					<p class="attr miles"><? echo $miles; ?> mi</p>
 					<p class="attr trim"><? echo $trim; ?></p>
-					<p class="attr engine"><? echo $engine; ?> Cylinders</p>
-					<p class="attr displacement"><? echo $displace; ?></p>
+					<p class="attr engine"><? echo $engine; ?> Cylinders, <?= $displace ?></p>
 					<p class="attr trans"><? echo $trans; ?></p>
 					<p class="attr drive"><? echo $drive; ?></p>
-					<p class="attr exterior">Exterior:<br /><? echo $exterior; ?></p>
-					<p class="attr interior">Interior:<br /><? echo $interior; ?></p>
-					<p class="attr doors"><? echo $doors; ?> Doors</p>
-					<p class="attr mpg"><? echo $city . '/' . $highway .'MPG'; ?> </p>
+					<p class="attr exterior">Exterior: <? echo $exterior; ?></p>
+					<p class="attr interior">Interior: <? echo $interior; ?></p>
+					<?php if($seats) { ?>
+						<p class="attr seats"><? echo $seats; ?> Seats</p>
+					<?php } ?>
+					<p class="attr mpg"><? echo $city . ' City/' . $highway .' Highway MPG'; ?> </p>
 				</div>
 			</div>
 			<div id="PaymentCalculator" class="loading">

@@ -41,12 +41,21 @@ function cls_vin_import_check( $post_id ) {
 
     foreach($results as $result) {
         $fuel_type = $result->FuelTypePrimary;
+        $seats = $result->Seats;
+
         if($fuel_type) {
             wp_set_post_terms(
                 $post_id,
                 $fuel_type,
                 'fuel_type',
                 false
+            );
+        }
+        if($seats) {
+            add_post_meta(
+                $post_id,
+                'seats',
+                $seats,
             );
         }
     }

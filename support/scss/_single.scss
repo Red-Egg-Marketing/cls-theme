@@ -26,16 +26,19 @@
 
 .post-content .car-details:first-of-type {
 	width: 100%;
+	margin-bottom: 20px;
 	@media screen and (min-width: $small-width) and (max-width: $med-small-width - 1px) {
 		width: 100%;
+		margin-bottom: 30px;
 	}
 	@media screen and (min-width: $med-small-width) {
 		width: 50%;
+		margin-bottom: 30px;
 	}
 }
 
 .car-details:first-of-type p {
-	width: 50%;
+	width: 100%;
 }
 
 .car-details.flex-end {
@@ -128,14 +131,8 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 }
 
 .miles {
-	background: url($clock) no-repeat center left / 12px;
-	padding-left: 17px;
-
-	margin-bottom: 0;
-	@media screen and (min-width: $small-width) {
-			background: url($clock) no-repeat center left / 21px;
-			padding-left: 30px;
-	}
+	background: url($clock) no-repeat left 4px / 19px;
+	padding-left: 35px;
 }
 
 .vehicle.swiper .swiper-button-prev, 
@@ -160,8 +157,10 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 
 p.attr {
 	font-weight: 900;
+	font-size: 18px;
+	line-height: 28px;
 	margin-top: 0;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 }
 
 .car-details .wp-element-button {
@@ -247,34 +246,53 @@ p.attr {
 }
 
 .year {
-	background: url($calendar) no-repeat center left / 12px;
-	padding-left: 17px;
-	font-weight: 900;
-	margin-bottom: 0;
-	@media screen and (min-width: $small-width) {
-			background: url($calendar) no-repeat center left / 21px;
-			padding-left: 30px;
-	}
+	background: url($calendar) no-repeat left 0px / 21px;
+	padding-left: 35px;
 }
 
 .engine {
-	background: url($engine) no-repeat center left / 14px;
-	padding-left: 17px;
-	font-weight: 900;
-	margin-bottom: 0;
-	@media screen and (min-width: $small-width) {
-			background: url($engine) no-repeat center left / 24px;
-			padding-left: 30px;
-	}
+	background: url($engine) no-repeat left 6px / 21px;
+	padding-left: 35px;
+}
+
+.exterior {
+	background: url($exterior) no-repeat left 7px / 21px;
+	padding-left: 35px;
+}
+
+.interior {
+	background: url($interior) no-repeat left 6px / 19px;
+	padding-left: 35px;
+}
+
+.mpg {
+	background: url($mpg) no-repeat left 4px / 19px;
+	padding-left: 35px;
+}
+
+.seats {
+	background: url($seats) no-repeat left 4px / 18px;
+	padding-left: 35px;
+}
+
+.drive {
+	background: url($wheel) no-repeat left 5px / 19px;
+	padding-left: 35px;
+}
+
+.trim {
+	background: url($trim) no-repeat left 5px / 19px;
+	padding-left: 35px;
 }
 
 .phone {
-	background: url($phone) no-repeat center left / 15px;
-	padding-left: 20px;
-	@media screen and (min-width: $small-width) {
-			background: url($phone) no-repeat center left / 30px;
-			padding-left: 35px;
-	}
+	background: url($phone) no-repeat left 0px / 30px;
+	padding-left: 35px;
+}
+
+.trans {
+	background: url($trans) no-repeat left 6px / 21px;
+	padding-left: 35px;
 }
 
 p.phone {
