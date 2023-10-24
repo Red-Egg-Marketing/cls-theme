@@ -158,11 +158,10 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 	}
 }
 
-p.year,
-p.miles {
+p.attr {
 	font-weight: 900;
 	margin-top: 0;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .car-details .wp-element-button {
@@ -254,6 +253,17 @@ p.miles {
 	margin-bottom: 0;
 	@media screen and (min-width: $small-width) {
 			background: url($calendar) no-repeat center left / 21px;
+			padding-left: 30px;
+	}
+}
+
+.engine {
+	background: url($engine) no-repeat center left / 14px;
+	padding-left: 17px;
+	font-weight: 900;
+	margin-bottom: 0;
+	@media screen and (min-width: $small-width) {
+			background: url($engine) no-repeat center left / 24px;
 			padding-left: 30px;
 	}
 }

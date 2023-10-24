@@ -519,6 +519,17 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "support/js-compile/swiper.js",
+			"settings":
+			{
+				"buffer_size": 1259,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -564,10 +575,12 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/assets",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/assets/js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile"
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/navigation.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/payment-calc.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/bio-reviews.js",
@@ -592,7 +605,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/media.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_base.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/navigation.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/twentytwentyone/assets/sass/05-blocks/latest-posts/_style.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/twentytwentyone/assets/sass/05-blocks/latest-posts/_editor.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_project.scss",
@@ -714,6 +726,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"post['id']",
 			"tabs",
 			"tweenmax",
 			"cls_render_filtered_case_study_callback",
@@ -840,8 +853,7 @@
 			"year",
 			"SellingPrice",
 			"selling_price",
-			"ModelNumber",
-			"model_number"
+			"ModelNumber"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -868,6 +880,38 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "support/js-compile/swiper.js",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1259
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		},
 		{
@@ -932,7 +976,15 @@
 		"selected_items":
 		[
 			[
+				"navig",
+				"app/public/wp-content/themes/cls-theme/js/navigation.js"
+			],
+			[
 				"impor",
+				"app/public/wp-content/themes/cls-theme/inc/import.php"
+			],
+			[
+				"impo",
 				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
@@ -1042,10 +1094,6 @@
 			[
 				"_blo",
 				"app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss"
-			],
-			[
-				"navig",
-				"app/public/wp-content/themes/cls-theme/js/navigation.js"
 			],
 			[
 				"function",
@@ -1222,10 +1270,6 @@
 			[
 				"options.php",
 				"app/public/wp-content/themes/cls-theme/inc/options.php"
-			],
-			[
-				"impo",
-				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
 				"_head",
@@ -1449,9 +1493,17 @@
 	"select_project":
 	{
 		"height": 682.0,
-		"last_filter": "re",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Local Sites/amwa/amwa.sublime-project"
+			],
+			[
+				"mim",
+				"~/Local Sites/mimms/mimms-properties.sublime-project"
+			],
 			[
 				"re",
 				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
@@ -1471,10 +1523,6 @@
 			[
 				"ba",
 				"~/Local Sites/base-camp-cyclery-new/basecamp-2022.sublime-project"
-			],
-			[
-				"",
-				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
 			],
 			[
 				"ys",

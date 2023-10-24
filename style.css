@@ -19137,11 +19137,10 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
   }
 }
 
-p.year,
-p.miles {
+p.attr {
   font-weight: 900;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .car-details .wp-element-button {
@@ -19263,6 +19262,20 @@ p.miles {
 @media screen and (min-width: 768px) {
   .year {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21.875' height='25' viewBox='0 0 21.875 25'%3E%3Cpath id='calendar-days-solid' d='M7.813,1.563V3.125h6.25V1.563a1.563,1.563,0,0,1,3.125,0V3.125h2.344a2.344,2.344,0,0,1,2.344,2.344V7.813H0V5.469A2.344,2.344,0,0,1,2.344,3.125H4.688V1.563a1.563,1.563,0,0,1,3.125,0ZM0,9.375H21.875V22.656A2.344,2.344,0,0,1,19.531,25H2.344A2.344,2.344,0,0,1,0,22.656Zm3.125,5.469a.782.782,0,0,0,.781.781H5.469a.784.784,0,0,0,.781-.781V13.281a.784.784,0,0,0-.781-.781H3.906a.782.782,0,0,0-.781.781Zm6.25,0a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V13.281a.784.784,0,0,0-.781-.781H10.156a.784.784,0,0,0-.781.781ZM16.406,12.5a.784.784,0,0,0-.781.781v1.563a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V13.281a.784.784,0,0,0-.781-.781ZM3.125,21.094a.782.782,0,0,0,.781.781H5.469a.784.784,0,0,0,.781-.781V19.531a.784.784,0,0,0-.781-.781H3.906a.782.782,0,0,0-.781.781Zm7.031-2.344a.784.784,0,0,0-.781.781v1.563a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V19.531a.784.784,0,0,0-.781-.781Zm5.469,2.344a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V19.531a.784.784,0,0,0-.781-.781H16.406a.784.784,0,0,0-.781.781Z' fill='%23910035'/%3E%3C/svg%3E%0A") no-repeat center left/21px;
+    padding-left: 30px;
+  }
+}
+
+.engine {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M400 112c13.3 0 24-10.7 24-24s-10.7-24-24-24H208c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0v32H208 160 128c-17.7 0-32 14.3-32 32v56H48V160c0-13.3-10.7-24-24-24s-24 10.7-24 24V352c0 13.3 10.7 24 24 24s24-10.7 24-24V280H96v72c0 17.7 14.3 32 32 32h44.8l32 40c12.1 15.2 30.5 24 50 24H448c35.3 0 64-28.7 64-64V238.8c0-19.4-8.8-37.8-24-50L449.5 158c-11.3-9.1-25.4-14-40-14H328V112l72 0zM544 224V416c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H576c-17.7 0-32 14.3-32 32zm-256 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM160 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm224-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>') no-repeat center left/14px;
+  padding-left: 17px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .engine {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M400 112c13.3 0 24-10.7 24-24s-10.7-24-24-24H208c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0v32H208 160 128c-17.7 0-32 14.3-32 32v56H48V160c0-13.3-10.7-24-24-24s-24 10.7-24 24V352c0 13.3 10.7 24 24 24s24-10.7 24-24V280H96v72c0 17.7 14.3 32 32 32h44.8l32 40c12.1 15.2 30.5 24 50 24H448c35.3 0 64-28.7 64-64V238.8c0-19.4-8.8-37.8-24-50L449.5 158c-11.3-9.1-25.4-14-40-14H328V112l72 0zM544 224V416c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H576c-17.7 0-32 14.3-32 32zm-256 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM160 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm224-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>') no-repeat center left/24px;
     padding-left: 30px;
   }
 }
@@ -20916,6 +20929,11 @@ div.gs-single-default .gs-team-single-content {
   }
 }
 
+div.gs-single-default .gs-team-single-content.default {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 div.gs-single-default .reviews {
   width: 100%;
   background: #E2F0F7;
@@ -20954,6 +20972,8 @@ body.single .gs-containeer .gs_team {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   height: auto;
 }
 

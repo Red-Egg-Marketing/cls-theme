@@ -10,9 +10,25 @@
 $id = get_the_id();
 $modal_form = get_field('menu_form', 'options');
 $orig_price = get_post_meta($id, 'selling_price', true);
+$city = get_post_meta($id, 'city_mpg', true);
+$highway = get_post_meta($id, 'highway_mpg', true);
 $price = number_format(floatval($orig_price), 0);
 $year = get_the_terms($id, 'car_year');
 $year = join(', ', wp_list_pluck($year, 'name'));
+$interior = get_the_terms($id, 'interior_color');
+$interior = join(', ', wp_list_pluck($interior, 'name'));
+$exterior = get_the_terms($id, 'exterior_color');
+$exterior = join(', ', wp_list_pluck($exterior, 'name'));
+$doors = get_the_terms($id, 'doors');
+$doors = join(', ', wp_list_pluck($doors, 'name'));
+$engine = get_the_terms($id, 'engine_cylinder');
+$engine = join(', ', wp_list_pluck($engine, 'name'));
+$displace = get_the_terms($id, 'engine_displacement');
+$displace = join(', ', wp_list_pluck($displace, 'name'));
+$trans = get_the_terms($id, 'transmission');
+$trans = join(', ', wp_list_pluck($trans, 'name'));
+$drive = get_the_terms($id, 'drivetrain');
+$drive = join(', ', wp_list_pluck($drive, 'name'));
 
 ?>
 
@@ -36,7 +52,6 @@ $year = join(', ', wp_list_pluck($year, 'name'));
 			    'order' => 'ASC',
 			    'numberposts' => -1
 			));
-
 
 			if (!empty($attachments)) {
 				?>
@@ -97,8 +112,15 @@ $year = join(', ', wp_list_pluck($year, 'name'));
 			
 			<div class="col car-details flex align-start">
 				<div class="flex align-start width-100">
-					<p class="year"><? echo $year; ?></p>
-					<p class="miles"><? echo $miles; ?> mi</p>
+					<p class="attr miles"><? echo $miles; ?> mi</p>
+					<p class="attr engine"><? echo $engine; ?> Cylinders</p>
+					<p class="attr displacement"><? echo $displace; ?></p>
+					<p class="attr trans"><? echo $trans; ?></p>
+					<p class="attr drive"><? echo $drive; ?></p>
+					<p class="attr exterior">Exterior:<br /><? echo $exterior; ?></p>
+					<p class="attr interior">Interior:<br /><? echo $interior; ?></p>
+					<p class="attr doors"><? echo $doors; ?> Doors</p>
+					<p class="attr mpg"><? echo $city . '/' . $highway .'MPG'; ?> </p>
 				</div>
 			</div>
 			<div id="PaymentCalculator" class="loading">

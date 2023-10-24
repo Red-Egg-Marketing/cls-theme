@@ -14,14 +14,13 @@ $title = get_the_title($post->ID);
 $title = explode(" ", $title);
 $title = $title[0];
 $terms = wp_list_pluck(get_the_terms($post->ID, 'team_group'), 'slug');
-
+$class = in_array('sales', $terms) ? 'sales' : 'default';
 $designation = get_post_meta( get_the_id(), '_gs_des', true );
-
 $modal_form = get_field('menu_form', 'options');
 
 ?>
 
-<div class="gs-team-single-content" itemscope="" itemtype="http://schema.org/Person">
+<div class="gs-team-single-content <?= $class ?>" itemscope="" itemtype="http://schema.org/Person">
 
     <div class="gs_member_img">
         
@@ -72,10 +71,12 @@ $modal_form = get_field('menu_form', 'options');
     </div>
 
 </div>
-<div class="reviews">
-    <header>
-        <h2><?= $title ?>'s Reviews</h2>
-    </header>
-    <div id="BioReviews">
+<?php if ($class == 'sales') { ?>
+    <div class="reviews">
+        <header>
+            <h2><?= $title ?>'s Reviews</h2>
+        </header>
+        <div id="BioReviews">
+        </div>
     </div>
-</div>
+<?php } ?>

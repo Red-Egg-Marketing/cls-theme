@@ -180,6 +180,10 @@ div.gs-single-default .gs-team-single-content {
 	}
 }
 
+div.gs-single-default .gs-team-single-content.default {
+	justify-content: center;
+}
+
 div.gs-single-default .reviews {
 	width: 100%;
 	background: $lighter-blue;
@@ -213,6 +217,7 @@ body.single .gs-containeer .gs_team {
 .single .gs-containeer .gs_team {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	height: auto;
 }
 
