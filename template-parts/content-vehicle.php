@@ -29,6 +29,8 @@ $trans = get_the_terms($id, 'transmission');
 $trans = join(', ', wp_list_pluck($trans, 'name'));
 $drive = get_the_terms($id, 'drivetrain');
 $drive = join(', ', wp_list_pluck($drive, 'name'));
+$trim = get_the_terms($id, 'trim');
+$trim = join(', ', wp_list_pluck($trim, 'name'));
 
 ?>
 
@@ -113,6 +115,7 @@ $drive = join(', ', wp_list_pluck($drive, 'name'));
 			<div class="col car-details flex align-start">
 				<div class="flex align-start width-100">
 					<p class="attr miles"><? echo $miles; ?> mi</p>
+					<p class="attr trim"><? echo $trim; ?></p>
 					<p class="attr engine"><? echo $engine; ?> Cylinders</p>
 					<p class="attr displacement"><? echo $displace; ?></p>
 					<p class="attr trans"><? echo $trans; ?></p>
