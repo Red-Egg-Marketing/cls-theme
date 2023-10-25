@@ -115,7 +115,13 @@ $trim = join(', ', wp_list_pluck($trim, 'name'));
 				<div class="flex align-start width-100">
 					<p class="attr miles"><? echo $miles; ?> mi</p>
 					<p class="attr trim"><? echo $trim; ?></p>
-					<p class="attr engine"><? echo $engine; ?> Cylinders, <?= $displace ?></p>
+					<?php if($engine || $displace) { ?>
+						<p class="attr engine">
+							<?php if ($engine) echo $engine . ' Cylinders, ';
+							echo $displace 
+							?>
+						</p>
+					<?php } ?>
 					<p class="attr trans"><? echo $trans; ?></p>
 					<p class="attr drive"><? echo $drive; ?></p>
 					<p class="attr exterior">Exterior: <? echo $exterior; ?></p>
