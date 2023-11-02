@@ -296,6 +296,11 @@ require get_template_directory() . '/inc/import.php';
 
 
 /**
+ * Importing Car Fax
+ */
+require get_template_directory() . '/inc/car-fax.php';
+
+/**
  * Post Filters
  */
 require get_template_directory() . '/inc/posts-filter.php';

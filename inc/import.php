@@ -19,6 +19,11 @@ function cls_cron_schedules($schedules){
             'interval' => 12*60*60,
             'display' => __('Once every 12 hours'));
     }
+    if(!isset($schedules["24hrs"])){
+        $schedules["24hrs"] = array(
+            'interval' => 24*60*60,
+            'display' => __('Once every 24 hours'));
+    }
     return $schedules;
 }
 add_filter('cron_schedules','cls_cron_schedules');
