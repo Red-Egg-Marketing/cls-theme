@@ -1,7 +1,7 @@
 <?php
 
 if (!wp_next_scheduled('cls_vehicles_vin_hook')) {
-    wp_schedule_event( time(), '24hrs', 'cls_vehicles_vin_hook' );
+    wp_schedule_event( time(), '23hrs', 'cls_vehicles_vin_hook' );
 }
 
 add_action ( 'cls_vehicles_vin_hook', 'retrieve_all_vin_numbers' );
@@ -40,7 +40,7 @@ function retrieve_all_vin_numbers() {
         fwrite($myfile2, $output2);
 
         // ftp to carfax
-        car_fax_ftp([$filename, $filename2]);
+        car_fax_ftp_inbound([$filename, $filename2]);
 
         fclose($myfile);
         fclose($myfile2);
@@ -55,29 +55,56 @@ function retrieve_all_vin_numbers() {
 }
 
 
-function car_fax_ftp($files = '') {
+if (!wp_next_scheduled('cls_vehicles_carfax_outbound')) {
+    wp_schedule_event( time(), '24hrs', 'cls_vehicles_carfax_outbound' );
+}
+
+add_action ( 'cls_vehicles_carfax_outbound', 'car_fax_ftp_outbound' );
+
+function car_fax_ftp_outbound() {
+    global $wpdb;
+    $server = 'data.carfax.com';
+    $user = 'REDEGGMRKT_get';
+    $pass = 'proposed-fast-carriage-agency';
+    $date =  date('mdY');
+    $filename = "REDEGGMRKTar20_cfx_" . $date . "return_file.txt";
+    $conn_id = ftp_connect($server);
+    $login_result = ftp_login($conn_id, $user, $pass);
+    ftp_pasv($conn_id, true);
+    if ($login_result == true) {
+        $success = ftp_get($conn_id, $filename, $filename, FTP_ASCII);
+        if ($success) {
+            // parse file
+
+        } else {
+            $fail_file = 'fail.txt';
+            $fail = fopen($fail_file,'w');
+            fwrite($fail, 'result is now  ' . $login_result);
+            fclose($fail);
+        }
+    }
+}
+
+
+function car_fax_ftp_inbound($files = '') {
 
     if (!empty($files)) {
-        $server = 'speedtest.tele2.net';
-        $user = 'anonymous';
+        $server = 'data.carfax.com';
+        $user = 'REDEGGMRKT';
         $pass = 'proposed-fast-carriage-agency';
-        $success = true;
-
         $conn_id = ftp_connect($server);
         $login_result = ftp_login($conn_id, $user, $pass);
         ftp_pasv($conn_id, true);
 
-        foreach($files as $file) {
-            if (ftp_put($conn_id, '/upload/' . $file, $file, FTP_ASCII)) {
-                $success_file = 'success.txt';
-                $success = fopen($success_file,'a');
-                fwrite($success, 'success again!');
-                fclose($success);
-            } else {
-                $fail_file = 'fail.txt';
-                $failed = fopen($fail_file,'w');
-                fwrite($failed, 'failed again!');
-                fclose($failed);
+        if ( $login_result == true) {
+            foreach($files as $file) {
+                ftp_put($conn_id, $file, $file, FTP_ASCII);
+                // if (ftp_put($conn_id, $file, $file, FTP_ASCII)) {
+                //     $success_file = 'success.txt';
+                //     $success = fopen($success_file,'w');
+                //     fwrite($success, 'result is now ' . $login_result);
+                //     fclose($success);
+                // }
             }
         }
 

@@ -19,6 +19,11 @@ function cls_cron_schedules($schedules){
             'interval' => 12*60*60,
             'display' => __('Once every 12 hours'));
     }
+    if(!isset($schedules["23hrs"])){
+        $schedules["23hrs"] = array(
+            'interval' => 23*60*60,
+            'display' => __('Once every 23 hours'));
+    }
     if(!isset($schedules["24hrs"])){
         $schedules["24hrs"] = array(
             'interval' => 24*60*60,
