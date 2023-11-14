@@ -7,17 +7,31 @@
 ( function() {
 
 	var siteNavigation = document.getElementById( 'site-navigation' );
-
 	var body = document.getElementsByTagName( 'body' )[ 0 ];
-
 	var isTouch = typeof window.ontouchstart == 'undefined' ? false : true;
-
 	var navWrapper = document.getElementById( 'masthead' );
-
 	var numbers = document.getElementsByClassName(' wppro_badge1_SPAN_15 ');
-
 	var readMore = document.querySelectorAll('.read-less-block .read-more')
 	var readLess = document.querySelectorAll('.read-more-block .read-less')
+	var tabs = document.querySelectorAll('.tabs button');
+
+	for (var x = 0; x < tabs.length; x++) {
+		let tab = tabs[x];
+		tab.addEventListener('click', function(){
+			let dataId = this.getAttribute('data-id');
+			let siblingTabs = this.parentElement.querySelectorAll('button');
+			let selectTab = document.getElementById(dataId);
+			let childTabs = tab.parentElement.nextElementSibling.querySelectorAll('.tabcontent');
+			siblingTabs.forEach((siblingTab) => {
+				siblingTab.classList.remove('active');
+			});
+			childTabs.forEach((childTab) => {
+				childTab.classList.remove('active')
+			});
+			selectTab.classList.add('active');
+			this.classList.add('active');
+		});
+	}
 
 	for(var x = 0; x < readMore.length; x++) {
 		let read = readMore[x];

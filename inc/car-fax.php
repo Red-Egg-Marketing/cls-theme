@@ -22,7 +22,7 @@ function retrieve_all_vin_numbers() {
     $phone = "3032332277";
     $output = "";
     $dealer_id = "740362";
-    $output2 = $dealer_id . "|" . $dealer . "|" . $address . "|" . $address2 . "|" . $city . "|" . $state . "|" . $zip . "|" . $phone; 
+    $output2 = "\"" .$dealer_id . "\"|\"" . $dealer . "\"|\"" . $address . "\"|\"" . $address2 . "\"|\"" . $city . "\"|\"" . $state . "\"|\"" . $zip . "\"|\"" . $phone . "\""; 
     $link = "http://partner.com/search&VIN=";
     $vins = $wpdb->get_results("SELECT post_id, meta_value FROM {$wpdb->postmeta} WHERE meta_key = 'vin'", ARRAY_A);
 
@@ -99,12 +99,12 @@ function car_fax_ftp_inbound($files = '') {
         if ( $login_result == true) {
             foreach($files as $file) {
                 ftp_put($conn_id, $file, $file, FTP_ASCII);
-                // if (ftp_put($conn_id, $file, $file, FTP_ASCII)) {
-                //     $success_file = 'success.txt';
-                //     $success = fopen($success_file,'w');
-                //     fwrite($success, 'result is now ' . $login_result);
-                //     fclose($success);
-                // }
+                if (ftp_put($conn_id, $file, $file, FTP_ASCII)) {
+                    $success_file = 'success.txt';
+                    $success = fopen($success_file,'w');
+                    fwrite($success, 'result is now the king!! ' . $login_result);
+                    fclose($success);
+                }
             }
         }
 

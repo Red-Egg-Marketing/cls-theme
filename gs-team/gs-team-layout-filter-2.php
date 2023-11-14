@@ -1,4 +1,7 @@
 <?php
+
+namespace GSTEAM;
+
 /**
  * GS Team - Layout Filter Two
  * @author GS Plugins <hello@gsplugins.com>
@@ -17,7 +20,7 @@ global $gs_team_loop;
 <div class="gs-containeer cbp-so-scroller">
 
 	<!-- Cat Filters Template -->
-	<?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-cat-filters.php' ); ?>
+	<?php include Template_Loader::locate_template( 'partials/gs-team-layout-cat-filters.php' ); ?>
 
 	<?php if ( $gs_team_loop->have_posts() ): ?>
 
@@ -35,12 +38,12 @@ global $gs_team_loop;
 				$classes = [
 					'gs-filter-single-item single-member-div',
 					$designation_slug,
-					gs_team_get_col_classes( $gs_team_cols, $gs_team_cols_tablet, $gs_team_cols_mobile_portrait, $gs_team_cols_mobile ),
-					gs_team_get_member_terms_slugs( 'team_group' ),
-					gs_team_get_member_terms_slugs( 'team_location' ),
-					gs_team_get_member_terms_slugs( 'team_language' ),
-					gs_team_get_member_terms_slugs( 'team_gender' ),
-					gs_team_get_member_terms_slugs( 'team_specialty' )
+					get_col_classes( $gs_team_cols, $gs_team_cols_tablet, $gs_team_cols_mobile_portrait, $gs_team_cols_mobile ),
+					get_member_terms_slugs( 'team_group' ),
+					get_member_terms_slugs( 'team_location' ),
+					get_member_terms_slugs( 'team_language' ),
+					get_member_terms_slugs( 'team_gender' ),
+					get_member_terms_slugs( 'team_specialty' )
 				];
 
 				if ( $gs_member_link_type == 'popup' ) $classes[] = 'single-member-pop';
@@ -48,7 +51,7 @@ global $gs_team_loop;
 
 			?>
 
-			<div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>" data-category="<?php echo gs_team_get_member_terms_slugs( 'team_group' ); ?>">
+			<div class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>" data-category="<?php echo get_member_terms_slugs( 'team_group' ); ?>">
 				
 				<!-- Sehema & Single member wrapper -->
 				<div class="single-member--wrapper" itemscope itemtype="http://schema.org/Organization">
@@ -68,11 +71,11 @@ global $gs_team_loop;
 							do_action( 'gs_team_before_member_content', $gs_team_theme ); ?>
 
 							<!-- Ribbon -->
-							<?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-ribon.php' ); ?>
+							<?php include Template_Loader::locate_template( 'partials/gs-team-layout-ribon.php' ); ?>
 							
 							<!-- Team Image -->
 							<div class="gs_team_image__wrapper">
-								<?php gs_team_member_thumbnail( $gs_member_thumbnail_sizes, true ); ?>
+								<?php member_thumbnail( $gs_member_thumbnail_sizes, true ); ?>
 							</div>
 							<?php do_action( 'gs_team_after_member_thumbnail' ); ?>
 							
@@ -85,7 +88,7 @@ global $gs_team_loop;
 
 								<!-- Single member name -->
 								<?php if ( 'on' ==  $gs_member_name ): ?>
-									<?php gs_team_member_name( $id, true, false ); ?>
+									<?php member_name( $id, true, false ); ?>
 									<?php do_action( 'gs_team_after_member_name' ); ?>
 								<?php endif; ?>
 								
@@ -99,7 +102,7 @@ global $gs_team_loop;
 						
 						<!-- Popup -->
 						<?php $_popup_enabled = true; ?>
-						<?php include GS_Team_Template_Loader::locate_template( 'popups/gs-team-layout-popup.php' ); ?>
+						<?php include Template_Loader::locate_template( 'popups/gs-team-layout-popup.php' ); ?>
 					
 					</div>
 				</div>
@@ -117,7 +120,7 @@ global $gs_team_loop;
 		<div class="gs-roow clearfix gs_team">
 
 			<!-- Members not found - Load no-team-member template -->
-			<?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-no-team-member.php' ); ?>
+			<?php include Template_Loader::locate_template( 'partials/gs-team-layout-no-team-member.php' ); ?>
 
 		</div>
 
@@ -125,7 +128,7 @@ global $gs_team_loop;
 
 	<!-- Pagination -->
 	<?php if ( 'on' == $gs_member_pagination ) : ?>
-		<?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-pagination.php' ); ?>
+		<?php include Template_Loader::locate_template( 'partials/gs-team-layout-pagination.php' ); ?>
 	<?php endif; ?>
 
 </div>

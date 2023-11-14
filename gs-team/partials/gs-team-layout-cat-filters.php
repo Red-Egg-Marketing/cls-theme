@@ -1,4 +1,7 @@
 <?php
+
+namespace GSTEAM;
+
 /**
  * GS Team - Layout Category Filter
  * @author GS Plugins <hello@gsplugins.com>
@@ -11,7 +14,7 @@
 
 do_action( 'gs_team_before_cats_filters' );
 
-$_group = (array) gs_team_string_to_array($group);
+$_group = (array) string_to_array($group);
 $_exclude_group = [];
 
 $terms = get_terms([
@@ -26,11 +29,11 @@ if ( !empty($_group) ) {
     $term_ids = wp_list_pluck( $terms, 'term_id' );
     $_exclude_group = array_diff( $term_ids, $_group );
 } else {
-    $_exclude_group = (array) gs_team_string_to_array($exclude_group);
+    $_exclude_group = (array) string_to_array($exclude_group);
 }
 
 $_terms = [];
-gs_team_terms_hierarchically( $terms, $_terms, 0, $_exclude_group ); // it will override $_terms variable.
+terms_hierarchically( $terms, $_terms, 0, $_exclude_group ); // it will override $_terms variable.
 
 $classes = 'gs-team-filter-cats gs-team-filter-theme--' . $filter_style;
 
@@ -58,7 +61,7 @@ if ( empty($_terms) || count($_terms) < 2 ) return;
                     <span class="sub-arrow fa fa-angle-down"></span>
                 <?php endif; ?>
             </a>
-            <?php if ( $with_child_cats ) gs_team_term_walker( $term ); ?>
+            <?php if ( $with_child_cats ) term_walker( $term ); ?>
         </li>
 
     <?php endforeach; ?>

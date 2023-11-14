@@ -1,4 +1,5 @@
 <?php
+namespace GSTEAM;
 /**
  * GS Team - Single Template 
  * @author GS Plugins <hello@gsplugins.com>
@@ -27,16 +28,16 @@ $modal_form = get_field('menu_form', 'options');
         <div class="gs_ribon_wrapper">
             
             <!-- Team Image -->
-            <?php gs_team_member_thumbnail( 'full', true ); ?>
+            <?php member_thumbnail( 'full', true ); ?>
             <?php do_action( 'gs_team_after_member_thumbnail' ); ?>
 
             <!-- Ribbon -->
-            <?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-ribon.php' ); ?>
+            <?php include Template_Loader::locate_template( 'partials/gs-team-layout-ribon.php' ); ?>
             
         </div>
 
         <!-- Meta Details -->
-        <?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-meta-details.php' ); ?>
+        <?php include Template_Loader::locate_template( 'partials/gs-team-layout-meta-details.php' ); ?>
         <?php if (in_array('sales', $terms)) { ?>
             <div class="col col-full">
                 <a 
@@ -59,14 +60,14 @@ $modal_form = get_field('menu_form', 'options');
 
         <!-- Social Links -->
         <?php $gs_member_connect = 'on'; ?>
-        <?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-social-links.php' ); ?>
+        <?php include Template_Loader::locate_template( 'partials/gs-team-layout-social-links.php' ); ?>
 
         <!-- Description -->
         <div class="gs-member-desc" itemprop="description"><?php echo wpautop( do_shortcode( get_the_content() ) ); ?></div>
         <?php do_action( 'gs_team_after_member_details' ); ?>
         
         <!-- Skills -->
-        <?php include GS_Team_Template_Loader::locate_template( 'partials/gs-team-layout-skills.php' ); ?>
+        <?php include Template_Loader::locate_template( 'partials/gs-team-layout-skills.php' ); ?>
         
     </div>
 

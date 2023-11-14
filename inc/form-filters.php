@@ -118,7 +118,7 @@ function cls_notify_consultant($notification, $form, $entry) {
             $email  = get_post_meta( $value, '_gs_email', true );
             // send consultant an email about client
             if ($email != '' && $notification['name'] == 'Admin Notification') {
-                $notification['to'] = $email;
+                $notification['to'] .= $email;
             }
 
         }

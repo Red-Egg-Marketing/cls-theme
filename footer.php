@@ -20,7 +20,6 @@ if (function_exists('get_field')) {
         'icons'         => get_field('icons', 'options'),
     ];
 
-    car_fax_ftp(['fail.txt', 'success.txt']);
 
 ?>
 

@@ -19241,12 +19241,25 @@ p.attr {
   }
 }
 
-.post-content .col-full h4:first-of-type {
+.post-content .tabs button {
   margin-top: 0;
   font-weight: 900;
+  font-size: 18px;
   color: #000000;
   letter-spacing: 0;
-  margin-bottom: 5px;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .post-content .tabs button {
+    font-size: 20px;
+  }
+}
+
+.post-content .tabs button.active {
+  background: #f0f0f0;
 }
 
 .year {
@@ -19957,6 +19970,8 @@ Single Video
 .single.single-vehicle .header-title {
   font-size: 26px;
   margin-bottom: 10px;
+  display: inline;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -20053,15 +20068,24 @@ article.type-vehicle .header-title {
   }
 }
 
+article.type-vehicle header {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  article.type-vehicle header {
+    margin-bottom: 25px;
+  }
+}
+
 article.type-vehicle h2.price {
   font-size: 26px;
-  width: 100%;
+  display: inline;
 }
 
 @media screen and (min-width: 768px) {
   article.type-vehicle h2.price {
     font-size: 33px;
-    width: 35%;
     text-align: right;
   }
 }
@@ -20076,6 +20100,24 @@ button.read-more {
   cursor: pointer;
   color: #910035;
   padding: 0;
+  background: transparent;
+}
+
+.tabs {
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.tabcontent {
+  display: none;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.tabcontent.active {
+  display: block;
+  background: #f0f0f0;
 }
 
 body.archive .resources-grid .section-header {

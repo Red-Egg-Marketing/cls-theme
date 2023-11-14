@@ -3,8 +3,8 @@
 
 add_image_size('whitepaper-poster', 280, 390, array('center', 'center'), true);
 add_image_size('post-landscape-tiny', 85, 65, array('center', 'center'), true);
-add_image_size('post-landscape', 580, 446, array('center', 'center'), true);
-add_image_size('post-landscape-medium', 348, 267, array('center', 'center'), true);
+add_image_size('post-landscape', 640, 480, array('center', 'center'), true);
+add_image_size('post-landscape-medium', 320, 240, array('center', 'center'), true);
 add_image_size('image-text-block-small', 480, 250, array('center', 'center'), true);
 add_image_size('image-text-block', 960, 500, array('center', 'center'), true);
 add_image_size('hero-landscape-large', 1920, 729, array('center', 'center'), true);
@@ -13,8 +13,7 @@ add_image_size('hero-landscape', 960, 364, array('center', 'center'), true);
 add_image_size('medium-large', 700, 700, array('center', 'center'), true);
 add_image_size('medium-landscape', 920, 460, array('center', 'center'), true);
 add_image_size('medium-small', 350, 350, array('center', 'center'), true);
-
-add_filter( 'image_size_names_choose', 'emulate_custom_sizes' );
+add_filter( 'image_size_names_choose', 'cls_custom_sizes' );
 
 if(!function_exists('cls_thumbnail_upscale')) {
 function cls_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ){
@@ -35,7 +34,7 @@ function cls_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $cro
 }
 add_filter( 'image_resize_dimensions', 'cls_thumbnail_upscale', 10, 6 );
  
-function emulate_custom_sizes( $sizes ) {
+function cls_custom_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'whitepaper-poster' => ('Whitepaper Poster'),
         'post-landscape' => ('Landscape'),

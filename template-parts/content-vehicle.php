@@ -38,12 +38,12 @@ $trim = join(', ', wp_list_pluck($trim, 'name'));
 
 	<div class="post-content">
 		<div class="col flex main-col">
-			<div class="cols">
+			<header>
 			<?php
 				the_title( '<h1 class="header-title">', '</h1>' );
-				echo '<h2 class="price" id="Price" data-price="' . $orig_price . '">$' . $price . '</h2>';
+				echo '<h2 class="price" id="Price" data-price="' . $orig_price . '"> $' . $price . '</h2>';
 			?>
-			</div>
+			</header>
 		<?php
 			$attachments = get_posts(array(
 			    'post_parent' => $id,
@@ -145,24 +145,40 @@ $trim = join(', ', wp_list_pluck($trim, 'name'));
 				<p class="phone"><? echo $phone; ?></p>
 			</div>
 			
-			<div class="col col-full">
-			<?php
-			echo '<h4>Dealer Notes</h4>';
-			?>
-			<div class="read-less-block">
-			<?php
-			$cont = get_the_content($id);
-			$content = htmlentities( wpautop($cont));
-			echo html_entity_decode(wp_trim_words($content, 25, '...<button class="read-more">Read More</button>'));
+			<div class="tabs">
+				<button data-id="Dealer-Notes" class="active">Vehicle Information</button>
+				<button data-id="Features">Features</button>
+				<button data-id="Disclaimer">Disclaimer</button>
+			</div>
 
-			?>
-			</div>
-			<div class="read-more-block hide">
-				<?php
-					the_content();
-				?>
-				<button class="read-less">Read Less</button>
-			</div>
+			<div class="col col-full tabs-children">
+
+				<div class="tabcontent active" id="Dealer-Notes">
+					<div class="read-less-block">
+					<?php
+						$cont = get_the_content($id);
+						$content = htmlentities( wpautop($cont));
+						echo html_entity_decode(wp_trim_words($content, 35, '...<button class="read-more">Read More</button>'));
+					?>
+					</div>
+					<div class="read-more-block hide">
+						<?php
+							the_content();
+						?>
+						<button class="read-less">Read Less</button>
+					</div>
+				</div>
+				<div class="tabcontent" id="Features">
+					<?php
+						$cont = get_the_content($id);
+						$content = htmlentities( wpautop($cont));
+						echo html_entity_decode(wp_trim_words($content, 15));
+					?>
+				</div>
+				<div class="tabcontent" id="Disclaimer">
+					<p>Information provided is believed accurate but all specifications, pricing, and availability must be confirmed in writing (directly) with the dealer to be binding. We reserve the right to correct any errors or omissions prior to the final sale of the vehicle. Advertised price includes $225 Documentation Fee. Sales tax, finance charges, cost of emissions test, and other governmental fees or taxes are not included in the quoted price. Transportation costs incurred after the sale to deliver the vehicle to the purchaser at the purchaser's request are not included in the quoted price. RECALL NOTICE: Some vehicles offered for sale may be subject to unrepaired manufacturer safety recalls. To determine the recall status of a vehicle, visit <a href="https://www.nhtsa.gov/" target="_blank">https://www.nhtsa.gov/</a> recalls</p>
+				</div>
+			
 			</div>
 		</div>
 		<div class="col col-full">
