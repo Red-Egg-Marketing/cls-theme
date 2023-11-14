@@ -14,6 +14,20 @@
 	var readMore = document.querySelectorAll('.read-less-block .read-more')
 	var readLess = document.querySelectorAll('.read-more-block .read-less')
 	var tabs = document.querySelectorAll('.tabs button');
+	var accordions = document.querySelectorAll('.accordions button');
+
+	for (var x = 0; x < accordions.length; x++) {
+		var accordion = accordions[x];
+		accordion.addEventListener('click', function(){
+			let current = this.parentElement.parentElement;
+			let grand = current.parentElement;
+			let allAccords = grand.querySelectorAll('.accordion');
+			allAccords.forEach((allAccord) => {
+				allAccord.classList.remove('active');
+			});
+			current.classList.add('active');
+		})
+	}
 
 	for (var x = 0; x < tabs.length; x++) {
 		let tab = tabs[x];

@@ -1329,6 +1329,7 @@ h2,
 h3,
 h4,
 h5,
+.accordion h5 button,
 h6 {
   clear: both;
 }
@@ -12547,8 +12548,10 @@ i.fa {
   }
 }
 
-.gs_team h5,
-.edit-post-visual-editor__content-area h5, .entry-content h5 {
+.gs_team h5, .gs_team .accordion h5 button, .accordion h5 .gs_team button,
+.edit-post-visual-editor__content-area h5,
+.edit-post-visual-editor__content-area .accordion h5 button,
+.accordion h5 .edit-post-visual-editor__content-area button, .entry-content h5, .entry-content .accordion h5 button, .accordion h5 .entry-content button {
   color: #000000;
   line-height: 18px;
   font-size: 19px;
@@ -12557,8 +12560,10 @@ i.fa {
 }
 
 @media screen and (min-width: 768px) {
-  .gs_team h5,
-  .edit-post-visual-editor__content-area h5, .entry-content h5 {
+  .gs_team h5, .gs_team .accordion h5 button, .accordion h5 .gs_team button,
+  .edit-post-visual-editor__content-area h5,
+  .edit-post-visual-editor__content-area .accordion h5 button,
+  .accordion h5 .edit-post-visual-editor__content-area button, .entry-content h5, .entry-content .accordion h5 button, .accordion h5 .entry-content button {
     font-size: 20px;
     line-height: 30px;
   }
@@ -14809,6 +14814,7 @@ img.lazyloaded {
 .entry-content > h3,
 .entry-content > h4,
 .entry-content > h5,
+.accordion h5 .entry-content > button,
 .entry-content > h6,
 .entry-content > ul,
 .entry-content > dl,
@@ -20131,6 +20137,35 @@ ul.feature {
   }
 }
 
+.accordion h5 button {
+  background: none;
+  padding: 0;
+  position: relative;
+}
+
+.accordion.active h5 button:after {
+  content: "-";
+}
+
+.accordion h5 button:after {
+  content: "+";
+  display: inline-block;
+  margin-left: 5px;
+  color: #910035;
+}
+
+.accordion .feature {
+  display: none;
+}
+
+.accordion button {
+  cursor: pointer;
+}
+
+.accordion.active .feature {
+  display: block;
+}
+
 body.archive .resources-grid .section-header {
   display: none;
 }
@@ -24326,6 +24361,8 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 .text-card h3,
 .text-card h4,
 .text-card h5,
+.text-card .accordion h5 button,
+.accordion h5 .text-card button,
 .text-card h6 {
   margin-bottom: 0;
   margin-top: 1.25rem;
@@ -24337,6 +24374,8 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   .text-card h3,
   .text-card h4,
   .text-card h5,
+  .text-card .accordion h5 button,
+  .accordion h5 .text-card button,
   .text-card h6 {
     margin-top: 1.5rem;
   }
@@ -24971,6 +25010,8 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 .icon-link h3,
 .icon-link h4,
 .icon-link h5,
+.icon-link .accordion h5 button,
+.accordion h5 .icon-link button,
 .icon-link h6 {
   color: #052C47;
   line-height: 24px;
@@ -24983,6 +25024,8 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   .icon-link h3,
   .icon-link h4,
   .icon-link h5,
+  .icon-link .accordion h5 button,
+  .accordion h5 .icon-link button,
   .icon-link h6 {
     line-height: 30px;
   }
@@ -25618,6 +25661,8 @@ ul.tax-list .tax-wrap {
 .filter-resources header.header h3:first-of-type,
 .filter-resources header.header h4:first-of-type,
 .filter-resources header.header h5:first-of-type,
+.filter-resources header.header .accordion h5 button:first-of-type,
+.accordion h5 .filter-resources header.header button:first-of-type,
 .filter-resources header.header h6:first-of-type {
   margin-top: 0;
 }
@@ -26063,6 +26108,8 @@ ul.tax-list .tax-wrap {
 .columns-cta .wp-block-cover__inner-container h3:first-of-type,
 .columns-cta .wp-block-cover__inner-container h4:first-of-type,
 .columns-cta .wp-block-cover__inner-container h5:first-of-type,
+.columns-cta .wp-block-cover__inner-container .accordion h5 button:first-of-type,
+.accordion h5 .columns-cta .wp-block-cover__inner-container button:first-of-type,
 .columns-cta .wp-block-cover__inner-container h6:first-of-type {
   opacity: 1;
 }
@@ -26794,6 +26841,8 @@ ul.tax-list .tax-wrap {
 .contact-alt-section .content-column h3,
 .contact-alt-section .content-column h4,
 .contact-alt-section .content-column h5,
+.contact-alt-section .content-column .accordion h5 button,
+.accordion h5 .contact-alt-section .content-column button,
 .contact-alt-section .content-column h6 {
   color: #910035;
   font-weight: 700;
@@ -26806,6 +26855,8 @@ ul.tax-list .tax-wrap {
   .contact-alt-section .content-column h3,
   .contact-alt-section .content-column h4,
   .contact-alt-section .content-column h5,
+  .contact-alt-section .content-column .accordion h5 button,
+  .accordion h5 .contact-alt-section .content-column button,
   .contact-alt-section .content-column h6 {
     margin-bottom: 1.25rem;
   }
@@ -26860,6 +26911,7 @@ ul.tax-list .tax-wrap {
 .section-block > .block-wrapper > h3,
 .section-block > .block-wrapper > h4,
 .section-block > .block-wrapper > h5,
+.accordion h5 .section-block > .block-wrapper > button,
 .section-block > .block-wrapper > h6,
 .section-block > .block-wrapper > p,
 .section-block > .block-wrapper > ul {
@@ -27053,7 +27105,7 @@ ul.tax-list .tax-wrap {
   }
 }
 
-.payment h5 {
+.payment h5, .payment .accordion h5 button, .accordion h5 .payment button {
   font-weight: 300;
   text-transform: uppercase;
   margin-top: 0;

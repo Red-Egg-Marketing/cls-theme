@@ -1,5 +1,5 @@
 // import "./js-compile/filter-posts.js";
-import "./js-compile/gform.js";
+// import "./js-compile/gform.js";
 import "./js-compile/video.js";
 // import "./blocks/hero/hero.js";
 import "./blocks/faq/faq.js";

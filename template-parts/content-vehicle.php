@@ -173,45 +173,53 @@ $feature_exterior = get_post_meta($id, 'exterior', true);
 					</div>
 				</div>
 				<div class="tabcontent accordions" id="Features">
-					<div class="accordion">
-						<h5>Mechanical</h5>
+					<div class="accordion active">
+						<h5><button>Mechanical</button></h5>
 						<ul class="feature">
 						<?php
-							for($x = 0; $x < sizeof($mechanical); $x++) {
-								$feat = $mechanical[$x];
-								echo '<li>' . $feat . '</li>';
+							if (is_array($mechanical)) {
+								for($x = 0; $x < sizeof($mechanical); $x++) {
+									$feat = $mechanical[$x];
+									echo '<li>' . $feat . '</li>';
+								}
 							}
 						?>
 						</ul>
 					</div>
 					<div class="accordion">
-						<h5>Safety</h5>
+						<h5><button>Safety</button></h5>
 						<ul class="feature">
 						<?php
-							for($x = 0; $x < sizeof($safety); $x++) {
-								$feat = $safety[$x];
-								echo '<li>' . $feat . '</li>';
+							if (is_array($safety)) {
+								for($x = 0; $x < sizeof($safety); $x++) {
+									$feat = $safety[$x];
+									echo '<li>' . $feat . '</li>';
+								}
 							}
 						?>
 						</ul>
 					</div>
 					<div class="accordion">
-						<h5>Exterior</h5>
+						<h5><button>Exterior</button></h5>
 						<ul class="feature">
 						<?php
-							for($x = 0; $x < sizeof($feature_exterior); $x++) {
-								$feat = $feature_exterior[$x];
-								echo '<li>' . $feat . '</li>';
+							if (is_array($feature_exterior)) {
+								for($x = 0; $x < sizeof($feature_exterior); $x++) {
+									$feat = $feature_exterior[$x];
+									echo '<li>' . $feat . '</li>';
+								}
 							}
 						?>
 						</ul>
 					</div>
 					<div class="accordion">
-						<h5>Interior</h5>
+						<h5><button>Interior</button></h5>
 						<ul class="feature">
 						<?php
-							foreach($feature_interior as $feat) {
-								echo '<li>' . $feat . '</li>';
+							if (is_array($feature_interior)) {
+								foreach($feature_interior as $feat) {
+									echo '<li>' . $feat . '</li>';
+								}
 							}
 						?>
 						</ul>

@@ -1011,3 +1011,33 @@ ul.feature {
 		columns: 2;
 	}
 }
+
+.accordion h5 button {
+	@extend h5;
+	background: none;
+	padding: 0;
+	position: relative;
+}
+
+.accordion.active h5 button:after {
+	content: "-";
+}
+
+.accordion h5 button:after {
+	content: "+";
+	display: inline-block;
+	margin-left: 5px;
+	color: $red;
+}
+
+.accordion .feature {
+	display: none;
+}
+
+.accordion button {
+	cursor: pointer;
+}
+
+.accordion.active .feature {
+	display: block;
+}
