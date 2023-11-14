@@ -22,7 +22,7 @@ function cls_enqueue_block_editor_assets() {
         wp_enqueue_script(
             'wp-core-blocks-js',
             get_template_directory_uri() . $block_path,
-            // [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor', 'wp-dom-ready' ],
+            [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor', 'wp-dom-ready' ],
             $dependencies,
             'v1.0.1'
         );

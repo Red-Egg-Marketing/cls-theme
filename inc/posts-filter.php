@@ -6,6 +6,11 @@ function cls_vin_features_lookup( $post_id ) {
 
     $vin = get_post_meta($post_id, 'vin', true);
 
+    if (get_post_meta($post_id, 'exterior', true)) {
+        return;
+    }
+
+
     $curl = curl_init();
 
     curl_setopt_array($curl, [
