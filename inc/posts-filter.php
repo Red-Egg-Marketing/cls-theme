@@ -1,5 +1,55 @@
 <?php
 
+function cls_vin_features_lookup( $post_id ) {
+    
+    $post_type = get_post_type($post_id);
+
+    $vin = get_post_meta($post_id, 'vin', true);
+
+    $curl = curl_init();
+
+    curl_setopt_array($curl, [
+    CURLOPT_URL => "https://vehicle-database.p.rapidapi.com/userreport/vin-decoding-premium-plus-v2?vin=" . $vin,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 30,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "GET",
+    CURLOPT_HTTPHEADER => [
+            "X-RapidAPI-Host: vehicle-database.p.rapidapi.com",
+            "X-RapidAPI-Key: 939a406ac1msh07aacf37e0391c0p1ffeb7jsnef460c51559d"
+        ],
+    ]);
+
+    $response = json_decode(curl_exec($curl), true);
+
+    $err = curl_error($curl);
+
+    curl_close($curl);
+    
+    if ($err || $response == null) {
+        return;
+    } else {
+        if ($response['status'] == 'success') {
+            $key = array_keys($response['data']);
+            $features = $response['data'][$key[0]]['feature'];
+            foreach($features as $key => $feature) {
+                // $feature = json_encode($feature);
+                add_post_meta(
+                    $post_id,
+                    $key,
+                    $feature,
+                    true
+                );
+
+            }
+        }
+    }
+}
+
+add_action('save_post_vehicle', 'cls_vin_features_lookup');
+
 
 // use to import attributes not available in import file
 function cls_vin_import_check( $post_id ) {
@@ -56,12 +106,13 @@ function cls_vin_import_check( $post_id ) {
                 $post_id,
                 'seats',
                 $seats,
+                true
             );
         }
     }
 }
 
-add_action('save_post', 'cls_vin_import_check');
+add_action('save_post_vehicle', 'cls_vin_import_check');
 
 
 function cls_rewrite_rules_update( $post_id ) {

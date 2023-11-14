@@ -100,7 +100,7 @@ function cls_add_oninput( $input, $field, $value, $lead_id, $form_id ) {
        
        $name = 'input_' . $id;
        $id = 'input_'. $form_id . '_' . $id;
-       $input = '<div class="results-wrapper"><input type="text" placeholder="Search our inventory" class="' . $classes . '" name="' . $name .'" id="VehicleSelector_' . $form_id . '_' . '_' . $field['id'] . '" value="' . $value . '" tabindex="0" /><div class="results"></div><button class="clear-input">X</button></div>';
+       $input = '<input type="hidden" class="' . $classes . '" name="' . $name .'" id="VehicleSelector_' . $form_id . '_' . '_' . $field['id'] . '" value="' . $value . '" tabindex="0" />';
 
     }
     return $input;

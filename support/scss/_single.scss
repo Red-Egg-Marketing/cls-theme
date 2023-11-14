@@ -1003,3 +1003,11 @@ button.read-more {
 	display: block;
 	background: $grey-2;
 }
+
+ul.feature {
+	padding: 0;
+	overflow: hidden;
+	@media screen and (min-width: $small-width) {
+		columns: 2;
+	}
+}

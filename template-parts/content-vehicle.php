@@ -30,6 +30,10 @@ $drive = get_the_terms($id, 'drivetrain');
 $drive = join(', ', wp_list_pluck($drive, 'name'));
 $trim = get_the_terms($id, 'trim');
 $trim = join(', ', wp_list_pluck($trim, 'name'));
+$mechanical = get_post_meta($id, 'mechanical_and_powertrain', true);
+$safety = get_post_meta($id, 'safety', true);
+$feature_interior = get_post_meta($id, 'interior', true);
+$feature_exterior = get_post_meta($id, 'exterior', true);
 
 ?>
 
@@ -94,9 +98,9 @@ $trim = join(', ', wp_list_pluck($trim, 'name'));
 				?>
 				<div class="vehicle-gallery">
 					<div class="vehicle">
-				<?php
-				echo '<img src="' . get_stylesheet_directory_uri() . '/img/listing_vehicle_placeholder.jpg" />';
-				?>
+					<?php
+					echo '<img src="' . get_stylesheet_directory_uri() . '/img/listing_vehicle_placeholder.jpg" />';
+					?>
 					</div>
 				</div>
 				<?php
@@ -118,7 +122,7 @@ $trim = join(', ', wp_list_pluck($trim, 'name'));
 					<?php if($engine || $displace) { ?>
 						<p class="attr engine">
 							<?php if ($engine) echo $engine . ' Cylinders, ';
-							echo $displace 
+							echo $displace;
 							?>
 						</p>
 					<?php } ?>
@@ -168,12 +172,50 @@ $trim = join(', ', wp_list_pluck($trim, 'name'));
 						<button class="read-less">Read Less</button>
 					</div>
 				</div>
-				<div class="tabcontent" id="Features">
-					<?php
-						$cont = get_the_content($id);
-						$content = htmlentities( wpautop($cont));
-						echo html_entity_decode(wp_trim_words($content, 15));
-					?>
+				<div class="tabcontent accordions" id="Features">
+					<div class="accordion">
+						<h5>Mechanical</h5>
+						<ul class="feature">
+						<?php
+							for($x = 0; $x < sizeof($mechanical); $x++) {
+								$feat = $mechanical[$x];
+								echo '<li>' . $feat . '</li>';
+							}
+						?>
+						</ul>
+					</div>
+					<div class="accordion">
+						<h5>Safety</h5>
+						<ul class="feature">
+						<?php
+							for($x = 0; $x < sizeof($safety); $x++) {
+								$feat = $safety[$x];
+								echo '<li>' . $feat . '</li>';
+							}
+						?>
+						</ul>
+					</div>
+					<div class="accordion">
+						<h5>Exterior</h5>
+						<ul class="feature">
+						<?php
+							for($x = 0; $x < sizeof($feature_exterior); $x++) {
+								$feat = $feature_exterior[$x];
+								echo '<li>' . $feat . '</li>';
+							}
+						?>
+						</ul>
+					</div>
+					<div class="accordion">
+						<h5>Interior</h5>
+						<ul class="feature">
+						<?php
+							foreach($feature_interior as $feat) {
+								echo '<li>' . $feat . '</li>';
+							}
+						?>
+						</ul>
+					</div>
 				</div>
 				<div class="tabcontent" id="Disclaimer">
 					<p>Information provided is believed accurate but all specifications, pricing, and availability must be confirmed in writing (directly) with the dealer to be binding. We reserve the right to correct any errors or omissions prior to the final sale of the vehicle. Advertised price includes $225 Documentation Fee. Sales tax, finance charges, cost of emissions test, and other governmental fees or taxes are not included in the quoted price. Transportation costs incurred after the sale to deliver the vehicle to the purchaser at the purchaser's request are not included in the quoted price. RECALL NOTICE: Some vehicles offered for sale may be subject to unrepaired manufacturer safety recalls. To determine the recall status of a vehicle, visit <a href="https://www.nhtsa.gov/" target="_blank">https://www.nhtsa.gov/</a> recalls</p>
