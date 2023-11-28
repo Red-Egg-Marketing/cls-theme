@@ -11,7 +11,7 @@ function retrieve_all_vin_numbers() {
     global $wpdb;
 
     $date =  date('mdY');
-    $filename = "REDEGGMRKT_cfxlinkiicr_" . $date . ".txt";
+    $filename = "REDEGGMRKT_CFXIICR_" . $date . ".txt";
     $filename2 = "REDEGGMRKT_dealerlist_" . $date . ".txt";
     $dealer = "Centennial Leasing";
     $address = "7150 S Joliet St.";
@@ -23,7 +23,7 @@ function retrieve_all_vin_numbers() {
     $output = "";
     $dealer_id = "740362";
     $output2 = "\"" .$dealer_id . "\"|\"" . $dealer . "\"|\"" . $address . "\"|\"" . $address2 . "\"|\"" . $city . "\"|\"" . $state . "\"|\"" . $zip . "\"|\"" . $phone . "\""; 
-    $link = "http://partner.com/search&VIN=";
+    // $link = "http://partner.com/search&VIN=";
     $vins = $wpdb->get_results("SELECT post_id, meta_value FROM {$wpdb->postmeta} WHERE meta_key = 'vin'", ARRAY_A);
 
     if (!empty($vins)) {
@@ -31,7 +31,7 @@ function retrieve_all_vin_numbers() {
             $id = $vin['post_id'];
             $number = $vin['meta_value'];
             $price = get_post_meta($id, 'selling_price', true);
-            $output .= $number . "|" . $dealer_id . "|" . $link . $number . "|" . $price . "\r\n";
+            $output .= $number . "|" . $dealer_id . "|" . $price . "\r\n";
         }
 
         $myfile = fopen($filename,'w');
