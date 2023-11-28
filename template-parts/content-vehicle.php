@@ -179,7 +179,7 @@ $phone = get_field('business_phone', 'options');
 			
 		</div>
 		<div class="col col-full">
-			<h3>Features</h3>
+			<h3 style="color: black;">Features</h3>
 			<div class="tabs">
 				<?php if(is_array($mechanical) || is_array($safety) || is_array($feature_exterior) || is_array($feature_interior)) { ?>
 					<button data-id="Mechanical" class="active">Mechanical</button>
