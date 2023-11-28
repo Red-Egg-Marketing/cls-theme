@@ -18373,7 +18373,7 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: white;
+  background: #E6E6E6;
   border-radius: 6px;
 }
 
@@ -18492,9 +18492,11 @@ form .inner-row input[type="number"],
 form .inner-row select {
   height: 40px;
   padding-top: 0;
+  border: 1px solid black;
   padding-bottom: 0;
   padding-left: 5px;
   padding-right: 5px;
+  text-align: center;
   line-height: 30px;
   min-height: auto;
   background: white;
@@ -18972,10 +18974,6 @@ a.footer-home {
   width: 100%;
 }
 
-.single.single-vehicle .entry-content {
-  background: #E6E6E6;
-}
-
 .post-content .car-details:first-of-type {
   width: 100%;
   margin-bottom: 20px;
@@ -19144,6 +19142,7 @@ p.attr {
   line-height: 28px;
   margin-top: 0;
   margin-bottom: 14px;
+  width: 100%;
 }
 
 .car-details .wp-element-button {
@@ -19153,16 +19152,6 @@ p.attr {
 @media screen and (min-width: 768px) {
   .car-details .wp-element-button {
     margin-bottom: 2.5rem;
-  }
-}
-
-.post-content .second-col {
-  margin-top: 45px;
-}
-
-@media screen and (min-width: 768px) {
-  .post-content .second-col {
-    margin-top: 110px;
   }
 }
 
@@ -19321,6 +19310,10 @@ p.attr {
 p.phone {
   color: #910035;
   font-weight: 700;
+}
+
+p.phone a {
+  text-decoration: none;
 }
 
 .post-content .col.col-full {
@@ -19537,7 +19530,7 @@ p.phone {
 }
 
 .single .term-row {
-  width: 72.5%;
+  width: 100%;
   margin: -20px auto 20px;
 }
 
@@ -20002,23 +19995,21 @@ Single Video
 #Calculator label {
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
   text-align: center;
   display: block;
   width: 100%;
+  color: black;
+  font-weight: 700;
 }
 
 #Calculator {
   margin-top: 25px;
   position: relative;
-  padding: 10px 10px 0 10px;
-  background: linear-gradient(to left, #910035, #910035) no-repeat top left/50px 2px, linear-gradient(to left, #910035, #910035) no-repeat top left/2px 50px, linear-gradient(to left, #910035, #910035) no-repeat top right/2px 50px, linear-gradient(to left, #910035, #910035) no-repeat top right/50px 2px, linear-gradient(to left, #910035, #910035) no-repeat right calc(100% - 15px)/2px 20px, linear-gradient(to left, #910035, #910035) no-repeat right calc(100% - 15px)/50px 2px, linear-gradient(to left, #910035, #910035) no-repeat left calc(100% - 15px)/50px 2px, linear-gradient(to left, #910035, #910035) no-repeat left calc(100% - 15px)/2px 20px;
 }
 
 @media screen and (min-width: 768px) {
   #Calculator {
     margin-top: 0;
-    padding: 15px 15px 0 15px;
   }
 }
 
@@ -20129,10 +20120,12 @@ button.read-more {
 ul.feature {
   padding: 0;
   overflow: hidden;
+  margin-top: 15px;
 }
 
 @media screen and (min-width: 768px) {
   ul.feature {
+    margin-top: 25px;
     columns: 2;
   }
 }

@@ -19,11 +19,6 @@
 	width: 100%;
 }
 
-
-.single.single-vehicle .entry-content {
-	background: $grey;
-}
-
 .post-content .car-details:first-of-type {
 	width: 100%;
 	margin-bottom: 20px;
@@ -161,19 +156,13 @@ p.attr {
 	line-height: 28px;
 	margin-top: 0;
 	margin-bottom: 14px;
+	width: 100%;
 }
 
 .car-details .wp-element-button {
 	margin-bottom: 1.5rem;
 	@media screen and (min-width: $small-width) {
 		margin-bottom: 2.5rem;
-	}
-}
-
-.post-content .second-col {
-	margin-top: 45px;
-	@media screen and (min-width: $small-width) {
-		margin-top: 110px;
 	}
 }
 
@@ -308,7 +297,10 @@ p.attr {
 p.phone {
 	color: $red;
 	font-weight: 700;
+}
 
+p.phone a {
+	text-decoration: none;
 }
 
 .post-content .col.col-full {
@@ -496,7 +488,7 @@ p.phone {
 }
 
 .single .term-row {
-	width: 72.5%;
+	width: 100%;
 	margin: -20px auto 20px;
 	@media screen and (min-width: $small-width) {
 		margin: -30px auto 30px;
@@ -890,28 +882,27 @@ Single Video
 #Calculator label {
 	text-transform: uppercase;
 	font-family: $font-body;
-	font-weight: 300;
 	text-align: center;
 	display: block;
 	width: 100%;
+	color: black;
+	font-weight: 700;
 }
 
 #Calculator {
 	margin-top: 25px;
 	position: relative;
-	padding: 10px 10px 0 10px;
-	background: 
-		linear-gradient(to left, $red, $red) no-repeat top left / 50px 2px,
-		linear-gradient(to left, $red, $red) no-repeat top left / 2px 50px,
-		linear-gradient(to left, $red, $red) no-repeat top right / 2px 50px,
-		linear-gradient(to left, $red, $red) no-repeat top right / 50px 2px,
-		linear-gradient(to left, $red, $red) no-repeat right calc(100% - 15px) / 2px 20px,
-		linear-gradient(to left, $red, $red) no-repeat right calc(100% - 15px) / 50px 2px,
-		linear-gradient(to left, $red, $red) no-repeat left calc(100% - 15px) / 50px 2px,
-		linear-gradient(to left, $red, $red) no-repeat left calc(100% - 15px) / 2px 20px;
+	// background: 
+	// 	linear-gradient(to left, $red, $red) no-repeat top left / 50px 2px,
+	// 	linear-gradient(to left, $red, $red) no-repeat top left / 2px 50px,
+	// 	linear-gradient(to left, $red, $red) no-repeat top right / 2px 50px,
+	// 	linear-gradient(to left, $red, $red) no-repeat top right / 50px 2px,
+	// 	linear-gradient(to left, $red, $red) no-repeat right calc(100% - 15px) / 2px 20px,
+	// 	linear-gradient(to left, $red, $red) no-repeat right calc(100% - 15px) / 50px 2px,
+	// 	linear-gradient(to left, $red, $red) no-repeat left calc(100% - 15px) / 50px 2px,
+	// 	linear-gradient(to left, $red, $red) no-repeat left calc(100% - 15px) / 2px 20px;
 	@media screen and (min-width: $small-width) {
 		margin-top: 0;
-		padding: 15px 15px 0 15px;
 	}
 }
 
@@ -1007,7 +998,9 @@ button.read-more {
 ul.feature {
 	padding: 0;
 	overflow: hidden;
+	margin-top: 15px;
 	@media screen and (min-width: $small-width) {
+		margin-top: 25px;
 		columns: 2;
 	}
 }

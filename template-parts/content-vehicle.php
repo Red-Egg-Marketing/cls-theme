@@ -34,6 +34,8 @@ $mechanical = get_post_meta($id, 'mechanical_and_powertrain', true);
 $safety = get_post_meta($id, 'safety', true);
 $feature_interior = get_post_meta($id, 'interior', true);
 $feature_exterior = get_post_meta($id, 'exterior', true);
+$miles = number_format(floatval(get_post_meta($id, 'miles', true)), 0);
+$phone = get_field('business_phone', 'options');
 
 ?>
 
@@ -108,36 +110,6 @@ $feature_exterior = get_post_meta($id, 'exterior', true);
 		?>
 		</div>
 		<div class="col flex second-col">
-		<?php
-			
-			$miles = number_format(floatval(get_post_meta($id, 'miles', true)), 0);
-			$phone = get_field('business_phone', 'options');
-			
-		?>
-			
-			<div class="col car-details flex align-start">
-				<div class="flex align-start width-100">
-					<p class="attr miles"><? echo $miles; ?> mi</p>
-					<p class="attr trim"><? echo $trim; ?></p>
-					<?php if($engine || $displace) { ?>
-						<p class="attr engine">
-							<?php if ($engine) echo $engine . ' Cylinders, ';
-							echo $displace;
-							?>
-						</p>
-					<?php } ?>
-					<p class="attr trans"><? echo $trans; ?></p>
-					<p class="attr drive"><? echo $drive; ?></p>
-					<p class="attr exterior">Exterior: <? echo $exterior; ?></p>
-					<p class="attr interior">Interior: <? echo $interior; ?></p>
-					<?php if($seats) { ?>
-						<p class="attr seats"><? echo $seats; ?> Seats</p>
-					<?php } ?>
-					<p class="attr mpg"><? echo $city . ' City/' . $highway .' Highway MPG'; ?> </p>
-				</div>
-			</div>
-			<div id="PaymentCalculator" class="loading">
-			</div>
 			<div class="col car-details">
 				<a 
 					class="wp-block-button__link wp-element-button" 
@@ -146,18 +118,49 @@ $feature_exterior = get_post_meta($id, 'exterior', true);
 					data-fancybox>I'm Interested</a>
 			</div>
 			<div class="col car-details flex-end align-start flex">
-				<p class="phone"><? echo $phone; ?></p>
+				<p class="phone"><a href="tel:<?php echo $phone; ?>"><? echo $phone; ?></a></p>
+			</div>		
+			<div class="col car-details flex align-start">
+				<div class="flex align-start width-100">
+					<?php if ($miles) { ?>
+						<p class="attr miles"><? echo $miles; ?> mi</p>
+					<?php } ?>
+					<?php if ($trim) { ?>
+						<p class="attr trim"><? echo $trim; ?></p>
+					<?php } ?>
+					<?php if($engine || $displace) { ?>
+						<p class="attr engine">
+							<?php if ($engine) echo $engine . ' Cylinders, ';
+							echo $displace;
+							?>
+						</p>
+					<?php } ?>
+					<?php if ($trans) { ?>
+						<p class="attr trans"><? echo $trans; ?></p>
+					<?php } ?>
+					<?php if ($drive) { ?>
+						<p class="attr drive"><? echo $drive; ?></p>
+					<?php } ?>
+					<?php if ($exterior) { ?>
+						<p class="attr exterior">Exterior: <? echo $exterior; ?></p>
+					<?php } ?>
+					<?php if ($interior) { ?>
+						<p class="attr interior">Interior: <? echo $interior; ?></p>
+					<?php } ?>
+					<?php if($seats) { ?>
+						<p class="attr seats"><? echo $seats; ?> Seats</p>
+					<?php } ?>
+					<?php if ($city && $highway) { ?>
+						<p class="attr mpg"><? echo $city . ' City/' . $highway .' Highway MPG'; ?> </p>
+					<?php } ?>
+				</div>
+			</div>
+			<div id="PaymentCalculator" class="loading">
 			</div>
 			
-			<div class="tabs">
-				<button data-id="Dealer-Notes" class="active">Vehicle Information</button>
-				<button data-id="Features">Features</button>
-				<button data-id="Disclaimer">Disclaimer</button>
-			</div>
-
-			<div class="col col-full tabs-children">
-
-				<div class="tabcontent active" id="Dealer-Notes">
+			
+			<div class="col-full col">
+					<h5>Vehicle Information</h5>
 					<div class="read-less-block">
 					<?php
 						$cont = get_the_content($id);
@@ -171,10 +174,24 @@ $feature_exterior = get_post_meta($id, 'exterior', true);
 						?>
 						<button class="read-less">Read Less</button>
 					</div>
-				</div>
-				<div class="tabcontent accordions" id="Features">
-					<div class="accordion active">
-						<h5><button>Mechanical</button></h5>
+			</div>
+
+			
+		</div>
+		<div class="col col-full">
+			<h3>Features</h3>
+			<div class="tabs">
+				<?php if(is_array($mechanical) || is_array($safety) || is_array($feature_exterior) || is_array($feature_interior)) { ?>
+					<button data-id="Mechanical" class="active">Mechanical</button>
+					<button data-id="Safety">Safety</button>
+					<button data-id="Exterior">Exterior</button>
+					<button data-id="Interior">Interior</button>
+				<?php } ?>
+			</div>
+			<div class="col col-full tabs-children">
+
+				<?php if(is_array($mechanical) || is_array($safety) || is_array($feature_exterior) || is_array($feature_interior)) { ?>
+				<div class="tabcontent accordions active" id="Mechanical">
 						<ul class="feature">
 						<?php
 							if (is_array($mechanical)) {
@@ -185,9 +202,8 @@ $feature_exterior = get_post_meta($id, 'exterior', true);
 							}
 						?>
 						</ul>
-					</div>
-					<div class="accordion">
-						<h5><button>Safety</button></h5>
+				</div>
+				<div class="tabcontent accordions" id="Safety">
 						<ul class="feature">
 						<?php
 							if (is_array($safety)) {
@@ -198,9 +214,8 @@ $feature_exterior = get_post_meta($id, 'exterior', true);
 							}
 						?>
 						</ul>
-					</div>
-					<div class="accordion">
-						<h5><button>Exterior</button></h5>
+				</div>
+				<div class="tabcontent accordions" id="Exterior">
 						<ul class="feature">
 						<?php
 							if (is_array($feature_exterior)) {
@@ -211,9 +226,8 @@ $feature_exterior = get_post_meta($id, 'exterior', true);
 							}
 						?>
 						</ul>
-					</div>
-					<div class="accordion">
-						<h5><button>Interior</button></h5>
+				</div>
+				<div class="tabcontent accordions" id="Interior">
 						<ul class="feature">
 						<?php
 							if (is_array($feature_interior)) {
@@ -223,20 +237,24 @@ $feature_exterior = get_post_meta($id, 'exterior', true);
 							}
 						?>
 						</ul>
-					</div>
 				</div>
-				<div class="tabcontent" id="Disclaimer">
-					<p>Information provided is believed accurate but all specifications, pricing, and availability must be confirmed in writing (directly) with the dealer to be binding. We reserve the right to correct any errors or omissions prior to the final sale of the vehicle. Advertised price includes $225 Documentation Fee. Sales tax, finance charges, cost of emissions test, and other governmental fees or taxes are not included in the quoted price. Transportation costs incurred after the sale to deliver the vehicle to the purchaser at the purchaser's request are not included in the quoted price. RECALL NOTICE: Some vehicles offered for sale may be subject to unrepaired manufacturer safety recalls. To determine the recall status of a vehicle, visit <a href="https://www.nhtsa.gov/" target="_blank">https://www.nhtsa.gov/</a> recalls</p>
 				</div>
-			
+				<?php } ?>
+				<a 
+				href="javascript;"
+				style="margin-left: auto; margin-top: 20px; color: black;"
+				data-src="#disclaimer-form" 
+				data-fancybox>Disclaimer</a>
 			</div>
-		</div>
-		<div class="col col-full">
-			<a 
-				class="wp-block-button__link wp-element-button" 
-				href="javascript;" 
-				data-src="#modal-form-<?= $modal_form  ?>" 
-				data-fancybox>I'm Interested</a>
+			
+			
+			<div class="col col-full">
+				<a 
+					class="wp-block-button__link wp-element-button" 
+					href="javascript;" 
+					data-src="#modal-form-<?= $modal_form  ?>" 
+					data-fancybox>I'm Interested</a>
+			</div>
 		</div>
 	</div><!-- .post-content -->
 	<div class="related-posts light-blue">

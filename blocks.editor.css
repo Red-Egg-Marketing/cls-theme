@@ -4475,7 +4475,7 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
-  background: white;
+  background: #E6E6E6;
   border-radius: 6px;
 }
 
@@ -4594,9 +4594,11 @@ form .inner-row input[type="number"],
 form .inner-row select {
   height: 40px;
   padding-top: 0;
+  border: 1px solid black;
   padding-bottom: 0;
   padding-left: 5px;
   padding-right: 5px;
+  text-align: center;
   line-height: 30px;
   min-height: auto;
   background: white;

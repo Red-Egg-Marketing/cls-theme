@@ -87,18 +87,31 @@ if (function_exists('get_field')) {
         if ($modal_form != 0) {
         ?>
         <div style="display: none;">
-        <div 
-            id="modal-form-<?= $modal_form ?>"
-        >
-            <div class="wrapper">
-                <h2 class="header-title">Contact Us</h2>
-                <?php echo do_shortcode('[gravityform id="' . $modal_form . '" title="false" description="false" ajax="true"]'); ?>
+            <div 
+                id="modal-form-<?= $modal_form ?>"
+            >
+                <div class="wrapper">
+                    <h2 class="header-title">Contact Us</h2>
+                    <?php echo do_shortcode('[gravityform id="' . $modal_form . '" title="false" description="false" ajax="true"]'); ?>
+                </div>
             </div>
         </div>
-        </div>
+
+        <!-- disclaimer -->
         <?php
         }
-
+        ?>
+        <div style="display: none;">
+            <div 
+                id="disclaimer-form"
+            >
+                <div class="wrapper">
+                    <h2 class="header-title">Disclaimer</h2>
+                    <p>Information provided is believed accurate but all specifications, pricing, and availability must be confirmed in writing (directly) with the dealer to be binding. We reserve the right to correct any errors or omissions prior to the final sale of the vehicle. Advertised price includes $225 Documentation Fee. Sales tax, finance charges, cost of emissions test, and other governmental fees or taxes are not included in the quoted price. Transportation costs incurred after the sale to deliver the vehicle to the purchaser at the purchaser's request are not included in the quoted price. RECALL NOTICE: Some vehicles offered for sale may be subject to unrepaired manufacturer safety recalls. To determine the recall status of a vehicle, visit <a href="https://www.nhtsa.gov/" target="_blank">https://www.nhtsa.gov/</a> recalls</p>
+                </div>
+            </div>
+        </div>
+        <?php
 }
 wp_footer(); 
 
