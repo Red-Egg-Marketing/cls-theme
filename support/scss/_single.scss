@@ -22,13 +22,16 @@
 .post-content .car-details:first-of-type {
 	width: 100%;
 	margin-bottom: 20px;
+	margin-top: 30px;
 	@media screen and (min-width: $small-width) and (max-width: $med-small-width - 1px) {
 		width: 100%;
 		margin-bottom: 30px;
+		margin-top: 0;
 	}
 	@media screen and (min-width: $med-small-width) {
 		width: 50%;
 		margin-bottom: 30px;
+		margin-top: 0;
 	}
 }
 
@@ -229,14 +232,21 @@ p.attr {
 .post-content .tabs button {
 	margin-top: 0;
 	font-weight: 900;
-	font-size: 18px;
+	font-size: 12px;
 	color: $body-color;
 	letter-spacing: 0;
 	cursor: pointer;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	width: 25%;
+	padding-left: 0;
+	padding-right: 0;
 	@media screen and (min-width: $small-width) {
 		font-size: 20px;
+		width: auto;
+		font-size: 18px;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 }
 
@@ -285,8 +295,11 @@ p.attr {
 }
 
 .phone {
-	background: url($phone) no-repeat left 0px / 30px;
+	background: url($phone) no-repeat left 0px / 20px;
 	padding-left: 35px;
+	@media screen and (min-width: $small-width) {
+		background: url($phone) no-repeat left 0px / 30px;
+	}
 }
 
 .trans {
@@ -982,6 +995,11 @@ button.read-more {
 	position: relative;
 	width: 100%;
 	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: $small-width) {
+		display: block;
+	}
 }
 
 .tabcontent {
