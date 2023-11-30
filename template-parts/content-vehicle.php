@@ -34,6 +34,8 @@ $mechanical = get_post_meta($id, 'mechanical_and_powertrain', true);
 $safety = get_post_meta($id, 'safety', true);
 $feature_interior = get_post_meta($id, 'interior', true);
 $feature_exterior = get_post_meta($id, 'exterior', true);
+$carfax_link = get_post_meta($id, 'carfax_link', true);
+$carfax_img = get_post_meta($id, 'carfax_image', true);
 $miles = number_format(floatval(get_post_meta($id, 'miles', true)), 0);
 $phone = get_field('business_phone', 'options');
 
@@ -153,6 +155,10 @@ $phone = get_field('business_phone', 'options');
 					<?php if ($city && $highway) { ?>
 						<p class="attr mpg"><? echo $city . ' City/' . $highway .' Highway MPG'; ?> </p>
 					<?php } ?>
+
+					 <?php if ($carfax_link) { ?>
+					 	 <a href="<?php echo $carfax_link; ?>" class="carfax_link" target="_blank"><img src="<?php echo $carfax_img; ?>" /></a>
+					<?php } ?>
 				</div>
 			</div>
 			<div id="PaymentCalculator" class="loading">
@@ -179,15 +185,15 @@ $phone = get_field('business_phone', 'options');
 			
 		</div>
 		<div class="col col-full">
+			<?php if(is_array($mechanical) || is_array($safety) || is_array($feature_exterior) || is_array($feature_interior)) { ?>
 			<h3 style="color: black;">Features</h3>
 			<div class="tabs">
-				<?php if(is_array($mechanical) || is_array($safety) || is_array($feature_exterior) || is_array($feature_interior)) { ?>
 					<button data-id="Mechanical" class="active">Mechanical</button>
 					<button data-id="Safety">Safety</button>
 					<button data-id="Exterior">Exterior</button>
 					<button data-id="Interior">Interior</button>
-				<?php } ?>
 			</div>
+			<?php } ?>
 			<div class="col col-full tabs-children">
 
 				<?php if(is_array($mechanical) || is_array($safety) || is_array($feature_exterior) || is_array($feature_interior)) { ?>
@@ -238,16 +244,18 @@ $phone = get_field('business_phone', 'options');
 						?>
 						</ul>
 				</div>
-				</div>
 				<?php } ?>
-				<a 
-				href="javascript;"
-				style="margin-left: auto; margin-top: 20px; color: black;"
-				data-src="#disclaimer-form" 
-				data-fancybox>Disclaimer</a>
+				
 			</div>
 			
-			
+		</div>
+		<div class="col col-full">
+				<a 
+					href="javascript;"
+					style="margin-left: auto; margin-top: 20px; color: black;"
+					data-src="#disclaimer-form" 
+					data-fancybox>Disclaimer</a>
+			</div>
 			<div class="col col-full">
 				<a 
 					class="wp-block-button__link wp-element-button" 
