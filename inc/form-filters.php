@@ -125,3 +125,5 @@ function cls_notify_consultant($notification, $form, $entry) {
     }
     return $notification;
 }
+
+add_filter( 'gform_confirmation_anchor', '__return_true' );
