@@ -14789,7 +14789,6 @@ body {
 
 .entry-content > iframe {
   display: block;
-  min-height: 800px;
 }
 
 /* Image with 'data' attribute is hidden */
@@ -20089,6 +20088,9 @@ article.type-vehicle .header-title {
 
 article.type-vehicle header {
   margin-bottom: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {

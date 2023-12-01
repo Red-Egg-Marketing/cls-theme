@@ -519,14 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "inc/car-fax.php",
-			"settings":
-			{
-				"buffer_size": 4289,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -569,14 +561,15 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc"
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_single.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
@@ -592,8 +585,6 @@
 		"/Users/jacoblang/Desktop/providence-notes.txt",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-walker.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/jetpack.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/navigation.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/front-end.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/gform.js",
@@ -720,6 +711,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"vehicle",
+			"email",
 			"carfax_link",
 			"array_key_exists",
 			"filename",
@@ -845,9 +838,7 @@
 			"test_ftp_connect",
 			"connection",
 			"password",
-			"connection",
-			"login_result",
-			"login_resutl"
+			"connection"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -874,38 +865,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "inc/car-fax.php",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4289,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1065.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -958,6 +917,10 @@
 		"selected_items":
 		[
 			[
+				"blocks.php",
+				"cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php"
+			],
+			[
 				"car-f",
 				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
 			],
@@ -992,10 +955,6 @@
 			[
 				"car-fa",
 				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
-			],
-			[
-				"blocks.php",
-				"cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php"
 			],
 			[
 				"impor",
@@ -1475,9 +1434,13 @@
 	"select_project":
 	{
 		"height": 682.0,
-		"last_filter": "ro",
+		"last_filter": "bla",
 		"selected_items":
 		[
+			[
+				"bla",
+				"~/Local Sites/blackpaw-dog-training/black-paw-live.sublime-project"
+			],
 			[
 				"ro",
 				"~/bigcommerce/rocket-supply/rocket-supply.sublime-project"

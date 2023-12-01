@@ -390,7 +390,6 @@ body {
 
 .entry-content > iframe {
   display: block;
-  min-height: 800px;
 }
 
 /* Image with 'data' attribute is hidden */
