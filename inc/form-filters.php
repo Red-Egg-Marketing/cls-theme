@@ -50,9 +50,11 @@ function cls_populate_member_dropdown($form){
                     $title = get_the_title();
                     $id = get_the_ID();
                     $selected = $post_id === $id ? true : false;
+                    $contact_id = get_post_meta( $id, 'contact_id', true );
+                    $value = $contact_id ? $contact_id . ', ' . $title : $title;
 
                     $items[] = [
-                        "value" => $id,
+                        "value" => $value,
                         "text"  => $title,
                         "isSelected" => $selected
                     ];
