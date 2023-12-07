@@ -1,20 +1,47 @@
 <?php
 
-function cls_vin_features_lookup( $post_id ) {
-    
-    $post_type = get_post_type($post_id);
 
-    $vin = get_post_meta($post_id, 'vin', true);
+if (!wp_next_scheduled('cls_vehicles_vin_features_lookup')) {
+    wp_schedule_event( time(), '12hrs', 'cls_vehicles_vin_features_lookup' );
+}
 
-    if (get_post_meta($post_id, 'exterior', true)) {
-        return;
+add_action ( 'cls_vehicles_vin_features_lookup', 'cls_all_vins_features_lookup' );
+
+function cls_all_vins_features_lookup() {
+    $vehicles = [
+        'post_type' => 'vehicle',
+        'post_status' => 'publish',
+        'posts_per_page' => -1
+    ];
+
+    $query = new WP_Query($arg);
+
+    if ($query->have_posts()) {
+        while($query->have_posts()){
+            $query->the_post();
+            $post_id = get_the_ID();
+
+            $vin = get_post_meta($post_id, 'vin', true);
+
+            if (get_post_meta($post_id, 'exterior', true)) {
+                continue;
+            }
+
+            curl_call_vd($post_id, $vin);
+        }
     }
 
+    wp_reset_postdata();
+
+}
+
+
+function curl_call_vd($post_id, $vin) {
 
     $curl = curl_init();
 
     curl_setopt_array($curl, [
-    CURLOPT_URL => "https://vehicle-database.p.rapidapi.com/userreport/vin-decoding-premium-plus-v2?vin=" . $vin,
+    CURLOPT_URL => "https://vehicle-database.p.rapidapi.com/userreport/vin-decoding-premium-plus?vin=" . $vin,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 30,
@@ -33,6 +60,8 @@ function cls_vin_features_lookup( $post_id ) {
 
     curl_close($curl);
     
+
+    print_r($response);
     if ($err || $response == null) {
         return;
     } else {
@@ -51,6 +80,21 @@ function cls_vin_features_lookup( $post_id ) {
             }
         }
     }
+}
+
+
+function cls_vin_features_lookup( $post_id ) {
+    
+    $post_type = get_post_type($post_id);
+
+    $vin = get_post_meta($post_id, 'vin', true);
+
+    if (get_post_meta($post_id, 'exterior', true)) {
+        return;
+    }
+
+    curl_call_vd($post_id, $vin);
+   
 }
 
 add_action('save_post_vehicle', 'cls_vin_features_lookup');
