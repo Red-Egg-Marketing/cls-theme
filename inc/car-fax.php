@@ -1,7 +1,7 @@
 <?php
 
 if (!wp_next_scheduled('cls_vehicles_vin_hook')) {
-    wp_schedule_event( time(), '23hrs', 'cls_vehicles_vin_hook' );
+    wp_schedule_event( strtotime('today midnight'), '24hrs', 'cls_vehicles_vin_hook' );
 }
 
 add_action ( 'cls_vehicles_vin_hook', 'retrieve_all_vin_numbers' );
@@ -55,7 +55,7 @@ function retrieve_all_vin_numbers() {
 }
 
 if (!wp_next_scheduled('cls_vehicles_carfax_outbound')) {
-    wp_schedule_event( time(), '24hrs', 'cls_vehicles_carfax_outbound' );
+    wp_schedule_event( strtotime('today midnight'), '24hrs', 'cls_vehicles_carfax_outbound' );
 }
 
 add_action ( 'cls_vehicles_carfax_outbound', 'car_fax_ftp_outbound' );

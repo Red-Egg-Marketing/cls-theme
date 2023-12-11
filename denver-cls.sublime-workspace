@@ -567,6 +567,8 @@
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_base.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_navigation.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
@@ -620,11 +622,9 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/frontend.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/hero/style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/media.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_base.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/twentytwentyone/assets/sass/05-blocks/latest-posts/_style.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/twentytwentyone/assets/sass/05-blocks/latest-posts/_editor.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_project.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_navigation.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_default-blocks.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/node_modules/reakit/src/Form/__tests__/FormMessage-test.tsx",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/filter-resources.js",
@@ -713,6 +713,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			":hover",
+			".main-navigation ul.nav-menu",
+			".main-navigation ul.nav-menu > li:hover > ul",
+			".main-navigation ul ul",
 			"WDBSK7BAXCF168553",
 			"curl_call_vd",
 			"cls_vin_features_lookup\ncls_vin_features_lookup",
@@ -836,11 +840,7 @@
 			"car_fax_ftp",
 			"JTEBU5JR5G5372062",
 			"cls_vehicles_vin_hook",
-			"success",
-			"cls_vehicles_carfax_outbound",
-			"retrieve_all_vin_numbers",
-			"car_fax_ftp_outbound",
-			"cls_vehicles_vin_hook"
+			"success"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -903,7 +903,7 @@
 		"cols":
 		[
 			0.0,
-			0.554724191655,
+			0.501685081438,
 			1.0
 		],
 		"rows":
@@ -930,6 +930,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"_nav",
+				"app/public/wp-content/themes/cls-theme/support/scss/_navigation.scss"
+			],
 			[
 				"car-fa",
 				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
@@ -1189,10 +1193,6 @@
 			[
 				"_bu",
 				"app/public/wp-content/themes/cls-theme/support/scss/_buttons.scss"
-			],
-			[
-				"_nav",
-				"app/public/wp-content/themes/cls-theme/support/scss/_navigation.scss"
 			],
 			[
 				"form-filters",
