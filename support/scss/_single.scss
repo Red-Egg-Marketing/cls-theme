@@ -189,6 +189,7 @@ p.attr {
 
 .single .resources-block .header {
 	padding-bottom: 1.5rem;
+	justify-content: center;
 	@media screen and (min-width: $small-width) {
 		padding-bottom: 2rem;
 	}
@@ -882,7 +883,7 @@ Single Video
 	font-size: 26px;
 	margin-bottom: 10px;
 	display: inline;
-	width: 100%;
+	width: auto;
 	@media screen and (min-width: $small-width) {
 		font-size: 33px;
 		margin-bottom: 3.125rem;
@@ -971,6 +972,7 @@ article.type-vehicle .header-title {
 article.type-vehicle header {
 	margin-bottom: 15px;
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	@media screen and (min-width: $small-width) {
 		margin-bottom: 25px;
@@ -980,6 +982,8 @@ article.type-vehicle header {
 article.type-vehicle h2.price {
 	font-size: 26px;
 	display: inline;
+	width: auto;
+	margin-left: auto;
 	@media screen and (min-width: $small-width) {
 		font-size: 33px;
 		text-align: right;

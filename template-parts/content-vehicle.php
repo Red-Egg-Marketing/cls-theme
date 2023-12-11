@@ -188,64 +188,61 @@ $phone = get_field('business_phone', 'options');
 			<?php if(is_array($mechanical) || is_array($safety) || is_array($feature_exterior) || is_array($feature_interior)) { ?>
 			<h3 style="color: black;">Features</h3>
 			<div class="tabs">
-					<button data-id="Mechanical" class="active">Mechanical</button>
-					<button data-id="Safety">Safety</button>
-					<button data-id="Exterior">Exterior</button>
-					<button data-id="Interior">Interior</button>
+					<?php if (is_array($mechanical) && count($mechanical) > 0) { ?><button data-id="Mechanical" class="active">Mechanical</button><?php } ?>
+					<?php if (is_array($safety) && count($safety) > 0) { ?><button data-id="Safety">Safety</button><?php } ?>
+					<?php if (is_array($feature_exterior) && count($feature_exterior) > 0) { ?><button data-id="Exterior">Exterior</button><?php } ?>
+					<?php if (is_array($feature_interior) && count($feature_interior) > 0) { ?><button data-id="Interior">Interior</button><?php } ?>
 			</div>
 			<?php } ?>
 			<div class="col col-full tabs-children">
 
-				<?php if(is_array($mechanical) || is_array($safety) || is_array($feature_exterior) || is_array($feature_interior)) { ?>
+				<?php if(is_array($mechanical) && count($mechanical) > 0) { ?>
 				<div class="tabcontent accordions active" id="Mechanical">
 						<ul class="feature">
 						<?php
-							if (is_array($mechanical)) {
-								for($x = 0; $x < sizeof($mechanical); $x++) {
-									$feat = $mechanical[$x];
-									echo '<li>' . $feat . '</li>';
-								}
-							}
-						?>
-						</ul>
-				</div>
-				<div class="tabcontent accordions" id="Safety">
-						<ul class="feature">
-						<?php
-							if (is_array($safety)) {
-								for($x = 0; $x < sizeof($safety); $x++) {
-									$feat = $safety[$x];
-									echo '<li>' . $feat . '</li>';
-								}
-							}
-						?>
-						</ul>
-				</div>
-				<div class="tabcontent accordions" id="Exterior">
-						<ul class="feature">
-						<?php
-							if (is_array($feature_exterior)) {
-								for($x = 0; $x < sizeof($feature_exterior); $x++) {
-									$feat = $feature_exterior[$x];
-									echo '<li>' . $feat . '</li>';
-								}
-							}
-						?>
-						</ul>
-				</div>
-				<div class="tabcontent accordions" id="Interior">
-						<ul class="feature">
-						<?php
-							if (is_array($feature_interior)) {
-								foreach($feature_interior as $feat) {
-									echo '<li>' . $feat . '</li>';
-								}
+							for($x = 0; $x < sizeof($mechanical); $x++) {
+								$feat = $mechanical[$x];
+								echo '<li>' . $feat . '</li>';
 							}
 						?>
 						</ul>
 				</div>
 				<?php } ?>
-				
+				<?php if (is_array($safety) && count($safety) > 0) { ?>
+				<div class="tabcontent accordions" id="Safety">
+						<ul class="feature">
+						<?php
+							for($x = 0; $x < sizeof($safety); $x++) {
+								$feat = $safety[$x];
+								echo '<li>' . $feat . '</li>';
+							}
+						?>
+						</ul>
+				</div>
+				<?php } ?>
+				<?php if(is_array($feature_exterior) && count($feature_exterior)) { ?>
+				<div class="tabcontent accordions" id="Exterior">
+						<ul class="feature">
+						<?php
+							for($x = 0; $x < sizeof($feature_exterior); $x++) {
+								$feat = $feature_exterior[$x];
+								echo '<li>' . $feat . '</li>';
+							}
+						?>
+						</ul>
+				</div>
+				<?php } ?>
+				<?php if(is_array($feature_interior) && count($feature_interior)) { ?>
+				<div class="tabcontent accordions" id="Interior">
+						<ul class="feature">
+						<?php
+							foreach($feature_interior as $feat) {
+								echo '<li>' . $feat . '</li>';
+							}
+						?>
+						</ul>
+				</div>
+				<?php } ?>
 			</div>
 			
 		</div>

@@ -198,6 +198,7 @@ i.fa {
   }
 }
 
+.related-posts h3,
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
   color: #00395C;
@@ -209,6 +210,7 @@ i.fa {
 }
 
 @media screen and (min-width: 768px) {
+  .related-posts h3,
   .gs_team h3,
   .edit-post-visual-editor__content-area h3, .entry-content h3 {
     font-size: 27px;

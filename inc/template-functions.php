@@ -327,7 +327,7 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
 			?>
 			<div class="resources-block light-blue">
 				<header class="header">
-					<h2><?= $head_title; ?></h2>
+					<h3><?= $head_title; ?></h3>
 				</header>
 				<div class="related-vehicle swiper">
 				<div class="swiper-wrapper">

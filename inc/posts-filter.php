@@ -61,7 +61,6 @@ function curl_call_vd($post_id, $vin) {
     curl_close($curl);
     
 
-    print_r($response);
     if ($err || $response == null) {
         return;
     } else {

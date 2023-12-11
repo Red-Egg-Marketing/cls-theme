@@ -12511,6 +12511,7 @@ i.fa {
   }
 }
 
+.related-posts h3,
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
   color: #00395C;
@@ -12522,6 +12523,7 @@ i.fa {
 }
 
 @media screen and (min-width: 768px) {
+  .related-posts h3,
   .gs_team h3,
   .edit-post-visual-editor__content-area h3, .entry-content h3 {
     font-size: 27px;
@@ -19198,6 +19200,8 @@ p.attr {
 
 .single .resources-block .header {
   padding-bottom: 1.5rem;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -20006,7 +20010,7 @@ Single Video
   font-size: 26px;
   margin-bottom: 10px;
   display: inline;
-  width: 100%;
+  width: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -20105,6 +20109,8 @@ article.type-vehicle header {
   margin-bottom: 15px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -20117,6 +20123,8 @@ article.type-vehicle header {
 article.type-vehicle h2.price {
   font-size: 26px;
   display: inline;
+  width: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {

@@ -567,9 +567,9 @@
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_base.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_navigation.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
@@ -930,6 +930,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"car",
+				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
+			],
 			[
 				"_nav",
 				"app/public/wp-content/themes/cls-theme/support/scss/_navigation.scss"
@@ -1437,10 +1441,6 @@
 			[
 				"nav",
 				"app/public/wp-content/themes/red-egg-2022/js/navigation.js"
-			],
-			[
-				"navigation.js",
-				"app/public/wp-content/themes/red-egg-2022/js/navigation.js"
 			]
 		],
 		"width": 0.0
@@ -1448,9 +1448,13 @@
 	"select_project":
 	{
 		"height": 683.0,
-		"last_filter": "ro",
+		"last_filter": "colo",
 		"selected_items":
 		[
+			[
+				"colo",
+				"~/Local Sites/colegalgroup/collegalgroup.sublime-project"
+			],
 			[
 				"ro",
 				"~/bigcommerce/rocket-supply/rocket-supply.sublime-project"
