@@ -1642,7 +1642,7 @@ textarea {
     float: left;
     position: absolute;
     top: 100%;
-    min-width: 200px;
+    min-width: 220px;
     width: auto;
     left: -999em;
     z-index: 99999;
@@ -14115,6 +14115,21 @@ li.menu-item.nav-button a:hover {
 @media screen and (min-width: 768px) {
   .menu-secondary-menu-container .menu-item:last-of-type {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .main-navigation ul > li:nth-of-type(4) ul {
+    min-width: 375px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .main-navigation ul.nav-menu > li:last-of-type:hover > ul,
+  .main-navigation ul.nav-menu > li:last-of-type.focus > ul {
+    right: 0;
+    left: auto;
+    transform: none;
   }
 }
 

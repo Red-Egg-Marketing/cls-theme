@@ -679,6 +679,21 @@ li.menu-item.nav-button a {
 	}
 }
 
+.main-navigation ul > li:nth-of-type(4) ul {
+	@media screen and (min-width: $med-small-width) {
+		min-width: 375px;
+	}
+}
+
+.main-navigation ul.nav-menu > li:last-of-type:hover > ul,
+.main-navigation ul.nav-menu > li:last-of-type.focus > ul {
+	@media screen and (min-width: $med-small-width) {
+		right: 0;
+		left: auto;
+		transform: none;		
+	}
+}
+
 .main-navigation ul.nav-menu > li:hover > ul,
 .main-navigation ul.nav-menu > li.focus > ul {
 	@media screen and (min-width: $med-small-width) {
