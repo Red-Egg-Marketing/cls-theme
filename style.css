@@ -20008,7 +20008,7 @@ Single Video
 
 .single.single-vehicle .header-title {
   font-size: 26px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   display: inline;
   width: auto;
 }
@@ -20016,7 +20016,6 @@ Single Video
 @media screen and (min-width: 768px) {
   .single.single-vehicle .header-title {
     font-size: 33px;
-    margin-bottom: 3.125rem;
   }
 }
 

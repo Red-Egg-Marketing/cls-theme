@@ -272,10 +272,6 @@ function cls_import_vehicles_from_csv() {
 
                     list($width, $height) = $image_type;
 
-                    if ($width < 640) {
-                        continue;
-                    }
-
                     $file = array(
                         'name'     => $new_base . '-' . $base_year . '.' . $path_ext,
                         'type'     => $info['mime'],

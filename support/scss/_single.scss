@@ -881,12 +881,11 @@ Single Video
 
 .single.single-vehicle .header-title {
 	font-size: 26px;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 	display: inline;
 	width: auto;
 	@media screen and (min-width: $small-width) {
 		font-size: 33px;
-		margin-bottom: 3.125rem;
 	}
 }
 
