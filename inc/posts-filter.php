@@ -23,7 +23,7 @@ function cls_all_vins_features_lookup() {
 
             $vin = get_post_meta($post_id, 'vin', true);
 
-            if (get_post_meta($post_id, 'exterior', true) && get_post_meta($post_id, 'interior', true) && get_post_meta($post_id, 'safety', true) && get_post_meta($post_id, 'mechanical_and_powertrain', true)) {
+            if (get_post_meta($post_id, 'exterior', true) && get_post_meta($post_id, 'exterior', true) != '' && get_post_meta($post_id, 'interior', true) && get_post_meta($post_id, 'interior', true) != '' && get_post_meta($post_id, 'safety', true) && get_post_meta($post_id, 'safety', true) != '' && get_post_meta($post_id, 'mechanical_and_powertrain', true) && get_post_meta($post_id, 'mechanical_and_powertrain', true) != '') {
                 continue;
             }
 
