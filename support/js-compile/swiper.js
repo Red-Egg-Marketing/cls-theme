@@ -4,7 +4,7 @@ import Swiper from 'swiper/bundle';
 
 	new Swiper('.related-vehicle.swiper', 
 		{
-			loop: true,
+			loop: false,
 			slidesPerView: 1,
 			autoplay: true,
 			effect: 'slide',
