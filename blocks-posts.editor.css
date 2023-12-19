@@ -1682,6 +1682,10 @@ a[download] {
   min-height: auto;
 }
 
+.single-gs_team #field_3_9 {
+  display: none;
+}
+
 .form-footer {
   display: -ms-flexbox;
   display: flex;

@@ -51,7 +51,7 @@ function cls_populate_member_dropdown($form){
                     $id = get_the_ID();
                     $selected = $post_id === $id ? true : false;
                     $contact_id = get_post_meta( $id, 'contact_id', true );
-                    $value = $contact_id ? $contact_id . ', ' . $title : $title;
+                    $value = $contact_id ? $contact_id . ', ' . $title . ', ' . $id : $title . ', ' . $id;
 
                     $items[] = [
                         "value" => $value,
@@ -97,7 +97,8 @@ function cls_add_oninput( $input, $field, $value, $lead_id, $form_id ) {
             $car = get_the_title($post->ID);
             $year = get_the_terms($post->ID, 'car_year');
             $year = join(', ', wp_list_pluck($year, 'name'));
-            $value = $car . ' ' . $year;
+            $stock = get_post_meta($post->ID, 'stock', true);
+            $value = $stock . ', ' . $car . ' ' . $year;
        }
        
        $name = 'input_' . $id;
@@ -117,6 +118,8 @@ function cls_notify_consultant($notification, $form, $entry) {
         if($field["cssClass"] == "preferred-consultant" && $field["type"] == "select"){
             $f_id = $field["id"];
             $value = rgar($entry, $f_id);
+            $value = explode(",", $value);
+            $value = end($value);
             $email  = get_post_meta( $value, '_gs_email', true );
             // send consultant an email about client
             if ($email != '' && $notification['name'] == 'Admin Notification') {
