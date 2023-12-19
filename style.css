@@ -26479,6 +26479,10 @@ ul.tax-list .tax-wrap {
   }
 }
 
+.comparison-table .table-row .table-cell:only-child {
+  grid-column: 1/3;
+}
+
 .comparison-table .table-row:first-child .table-cell:nth-of-type(odd) {
   background: #00395C;
 }
