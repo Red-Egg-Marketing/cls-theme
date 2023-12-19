@@ -48,8 +48,7 @@ $phone = get_field('business_phone', 'options');
 		<div class="col flex main-col">
 			<header>
 			<?php
-				the_title( '<h1 class="header-title">', '</h1>' );
-				echo '<h2 class="price" id="Price" data-price="' . $orig_price . '"> $' . $price . '</h2>';
+				echo '<h1 class="header-title"><span class="price" id="Price" data-price="' . $orig_price . '"> $' . $price . '</span>' . get_the_title() . '</h1>';
 			?>
 			</header>
 		<?php

@@ -19119,7 +19119,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 }
 
 .post-content .price {
-  width: 100%;
+  float: right;
   margin-top: 0;
   font-weight: 700;
   color: #000000;
@@ -20014,7 +20014,7 @@ Single Video
   font-size: 26px;
   margin-bottom: 0;
   display: inline;
-  width: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
