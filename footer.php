@@ -20,8 +20,6 @@ if (function_exists('get_field')) {
         'icons'         => get_field('icons', 'options'),
     ];
 
-    // curl_call_vd(177778, 'JTMP1RFV3KD513998');
-
 ?>
 
     <footer id="colophon" class="site-footer">

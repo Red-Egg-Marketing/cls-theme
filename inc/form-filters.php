@@ -114,6 +114,17 @@ function cls_add_oninput( $input, $field, $value, $lead_id, $form_id ) {
 add_filter( 'gform_notification', 'cls_notify_consultant', 10, 3 );
 
 function cls_notify_consultant($notification, $form, $entry) {
+    global $post;
+    $id = $post->ID;
+    $title = get_the_title($id);
+    $post_type = get_post_type($id);
+
+    if ($post_type == 'vehicle') {
+        $title = 'Inventory';
+    } elseif($post_type == 'gs_team') {
+        $title = 'Consultant';
+    }
+
     foreach($form["fields"] as &$field) {
         if($field["cssClass"] == "preferred-consultant" && $field["type"] == "select"){
             $f_id = $field["id"];
@@ -128,6 +139,9 @@ function cls_notify_consultant($notification, $form, $entry) {
 
         }
     }
+
+    $notification['message'] .= '<br /> Form Embedded On: ' . $title;
+
     return $notification;
 }
 
