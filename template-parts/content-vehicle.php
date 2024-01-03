@@ -183,7 +183,7 @@ $stock = get_post_meta($id, 'stock', true);
 					</div>
 					<div class="more-info">
 						<ul>
-							<li>VIN #: <?php echo $vin; ?></li>
+							<li>VIN: <?php echo $vin; ?></li>
 							<li>Stock #: <?php echo $stock; ?></li>
 						</ul>
 					</div>

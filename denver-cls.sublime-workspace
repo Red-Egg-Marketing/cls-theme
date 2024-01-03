@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"li",
+				"list-style-type"
+			],
+			[
 				"els",
 				"elseif"
 			],
@@ -510,10 +514,6 @@
 			[
 				"qu",
 				"querySelector"
-			],
-			[
-				"fon",
-				"font-body"
 			]
 		]
 	},
@@ -561,13 +561,15 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss"
 	],
 	"file_history":
 	[
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_single.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-grid-style-four-old.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-grid-style-five-old.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
@@ -580,8 +582,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table-compare/_style-block.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_single.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_forms.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/swiper.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
@@ -712,6 +712,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"vin",
+			"$vin",
 			"enqueue",
 			"col",
 			"cols",
@@ -837,9 +839,7 @@
 			"powertrain",
 			"Air conditioning",
 			"A/C",
-			"a/c",
-			"suspension",
-			"radio"
+			"a/c"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -867,6 +867,11 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"sheets":
+			[
+			]
 		}
 	],
 	"incremental_find":
@@ -886,11 +891,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -917,6 +929,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"functi",
+				"app/public/wp-content/themes/cls-theme/functions.php"
+			],
 			[
 				"blocks.php",
 				"cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php"
@@ -1424,10 +1440,6 @@
 			[
 				"fun",
 				"app/public/wp-content/themes/red-egg-2022/functions.php"
-			],
-			[
-				"nav",
-				"app/public/wp-content/themes/red-egg-2022/js/navigation.js"
 			]
 		],
 		"width": 0.0
@@ -1435,9 +1447,17 @@
 	"select_project":
 	{
 		"height": 683.0,
-		"last_filter": "colo",
+		"last_filter": "con",
 		"selected_items":
 		[
+			[
+				"con",
+				"~/Local Sites/confluence-land-update/confluence-land.sublime-project"
+			],
+			[
+				"denver",
+				"~/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/denver-cls.sublime-project"
+			],
 			[
 				"colo",
 				"~/Local Sites/colegalgroup/collegalgroup.sublime-project"
@@ -1465,10 +1485,6 @@
 			[
 				"hei",
 				"~/Local Sites/heidis-brooklyn-deli/heidis.sublime-project"
-			],
-			[
-				"con",
-				"~/Local Sites/confluence-land-update/confluence-land.sublime-project"
 			],
 			[
 				"col",
