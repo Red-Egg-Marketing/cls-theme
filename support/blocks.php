@@ -83,6 +83,7 @@ function cls_enqueue_main_script() {
             true
        );
 
+        if ($post) {
         wp_localize_script(
             'wp-main-js',
             'postData' ,
@@ -90,6 +91,7 @@ function cls_enqueue_main_script() {
                 'id' => $post->ID
             ]
         );
+        }
     }
 
     // register_block_type( 'cls-blocks/selected-case-studies', [

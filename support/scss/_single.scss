@@ -52,6 +52,23 @@
 	margin-top: 20px
 }
 
+.more-info ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding: 0;
+}
+
+.more-info ul li {
+	padding-left: 0;
+}
+
+.more-info ul li:before {
+	display: none;
+}
+
 div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 	color: $body-color;
 	font-size: 21px;

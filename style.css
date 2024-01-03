@@ -19038,6 +19038,27 @@ a.footer-home {
   margin-top: 20px;
 }
 
+.more-info ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-top: 1px solid black;
+  padding: 0;
+}
+
+.more-info ul li {
+  padding-left: 0;
+}
+
+.more-info ul li:before {
+  display: none;
+}
+
 div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
   color: #000000;
   font-size: 21px;
