@@ -18,6 +18,7 @@ if (function_exists('get_field')) {
         'state'         => get_field('business_state', 'options'),
         'areas'         => get_permalink(get_field('areas_served', 'options')),
         'icons'         => get_field('icons', 'options'),
+        'disclaimer'    => get_field('disclaimer', 'options')
     ];
 
 ?>
@@ -106,7 +107,7 @@ if (function_exists('get_field')) {
             >
                 <div class="wrapper">
                     <h2 class="header-title">Disclaimer</h2>
-                    <p>Information provided is believed accurate but all specifications, pricing, and availability must be confirmed in writing (directly) with the dealer to be binding. We reserve the right to correct any errors or omissions prior to the final sale of the vehicle. Advertised price includes $225 Documentation Fee. Sales tax, finance charges, cost of emissions test, and other governmental fees or taxes are not included in the quoted price. Transportation costs incurred after the sale to deliver the vehicle to the purchaser at the purchaser's request are not included in the quoted price. RECALL NOTICE: Some vehicles offered for sale may be subject to unrepaired manufacturer safety recalls. To determine the recall status of a vehicle, visit <a href="https://www.nhtsa.gov/" target="_blank">https://www.nhtsa.gov/</a> recalls</p>
+                    <?php echo $company_settings['disclaimer']; ?>
                 </div>
             </div>
         </div>
