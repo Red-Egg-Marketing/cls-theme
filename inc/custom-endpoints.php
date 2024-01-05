@@ -124,10 +124,29 @@ function cls_return_vehicles() {
 		'post_type' => $post_types,
 		'post_status' => 'publish',
 		'posts_per_page' => $ppp,
-		'orderby' => 'meta_value',
-		'meta_key' => 'year',
-		'meta_type' => 'NUMERIC',
-		'order' => 'DESC'
+		'meta_query' => [
+			'relation' => 'AND',
+			'year_clause' => [
+				'key' => 'year',
+				'compare' => 'EXISTS'
+			],
+			'make_clause' => [
+				'key' => 'make',
+				'compare' => 'EXISTS'
+			],
+			'model_clause' => [
+				'key' => 'model',
+				'compare' => 'EXISTS'
+			],
+		],
+		'orderby' => [
+			'make_clause' => 'ASC',
+			'model_clause' => 'ASC',
+			'year_clause' => 'DESC'
+		]
+		// 'meta_key' => 'year',
+		// 'meta_type' => 'NUMERIC',
+		// 'order' => 'DESC'
 	];
 
 	if ($order) {

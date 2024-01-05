@@ -188,6 +188,8 @@ function cls_import_vehicles_from_csv() {
             "selling_price" => $post["SellingPrice"],
             "msrp" => $post["MSRP"],
             "year" => $post["Year"],
+            "make" => $post["Make"],
+            "model" => $post["Model"],
             "book_value" => $post["BookValue"],
             "invoice" => $post["Invoice"],
             "certified" => $post["Certified"],
