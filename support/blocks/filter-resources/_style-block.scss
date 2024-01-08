@@ -47,7 +47,6 @@
 .form-filters .wp-block-buttons {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 25px;
 	justify-content: flex-end;
 }
 
@@ -60,7 +59,7 @@
 	font-size: 20px;
 	padding-left: 20px;
 	@media screen and (min-width: $small-width) {
-		grid-column: 1/4;
+		grid-column: 1/3;
 	}
 }
 

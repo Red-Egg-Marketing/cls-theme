@@ -202,7 +202,6 @@ const SaveResources = ( { attributes } ) => {
     		    url: apiUrl + window.location.search,
     		    method: 'GET',
     		}).then(resourcelist => {
-    			console.log(resourcelist);
     		    let posts = resourcelist[0].resources;
     		    let taxes = resourcelist[1];
     		    setTaxes(taxes);

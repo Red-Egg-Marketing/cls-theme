@@ -25179,7 +25179,6 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 25px;
   -ms-flex-pack: end;
       justify-content: flex-end;
 }
@@ -25196,7 +25195,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 
 @media screen and (min-width: 768px) {
   .resources-block .search-cont input[type="search"] {
-    grid-column: 1/4;
+    grid-column: 1/3;
   }
 }
 

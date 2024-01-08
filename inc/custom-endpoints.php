@@ -157,7 +157,17 @@ function cls_return_vehicles() {
 			$args['meta_type'] = 'NUMERIC';
 			$args['order'] = 'ASC';
 		}
+		if ($order == 'price-high') {
+			$args['meta_key'] = 'selling_price';
+			$args['meta_type'] = 'NUMERIC';
+			$args['order'] = 'DESC';
+		}
 		if ($order == 'year') {
+			$args['meta_key'] = 'year';
+			$args['meta_type'] = 'NUMERIC';
+			$args['order'] = 'ASC';
+		}
+		if ($order == 'year-high') {
 			$args['meta_key'] = 'year';
 			$args['meta_type'] = 'NUMERIC';
 			$args['order'] = 'DESC';
@@ -166,6 +176,11 @@ function cls_return_vehicles() {
 			$args['meta_key'] = 'miles';
 			$args['meta_type'] = 'NUMERIC';
 			$args['order'] = 'ASC';
+		}
+		if ($order == 'miles-high') {
+			$args['meta_key'] = 'miles';
+			$args['meta_type'] = 'NUMERIC';
+			$args['order'] = 'DESC';
 		}
 	
 	}

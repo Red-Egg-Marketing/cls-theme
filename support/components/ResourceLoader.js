@@ -100,10 +100,20 @@ const ResourceFilters = (props) => {
               }
             >
               <option value="" disabled selected>Order By</option>
-              <option value="price">Price</option>
-              <option value="miles">Miles</option>
-              <option value="year">Year</option>
+              <option value="price">Price low to high</option>
+              <option value="price-high">Price high to low</option>
+              <option value="miles">Miles low to high</option>
+              <option value="miles-high">Miles high to low</option>
+              <option value="year">Year low to high</option>
+              <option value="year-high">Year high to low</option>
             </select>
+            <div className="wp-block-buttons">
+              <input 
+                type="submit"
+                className="wp-button"
+                value="Submit"
+               />
+             </div>
           </div>
           <div className="wrapper filter-items">
           <div className="container">
