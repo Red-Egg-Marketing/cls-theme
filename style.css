@@ -19000,15 +19000,7 @@ a.footer-home {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1079px) {
-  .post-content .car-details:first-of-type {
-    width: 100%;
-    margin-bottom: 30px;
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .post-content .car-details:first-of-type {
     width: 50%;
     margin-bottom: 30px;

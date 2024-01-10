@@ -23,12 +23,7 @@
 	width: 100%;
 	margin-bottom: 20px;
 	margin-top: 30px;
-	@media screen and (min-width: $small-width) and (max-width: $med-small-width - 1px) {
-		width: 100%;
-		margin-bottom: 30px;
-		margin-top: 0;
-	}
-	@media screen and (min-width: $med-small-width) {
+	@media screen and (min-width: $small-width) {
 		width: 50%;
 		margin-bottom: 30px;
 		margin-top: 0;
