@@ -4,7 +4,6 @@ const { RichText } = wp.blockEditor;
 const { Button, PanelBody } = wp.components;
 const { __ } = wp.i18n;
 
-
 const Content = (props) => {
 
 	const { placeholder, content, classProp, multiline, tag, updateProp } = props;
@@ -37,6 +36,7 @@ const Content = (props) => {
 			/>
 		</Fragment>
 	)
+
 }
 
 Content.View = (props) => {
@@ -57,6 +57,7 @@ Content.View = (props) => {
 			)}
 		</Fragment>
 	)
+
 }
 
 export default Content;

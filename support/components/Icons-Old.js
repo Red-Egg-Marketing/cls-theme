@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 const { Fragment } = wp.element;
 const { RichText, InspectorControls } = wp.blockEditor;
 const { Button, PanelBody, withFocusOutside, Popover, TextControl, TextareaControl, ColorPalette } = wp.components;
@@ -173,6 +173,7 @@ const Icons = (props) => {
   	const isParentActive = activeParent != undefined ? activeParent : false;
 
   	const onChangeContact = (value, rowNumber) => {
+  		
 		let currentIcons = JSON.parse(JSON.stringify(rows));
 		let index = rowNumber;
 		let newRow = {
@@ -189,7 +190,9 @@ const Icons = (props) => {
 	}
 
 	const filterIconList = (value) => {
+
 		let search = value.replace(" ", "-");
+
 		let foundIcons = AllIcons.filter(icon => {
 			let name = icon.iconName;
 			if (name.indexOf(search, 0) != -1) {
@@ -198,6 +201,7 @@ const Icons = (props) => {
 		});
 
 		setIconList(foundIcons);
+
 	}
 
 	const setIconColor = (value) => {

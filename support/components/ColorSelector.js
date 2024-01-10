@@ -33,6 +33,7 @@ const ColorSelector = (props) => {
 		props.setAttributes({
 			color: bgColor != undefined ? 'has-' + bgColor.slug + '-color' : ''
 		});
+		
 	}
 
 	
