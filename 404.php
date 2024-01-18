@@ -22,7 +22,6 @@ get_header();
 						<div class="block-wrapper">
 							<header class="header triangles-grey"><div class="header-wrap">
 									<h1 class="wp-block-heading">404: Nothing Found</h1>
-
 									<p>Maybe try searching our inventory?</p>
 							</div></header>
 							<div class="resources-wrap" id="ResourcesWrap"></div>
