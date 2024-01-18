@@ -81,6 +81,8 @@ function cls_add_custom_query_vars( $vars ){
   $vars[] = "miles_max";
   $vars[] = "price_min";
   $vars[] = "price_max";
+  $vars[] = "vin";
+  $vars[] = "stock";
   return $vars;
 }
 add_filter( 'query_vars', 'cls_add_custom_query_vars' );
@@ -148,6 +150,7 @@ function cls_return_vehicles() {
 		// 'meta_type' => 'NUMERIC',
 		// 'order' => 'DESC'
 	];
+	$args_2 = false;
 
 	if ($order) {
 		$args['orderby'] = 'meta_value';
@@ -187,6 +190,25 @@ function cls_return_vehicles() {
 
 	if ($search) {
 		$args['s'] = $search;
+		$args_2 = [
+			'post_type' => $post_types,
+			'post_status' => 'publish',
+			'posts_per_page' => $ppp,
+			'meta_query' => [
+			 	'relation' => 'OR',
+				[
+					'key' => 'vin',
+					'value' => $search,
+					'compare' => '='
+				],
+				[
+					'key' => 'stock',
+					'value' => $search,
+					'compare' => '='
+				]
+			]
+		];
+	
 	}
 
 	if ($make || $body || $drive || $fuel || $min_year || $max_year) {
@@ -311,7 +333,17 @@ function cls_return_vehicles() {
 
 	}
 
-	$query = new WP_Query($args);
+	$query_1 = new WP_Query($args);
+	$query = new WP_Query();
+
+	if ($args_2 != false) {
+		$query_2 = new WP_Query($args_2);
+		$query->posts = array_merge($query_1->posts, $query_2->posts);
+		$query->post_count = $query_1->post_count + $query_2->post_count;
+	} else {
+		$query->posts = $query_1->posts;
+		$query->post_count = $query_1->post_count;
+	}
 
 	$taxes = cls_return_taxonomies($post_types);
 

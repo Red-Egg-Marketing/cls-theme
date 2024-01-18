@@ -312,6 +312,12 @@ require get_template_directory() . '/inc/posts-filter.php';
 require get_template_directory() . '/inc/form-filters.php';
 
 
+/**
+ * Redirects
+ */
+require get_template_directory() . '/inc/redirects.php';
+
+
 
 /**
  * Load Jetpack compatibility file.
