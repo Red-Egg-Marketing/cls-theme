@@ -41,14 +41,14 @@ function curl_call_vd($post_id, $vin) {
     $curl = curl_init();
 
     curl_setopt_array($curl, [
-    CURLOPT_URL => "https://vehicle-database.p.rapidapi.com/userreport/vin-decoding-premium-plus?vin=" . $vin,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_ENCODING => "",
-    CURLOPT_MAXREDIRS => 30,
-    CURLOPT_TIMEOUT => 30,
-    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-    CURLOPT_CUSTOMREQUEST => "GET",
-    CURLOPT_HTTPHEADER => [
+        CURLOPT_URL => "https://vehicle-database.p.rapidapi.com/userreport/vin-decoding-premium-plus?vin=" . $vin,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 30,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "GET",
+        CURLOPT_HTTPHEADER => [
             "X-RapidAPI-Host: vehicle-database.p.rapidapi.com",
             "X-RapidAPI-Key: 939a406ac1msh07aacf37e0391c0p1ffeb7jsnef460c51559d"
         ],

@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"pos",
+				"post_count"
+			],
+			[
+				"met",
+				"meta_query"
+			],
+			[
+				"query",
+				"query_2"
+			],
+			[
+				"meta",
+				"meta_value"
+			],
+			[
+				"wp_re",
+				"wp_redirect"
+			],
+			[
+				"prin",
+				"print_r()"
+			],
+			[
+				"get",
+				"get_col"
+			],
+			[
+				"wp",
+				"wpdb"
+			],
+			[
 				"mak",
 				"make_clause"
 			],
@@ -34,10 +66,6 @@
 			[
 				"re",
 				"response"
-			],
-			[
-				"prin",
-				"print_r"
 			],
 			[
 				"ma",
@@ -152,10 +180,6 @@
 				"console"
 			],
 			[
-				"get",
-				"getAttribute"
-			],
-			[
 				"cons",
 				"console"
 			],
@@ -246,10 +270,6 @@
 			[
 				"arra",
 				"array_diff"
-			],
-			[
-				"pos",
-				"post_content"
 			],
 			[
 				"inter",
@@ -362,10 +382,6 @@
 			[
 				"set",
 				"setLoading"
-			],
-			[
-				"wp",
-				"wp_localize_script"
 			],
 			[
 				"getEnt",
@@ -498,27 +514,22 @@
 			[
 				"app",
 				"appendInput"
-			],
-			[
-				"w",
-				"window"
-			],
-			[
-				"ke",
-				"keydown"
-			],
-			[
-				"next",
-				"nextSibling"
-			],
-			[
-				"query",
-				"querySelector"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "support/blocks.php",
+			"settings":
+			{
+				"buffer_size": 7198,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -557,18 +568,38 @@
 	"expanded_folders":
 	[
 		"/Users/jacoblang/Local Sites/cls-denver/app",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/csv",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js"
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-header.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/redirects.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/options.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/menu-functions.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-team-layout-filter-2.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-team-layout-cat-filters.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/404.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/archive.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/term.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/fw-flush-cache.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/default-htaccess",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/local-xdebuginfo.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-config.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/.htaccess",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/fw-flush-cache.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/menu-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/components/Content.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/package-lock.json",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/components/Icons-Old.js",
@@ -586,9 +617,7 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/save.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-form/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/payment-calc.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/frontend.js",
@@ -597,22 +626,17 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-grid-style-four-old.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-grid-style-five-old.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/imagify/vendor/composer/installers/src/Composer/Installers/GravInstaller.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/fancybox-settings.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/filter-resources.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/words.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/table-compare/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_forms.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/swiper.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/navigation.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/media.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/customizer.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-walker.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-header.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_page.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_fonts.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-page.php",
@@ -632,10 +656,8 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js/forms.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles/gs-team-single-default.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/gs-team-members-premium/templates/gs-team-layout-filter.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-team-layout-filter-2.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/gs-team-members-premium/includes/template-loader.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/gs-team-members-premium/includes/functions.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-team-layout-cat-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/partials/gs-team-layout-cat-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_variables.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/success.txt",
@@ -683,12 +705,7 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/_style-block.scss",
 		"/Users/jacoblang/Desktop/cls.csv",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/csv/cls.csv",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/package.json",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/hero/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-header/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/frontend.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/editor.scss"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/package.json"
 	],
 	"find":
 	{
@@ -707,6 +724,35 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"AND",
+			"stock",
+			"vehicles",
+			"search",
+			"stock",
+			"init",
+			"get_query_var",
+			"template_redirect",
+			"init",
+			"add_widget_type_query_var",
+			"cls_add_custom_query_vars",
+			"query_vars",
+			"query",
+			"cls-theme",
+			"wp_redirect",
+			"false",
+			"get_query_var",
+			"1FMEE5DP0PLB93654",
+			"query_vars",
+			"cls-theme",
+			"add_query_arg",
+			"add_query_vars",
+			"query",
+			"query_var",
+			"query",
+			"cls_vin_number_redirect",
+			"vin",
+			"my_redirect",
+			"cls_vin_number_redirect",
 			"cache",
 			".post-content .car-details:first-of-type",
 			"price",
@@ -805,36 +851,7 @@
 			"unlink",
 			"myfile",
 			"cls_vehicles_carfax_outbound",
-			"car_fax_ftp_outbound",
-			"filename",
-			"REDEGGMRKT_get",
-			"cls_vehicles_carfax_outbound",
-			"car_fax_ftp_outbound",
-			"retrieve_all_vin_numbers",
-			"inbound",
-			"cls_import_vehicles_from_csv",
-			".tabs",
-			".post-content .car-details:first-of-type",
-			".phone",
-			"p.phone",
-			"cls_vehicles_vin_hook",
-			"retrieve_all_vin_numbers",
-			"cls_vehicles_vin_hook",
-			"$link",
-			"link",
-			".post-content > .col-full",
-			"Exterior",
-			"Safy",
-			"Safety",
-			"Mechanical",
-			"Features",
-			"h3",
-			".post-content .second-col",
-			"#Calculator",
-			"#Calculator label",
-			"form .inner-row select",
-			"#Calculator",
-			".single.single-vehicle .entry-content"
+			"car_fax_ftp_outbound"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -861,6 +878,38 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "support/blocks.php",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1124,
+								1116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		},
 		{
@@ -897,7 +946,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.496806854742,
 			1.0
 		],
 		"rows":
@@ -925,6 +974,14 @@
 		"selected_items":
 		[
 			[
+				"blocks.php",
+				"cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php"
+			],
+			[
+				"impo",
+				"app/public/wp-content/themes/cls-theme/inc/import.php"
+			],
+			[
 				"custom-en",
 				"app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
 			],
@@ -943,10 +1000,6 @@
 			[
 				"functi",
 				"app/public/wp-content/themes/cls-theme/functions.php"
-			],
-			[
-				"blocks.php",
-				"cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php"
 			],
 			[
 				"func",
@@ -979,10 +1032,6 @@
 			[
 				"form",
 				"app/public/wp-content/themes/cls-theme/inc/form-filters.php"
-			],
-			[
-				"impo",
-				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
 				"imp",
@@ -1442,9 +1491,25 @@
 	"select_project":
 	{
 		"height": 683.0,
-		"last_filter": "denver",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"mo",
+				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
+			],
+			[
+				"mor",
+				"~/Local Sites/morgan-rosel-v2/morgan-rosel.sublime-workspace"
+			],
+			[
+				"amw",
+				"~/Local Sites/amwa/amwa.sublime-project"
+			],
 			[
 				"denver",
 				"~/Local Sites/denver-legal/denver-legal-goup.sublime-project"
@@ -1472,10 +1537,6 @@
 			[
 				"more",
 				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
-			],
-			[
-				"",
-				"~/Local Sites/heidis-brooklyn-deli/heidis.sublime-project"
 			],
 			[
 				"h",
@@ -1626,14 +1687,6 @@
 				"~/Local Sites/latitude-fullsite/latitude-fullsite.sublime-project"
 			],
 			[
-				"mo",
-				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
-			],
-			[
-				"mor",
-				"~/Local Sites/morgan-rosel/morgan-rosel-live.sublime-project"
-			],
-			[
 				"neb",
 				"~/Local Sites/nebraska-legal-group/nebraska-legal.sublime-project"
 			],
@@ -1668,10 +1721,6 @@
 			[
 				"y",
 				"~/Local Sites/yosi/yosi-health.sublime-project"
-			],
-			[
-				"amw",
-				"~/Local Sites/amwa/amwa.sublime-project"
 			],
 			[
 				"car",
@@ -1793,7 +1842,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
