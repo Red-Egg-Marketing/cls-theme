@@ -110,9 +110,7 @@ function cls_add_oninput( $input, $field, $value, $lead_id, $form_id ) {
 
 }
 
-
 add_filter( 'gform_notification', 'cls_notify_consultant', 10, 3 );
-
 function cls_notify_consultant($notification, $form, $entry) {
     global $post;
     $id = $post->ID;
