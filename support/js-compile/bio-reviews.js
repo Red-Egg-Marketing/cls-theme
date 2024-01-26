@@ -44,6 +44,28 @@ const SaveBioReviews = () => {
 			setTotal(true);
 		}
 
+		const readMore = (e) => {
+			let targ = e.currentTarget;
+			let prev = targ.previousSibling;
+			let next = targ.nextElementSibling;
+			let less = targ.nextElementSibling.nextElementSibling;
+			prev.style.display = 'none';
+			next.style.display = 'block';
+			less.style.display = 'block';
+			targ.style.display = 'none';
+		}
+
+		const readLess = (e) => {
+			let targ = e.currentTarget;
+			let prev = targ.previousSibling;
+			let more = targ.previousSibling.previousSibling;
+			let text = targ.previousSibling.previousSibling.previousSibling;
+			prev.style.display = 'none';
+			more.style.display = 'inline-block';
+			text.style.display = 'block';
+			targ.style.display = 'none';
+		}
+
 		React.useEffect( () => {
 			
 			if (resources === false) {
@@ -88,13 +110,20 @@ const SaveBioReviews = () => {
 							text = text.split(" ");
 							let intro = text.slice(0, 25);
 							intro = intro.join(" ") + '...';
-							let more = text.slice(25);
+							let more = text.slice(0);
 							more = more.join(" ");
 							let name = resource.reviewer_name;
 							let image = resource.userpic;
 							let ratingArray = Array.from({ length: rating }, (value, index) => index);
 							let style = {
-								"display" : "none"
+								"display" : "none",
+							}
+							let styleLess = {
+								"display" : "none",
+								"color" : "#910035"
+							}
+							let styleColor = {
+								"color" : "#910035"
 							}
 							if (resourceIndex < 6 && total == false) {
 								return (
@@ -114,10 +143,15 @@ const SaveBioReviews = () => {
 														})}
 														</span>
 													</span>
-													<span className="wprs_rd_more_1">{intro}</span>
-													<span className="wprs_rd_more"> read more</span>
-													<span className="wprs_rd_more_text" style={ style }>{intro}{ more }</span>
-													<span className="wprs_rd_less" style={ style }> read less</span>
+													<span className="rd_more_1">{intro}</span>
+													<span className="rd_more"
+														onClick={ readMore }
+														style={ styleColor }
+													> read more</span>
+													<span className="rd_more_text" style={ style }>{ more }</span>
+													<span className="rd_less" style={ styleLess }
+														onClick={ readLess }
+													> read less</span>
 												</div>
 											</div>
 											{ image && (
