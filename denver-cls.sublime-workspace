@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"st",
+				"styleColor"
+			],
+			[
+				"sty",
+				"styleColor"
+			],
+			[
+				"n",
+				"nextElementSibling"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"prev",
+				"previousSibling"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
 				"pos",
 				"post_count"
 			],
@@ -180,10 +204,6 @@
 				"console"
 			],
 			[
-				"cons",
-				"console"
-			],
-			[
 				"a",
 				"addEventListener"
 			],
@@ -226,10 +246,6 @@
 			[
 				"s",
 				"$_SESSION\tSESSION['…']"
-			],
-			[
-				"di",
-				"displace"
 			],
 			[
 				"get_the",
@@ -498,49 +514,11 @@
 			[
 				"text",
 				"text-transform"
-			],
-			[
-				"che",
-				"checkParent"
-			],
-			[
-				"ap",
-				"append"
-			],
-			[
-				"active",
-				"activeElement"
-			],
-			[
-				"app",
-				"appendInput"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "inc/car-fax.php",
-			"settings":
-			{
-				"buffer_size": 4331,
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
-		},
-		{
-			"file": "inc/import.php",
-			"settings":
-			{
-				"buffer_size": 14331,
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -584,12 +562,17 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile"
 	],
 	"file_history":
 	[
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/bio-reviews.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-header.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/redirects.php",
@@ -676,7 +659,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/REDEGGMRKT_cfxlinkiicr_10312023.txt",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_bios.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_reviews.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile/bio-reviews.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/tabs/scrolling.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/feature-section/scrolling.js",
@@ -735,6 +717,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$i_array",
+			"$actual_id",
+			"$post['id']",
+			"$post['id",
+			"actual_id",
+			"intersect",
+			"original_base",
+			"2da5f59f46e245df89bf68887e7b3be5",
+			"3ef95f0691474e5c82c4fd0854d84771",
+			"99ff78b606a14cf7b9c8747e2aae6aad",
+			"basename",
+			"more",
+			"style",
+			"wprs_rd_more_1",
+			"this",
 			"cls_vehicles_csv_hook",
 			"price",
 			"template_redirect",
@@ -847,22 +844,7 @@
 			"cls_vehicles_vin_hook",
 			"cls_vehicles_vin_features_lookup",
 			"cls_vehicles_vin_hook",
-			"cls_vehicles_vin_features_lookup",
-			"cls_vin_features_lookup",
-			"car_fax_ftp_outbound",
-			"retrieve_all_vin_numbers",
-			"cls_vehicles_carfax_outbound",
-			"wp_schedule_event",
-			"car_fax_ftp_outbound",
-			"car_fax_ftp_inbound",
-			".entry-content > iframe",
-			"vehicle",
-			"email",
-			"carfax_link",
-			"array_key_exists",
-			"filename",
-			"fgetcsv",
-			"FTP_ASCII"
+			"cls_vehicles_vin_features_lookup"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -889,99 +871,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "inc/car-fax.php",
-					"selected": true,
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 4331,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2083,
-								2083
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 798.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "inc/import.php",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14331,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1423,
-								1423
-							],
-							[
-								1470,
-								1470
-							],
-							[
-								1513,
-								1513
-							],
-							[
-								1558,
-								1558
-							],
-							[
-								1602,
-								1602
-							],
-							[
-								1652,
-								1652
-							],
-							[
-								1696,
-								1696
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 451.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1002,18 +891,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.458405148146,
 			1.0
 		],
 		"rows":
@@ -1040,6 +922,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"imp",
+				"app/public/wp-content/themes/cls-theme/inc/import.php"
+			],
 			[
 				"custom-en",
 				"app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
@@ -1099,10 +985,6 @@
 			[
 				"form",
 				"app/public/wp-content/themes/cls-theme/inc/form-filters.php"
-			],
-			[
-				"imp",
-				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
 				"_fon",
@@ -1558,9 +1440,13 @@
 	"select_project":
 	{
 		"height": 683.0,
-		"last_filter": "re",
+		"last_filter": "h1",
 		"selected_items":
 		[
+			[
+				"h1",
+				"~/Local Sites/h1h2-capital/h1h2.sublime-project"
+			],
 			[
 				"re",
 				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
@@ -1712,10 +1598,6 @@
 			[
 				"ta",
 				"~/Local Sites/tax-tamer/tax-tamer.sublime-project"
-			],
-			[
-				"h1",
-				"~/Local Sites/h1h2-capital/h1h2.sublime-project"
 			],
 			[
 				"pa",

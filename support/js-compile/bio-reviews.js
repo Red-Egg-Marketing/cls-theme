@@ -193,10 +193,15 @@ const SaveBioReviews = () => {
 														})}
 														</span>
 													</span>
-													<span className="wprs_rd_more_1">{intro}</span>
-													<span className="wprs_rd_more"> read more</span>
-													<span className="wprs_rd_more_text" style={ style }>{intro}{ more }</span>
-													<span className="wprs_rd_less" style={ style }> read less</span>
+													<span className="rd_more_1">{intro}</span>
+													<span className="rd_more"
+														onClick={ readMore }
+														style={ styleColor }
+													> read more</span>
+													<span className="rd_more_text" style={ style }>{ more }</span>
+													<span className="rd_less" style={ styleLess }
+														onClick={ readLess }
+													> read less</span>
 												</div>
 											</div>
 											{ image && (
