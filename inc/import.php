@@ -251,15 +251,20 @@ function cls_import_vehicles_from_csv() {
 
                 $base = basename($image);
 
-                array_push($base_images, $base);
+                if ($base != '') {
+
+                    array_push($base_images, $base);
+
+                    array_push($i_array, $base);
+                }
 
                 if (is_array($current_images) && in_array($base, $current_images)) {
                     continue;
                 }
-                
-                $timeout_seconds = 3;
 
-                array_push($i_array, $base);
+                
+                $timeout_seconds = 5;
+
 
                 $temp_file = download_url( $image, $timeout_seconds );
 
@@ -325,6 +330,8 @@ function cls_import_vehicles_from_csv() {
     
         } // end foreach
 
+         
+         
         if ( $exists_id !== false && is_array($current_images)) {
 
 
@@ -339,42 +346,77 @@ function cls_import_vehicles_from_csv() {
                     return true;
                 }
             });
-            
-            // remove missing images
-            foreach($missing_images as $missing_image) {
 
-                $image_query = $wpdb->get_col( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' && post_parent = '{$exists_id}' && post_content = '{$missing_image}'" );
-                wp_delete_attachment( $image_query[0], true );
-
-
-                 wp_update_post(
-                [
-                    'ID' => $actual_id,
-                    'meta_input' => [
-                        'original_base' => json_encode($intersect)
-                    ]
-                ]
-            );
-
-            }
-
-           
-
-           
-        }
-
-
-        if ( $exists_id === false ) {
             wp_update_post(
                 [
                     'ID' => $actual_id,
                     'meta_input' => [
-                        'original_base' => json_encode($i_array)
+                        'a_test' => json_encode($i_array)
+                    ]
+                ]
+            );
+            
+            // remove missing images
+
+            if (sizeof($missing_images) > 0) {
+                foreach($missing_images as $missing_image) {
+
+                    $image_query = $wpdb->get_col( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' && post_parent = '{$exists_id}' && post_content = '{$missing_image}'" );
+                    wp_delete_attachment( $image_query[0], true );
+
+
+                }   
+
+                wp_update_post(
+                    [
+                        'ID' => $actual_id,
+                        'meta_input' => [
+                            'original_base' => json_encode($intersect)
+                    ]
+                ]);
+            } else {
+               
+                if (sizeof($i_array) == 0) {
+                   // delete images if import has no images
+                    $attachments = get_attached_media( 'image', $actual_id );
+
+                    foreach ($attachments as $attachment) {
+                        wp_delete_attachment( $attachment->ID, true );
+                    }  
+                }
+
+                wp_update_post(
+                    [
+                        'ID' => $actual_id,
+                        'meta_input' => [
+                            'original_base' => json_encode($i_array)
+                        ]
+                    ]
+                );
+            }
+
+           
+        } elseif($exists_id !== false && !is_array($current_images)){
+            wp_update_post(
+                    [
+                        'ID' => $actual_id,
+                        'meta_input' => [
+                            'original_base' => json_encode($i_array)                    
+                    ]
+            ]);
+        } elseif ( $exists_id === false ) {
+            wp_update_post(
+                [
+                    'ID' => $actual_id,
+                    'meta_input' => [
+                        'original_base' => json_encode($i_array),
                     ]
                 ]
             );
              
         } 
+
+        
 
         $tax_array = [];
 
