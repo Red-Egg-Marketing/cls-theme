@@ -703,6 +703,11 @@ h4 {
   color: #000000;
 }
 
+.resource-card .resource-excerpt,
+.resource-card .resource-title {
+  width: 100%;
+}
+
 .resource-card .resource-price,
 .resource-card .resource-year {
   text-align: right;

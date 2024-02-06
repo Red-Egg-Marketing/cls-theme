@@ -125,6 +125,7 @@ require('es6-promise/auto');
   			resources.map(function(resource, index){
   				let link = resource.link;
   				let excerpt = resource.excerpt;
+  				let title = resource.title;
   				let media = resource.featured_image;
   				let typeClass = '';
   				let imgClass = '';
@@ -153,16 +154,20 @@ require('es6-promise/auto');
   				card.setAttribute('class', 'resource-card' + typeClass + imgClass);
   				
 
+  				let head = document.createElement('h2');
+  				head.setAttribute('class', 'resource-title');
   				let content = document.createElement('div');
   				content.setAttribute('class', 'content');
   				let p = document.createElement('p');
   				p.setAttribute('class', 'resource-excerpt');
   				p.innerHTML = excerpt;
+  				head.innerHTML = title;
   				let button = document.createElement('button');
   				button.setAttribute('class', 'wp-button');
   				let buttonText = 'Read More';
   				button.textContent = buttonText;
 
+  				content.appendChild(head);
   				content.appendChild(p);
   				contWrap.appendChild(content);
   				a.appendChild(contWrap);
