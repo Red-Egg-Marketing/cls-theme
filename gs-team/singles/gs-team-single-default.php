@@ -45,6 +45,13 @@ $modal_form = get_field('menu_form', 'options');
                     href="javascript;" 
                     data-src="#modal-form-<?= $modal_form  ?>" 
                     data-fancybox>Contact <?= $title; ?></a>
+                <a 
+                    class="wp-block-button__link wp-element-button"
+                    href="https://www.reviewmeauto.com/CENTCO/"
+                    target="_blank" 
+                >
+                    Review <?= $title; ?>
+                </a>
             </div>
         <?php } ?>
     </div>

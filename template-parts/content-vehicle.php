@@ -34,11 +34,12 @@ $mechanical = get_post_meta($id, 'mechanical_and_powertrain', true);
 $safety = get_post_meta($id, 'safety', true);
 $feature_interior = get_post_meta($id, 'interior', true);
 $feature_exterior = get_post_meta($id, 'exterior', true);
-$carfax_link = get_post_meta($id, 'carfax_link', true);
+$vin = get_post_meta($id, 'vin', true);
+// $carfax_link = get_post_meta($id, 'carfax_link', true) ?;
+$carfax_link = "https://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=" . $vin;
 $carfax_img = get_stylesheet_directory_uri() . '/img/carfax.svg';
 $miles = number_format(floatval(get_post_meta($id, 'miles', true)), 0);
 $phone = get_field('business_phone', 'options');
-$vin = get_post_meta($id, 'vin', true);
 $stock = get_post_meta($id, 'stock', true);
 
 ?>

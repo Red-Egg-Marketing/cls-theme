@@ -765,8 +765,6 @@ h4 {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 80% 20%;
-      grid-template-columns: 80% 20%;
 }
 
 .resource-card .bottom {

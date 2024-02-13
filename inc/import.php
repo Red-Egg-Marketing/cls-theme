@@ -198,6 +198,7 @@ function cls_import_vehicles_from_csv() {
             "categorized_options" => $post["Categorized Options"],
             "city_mpg" => $post["CityMPG"],
             "highway_mpg" => $post["HighwayMPG"],
+            "carfax_link" => "https://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=" . $post["VIN"]
         ];
 
         if ( $exists_id !== false ) {

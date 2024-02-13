@@ -75,13 +75,13 @@ const ResourceCard = (props) => {
 									props.resourceTitle
 								}
 							/>
-							<RichText.Content
+							{/*<RichText.Content
 								tagName="p"
 								className="resource-year"
 								value={
 									props.resourceYear
 								}
-							/>
+							/>*/}
 						</div>
 						<div className="bottom">
 							<RichText.Content
@@ -161,13 +161,13 @@ ResourceCard.View = (props) => {
 									props.resourceTitle
 								}
 							/>
-							<RichText.Content
+							{/*<RichText.Content
 								tagName="p"
 								className="resource-year"
 								value={
 									props.resourceYear
 								}
-							/>
+							/>*/}
 						</div>
 						<div className="bottom">
 							<RichText.Content

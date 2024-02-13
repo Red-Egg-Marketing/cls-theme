@@ -9,6 +9,7 @@
  * @package cls
  */
 if (function_exists('get_field')) {
+    
     $company_settings = [
         'phone'         => get_field('business_phone', 'options'),
         'email'         => get_field('business_email', 'options'),
@@ -21,6 +22,7 @@ if (function_exists('get_field')) {
         'disclaimer'    => get_field('disclaimer', 'options')
     ];
 
+    
 ?>
 
     <footer id="colophon" class="site-footer">

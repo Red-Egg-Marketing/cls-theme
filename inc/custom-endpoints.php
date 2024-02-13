@@ -451,7 +451,6 @@ function cls_return_posts($data) {
 }
 
 
-
 add_action( 'rest_api_init', function () {
   register_rest_route( 'cls/v2', '/posts/', 
   	[
@@ -532,7 +531,6 @@ function cls_return_reviews() {
 
 }
 
-
 add_action( 'rest_api_init', function () {
   register_rest_route( 'cls/v2', '/reviews/', 
   	[
@@ -542,3 +540,45 @@ add_action( 'rest_api_init', function () {
   	] 
   );
  });
+
+function cls_return_vin_numbers() {
+	global $wpdb;
+	$dealer_id = function_exists('get_field') ? get_field('dealer_id', 'options') : '';
+	$address = function_exists('get_field') ? get_field('business_address', 'options') : '';
+	$address2 = '';
+	$city = function_exists('get_field') ? get_field('business_city', 'options') : '';
+	$state = function_exists('get_field') ? get_field('business_state', 'options') : '';
+	$zip = function_exists('get_field') ? get_field('business_zip', 'options') : '';
+	$dealer = function_exists('get_field') ? get_field('business_name', 'options') : '';
+	$phone = function_exists('get_field') ? str_replace(['(', ')', '-', ' '], '', get_field('business_phone', 'options')) : '';
+
+	$results = $wpdb->get_results( 
+			"
+				SELECT meta_value, post_id
+				FROM {$wpdb->prefix}postmeta
+				WHERE meta_key = 'vin'
+			", ARRAY_A );
+
+	$return = '';
+	$return_1 = "\"" .$dealer_id . "\"|\"" . $dealer . "\"|\"" . $address . "\"|\"" . $address2 . "\"|\"" . $city . "\"|\"" . $state . "\"|\"" . $zip . "\"|\"" . $phone . "\""; 
+
+	foreach($results as $result) {
+		$id = $result['post_id'];
+		$vin = $result['meta_value'];
+		$price = get_post_meta($id, 'selling_price', true);
+		$return .= $vin . "|" . $dealer_id . "|" . $price . "\r\n";
+	}
+
+	return [$return_1, $return];
+
+}
+
+add_action( 'rest_api_init', function () {
+  register_rest_route( 'cls/v2', '/vin/', 
+  	[
+    	'methods' => 'POST, GET',
+    	'callback' => 'cls_return_vin_numbers',
+    	'permission_callback' => '__return_true'
+  	] 
+  );
+});
