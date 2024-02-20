@@ -88,6 +88,23 @@ function cls_add_custom_query_vars( $vars ){
 add_filter( 'query_vars', 'cls_add_custom_query_vars' );
 
 
+function cls_return_vehicles_transient() {
+	$object = get_transient('_vehicles_transient');
+
+	return json_decode($object);
+}
+
+add_action( 'rest_api_init', function () {
+  register_rest_route( 'cls/v2', '/vehicles_transient/', 
+  	[
+    	'methods' => 'POST, GET',
+    	'callback' => 'cls_return_vehicles_transient',
+    	'permission_callback' => '__return_true'
+  	] 
+  );
+ });
+
+
 function cls_return_vehicles() {
 	$post_types = ['vehicle'];
 
@@ -447,7 +464,9 @@ function cls_return_posts($data) {
 		wp_reset_postdata();
 
 	}
+	
 	return $posts;
+
 }
 
 
