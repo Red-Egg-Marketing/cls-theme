@@ -35,6 +35,7 @@ import Swiper from 'swiper/bundle';
 			loop: true,
 			slidesPerView: 1,
 			autoplay: false,
+			autoHeight: true,
 			effect: 'slide',
 			spaceBetween: 15,
 			loopedSlides: count,
