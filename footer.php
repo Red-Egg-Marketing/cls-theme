@@ -19,8 +19,10 @@ if (function_exists('get_field')) {
         'state'         => get_field('business_state', 'options'),
         'areas'         => get_permalink(get_field('areas_served', 'options')),
         'icons'         => get_field('icons', 'options'),
-        'disclaimer'    => get_field('disclaimer', 'options')
+        'disclaimer'    => get_field('disclaimer', 'options'),
+        'logo'          => get_field('footer_logo', 'options')
     ];
+
 
 ?>
 
@@ -48,7 +50,9 @@ if (function_exists('get_field')) {
                     </ul>
                 </div>
                 <div class="col">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="footer-home"><?php bloginfo( 'name' ); ?></a>    
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="footer-home">
+                        <img src="<?= $company_settings['logo']; ?>" alt="<?php bloginfo( 'name' ); ?>" />
+                    </a>    
                 </div>
                 <div class="col">
                     <?php

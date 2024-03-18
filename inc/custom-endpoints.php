@@ -563,7 +563,7 @@ add_action( 'rest_api_init', function () {
 function cls_return_vin_numbers() {
 	global $wpdb;
 	$dealer_id = function_exists('get_field') ? get_field('dealer_id', 'options') : '';
-	$address = function_exists('get_field') ? get_field('business_address', 'options') : '';
+	$address = function_exists('get_field') ? get_field('business_street', 'options') : '';
 	$address2 = '';
 	$city = function_exists('get_field') ? get_field('business_city', 'options') : '';
 	$state = function_exists('get_field') ? get_field('business_state', 'options') : '';
@@ -579,13 +579,13 @@ function cls_return_vin_numbers() {
 			", ARRAY_A );
 
 	$return = '';
-	$return_1 = "\"" .$dealer_id . "\"|\"" . $dealer . "\"|\"" . $address . "\"|\"" . $address2 . "\"|\"" . $city . "\"|\"" . $state . "\"|\"" . $zip . "\"|\"" . $phone . "\""; 
+	$return_1 = "\"" . $dealer_id . "\"|\"" . $dealer . "\"|\"" . $address . "\"|\"" . $address2 . "\"|\"" . $city . "\"|\"" . $state . "\"|\"" . $zip . "\"|\"" . $phone . "\"\n"; 
 
 	foreach($results as $result) {
 		$id = $result['post_id'];
 		$vin = $result['meta_value'];
 		$price = get_post_meta($id, 'selling_price', true);
-		$return .= $vin . "|" . $dealer_id . "|" . $price . "\r\n";
+		$return .= $vin . "|" . $dealer_id . "|" . $price . "\n";
 	}
 
 	return [$return_1, $return];

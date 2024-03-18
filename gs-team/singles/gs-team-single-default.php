@@ -18,6 +18,7 @@ $terms = wp_list_pluck(get_the_terms($post->ID, 'team_group'), 'slug');
 $class = in_array('sales', $terms) ? 'sales' : 'default';
 $designation = get_post_meta( get_the_id(), '_gs_des', true );
 $modal_form = get_field('menu_form', 'options');
+$review = get_field('review_link', 'options');
 
 ?>
 
@@ -47,7 +48,7 @@ $modal_form = get_field('menu_form', 'options');
                     data-fancybox>Contact <?= $title; ?></a>
                 <a 
                     class="wp-block-button__link wp-element-button"
-                    href="https://www.reviewmeauto.com/CENTCO/"
+                    href="<?= $review; ?>"
                     target="_blank" 
                 >
                     Review <?= $title; ?>

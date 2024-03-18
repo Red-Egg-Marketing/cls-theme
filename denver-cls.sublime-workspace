@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"bo",
-				"body"
-			],
-			[
 				"prin",
 				"print_r()"
+			],
+			[
+				"bo",
+				"body"
 			],
 			[
 				"json",
@@ -519,17 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "inc/custom-endpoints.php",
-			"settings":
-			{
-				"buffer_size": 16697,
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-			]
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -571,36 +560,45 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/csv",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/carfax-vins",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts",
 		"/Users/jacoblang/Local Sites/cls-denver"
 	],
 	"file_history":
 	[
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/carfax-vins.zip",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/carfax-vins/carfax-vins.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/REDEGGMRKT_dealerlist_03072024.txt",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/grid-icons/edit.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/.npmrc",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/csv/cls.csv",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/csv/cls-old.csv",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/frontend.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/savings-calculator/savings.js",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/REDEGGMRKT_dealerlist_02272024.txt",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles/gs-team-single-default.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_footer.scss",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/404.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/header.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/general-template.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/carfax-vins.zip",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/frontend.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/options.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-projects/frontend.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles/gs-team-single-default.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/components/ResourceCard.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/REDEGGMRKT_CFXIICR_02132024.txt",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-tags.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/single.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/txt/REDEGGMRKT_dealerlist_11012023.txt",
@@ -621,7 +619,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/menu-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-team-layout-filter-2.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-team-layout-cat-filters.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/404.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/archive.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/term.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/fw-flush-cache.php",
@@ -698,16 +695,7 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact-content/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact-content/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/content-block/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/content-block/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact-alt/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact-alt/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact-forms/index.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact-forms/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/_style-block.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/columns-cta/_style-block.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/style.scss"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/image-text-columns/index.js"
 	],
 	"find":
 	{
@@ -726,6 +714,99 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"vehicle",
+			"cls_retrieve_remote_function",
+			"vin",
+			"\\vin",
+			"cls_vehicles_carfax_outbound",
+			"fast",
+			"cls_retrieve_remote_function",
+			"cls_vehicles_carfax_outbound",
+			"car_fax_ftp_outbound",
+			"$carfax_link",
+			"carfax_link",
+			"car_fax_ftp_outbound",
+			"carfax_link",
+			"car_fax_ftp_outbound",
+			"cls_vehicles_carfax_outbound",
+			"car_fax_ftp_outbound",
+			"cls_retrieve_remote_vins",
+			"car_fax_ftp_outbound",
+			"cls_vehicles_set_vehicle_transient",
+			"cls_retrieve_remote_vins",
+			"XY-380828",
+			"print",
+			"explode",
+			"EngineDisplacement",
+			"engine_displacement",
+			"displace",
+			"EngineCylinders",
+			"engine_cylinder",
+			"engine",
+			"displace",
+			"engine_displacement",
+			"EngineDisplacement",
+			";\n",
+			"imageUrls",
+			"stockNumber",
+			"713536",
+			"713536\n",
+			"$row[$i] == ",
+			"data",
+			"$import_posts",
+			"CityMPG",
+			"mpgCity",
+			"ImageList",
+			"Options",
+			"options",
+			"Description",
+			"description",
+			"Type",
+			"newUsed",
+			"Transmission",
+			"transmission",
+			"Drivetrain",
+			"EngineDisplacement",
+			"engine",
+			"ExteriorColor",
+			"exteriorColor",
+			"Miles",
+			"mileage",
+			"internetPrice",
+			"SellingPrice",
+			"internetPrice",
+			" $post",
+			"post",
+			"cls_import_vehicles_from_csv",
+			"cls_vehicles_vin_hook",
+			"model",
+			"$vehicle",
+			"vehicle",
+			"cls_retrieve_remote_function",
+			"cls_retrieve_remote_vins",
+			"cls_retrieve_remote_function",
+			"cls_import_vehicles_from_csv",
+			"cls_retrieve_remote_function",
+			"cls_vehicles_csv_hook",
+			"cls_retrieve_remote_vins",
+			"cls_vehicles_csv_hook",
+			"cls_retrieve_remote_vins",
+			"cls_import_vehicles_from_csv",
+			"cls_retrieve_remote_function",
+			"cls_import_vehicles_from_csv",
+			"cls_retrieve_remote_function",
+			"cls_import_vehicles_from_csv",
+			"cls_retrieve_remote_vins",
+			"cls_import_vehicles_from_csv",
+			"cls_retrieve_remote_vins",
+			"740362",
+			"80122",
+			"Leasing",
+			"Englewood",
+			"80122",
+			"740362",
+			"cls_import_vehicles_from_csv",
+			"cls_vehicles_csv_hook",
 			"toyota",
 			"cls_return_vehicles",
 			"cls_return_vehicles_transient",
@@ -760,100 +841,7 @@
 			"car_fax_ftp_inbound",
 			"output2",
 			"$output2 ",
-			"car_fax_ftp_inbound",
-			"cls_retrieve_remote_vins",
-			"cls_vehicles_vin_hook",
-			"80122",
-			"Englewood",
-			"740362",
-			"cls_return_vin_numbers",
-			"retrieve_all_vin_numbers",
-			"return",
-			"cls_return_vin_numbers",
-			"state",
-			"city",
-			"address",
-			"Englewood",
-			"80122",
-			"7150",
-			"740362",
-			"car_fax_ftp_inbound",
-			"cls_vehicles_carfax_outbound",
-			"retrieve_all_vin_numbers",
-			"messages_table_install",
-			"cls_retrieve_remote_vins",
-			"e",
-			"cls_retrieve_remote_vins",
-			"cls_vehicles_vin_hook",
-			"cls_retrieve_remote_vins",
-			"cls_vehicles_vin_hook",
-			"cls_return_reviews",
-			"get_results",
-			"cls_return_vin_numbers",
-			"car_fax_ftp_inbound",
-			"retrieve_all_vin_numbers",
-			"car_fax_ftp_outbound",
-			".icon-wrap",
-			".icon-icon svg",
-			".resource-card .resource-price",
-			".resource-card .resource-title",
-			"excerpt",
-			"content",
-			"wp_insert_attachment",
-			"wp_delete_attachment",
-			"delete",
-			"print",
-			"$i_array",
-			");\n",
-			"wowasdfasf",
-			"intersect",
-			"i_array",
-			"wp_update_post",
-			"u",
-			" json_encode($i_array)",
-			",",
-			"i_array",
-			"attachments",
-			"foreach",
-			"$i_array",
-			";\n",
-			"$i_array",
-			"wp_update_post",
-			"i_array",
-			"{\n",
-			"$current_images",
-			"i_array",
-			"$current_images",
-			"exists_id",
-			"$actual_id",
-			"wp_update_post",
-			"48b2b28c6f2f4d6090b0977c9d3b8310.jpg",
-			"$current_images",
-			"current_images",
-			"original_base",
-			"$i_array",
-			"$actual_id",
-			"$post['id']",
-			"$post['id",
-			"actual_id",
-			"intersect",
-			"original_base",
-			"2da5f59f46e245df89bf68887e7b3be5",
-			"3ef95f0691474e5c82c4fd0854d84771",
-			"99ff78b606a14cf7b9c8747e2aae6aad",
-			"basename",
-			"more",
-			"style",
-			"wprs_rd_more_1",
-			"this",
-			"cls_vehicles_csv_hook",
-			"price",
-			"template_redirect",
-			"');",
-			"cls_header_style",
-			"AND",
-			"stock",
-			"vehicles"
+			"car_fax_ftp_inbound"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -880,38 +868,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "inc/custom-endpoints.php",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16697,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								331,
-								331
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		},
 		{
@@ -948,7 +904,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.668747894205,
 			1.0
 		],
 		"rows":
@@ -980,28 +936,72 @@
 				"cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
 			],
 			[
-				"footer",
-				"app/public/wp-content/themes/cls-theme/footer.php"
+				"impor",
+				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
 				"carfax",
 				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
 			],
 			[
-				"funct",
-				"app/public/wp-content/themes/cls-theme/functions.php"
+				"car-f",
+				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
+			],
+			[
+				"impo",
+				"app/public/wp-content/themes/cls-theme/inc/import.php"
+			],
+			[
+				"car-fa",
+				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
+			],
+			[
+				"carfa",
+				"cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php"
+			],
+			[
+				"custom-end",
+				"cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
 			],
 			[
 				"blocks.php",
 				"cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php"
 			],
 			[
-				"carfa",
-				"app/public/wp-content/plugins/carfax-vins/carfax-vins.php"
+				"custom-e",
+				"app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
+			],
+			[
+				"import",
+				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
 				"foo",
 				"app/public/wp-content/themes/cls-theme/footer.php"
+			],
+			[
+				"_f",
+				"app/public/wp-content/themes/cls-theme/support/scss/_footer.scss"
+			],
+			[
+				"_foote",
+				"app/public/wp-content/themes/cls-theme/support/scss/_footer.scss"
+			],
+			[
+				"footer",
+				"app/public/wp-content/themes/cls-theme/footer.php"
+			],
+			[
+				"404.php",
+				"app/public/wp-content/themes/cls-theme/404.php"
+			],
+			[
+				"header",
+				"app/public/wp-content/themes/cls-theme/header.php"
+			],
+			[
+				"funct",
+				"app/public/wp-content/themes/cls-theme/functions.php"
 			],
 			[
 				"imp",
@@ -1010,10 +1010,6 @@
 			[
 				"block",
 				"app/public/wp-includes/blocks.php"
-			],
-			[
-				"impor",
-				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
 				"carf",
@@ -1030,10 +1026,6 @@
 			[
 				"media.",
 				"app/public/wp-content/themes/cls-theme/inc/media.php"
-			],
-			[
-				"impo",
-				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
 				"im",
@@ -1060,10 +1052,6 @@
 				"app/public/wp-content/themes/cls-theme/functions.php"
 			],
 			[
-				"import",
-				"app/public/wp-content/themes/cls-theme/inc/import.php"
-			],
-			[
 				"form-fi",
 				"app/public/wp-content/themes/cls-theme/inc/form-filters.php"
 			],
@@ -1084,10 +1072,6 @@
 				"app/public/wp-content/themes/cls-theme/support/scss/_page.scss"
 			],
 			[
-				"car-fa",
-				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
-			],
-			[
 				"car",
 				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
 			],
@@ -1098,10 +1082,6 @@
 			[
 				"foote",
 				"app/public/wp-content/themes/cls-theme/footer.php"
-			],
-			[
-				"car-f",
-				"app/public/wp-content/themes/cls-theme/inc/car-fax.php"
 			],
 			[
 				"posts-fil",
@@ -1170,10 +1150,6 @@
 			[
 				"c",
 				"app/public/csv/cls.csv"
-			],
-			[
-				"custom-end",
-				"app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
 			],
 			[
 				"_va",
@@ -1324,10 +1300,6 @@
 				"app/public/wp-content/themes/cls-theme/support/scss/_buttons.scss"
 			],
 			[
-				"_f",
-				"app/public/wp-content/themes/cls-theme/support/scss/_footer.scss"
-			],
-			[
 				"_bio",
 				"app/public/wp-content/themes/cls-theme/support/scss/_bios.scss"
 			],
@@ -1372,10 +1344,6 @@
 				"app/public/wp-content/plugins/gravityforms/js/components/form_editor/conditional_flyout/views/accordion_header.html"
 			],
 			[
-				"header",
-				"app/public/wp-content/themes/cls-theme/header.php"
-			],
-			[
 				"_b",
 				"app/public/wp-content/themes/cls-theme/support/scss/_block-base.scss"
 			],
@@ -1398,10 +1366,6 @@
 			[
 				"template-funct",
 				"app/public/wp-content/themes/cls-theme/inc/template-functions.php"
-			],
-			[
-				"custom-e",
-				"app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php"
 			],
 			[
 				"_",
@@ -1478,14 +1442,6 @@
 			[
 				"game.js",
 				"app/public/wp-content/themes/red-egg-2022/js/game.js"
-			],
-			[
-				"game.j",
-				"app/public/wp-content/themes/red-egg-2022/js/game.js"
-			],
-			[
-				"gam",
-				"app/public/wp-content/themes/red-egg-2022/js/game.js"
 			]
 		],
 		"width": 0.0
@@ -1493,12 +1449,28 @@
 	"select_project":
 	{
 		"height": 683.0,
-		"last_filter": "",
+		"last_filter": "aspi",
 		"selected_items":
 		[
 			[
+				"aspi",
+				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
+			],
+			[
 				"",
-				"~/Local Sites/mimms-staging/mimms-staging.sublime-project"
+				"~/Local Sites/providence/providence-infrastructure.sublime-project"
+			],
+			[
+				"colo",
+				"~/Local Sites/colegalgroup/collegalgroup.sublime-project"
+			],
+			[
+				"cls",
+				"~/Local Sites/centennial-leasing/centennial-leasing.sublime-project"
+			],
+			[
+				"pro",
+				"~/Local Sites/providence/providence-infrastructure.sublime-project"
 			],
 			[
 				"mimm",
@@ -1554,10 +1526,6 @@
 			],
 			[
 				"col",
-				"~/Local Sites/colegalgroup/collegalgroup.sublime-project"
-			],
-			[
-				"colo",
 				"~/Local Sites/colegalgroup/collegalgroup.sublime-project"
 			],
 			[
@@ -1639,10 +1607,6 @@
 			[
 				"ys",
 				"~/Local Sites/yosi/yosi-health.sublime-project"
-			],
-			[
-				"aspi",
-				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
 			],
 			[
 				"conf",
@@ -1864,7 +1828,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 326.0,
+	"side_bar_width": 384.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

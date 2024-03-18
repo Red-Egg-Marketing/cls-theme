@@ -111,7 +111,72 @@ function cls_import_vehicles_from_csv() {
                 while ( $row = fgetcsv( $_file ) ) {
 
                     foreach ( $header as $i => $key ) {
-                        $post[$key] = $row[$i];
+                        switch($key) {
+                            case 'vin':
+                                $post['VIN'] = $row[$i];
+                                break;
+                            case 'year':
+                                $post['Year'] = $row[$i];
+                                break;
+                            case 'make':
+                                $post['Make'] = $row[$i];
+                                break;
+                            case 'model':
+                                $post['Model'] = $row[$i];
+                                break;
+                            case 'body':
+                                $post['Body'] = $row[$i];
+                                break;
+                            case 'trim':
+                                $post['Trim'] = $row[$i];
+                                break;
+                            case 'stockNumber':
+                                $post['Stock'] = $row[$i];
+                                break;
+                            case 'internetPrice':
+                                $post['SellingPrice'] = $row[$i];
+                                break;
+                            case 'mileage':
+                                $post['Miles'] = $row[$i];
+                                break;
+                            case 'exteriorColor':
+                                $post['ExteriorColor'] = $row[$i];
+                                break;
+                            case 'engine':
+                                $temp = explode(',', $row[$i]);
+                                $post['EngineCylinders'] = $temp[0];
+                                $post['EngineDisplacement'] = $temp[1];
+                                break;
+                            case 'drive':
+                                $post['Drivetrain'] = $row[$i];
+                                break;
+                            case 'transmission':
+                                $post['Transmission'] = $row[$i];
+                                break;
+                            case 'newUsed':
+                                $post['Type'] = $row[$i];
+                                break;
+                            case 'age':
+                                $post['DateInStock'] = $row[$i];
+                                break;
+                            case 'description':
+                                $post['Description'] = $row[$i];
+                                break;
+                            case 'options':
+                                $post['Options'] = $row[$i];
+                                break;
+                            case 'imageUrls':
+                                $post['ImageList'] = $row[$i];
+                                break;
+                            case 'mpgCity':
+                                $post['CityMPG'] = $row[$i];
+                                break;
+                            case 'mpgHighway':
+                                $post['HighwayMPG'] = $row[$i];
+                                break;
+                            default:
+                                $post[$key] = $row[$i];                            
+                        }
                     }
 
                     $title = $post['Year'] . ' ' . $post['Make'] . ' ' . $post['Model'];
@@ -209,8 +274,7 @@ function cls_import_vehicles_from_csv() {
             "options" => $post["Options"],
             "categorized_options" => $post["Categorized Options"],
             "city_mpg" => $post["CityMPG"],
-            "highway_mpg" => $post["HighwayMPG"],
-            "carfax_link" => "https://www.carfax.com/VehicleHistory/p/Report.cfx?partner=DVW_1&vin=" . $post["VIN"]
+            "highway_mpg" => $post["HighwayMPG"]
         ];
 
         if ( $exists_id !== false ) {

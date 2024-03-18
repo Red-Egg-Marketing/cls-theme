@@ -109,17 +109,29 @@ ul.social li {
 	}
 }
 
-a.footer-home {
-	width: 200px;
-	height: 42px;
+a.footer-home img {
 	display: block;
-	text-indent: -10000px;
+	max-width: 200px;
+	height: auto;
 	margin: 0 auto;
-	background: url(img/cls-footer-logo.svg) no-repeat center center / 100%;
+	width: 100%;
 	@media screen and (min-width: $small-width) {
-		width: 357px;
-		height: 75px;
+		max-width: 357px;
 	}
+}
+
+a.footer-home {
+
+	// width: 200px;
+	// height: 42px;
+	// display: block;
+	// text-indent: -10000px;
+	// margin: 0 auto;
+	// background: url(img/cls-footer-logo.svg) no-repeat center center / 100%;
+	// @media screen and (min-width: $small-width) {
+	// 	width: 357px;
+	// 	height: 75px;
+	// }
 }
 
 .site-footer .col {
