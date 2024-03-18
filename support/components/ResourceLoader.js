@@ -240,6 +240,11 @@ const ResourceFilters = (props) => {
                 );
               })
           }
+          { taxonomies.length == 0 && (
+            <Fragment>
+              <div class="loading-filters"></div>
+            </Fragment>
+          )}
           <div className="wp-block-buttons">
             <input 
               type="submit"

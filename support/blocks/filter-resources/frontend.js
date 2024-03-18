@@ -16,7 +16,7 @@ const SaveResources = ( { attributes } ) => {
   		const [selectTax, setSelectTaxes] = useState([]);
   		const [resourcesEmpty, setEmpty] = useState(false);
   		const [triggered, setTriggered] = useState(false);
-  		const [loading, setLoading] = useState(false);
+  		const [loading, setLoading] = useState(true);
   		const [data, setData] = useState({});
   		const [toggleFilters, setToggleFilters] = useState({key: '', active: false});
   		let searchParams =  new URLSearchParams(window.location.search);
@@ -208,6 +208,7 @@ const SaveResources = ( { attributes } ) => {
     		    let empty = resourcelist.empty;
     			setEmpty(empty);
     		    setTriggered(true);
+    		    setLoading(false);
 
     			if (empty === false) {
     				selectResources(posts);
@@ -295,7 +296,7 @@ const SaveResources = ( { attributes } ) => {
 					{loading == true && (
 						<Fragment>
 							<div className="loading">
-							<h2>...Loading</h2>
+								<h2>...Loading</h2>
 							</div>
 						</Fragment>
 					)}
