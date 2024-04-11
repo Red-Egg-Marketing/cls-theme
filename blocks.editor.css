@@ -6288,7 +6288,29 @@ td.year-sum {
   }
 }
 
-.hero h1 {
+.hero a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero h2 {
+  font-size: 34px;
+  line-height: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero h4,
+.hero h5,
+.hero h6 {
   margin-top: 0;
   color: white;
   margin-bottom: 15px;
@@ -11370,4 +11392,41 @@ ul.tax-list .tax-wrap {
   font-style: italic;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.image-grid.wp-block {
+  max-width: 100%;
+  width: 100%;
+}
+
+.image-grid .hero-block-image:before {
+  display: none;
+}
+
+.image-grid .hero-block-image:after {
+  -webkit-clip-path: none;
+          clip-path: none;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.image-grid.wp-block > .block-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout,
+.image-grid:not(.wp-block) > .block-wrapper {
+  display: -ms-grid;
+  display: grid;
+  min-height: 450px;
+  grid-row-gap: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-grid.wp-block > .block-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout,
+  .image-grid:not(.wp-block) > .block-wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    min-height: 880px;
+  }
+}
+
+.hero p:empty {
+  margin: 0;
 }

@@ -26,12 +26,37 @@ body.nav-active .site-header:after {
 	}
 }
 
+.menu-blurb {
+	text-transform: uppercase;
+	color: $bg-color-7;
+	font-family: $font-head;
+	text-align: center;
+	font-weight: 700;
+	margin: 15px auto;
+	letter-spacing: 0.5px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	@media screen and (min-width: $small-width) {
+		font-size: 22px;
+		margin-left: -18%;
+		margin-right: 0;
+	}
+}
+
 .site-header {
 	width: 100%;
 }
 
 a.custom-logo-link {
 	display: block;
+}
+
+.site-header.override a.custom-logo-link {
+	margin: 15px auto 0;
+	@media screen and (min-width: $small-width) {
+		margin: 0;
+	}
 }
 
 .main-content-nav {
@@ -103,6 +128,11 @@ a.custom-logo-link {
 	font-size: 0;
 	display: none;
 	line-height: 0;
+}
+
+.site-header.override .main-navigation {
+	justify-content: center;
+	align-content: center;
 }
 
 .main-navigation .nav-menu > .menu-item > .sub-menu {
@@ -224,6 +254,13 @@ a.custom-logo-link {
 	line-height: 0;
 }
 
+.site-header.override .wrapper {
+	display: block;
+	@media screen and (min-width: $small-width) {
+		display: flex;
+	}
+}
+
 .site-header .wrapper {
 	max-width: $max-cont-w;
 	width: 100%;
@@ -268,6 +305,13 @@ a.custom-logo-link {
 	width: 100%;
 	@media screen and (min-width: $med-small-width) {
 		align-items: stretch;
+	}
+}
+
+.site-header.override .main-wrapper {
+	height: auto;
+	@media screen and (min-width: $small-width) {
+		height: 90px;
 	}
 }
 

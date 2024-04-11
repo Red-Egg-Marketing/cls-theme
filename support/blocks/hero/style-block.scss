@@ -145,7 +145,28 @@
 	}
 }
 
-.hero h1 {
+.hero a {
+	color: white;
+	text-decoration: none;
+}
+
+.hero h2 {
+	font-size: 34px;
+	line-height: 38px;
+	@media screen and (min-width: $small-width) {
+		font-size: 40px;
+		line-height: 45px;
+	}
+}
+
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero h4,
+.hero h5,
+.hero h6,
+ {
 	margin-top: 0;
 	color: white;
 	margin-bottom: 15px;

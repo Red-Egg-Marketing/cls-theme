@@ -1,0 +1,29 @@
+.image-grid.wp-block {
+	max-width: 100%;
+	width: 100%;
+}
+
+.image-grid .hero-block-image:before {
+	display: none;
+}
+
+.image-grid .hero-block-image:after {
+	clip-path: none;
+	background: rgba(0, 0, 0, .3);
+}
+
+.image-grid.wp-block > .block-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout,
+.image-grid:not(.wp-block) > .block-wrapper {
+	display: grid;
+	min-height: 450px;
+	grid-row-gap: 5px;
+	@media screen and (min-width: $small-width) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 5px;
+		min-height: 880px;
+	}
+}
+
+.hero p:empty {
+	margin: 0;
+}

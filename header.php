@@ -13,7 +13,9 @@ $phone = get_field('business_phone', 'options');
 $phone_tag = get_field('phone_tagline', 'options');
 $modal_form = get_field('menu_form', 'options');
 $global_button = get_field('global_estimate_button', 'options');
-
+$override = get_field('override_menu', 'options');
+$menu_class = $override == 'yes' ? ' override' : '';
+$blurb = get_field('menu_blurb', 'options');
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -30,7 +32,7 @@ $global_button = get_field('global_estimate_button', 'options');
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cls' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header<?php echo $menu_class; ?>">
 		<nav class="secondary-navigation">
 			<div class="wrapper">
 				<?php
@@ -61,18 +63,21 @@ $global_button = get_field('global_estimate_button', 'options');
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cls' ); ?></button>
+				<?php if($override == 'no' || !$override) { ?>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cls' ); ?></button>
 				<?php
 
-				wp_nav_menu(
-					array(
-						'theme_location' =>  'menu-1',
-						'menu_id'        =>  'primary-menu',
-						'container_class'	 =>	 'menu-primary-menu-container'		
-					)
-				);
+					wp_nav_menu(
+						array(
+							'theme_location' =>  'menu-1',
+							'menu_id'        =>  'primary-menu',
+							'container_class'	 =>	 'menu-primary-menu-container'		
+						)
+					);
 	
-				
+				} elseif($override == 'yes') {
+					echo '<p class="menu-blurb">' . $blurb . '</p>';
+				}
 				?>
 			</nav><!-- #site-navigation -->
 

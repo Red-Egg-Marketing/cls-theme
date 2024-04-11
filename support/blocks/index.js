@@ -47,4 +47,5 @@ import "./faq-section";
 import "./price-estimator";
 import "./price-header";
 import "./price-form";
+import "./image-grid";
 
