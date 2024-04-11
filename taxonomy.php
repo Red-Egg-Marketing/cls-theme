@@ -18,7 +18,7 @@ get_header();
            <div class="entry-content">
                 <header class="entry-header">
                     <div class="wrapper">
-                        <h1><?= $term_name; ?> <?= $tax_name ?></h1> 
+                        <h1><?= $term_name; ?> <?= $tax_labels; ?></h1> 
                     </div>
                 </header>
                 <div class="post-content">
