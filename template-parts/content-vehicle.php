@@ -55,12 +55,15 @@ $stock = get_post_meta($id, 'stock', true);
 			?>
 			</header>
 		<?php
+
+			$feat = get_post_thumbnail_id();
 			$attachments = get_posts(array(
 			    'post_parent' => $id,
 			    'post_type' => 'attachment',
 			    'post_mime_type' => 'image',
 			    'orderby' => 'date',
 			    'order' => 'ASC',
+			    'exclude' => $feat,
 			    'numberposts' => -1
 			));
 
@@ -70,8 +73,19 @@ $stock = get_post_meta($id, 'stock', true);
 				<div class="vehicle swiper">
 					<div class="swiper-wrapper">
 					<?
-					foreach($attachments as $attachment) {
+					foreach($attachments as $key => $attachment) {
 					?>
+						<?php
+							if ($key == 0) {
+						?>
+							<div class="swiper-slide">
+								<?php
+									echo wp_get_attachment_image($feat, 'post-landscape');
+								?>
+							</div>
+						<?php
+							}
+						?>
 						<div class="swiper-slide">
 						<?php
 							echo wp_get_attachment_image($attachment->ID, 'post-landscape');
@@ -87,8 +101,20 @@ $stock = get_post_meta($id, 'stock', true);
   				<div class="thumbnails swiper">
   					<div class="swiper-wrapper">
   						<?
-						foreach($attachments as $attachment) {
+						foreach($attachments as $key => $attachment) {
 						?>
+								<?php
+									if ($key == 0) {
+
+								?>
+									<div class="swiper-slide">
+										<?php
+											echo wp_get_attachment_image($feat, 'thumbnail');
+										?>
+									</div>
+								<?php
+									}
+								?>
 								<div class="swiper-slide">
 								<?php
 									echo wp_get_attachment_image($attachment->ID, 'thumbnail');
