@@ -9,6 +9,11 @@ function cls_cron_schedules($schedules){
             'interval' => 30*60,
             'display' => __('Once every 30 minutes'));
     }
+    if(!isset($schedules["2hrs"])){
+        $schedules["2hrs"] = array(
+            'interval' => 2*60*60,
+            'display' => __('Once every 2 hours'));
+    }
     if(!isset($schedules["6hrs"])){
         $schedules["6hrs"] = array(
             'interval' => 6*60*60,
@@ -46,7 +51,7 @@ function test_transient() {
 }
 
 if (!wp_next_scheduled('cls_vehicles_csv_hook')) {
-    wp_schedule_event( time(), '6hrs', 'cls_vehicles_csv_hook' );
+    wp_schedule_event( time(), '2hrs', 'cls_vehicles_csv_hook' );
 }
 add_action ( 'cls_vehicles_csv_hook', 'cls_import_vehicles_from_csv' );
 
