@@ -9,6 +9,11 @@ function cls_cron_schedules($schedules){
             'interval' => 30*60,
             'display' => __('Once every 30 minutes'));
     }
+    if(!isset($schedules["1hrs"])){
+        $schedules["1hrs"] = array(
+            'interval' => 1*60*60,
+            'display' => __('Once every 1 hour'));
+    }
     if(!isset($schedules["2hrs"])){
         $schedules["2hrs"] = array(
             'interval' => 2*60*60,
