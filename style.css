@@ -1520,7 +1520,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  background: #E2F0F7;
+  background: #f1f1f1;
   border: none;
   border-radius: 0;
   font-family: "Lato", sans-serif;
@@ -1582,7 +1582,7 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: #E2F0F7 url(img/down-chevron.svg) no-repeat calc(100% - 25px) center/10px;
+  background: #f1f1f1 url(img/down-chevron.svg) no-repeat calc(100% - 25px) center/10px;
   border-radius: 0;
   padding-right: 15px;
   padding-left: 15px;
@@ -12395,7 +12395,7 @@ i.fa {
 
 .edit-post-visual-editor__content-area ul li:not([class]):before, .entry-content ul li:not([class]):before {
   content: "\2022";
-  color: #910035;
+  color: #f4a13d;
   position: absolute;
   top: 0;
   left: 0;
@@ -12410,7 +12410,7 @@ i.fa {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #910035;
+  color: #f4a13d;
   font-weight: 500;
 }
 
@@ -12422,7 +12422,7 @@ i.fa {
 }
 
 .edit-post-visual-editor__content-area a, .entry-content a {
-  color: #910035;
+  color: #f4a13d;
 }
 
 .edit-post-visual-editor__content-area strong, .entry-content strong {
@@ -12474,7 +12474,7 @@ i.fa {
 .edit-post-visual-editor__content-area h1, .entry-content h1 {
   font-size: 35px;
   line-height: 44px;
-  color: #910035;
+  color: #f4a13d;
   margin-top: 2rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -12495,7 +12495,7 @@ i.fa {
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
   font-size: 30px;
   line-height: 44px;
-  color: #910035;
+  color: #f4a13d;
   margin-top: 1.75rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -12514,7 +12514,7 @@ i.fa {
 .related-posts h3,
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
-  color: #00395C;
+  color: #223b6e;
   font-size: 23px;
   line-height: 31px;
   text-transform: none;
@@ -12605,7 +12605,7 @@ i.fa {
 .has-red-color p,
 .has-red-color,
 .entry-content .has-red-color {
-  color: #910035;
+  color: #f4a13d;
 }
 
 background {
@@ -12734,7 +12734,7 @@ a[download],
 li.menu-item.nav-button a,
 input[type="submit"],
 button.wp-button {
-  background: #910035;
+  background: #f4a13d;
   color: white;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -12833,7 +12833,7 @@ input[type="submit"].wp-cancel-pw:hover,
 button.wp-button.bp-secondary-action:hover,
 button.wp-button.wp-cancel-pw:hover {
   background: none;
-  color: #910035;
+  color: #f4a13d;
 }
 
 @media screen and (min-width: 768px) {
@@ -12891,7 +12891,7 @@ a:hover[download],
 li.menu-item.nav-button a:hover,
 input[type="submit"]:hover,
 button.wp-button:hover {
-  background: #00395C;
+  background: #223b6e;
   color: white;
 }
 
@@ -12915,12 +12915,12 @@ button.wp-button[disabled] {
 }
 
 div.gs_team_area .gs-team-filter-cats li a {
-  border-top: 2px solid #910035 !important;
-  border-left: 2px solid #910035 !important;
-  border-right: 2px solid #910035 !important;
-  border-bottom: 4px solid #910035 !important;
+  border-top: 2px solid #f4a13d !important;
+  border-left: 2px solid #f4a13d !important;
+  border-right: 2px solid #f4a13d !important;
+  border-bottom: 4px solid #f4a13d !important;
   border-radius: 0 !important;
-  color: #910035 !important;
+  color: #f4a13d !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -12932,13 +12932,13 @@ div.gs_team_area .gs-team-filter-cats li a {
 }
 
 div.gs_team_area .gs-team-filter-cats li a:hover {
-  background: #910035 !important;
+  background: #f4a13d !important;
   color: white !important;
 }
 
 ul.gs-team-filter-cats li.filter.active > a {
-  background: #910035 !important;
-  border-color: #910035 !important;
+  background: #f4a13d !important;
+  border-color: #f4a13d !important;
 }
 
 .fixed-buttons {
@@ -13058,7 +13058,7 @@ li.menu-item.nav-button .wp-block-button.is-style-solid-yellow a,
 .wp-block-button.is-style-solid-yellow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-yellow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: #F79A6C;
-  color: #910035;
+  color: #f4a13d;
 }
 
 .wp-block-button__link.is-style-solid-blue-green, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green, a.is-style-solid-blue-green[download], li.menu-item.nav-button a.is-style-solid-blue-green, div.gform_wrapper input.is-style-solid-blue-green[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -13085,7 +13085,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-gr
 li.menu-item.nav-button .wp-block-button.is-style-solid-blue-green a:hover,
 .wp-block-button.is-style-solid-blue-green div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-blue-green input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  color: #00395C;
+  color: #223b6e;
   background: #F99D33;
 }
 
@@ -13099,7 +13099,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a,
 li.menu-item.nav-button .wp-block-button.is-style-solid-navy a,
 .wp-block-button.is-style-solid-navy div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  background: #00395C;
+  background: #223b6e;
   color: white;
 }
 
@@ -13114,7 +13114,7 @@ li.menu-item.nav-button .wp-block-button.is-style-solid-navy a:hover,
 .wp-block-button.is-style-solid-navy div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   color: white;
-  background: #00395C;
+  background: #223b6e;
 }
 
 .wp-block-button__link.is-style-text-yellow-arrow, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow, a.is-style-text-yellow-arrow[download], li.menu-item.nav-button a.is-style-text-yellow-arrow, div.gform_wrapper input.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -13128,7 +13128,7 @@ li.menu-item.nav-button .wp-block-button.is-style-text-yellow-arrow a,
 .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: none;
-  color: #910035;
+  color: #f4a13d;
   padding: 0;
   border-radius: 0;
   border: none;
@@ -13189,7 +13189,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:n
 li.menu-item.nav-button .wp-block-button.is-style-outline > a:not(.has-text-color):hover,
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
-  color: #910035;
+  color: #f4a13d;
 }
 
 .wp-button.is-style-outline:visited,
@@ -13219,7 +13219,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:n
 li.menu-item.nav-button .wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited,
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
-  color: #910035;
+  color: #f4a13d;
 }
 
 
@@ -13229,7 +13229,7 @@ a:visited[download],
 li.menu-item.nav-button a:visited,
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:visited {
-  color: #910035;
+  color: #f4a13d;
 }
 
 
@@ -13287,7 +13287,7 @@ body.nav-active .site-header:after {
 
 .menu-blurb {
   text-transform: uppercase;
-  color: #00395C;
+  color: #223b6e;
   font-family: "Lato", sans-serif;
   text-align: center;
   font-weight: 700;
@@ -13498,7 +13498,7 @@ a.custom-logo-link {
 
 .main-navigation .nav-menu > .menu-item > .sub-menu > .menu-item {
   width: 100%;
-  color: #00395C;
+  color: #223b6e;
 }
 
 @media screen and (min-width: 1080px) {
@@ -13736,7 +13736,7 @@ li.menu-item.nav-button a {
 }
 
 li.menu-item.nav-button a:hover {
-  background: #00395C;
+  background: #223b6e;
   color: #F79A6C;
 }
 
@@ -13749,7 +13749,7 @@ li.menu-item.nav-button a:hover {
 
 .main-navigation .menu-item a,
 .main-navigation .menu-item {
-  color: #910035;
+  color: #f4a13d;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   text-align: left;
@@ -13771,7 +13771,7 @@ li.menu-item.nav-button a:hover {
 }
 
 .main-navigation .menu-item a:hover {
-  color: #00395C;
+  color: #223b6e;
 }
 
 .menu-primary-menu-container .menu-item,
@@ -13924,7 +13924,7 @@ li.menu-item.nav-button a:hover {
 
 .main-navigation .sub-menu li.menu-item a {
   font-weight: 400;
-  color: #00395C;
+  color: #223b6e;
 }
 
 @media screen and (min-width: 1080px) {
@@ -14007,7 +14007,7 @@ li.menu-item.nav-button a:hover {
 }
 
 .main-navigation .sub-menu .menu-item a:hover {
-  color: #910035;
+  color: #f4a13d;
 }
 
 @media screen and (min-width: 1080px) {
@@ -14027,7 +14027,7 @@ li.menu-item.nav-button a:hover {
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
-  background: #910035;
+  background: #f4a13d;
   transition-duration: .3s;
   transition-property: height;
 }
@@ -14937,7 +14937,7 @@ div.components-select-control {
 }
 
 .wp-block-quote {
-  background: #E2F0F7;
+  background: #f1f1f1;
   padding: 20px 25px;
   font-size: 1.25rem;
   margin-left: 0;
@@ -14980,7 +14980,7 @@ div.components-select-control {
 h1 {
   font-size: 42px;
   line-height: 49px;
-  color: #910035;
+  color: #f4a13d;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -14997,7 +14997,7 @@ h1 {
 }
 
 h3 {
-  color: #910035;
+  color: #f4a13d;
   font-family: "Lato", sans-serif;
   font-size: 35px;
   line-height: 40px;
@@ -15017,7 +15017,7 @@ h3 {
 
 h4 {
   font-family: "Lato", sans-serif;
-  color: #910035;
+  color: #f4a13d;
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
@@ -15054,11 +15054,11 @@ h4 {
 }
 
 .lighter-blue {
-  background-color: #E2F0F7;
+  background-color: #f1f1f1;
 }
 
 .navy {
-  background-color: #00395C;
+  background-color: #223b6e;
 }
 
 .resources-grid:not(.swiper-wrapper) .block-wrapper {
@@ -15189,7 +15189,7 @@ h4 {
 }
 
 .resource-card .resource-title {
-  color: #910035;
+  color: #f4a13d;
   font-size: 19px;
   letter-spacing: 0;
   font-weight: 700;
@@ -15486,7 +15486,7 @@ h4 {
 .entry-content .resource-card .tax-item {
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
-  color: #00395C;
+  color: #223b6e;
   font-size: 15px;
   letter-spacing: 0.65px;
   margin-bottom: 0;
@@ -15629,7 +15629,7 @@ i.fa.fa-external-link:before {
 }
 
 .light-blue {
-  background: #E2F0F7;
+  background: #f1f1f1;
 }
 
 div#CybotCookiebotDialog {
@@ -15704,7 +15704,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(0%);
@@ -15721,7 +15721,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(1%);
@@ -15738,7 +15738,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(2%);
@@ -15755,7 +15755,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(3%);
@@ -15772,7 +15772,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(4%);
@@ -15789,7 +15789,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(5%);
@@ -15806,7 +15806,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(6%);
@@ -15823,7 +15823,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(7%);
@@ -15840,7 +15840,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(8%);
@@ -15857,7 +15857,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(9%);
@@ -15874,7 +15874,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(10%);
@@ -15891,7 +15891,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(11%);
@@ -15908,7 +15908,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(12%);
@@ -15925,7 +15925,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(13%);
@@ -15942,7 +15942,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(14%);
@@ -15959,7 +15959,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(15%);
@@ -15976,7 +15976,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(16%);
@@ -15993,7 +15993,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(17%);
@@ -16010,7 +16010,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(18%);
@@ -16027,7 +16027,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(19%);
@@ -16044,7 +16044,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(20%);
@@ -16061,7 +16061,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(21%);
@@ -16078,7 +16078,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(22%);
@@ -16095,7 +16095,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(23%);
@@ -16112,7 +16112,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(24%);
@@ -16129,7 +16129,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(25%);
@@ -16146,7 +16146,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(26%);
@@ -16163,7 +16163,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(27%);
@@ -16180,7 +16180,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(28%);
@@ -16197,7 +16197,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(29%);
@@ -16214,7 +16214,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(30%);
@@ -16231,7 +16231,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(31%);
@@ -16248,7 +16248,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(32%);
@@ -16265,7 +16265,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(33%);
@@ -16282,7 +16282,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(34%);
@@ -16299,7 +16299,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(35%);
@@ -16316,7 +16316,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(36%);
@@ -16333,7 +16333,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(37%);
@@ -16350,7 +16350,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(38%);
@@ -16367,7 +16367,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(39%);
@@ -16384,7 +16384,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(40%);
@@ -16401,7 +16401,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(41%);
@@ -16418,7 +16418,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(42%);
@@ -16435,7 +16435,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(43%);
@@ -16452,7 +16452,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(44%);
@@ -16469,7 +16469,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(45%);
@@ -16486,7 +16486,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(46%);
@@ -16503,7 +16503,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(47%);
@@ -16520,7 +16520,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(48%);
@@ -16537,7 +16537,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(49%);
@@ -16554,7 +16554,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(50%);
@@ -16571,7 +16571,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(51%);
@@ -16588,7 +16588,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(52%);
@@ -16605,7 +16605,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(53%);
@@ -16622,7 +16622,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(54%);
@@ -16639,7 +16639,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(55%);
@@ -16656,7 +16656,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(56%);
@@ -16673,7 +16673,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(57%);
@@ -16690,7 +16690,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(58%);
@@ -16707,7 +16707,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(59%);
@@ -16724,7 +16724,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(60%);
@@ -16741,7 +16741,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(61%);
@@ -16758,7 +16758,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(62%);
@@ -16775,7 +16775,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(63%);
@@ -16792,7 +16792,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(64%);
@@ -16809,7 +16809,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(65%);
@@ -16826,7 +16826,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(66%);
@@ -16843,7 +16843,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(67%);
@@ -16860,7 +16860,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(68%);
@@ -16877,7 +16877,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(69%);
@@ -16894,7 +16894,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(70%);
@@ -16911,7 +16911,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(71%);
@@ -16928,7 +16928,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(72%);
@@ -16945,7 +16945,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(73%);
@@ -16962,7 +16962,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(74%);
@@ -16979,7 +16979,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(75%);
@@ -16996,7 +16996,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(76%);
@@ -17013,7 +17013,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(77%);
@@ -17030,7 +17030,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(78%);
@@ -17047,7 +17047,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(79%);
@@ -17064,7 +17064,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(80%);
@@ -17081,7 +17081,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(81%);
@@ -17098,7 +17098,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(82%);
@@ -17115,7 +17115,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(83%);
@@ -17132,7 +17132,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(84%);
@@ -17149,7 +17149,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(85%);
@@ -17166,7 +17166,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(86%);
@@ -17183,7 +17183,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(87%);
@@ -17200,7 +17200,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(88%);
@@ -17217,7 +17217,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(89%);
@@ -17234,7 +17234,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(90%);
@@ -17251,7 +17251,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(91%);
@@ -17268,7 +17268,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(92%);
@@ -17285,7 +17285,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(93%);
@@ -17302,7 +17302,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(94%);
@@ -17319,7 +17319,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(95%);
@@ -17336,7 +17336,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(96%);
@@ -17353,7 +17353,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(97%);
@@ -17370,7 +17370,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(98%);
@@ -17387,7 +17387,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(99%);
@@ -17404,7 +17404,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #910035;
+  background: #f4a13d;
   height: 6px;
   top: 25px;
   width: calc(100%);
@@ -17418,7 +17418,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
 }
 
 div.gform_wrapper.gravity-theme .gform_drop_area {
-  background: #E2F0F7;
+  background: #f1f1f1;
 }
 
 form input,
@@ -17438,7 +17438,7 @@ div.gform_wrapper input[type=url],
 div.gform_wrapper input[type=week],
 div.gform_wrapper select,
 div.gform_wrapper textarea {
-  background: #E2F0F7;
+  background: #f1f1f1;
   border: none;
   border-radius: 0;
   font-family: "Lato", sans-serif;
@@ -17504,15 +17504,15 @@ div.gform_wrapper textarea {
   width: 100%;
   display: none;
   background: white;
-  border-left: 1px solid #910035;
-  border-right: 1px solid #910035;
-  border-bottom: 1px solid #910035;
+  border-left: 1px solid #f4a13d;
+  border-right: 1px solid #f4a13d;
+  border-bottom: 1px solid #f4a13d;
   overflow: auto;
   max-height: 350px;
 }
 
 .gform_wrapper .results .result p:hover {
-  background: #E2F0F7;
+  background: #f1f1f1;
   cursor: pointer;
 }
 
@@ -17580,7 +17580,7 @@ div.gform_wrapper.gravity-theme .chosen-container-multi input.chosen-search-inpu
 div.gform_wrapper.gravity-theme .chosen-container-multi .chosen-choices li.search-choice {
   background-image: none;
   border: none;
-  background: #E2F0F7;
+  background: #f1f1f1;
   font-size: 15px;
   color: white;
   border: none;
@@ -17612,7 +17612,7 @@ div.gform_wrapper input[type=week],
 div.gform_wrapper select,
 div.gform_wrapper textarea,
 div.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):not([class=chosen-search-input]) {
-  background: #E2F0F7;
+  background: #f1f1f1;
   border-radius: 0;
   -webkit-appearance: none;
   padding-left: 15px;
@@ -17705,7 +17705,7 @@ div.gform_wrapper .ginput_container_select select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: #E2F0F7 url(img/down-chevron.svg) no-repeat calc(100% - 25px) center/10px;
+  background: #f1f1f1 url(img/down-chevron.svg) no-repeat calc(100% - 25px) center/10px;
   border-radius: 0;
   padding-right: 15px;
   padding-left: 15px;
@@ -18441,7 +18441,7 @@ div.gform_wrapper p {
 
 input[type="range"] {
   background: transparent;
-  background-image: linear-gradient(#910035, #910035);
+  background-image: linear-gradient(#f4a13d, #f4a13d);
   background-size: 0% 100%;
   background-repeat: no-repeat;
   -webkit-appearance: none;
@@ -18474,7 +18474,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 28px;
-  background: #910035;
+  background: #f4a13d;
   cursor: pointer;
   margin-top: -7.5px;
   /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
@@ -18489,7 +18489,7 @@ input[type=range]::-moz-range-thumb {
   height: 20px;
   width: 20px;
   border-radius: 28px;
-  background: #910035;
+  background: #f4a13d;
   cursor: pointer;
 }
 
@@ -18602,7 +18602,7 @@ form .inner-row select {
 .site-footer {
   padding-top: 60px;
   padding-bottom: 30px;
-  background: #00395C;
+  background: #223b6e;
 }
 
 @media screen and (min-width: 768px) {
@@ -18702,7 +18702,7 @@ ul.social a:visited {
 }
 
 ul.social a:hover {
-  color: #E2F0F7;
+  color: #f1f1f1;
 }
 
 ul.social li {
@@ -19185,7 +19185,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 }
 
 .vehicle-gallery .thumbnails .swiper-slide.swiper-slide-active {
-  border-bottom: 3px solid #910035;
+  border-bottom: 3px solid #f4a13d;
 }
 
 .vehicle-gallery {
@@ -19427,7 +19427,7 @@ p.attr {
 }
 
 p.phone {
-  color: #910035;
+  color: #f4a13d;
   font-weight: 700;
 }
 
@@ -19598,7 +19598,7 @@ p.phone a {
 
 .hero-block-wrap .entry-meta,
 .entry-header .entry-meta {
-  color: #00395C;
+  color: #223b6e;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   display: inline-block;
@@ -19640,7 +19640,7 @@ p.phone a {
 
 .single .wp-block-image figcaption {
   text-align: center;
-  color: #910035;
+  color: #f4a13d;
   margin-top: 0;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -19812,7 +19812,7 @@ h3.footer-header {
 
 .tax-link a {
   text-decoration: none;
-  color: #00395C;
+  color: #223b6e;
   text-transform: capitalize;
   font-family: "Lato", sans-serif;
   display: block;
@@ -19904,7 +19904,7 @@ h3.footer-header {
 
 .entry-footer .resources-grid {
   padding-bottom: 4rem;
-  border-bottom: 1px solid #00395C;
+  border-bottom: 1px solid #223b6e;
 }
 
 @media screen and (min-width: 768px) {
@@ -20132,7 +20132,7 @@ Single Video
 }
 
 #Payment {
-  color: #910035;
+  color: #f4a13d;
   font-family: "Lato", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -20220,7 +20220,7 @@ button.read-less,
 button.read-more {
   font-size: 18px;
   cursor: pointer;
-  color: #910035;
+  color: #f4a13d;
   padding: 0;
   background: transparent;
 }
@@ -20279,7 +20279,7 @@ ul.feature {
   content: "+";
   display: inline-block;
   margin-left: 5px;
-  color: #910035;
+  color: #f4a13d;
 }
 
 .accordion .feature {
@@ -20309,7 +20309,7 @@ body.archive .entry-header {
       align-content: center;
   position: relative;
   overflow: hidden;
-  background: #910035;
+  background: #f4a13d;
 }
 
 @media screen and (min-width: 768px) {
@@ -20485,8 +20485,8 @@ div.gs_tm_theme23 .single-member-div {
 }
 
 .prev-next-navigation .next a:hover, .prev-next-navigation .previous a:hover {
-  background: #00395C;
-  border: 1px solid #00395C;
+  background: #223b6e;
+  border: 1px solid #223b6e;
 }
 
 .wp-block-table table {
@@ -20559,13 +20559,13 @@ div.gs_tm_theme23 .single-member-div {
 }
 
 .wp-block-table th {
-  background: #910035;
+  background: #f4a13d;
   color: white;
 }
 
 td.year-sum {
   font-weight: bold;
-  background: #00395C;
+  background: #223b6e;
 }
 
 .single-portfolio .post-content {
@@ -20761,7 +20761,7 @@ div.wprevpro_t1_DIV_2 p {
 
 .wprs_rd_more {
   font-weight: 400;
-  color: #910035 !important;
+  color: #f4a13d !important;
 }
 
 .wprevpro_t1_DIV_2:after {
@@ -20827,7 +20827,7 @@ span.svg-wprsp-star-full {
 }
 
 div.wprev_preview_tcolor2_T1 > div.wprevpro_t1_rname {
-  color: #00395C;
+  color: #223b6e;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: none;
@@ -20959,7 +20959,7 @@ button.slickwprev-prev:before {
 
 #gs_team_area_1 h3.gs-member-name {
   background: transparent;
-  color: #910035;
+  color: #f4a13d;
   text-transform: none;
   padding: 0;
   margin-top: 15px;
@@ -21159,7 +21159,7 @@ div.gs-single-default .gs-team-single-content.default {
 
 div.gs-single-default .reviews {
   width: 100%;
-  background: #E2F0F7;
+  background: #f1f1f1;
   padding: 20px;
 }
 
@@ -21179,7 +21179,7 @@ body.single-gs_team .gs_member_details {
   padding-left: 0;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid #00395C;
+  border-top: 1px solid #223b6e;
 }
 
 div.gs-single-default .gs-team-single-content .gs_ribon_wrapper::after {
@@ -21202,7 +21202,7 @@ body.single .gs-containeer .gs_team {
 
 .reviews header {
   text-align: center;
-  border-bottom: 1px solid #00395C;
+  border-bottom: 1px solid #223b6e;
   margin-bottom: 25px;
 }
 
@@ -21318,7 +21318,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
 }
 
 .hero h3 {
-  color: #910035;
+  color: #f4a13d;
 }
 
 .hero-text .img-container {
@@ -22406,12 +22406,12 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
 
 .image-columns.with-video .image-col {
   position: relative;
-  box-shadow: 20px 20px 0 #E2F0F7;
+  box-shadow: 20px 20px 0 #f1f1f1;
 }
 
 @media screen and (min-width: 768px) {
   .image-columns.with-video .image-col {
-    box-shadow: 30px 30px 0 #E2F0F7;
+    box-shadow: 30px 30px 0 #f1f1f1;
   }
 }
 
@@ -22422,7 +22422,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
   right: -20px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 20px solid #E2F0F7;
+  border-bottom: 20px solid #f1f1f1;
 }
 
 @media screen and (min-width: 768px) {
@@ -22430,7 +22430,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
     right: -30px;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-bottom: 30px solid #E2F0F7;
+    border-bottom: 30px solid #f1f1f1;
   }
 }
 
@@ -22441,7 +22441,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
   bottom: -20px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #E2F0F7;
+  border-top: 20px solid #f1f1f1;
 }
 
 @media screen and (min-width: 768px) {
@@ -22449,7 +22449,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
     bottom: -30px;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
-    border-top: 30px solid #E2F0F7;
+    border-top: 30px solid #f1f1f1;
   }
 }
 
@@ -22464,7 +22464,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
   bottom: -20px;
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
-  border-top: 45px solid #E2F0F7;
+  border-top: 45px solid #f1f1f1;
   transform: rotate(45deg);
 }
 
@@ -22474,7 +22474,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
     left: -80px;
     border-left: 90px solid transparent;
     border-right: 90px solid transparent;
-    border-top: 90px solid #E2F0F7;
+    border-top: 90px solid #f1f1f1;
   }
 }
 
@@ -22485,7 +22485,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
   bottom: -20px;
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
-  border-top: 45px solid #E2F0F7;
+  border-top: 45px solid #f1f1f1;
   transform: rotate(45deg);
 }
 
@@ -22495,7 +22495,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
     left: -80px;
     border-left: 90px solid transparent;
     border-right: 90px solid transparent;
-    border-top: 90px solid #E2F0F7;
+    border-top: 90px solid #f1f1f1;
   }
 }
 
@@ -22898,7 +22898,7 @@ div.image-columns.col-66 .content-columns .content-column,
   width: 50%;
   max-width: 620px;
   padding-bottom: min(620px, 50%);
-  background: #E2F0F7;
+  background: #f1f1f1;
   position: absolute;
   bottom: 8.5%;
   right: 0;
@@ -23375,7 +23375,7 @@ html :where(.wp-block) {
 
 .wp-block.faq .content-column .header-title,
 .faq .content-column[data-toggled="true"] .header-title {
-  color: #00395C;
+  color: #223b6e;
   background: #F0F0F0 url(img/up-chevron.svg) no-repeat 13px center/10px;
 }
 
@@ -24028,7 +24028,7 @@ div.wpex.horizontal-timeline .horizontal-nav li span.tl-point:before {
 }
 
 div.wpex.horizontal-timeline .horizontal-nav li.prev_item span.tl-point:before {
-  border-color: #00395C;
+  border-color: #223b6e;
 }
 
 div.wpex.horizontal-timeline .timeline-hr {
@@ -24045,7 +24045,7 @@ div.wpex.horizontal-timeline .timeline-hr {
 }
 
 div.wpex.horizontal-timeline .timeline-pos-select {
-  border-bottom-color: #00395C;
+  border-bottom-color: #223b6e;
 }
 
 div.wpex.horizontal-timeline .ex_s_lick-prev,
@@ -24089,8 +24089,8 @@ div.wpex h2 + .wptl-excerpt {
 div.wpex.horizontal-timeline .ex_s_lick-prev:hover,
 div.wpex.horizontal-timeline .ex_s_lick-next:hover {
   color: white;
-  background: #00395C;
-  border-color: #00395C;
+  background: #223b6e;
+  border-color: #223b6e;
 }
 
 div.wpex.horizontal-timeline:not(.no-arr-top) .hor-container {
@@ -24121,12 +24121,12 @@ div.wpex.horizontal-timeline:not(.ex-multi-item) .horizontal-nav .ex_s_lick-arro
 div.wpex.horizontal-timeline .ex_s_lick-prev,
 div.wpex.horizontal-timeline .ex_s_lick-next,
 div.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current span.tl-point:before {
-  color: #00395C;
-  border-color: #00395C;
+  color: #223b6e;
+  border-color: #223b6e;
 }
 
 div.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current span.tl-point:before {
-  background: #00395C;
+  background: #223b6e;
 }
 
 div.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media + div {
@@ -24155,7 +24155,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 22px;
-  color: #00395C;
+  color: #223b6e;
 }
 
 @media screen and (min-width: 768px) {
@@ -24331,7 +24331,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .text-cards-grid .cta .content p {
-  color: #910035;
+  color: #f4a13d;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -24359,7 +24359,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .text-cards-grid .cta .content-footer p {
-  color: #910035;
+  color: #f4a13d;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -24534,7 +24534,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .text-card h3 {
-  color: #910035;
+  color: #f4a13d;
 }
 
 .text-card p {
@@ -24650,7 +24650,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 
 .text-card .block-wrapper {
   text-align: center;
-  background: #E2F0F7;
+  background: #f1f1f1;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-bottom: 1.25rem;
@@ -24699,7 +24699,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   font-family: "Lato", sans-serif;
   display: block;
   cursor: pointer;
-  color: #00395C;
+  color: #223b6e;
   font-weight: 900;
   margin-bottom: 0;
   position: relative;
@@ -24715,7 +24715,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .tab.active .header-title {
-  color: #910035;
+  color: #f4a13d;
 }
 
 .tab .header-title:before {
@@ -24726,7 +24726,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   width: 0;
   height: 0;
   position: absolute;
-  background: #910035;
+  background: #f4a13d;
   transition-property: width;
   transition-duration: 0.65s;
 }
@@ -24796,7 +24796,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 
 .tab-content.content-cols ul li:before {
   content: "";
-  background: #910035;
+  background: #f4a13d;
   border-radius: 7px;
   width: 7px;
   height: 7px;
@@ -25269,7 +25269,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 
 .resources-block .search-cont input[type="search"] {
   grid-column: 1/1;
-  background: #E2F0F7 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25.003' viewBox='0 0 25 25.003'%3E%3Cpath id='magnifying-glass-solid' d='M24.43,21.665l-5.845-5.845a10.156,10.156,0,1,0-2.763,2.766l5.845,5.845a1.954,1.954,0,0,0,2.763-2.766ZM3.863,10.157a6.25,6.25,0,1,1,6.25,6.25A6.257,6.257,0,0,1,3.863,10.157Z' transform='translate(-0.001 0)'/%3E%3C/svg%3E%0A") no-repeat calc(100% - 15px) center/25px;
+  background: #f1f1f1 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25.003' viewBox='0 0 25 25.003'%3E%3Cpath id='magnifying-glass-solid' d='M24.43,21.665l-5.845-5.845a10.156,10.156,0,1,0-2.763,2.766l5.845,5.845a1.954,1.954,0,0,0,2.763-2.766ZM3.863,10.157a6.25,6.25,0,1,1,6.25,6.25A6.257,6.257,0,0,1,3.863,10.157Z' transform='translate(-0.001 0)'/%3E%3C/svg%3E%0A") no-repeat calc(100% - 15px) center/25px;
   border: none;
   border-radius: 0;
   min-height: 50px;
@@ -25284,7 +25284,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .resources-block .search-cont select {
-  background: #E2F0F7 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.379' height='11.153' viewBox='0 0 18.379 11.153'%3E%3Cpath id='chevron-down-solid' d='M14.131,134.352l-8.179-8.179a1.01,1.01,0,0,1,0-1.428l.954-.954a1.01,1.01,0,0,1,1.427,0l6.513,6.482,6.513-6.482a1.01,1.01,0,0,1,1.427,0l.954.954a1.01,1.01,0,0,1,0,1.428l-8.179,8.179A1.01,1.01,0,0,1,14.131,134.352Z' transform='translate(-5.656 -123.495)'/%3E%3C/svg%3E%0A") no-repeat calc(100% - 15px) center/15px;
+  background: #f1f1f1 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.379' height='11.153' viewBox='0 0 18.379 11.153'%3E%3Cpath id='chevron-down-solid' d='M14.131,134.352l-8.179-8.179a1.01,1.01,0,0,1,0-1.428l.954-.954a1.01,1.01,0,0,1,1.427,0l6.513,6.482,6.513-6.482a1.01,1.01,0,0,1,1.427,0l.954.954a1.01,1.01,0,0,1,0,1.428l-8.179,8.179A1.01,1.01,0,0,1,14.131,134.352Z' transform='translate(-5.656 -123.495)'/%3E%3C/svg%3E%0A") no-repeat calc(100% - 15px) center/15px;
   border: none;
   padding-left: 20px;
   color: black;
@@ -25297,7 +25297,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .resources-block .search-cont input[type="search"]:focus {
-  background: #E2F0F7;
+  background: #f1f1f1;
 }
 
 .resources-block .search-cont input[type="search"]:-ms-input-placeholder {
@@ -25537,7 +25537,7 @@ ul.tax-list input.checkbox-component:checked + label:after {
   left: 3px;
   width: 16px;
   height: 16px;
-  background: #910035;
+  background: #f4a13d;
 }
 
 ul.tax-list label {
@@ -25569,7 +25569,7 @@ ul.tax-list .tax-wrap:before {
   width: 22px;
   height: 22px;
   background: white;
-  border: 1px solid #910035;
+  border: 1px solid #f4a13d;
 }
 
 h2.no-success-header {
@@ -25577,7 +25577,7 @@ h2.no-success-header {
   text-align: center;
   grid-column: 1/4;
   font-size: 24px;
-  color: #910035;
+  color: #f4a13d;
   font-family: "Lato", sans-serif;
 }
 
@@ -25589,7 +25589,7 @@ h2.no-success-header {
 .pagination span,
 .pagination a {
   font-family: "Lato", sans-serif;
-  color: #910035;
+  color: #f4a13d;
   font-size: 19px;
   text-decoration: none;
   margin-right: 5px;
@@ -25598,7 +25598,7 @@ h2.no-success-header {
 .pagination a.page-numbers:not(.prev):not(.next) {
   padding: 5px;
   display: inline-block;
-  border: 1px solid #910035;
+  border: 1px solid #f4a13d;
 }
 
 header.section-header {
@@ -25969,7 +25969,7 @@ ul.tax-list .tax-wrap {
   bottom: -20px;
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
-  border-top: 45px solid #E2F0F7;
+  border-top: 45px solid #f1f1f1;
   transform: rotate(45deg);
 }
 
@@ -25979,7 +25979,7 @@ ul.tax-list .tax-wrap {
     left: -80px;
     border-left: 90px solid transparent;
     border-right: 90px solid transparent;
-    border-top: 90px solid #E2F0F7;
+    border-top: 90px solid #f1f1f1;
   }
 }
 
@@ -26379,7 +26379,7 @@ ul.tax-list .tax-wrap {
 }
 
 .list-item .wrap {
-  background: #00395C;
+  background: #223b6e;
   width: 90px;
   margin: 0;
 }
@@ -26391,7 +26391,7 @@ ul.tax-list .tax-wrap {
 }
 
 .list-item .content {
-  background: #E2F0F7;
+  background: #f1f1f1;
   width: calc(100% - 90px);
   display: -ms-flexbox;
   display: flex;
@@ -26420,7 +26420,7 @@ ul.tax-list .tax-wrap {
   content: counter(number-list);
   display: inline-block;
   float: left;
-  color: #910035;
+  color: #f4a13d;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 22px;
@@ -26588,7 +26588,7 @@ ul.tax-list .tax-wrap {
 }
 
 .comparison-table .table-row:first-child .table-cell:nth-of-type(odd) {
-  background: #00395C;
+  background: #223b6e;
 }
 
 .comparison-table .table-row:first-child .table-cell:nth-of-type(even) {
@@ -26596,7 +26596,7 @@ ul.tax-list .tax-wrap {
 }
 
 .comparison-table .table-row .table-cell:nth-of-type(odd) {
-  background: #E2F0F7;
+  background: #f1f1f1;
 }
 
 .comparison-table .table-row:not(:first-child) .table-cell:nth-of-type(odd):before {
@@ -26664,7 +26664,7 @@ ul.tax-list .tax-wrap {
 
 .callout .wrap {
   width: 120px;
-  background: #00395C;
+  background: #223b6e;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -26685,7 +26685,7 @@ ul.tax-list .tax-wrap {
 }
 
 .callout .content {
-  background: #E2F0F7;
+  background: #f1f1f1;
   width: calc(100% - 120px);
   padding: 25px 20px;
   display: -ms-flexbox;
@@ -26855,7 +26855,7 @@ ul.tax-list .tax-wrap {
 }
 
 .side-table .table-row .table-cell-icon {
-  background: #00395C;
+  background: #223b6e;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -26910,7 +26910,7 @@ ul.tax-list .tax-wrap {
   width: 100%;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  color: #E2F0F7;
+  color: #f1f1f1;
   margin-top: 5px;
   font-weight: 900;
 }
@@ -27005,7 +27005,7 @@ ul.tax-list .tax-wrap {
 .contact-alt-section .content-column .accordion h5 button,
 .accordion h5 .contact-alt-section .content-column button,
 .contact-alt-section .content-column h6 {
-  color: #910035;
+  color: #f4a13d;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -27149,7 +27149,7 @@ ul.tax-list .tax-wrap {
 }
 
 .alternatives {
-  background: #E2F0F7;
+  background: #f1f1f1;
   text-align: center;
   padding: 25px;
   display: -ms-flexbox;
@@ -27166,7 +27166,7 @@ ul.tax-list .tax-wrap {
 
 .payment {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  border: 3px solid #910035;
+  border: 3px solid #f4a13d;
   padding: 25px;
   text-align: center;
   display: -ms-flexbox;
