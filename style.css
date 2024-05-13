@@ -14125,6 +14125,10 @@ li.menu-item.nav-button a:hover {
   }
 }
 
+.secondary-navigation .phone {
+  background: none;
+}
+
 .menu-item.phone {
   padding-left: 0;
 }
