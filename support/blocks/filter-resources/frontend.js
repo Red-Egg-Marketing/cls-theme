@@ -258,7 +258,7 @@ const SaveResources = ( { attributes } ) => {
 											</div>
 										</div>
 									)}
-									{ (resourceIndex == 30) && (
+									{/*{ (resourceIndex == 30) && (
 										<div className="alternatives">
 											<div className="wrapper">
 												<h3>Need Extended Service Contract Info?</h3>
@@ -267,7 +267,7 @@ const SaveResources = ( { attributes } ) => {
 												</div>
 											</div>
 										</div>
-									)}
+									)}*/}
 									<ResourceCard.View
 										resourceIndex={ resourceIndex }
 										resourceURL={ resource.link }
