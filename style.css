@@ -12395,7 +12395,7 @@ i.fa {
 
 .edit-post-visual-editor__content-area ul li:not([class]):before, .entry-content ul li:not([class]):before {
   content: "\2022";
-  color: #f4a13d;
+  color: #000000;
   position: absolute;
   top: 0;
   left: 0;
@@ -12410,7 +12410,7 @@ i.fa {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #f4a13d;
+  color: #FFCB17;
   font-weight: 500;
 }
 
@@ -12422,7 +12422,7 @@ i.fa {
 }
 
 .edit-post-visual-editor__content-area a, .entry-content a {
-  color: #f4a13d;
+  color: #000000;
 }
 
 .edit-post-visual-editor__content-area strong, .entry-content strong {
@@ -12474,7 +12474,7 @@ i.fa {
 .edit-post-visual-editor__content-area h1, .entry-content h1 {
   font-size: 35px;
   line-height: 44px;
-  color: #f4a13d;
+  color: #003474;
   margin-top: 2rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -12495,7 +12495,7 @@ i.fa {
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
   font-size: 30px;
   line-height: 44px;
-  color: #f4a13d;
+  color: #003474;
   margin-top: 1.75rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -12514,7 +12514,7 @@ i.fa {
 .related-posts h3,
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
-  color: #223b6e;
+  color: #003474;
   font-size: 23px;
   line-height: 31px;
   text-transform: none;
@@ -12605,7 +12605,7 @@ i.fa {
 .has-red-color p,
 .has-red-color,
 .entry-content .has-red-color {
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 background {
@@ -12734,8 +12734,8 @@ a[download],
 li.menu-item.nav-button a,
 input[type="submit"],
 button.wp-button {
-  background: #f4a13d;
-  color: white;
+  background: #FFCB17;
+  color: #003474;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -12833,7 +12833,7 @@ input[type="submit"].wp-cancel-pw:hover,
 button.wp-button.bp-secondary-action:hover,
 button.wp-button.wp-cancel-pw:hover {
   background: none;
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 @media screen and (min-width: 768px) {
@@ -12891,7 +12891,7 @@ a:hover[download],
 li.menu-item.nav-button a:hover,
 input[type="submit"]:hover,
 button.wp-button:hover {
-  background: #223b6e;
+  background: #003474;
   color: white;
 }
 
@@ -12915,12 +12915,12 @@ button.wp-button[disabled] {
 }
 
 div.gs_team_area .gs-team-filter-cats li a {
-  border-top: 2px solid #f4a13d !important;
-  border-left: 2px solid #f4a13d !important;
-  border-right: 2px solid #f4a13d !important;
-  border-bottom: 4px solid #f4a13d !important;
+  border-top: 2px solid #FFCB17 !important;
+  border-left: 2px solid #FFCB17 !important;
+  border-right: 2px solid #FFCB17 !important;
+  border-bottom: 4px solid #FFCB17 !important;
   border-radius: 0 !important;
-  color: #f4a13d !important;
+  color: #FFCB17 !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -12932,13 +12932,13 @@ div.gs_team_area .gs-team-filter-cats li a {
 }
 
 div.gs_team_area .gs-team-filter-cats li a:hover {
-  background: #f4a13d !important;
+  background: #FFCB17 !important;
   color: white !important;
 }
 
 ul.gs-team-filter-cats li.filter.active > a {
-  background: #f4a13d !important;
-  border-color: #f4a13d !important;
+  background: #FFCB17 !important;
+  border-color: #FFCB17 !important;
 }
 
 .fixed-buttons {
@@ -13058,7 +13058,7 @@ li.menu-item.nav-button .wp-block-button.is-style-solid-yellow a,
 .wp-block-button.is-style-solid-yellow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-yellow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: #F79A6C;
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 .wp-block-button__link.is-style-solid-blue-green, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green, a.is-style-solid-blue-green[download], li.menu-item.nav-button a.is-style-solid-blue-green, div.gform_wrapper input.is-style-solid-blue-green[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -13085,8 +13085,8 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-gr
 li.menu-item.nav-button .wp-block-button.is-style-solid-blue-green a:hover,
 .wp-block-button.is-style-solid-blue-green div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-blue-green input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  color: #223b6e;
-  background: #F99D33;
+  color: #003474;
+  background: #FFCB17;
 }
 
 .wp-block-button__link.is-style-solid-navy, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-navy, a.is-style-solid-navy[download], li.menu-item.nav-button a.is-style-solid-navy, div.gform_wrapper input.is-style-solid-navy[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -13099,7 +13099,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a,
 li.menu-item.nav-button .wp-block-button.is-style-solid-navy a,
 .wp-block-button.is-style-solid-navy div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  background: #223b6e;
+  background: #003474;
   color: white;
 }
 
@@ -13114,7 +13114,7 @@ li.menu-item.nav-button .wp-block-button.is-style-solid-navy a:hover,
 .wp-block-button.is-style-solid-navy div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   color: white;
-  background: #223b6e;
+  background: #003474;
 }
 
 .wp-block-button__link.is-style-text-yellow-arrow, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow, a.is-style-text-yellow-arrow[download], li.menu-item.nav-button a.is-style-text-yellow-arrow, div.gform_wrapper input.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -13128,7 +13128,7 @@ li.menu-item.nav-button .wp-block-button.is-style-text-yellow-arrow a,
 .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: none;
-  color: #f4a13d;
+  color: #FFCB17;
   padding: 0;
   border-radius: 0;
   border: none;
@@ -13189,7 +13189,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:n
 li.menu-item.nav-button .wp-block-button.is-style-outline > a:not(.has-text-color):hover,
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 .wp-button.is-style-outline:visited,
@@ -13219,7 +13219,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:n
 li.menu-item.nav-button .wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited,
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 
@@ -13229,7 +13229,7 @@ a:visited[download],
 li.menu-item.nav-button a:visited,
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:visited {
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 
@@ -13287,7 +13287,7 @@ body.nav-active .site-header:after {
 
 .menu-blurb {
   text-transform: uppercase;
-  color: #223b6e;
+  color: #003474;
   font-family: "Lato", sans-serif;
   text-align: center;
   font-weight: 700;
@@ -13498,7 +13498,7 @@ a.custom-logo-link {
 
 .main-navigation .nav-menu > .menu-item > .sub-menu > .menu-item {
   width: 100%;
-  color: #223b6e;
+  color: #003474;
 }
 
 @media screen and (min-width: 1080px) {
@@ -13736,7 +13736,7 @@ li.menu-item.nav-button a {
 }
 
 li.menu-item.nav-button a:hover {
-  background: #223b6e;
+  background: #003474;
   color: #F79A6C;
 }
 
@@ -13749,7 +13749,7 @@ li.menu-item.nav-button a:hover {
 
 .main-navigation .menu-item a,
 .main-navigation .menu-item {
-  color: #f4a13d;
+  color: #003474;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   text-align: left;
@@ -13771,7 +13771,7 @@ li.menu-item.nav-button a:hover {
 }
 
 .main-navigation .menu-item a:hover {
-  color: #223b6e;
+  color: #003474;
 }
 
 .menu-primary-menu-container .menu-item,
@@ -13924,7 +13924,7 @@ li.menu-item.nav-button a:hover {
 
 .main-navigation .sub-menu li.menu-item a {
   font-weight: 400;
-  color: #223b6e;
+  color: #003474;
 }
 
 @media screen and (min-width: 1080px) {
@@ -14007,7 +14007,7 @@ li.menu-item.nav-button a:hover {
 }
 
 .main-navigation .sub-menu .menu-item a:hover {
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 @media screen and (min-width: 1080px) {
@@ -14027,7 +14027,7 @@ li.menu-item.nav-button a:hover {
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
-  background: #f4a13d;
+  background: #FFCB17;
   transition-duration: .3s;
   transition-property: height;
 }
@@ -14984,7 +14984,7 @@ div.components-select-control {
 h1 {
   font-size: 42px;
   line-height: 49px;
-  color: #f4a13d;
+  color: #FFCB17;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -15001,7 +15001,7 @@ h1 {
 }
 
 h3 {
-  color: #f4a13d;
+  color: #FFCB17;
   font-family: "Lato", sans-serif;
   font-size: 35px;
   line-height: 40px;
@@ -15021,7 +15021,7 @@ h3 {
 
 h4 {
   font-family: "Lato", sans-serif;
-  color: #f4a13d;
+  color: #FFCB17;
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
@@ -15062,7 +15062,11 @@ h4 {
 }
 
 .navy {
-  background-color: #223b6e;
+  background-color: #003474;
+}
+
+.blue {
+  background-color: #01819d;
 }
 
 .resources-grid:not(.swiper-wrapper) .block-wrapper {
@@ -15155,7 +15159,7 @@ h4 {
 .resource-card .resource-year,
 .resource-card .resource-title {
   margin: 0;
-  color: #000000;
+  color: #003474;
 }
 
 .resource-card .resource-excerpt,
@@ -15193,7 +15197,6 @@ h4 {
 }
 
 .resource-card .resource-title {
-  color: #f4a13d;
   font-size: 19px;
   letter-spacing: 0;
   font-weight: 700;
@@ -15490,7 +15493,7 @@ h4 {
 .entry-content .resource-card .tax-item {
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
-  color: #223b6e;
+  color: #003474;
   font-size: 15px;
   letter-spacing: 0.65px;
   margin-bottom: 0;
@@ -15708,7 +15711,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(0%);
@@ -15725,7 +15728,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(1%);
@@ -15742,7 +15745,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(2%);
@@ -15759,7 +15762,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(3%);
@@ -15776,7 +15779,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(4%);
@@ -15793,7 +15796,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(5%);
@@ -15810,7 +15813,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(6%);
@@ -15827,7 +15830,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(7%);
@@ -15844,7 +15847,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(8%);
@@ -15861,7 +15864,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(9%);
@@ -15878,7 +15881,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(10%);
@@ -15895,7 +15898,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(11%);
@@ -15912,7 +15915,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(12%);
@@ -15929,7 +15932,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(13%);
@@ -15946,7 +15949,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(14%);
@@ -15963,7 +15966,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(15%);
@@ -15980,7 +15983,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(16%);
@@ -15997,7 +16000,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(17%);
@@ -16014,7 +16017,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(18%);
@@ -16031,7 +16034,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(19%);
@@ -16048,7 +16051,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(20%);
@@ -16065,7 +16068,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(21%);
@@ -16082,7 +16085,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(22%);
@@ -16099,7 +16102,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(23%);
@@ -16116,7 +16119,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(24%);
@@ -16133,7 +16136,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(25%);
@@ -16150,7 +16153,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(26%);
@@ -16167,7 +16170,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(27%);
@@ -16184,7 +16187,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(28%);
@@ -16201,7 +16204,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(29%);
@@ -16218,7 +16221,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(30%);
@@ -16235,7 +16238,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(31%);
@@ -16252,7 +16255,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(32%);
@@ -16269,7 +16272,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(33%);
@@ -16286,7 +16289,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(34%);
@@ -16303,7 +16306,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(35%);
@@ -16320,7 +16323,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(36%);
@@ -16337,7 +16340,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(37%);
@@ -16354,7 +16357,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(38%);
@@ -16371,7 +16374,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(39%);
@@ -16388,7 +16391,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(40%);
@@ -16405,7 +16408,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(41%);
@@ -16422,7 +16425,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(42%);
@@ -16439,7 +16442,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(43%);
@@ -16456,7 +16459,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(44%);
@@ -16473,7 +16476,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(45%);
@@ -16490,7 +16493,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(46%);
@@ -16507,7 +16510,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(47%);
@@ -16524,7 +16527,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(48%);
@@ -16541,7 +16544,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(49%);
@@ -16558,7 +16561,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(50%);
@@ -16575,7 +16578,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(51%);
@@ -16592,7 +16595,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(52%);
@@ -16609,7 +16612,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(53%);
@@ -16626,7 +16629,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(54%);
@@ -16643,7 +16646,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(55%);
@@ -16660,7 +16663,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(56%);
@@ -16677,7 +16680,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(57%);
@@ -16694,7 +16697,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(58%);
@@ -16711,7 +16714,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(59%);
@@ -16728,7 +16731,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(60%);
@@ -16745,7 +16748,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(61%);
@@ -16762,7 +16765,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(62%);
@@ -16779,7 +16782,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(63%);
@@ -16796,7 +16799,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(64%);
@@ -16813,7 +16816,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(65%);
@@ -16830,7 +16833,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(66%);
@@ -16847,7 +16850,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(67%);
@@ -16864,7 +16867,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(68%);
@@ -16881,7 +16884,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(69%);
@@ -16898,7 +16901,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(70%);
@@ -16915,7 +16918,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(71%);
@@ -16932,7 +16935,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(72%);
@@ -16949,7 +16952,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(73%);
@@ -16966,7 +16969,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(74%);
@@ -16983,7 +16986,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(75%);
@@ -17000,7 +17003,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(76%);
@@ -17017,7 +17020,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(77%);
@@ -17034,7 +17037,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(78%);
@@ -17051,7 +17054,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(79%);
@@ -17068,7 +17071,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(80%);
@@ -17085,7 +17088,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(81%);
@@ -17102,7 +17105,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(82%);
@@ -17119,7 +17122,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(83%);
@@ -17136,7 +17139,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(84%);
@@ -17153,7 +17156,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(85%);
@@ -17170,7 +17173,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(86%);
@@ -17187,7 +17190,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(87%);
@@ -17204,7 +17207,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(88%);
@@ -17221,7 +17224,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(89%);
@@ -17238,7 +17241,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(90%);
@@ -17255,7 +17258,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(91%);
@@ -17272,7 +17275,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(92%);
@@ -17289,7 +17292,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(93%);
@@ -17306,7 +17309,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(94%);
@@ -17323,7 +17326,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(95%);
@@ -17340,7 +17343,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(96%);
@@ -17357,7 +17360,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(97%);
@@ -17374,7 +17377,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(98%);
@@ -17391,7 +17394,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(99%);
@@ -17408,7 +17411,7 @@ h2#CybotCookiebotDialogBodyContentTitle {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(100%);
@@ -17508,9 +17511,9 @@ div.gform_wrapper textarea {
   width: 100%;
   display: none;
   background: white;
-  border-left: 1px solid #f4a13d;
-  border-right: 1px solid #f4a13d;
-  border-bottom: 1px solid #f4a13d;
+  border-left: 1px solid #FFCB17;
+  border-right: 1px solid #FFCB17;
+  border-bottom: 1px solid #FFCB17;
   overflow: auto;
   max-height: 350px;
 }
@@ -18445,7 +18448,7 @@ div.gform_wrapper p {
 
 input[type="range"] {
   background: transparent;
-  background-image: linear-gradient(#f4a13d, #f4a13d);
+  background-image: linear-gradient(#003474, #003474);
   background-size: 0% 100%;
   background-repeat: no-repeat;
   -webkit-appearance: none;
@@ -18478,7 +18481,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 28px;
-  background: #f4a13d;
+  background: #003474;
   cursor: pointer;
   margin-top: -7.5px;
   /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
@@ -18493,7 +18496,7 @@ input[type=range]::-moz-range-thumb {
   height: 20px;
   width: 20px;
   border-radius: 28px;
-  background: #f4a13d;
+  background: #FFCB17;
   cursor: pointer;
 }
 
@@ -18606,7 +18609,7 @@ form .inner-row select {
 .site-footer {
   padding-top: 60px;
   padding-bottom: 30px;
-  background: #223b6e;
+  background: #003474;
 }
 
 @media screen and (min-width: 768px) {
@@ -19189,7 +19192,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 }
 
 .vehicle-gallery .thumbnails .swiper-slide.swiper-slide-active {
-  border-bottom: 3px solid #f4a13d;
+  border-bottom: 3px solid #FFCB17;
 }
 
 .vehicle-gallery {
@@ -19214,7 +19217,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 }
 
 .miles {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath id='gauge-solid' d='M0,12.5A12.5,12.5,0,1,1,12.5,25,12.5,12.5,0,0,1,0,12.5Zm15.625,4.688a3.113,3.113,0,0,0-1.953-2.9V4.3a1.172,1.172,0,0,0-2.344,0v10a3.124,3.124,0,1,0,4.3,2.9ZM7.031,8.594A1.563,1.563,0,1,0,5.469,7.031,1.562,1.562,0,0,0,7.031,8.594ZM6.25,12.5a1.563,1.563,0,1,0-1.562,1.563A1.563,1.563,0,0,0,6.25,12.5Zm14.063,1.563A1.563,1.563,0,1,0,18.75,12.5,1.563,1.563,0,0,0,20.313,14.063Zm-.781-7.031a1.563,1.563,0,1,0-1.562,1.563A1.563,1.563,0,0,0,19.531,7.031Z' fill='%23910035'/%3E%3C/svg%3E%0A") no-repeat left 4px/19px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath id='gauge-solid' d='M0,12.5A12.5,12.5,0,1,1,12.5,25,12.5,12.5,0,0,1,0,12.5Zm15.625,4.688a3.113,3.113,0,0,0-1.953-2.9V4.3a1.172,1.172,0,0,0-2.344,0v10a3.124,3.124,0,1,0,4.3,2.9ZM7.031,8.594A1.563,1.563,0,1,0,5.469,7.031,1.562,1.562,0,0,0,7.031,8.594ZM6.25,12.5a1.563,1.563,0,1,0-1.562,1.563A1.563,1.563,0,0,0,6.25,12.5Zm14.063,1.563A1.563,1.563,0,1,0,18.75,12.5,1.563,1.563,0,0,0,20.313,14.063Zm-.781-7.031a1.563,1.563,0,1,0-1.562,1.563A1.563,1.563,0,0,0,19.531,7.031Z' fill='%23003474'/%3E%3C/svg%3E%0A") no-repeat left 4px/19px;
   padding-left: 35px;
 }
 
@@ -19375,63 +19378,63 @@ p.attr {
 }
 
 .year {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21.875' height='25' viewBox='0 0 21.875 25'%3E%3Cpath id='calendar-days-solid' d='M7.813,1.563V3.125h6.25V1.563a1.563,1.563,0,0,1,3.125,0V3.125h2.344a2.344,2.344,0,0,1,2.344,2.344V7.813H0V5.469A2.344,2.344,0,0,1,2.344,3.125H4.688V1.563a1.563,1.563,0,0,1,3.125,0ZM0,9.375H21.875V22.656A2.344,2.344,0,0,1,19.531,25H2.344A2.344,2.344,0,0,1,0,22.656Zm3.125,5.469a.782.782,0,0,0,.781.781H5.469a.784.784,0,0,0,.781-.781V13.281a.784.784,0,0,0-.781-.781H3.906a.782.782,0,0,0-.781.781Zm6.25,0a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V13.281a.784.784,0,0,0-.781-.781H10.156a.784.784,0,0,0-.781.781ZM16.406,12.5a.784.784,0,0,0-.781.781v1.563a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V13.281a.784.784,0,0,0-.781-.781ZM3.125,21.094a.782.782,0,0,0,.781.781H5.469a.784.784,0,0,0,.781-.781V19.531a.784.784,0,0,0-.781-.781H3.906a.782.782,0,0,0-.781.781Zm7.031-2.344a.784.784,0,0,0-.781.781v1.563a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V19.531a.784.784,0,0,0-.781-.781Zm5.469,2.344a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V19.531a.784.784,0,0,0-.781-.781H16.406a.784.784,0,0,0-.781.781Z' fill='%23910035'/%3E%3C/svg%3E%0A") no-repeat left 0px/21px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21.875' height='25' viewBox='0 0 21.875 25'%3E%3Cpath id='calendar-days-solid' d='M7.813,1.563V3.125h6.25V1.563a1.563,1.563,0,0,1,3.125,0V3.125h2.344a2.344,2.344,0,0,1,2.344,2.344V7.813H0V5.469A2.344,2.344,0,0,1,2.344,3.125H4.688V1.563a1.563,1.563,0,0,1,3.125,0ZM0,9.375H21.875V22.656A2.344,2.344,0,0,1,19.531,25H2.344A2.344,2.344,0,0,1,0,22.656Zm3.125,5.469a.782.782,0,0,0,.781.781H5.469a.784.784,0,0,0,.781-.781V13.281a.784.784,0,0,0-.781-.781H3.906a.782.782,0,0,0-.781.781Zm6.25,0a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V13.281a.784.784,0,0,0-.781-.781H10.156a.784.784,0,0,0-.781.781ZM16.406,12.5a.784.784,0,0,0-.781.781v1.563a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V13.281a.784.784,0,0,0-.781-.781ZM3.125,21.094a.782.782,0,0,0,.781.781H5.469a.784.784,0,0,0,.781-.781V19.531a.784.784,0,0,0-.781-.781H3.906a.782.782,0,0,0-.781.781Zm7.031-2.344a.784.784,0,0,0-.781.781v1.563a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V19.531a.784.784,0,0,0-.781-.781Zm5.469,2.344a.784.784,0,0,0,.781.781h1.563a.784.784,0,0,0,.781-.781V19.531a.784.784,0,0,0-.781-.781H16.406a.784.784,0,0,0-.781.781Z' fill='%23003474'/%3E%3C/svg%3E%0A") no-repeat left 0px/21px;
   padding-left: 35px;
 }
 
 .engine {
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M400 112c13.3 0 24-10.7 24-24s-10.7-24-24-24H208c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0v32H208 160 128c-17.7 0-32 14.3-32 32v56H48V160c0-13.3-10.7-24-24-24s-24 10.7-24 24V352c0 13.3 10.7 24 24 24s24-10.7 24-24V280H96v72c0 17.7 14.3 32 32 32h44.8l32 40c12.1 15.2 30.5 24 50 24H448c35.3 0 64-28.7 64-64V238.8c0-19.4-8.8-37.8-24-50L449.5 158c-11.3-9.1-25.4-14-40-14H328V112l72 0zM544 224V416c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H576c-17.7 0-32 14.3-32 32zm-256 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM160 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm224-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>') no-repeat left 6px/21px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23003474}</style><path d="M400 112c13.3 0 24-10.7 24-24s-10.7-24-24-24H208c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0v32H208 160 128c-17.7 0-32 14.3-32 32v56H48V160c0-13.3-10.7-24-24-24s-24 10.7-24 24V352c0 13.3 10.7 24 24 24s24-10.7 24-24V280H96v72c0 17.7 14.3 32 32 32h44.8l32 40c12.1 15.2 30.5 24 50 24H448c35.3 0 64-28.7 64-64V238.8c0-19.4-8.8-37.8-24-50L449.5 158c-11.3-9.1-25.4-14-40-14H328V112l72 0zM544 224V416c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H576c-17.7 0-32 14.3-32 32zm-256 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM160 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm224-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>') no-repeat left 6px/21px;
   padding-left: 35px;
 }
 
 .exterior {
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M171.3 96H224v96H111.3l30.4-75.9C146.5 104 158.2 96 171.3 96zM272 192V96h81.2c9.7 0 18.9 4.4 25 12l67.2 84H272zm256.2 1L428.2 68c-18.2-22.8-45.8-36-75-36H171.3c-39.3 0-74.6 23.9-89.1 60.3L40.6 196.4C16.8 205.8 0 228.9 0 256V368c0 17.7 14.3 32 32 32H65.3c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80H385.3c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80H608c17.7 0 32-14.3 32-32V320c0-65.2-48.8-119-111.8-127zM434.7 368a48 48 0 1 1 90.5 32 48 48 0 1 1 -90.5-32zM160 336a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>') no-repeat left 7px/21px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23003474}</style><path d="M171.3 96H224v96H111.3l30.4-75.9C146.5 104 158.2 96 171.3 96zM272 192V96h81.2c9.7 0 18.9 4.4 25 12l67.2 84H272zm256.2 1L428.2 68c-18.2-22.8-45.8-36-75-36H171.3c-39.3 0-74.6 23.9-89.1 60.3L40.6 196.4C16.8 205.8 0 228.9 0 256V368c0 17.7 14.3 32 32 32H65.3c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80H385.3c7.6 45.4 47.1 80 94.7 80s87.1-34.6 94.7-80H608c17.7 0 32-14.3 32-32V320c0-65.2-48.8-119-111.8-127zM434.7 368a48 48 0 1 1 90.5 32 48 48 0 1 1 -90.5-32zM160 336a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>') no-repeat left 7px/21px;
   padding-left: 35px;
 }
 
 .interior {
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M224 358.9v86.5C143.6 431.9 80.1 368.4 66.7 288H168.9L224 358.9zm64 0L343.1 288H445.3C431.9 368.4 368.4 431.9 288 445.3V358.9zM352 224l-7.2-14.3c-5.4-10.8-16.5-17.7-28.6-17.7H195.8c-12.1 0-23.2 6.8-28.6 17.7L160 224H66.7C81.9 133.2 160.9 64 256 64s174.1 69.2 189.3 160H352zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>') no-repeat left 6px/19px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23003474}</style><path d="M224 358.9v86.5C143.6 431.9 80.1 368.4 66.7 288H168.9L224 358.9zm64 0L343.1 288H445.3C431.9 368.4 368.4 431.9 288 445.3V358.9zM352 224l-7.2-14.3c-5.4-10.8-16.5-17.7-28.6-17.7H195.8c-12.1 0-23.2 6.8-28.6 17.7L160 224H66.7C81.9 133.2 160.9 64 256 64s174.1 69.2 189.3 160H352zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>') no-repeat left 6px/19px;
   padding-left: 35px;
 }
 
 .mpg {
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M32 64C32 28.7 60.7 0 96 0H256c35.3 0 64 28.7 64 64V256h8c48.6 0 88 39.4 88 88v32c0 13.3 10.7 24 24 24s24-10.7 24-24V222c-27.6-7.1-48-32.2-48-62V96L384 64c-8.8-8.8-8.8-23.2 0-32s23.2-8.8 32 0l77.3 77.3c12 12 18.7 28.3 18.7 45.3V168v24 32V376c0 39.8-32.2 72-72 72s-72-32.2-72-72V344c0-22.1-17.9-40-40-40h-8V448c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32V64zM96 80v96c0 8.8 7.2 16 16 16H240c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H112c-8.8 0-16 7.2-16 16z"/></svg>') no-repeat left 4px/19px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23003474}</style><path d="M32 64C32 28.7 60.7 0 96 0H256c35.3 0 64 28.7 64 64V256h8c48.6 0 88 39.4 88 88v32c0 13.3 10.7 24 24 24s24-10.7 24-24V222c-27.6-7.1-48-32.2-48-62V96L384 64c-8.8-8.8-8.8-23.2 0-32s23.2-8.8 32 0l77.3 77.3c12 12 18.7 28.3 18.7 45.3V168v24 32V376c0 39.8-32.2 72-72 72s-72-32.2-72-72V344c0-22.1-17.9-40-40-40h-8V448c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32V64zM96 80v96c0 8.8 7.2 16 16 16H240c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H112c-8.8 0-16 7.2-16 16z"/></svg>') no-repeat left 4px/19px;
   padding-left: 35px;
 }
 
 .seats {
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32V143.6c0 15.2 3.1 30.2 9.1 44.1L82 357.8c15.1 35.3 49.8 58.2 88.2 58.2H216v48H120c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H264V416h96c15.1 0 29.3-7.1 38.4-19.2l43.2-57.6c7.3-9.7 8.4-22.7 3-33.5S428.1 288 416 288H121.7L108 256H320c17.7 0 32-14.3 32-32s-14.3-32-32-32H80.5L67.9 162.5c-2.6-6-3.9-12.4-3.9-18.9V32z"/></svg>') no-repeat left 4px/18px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23003474}</style><path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32V143.6c0 15.2 3.1 30.2 9.1 44.1L82 357.8c15.1 35.3 49.8 58.2 88.2 58.2H216v48H120c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H264V416h96c15.1 0 29.3-7.1 38.4-19.2l43.2-57.6c7.3-9.7 8.4-22.7 3-33.5S428.1 288 416 288H121.7L108 256H320c17.7 0 32-14.3 32-32s-14.3-32-32-32H80.5L67.9 162.5c-2.6-6-3.9-12.4-3.9-18.9V32z"/></svg>') no-repeat left 4px/18px;
   padding-left: 35px;
 }
 
 .drive {
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm32-256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm-16.1 62l0 65c44.3-5.5 81.5-33.6 99.8-72.4l-61.9-20.1c-8.6 13.5-22.1 23.5-38 27.6zm47.9-58l61.8 20.1c1.5-7.8 2.3-15.9 2.3-24.2c0-36.8-15.5-69.9-40.3-93.3l-38.2 52.6c9.1 11 14.5 25.2 14.5 40.6c0 1.4 0 2.7-.1 4zm-40.2-63.5l38.2-52.6C299.5 133.8 278.4 128 256 128s-43.5 5.8-61.8 15.9l28.1 38.8 10 13.8c7.3-2.9 15.3-4.5 23.6-4.5s16.3 1.6 23.6 4.5zM168.3 162.7C143.5 186.1 128 219.2 128 256c0 8.3 .8 16.3 2.3 24.2L192.1 260c-.1-1.3-.1-2.7-.1-4c0-15.4 5.5-29.6 14.5-40.6l-10.1-13.9-28.1-38.7zm33.7 127.7l-61.9 20.1c18.3 38.8 55.5 66.9 99.8 72.4l0-65c-15.8-4.1-29.3-14.1-37.9-27.5zM256 96a160 160 0 1 1 0 320 160 160 0 1 1 0-320z"/></svg>') no-repeat left 5px/19px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23003474}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm32-256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm-16.1 62l0 65c44.3-5.5 81.5-33.6 99.8-72.4l-61.9-20.1c-8.6 13.5-22.1 23.5-38 27.6zm47.9-58l61.8 20.1c1.5-7.8 2.3-15.9 2.3-24.2c0-36.8-15.5-69.9-40.3-93.3l-38.2 52.6c9.1 11 14.5 25.2 14.5 40.6c0 1.4 0 2.7-.1 4zm-40.2-63.5l38.2-52.6C299.5 133.8 278.4 128 256 128s-43.5 5.8-61.8 15.9l28.1 38.8 10 13.8c7.3-2.9 15.3-4.5 23.6-4.5s16.3 1.6 23.6 4.5zM168.3 162.7C143.5 186.1 128 219.2 128 256c0 8.3 .8 16.3 2.3 24.2L192.1 260c-.1-1.3-.1-2.7-.1-4c0-15.4 5.5-29.6 14.5-40.6l-10.1-13.9-28.1-38.7zm33.7 127.7l-61.9 20.1c18.3 38.8 55.5 66.9 99.8 72.4l0-65c-15.8-4.1-29.3-14.1-37.9-27.5zM256 96a160 160 0 1 1 0 320 160 160 0 1 1 0-320z"/></svg>') no-repeat left 5px/19px;
   padding-left: 35px;
 }
 
 .trim {
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>') no-repeat left 5px/19px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23003474}</style><path d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>') no-repeat left 5px/19px;
   padding-left: 35px;
 }
 
 .phone {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30.004' viewBox='0 0 30 30.004'%3E%3Cpath id='phone-solid' d='M.044,22.672l1.362,5.907A1.821,1.821,0,0,0,3.191,30,26.839,26.839,0,0,0,30,3.188,1.82,1.82,0,0,0,28.581,1.4L22.674.041a1.839,1.839,0,0,0-2.1,1.062L17.851,7.461A1.834,1.834,0,0,0,18.377,9.6l3.155,2.533a20.49,20.49,0,0,1-9.347,9.347L9.6,18.324A1.823,1.823,0,0,0,7.466,17.8L1.108,20.524A2,2,0,0,0,.044,22.672Z' transform='translate(0 0.006)' fill='%23910035'/%3E%3C/svg%3E%0A") no-repeat left 0px/20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30.004' viewBox='0 0 30 30.004'%3E%3Cpath id='phone-solid' d='M.044,22.672l1.362,5.907A1.821,1.821,0,0,0,3.191,30,26.839,26.839,0,0,0,30,3.188,1.82,1.82,0,0,0,28.581,1.4L22.674.041a1.839,1.839,0,0,0-2.1,1.062L17.851,7.461A1.834,1.834,0,0,0,18.377,9.6l3.155,2.533a20.49,20.49,0,0,1-9.347,9.347L9.6,18.324A1.823,1.823,0,0,0,7.466,17.8L1.108,20.524A2,2,0,0,0,.044,22.672Z' transform='translate(0 0.006)' fill='%23003474'/%3E%3C/svg%3E%0A") no-repeat left 0px/20px;
   padding-left: 35px;
 }
 
 @media screen and (min-width: 768px) {
   .phone {
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30.004' viewBox='0 0 30 30.004'%3E%3Cpath id='phone-solid' d='M.044,22.672l1.362,5.907A1.821,1.821,0,0,0,3.191,30,26.839,26.839,0,0,0,30,3.188,1.82,1.82,0,0,0,28.581,1.4L22.674.041a1.839,1.839,0,0,0-2.1,1.062L17.851,7.461A1.834,1.834,0,0,0,18.377,9.6l3.155,2.533a20.49,20.49,0,0,1-9.347,9.347L9.6,18.324A1.823,1.823,0,0,0,7.466,17.8L1.108,20.524A2,2,0,0,0,.044,22.672Z' transform='translate(0 0.006)' fill='%23910035'/%3E%3C/svg%3E%0A") no-repeat left 0px/30px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30.004' viewBox='0 0 30 30.004'%3E%3Cpath id='phone-solid' d='M.044,22.672l1.362,5.907A1.821,1.821,0,0,0,3.191,30,26.839,26.839,0,0,0,30,3.188,1.82,1.82,0,0,0,28.581,1.4L22.674.041a1.839,1.839,0,0,0-2.1,1.062L17.851,7.461A1.834,1.834,0,0,0,18.377,9.6l3.155,2.533a20.49,20.49,0,0,1-9.347,9.347L9.6,18.324A1.823,1.823,0,0,0,7.466,17.8L1.108,20.524A2,2,0,0,0,.044,22.672Z' transform='translate(0 0.006)' fill='%23003474'/%3E%3C/svg%3E%0A") no-repeat left 0px/30px;
   }
 }
 
 .trans {
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23910035}</style><path d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>') no-repeat left 6px/21px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:%23003474}</style><path d="M308.5 135.3c7.1-6.3 9.9-16.2 6.2-25c-2.3-5.3-4.8-10.5-7.6-15.5L304 89.4c-3-5-6.3-9.9-9.8-14.6c-5.7-7.6-15.7-10.1-24.7-7.1l-28.2 9.3c-10.7-8.8-23-16-36.2-20.9L199 27.1c-1.9-9.3-9.1-16.7-18.5-17.8C173.9 8.4 167.2 8 160.4 8h-.7c-6.8 0-13.5 .4-20.1 1.2c-9.4 1.1-16.6 8.6-18.5 17.8L115 56.1c-13.3 5-25.5 12.1-36.2 20.9L50.5 67.8c-9-3-19-.5-24.7 7.1c-3.5 4.7-6.8 9.6-9.9 14.6l-3 5.3c-2.8 5-5.3 10.2-7.6 15.6c-3.7 8.7-.9 18.6 6.2 25l22.2 19.8C32.6 161.9 32 168.9 32 176s.6 14.1 1.7 20.9L11.5 216.7c-7.1 6.3-9.9 16.2-6.2 25c2.3 5.3 4.8 10.5 7.6 15.6l3 5.2c3 5.1 6.3 9.9 9.9 14.6c5.7 7.6 15.7 10.1 24.7 7.1l28.2-9.3c10.7 8.8 23 16 36.2 20.9l6.1 29.1c1.9 9.3 9.1 16.7 18.5 17.8c6.7 .8 13.5 1.2 20.4 1.2s13.7-.4 20.4-1.2c9.4-1.1 16.6-8.6 18.5-17.8l6.1-29.1c13.3-5 25.5-12.1 36.2-20.9l28.2 9.3c9 3 19 .5 24.7-7.1c3.5-4.7 6.8-9.5 9.8-14.6l3.1-5.4c2.8-5 5.3-10.2 7.6-15.5c3.7-8.7 .9-18.6-6.2-25l-22.2-19.8c1.1-6.8 1.7-13.8 1.7-20.9s-.6-14.1-1.7-20.9l22.2-19.8zM112 176a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM504.7 500.5c6.3 7.1 16.2 9.9 25 6.2c5.3-2.3 10.5-4.8 15.5-7.6l5.4-3.1c5-3 9.9-6.3 14.6-9.8c7.6-5.7 10.1-15.7 7.1-24.7l-9.3-28.2c8.8-10.7 16-23 20.9-36.2l29.1-6.1c9.3-1.9 16.7-9.1 17.8-18.5c.8-6.7 1.2-13.5 1.2-20.4s-.4-13.7-1.2-20.4c-1.1-9.4-8.6-16.6-17.8-18.5L583.9 307c-5-13.3-12.1-25.5-20.9-36.2l9.3-28.2c3-9 .5-19-7.1-24.7c-4.7-3.5-9.6-6.8-14.6-9.9l-5.3-3c-5-2.8-10.2-5.3-15.6-7.6c-8.7-3.7-18.6-.9-25 6.2l-19.8 22.2c-6.8-1.1-13.8-1.7-20.9-1.7s-14.1 .6-20.9 1.7l-19.8-22.2c-6.3-7.1-16.2-9.9-25-6.2c-5.3 2.3-10.5 4.8-15.6 7.6l-5.2 3c-5.1 3-9.9 6.3-14.6 9.9c-7.6 5.7-10.1 15.7-7.1 24.7l9.3 28.2c-8.8 10.7-16 23-20.9 36.2L315.1 313c-9.3 1.9-16.7 9.1-17.8 18.5c-.8 6.7-1.2 13.5-1.2 20.4s.4 13.7 1.2 20.4c1.1 9.4 8.6 16.6 17.8 18.5l29.1 6.1c5 13.3 12.1 25.5 20.9 36.2l-9.3 28.2c-3 9-.5 19 7.1 24.7c4.7 3.5 9.5 6.8 14.6 9.8l5.4 3.1c5 2.8 10.2 5.3 15.5 7.6c8.7 3.7 18.6 .9 25-6.2l19.8-22.2c6.8 1.1 13.8 1.7 20.9 1.7s14.1-.6 20.9-1.7l19.8 22.2zM464 304a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>') no-repeat left 6px/21px;
   padding-left: 35px;
 }
 
 p.phone {
-  color: #f4a13d;
+  color: #003474;
   font-weight: 700;
 }
 
@@ -19602,7 +19605,7 @@ p.phone a {
 
 .hero-block-wrap .entry-meta,
 .entry-header .entry-meta {
-  color: #223b6e;
+  color: #003474;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   display: inline-block;
@@ -19644,7 +19647,7 @@ p.phone a {
 
 .single .wp-block-image figcaption {
   text-align: center;
-  color: #f4a13d;
+  color: #FFCB17;
   margin-top: 0;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -19816,7 +19819,7 @@ h3.footer-header {
 
 .tax-link a {
   text-decoration: none;
-  color: #223b6e;
+  color: #003474;
   text-transform: capitalize;
   font-family: "Lato", sans-serif;
   display: block;
@@ -19908,7 +19911,7 @@ h3.footer-header {
 
 .entry-footer .resources-grid {
   padding-bottom: 4rem;
-  border-bottom: 1px solid #223b6e;
+  border-bottom: 1px solid #003474;
 }
 
 @media screen and (min-width: 768px) {
@@ -20136,7 +20139,7 @@ Single Video
 }
 
 #Payment {
-  color: #f4a13d;
+  color: #003474;
   font-family: "Lato", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -20224,7 +20227,7 @@ button.read-less,
 button.read-more {
   font-size: 18px;
   cursor: pointer;
-  color: #f4a13d;
+  color: #000000;
   padding: 0;
   background: transparent;
 }
@@ -20283,7 +20286,7 @@ ul.feature {
   content: "+";
   display: inline-block;
   margin-left: 5px;
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 .accordion .feature {
@@ -20313,7 +20316,7 @@ body.archive .entry-header {
       align-content: center;
   position: relative;
   overflow: hidden;
-  background: #f4a13d;
+  background: #FFCB17;
 }
 
 @media screen and (min-width: 768px) {
@@ -20489,8 +20492,8 @@ div.gs_tm_theme23 .single-member-div {
 }
 
 .prev-next-navigation .next a:hover, .prev-next-navigation .previous a:hover {
-  background: #223b6e;
-  border: 1px solid #223b6e;
+  background: #003474;
+  border: 1px solid #003474;
 }
 
 .wp-block-table table {
@@ -20563,13 +20566,13 @@ div.gs_tm_theme23 .single-member-div {
 }
 
 .wp-block-table th {
-  background: #f4a13d;
+  background: #FFCB17;
   color: white;
 }
 
 td.year-sum {
   font-weight: bold;
-  background: #223b6e;
+  background: #003474;
 }
 
 .single-portfolio .post-content {
@@ -20765,7 +20768,7 @@ div.wprevpro_t1_DIV_2 p {
 
 .wprs_rd_more {
   font-weight: 400;
-  color: #f4a13d !important;
+  color: #FFCB17 !important;
 }
 
 .wprevpro_t1_DIV_2:after {
@@ -20831,7 +20834,7 @@ span.svg-wprsp-star-full {
 }
 
 div.wprev_preview_tcolor2_T1 > div.wprevpro_t1_rname {
-  color: #223b6e;
+  color: #003474;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: none;
@@ -20963,7 +20966,7 @@ button.slickwprev-prev:before {
 
 #gs_team_area_1 h3.gs-member-name {
   background: transparent;
-  color: #f4a13d;
+  color: #FFCB17;
   text-transform: none;
   padding: 0;
   margin-top: 15px;
@@ -21183,7 +21186,7 @@ body.single-gs_team .gs_member_details {
   padding-left: 0;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid #223b6e;
+  border-top: 1px solid #003474;
 }
 
 div.gs-single-default .gs-team-single-content .gs_ribon_wrapper::after {
@@ -21206,7 +21209,7 @@ body.single .gs-containeer .gs_team {
 
 .reviews header {
   text-align: center;
-  border-bottom: 1px solid #223b6e;
+  border-bottom: 1px solid #003474;
   margin-bottom: 25px;
 }
 
@@ -21322,7 +21325,7 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-name {
 }
 
 .hero h3 {
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 .hero-text .img-container {
@@ -23379,7 +23382,7 @@ html :where(.wp-block) {
 
 .wp-block.faq .content-column .header-title,
 .faq .content-column[data-toggled="true"] .header-title {
-  color: #223b6e;
+  color: #003474;
   background: #F0F0F0 url(img/up-chevron.svg) no-repeat 13px center/10px;
 }
 
@@ -24032,7 +24035,7 @@ div.wpex.horizontal-timeline .horizontal-nav li span.tl-point:before {
 }
 
 div.wpex.horizontal-timeline .horizontal-nav li.prev_item span.tl-point:before {
-  border-color: #223b6e;
+  border-color: #003474;
 }
 
 div.wpex.horizontal-timeline .timeline-hr {
@@ -24049,7 +24052,7 @@ div.wpex.horizontal-timeline .timeline-hr {
 }
 
 div.wpex.horizontal-timeline .timeline-pos-select {
-  border-bottom-color: #223b6e;
+  border-bottom-color: #003474;
 }
 
 div.wpex.horizontal-timeline .ex_s_lick-prev,
@@ -24093,8 +24096,8 @@ div.wpex h2 + .wptl-excerpt {
 div.wpex.horizontal-timeline .ex_s_lick-prev:hover,
 div.wpex.horizontal-timeline .ex_s_lick-next:hover {
   color: white;
-  background: #223b6e;
-  border-color: #223b6e;
+  background: #003474;
+  border-color: #003474;
 }
 
 div.wpex.horizontal-timeline:not(.no-arr-top) .hor-container {
@@ -24125,12 +24128,12 @@ div.wpex.horizontal-timeline:not(.ex-multi-item) .horizontal-nav .ex_s_lick-arro
 div.wpex.horizontal-timeline .ex_s_lick-prev,
 div.wpex.horizontal-timeline .ex_s_lick-next,
 div.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current span.tl-point:before {
-  color: #223b6e;
-  border-color: #223b6e;
+  color: #003474;
+  border-color: #003474;
 }
 
 div.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current span.tl-point:before {
-  background: #223b6e;
+  background: #003474;
 }
 
 div.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media + div {
@@ -24159,7 +24162,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 22px;
-  color: #223b6e;
+  color: #003474;
 }
 
 @media screen and (min-width: 768px) {
@@ -24335,7 +24338,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .text-cards-grid .cta .content p {
-  color: #f4a13d;
+  color: #FFCB17;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -24363,7 +24366,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .text-cards-grid .cta .content-footer p {
-  color: #f4a13d;
+  color: #FFCB17;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -24538,7 +24541,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .text-card h3 {
-  color: #f4a13d;
+  color: #003474;
 }
 
 .text-card p {
@@ -24703,7 +24706,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   font-family: "Lato", sans-serif;
   display: block;
   cursor: pointer;
-  color: #223b6e;
+  color: #003474;
   font-weight: 900;
   margin-bottom: 0;
   position: relative;
@@ -24719,7 +24722,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .tab.active .header-title {
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 .tab .header-title:before {
@@ -24730,7 +24733,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   width: 0;
   height: 0;
   position: absolute;
-  background: #f4a13d;
+  background: #FFCB17;
   transition-property: width;
   transition-duration: 0.65s;
 }
@@ -24800,7 +24803,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 
 .tab-content.content-cols ul li:before {
   content: "";
-  background: #f4a13d;
+  background: #FFCB17;
   border-radius: 7px;
   width: 7px;
   height: 7px;
@@ -25541,7 +25544,7 @@ ul.tax-list input.checkbox-component:checked + label:after {
   left: 3px;
   width: 16px;
   height: 16px;
-  background: #f4a13d;
+  background: #FFCB17;
 }
 
 ul.tax-list label {
@@ -25573,7 +25576,7 @@ ul.tax-list .tax-wrap:before {
   width: 22px;
   height: 22px;
   background: white;
-  border: 1px solid #f4a13d;
+  border: 1px solid #FFCB17;
 }
 
 h2.no-success-header {
@@ -25581,7 +25584,7 @@ h2.no-success-header {
   text-align: center;
   grid-column: 1/4;
   font-size: 24px;
-  color: #f4a13d;
+  color: #FFCB17;
   font-family: "Lato", sans-serif;
 }
 
@@ -25593,7 +25596,7 @@ h2.no-success-header {
 .pagination span,
 .pagination a {
   font-family: "Lato", sans-serif;
-  color: #f4a13d;
+  color: #FFCB17;
   font-size: 19px;
   text-decoration: none;
   margin-right: 5px;
@@ -25602,7 +25605,7 @@ h2.no-success-header {
 .pagination a.page-numbers:not(.prev):not(.next) {
   padding: 5px;
   display: inline-block;
-  border: 1px solid #f4a13d;
+  border: 1px solid #FFCB17;
 }
 
 header.section-header {
@@ -26383,7 +26386,7 @@ ul.tax-list .tax-wrap {
 }
 
 .list-item .wrap {
-  background: #223b6e;
+  background: #01819d;
   width: 90px;
   margin: 0;
 }
@@ -26424,7 +26427,7 @@ ul.tax-list .tax-wrap {
   content: counter(number-list);
   display: inline-block;
   float: left;
-  color: #f4a13d;
+  color: #01819d;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 22px;
@@ -26592,7 +26595,7 @@ ul.tax-list .tax-wrap {
 }
 
 .comparison-table .table-row:first-child .table-cell:nth-of-type(odd) {
-  background: #223b6e;
+  background: #003474;
 }
 
 .comparison-table .table-row:first-child .table-cell:nth-of-type(even) {
@@ -26668,7 +26671,7 @@ ul.tax-list .tax-wrap {
 
 .callout .wrap {
   width: 120px;
-  background: #223b6e;
+  background: #01819d;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -26859,7 +26862,7 @@ ul.tax-list .tax-wrap {
 }
 
 .side-table .table-row .table-cell-icon {
-  background: #223b6e;
+  background: #01819d;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -27009,7 +27012,7 @@ ul.tax-list .tax-wrap {
 .contact-alt-section .content-column .accordion h5 button,
 .accordion h5 .contact-alt-section .content-column button,
 .contact-alt-section .content-column h6 {
-  color: #f4a13d;
+  color: #003474;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -27170,7 +27173,7 @@ ul.tax-list .tax-wrap {
 
 .payment {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  border: 3px solid #f4a13d;
+  border: 3px solid #FFCB17;
   padding: 25px;
   text-align: center;
   display: -ms-flexbox;

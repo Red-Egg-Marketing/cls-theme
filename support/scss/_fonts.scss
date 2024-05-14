@@ -47,7 +47,7 @@ i.fa {
 
 .edit-post-visual-editor__content-area ul li:not([class]):before, .entry-content ul li:not([class]):before {
 	content: "\2022";
-	color: $red;
+	color: $body-color;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -71,7 +71,7 @@ i.fa {
 }
 
 .edit-post-visual-editor__content-area a, .entry-content a {
-	color: $head-color;
+	color: $body-color;
 }
 
 .edit-post-visual-editor__content-area strong,.entry-content strong {
@@ -113,7 +113,7 @@ i.fa {
 .edit-post-visual-editor__content-area h1, .entry-content h1 {
 	font-size: 35px;
 	line-height: 44px;
-	color: $red;
+	color: $navy;
 	margin-top: 2rem;
 	font-family: $font-head;
 	text-transform: none;
@@ -131,7 +131,7 @@ i.fa {
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
 	font-size: 30px;
 	line-height: 44px;
-	color: $red;
+	color: $navy;
 	margin-top: 1.75rem;
 	font-family: $font-head;
 	text-transform: none;

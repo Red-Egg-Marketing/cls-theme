@@ -82,7 +82,7 @@ i.fa {
 
 .edit-post-visual-editor__content-area ul li:not([class]):before, .entry-content ul li:not([class]):before {
   content: "\2022";
-  color: #f4a13d;
+  color: #000000;
   position: absolute;
   top: 0;
   left: 0;
@@ -97,7 +97,7 @@ i.fa {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #f4a13d;
+  color: #FFCB17;
   font-weight: 500;
 }
 
@@ -109,7 +109,7 @@ i.fa {
 }
 
 .edit-post-visual-editor__content-area a, .entry-content a {
-  color: #f4a13d;
+  color: #000000;
 }
 
 .edit-post-visual-editor__content-area strong, .entry-content strong {
@@ -161,7 +161,7 @@ i.fa {
 .edit-post-visual-editor__content-area h1, .entry-content h1 {
   font-size: 35px;
   line-height: 44px;
-  color: #f4a13d;
+  color: #003474;
   margin-top: 2rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -182,7 +182,7 @@ i.fa {
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
   font-size: 30px;
   line-height: 44px;
-  color: #f4a13d;
+  color: #003474;
   margin-top: 1.75rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -201,7 +201,7 @@ i.fa {
 .related-posts h3,
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
-  color: #223b6e;
+  color: #003474;
   font-size: 23px;
   line-height: 31px;
   text-transform: none;
@@ -288,7 +288,7 @@ i.fa {
 .has-red-color p,
 .has-red-color,
 .entry-content .has-red-color {
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 background {
@@ -529,7 +529,7 @@ div.components-select-control {
 h1 {
   font-size: 42px;
   line-height: 49px;
-  color: #f4a13d;
+  color: #FFCB17;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -546,7 +546,7 @@ h1 {
 }
 
 h3 {
-  color: #f4a13d;
+  color: #FFCB17;
   font-family: "Lato", sans-serif;
   font-size: 35px;
   line-height: 40px;
@@ -566,7 +566,7 @@ h3 {
 
 h4 {
   font-family: "Lato", sans-serif;
-  color: #f4a13d;
+  color: #FFCB17;
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
@@ -607,7 +607,11 @@ h4 {
 }
 
 .navy {
-  background-color: #223b6e;
+  background-color: #003474;
+}
+
+.blue {
+  background-color: #01819d;
 }
 
 .resources-grid:not(.swiper-wrapper) .block-wrapper {
@@ -700,7 +704,7 @@ h4 {
 .resource-card .resource-year,
 .resource-card .resource-title {
   margin: 0;
-  color: #000000;
+  color: #003474;
 }
 
 .resource-card .resource-excerpt,
@@ -738,7 +742,6 @@ h4 {
 }
 
 .resource-card .resource-title {
-  color: #f4a13d;
   font-size: 19px;
   letter-spacing: 0;
   font-weight: 700;
@@ -1035,7 +1038,7 @@ h4 {
 .entry-content .resource-card .tax-item {
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
-  color: #223b6e;
+  color: #003474;
   font-size: 15px;
   letter-spacing: 0.65px;
   margin-bottom: 0;
@@ -1235,8 +1238,8 @@ div.gs_team_area .gs-team-filter-cats li a,
 a[download],
 input[type="submit"],
 button.wp-button {
-  background: #f4a13d;
-  color: white;
+  background: #FFCB17;
+  color: #003474;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -1324,7 +1327,7 @@ input[type="submit"].wp-cancel-pw:hover,
 button.wp-button.bp-secondary-action:hover,
 button.wp-button.wp-cancel-pw:hover {
   background: none;
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 @media screen and (min-width: 768px) {
@@ -1376,7 +1379,7 @@ div.gs_team_area .gs-team-filter-cats li a:hover,
 a:hover[download],
 input[type="submit"]:hover,
 button.wp-button:hover {
-  background: #223b6e;
+  background: #003474;
   color: white;
 }
 
@@ -1398,12 +1401,12 @@ button.wp-button[disabled] {
 }
 
 div.gs_team_area .gs-team-filter-cats li a {
-  border-top: 2px solid #f4a13d !important;
-  border-left: 2px solid #f4a13d !important;
-  border-right: 2px solid #f4a13d !important;
-  border-bottom: 4px solid #f4a13d !important;
+  border-top: 2px solid #FFCB17 !important;
+  border-left: 2px solid #FFCB17 !important;
+  border-right: 2px solid #FFCB17 !important;
+  border-bottom: 4px solid #FFCB17 !important;
   border-radius: 0 !important;
-  color: #f4a13d !important;
+  color: #FFCB17 !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -1415,13 +1418,13 @@ div.gs_team_area .gs-team-filter-cats li a {
 }
 
 div.gs_team_area .gs-team-filter-cats li a:hover {
-  background: #f4a13d !important;
+  background: #FFCB17 !important;
   color: white !important;
 }
 
 ul.gs-team-filter-cats li.filter.active > a {
-  background: #f4a13d !important;
-  border-color: #f4a13d !important;
+  background: #FFCB17 !important;
+  border-color: #FFCB17 !important;
 }
 
 .fixed-buttons {
@@ -1533,7 +1536,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-yellow 
 .wp-block-button.is-style-solid-yellow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-yellow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: #F79A6C;
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 .wp-block-button__link.is-style-solid-blue-green, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green, a.is-style-solid-blue-green[download], div.gform_wrapper input.is-style-solid-blue-green[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -1556,8 +1559,8 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-gr
 .wp-block-button.is-style-solid-blue-green a:hover[download],
 .wp-block-button.is-style-solid-blue-green div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-blue-green input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  color: #223b6e;
-  background: #F99D33;
+  color: #003474;
+  background: #FFCB17;
 }
 
 .wp-block-button__link.is-style-solid-navy, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-navy, a.is-style-solid-navy[download], div.gform_wrapper input.is-style-solid-navy[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -1568,7 +1571,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a,
 .wp-block-button.is-style-solid-navy a[download],
 .wp-block-button.is-style-solid-navy div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
-  background: #223b6e;
+  background: #003474;
   color: white;
 }
 
@@ -1581,7 +1584,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a:
 .wp-block-button.is-style-solid-navy div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   color: white;
-  background: #223b6e;
+  background: #003474;
 }
 
 .wp-block-button__link.is-style-text-yellow-arrow, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow, a.is-style-text-yellow-arrow[download], div.gform_wrapper input.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
@@ -1593,7 +1596,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-text-yellow-a
 .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: none;
-  color: #f4a13d;
+  color: #FFCB17;
   padding: 0;
   border-radius: 0;
   border: none;
@@ -1646,7 +1649,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:n
 .wp-block-button.is-style-outline > a:not(.has-text-color):hover[download],
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 .wp-button.is-style-outline:visited,
@@ -1672,7 +1675,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:n
 .wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited[download],
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 
@@ -1681,7 +1684,7 @@ div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:visited {
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 
@@ -1730,7 +1733,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(0%);
@@ -1747,7 +1750,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(1%);
@@ -1764,7 +1767,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(2%);
@@ -1781,7 +1784,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(3%);
@@ -1798,7 +1801,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(4%);
@@ -1815,7 +1818,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(5%);
@@ -1832,7 +1835,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(6%);
@@ -1849,7 +1852,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(7%);
@@ -1866,7 +1869,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(8%);
@@ -1883,7 +1886,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(9%);
@@ -1900,7 +1903,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(10%);
@@ -1917,7 +1920,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(11%);
@@ -1934,7 +1937,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(12%);
@@ -1951,7 +1954,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(13%);
@@ -1968,7 +1971,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(14%);
@@ -1985,7 +1988,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(15%);
@@ -2002,7 +2005,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(16%);
@@ -2019,7 +2022,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(17%);
@@ -2036,7 +2039,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(18%);
@@ -2053,7 +2056,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(19%);
@@ -2070,7 +2073,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(20%);
@@ -2087,7 +2090,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(21%);
@@ -2104,7 +2107,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(22%);
@@ -2121,7 +2124,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(23%);
@@ -2138,7 +2141,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(24%);
@@ -2155,7 +2158,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(25%);
@@ -2172,7 +2175,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(26%);
@@ -2189,7 +2192,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(27%);
@@ -2206,7 +2209,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(28%);
@@ -2223,7 +2226,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(29%);
@@ -2240,7 +2243,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(30%);
@@ -2257,7 +2260,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(31%);
@@ -2274,7 +2277,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(32%);
@@ -2291,7 +2294,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(33%);
@@ -2308,7 +2311,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(34%);
@@ -2325,7 +2328,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(35%);
@@ -2342,7 +2345,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(36%);
@@ -2359,7 +2362,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(37%);
@@ -2376,7 +2379,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(38%);
@@ -2393,7 +2396,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(39%);
@@ -2410,7 +2413,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(40%);
@@ -2427,7 +2430,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(41%);
@@ -2444,7 +2447,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(42%);
@@ -2461,7 +2464,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(43%);
@@ -2478,7 +2481,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(44%);
@@ -2495,7 +2498,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(45%);
@@ -2512,7 +2515,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(46%);
@@ -2529,7 +2532,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(47%);
@@ -2546,7 +2549,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(48%);
@@ -2563,7 +2566,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(49%);
@@ -2580,7 +2583,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(50%);
@@ -2597,7 +2600,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(51%);
@@ -2614,7 +2617,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(52%);
@@ -2631,7 +2634,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(53%);
@@ -2648,7 +2651,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(54%);
@@ -2665,7 +2668,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(55%);
@@ -2682,7 +2685,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(56%);
@@ -2699,7 +2702,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(57%);
@@ -2716,7 +2719,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(58%);
@@ -2733,7 +2736,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(59%);
@@ -2750,7 +2753,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(60%);
@@ -2767,7 +2770,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(61%);
@@ -2784,7 +2787,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(62%);
@@ -2801,7 +2804,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(63%);
@@ -2818,7 +2821,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(64%);
@@ -2835,7 +2838,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(65%);
@@ -2852,7 +2855,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(66%);
@@ -2869,7 +2872,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(67%);
@@ -2886,7 +2889,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(68%);
@@ -2903,7 +2906,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(69%);
@@ -2920,7 +2923,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(70%);
@@ -2937,7 +2940,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(71%);
@@ -2954,7 +2957,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(72%);
@@ -2971,7 +2974,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(73%);
@@ -2988,7 +2991,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(74%);
@@ -3005,7 +3008,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(75%);
@@ -3022,7 +3025,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(76%);
@@ -3039,7 +3042,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(77%);
@@ -3056,7 +3059,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(78%);
@@ -3073,7 +3076,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(79%);
@@ -3090,7 +3093,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(80%);
@@ -3107,7 +3110,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(81%);
@@ -3124,7 +3127,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(82%);
@@ -3141,7 +3144,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(83%);
@@ -3158,7 +3161,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(84%);
@@ -3175,7 +3178,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(85%);
@@ -3192,7 +3195,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(86%);
@@ -3209,7 +3212,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(87%);
@@ -3226,7 +3229,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(88%);
@@ -3243,7 +3246,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(89%);
@@ -3260,7 +3263,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(90%);
@@ -3277,7 +3280,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(91%);
@@ -3294,7 +3297,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(92%);
@@ -3311,7 +3314,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(93%);
@@ -3328,7 +3331,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(94%);
@@ -3345,7 +3348,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(95%);
@@ -3362,7 +3365,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(96%);
@@ -3379,7 +3382,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(97%);
@@ -3396,7 +3399,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(98%);
@@ -3413,7 +3416,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(99%);
@@ -3430,7 +3433,7 @@ a[download] {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: #f4a13d;
+  background: #003474;
   height: 6px;
   top: 25px;
   width: calc(100%);
@@ -3530,9 +3533,9 @@ div.gform_wrapper textarea {
   width: 100%;
   display: none;
   background: white;
-  border-left: 1px solid #f4a13d;
-  border-right: 1px solid #f4a13d;
-  border-bottom: 1px solid #f4a13d;
+  border-left: 1px solid #FFCB17;
+  border-right: 1px solid #FFCB17;
+  border-bottom: 1px solid #FFCB17;
   overflow: auto;
   max-height: 350px;
 }
@@ -4467,7 +4470,7 @@ div.gform_wrapper p {
 
 input[type="range"] {
   background: transparent;
-  background-image: linear-gradient(#f4a13d, #f4a13d);
+  background-image: linear-gradient(#003474, #003474);
   background-size: 0% 100%;
   background-repeat: no-repeat;
   -webkit-appearance: none;
@@ -4500,7 +4503,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 28px;
-  background: #f4a13d;
+  background: #003474;
   cursor: pointer;
   margin-top: -7.5px;
   /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
@@ -4515,7 +4518,7 @@ input[type=range]::-moz-range-thumb {
   height: 20px;
   width: 20px;
   border-radius: 28px;
-  background: #f4a13d;
+  background: #FFCB17;
   cursor: pointer;
 }
 
@@ -5339,13 +5342,13 @@ button.swiper-pagination-bullet {
 }
 
 .wp-block-table th {
-  background: #f4a13d;
+  background: #FFCB17;
   color: white;
 }
 
 td.year-sum {
   font-weight: bold;
-  background: #223b6e;
+  background: #003474;
 }
 
 /*--------------------------------------------------------------
@@ -5409,7 +5412,7 @@ td.year-sum {
 }
 
 .hero h3 {
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 .hero-text .img-container {
@@ -7460,7 +7463,7 @@ html :where(.wp-block) {
 
 .wp-block.faq .content-column .header-title,
 .faq .content-column[data-toggled="true"] .header-title {
-  color: #223b6e;
+  color: #003474;
   background: #F0F0F0 url(img/up-chevron.svg) no-repeat 13px center/10px;
 }
 
@@ -8113,7 +8116,7 @@ div.wpex.horizontal-timeline .horizontal-nav li span.tl-point:before {
 }
 
 div.wpex.horizontal-timeline .horizontal-nav li.prev_item span.tl-point:before {
-  border-color: #223b6e;
+  border-color: #003474;
 }
 
 div.wpex.horizontal-timeline .timeline-hr {
@@ -8130,7 +8133,7 @@ div.wpex.horizontal-timeline .timeline-hr {
 }
 
 div.wpex.horizontal-timeline .timeline-pos-select {
-  border-bottom-color: #223b6e;
+  border-bottom-color: #003474;
 }
 
 div.wpex.horizontal-timeline .ex_s_lick-prev,
@@ -8174,8 +8177,8 @@ div.wpex h2 + .wptl-excerpt {
 div.wpex.horizontal-timeline .ex_s_lick-prev:hover,
 div.wpex.horizontal-timeline .ex_s_lick-next:hover {
   color: white;
-  background: #223b6e;
-  border-color: #223b6e;
+  background: #003474;
+  border-color: #003474;
 }
 
 div.wpex.horizontal-timeline:not(.no-arr-top) .hor-container {
@@ -8206,12 +8209,12 @@ div.wpex.horizontal-timeline:not(.ex-multi-item) .horizontal-nav .ex_s_lick-arro
 div.wpex.horizontal-timeline .ex_s_lick-prev,
 div.wpex.horizontal-timeline .ex_s_lick-next,
 div.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current span.tl-point:before {
-  color: #223b6e;
-  border-color: #223b6e;
+  color: #003474;
+  border-color: #003474;
 }
 
 div.wpex.horizontal-timeline .horizontal-nav li.ex_s_lick-current span.tl-point:before {
-  background: #223b6e;
+  background: #003474;
 }
 
 div.wpex.horizontal-timeline.wpex-horizontal-left .timeline-media + div {
@@ -8240,7 +8243,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 22px;
-  color: #223b6e;
+  color: #003474;
 }
 
 @media screen and (min-width: 768px) {
@@ -8416,7 +8419,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .text-cards-grid .cta .content p {
-  color: #f4a13d;
+  color: #FFCB17;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -8444,7 +8447,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .text-cards-grid .cta .content-footer p {
-  color: #f4a13d;
+  color: #FFCB17;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -8615,7 +8618,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .text-card h3 {
-  color: #f4a13d;
+  color: #003474;
 }
 
 .text-card p {
@@ -8780,7 +8783,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   font-family: "Lato", sans-serif;
   display: block;
   cursor: pointer;
-  color: #223b6e;
+  color: #003474;
   font-weight: 900;
   margin-bottom: 0;
   position: relative;
@@ -8796,7 +8799,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 }
 
 .tab.active .header-title {
-  color: #f4a13d;
+  color: #FFCB17;
 }
 
 .tab .header-title:before {
@@ -8807,7 +8810,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
   width: 0;
   height: 0;
   position: absolute;
-  background: #f4a13d;
+  background: #FFCB17;
   transition-property: width;
   transition-duration: 0.65s;
 }
@@ -8877,7 +8880,7 @@ div.wpex.horizontal-timeline .wpex-timeline-label h2 {
 
 .tab-content.content-cols ul li:before {
   content: "";
-  background: #f4a13d;
+  background: #FFCB17;
   border-radius: 7px;
   width: 7px;
   height: 7px;
@@ -9647,7 +9650,7 @@ ul.tax-list input.checkbox-component:checked + label:after {
   left: 3px;
   width: 16px;
   height: 16px;
-  background: #f4a13d;
+  background: #FFCB17;
 }
 
 ul.tax-list label {
@@ -9679,7 +9682,7 @@ ul.tax-list .tax-wrap:before {
   width: 22px;
   height: 22px;
   background: white;
-  border: 1px solid #f4a13d;
+  border: 1px solid #FFCB17;
 }
 
 h2.no-success-header {
@@ -9687,7 +9690,7 @@ h2.no-success-header {
   text-align: center;
   grid-column: 1/4;
   font-size: 24px;
-  color: #f4a13d;
+  color: #FFCB17;
   font-family: "Lato", sans-serif;
 }
 
@@ -9699,7 +9702,7 @@ h2.no-success-header {
 .pagination span,
 .pagination a {
   font-family: "Lato", sans-serif;
-  color: #f4a13d;
+  color: #FFCB17;
   font-size: 19px;
   text-decoration: none;
   margin-right: 5px;
@@ -9708,7 +9711,7 @@ h2.no-success-header {
 .pagination a.page-numbers:not(.prev):not(.next) {
   padding: 5px;
   display: inline-block;
-  border: 1px solid #f4a13d;
+  border: 1px solid #FFCB17;
 }
 
 header.section-header {
@@ -10452,7 +10455,7 @@ ul.tax-list .tax-wrap {
 }
 
 .list-item .wrap {
-  background: #223b6e;
+  background: #01819d;
   width: 90px;
   margin: 0;
 }
@@ -10493,7 +10496,7 @@ ul.tax-list .tax-wrap {
   content: counter(number-list);
   display: inline-block;
   float: left;
-  color: #f4a13d;
+  color: #01819d;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 22px;
@@ -10661,7 +10664,7 @@ ul.tax-list .tax-wrap {
 }
 
 .comparison-table .table-row:first-child .table-cell:nth-of-type(odd) {
-  background: #223b6e;
+  background: #003474;
 }
 
 .comparison-table .table-row:first-child .table-cell:nth-of-type(even) {
@@ -10737,7 +10740,7 @@ ul.tax-list .tax-wrap {
 
 .callout .wrap {
   width: 120px;
-  background: #223b6e;
+  background: #01819d;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -10928,7 +10931,7 @@ ul.tax-list .tax-wrap {
 }
 
 .side-table .table-row .table-cell-icon {
-  background: #223b6e;
+  background: #01819d;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -11076,7 +11079,7 @@ ul.tax-list .tax-wrap {
 .contact-alt-section .content-column h4,
 .contact-alt-section .content-column h5,
 .contact-alt-section .content-column h6 {
-  color: #f4a13d;
+  color: #003474;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -11234,7 +11237,7 @@ ul.tax-list .tax-wrap {
 
 .payment {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  border: 3px solid #f4a13d;
+  border: 3px solid #FFCB17;
   padding: 25px;
   text-align: center;
   display: -ms-flexbox;

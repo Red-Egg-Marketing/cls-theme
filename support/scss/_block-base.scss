@@ -194,6 +194,10 @@ h4 {
 	background-color: $navy;
 }
 
+.blue {
+	background-color: $blue;
+}
+
 
 // Resource Cards
 
@@ -274,7 +278,7 @@ h4 {
 .resource-card .resource-year,
 .resource-card .resource-title {
 	margin: 0;
-	color: $body-color;
+	color: $navy;
 }
 
 .resource-card .resource-excerpt,
@@ -306,7 +310,6 @@ h4 {
 }
 
 .resource-card .resource-title {
-	color: $red;
 	font-size: 19px;
 	letter-spacing: 0;
 	font-weight: 700;

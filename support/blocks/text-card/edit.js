@@ -19,6 +19,7 @@ const template = [
 
 const colors = [
     { name: 'Navy', color: 'rgba(0, 57, 92)', slug: 'navy' },
+    { name: 'Blue', color: 'rgba(1, 129, 157)', slug: 'blue' },
 ];
 
 const widthOptions = [

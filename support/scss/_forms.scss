@@ -28,7 +28,7 @@
     content: "";
     position: absolute;
     pointer-events: none;
-    background: $red;
+    background: $navy;
     height: 6px;
     top: 25px;
     width: calc(#{$i}#{'%'});
@@ -880,7 +880,7 @@ div.gform_wrapper p {
 
 input[type="range"] {
 	background: transparent;
-	background-image: linear-gradient($red, $red);
+	background-image: linear-gradient($navy, $navy);
 	background-size: 0% 100%;
 	background-repeat: no-repeat;
 	appearance: none;
@@ -911,7 +911,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius:28px;
-  background: $red;
+  background: $navy;
   cursor: pointer;
   margin-top: -7.5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
 }

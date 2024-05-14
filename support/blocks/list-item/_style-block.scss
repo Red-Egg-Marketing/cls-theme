@@ -3,7 +3,7 @@
 }
 
 .list-item .wrap {
-	background: $bg-color-7;
+	background: $blue;
 	width: 90px;
 	margin: 0;
 	@media screen and (min-width: $small-width) {
@@ -35,7 +35,7 @@
 	content: counter(number-list);
 	display: inline-block;
 	float: left;
-	color: $red;
+	color: $blue;
 	font-family: $font-body;
 	font-weight: 900;
 	font-size: 22px;
