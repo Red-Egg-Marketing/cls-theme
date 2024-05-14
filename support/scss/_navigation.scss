@@ -409,7 +409,7 @@ li.menu-item.nav-button a {
 }
 
 .main-navigation .menu-item a:hover {
-	color: $navy;
+	color: $blue;
 }
 
 .menu-primary-menu-container .menu-item,
@@ -595,7 +595,7 @@ li.menu-item.nav-button a {
 	line-height: 27px;
 	position: relative;
 	&:hover {
-		color: $red;
+		color: $blue
 	}
 	@media screen and (min-width:  $med-small-width) {
 		font-size: 18px;

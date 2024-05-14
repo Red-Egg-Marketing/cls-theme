@@ -113,7 +113,7 @@ i.fa {
 .edit-post-visual-editor__content-area h1, .entry-content h1 {
 	font-size: 35px;
 	line-height: 44px;
-	color: $navy;
+	color: $body-color;
 	margin-top: 2rem;
 	font-family: $font-head;
 	text-transform: none;
@@ -131,7 +131,7 @@ i.fa {
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
 	font-size: 30px;
 	line-height: 44px;
-	color: $navy;
+	color: $body-color;
 	margin-top: 1.75rem;
 	font-family: $font-head;
 	text-transform: none;
@@ -146,7 +146,7 @@ i.fa {
 .related-posts h3,
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
-	color: $bg-color-7;
+	color: $body-color;
 	font-size: 23px;
 	line-height: 31px;
 	text-transform: none;

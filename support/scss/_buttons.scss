@@ -39,10 +39,10 @@ button.wp-button {
 		padding: 15px 25px;
 	}
 	&:visited {
-		color: white;
+		color: $navy;
 	}
 	&:hover {
-		background: $navy;
+		background: $blue;
 		color: white;
 	}
 	&[disabled] {

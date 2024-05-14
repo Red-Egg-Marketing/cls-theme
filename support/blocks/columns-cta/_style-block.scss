@@ -153,6 +153,13 @@
 	text-decoration: none;
 }
 
+.columns-cta .wp-block-cover__inner-container a.wp-block-button__link {
+	color: $navy;
+}
+.columns-cta .wp-block-cover__inner-container a.wp-block-button__link:hover {
+	color: white;
+}
+
 .columns-cta .wp-block-cover__inner-container p a,
 .columns-cta .wp-block-cover__inner-container p {
 	color: white;

@@ -161,7 +161,7 @@ i.fa {
 .edit-post-visual-editor__content-area h1, .entry-content h1 {
   font-size: 35px;
   line-height: 44px;
-  color: #003474;
+  color: #000000;
   margin-top: 2rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -182,7 +182,7 @@ i.fa {
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
   font-size: 30px;
   line-height: 44px;
-  color: #003474;
+  color: #000000;
   margin-top: 1.75rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -201,7 +201,7 @@ i.fa {
 .related-posts h3,
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
-  color: #003474;
+  color: #000000;
   font-size: 23px;
   line-height: 31px;
   text-transform: none;
@@ -1363,7 +1363,7 @@ div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
 input[type="submit"]:visited,
 button.wp-button:visited {
-  color: white;
+  color: #003474;
 }
 
 button.wprevpro_load_more_btn:hover,
@@ -1379,7 +1379,7 @@ div.gs_team_area .gs-team-filter-cats li a:hover,
 a:hover[download],
 input[type="submit"]:hover,
 button.wp-button:hover {
-  background: #003474;
+  background: #01819d;
   color: white;
 }
 
@@ -10383,6 +10383,14 @@ ul.tax-list .tax-wrap {
   text-decoration: none;
 }
 
+.columns-cta .wp-block-cover__inner-container a.wp-block-button__link, .columns-cta .wp-block-cover__inner-container div.gs_team_area .gs-team-filter-cats li a, div.gs_team_area .gs-team-filter-cats li .columns-cta .wp-block-cover__inner-container a, .columns-cta .wp-block-cover__inner-container a[download] {
+  color: #003474;
+}
+
+.columns-cta .wp-block-cover__inner-container a.wp-block-button__link:hover, .columns-cta .wp-block-cover__inner-container div.gs_team_area .gs-team-filter-cats li a:hover, div.gs_team_area .gs-team-filter-cats li .columns-cta .wp-block-cover__inner-container a:hover, .columns-cta .wp-block-cover__inner-container a:hover[download] {
+  color: white;
+}
+
 .columns-cta .wp-block-cover__inner-container p a,
 .columns-cta .wp-block-cover__inner-container p {
   color: white;
@@ -10455,7 +10463,7 @@ ul.tax-list .tax-wrap {
 }
 
 .list-item .wrap {
-  background: #01819d;
+  background: #003474;
   width: 90px;
   margin: 0;
 }

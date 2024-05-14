@@ -12474,7 +12474,7 @@ i.fa {
 .edit-post-visual-editor__content-area h1, .entry-content h1 {
   font-size: 35px;
   line-height: 44px;
-  color: #003474;
+  color: #000000;
   margin-top: 2rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -12495,7 +12495,7 @@ i.fa {
 .edit-post-visual-editor__content-area h2, .entry-content h2 {
   font-size: 30px;
   line-height: 44px;
-  color: #003474;
+  color: #000000;
   margin-top: 1.75rem;
   font-family: "Lato", sans-serif;
   text-transform: none;
@@ -12514,7 +12514,7 @@ i.fa {
 .related-posts h3,
 .gs_team h3,
 .edit-post-visual-editor__content-area h3, .entry-content h3 {
-  color: #003474;
+  color: #000000;
   font-size: 23px;
   line-height: 31px;
   text-transform: none;
@@ -12873,7 +12873,7 @@ a:visited[download],
 li.menu-item.nav-button a:visited,
 input[type="submit"]:visited,
 button.wp-button:visited {
-  color: white;
+  color: #003474;
 }
 
 button.wprevpro_load_more_btn:hover,
@@ -12891,7 +12891,7 @@ a:hover[download],
 li.menu-item.nav-button a:hover,
 input[type="submit"]:hover,
 button.wp-button:hover {
-  background: #003474;
+  background: #01819d;
   color: white;
 }
 
@@ -13771,7 +13771,7 @@ li.menu-item.nav-button a:hover {
 }
 
 .main-navigation .menu-item a:hover {
-  color: #003474;
+  color: #01819d;
 }
 
 .menu-primary-menu-container .menu-item,
@@ -14007,7 +14007,7 @@ li.menu-item.nav-button a:hover {
 }
 
 .main-navigation .sub-menu .menu-item a:hover {
-  color: #FFCB17;
+  color: #01819d;
 }
 
 @media screen and (min-width: 1080px) {
@@ -26314,6 +26314,14 @@ ul.tax-list .tax-wrap {
   text-decoration: none;
 }
 
+.columns-cta .wp-block-cover__inner-container a.wp-block-button__link, .columns-cta .wp-block-cover__inner-container div.gs_team_area .gs-team-filter-cats li a, div.gs_team_area .gs-team-filter-cats li .columns-cta .wp-block-cover__inner-container a, .columns-cta .wp-block-cover__inner-container a[download], .columns-cta .wp-block-cover__inner-container li.menu-item.nav-button a, li.menu-item.nav-button .columns-cta .wp-block-cover__inner-container a {
+  color: #003474;
+}
+
+.columns-cta .wp-block-cover__inner-container a.wp-block-button__link:hover, .columns-cta .wp-block-cover__inner-container div.gs_team_area .gs-team-filter-cats li a:hover, div.gs_team_area .gs-team-filter-cats li .columns-cta .wp-block-cover__inner-container a:hover, .columns-cta .wp-block-cover__inner-container a:hover[download], .columns-cta .wp-block-cover__inner-container li.menu-item.nav-button a:hover, li.menu-item.nav-button .columns-cta .wp-block-cover__inner-container a:hover {
+  color: white;
+}
+
 .columns-cta .wp-block-cover__inner-container p a,
 .columns-cta .wp-block-cover__inner-container p {
   color: white;
@@ -26386,7 +26394,7 @@ ul.tax-list .tax-wrap {
 }
 
 .list-item .wrap {
-  background: #01819d;
+  background: #003474;
   width: 90px;
   margin: 0;
 }
