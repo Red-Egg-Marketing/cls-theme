@@ -67,7 +67,7 @@ if (function_exists('get_field')) {
             </div>
             <div class="footer-menu">
                 <p>
-                       Copyright &copy;<?php echo date("Y"); ?> Centennial Leasing & Sales
+                       Copyright &copy;<?php echo date("Y"); ?> Members Auto Center powered by Centennial Leasing & Sales
                 </p> 
                 <?php
                     wp_nav_menu(
