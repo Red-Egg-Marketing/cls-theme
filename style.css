@@ -13189,7 +13189,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:n
 li.menu-item.nav-button .wp-block-button.is-style-outline > a:not(.has-text-color):hover,
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
-  color: #FFCB17;
+  color: black;
 }
 
 .wp-button.is-style-outline:visited,
@@ -13219,7 +13219,7 @@ div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:n
 li.menu-item.nav-button .wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited,
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
-  color: #FFCB17;
+  color: black;
 }
 
 

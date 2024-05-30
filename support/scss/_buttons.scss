@@ -205,7 +205,7 @@ ul.gs-team-filter-cats li.filter.active>a {
 	color: white;
 	&:hover {
 		background: rgba(255, 255, 255, 0.8);
-		color: $red;
+		color: black;
 	}
 	&:visited {
 		background: rgba(255, 255, 255, 0.8);
@@ -213,7 +213,7 @@ ul.gs-team-filter-cats li.filter.active>a {
 	}
 	&:hover:visited {
 		background: rgba(255, 255, 255, 0.8);
-		color: $red;
+		color: black;
 	}
 }
 
