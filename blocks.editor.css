@@ -6478,6 +6478,10 @@ td.year-sum {
   margin-top: 0;
 }
 
+.image-columns .content-columns .content-column ul {
+  padding-left: 0;
+}
+
 .image-columns .block-wrapper {
   max-width: 1620px;
   width: 100%;

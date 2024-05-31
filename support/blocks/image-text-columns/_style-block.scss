@@ -35,6 +35,10 @@
 	margin-top: 0;
 }
 
+.image-columns .content-columns .content-column ul {
+	padding-left: 0;
+}
+
 .image-columns .block-wrapper {
 	max-width: $max-cont-w - 300px;
 	width: 100%;
