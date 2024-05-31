@@ -13308,6 +13308,17 @@ body.nav-active .site-header:after {
   }
 }
 
+.secondary-navigation .header-logo {
+  max-width: 160px;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .secondary-navigation .header-logo {
+    max-width: 180px;
+  }
+}
+
 .site-header {
   width: 100%;
 }
@@ -13585,8 +13596,8 @@ a.custom-logo-link {
   display: flex;
   -ms-flex-align: stretch;
       align-items: stretch;
-  padding-left: .25rem;
-  padding-right: .25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -14020,7 +14031,7 @@ li.menu-item.nav-button a:hover {
 }
 
 .secondary-navigation {
-  height: 40px;
+  height: 55px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -14034,13 +14045,15 @@ li.menu-item.nav-button a:hover {
 
 @media screen and (min-width: 768px) {
   .secondary-navigation {
-    height: 50px;
+    height: 64px;
   }
 }
 
 .secondary-navigation .wrapper {
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 @media screen and (min-width: 768px) {

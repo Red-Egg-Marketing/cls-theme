@@ -9,13 +9,16 @@
  * @package cls
  */
 
-$phone = get_field('business_phone', 'options');
-$phone_tag = get_field('phone_tagline', 'options');
-$modal_form = get_field('menu_form', 'options');
-$global_button = get_field('global_estimate_button', 'options');
-$override = get_field('override_menu', 'options');
-$menu_class = $override == 'yes' ? ' override' : '';
-$blurb = get_field('menu_blurb', 'options');
+if (function_exists('get_field')) {
+	$phone = get_field('business_phone', 'options');
+	$phone_tag = get_field('phone_tagline', 'options');
+	$modal_form = get_field('menu_form', 'options');
+	$global_button = get_field('global_estimate_button', 'options');
+	$override = get_field('override_menu', 'options');
+	$menu_class = $override == 'yes' ? ' override' : '';
+	$blurb = get_field('menu_blurb', 'options');
+	$logo = get_field('footer_logo', 'options');
+}
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -35,6 +38,8 @@ $blurb = get_field('menu_blurb', 'options');
 	<header id="masthead" class="site-header<?php echo $menu_class; ?>">
 		<nav class="secondary-navigation">
 			<div class="wrapper">
+				<img src="<?= $logo; ?>" alt="<?php bloginfo( 'name' ); ?>" class="header-logo" />
+
 				<?php
 				wp_nav_menu(
 					array(
