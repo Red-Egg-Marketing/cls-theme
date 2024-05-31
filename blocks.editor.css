@@ -1715,6 +1715,7 @@ a[download] {
   min-height: auto;
 }
 
+#gform_3 #field_3_15,
 .single-gs_team #field_3_9 {
   display: none;
 }
@@ -10027,7 +10028,7 @@ ul.tax-list .tax-wrap {
     width: 33.3333%;
     padding-right: 1.875rem;
     padding-left: 1.875rem;
-    margin-bottom: 0;
+    margin-bottom: 25px;
   }
 }
 
