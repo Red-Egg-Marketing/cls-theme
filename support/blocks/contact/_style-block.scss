@@ -80,6 +80,18 @@
 	}
 }
 
+.contact-section.contact-alt-section .form-wrap .block-content p {
+	font-family: $font-body-light;
+	font-size: 16px;
+	line-height: 22px;
+	color: $body-color;
+	font-weight: 400;
+	@media screen and (min-width: $small-width) {
+		font-size: 20px;
+		line-height: 34px;
+	}
+}
+
 .hidden_label .gfield_label {
 	display: none;
 }
