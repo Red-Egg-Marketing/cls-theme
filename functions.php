@@ -198,7 +198,7 @@ function clslogin_logo() { ?>
     <style type="text/css">
 
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/cls-full-logo.svg);
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/cls-logo.svg);
 			height:195px;
 			width:300px;
 			background-size: 300px 195px;
