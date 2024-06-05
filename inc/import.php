@@ -61,7 +61,7 @@ function test_transient() {
 }
 
 if (!wp_next_scheduled('cls_vehicles_csv_hook')) {
-    wp_schedule_event( time(), '1hrs', 'cls_vehicles_csv_hook' );
+    wp_schedule_event( time(), '3hrs', 'cls_vehicles_csv_hook' );
 }
 add_action ( 'cls_vehicles_csv_hook', 'cls_import_vehicles_from_csv' );
 
