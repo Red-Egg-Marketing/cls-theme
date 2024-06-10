@@ -23,7 +23,7 @@ const SaveVehiclesPayment = () => {
 
   			setLoading(true);
 			wp.apiRequest({
-        		url: apiUrl,
+        		url: apiUrl + '?nonce=' + postData.nonce,
         		method: 'POST',
         		data: data
     		}).then(resourcelist => {
@@ -128,7 +128,7 @@ const SaveVehiclesPayment = () => {
 				calculateSavings(event);
 
     			wp.apiRequest({
-        			url: apiUrl,
+        			url: apiUrl + '?nonce=' + postData.nonce,
     			    method: 'POST',
     			    data: data
     			}).then(resourcelist => {
@@ -140,6 +140,7 @@ const SaveVehiclesPayment = () => {
   			}
   		}, []);
 		
+
 		return (
 			<Fragment>
 				<div className="resources-grid">
