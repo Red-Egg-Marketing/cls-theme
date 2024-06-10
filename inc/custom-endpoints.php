@@ -106,6 +106,11 @@ add_action( 'rest_api_init', function () {
 
 
 function cls_return_vehicles() {
+
+	if (!wp_verify_nonce( $_GET['nonce'], 'wp_rest' ) ) {
+         return false;
+  }
+  
 	$post_types = ['vehicle'];
 
 	$post = $_POST;
@@ -387,7 +392,10 @@ add_action( 'rest_api_init', function () {
   	[
     	'methods' => 'POST, GET',
     	'callback' => 'cls_return_vehicles',
-    	'permission_callback' => '__return_true'
+    	// 'permission_callback' => '__return_true',
+    	'permission_callback' => function ( WP_REST_Request $request ) {
+          return true;
+       }
   	] 
   );
  });

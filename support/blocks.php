@@ -88,6 +88,7 @@ function cls_enqueue_main_script() {
             'wp-main-js',
             'postData' ,
             [
+                'nonce' => wp_create_nonce( 'wp_rest' ),
                 'id' => $post->ID
             ]
         );

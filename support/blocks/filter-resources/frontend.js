@@ -71,6 +71,8 @@ const SaveResources = ( { attributes } ) => {
         		
         	});
 
+        	newUrl += '&nonce=' + postData.nonce;
+
         	window.history.pushState({}, 'CLS Vehicle Selectin', newUrl);
         	return newUrl;
   		}
@@ -198,8 +200,10 @@ const SaveResources = ( { attributes } ) => {
   		}
 
 		if (resources === false && triggered == false) {
+			let tempstring = window.location.search == '' ? apiUrl + '?nonce=' + postData.nonce :  apiUrl + window.location.search + '&nonce=' + postData.nonce;
+			console.log(tempstring);
     		wp.apiRequest({
-    		    url: apiUrl + window.location.search,
+    		    url: tempstring,
     		    method: 'GET',
     		}).then(resourcelist => {
     		    let posts = resourcelist[0].resources;

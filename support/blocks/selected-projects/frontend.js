@@ -20,8 +20,10 @@ const SaveSelectedProjects = () => {
 				data['ppp'] = 10;
 				data['year'] = ResourcesRoot.getAttribute('data-category');
 				setData(data);
+
+				
     			wp.apiRequest({
-        			url: apiUrl,
+        			url: apiUrl + '?nonce=' + postData.nonce,
     			    method: 'POST',
     			    data: data
     			}).then(resourcelist => {
