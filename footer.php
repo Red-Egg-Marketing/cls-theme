@@ -87,7 +87,7 @@ if (function_exists('get_field')) {
 
 } // end if
 
- if (function_exists('get_field')){
+ if (function_exists('get_field') && is_singular('gs_team')){
         $modal_form = get_field('menu_form', 'options');
         if ($modal_form != 0) {
         ?>
