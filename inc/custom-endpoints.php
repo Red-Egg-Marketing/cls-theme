@@ -107,9 +107,9 @@ add_action( 'rest_api_init', function () {
 
 function cls_return_vehicles() {
 
-	if (!wp_verify_nonce( $_GET['nonce'], 'wp_rest' ) ) {
-         return false;
-  }
+	// if (!wp_verify_nonce( $_GET['nonce'], 'wp_rest' ) ) {
+  //        return false;
+  // }
   
 	$post_types = ['vehicle'];
 
