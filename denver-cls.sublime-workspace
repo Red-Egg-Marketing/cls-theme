@@ -523,7 +523,7 @@
 			"file": "footer.php",
 			"settings":
 			{
-				"buffer_size": 4413,
+				"buffer_size": 4440,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
@@ -534,106 +534,88 @@
 					1,
 					"insert",
 					{
-						"characters": " **"
+						"characters": "("
 					},
-					"AwAAAGQNAAAAAAAAZQ0AAAAAAAAAAAAAZQ0AAAAAAABmDQAAAAAAAAAAAABmDQAAAAAAAGcNAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAZA0AAAAAAABkDQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					4,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAGcNAAAAAAAAaA0AAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAZw0AAAAAAABnDQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					5,
-					3,
-					"left_delete",
-					null,
-					"AwAAAGcNAAAAAAAAZw0AAAAAAAABAAAAIGYNAAAAAAAAZg0AAAAAAAABAAAAKmUNAAAAAAAAZQ0AAAAAAAABAAAAKg",
+					"AQAAAGgNAAAAAAAAaQ0AAAAAAAAAAAAA",
 					"AQAAAAAAAAABAAAAaA0AAAAAAABoDQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					6,
-					1,
-					"insert",
-					{
-						"characters": "&&"
-					},
-					"AgAAAGUNAAAAAAAAZg0AAAAAAAAAAAAAZg0AAAAAAABnDQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAZQ0AAAAAAABlDQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					7,
-					1,
-					"insert",
-					{
-						"characters": " is_singl"
-					},
-					"CQAAAGcNAAAAAAAAaA0AAAAAAAAAAAAAaA0AAAAAAABpDQAAAAAAAAAAAABpDQAAAAAAAGoNAAAAAAAAAAAAAGoNAAAAAAAAaw0AAAAAAAAAAAAAaw0AAAAAAABsDQAAAAAAAAAAAABsDQAAAAAAAG0NAAAAAAAAAAAAAG0NAAAAAAAAbg0AAAAAAAAAAAAAbg0AAAAAAABvDQAAAAAAAAAAAABvDQAAAAAAAHANAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAZw0AAAAAAABnDQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					8,
 					1,
 					"insert",
 					{
-						"characters": "e"
+						"characters": " ||"
 					},
-					"AQAAAHANAAAAAAAAcQ0AAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAcA0AAAAAAABwDQAAAAAAAAAAAAAAAPC/"
+					"AwAAAH8NAAAAAAAAgA0AAAAAAAAAAAAAgA0AAAAAAACBDQAAAAAAAAAAAACBDQAAAAAAAIINAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfw0AAAAAAAB/DQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					9,
+					1,
+					"insert",
+					{
+						"characters": " is_sin"
+					},
+					"BwAAAIINAAAAAAAAgw0AAAAAAAAAAAAAgw0AAAAAAACEDQAAAAAAAAAAAACEDQAAAAAAAIUNAAAAAAAAAAAAAIUNAAAAAAAAhg0AAAAAAAAAAAAAhg0AAAAAAACHDQAAAAAAAAAAAACHDQAAAAAAAIgNAAAAAAAAAAAAAIgNAAAAAAAAiQ0AAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAgg0AAAAAAACCDQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert_completion",
+					{
+						"completion": "is_singular",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "is_singular"
+					},
+					"AgAAAIMNAAAAAAAAgw0AAAAAAAAGAAAAaXNfc2lugw0AAAAAAACODQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAiQ0AAAAAAACJDQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
 					1,
 					"insert_snippet",
 					{
 						"contents": "($0)"
 					},
-					"AQAAAHENAAAAAAAAcw0AAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAcQ0AAAAAAABxDQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					11,
-					2,
-					"left_delete",
-					null,
-					"AgAAAHANAAAAAAAAcA0AAAAAAAABAAAAZW8NAAAAAAAAbw0AAAAAAAABAAAAbA",
-					"AQAAAAAAAAABAAAAcQ0AAAAAAABxDQAAAAAAAAAAAAAAAPC/"
+					"AQAAAI4NAAAAAAAAkA0AAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjg0AAAAAAACODQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					12,
-					1,
-					"insert",
-					{
-						"characters": "ular"
-					},
-					"BAAAAG8NAAAAAAAAcA0AAAAAAAAAAAAAcA0AAAAAAABxDQAAAAAAAAAAAABxDQAAAAAAAHINAAAAAAAAAAAAAHINAAAAAAAAcw0AAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAbw0AAAAAAABvDQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					15,
 					1,
 					"insert_snippet",
 					{
 						"contents": "'$0'"
 					},
-					"AQAAAHQNAAAAAAAAdg0AAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAdA0AAAAAAAB0DQAAAAAAAAAAAAAAAPC/"
+					"AQAAAI8NAAAAAAAAkQ0AAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjw0AAAAAAACPDQAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					16,
+					13,
 					1,
 					"insert",
 					{
-						"characters": "gs_team"
+						"characters": "ve"
 					},
-					"BwAAAHUNAAAAAAAAdg0AAAAAAAAAAAAAdg0AAAAAAAB3DQAAAAAAAAAAAAB3DQAAAAAAAHgNAAAAAAAAAAAAAHgNAAAAAAAAeQ0AAAAAAAAAAAAAeQ0AAAAAAAB6DQAAAAAAAAAAAAB6DQAAAAAAAHsNAAAAAAAAAAAAAHsNAAAAAAAAfA0AAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAdQ0AAAAAAAB1DQAAAAAAAAAAAAAAAPC/"
+					"AgAAAJANAAAAAAAAkQ0AAAAAAAAAAAAAkQ0AAAAAAACSDQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkA0AAAAAAACQDQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					1,
+					"insert_completion",
+					{
+						"completion": "vehicle",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "vehicle"
+					},
+					"AgAAAJANAAAAAAAAkA0AAAAAAAACAAAAdmWQDQAAAAAAAJcNAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkg0AAAAAAACSDQAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		}
@@ -679,13 +661,22 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support"
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/assets",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/core",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/js-compile"
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/options.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
 		"/Users/jacoblang/Desktop/wings-green.svg",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/price-estimator/frontend.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/frontend.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/filter-resources/index.js",
@@ -696,8 +687,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/savings-calculator/index.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-case-studies/edit.js",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/selected-case-study/selected-case-studies.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/carfax-vins/carfax-vins.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_navigation.scss",
@@ -707,12 +696,10 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/contact/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/style.css",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/header.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_forms.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/grid-image-text/_style-block.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/style.scss",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/menu-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/scss/_buttons.scss",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/callout/_style-block.scss",
@@ -766,7 +753,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/404.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/general-template.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/carfax-vins.zip",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/options.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/REDEGGMRKT_CFXIICR_02132024.txt",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-tags.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/blocks.php",
@@ -829,6 +815,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cls_vin_features_lookup",
+			"curl_call_vd",
+			"vehicle",
 			"nonce",
 			"sendAPIrequest",
 			"loading",
@@ -953,10 +942,7 @@
 			"URLSearchParams",
 			"searchParams",
 			"buildSearchQueryString",
-			"form",
-			",",
-			"taxonomies",
-			"setEmpty"
+			"form"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -990,15 +976,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4413,
+						"buffer_size": 4440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3456,
-								3396
+								3266,
+								3266
 							]
 						],
 						"settings":
@@ -1008,7 +994,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1006.0,
+						"translation.y": 1209.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1051,7 +1037,7 @@
 		"cols":
 		[
 			0.0,
-			0.373818997377,
+			0.606861245863,
 			1.0
 		],
 		"rows":
@@ -1079,12 +1065,16 @@
 		"selected_items":
 		[
 			[
-				"blocks.php",
-				"app/public/wp-content/themes/cls-theme/support/blocks.php"
+				"footer",
+				"app/public/wp-content/themes/cls-theme/footer.php"
 			],
 			[
 				"impo",
 				"app/public/wp-content/themes/cls-theme/inc/import.php"
+			],
+			[
+				"blocks.php",
+				"app/public/wp-content/themes/cls-theme/support/blocks.php"
 			],
 			[
 				"import",
@@ -1121,10 +1111,6 @@
 			[
 				"header",
 				"app/public/wp-content/themes/cls-theme/header.php"
-			],
-			[
-				"footer",
-				"app/public/wp-content/themes/cls-theme/footer.php"
 			],
 			[
 				"_form",
@@ -1596,9 +1582,17 @@
 	"select_project":
 	{
 		"height": 683.0,
-		"last_filter": "bir",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
+			],
+			[
+				"re",
+				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
+			],
 			[
 				"bir",
 				"~/Local Sites/birdie-hr/birdie.sublime-project"
@@ -1606,10 +1600,6 @@
 			[
 				"bi",
 				"~/Local Sites/birdie-hr/birdie.sublime-project"
-			],
-			[
-				"",
-				"~/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/denver-cls.sublime-project"
 			],
 			[
 				"hei",
@@ -1678,10 +1668,6 @@
 			[
 				"bett",
 				"~/Local Sites/bettor-wisdom-latest-version/bettor-wisdom.sublime-project"
-			],
-			[
-				"re",
-				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
 			],
 			[
 				"h1",
@@ -2003,7 +1989,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
