@@ -27376,3 +27376,15 @@ ul.tax-list .tax-wrap {
 .image-grid .hero h2 {
   margin-bottom: 0;
 }
+
+.image-grid .hero-block-image-wrap, .image-grid .page-template-page-boilerplate .entry-header, .page-template-page-boilerplate .image-grid .entry-header,
+.image-grid .single .entry-header, .single .image-grid .entry-header {
+  min-height: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-grid .hero-block-image-wrap, .image-grid .page-template-page-boilerplate .entry-header, .page-template-page-boilerplate .image-grid .entry-header,
+  .image-grid .single .entry-header, .single .image-grid .entry-header {
+    min-height: 880px;
+  }
+}

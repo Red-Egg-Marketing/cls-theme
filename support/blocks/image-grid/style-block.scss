@@ -38,3 +38,10 @@
 .image-grid .hero h2 {
 	margin-bottom: 0;
 }
+
+.image-grid .hero-block-image-wrap {
+	min-height: 125px;
+	@media screen and (min-width: $small-width) {
+		min-height: 880px;
+	}
+}

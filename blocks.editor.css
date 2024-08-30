@@ -11444,3 +11444,13 @@ ul.tax-list .tax-wrap {
 .image-grid .hero h2 {
   margin-bottom: 0;
 }
+
+.image-grid .hero-block-image-wrap {
+  min-height: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-grid .hero-block-image-wrap {
+    min-height: 880px;
+  }
+}
