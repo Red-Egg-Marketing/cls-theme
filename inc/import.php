@@ -49,7 +49,7 @@ function cls_cron_schedules($schedules){
 add_filter('cron_schedules','cls_cron_schedules');
 
 if (!wp_next_scheduled('cls_vehicles_set_vehicle_transient')) {
-    wp_schedule_event( time(), '6hrs', 'cls_vehicles_set_vehicle_transient' );
+    wp_schedule_event( time(), '3hrs', 'cls_vehicles_set_vehicle_transient' );
 }
 add_action ( 'cls_vehicles_set_vehicle_transient', 'test_transient' );
 

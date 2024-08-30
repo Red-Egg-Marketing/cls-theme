@@ -41,7 +41,7 @@ function cls_return_taxonomies($post_types) {
 
 
 function cls_build_post_tax_array($posts, $tax) {
-	if (sizeof($tax) > 0) {
+	// if (sizeof($tax) > 0) {
 		$len = sizeof($tax);
 		$post_array = [];
 		$tax_array = [];
@@ -71,9 +71,9 @@ function cls_build_post_tax_array($posts, $tax) {
 		}
 		return $post_array;
 
-	} else {
-		return false;
-	}
+	// } else {
+	// 	return false;
+	// }
 }
 
 function cls_add_custom_query_vars( $vars ){
@@ -355,19 +355,20 @@ function cls_return_vehicles() {
 
 	}
 
-	$query_1 = new WP_Query($args);
-	$query = new WP_Query();
+	// $query_1 = new WP_Query($args);
+	$query = new WP_Query($args);
 
-	if ($args_2 != false) {
-		$query_2 = new WP_Query($args_2);
-		$query->posts = array_merge($query_1->posts, $query_2->posts);
-		$query->post_count = $query_1->post_count + $query_2->post_count;
-	} else {
-		$query->posts = $query_1->posts;
-		$query->post_count = $query_1->post_count;
-	}
+	// if ($args_2 != false) {
+	// 	$query_2 = new WP_Query($args_2);
+	// 	$query->posts = array_merge($query_1->posts, $query_2->posts);
+	// 	$query->post_count = $query_1->post_count + $query_2->post_count;
+	// } else {
+	// 	$query->posts = $query_1->posts;
+	// 	$query->post_count = $query_1->post_count;
+	// }
 
-	$taxes = cls_return_taxonomies($post_types);
+	// $taxes = cls_return_taxonomies($post_types);
+	$taxes = [];
 
 	if ($query->have_posts()) {
 		$result = $query->posts;
@@ -609,3 +610,24 @@ add_action( 'rest_api_init', function () {
   	] 
   );
 });
+
+
+/**
+ * Register the /wp-json/acf/v3/posts endpoint so it will be cached.
+ */
+function cls_cache_endpoint( $allowed_endpoints ) {
+    if ( ! isset( $allowed_endpoints[ 'cls/v2' ] ) ) {
+    		$allowed_endpoints[ 'cls/v2' ] = [];
+    		if (! in_array( 'vin', $allowed_endpoints[ 'cls/v2' ])) { 
+    			$allowed_endpoints[ 'cls/v2' ][] = 'vin'; 
+    		}
+    		if (! in_array( 'vehicles', $allowed_endpoints[ 'cls/v2' ])) { 
+    			$allowed_endpoints[ 'cls/v2' ][] = 'vehicles'; 
+    		}
+    		if (! in_array( 'reviews', $allowed_endpoints[ 'cls/v2' ])) { 
+    			$allowed_endpoints[ 'cls/v2' ][] = 'reviews'; 
+    		}
+    }
+    return $allowed_endpoints;
+}
+add_filter( 'wp_rest_cache/allowed_endpoints', 'cls_cache_endpoint', 10, 1);

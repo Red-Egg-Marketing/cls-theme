@@ -15,7 +15,7 @@
 .image-grid.wp-block > .block-wrapper > .block-editor-inner-blocks > .block-editor-block-list__layout,
 .image-grid:not(.wp-block) > .block-wrapper {
 	display: grid;
-	min-height: 450px;
+	min-height: 125px;
 	grid-row-gap: 5px;
 	@media screen and (min-width: $small-width) {
 		grid-template-columns: 1fr 1fr 1fr;
@@ -26,4 +26,15 @@
 
 .hero p:empty {
 	margin: 0;
+}
+
+.image-grid .hero {
+	min-height: 125px;
+	@media screen and (min-width: $small-width) {
+		min-height: 880px;
+	}
+}
+
+.image-grid .hero h2 {
+	margin-bottom: 0;
 }

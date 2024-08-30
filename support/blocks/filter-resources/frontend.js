@@ -201,14 +201,15 @@ const SaveResources = ( { attributes } ) => {
 
 		if (resources === false && triggered == false) {
 			let tempstring = window.location.search == '' ? apiUrl + '?nonce=' + postData.nonce :  apiUrl + window.location.search + '&nonce=' + postData.nonce;
-			console.log(tempstring);
     		wp.apiRequest({
     		    url: tempstring,
     		    method: 'GET',
     		}).then(resourcelist => {
+    			console.log(resourcelist);
     		    let posts = resourcelist[0].resources;
     		    let taxes = resourcelist[1];
-    		    setTaxes(taxes);
+
+    		    // setTaxes(taxes);
     		    let empty = resourcelist.empty;
     			setEmpty(empty);
     		    setTriggered(true);
@@ -227,7 +228,7 @@ const SaveResources = ( { attributes } ) => {
 					className="form-filters"
 					onSubmit={ filterFormSubmitted }
 				>
-				<ResourceFilters
+				{/*<ResourceFilters
 					filterCats={ filterCats }
 					taxonomies={ taxonomy }
 					toggleCats={ toggleCats }
@@ -237,7 +238,7 @@ const SaveResources = ( { attributes } ) => {
 					searchFilter={ searchFilter }
 					orderFilter={ orderFilter }
 					selectedValues={ data }
-				/>
+				/>*/}
 				<div className="resources-grid">
 					{ (resourcesEmpty == false && resources.length > 0 && loading == false) && resources.map((resource, resourceIndex) => {
 							return (
