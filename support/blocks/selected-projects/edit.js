@@ -13,7 +13,7 @@ import PaddingSelector from '../../components/Padding.js';
 
 // import a component
 
-const apiUrl  = '/wp-json/cls/v2/vehicles';
+const apiUrl  = '/wp-json/cls/v2/recent_vehicles';
 const catUrl  = '/wp-json/wp/v2/car_year?per_page=100';
 
 const template = [
@@ -178,7 +178,6 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 				}
 
 				setAttributes({resources: posts });
-				console.log(Swiper);
 				new Swiper('.resources.swiper', 
 						{
 							loop: true,
@@ -216,7 +215,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 		return (
 			<Fragment>
 				<InspectorControls>
-					<PanelBody
+					{/*<PanelBody
 						title={ __('Select Year')}
 						initialOpen={ true }
 					>
@@ -228,7 +227,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 							 }
 							 onChange={ setCategoryPosts }
 						/>
-					</PanelBody>
+					</PanelBody>*/}
 					<BackgroundColor
 						bgColor={ bgColor }
 						bgSlug={ bgSlug }

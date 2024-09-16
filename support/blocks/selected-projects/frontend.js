@@ -5,7 +5,7 @@ const { useDispatch, useSelect, replaceInnerBlocks } = wp.data;
 const { __ } = wp.i18n;
 import Swiper from 'swiper/bundle';
 import ResourceCard from '../../components/ResourceCard.js';
-const apiUrl  = '/wp-json/cls/v2/vehicles';
+const apiUrl  = '/wp-json/cls/v2/recent_vehicles';
 
 const ResourcesRoot = document.getElementById('VehiclesWrap');
 
@@ -17,24 +17,24 @@ const SaveSelectedProjects = () => {
 
 		React.useEffect( () => {
 			if (resources === false) {
-				data['ppp'] = 10;
-				data['year'] = ResourcesRoot.getAttribute('data-category');
+				data['ppp'] = 15;
 				setData(data);
     			wp.apiRequest({
         			url: apiUrl,
     			    method: 'POST',
     			    data: data
     			}).then(resourcelist => {
-    				let empty = resourcelist.empty;
+    				// let empty = resourcelist.empty;
     			    let posts = resourcelist[0].resources;
+    			    console.log(posts);
     			    selectResources(posts);
     			    new Swiper('.resources.swiper', 
 						{
-							loop: true,
+							loop: false,
 							slidesPerView: 1,
 							autoplay: false,
 							effect: 'slide',
-							spaceBetween: 15,
+							spaceBetween: 30,
 							speed: 800,
 							navigation: {
     							nextEl: '.swiper-button-next',
@@ -43,7 +43,7 @@ const SaveSelectedProjects = () => {
   							breakpoints: {
   								768: {
   									slidesPerView: 2,
-  									spaceBetween: 30
+  									spaceBetween: 45
   								},
   								1100: {
   									slidesPerView: 3,

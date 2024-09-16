@@ -23487,6 +23487,10 @@ html :where(.wp-block) {
   background: none;
 }
 
+.resources-block .wp-block-buttons {
+  text-align: center;
+}
+
 .resources-block {
   padding-top: 4.25rem;
   padding-bottom: 4.25rem;
@@ -23597,12 +23601,12 @@ html :where(.wp-block) {
 .selected-resources .wp-block-buttons {
   -ms-flex-pack: center;
       justify-content: center;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .selected-resources .wp-block-buttons {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 

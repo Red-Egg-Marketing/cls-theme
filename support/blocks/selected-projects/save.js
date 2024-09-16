@@ -29,6 +29,11 @@ const SaveSelectedResource = ( { attributes } ) => {
 								<InnerBlocks.Content />
 							</header>
 							<div className="resources swiper" data-category={ category } id="VehiclesWrap"></div>
+							<div className="wp-block-buttons">
+								<div className="wp-block-button">
+									<a className="wp-block-button__link" href="/vehicles">View More</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

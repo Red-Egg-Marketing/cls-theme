@@ -41,7 +41,7 @@ function cls_return_taxonomies($post_types) {
 
 
 function cls_build_post_tax_array($posts, $tax) {
-	// if (sizeof($tax) > 0) {
+	if (sizeof($tax) > 0) {
 		$len = sizeof($tax);
 		$post_array = [];
 		$tax_array = [];
@@ -71,9 +71,9 @@ function cls_build_post_tax_array($posts, $tax) {
 		}
 		return $post_array;
 
-	// } else {
-	// 	return false;
-	// }
+	} else {
+		return false;
+	}
 }
 
 function cls_add_custom_query_vars( $vars ){
@@ -107,9 +107,9 @@ add_action( 'rest_api_init', function () {
 
 function cls_return_vehicles() {
 
-	// if (!wp_verify_nonce( $_GET['nonce'], 'wp_rest' ) ) {
-  //        return false;
-  // }
+// 	if (!wp_verify_nonce( $_GET['nonce'], 'wp_rest' ) ) {
+//          return false;
+//   }
   
 	$post_types = ['vehicle'];
 
@@ -135,7 +135,7 @@ function cls_return_vehicles() {
 	$min_price = isset($get['price_min']) ? $get['price_min'] : $min_price;
 	$max_price = isset($post['price_max']) ? $post['price_max'] : false;
 	$max_price = isset($get['price_max']) ? $get['price_max'] : $max_price;
-	$ppp = isset($post['ppp']) ? explode(',',$post['ppp']) : -1;
+	$ppp = isset($post['ppp']) ? $post['ppp'] : -1;
 	$ppp = isset($get['ppp']) ? $get['ppp'] : $ppp;
 	$year = isset($get['year']) ? $get['year'] : false;
 	$year = isset($post['year']) ? $post['year'] : $year;
@@ -355,20 +355,19 @@ function cls_return_vehicles() {
 
 	}
 
-	// $query_1 = new WP_Query($args);
-	$query = new WP_Query($args);
+	$query_1 = new WP_Query($args);
+	$query = new WP_Query();
 
-	// if ($args_2 != false) {
-	// 	$query_2 = new WP_Query($args_2);
-	// 	$query->posts = array_merge($query_1->posts, $query_2->posts);
-	// 	$query->post_count = $query_1->post_count + $query_2->post_count;
-	// } else {
-	// 	$query->posts = $query_1->posts;
-	// 	$query->post_count = $query_1->post_count;
-	// }
+	if ($args_2 != false) {
+		$query_2 = new WP_Query($args_2);
+		$query->posts = array_merge($query_1->posts, $query_2->posts);
+		$query->post_count = $query_1->post_count + $query_2->post_count;
+	} else {
+		$query->posts = $query_1->posts;
+		$query->post_count = $query_1->post_count;
+	}
 
-	// $taxes = cls_return_taxonomies($post_types);
-	$taxes = [];
+	$taxes = cls_return_taxonomies($post_types);
 
 	if ($query->have_posts()) {
 		$result = $query->posts;
@@ -393,6 +392,58 @@ add_action( 'rest_api_init', function () {
   	[
     	'methods' => 'POST, GET',
     	'callback' => 'cls_return_vehicles',
+    	// 'permission_callback' => '__return_true',
+    	'permission_callback' => function ( WP_REST_Request $request ) {
+          return true;
+       }
+  	] 
+  );
+ });
+
+
+
+function cls_return_recent_vehicles() {
+	$post_types = ['vehicle'];
+	$post = $_POST;
+	$get = $_GET;
+
+	$taxes = cls_return_taxonomies($post_types);
+
+	$ppp = isset($post['ppp']) ? $post['ppp'] : -1;
+	$ppp = isset($get['ppp']) ? $get['ppp'] : $ppp;
+
+	$args = [
+		'post_type' => $post_types,
+		'post_status' => 'publish',
+		'posts_per_page' => $ppp,
+		'orderby' => 'date',
+		'order' => 'DESC'
+	];
+
+
+	$query = new WP_Query($args);
+
+	if ($query->have_posts()) {
+		$result = $query->posts;
+
+		$vehicles = cls_build_post_tax_array($result, $taxes);
+
+		wp_reset_postdata();
+
+		return [$vehicles];
+		$empty  = '<div class="warning">There are no available vehicles matching your filters. Please try something else.</div>';
+		$error = new stdClass();
+		$error->message = $empty;
+		return [$error];
+	}
+}
+
+
+add_action( 'rest_api_init', function () {
+  register_rest_route( 'cls/v2', '/recent_vehicles/', 
+  	[
+    	'methods' => 'POST, GET',
+    	'callback' => 'cls_return_recent_vehicles',
     	// 'permission_callback' => '__return_true',
     	'permission_callback' => function ( WP_REST_Request $request ) {
           return true;
@@ -530,7 +581,7 @@ function cls_return_reviews() {
 	$id = array_key_exists('post_id', $_POST) ? $_POST['post_id'] : false;
 
 	if ($id) {
-			$name = html_entity_decode(get_the_title($id));
+	    	$name = html_entity_decode(get_the_title($id));
 			$full = $name;
 			$name = explode(" ", $name);
 			$length = sizeof($name);
@@ -610,7 +661,6 @@ add_action( 'rest_api_init', function () {
   	] 
   );
 });
-
 
 /**
  * Register the /wp-json/acf/v3/posts endpoint so it will be cached.

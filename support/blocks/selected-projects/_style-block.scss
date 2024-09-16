@@ -9,6 +9,10 @@
 	background: none;
 }
 
+.resources-block .wp-block-buttons {
+	text-align: center;
+}
+
 .resources-block {
 	padding-top: 4.25rem;
 	padding-bottom: 4.25rem;
@@ -112,9 +116,9 @@
 
 .selected-resources .wp-block-buttons {
 	justify-content: center;
-	margin-top: 35px;
+	margin-top: 30px;
 	@media screen and (min-width: $small-width) {
-		margin-top: 50px;
+		margin-top: 40px;
 	}
 }
 
