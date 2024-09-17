@@ -26,7 +26,6 @@ const SaveSelectedProjects = () => {
     			}).then(resourcelist => {
     				// let empty = resourcelist.empty;
     			    let posts = resourcelist[0].resources;
-    			    console.log(posts);
     			    selectResources(posts);
     			    new Swiper('.resources.swiper', 
 						{

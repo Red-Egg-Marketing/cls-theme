@@ -67,6 +67,18 @@
 	}
 }
 
+.wp-block.selected-resources .resources.swiper {
+	overflow: auto;
+}
+
+.wp-block.selected-resources .swiper-slide {
+	width: 33.3333%;
+}
+
+.selected-resources .block-wrapper {
+	max-width: $max-cont-w;
+}
+
 .resources-block .block-wrapper {
 	width: 100%;
 	padding-left: 1.25rem;

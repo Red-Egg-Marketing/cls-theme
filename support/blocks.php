@@ -24,7 +24,7 @@ function cls_enqueue_block_editor_assets() {
             get_template_directory_uri() . $block_path,
             [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor', 'wp-dom-ready', 'lodash' ],
             $dependencies,
-            'v1.0.2'
+            'v1.0.4'
         );
         wp_localize_script(
            'wp-core-blocks-js',
@@ -71,7 +71,7 @@ function cls_enqueue_main_script() {
             'fancybox',
             get_template_directory_uri() . '/support/js-compile/libraries/fancybox-v4.0.26.js',
             ['jquery'],
-            'v1.0.1',
+            'v1.0.3',
             true
         );
         $front_path = '/support/assets/js/main.js';
@@ -79,7 +79,7 @@ function cls_enqueue_main_script() {
             'wp-main-js',
             get_template_directory_uri() . $front_path,
             ['wp-api', 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor'],
-            'v1.0.6',
+            'v1.0.9',
             true
        );
 

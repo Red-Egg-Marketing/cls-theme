@@ -409,7 +409,7 @@ function cls_return_recent_vehicles() {
 
 	$taxes = cls_return_taxonomies($post_types);
 
-	$ppp = isset($post['ppp']) ? $post['ppp'] : -1;
+	$ppp = isset($post['ppp']) ? $post['ppp'] : 15;
 	$ppp = isset($get['ppp']) ? $get['ppp'] : $ppp;
 
 	$args = [

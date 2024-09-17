@@ -60,6 +60,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 			setAttributes({ anchor: removeSpace });
 		}
 
+
 		const addResource = () => {
 			let curResources = JSON.parse(JSON.stringify(resourcelist));
 			let index = resourcelist.length;
@@ -95,7 +96,8 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
         	}
     	}, [] );
 
-		if ( (resources == undefined || resources.length == 0) && currentCats.length == 0) {
+
+		if ( (resources == undefined || resources.length == 0)) {
 
 			wp.apiFetch({
 				url: apiUrl
@@ -168,7 +170,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 		const setCategoryPosts = (value) => {
 
 			wp.apiFetch({
-				url: apiUrl + '?year=' + value + '&ppp=10',
+				url: apiUrl + '&ppp=10',
 				method: 'GET'
 			}).then(resourcelist => {
 				let size = resourcelist[0].resources.length <= count ? resourcelist[0].resources.length : count;
@@ -215,7 +217,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 		return (
 			<Fragment>
 				<InspectorControls>
-					{/*<PanelBody
+					<PanelBody
 						title={ __('Select Year')}
 						initialOpen={ true }
 					>
@@ -227,7 +229,7 @@ const EditSelectedResources = ( { setAttributes, attributes, isSelected, clientI
 							 }
 							 onChange={ setCategoryPosts }
 						/>
-					</PanelBody>*/}
+					</PanelBody>
 					<BackgroundColor
 						bgColor={ bgColor }
 						bgSlug={ bgSlug }

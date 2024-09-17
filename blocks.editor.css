@@ -7635,6 +7635,18 @@ html :where(.wp-block) {
   }
 }
 
+.wp-block.selected-resources .resources.swiper {
+  overflow: auto;
+}
+
+.wp-block.selected-resources .swiper-slide {
+  width: 33.3333%;
+}
+
+.selected-resources .block-wrapper {
+  max-width: 1920px;
+}
+
 .resources-block .block-wrapper {
   width: 100%;
   padding-left: 1.25rem;
