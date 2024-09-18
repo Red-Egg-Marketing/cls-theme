@@ -7576,6 +7576,30 @@ html :where(.wp-block) {
   text-align: center;
 }
 
+.selected-resources {
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .selected-resources {
+    padding-top: 6.75rem;
+    padding-bottom: 6.75rem;
+  }
+}
+
+.selected-resources .resources-block {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .selected-resources .resources-block {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .resources-block {
   padding-top: 4.25rem;
   padding-bottom: 4.25rem;
