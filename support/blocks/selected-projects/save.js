@@ -10,7 +10,8 @@ const SaveSelectedResource = ( { attributes } ) => {
 	} = attributes;
 
 	const blockProps = useBlockProps.save({
-			className: 'selected-resources'
+			className: 'selected-resources',
+			id: blockId
 	});
 
 	return ( 
