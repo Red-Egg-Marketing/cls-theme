@@ -541,6 +541,39 @@ add_action( 'rest_api_init', function () {
  });
 
 
+function cls_vehicle_card($id) {
+		$title = get_the_title($id);
+		$url = get_the_permalink($id);
+		$price = '$' . number_format(get_post_meta($id, 'selling_price', true), 0);
+		$miles = number_format(get_post_meta($id, 'miles', true), 0) . ' mi';
+		$year = get_the_terms($id, 'car_year');
+		$year = join(', ', wp_list_pluck($year, 'name'));
+		$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
+		$thumbnail = $thumbnail == false ? get_stylesheet_directory_uri() . '/img/fresh-arrival.jpg' : $thumbnail;
+
+		$html = '<div class="resource-card">';
+			$html .= '<div class="resource-extra">';
+				$html .= '<a class="resource-wrap" href="' . $url . '">';
+					$html .= '<div class="image-cont">';
+						$html .= '<img class="resource-img" src="' . $thumbnail . '" />';
+					$html .= '</div>';
+					$html .= '<div class="content">';
+						$html .= '<div class="top">';
+							$html .= '<h4 class="resource-title">' . $title . '</h4>';
+						$html .= '</div>';
+						$html .= '<div class="bottom">';
+							$html .= '<p class="resource-miles">' . $miles . '</p>';
+							$html .= '<p class="resource-price">' . $price . '</p>';
+						$html .= '</div>';
+					$html .= '</div>';
+				$html .= '</a>';
+			$html .= '</div>';
+		$html .= '</div>';
+
+		return $html;
+}
+
+
 function cls_resource_card($id, $cats = false) {
 	if ($id != null) {
 		$permalink = get_the_permalink($id);
