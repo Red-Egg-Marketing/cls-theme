@@ -107,9 +107,9 @@ add_action( 'rest_api_init', function () {
 
 function cls_return_vehicles() {
 
-	// if (!wp_verify_nonce( $_GET['nonce'], 'wp_rest' ) ) {
-  //        return false;
-  // }
+// 	if (!wp_verify_nonce( $_GET['nonce'], 'wp_rest' ) ) {
+//          return false;
+//   }
   
 	$post_types = ['vehicle'];
 
@@ -135,7 +135,7 @@ function cls_return_vehicles() {
 	$min_price = isset($get['price_min']) ? $get['price_min'] : $min_price;
 	$max_price = isset($post['price_max']) ? $post['price_max'] : false;
 	$max_price = isset($get['price_max']) ? $get['price_max'] : $max_price;
-	$ppp = isset($post['ppp']) ? explode(',',$post['ppp']) : -1;
+	$ppp = isset($post['ppp']) ? $post['ppp'] : -1;
 	$ppp = isset($get['ppp']) ? $get['ppp'] : $ppp;
 	$year = isset($get['year']) ? $get['year'] : false;
 	$year = isset($post['year']) ? $post['year'] : $year;
@@ -401,6 +401,58 @@ add_action( 'rest_api_init', function () {
  });
 
 
+
+function cls_return_recent_vehicles() {
+	$post_types = ['vehicle'];
+	$post = $_POST;
+	$get = $_GET;
+
+	$taxes = cls_return_taxonomies($post_types);
+
+	$ppp = isset($post['ppp']) ? $post['ppp'] : 15;
+	$ppp = isset($get['ppp']) ? $get['ppp'] : $ppp;
+
+	$args = [
+		'post_type' => $post_types,
+		'post_status' => 'publish',
+		'posts_per_page' => $ppp,
+		'orderby' => 'date',
+		'order' => 'DESC'
+	];
+
+
+	$query = new WP_Query($args);
+
+	if ($query->have_posts()) {
+		$result = $query->posts;
+
+		$vehicles = cls_build_post_tax_array($result, $taxes);
+
+		wp_reset_postdata();
+
+		return [$vehicles];
+		$empty  = '<div class="warning">There are no available vehicles matching your filters. Please try something else.</div>';
+		$error = new stdClass();
+		$error->message = $empty;
+		return [$error];
+	}
+}
+
+
+add_action( 'rest_api_init', function () {
+  register_rest_route( 'cls/v2', '/recent_vehicles/', 
+  	[
+    	'methods' => 'POST, GET',
+    	'callback' => 'cls_return_recent_vehicles',
+    	// 'permission_callback' => '__return_true',
+    	'permission_callback' => function ( WP_REST_Request $request ) {
+          return true;
+       }
+  	] 
+  );
+ });
+
+
 function cls_return_posts($data) {
 
 	$get = $_GET;
@@ -489,6 +541,39 @@ add_action( 'rest_api_init', function () {
  });
 
 
+function cls_vehicle_card($id) {
+		$title = get_the_title($id);
+		$url = get_the_permalink($id);
+		$price = '$' . number_format(get_post_meta($id, 'selling_price', true), 0);
+		$miles = number_format(get_post_meta($id, 'miles', true), 0) . ' mi';
+		$year = get_the_terms($id, 'car_year');
+		$year = join(', ', wp_list_pluck($year, 'name'));
+		$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
+		$thumbnail = $thumbnail == false ? get_stylesheet_directory_uri() . '/img/fresh-arrival.jpg' : $thumbnail;
+
+		$html = '<div class="resource-card">';
+			$html .= '<div class="resource-extra">';
+				$html .= '<a class="resource-wrap" href="' . $url . '">';
+					$html .= '<div class="image-cont">';
+						$html .= '<img class="resource-img" src="' . $thumbnail . '" />';
+					$html .= '</div>';
+					$html .= '<div class="content">';
+						$html .= '<div class="top">';
+							$html .= '<h4 class="resource-title">' . $title . '</h4>';
+						$html .= '</div>';
+						$html .= '<div class="bottom">';
+							$html .= '<p class="resource-miles">' . $miles . '</p>';
+							$html .= '<p class="resource-price">' . $price . '</p>';
+						$html .= '</div>';
+					$html .= '</div>';
+				$html .= '</a>';
+			$html .= '</div>';
+		$html .= '</div>';
+
+		return $html;
+}
+
+
 function cls_resource_card($id, $cats = false) {
 	if ($id != null) {
 		$permalink = get_the_permalink($id);
@@ -529,7 +614,7 @@ function cls_return_reviews() {
 	$id = array_key_exists('post_id', $_POST) ? $_POST['post_id'] : false;
 
 	if ($id) {
-			$name = get_the_title($id);
+	    	$name = html_entity_decode(get_the_title($id));
 			$full = $name;
 			$name = explode(" ", $name);
 			$length = sizeof($name);
@@ -609,3 +694,23 @@ add_action( 'rest_api_init', function () {
   	] 
   );
 });
+
+/**
+ * Register the /wp-json/acf/v3/posts endpoint so it will be cached.
+ */
+function cls_cache_endpoint( $allowed_endpoints ) {
+    if ( ! isset( $allowed_endpoints[ 'cls/v2' ] ) ) {
+    		$allowed_endpoints[ 'cls/v2' ] = [];
+    		if (! in_array( 'vin', $allowed_endpoints[ 'cls/v2' ])) { 
+    			$allowed_endpoints[ 'cls/v2' ][] = 'vin'; 
+    		}
+    		if (! in_array( 'vehicles', $allowed_endpoints[ 'cls/v2' ])) { 
+    			$allowed_endpoints[ 'cls/v2' ][] = 'vehicles'; 
+    		}
+    		if (! in_array( 'reviews', $allowed_endpoints[ 'cls/v2' ])) { 
+    			$allowed_endpoints[ 'cls/v2' ][] = 'reviews'; 
+    		}
+    }
+    return $allowed_endpoints;
+}
+add_filter( 'wp_rest_cache/allowed_endpoints', 'cls_cache_endpoint', 10, 1);
