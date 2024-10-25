@@ -318,6 +318,12 @@ require get_template_directory() . '/inc/form-filters.php';
 require get_template_directory() . '/inc/redirects.php';
 
 
+/**
+ * Shortcodes
+ */
+require get_template_directory() . '/inc/shortcodes.php';
+
+
 
 /**
  * Load Jetpack compatibility file.
