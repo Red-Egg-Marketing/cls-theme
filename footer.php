@@ -23,7 +23,6 @@ if (function_exists('get_field')) {
         'logo'          => get_field('footer_logo', 'options')
     ];
 
-
 ?>
 
     <footer id="colophon" class="site-footer">
