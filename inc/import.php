@@ -49,7 +49,7 @@ function cls_cron_schedules($schedules){
 add_filter('cron_schedules','cls_cron_schedules');
 
 if (!wp_next_scheduled('cls_vehicles_set_vehicle_transient')) {
-    wp_schedule_event( time(), '6hrs', 'cls_vehicles_set_vehicle_transient' );
+    wp_schedule_event( time(), '3hrs', 'cls_vehicles_set_vehicle_transient' );
 }
 add_action ( 'cls_vehicles_set_vehicle_transient', 'test_transient' );
 
@@ -451,19 +451,22 @@ function cls_import_vehicles_from_csv() {
             // remove missing images
 
             if (sizeof($missing_images) > 0) {
+                $testing = '';
                 foreach($missing_images as $missing_image) {
 
                     $image_query = $wpdb->get_col( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' && post_parent = '{$exists_id}' && post_content = '{$missing_image}'" );
                     wp_delete_attachment( $image_query[0], true );
 
-
+                    $testing .= $image_query[0] . ',';
+                
                 }   
 
                 wp_update_post(
                     [
                         'ID' => $actual_id,
                         'meta_input' => [
-                            'original_base' => json_encode($intersect)
+                            'original_base' => json_encode($i_array),
+                            'testing' => $testing
                     ]
                 ]);
             } else {
@@ -481,7 +484,8 @@ function cls_import_vehicles_from_csv() {
                     [
                         'ID' => $actual_id,
                         'meta_input' => [
-                            'original_base' => json_encode($i_array)
+                            'original_base' => json_encode($i_array),
+                            'testing' => json_encode($missing_images)
                         ]
                     ]
                 );
@@ -493,7 +497,8 @@ function cls_import_vehicles_from_csv() {
                     [
                         'ID' => $actual_id,
                         'meta_input' => [
-                            'original_base' => json_encode($i_array)                    
+                            'original_base' => json_encode($i_array),
+                            'testing' => '3'                    
                     ]
             ]);
         } elseif ( $exists_id === false ) {
@@ -502,6 +507,7 @@ function cls_import_vehicles_from_csv() {
                     'ID' => $actual_id,
                     'meta_input' => [
                         'original_base' => json_encode($i_array),
+                        'testing' => '4'
                     ]
                 ]
             );
