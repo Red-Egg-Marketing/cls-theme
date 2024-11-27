@@ -282,6 +282,7 @@ const SaveResources = ( { attributes } ) => {
 										resourcePrice={ resource.price }
 										resourceMiles={ resource.miles }
 										resourceYear={ resource.year }
+										resourceTrim={ resource.trim }
 									/>
 									{ (resourceIndex == resources.length - 1) && (
 										<div className="alternatives">

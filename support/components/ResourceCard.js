@@ -134,6 +134,8 @@ ResourceCard.View = (props) => {
 
 	}
 
+	let title = props.resourceTrim != '' ? props.resourceTitle + ' ' + props.resourceTrim : props.resourceTitle;
+
 	return(
 		<Fragment>
 			<div className={ `resource-card ${slideClass} ${typeClass}` } key={ props.resourceIndex }>
@@ -158,7 +160,7 @@ ResourceCard.View = (props) => {
 								tagName="h4"
 								className="resource-title"
 								value={
-									props.resourceTitle
+									title
 								}
 							/>
 							{/*<RichText.Content

@@ -72,6 +72,7 @@ const SaveSelectedProjects = () => {
 										resourceMiles={ resource.miles }
 										resourceClass="swiper-slide"
 										resourceYear={ resource.year }
+										resourceTrim={ resource.trim }
 									/>
 								</Fragment>
 							)

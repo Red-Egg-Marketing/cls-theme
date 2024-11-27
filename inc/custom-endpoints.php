@@ -60,6 +60,9 @@ function cls_build_post_tax_array($posts, $tax) {
 			$post->miles = number_format(get_post_meta($id, 'miles', true), 0) . ' mi';
 			$year = get_the_terms($id, 'car_year');
 			$year = join(', ', wp_list_pluck($year, 'name'));
+			$trim = get_the_terms($id, 'trim');
+			$trim = join(', ', wp_list_pluck($trim, 'name'));
+			$post->trim = $trim;
 			$post->year = $year;
 			$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
 			$thumbnail = $thumbnail == false ? get_stylesheet_directory_uri() . '/img/fresh-arrival.jpg' : $thumbnail;
