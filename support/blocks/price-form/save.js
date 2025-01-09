@@ -37,7 +37,7 @@ const SaveForm = ( { attributes }  ) => {
 							<input
 								type="number"
 								id="apr"
-								value="7.2"
+								value={ cls.interest_rate }
 								name="apr"
 								min="0"
 								max="100"

@@ -115,10 +115,10 @@ const SavePaymentCalc = () => {
 				price = price.getAttribute('data-price');
 				data['price_max'] = price;
 				data['down'] = Math.ceil(0.15 * price);
-				data['apr'] = "7.2";
+				data['apr'] = postData.interest_rate;
 				data['term'] = "72";
 				setPrice(price);
-				setAPR("7.2");
+				setAPR(postData.interest_rate);
 				setMonths("72");
 				setDown(data['down']);
 				calcPercentage();
@@ -170,7 +170,7 @@ const SavePaymentCalc = () => {
 									<input
 										type="number"
 										id="apr"
-										placeholder="7.2%"
+										placeholder={ postData.interest_rate }
 										value={ data['apr'] }
 										name="apr"
 										min="0"
