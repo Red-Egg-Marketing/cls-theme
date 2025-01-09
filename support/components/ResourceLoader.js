@@ -111,7 +111,7 @@ const ResourceFilters = (props) => {
               <input 
                 type="submit"
                 className="wp-button"
-                value="Search"
+                value="Submit"
                />
              </div>
           </div>
@@ -249,7 +249,7 @@ const ResourceFilters = (props) => {
             <input 
               type="submit"
               className="wp-button"
-              value="Search"
+              value="Submit"
              />
           </div>
           </div>
