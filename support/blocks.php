@@ -1,6 +1,13 @@
 <?php
  // enqueue custom blocks
 function cls_enqueue_block_editor_assets() {
+
+    if (function_exists('get_field')) {
+        $interest = get_field('interest_rate', 'options');
+    } else {
+        $interest = 7.2;
+    }
+
     wp_enqueue_style('cls-fonts-editor', 'https://use.typekit.net/dly3nlz.css', [], null);
     if (get_post_type() == 'case-studies' || get_post_type() == 'page' || get_post_type() == 'wp_block' && strpos(get_page_template(), 'page-boilerplate.php') == false) {
         $block_path = '/support/assets/js/editor.blocks.js';
@@ -23,14 +30,15 @@ function cls_enqueue_block_editor_assets() {
             'wp-core-blocks-js',
             get_template_directory_uri() . $block_path,
             [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor', 'wp-dom-ready', 'lodash' ],
-            // $dependencies,
-            'v1.0.5'
+            $dependencies,
+            'v1.0.2'
         );
         wp_localize_script(
            'wp-core-blocks-js',
            'cls',
            [
-               'template_directory' => get_template_directory_uri()
+               'template_directory' => get_template_directory_uri(),
+               'interest_rate' => $interest
            ]
         );
         wp_enqueue_style('cls-editor-css', get_template_directory_uri() . '/blocks.editor.css', ['cls-fonts-editor']);
@@ -66,12 +74,19 @@ function cls_render_filtered_case_studies_callback($block_attributes, $content) 
 function cls_enqueue_main_script() {
     global $post;
 
+
+    if (function_exists('get_field')) {
+        $interest = get_field('interest_rate', 'options');
+    } else {
+        $interest = 7.2;
+    }
+
     if (!is_admin()) {
         wp_enqueue_script(
             'fancybox',
             get_template_directory_uri() . '/support/js-compile/libraries/fancybox-v4.0.26.js',
             ['jquery'],
-            'v1.0.4',
+            'v1.0.1',
             true
         );
         $front_path = '/support/assets/js/main.js';
@@ -79,7 +94,7 @@ function cls_enqueue_main_script() {
             'wp-main-js',
             get_template_directory_uri() . $front_path,
             ['wp-api', 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor'],
-            'v1.1.0',
+            'v1.0.6',
             true
        );
 
@@ -89,7 +104,8 @@ function cls_enqueue_main_script() {
             'postData' ,
             [
                 'nonce' => wp_create_nonce( 'wp_rest' ),
-                'id' => $post->ID
+                'id' => $post->ID,
+                'interest_rate' => $interest
             ]
         );
         }
