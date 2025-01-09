@@ -122,7 +122,7 @@ const SaveVehiclesPayment = () => {
 			if (resources === false) {
 				data['price_max'] = "30000";
 				data['down'] = "1000";
-				data['apr'] = "7.2";
+				data['apr'] = postData.interest_rate;
 				data['term'] = "72";
 				setData(data);
 				calculateSavings(event);
