@@ -14,7 +14,7 @@ global $post;
 $title = get_the_title($post->ID);
 $title = explode(" ", $title);
 $title = $title[0];
-$terms = wp_list_pluck(get_the_terms($post->ID, 'team_group'), 'slug');
+$terms = wp_list_pluck(get_the_terms($post->ID, 'gs_team_group'), 'slug');
 $class = in_array('sales', $terms) ? 'sales' : 'default';
 $designation = get_post_meta( get_the_id(), '_gs_des', true );
 $modal_form = get_field('menu_form', 'options');
