@@ -634,8 +634,9 @@ function cls_return_reviews() {
 			$results = $wpdb->get_results( 
 			"
 				SELECT *
-				FROM {$wpdb->prefix}wpfb_reviews 
+				FROM {$wpdb->prefix}wpfb_reviews
 				WHERE review_text LIKE '%" . $name . "%' OR review_text LIKE '%" . $first_middle . "%'
+				ORDER BY created_time DESC
 			", OBJECT );
 
 
