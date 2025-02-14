@@ -635,8 +635,8 @@ function cls_return_reviews() {
 			"
 				SELECT *
 				FROM {$wpdb->prefix}wpfb_reviews
-				ORDER BY created_time ASC
 				WHERE review_text LIKE '%" . $name . "%' OR review_text LIKE '%" . $first_middle . "%'
+				ORDER BY created_time DESC
 			", OBJECT );
 
 
