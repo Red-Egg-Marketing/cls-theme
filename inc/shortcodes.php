@@ -4,8 +4,10 @@ function cls_pull_cars_by_attr( $atts ) {
 
 	$a = shortcode_atts( array(
         'body_style' => '',
+        'vehicle_make' => '',
         'limit' => -1
     ), $atts );
+
 	$args = [
 		'post_type' => ['vehicle'],
 		'post_status' => 'publish',
@@ -13,14 +15,25 @@ function cls_pull_cars_by_attr( $atts ) {
 		'orderby' => 'date',
 		'order' => 'DESC',
 		'tax_query' => [
-			'relation' => 'AND',
-			[
-				'terms' => explode(',', $a['body_style']),
-				'field' => 'name',
-				'taxonomy' => 'body_style'
-			]
+			'relation' => 'AND'
 		]
 	];
+
+	if ($a['body_style'] != '') {
+		$args['tax_query'][] = [
+			'terms' => explode(',', $a['body_style']),
+			'field' => 'name',
+			'taxonomy' => 'body_style'
+		];
+	}
+
+	if ($a['vehicle_make'] != '') {
+		$args['tax_query'][] = [
+			'terms' => explode(',', $a['vehicle_make']),
+			'field' => 'name',
+			'taxonomy' => 'make'
+		];
+	}
 
 	$html = '';
 

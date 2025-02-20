@@ -523,28 +523,7 @@
 			"file": "inc/custom-endpoints.php",
 			"settings":
 			{
-				"buffer_size": 20265,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 489 files for \"miles_min\"\n\n~/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/assets/js/editor.blocks.js:\n    1: <skipped 243535 characters> ...        } else if (tax == 'Price') {\\n            place = selectedValues['price_min'] ? selectedValues['price_min'][0] : 'Min';\\n            place_max = selectedValues['price_max'] ? selectedValues['price_max'][0] : 'Max';\\n          } else if (tax == 'Miles') {\\n            place = selectedValues['miles_min'] ? selectedValues['miles_min'][0] : 'Min';\\n            place_max = selectedValues['miles_max'] ? selectedValues['miles_max'][0] : 'Max';\\n          }\\n          return wp.element.createElement(\\n            Fragment,\\n            null,\\n            wp.element.createElement(\\n              'div',\\n              { className: 'c... <skipped 9038798 characters> ...\n\n~/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/assets/js/main.js:\n    1: <skipped 123363 characters> ...        } else if (tax == 'Price') {\\n            place = selectedValues['price_min'] ? selectedValues['price_min'][0] : 'Min';\\n            place_max = selectedValues['price_max'] ? selectedValues['price_max'][0] : 'Max';\\n          } else if (tax == 'Miles') {\\n            place = selectedValues['miles_min'] ? selectedValues['miles_min'][0] : 'Min';\\n            place_max = selectedValues['miles_max'] ? selectedValues['miles_max'][0] : 'Max';\\n          }\\n          return wp.element.createElement(\\n            Fragment,\\n            null,\\n            wp.element.createElement(\\n              'div',\\n              { className: 'c... <skipped 1203759 characters> ...\n\n~/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/components/ResourceLoader.js:\n  138                  }\n  139                  else if (tax == 'Miles') {\n  140:                   place = selectedValues['miles_min'] ? selectedValues['miles_min'][0] : 'Min';\n  141                    place_max = selectedValues['miles_max'] ? selectedValues['miles_max'][0] : 'Max';\n  142                  }\n\n~/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php:\n   81  \n   82  function cls_add_custom_query_vars( $vars ){\n   83:   $vars[] = \"miles_min\";\n   84    $vars[] = \"miles_max\";\n   85    $vars[] = \"price_min\";\n   ..\n  131  \t$max_year = isset($post['year_max']) ? $post['year_max'] : false;\n  132  \t$max_year = isset($get['year_max']) ? $get['year_max'] : $max_year;\n  133: \t$min_miles = isset($post['miles_min']) ? $post['miles_min'] : false;\n  134: \t$min_miles = isset($get['miles_min']) ? $get['miles_min'] : $min_miles;\n  135  \t$max_miles = isset($post['miles_max']) ? $post['miles_max'] : false;\n  136  \t$max_miles = isset($get['miles_max']) ? $get['miles_max'] : $max_miles;\n\n11 matches across 4 files\n\n\nSearching 489 files for \"flush_rewrite_rules\"\n\n~/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php:\n  169          return;\n  170      }\n  171:     flush_rewrite_rules();\n  172  }\n  173  add_action('save_post', 'cls_rewrite_rules_update');\n\n1 match in 1 file\n",
-			"settings":
-			{
-				"buffer_size": 3107,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			},
-			"undo_stack":
-			[
-			]
-		},
-		{
-			"file": "inc/posts-filter.php",
-			"settings":
-			{
-				"buffer_size": 4482,
+				"buffer_size": 20295,
 				"line_ending": "Unix"
 			},
 			"undo_stack":
@@ -601,15 +580,16 @@
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles/gs-team-single-default.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/form-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/options.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/menu-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/media.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/customizer.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-endpoints.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/custom-header.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/redirects.php",
@@ -617,7 +597,6 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/functions.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/footer.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/car-fax.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles/gs-team-single-default.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/partials/gs-team-layout-cat-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-grid-style-five-old.php",
@@ -748,6 +727,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sales",
 			"flush_rewrite_rules",
 			"miles_min",
 			"miles",
@@ -874,8 +854,7 @@
 			"$black",
 			".wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):hover",
 			".wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color):hover",
-			"#910035",
-			".side-table .table-row .table-cell-icon"
+			"#910035"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -905,18 +884,19 @@
 				{
 					"buffer": 0,
 					"file": "inc/custom-endpoints.php",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20265,
+						"buffer_size": 20295,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2943,
-								2943
+								17940,
+								17940
 							]
 						],
 						"settings":
@@ -926,130 +906,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 810.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3107,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										475,
-										484
-									],
-									[
-										505,
-										514
-									],
-									[
-										1281,
-										1290
-									],
-									[
-										1311,
-										1320
-									],
-									[
-										1884,
-										1893
-									],
-									[
-										1914,
-										1923
-									],
-									[
-										2241,
-										2250
-									],
-									[
-										2507,
-										2516
-									],
-									[
-										2529,
-										2538
-									],
-									[
-										2583,
-										2592
-									],
-									[
-										2604,
-										2613
-									],
-									[
-										2996,
-										3015
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								2940,
-								2940
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 2,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ \t].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 629.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "inc/posts-filter.php",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4482,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4482,
-								4243
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1775.0,
+						"translation.y": 10570.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1625,9 +1482,13 @@
 	"select_project":
 	{
 		"height": 683.0,
-		"last_filter": "",
+		"last_filter": "pain",
 		"selected_items":
 		[
+			[
+				"pain",
+				"~/Local Sites/paint-denver/paint-denver.sublime-project"
+			],
 			[
 				"",
 				"~/Local Sites/birdie-hr/birdie.sublime-project"
@@ -1835,10 +1696,6 @@
 			[
 				"asp",
 				"~/Local Sites/aspire-denver/aspire-2023-final.sublime-project"
-			],
-			[
-				"pain",
-				"~/Local Sites/paint-denver/paint-denver.sublime-project"
 			],
 			[
 				"ba",
