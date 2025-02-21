@@ -23,7 +23,6 @@ if (function_exists('get_field')) {
         'logo'          => get_field('footer_logo', 'options')
     ];
 
-
 ?>
 
     <footer id="colophon" class="site-footer">
@@ -31,6 +30,9 @@ if (function_exists('get_field')) {
             <div class="wrapper">
                 <div class="col">
                     <address>
+                        <p style="margin-bottom: 10px">
+                            <?= $company_settings['street'] . ', ' . $company_settings['city'] . ', ' . $company_settings['state'] . ' ' . $company_settings['zip'] ?><br />
+                        </p>
                         <p>
                             <a href="tel:<?= $company_settings['phone']; ?>" class="contact-link"><?= $company_settings['phone'] ?></a><br />
                         </p>
@@ -88,7 +90,6 @@ if (function_exists('get_field')) {
 } // end if
 
  if (function_exists('get_field') && (is_singular('gs_team') || is_singular('vehicle'))) {
-
         $modal_form = get_field('menu_form', 'options');
         if ($modal_form != 0) {
         ?>
