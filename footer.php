@@ -30,6 +30,9 @@ if (function_exists('get_field')) {
             <div class="wrapper">
                 <div class="col">
                     <address>
+                        <p style="margin-bottom: 10px">
+                            <?= $company_settings['street'] . ', ' . $company_settings['city'] . ', ' . $company_settings['state'] . ' ' . $company_settings['zip'] ?><br />
+                        </p>
                         <p>
                             <a href="tel:<?= $company_settings['phone']; ?>" class="contact-link"><?= $company_settings['phone'] ?></a><br />
                         </p>
