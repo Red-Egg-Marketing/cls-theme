@@ -61,8 +61,9 @@ $type = has_term('new', 'car_type', $id);
 			    'post_parent' => $id,
 			    'post_type' => 'attachment',
 			    'post_mime_type' => 'image',
-			    'orderby' => 'date',
-			    'order' => 'ASC',
+			    'meta_key' => 'image_order',
+        		'orderby' => 'meta_value_num',
+        		'order' => 'ASC',
 			    'exclude' => $feat,
 			    'numberposts' => -1
 			));
