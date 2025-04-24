@@ -61,8 +61,9 @@ $stock = get_post_meta($id, 'stock', true);
 			    'post_parent' => $id,
 			    'post_type' => 'attachment',
 			    'post_mime_type' => 'image',
-			    'orderby' => 'date',
-			    'order' => 'ASC',
+			    'meta_key' => 'image_order',
+        		'orderby' => 'meta_value_num',
+        		'order' => 'ASC',
 			    'exclude' => $feat,
 			    'numberposts' => -1
 			));

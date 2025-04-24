@@ -329,7 +329,7 @@ function cls_import_vehicles_from_csv() {
         // Get the path to the upload directory.
         $wp_upload_dir = wp_upload_dir();
         
-        $number = 1;
+        $number = 0;
         
         // load images into upload directory
         $i_array = [];
@@ -343,6 +343,8 @@ function cls_import_vehicles_from_csv() {
 
                 $base = basename($image);
 
+                $number+=1;
+
                 if ($base != '') {
 
                     array_push($base_images, $base);
@@ -351,6 +353,11 @@ function cls_import_vehicles_from_csv() {
                 }
 
                 if (is_array($current_images) && in_array($base, $current_images)) {
+                    // get attachment by base meta and update the order meta
+                    $image_meta = $wpdb->get_col( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'base' && meta_value = '{$base}'" );
+                    if (is_array($image_meta) && !empty($image_meta)) {
+                        update_post_meta($image_meta[0], 'image_order', $number);
+                    }
                     continue;
                 }
 
@@ -394,7 +401,6 @@ function cls_import_vehicles_from_csv() {
                                 'guid'           => $sideload[ 'url' ],
                                 'post_mime_type' => $sideload[ 'type' ],
                                 'post_title'     => $post['title'] . ' Image #' . $number,
-                                'post_content'   => $base,
                                 'post_status'    => 'inherit',
                                 'post_parent'    => $actual_id
                             ),
@@ -409,10 +415,12 @@ function cls_import_vehicles_from_csv() {
                                 $attachment_id,
                                 wp_generate_attachment_metadata( $attachment_id, $sideload[ 'file' ] )
                             );
-                            if ($number == 1) {
-                                set_post_thumbnail($actual_id, $attachment_id);
-                            }
-                            $number+=1;
+                            update_post_meta($attachment_id, 'base', $base);
+                            update_post_meta($attachment_id, 'image_order', $number);
+                            // if ($number == 1) {
+                            //     set_post_thumbnail($actual_id, $attachment_id);
+                            // }
+                            
                         }
                     }
 
@@ -456,6 +464,8 @@ function cls_import_vehicles_from_csv() {
 
                     $image_query = $wpdb->get_col( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' && post_parent = '{$exists_id}' && post_content = '{$missing_image}'" );
                     wp_delete_attachment( $image_query[0], true );
+                    delete_post_meta( $image_query[0], 'image_order');
+                    delete_post_meta( $image_query[0], 'base');
 
                     $testing .= $image_query[0] . ',';
                 
@@ -477,6 +487,8 @@ function cls_import_vehicles_from_csv() {
 
                     foreach ($attachments as $attachment) {
                         wp_delete_attachment( $attachment->ID, true );
+                        delete_post_meta( $attachment->ID, 'image_order');
+                        delete_post_meta( $attachment->ID, 'base');
                     }  
                 }
 
@@ -551,6 +563,26 @@ function cls_import_vehicles_from_csv() {
     }  
 }
 
+
+function cls_vehicle_set_feature_image($post_id, $post, $update) {
+    
+    $attachments = get_posts(array(
+        'post_parent' => $post_id,
+        'post_type' => 'attachment',
+        'post_mime_type' => 'image',
+        'meta_key' => 'image_order',
+        'orderby' => 'meta_value_num',
+        'order' => 'ASC',
+        'numberposts' => 1
+    ));
+
+    foreach($attachments as $attachment) {
+         set_post_thumbnail($post_id, $attachment->ID);
+    }
+
+}
+
+add_filter('wp_insert_post', 'cls_vehicle_set_feature_image', 10, 3);
 
 function cls_vehicle_trash_attachments( $delete, $post, $force_delete ) {
   // Is it my post type someone is trying to delete?
