@@ -97,6 +97,7 @@ function cls_import_vehicles_from_csv() {
         "city_mpg"              =>  "city_mpg",
         "highway_mpg"           =>  "highway_mpg",
         "drivetrain"            =>  "drivetrain",
+        "vehicleType"           =>  "vehicleType",
     );
 
     // Get the data from all those CSVs!
@@ -140,6 +141,7 @@ function cls_import_vehicles_from_csv() {
                                 $post['Model'] = $row[$i];
                                 break;
                             case 'body':
+                                $post['Body'] = $row[$i];
                                 $post['Body'] = $row[$i];
                                 break;
                             case 'trim':
@@ -188,6 +190,9 @@ function cls_import_vehicles_from_csv() {
                                 break;
                             case 'mpgHighway':
                                 $post['HighwayMPG'] = $row[$i];
+                                break;
+                            case 'vehicleType':
+                                $post['vehicle_type'] = $row[$i];
                                 break;
                             default:
                                 $post[$key] = $row[$i];                            
@@ -544,6 +549,7 @@ function cls_import_vehicles_from_csv() {
             ['engine_displacement' => $post['EngineDisplacement']],
             ['transmission' => $post['Transmission']],
             ['drivetrain' => $post['Drivetrain']],
+            ['vehicle_type' => $post['vehicle_type']],
         );
 
         // add taxonomies

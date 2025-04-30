@@ -5,6 +5,7 @@ function cls_pull_cars_by_attr( $atts ) {
 	$a = shortcode_atts( array(
         'body_style' => '',
         'vehicle_make' => '',
+        'type' => '',
         'limit' => -1
     ), $atts );
 
@@ -32,6 +33,14 @@ function cls_pull_cars_by_attr( $atts ) {
 			'terms' => explode(',', $a['vehicle_make']),
 			'field' => 'name',
 			'taxonomy' => 'make'
+		];
+	}
+
+	if ($a['type'] != '') {
+		$args['tax_query'][] = [
+			'terms' => explode(',', $a['type']),
+			'field' => 'name',
+			'taxonomy' => 'vehicle_type'
 		];
 	}
 
