@@ -17,7 +17,7 @@ registerBlockType( 'cls-blocks/contact-content', {
 		},
 		allowBlocks : {
 			type: 'array',
-			default: [['core/html']]
+			default: [['core/html', 'core/buttons']]
 		}
 	},
 	category: 'layout',

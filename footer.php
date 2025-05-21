@@ -9,7 +9,7 @@
  * @package cls
  */
 if (function_exists('get_field')) {
-    
+    global $wpdb;
     $company_settings = [
         'phone'         => get_field('business_phone', 'options'),
         'email'         => get_field('business_email', 'options'),
@@ -23,6 +23,7 @@ if (function_exists('get_field')) {
         'logo'          => get_field('footer_logo', 'options')
     ];
 
+     
 ?>
 
     <footer id="colophon" class="site-footer">

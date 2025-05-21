@@ -467,10 +467,13 @@ function cls_import_vehicles_from_csv() {
                 $testing = '';
                 foreach($missing_images as $missing_image) {
 
-                    $image_query = $wpdb->get_col( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' && post_parent = '{$exists_id}' && post_content = '{$missing_image}'" );
-                    wp_delete_attachment( $image_query[0], true );
-                    delete_post_meta( $image_query[0], 'image_order');
-                    delete_post_meta( $image_query[0], 'base');
+                    // $image_query = $wpdb->get_col( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' && post_parent = '{$exists_id}' && post_content = '{$missing_image}'" );
+                    $image_query = $wpdb->get_col( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'base' && meta_value = '{$missing_image}'" );
+                    foreach($image_query as $temp) {
+                        wp_delete_attachment( $temp, true );
+                        delete_post_meta( $temp, 'image_order');
+                        delete_post_meta( $temp, 'base');
+                    }
 
                     $testing .= $image_query[0] . ',';
                 
