@@ -109,6 +109,11 @@ ul.gs-team-filter-cats li.filter.active>a {
 	}
 }
 
+.wp-block-button__link {
+	height: auto;
+	width: auto;
+}
+
 .fixed-buttons .fixed-wrapper a.wp-block-button__link {
 	font-size: 14px;
 	line-height: 18px;

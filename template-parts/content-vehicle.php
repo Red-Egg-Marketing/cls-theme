@@ -217,6 +217,9 @@ $type = has_term('new', 'car_type', $id);
 							<li>Stock #: <?php echo $stock; ?></li>
 						</ul>
 					</div>
+					<div class="buttons">
+						<div class="cn-button-container" data-vin="<?php echo $vin; ?>" data-page-type="vdp" data-type="used"></div>
+					</div>
 			</div>
 
 			

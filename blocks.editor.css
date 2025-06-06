@@ -1515,6 +1515,15 @@ ul.gs-team-filter-cats li.filter.active > a {
   }
 }
 
+
+.wp-block-button__link,
+div.gs_team_area .gs-team-filter-cats li a,
+a[download],
+div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
+  height: auto;
+  width: auto;
+}
+
 .fixed-buttons .fixed-wrapper a.wp-block-button__link, .fixed-buttons .fixed-wrapper div.gs_team_area .gs-team-filter-cats li a, div.gs_team_area .gs-team-filter-cats li .fixed-buttons .fixed-wrapper a, .fixed-buttons .fixed-wrapper a[download] {
   font-size: 14px;
   line-height: 18px;
