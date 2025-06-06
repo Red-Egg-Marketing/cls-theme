@@ -41,7 +41,7 @@ $carfax_img = get_stylesheet_directory_uri() . '/img/carfax.svg';
 $miles = number_format(floatval(get_post_meta($id, 'miles', true)), 0);
 $phone = get_field('business_phone', 'options');
 $stock = get_post_meta($id, 'stock', true);
-
+$type = has_term('new', 'car_type', $id);
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -211,9 +211,14 @@ $stock = get_post_meta($id, 'stock', true);
 					</div>
 					<div class="more-info">
 						<ul>
-							<li>VIN: <?php echo $vin; ?></li>
+							<?php if($type == false) { ?>
+								<li>VIN: <?php echo $vin; ?></li>
+							<?php } ?>
 							<li>Stock #: <?php echo $stock; ?></li>
 						</ul>
+					</div>
+					<div class="buttons">
+						<div class="cn-button-container" data-vin="<?php echo $vin; ?>" data-page-type="vdp" data-type="used"></div>
 					</div>
 			</div>
 
