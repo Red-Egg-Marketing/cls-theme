@@ -38,8 +38,8 @@ $blurb = get_field('menu_blurb', 'options');
 				<?php
 				wp_nav_menu(
 					array(
-						'theme_location' => 'menu-2',
-						'menu_id'        => 'secondary-menu',					
+						'theme_location' 	=> 'menu-2',
+						'menu_id'        	=> 'secondary-menu',					
 					)
 				);
 				?>
@@ -71,7 +71,8 @@ $blurb = get_field('menu_blurb', 'options');
 						array(
 							'theme_location' =>  'menu-1',
 							'menu_id'        =>  'primary-menu',
-							'container_class'	 =>	 'menu-primary-menu-container'		
+							'container_class'	 =>	 'menu-primary-menu-container',
+							'walker'			=> new CLS_Menu_Walker()
 						)
 					);
 	

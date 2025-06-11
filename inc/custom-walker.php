@@ -1,6 +1,6 @@
 <?php
 
-class cls_Menu_Walker extends Walker_Nav_Menu {
+class CLS_Menu_Walker extends Walker_Nav_Menu {
 	function start_el(&$output, $data_object, $depth=0, $args=[], $current_object_id = 0) {
 		// Restores the more descriptive, specific name for use within this method.
 		$menu_item = $data_object;
@@ -119,12 +119,14 @@ class cls_Menu_Walker extends Walker_Nav_Menu {
 
 		$item_output  = $args->before;
 		if (function_exists('get_field')){
-			$is_modal = get_field('modal', $menu_item->ID);
-			$form = get_field('menu_form', 'options');
-			if ($is_modal == 'yes') {
+			$is_chat = get_field('enable_chat', $menu_item->ID);
 
-				$attributes .= ' ' . 'data-fancybox';
-				$attributes .= ' ' . 'data-src="#modal-form-' . $form . '"';
+			if ($is_chat == true) {
+
+				$on_click = get_field('on_click', $menu_item->ID);
+				$on_key = get_field('on_keydown', $menu_item->ID);
+				$attributes .= ' ' . 'onclick="' . $on_click  . '"';
+				$attributes .= ' ' . 'onkeydown="' . $on_key  . '"';
 			}
 		}
 
