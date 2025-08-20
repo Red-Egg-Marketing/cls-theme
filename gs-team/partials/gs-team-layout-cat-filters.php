@@ -19,9 +19,9 @@ $_exclude_group = [];
 
 $terms = get_terms([
     'taxonomy'  => 'team_group',
-    'orderby'   => $group_orderby,
-    'order'     => $group_order,
-    'hide_empty' => $group_hide_empty === 'on',
+    'orderby'   => $taxonomy_orderby,
+    'order'     => $taxonomy_order,
+    'hide_empty' => $hide_empty,
     'ignore_term_order' => true,
 ]);
 
