@@ -73,20 +73,15 @@ $type = has_term('new', 'car_type', $id);
 				<div class="vehicle-gallery">
 				<div class="vehicle swiper">
 					<div class="swiper-wrapper">
-					<?
-					foreach($attachments as $key => $attachment) {
-					?>
-						<?php
-							if ($key == 0) {
-						?>
-							<div class="swiper-slide">
+						<div class="swiper-slide">
 								<?php
 									echo wp_get_attachment_image($feat, 'post-landscape');
 								?>
-							</div>
-						<?php
-							}
-						?>
+						</div>
+					<?
+					foreach($attachments as $key => $attachment) {
+					?>
+
 						<div class="swiper-slide">
 						<?php
 							echo wp_get_attachment_image($attachment->ID, 'post-landscape');
@@ -101,21 +96,14 @@ $type = has_term('new', 'car_type', $id);
   				<!-- Gallery Thumbs -->
   				<div class="thumbnails swiper">
   					<div class="swiper-wrapper">
+  						<div class="swiper-slide">
+							<?php
+								echo wp_get_attachment_image($feat, 'thumbnail');
+							?>
+						</div>
   						<?
 						foreach($attachments as $key => $attachment) {
 						?>
-								<?php
-									if ($key == 0) {
-
-								?>
-									<div class="swiper-slide">
-										<?php
-											echo wp_get_attachment_image($feat, 'thumbnail');
-										?>
-									</div>
-								<?php
-									}
-								?>
 								<div class="swiper-slide">
 								<?php
 									echo wp_get_attachment_image($attachment->ID, 'thumbnail');
