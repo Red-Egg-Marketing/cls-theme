@@ -68,7 +68,7 @@ $type = has_term('new', 'car_type', $id);
 			    'numberposts' => -1
 			));
 
-			if (!empty($attachments)) {
+			if (!empty($attachments || $feat != false)) {
 				?>
 				<div class="vehicle-gallery">
 				<div class="vehicle swiper">
