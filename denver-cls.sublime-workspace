@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"array_ke",
+				"array_key_exists"
+			],
+			[
 				"on",
 				"on_click"
 			],
@@ -250,10 +254,6 @@
 			[
 				"wp_up",
 				"wp_update_post"
-			],
-			[
-				"array_ke",
-				"array_key_exists"
 			],
 			[
 				"file",
@@ -519,6 +519,121 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAApQQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAACUAAAAV2FybmluZzogVW5kZWZpbmVkIGFycmF5IGtleSAiTW9kZWxOdW1iZXIiIGluIC9ob21lL2Nsc2NhcnMvbWVtYmVyc2F1dG9jZW50ZXIub3JnL3B1YmxpY19odG1sL3dwLWNvbnRlbnQvdGhlbWVzL2Nscy10aGVtZS9pbmMvaW1wb3J0LnBocCBvbiBsaW5lIDI4NA",
+					"AQAAAAAAAAABAAAAlQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					2,
+					"left_delete",
+					null,
+					"AgAAAAIAAAAAAAAAAgAAAAAAAAABAAAACgEAAAAAAAAAAQAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					28,
+					1,
+					"left_delete",
+					null,
+					"AQAAACMBAAAAAAAAIwEAAAAAAACSAAAACldhcm5pbmc6IFVuZGVmaW5lZCBhcnJheSBrZXkgIkludm9pY2UiIGluIC9ob21lL2Nsc2NhcnMvbWVtYmVyc2F1dG9jZW50ZXIub3JnL3B1YmxpY19odG1sL3dwLWNvbnRlbnQvdGhlbWVzL2Nscy10aGVtZS9pbmMvaW1wb3J0LnBocCBvbiBsaW5lIDI5MQo",
+					"AQAAAAAAAAABAAAAtQEAAAAAAAAjAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAACOAAAACldhcm5pbmc6IFVuZGVmaW5lZCBhcnJheSBrZXkgIk1TUlAiIGluIC9ob21lL2Nsc2NhcnMvbWVtYmVyc2F1dG9jZW50ZXIub3JnL3B1YmxpY19odG1sL3dwLWNvbnRlbnQvdGhlbWVzL2Nscy10aGVtZS9pbmMvaW1wb3J0LnBocCBvbiBsaW5lIDI4Ng",
+					"AQAAAAAAAAABAAAAjgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					44,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAACTAAAACldhcm5pbmc6IFVuZGVmaW5lZCBhcnJheSBrZXkgIkJvb2tWYWx1ZSIgaW4gL2hvbWUvY2xzY2Fycy9tZW1iZXJzYXV0b2NlbnRlci5vcmcvcHVibGljX2h0bWwvd3AtY29udGVudC90aGVtZXMvY2xzLXRoZW1lL2luYy9pbXBvcnQucGhwIG9uIGxpbmUgMjkw",
+					"AQAAAAAAAAABAAAAkwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					46,
+					2,
+					"left_delete",
+					null,
+					"AgAAAAEAAAAAAAAAAQAAAAAAAAABAAAACgAAAAAAAAAAAAAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					57,
+					3,
+					"left_delete",
+					null,
+					"AwAAAMIBAAAAAAAAwgEAAAAAAACXAAAAV2FybmluZzogVW5kZWZpbmVkIGFycmF5IGtleSAiSW50ZXJpb3JDb2xvciIgaW4gL2hvbWUvY2xzY2Fycy9tZW1iZXJzYXV0b2NlbnRlci5vcmcvcHVibGljX2h0bWwvd3AtY29udGVudC90aGVtZXMvY2xzLXRoZW1lL2luYy9pbXBvcnQucGhwIG9uIGxpbmUgNTUwCsEBAAAAAAAAwQEAAAAAAAABAAAACsABAAAAAAAAwAEAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAWQIAAAAAAADCAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					73,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAACSAAAAV2FybmluZzogVW5kZWZpbmVkIGFycmF5IGtleSAiQ2VydGlmaWVkIiBpbiAvaG9tZS9jbHNjYXJzL21lbWJlcnNhdXRvY2VudGVyLm9yZy9wdWJsaWNfaHRtbC93cC1jb250ZW50L3RoZW1lcy9jbHMtdGhlbWUvaW5jL2ltcG9ydC5waHAgb24gbGluZSAyOTI",
+					"AQAAAAAAAAABAAAAkgAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					78,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAEAAAAAAAAAAQAAAAAAAACdAAAACldhcm5pbmc6IFVuZGVmaW5lZCBhcnJheSBrZXkgIkNhdGVnb3JpemVkIE9wdGlvbnMiIGluIC9ob21lL2Nsc2NhcnMvbWVtYmVyc2F1dG9jZW50ZXIub3JnL3B1YmxpY19odG1sL3dwLWNvbnRlbnQvdGhlbWVzL2Nscy10aGVtZS9pbmMvaW1wb3J0LnBocCBvbiBsaW5lIDI5NQ",
+					"AQAAAAAAAAABAAAAngAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					80,
+					2,
+					"left_delete",
+					null,
+					"AgAAAAIAAAAAAAAAAgAAAAAAAAABAAAACgEAAAAAAAAAAQAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					84,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAACPAAAACldhcm5pbmc6IFVuZGVmaW5lZCBhcnJheSBrZXkgIkRvb3JzIiBpbiAvaG9tZS9jbHNjYXJzL21lbWJlcnNhdXRvY2VudGVyLm9yZy9wdWJsaWNfaHRtbC93cC1jb250ZW50L3RoZW1lcy9jbHMtdGhlbWUvaW5jL2ltcG9ydC5waHAgb24gbGluZSA1NDg",
+					"AQAAAAAAAAABAAAAAAAAAAAAAACPAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -563,24 +678,26 @@
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/maintenance",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/partials",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts",
 		"/Users/jacoblang/Local Sites/cls-denver"
 	],
 	"file_history":
 	[
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/options.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/partials/gs-team-layout-cat-filters.php",
+		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/import.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/shortcodes.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/redirects.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/template-functions.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/options.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/posts-filter.php",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/inc/import.php",
 		"/Users/jacoblang/Desktop/new.csv",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-admin/import.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/template-parts/content-vehicle.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-includes/shortcodes.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/support/blocks/hero/edit.js",
-		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/partials/gs-team-layout-cat-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/plugins/gs-team-members-premium/templates/partials/gs-team-layout-cat-filters.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/gs-grid-style-five-old.php",
 		"/Users/jacoblang/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/gs-team/singles/gs-team-single-default.php",
@@ -716,6 +833,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"doors",
+			"Certified",
+			"certified",
+			"']],\n",
+			"Certified",
+			"taxonomy_orderby",
+			"ignore_term_order",
+			"true",
+			"ignore_term_order",
+			"Options",
+			"doors",
+			"ModelNumber",
+			"InteriorColor",
+			"modelCode",
+			"BookValue",
+			"ModelNumber",
+			"modelCode",
+			"invoice",
+			"bookvalue",
+			"msrp",
+			"modelCode",
+			"msrp",
 			"image_order",
 			"group_order",
 			"all",
@@ -821,29 +960,7 @@
 			"blockprops",
 			"gform",
 			"mail",
-			"style",
-			"style = {",
-			"style",
-			"resourcesEmpty",
-			"designation",
-			".image-grid .hero",
-			"sales",
-			"vin",
-			"newUsed",
-			"vin",
-			"newused",
-			" vehicle-database.p.rapidapi.com",
-			"vehicle-database.p.rapidapi.com\"",
-			"_vehicles_transient",
-			"cls_vehicles_set_vehicle_transient",
-			"test_transient",
-			"transient",
-			"vehicles",
-			"posts",
-			"wprc_add_acf_posts_endpoint",
-			"cls_cache_endpoint",
-			"cls_return_reviews",
-			"cls_vehicles_carfax_outbound"
+			"style"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -875,6 +992,36 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -906,7 +1053,7 @@
 		"cols":
 		[
 			0.0,
-			0.486377807819,
+			0.711816490784,
 			1.0
 		],
 		"rows":
@@ -934,8 +1081,12 @@
 		"selected_items":
 		[
 			[
-				"imp",
+				"impor",
 				"app/public/wp-content/themes/cls-theme/inc/import.php"
+			],
+			[
+				"imp",
+				"app/public/wp-admin/import.php"
 			],
 			[
 				"import",
@@ -952,10 +1103,6 @@
 			[
 				"shor",
 				"app/public/wp-includes/shortcodes.php"
-			],
-			[
-				"impor",
-				"app/public/wp-content/themes/cls-theme/inc/import.php"
 			],
 			[
 				"gs-team-layout-cat",
@@ -1451,9 +1598,13 @@
 	"select_project":
 	{
 		"height": 683.0,
-		"last_filter": "re",
+		"last_filter": "dd",
 		"selected_items":
 		[
+			[
+				"dd",
+				"~/Local Sites/ddrc/ddrc.sublime-project"
+			],
 			[
 				"re",
 				"~/Local Sites/red-egg-production/red-egg-prod.sublime-project"
@@ -1505,10 +1656,6 @@
 			[
 				"de",
 				"~/Local Sites/cls-denver/app/public/wp-content/themes/cls-theme/denver-cls.sublime-project"
-			],
-			[
-				"dd",
-				"~/Local Sites/ddrc/ddrc.sublime-project"
 			],
 			[
 				"pro",
@@ -1918,7 +2065,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 363.0,
+	"side_bar_width": 273.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

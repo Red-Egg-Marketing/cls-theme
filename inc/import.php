@@ -129,17 +129,17 @@ function cls_import_vehicles_from_csv() {
                     foreach ( $header as $i => $key ) {
                         switch($key) {
                             case 'interiorColor':
-                                $post['InteriorColor'];
+                                $post['InteriorColor'] = $row[$i];
                                 break;
                             case 'modelCode':
-                                $post['ModelNumber'];
+                                $post['ModelNumber'] = $row[$i];
                                 break;
                             case 'KBB_Retail':
-                                $post['BookValue'];
-                                $post['MSRP'];
+                                $post['BookValue'] = $row[$i];
+                                $post['MSRP'] = $row[$i];
                                 break;
                             case 'invoice':
-                                $post['Invoice'];
+                                $post['Invoice'] = $row[$i];
                                 break;
                             case 'vin':
                                 $post['VIN'] = $row[$i];
