@@ -128,6 +128,19 @@ function cls_import_vehicles_from_csv() {
 
                     foreach ( $header as $i => $key ) {
                         switch($key) {
+                            case 'interiorColor':
+                                $post['InteriorColor'];
+                                break;
+                            case 'modelCode':
+                                $post['ModelNumber'];
+                                break;
+                            case 'KBB_Retail':
+                                $post['BookValue'];
+                                $post['MSRP'];
+                                break;
+                            case 'invoice':
+                                $post['Invoice'];
+                                break;
                             case 'vin':
                                 $post['VIN'] = $row[$i];
                                 break;
@@ -289,10 +302,10 @@ function cls_import_vehicles_from_csv() {
             "model" => $post["Model"],
             "book_value" => $post["BookValue"],
             "invoice" => $post["Invoice"],
-            "certified" => $post["Certified"],
+            "certified" => array_key_exists("Certified", $post) ? $post["Certified"] : false,
             "date_in_stock" => $post["DateInStock"],
             "options" => $post["Options"],
-            "categorized_options" => $post["Categorized Options"],
+            "categorized_options" => array_key_exists("Categorized Options", $post) ? $post["Categorized Options"] : false,
             "city_mpg" => $post["CityMPG"],
             "highway_mpg" => $post["HighwayMPG"]
         ];
@@ -545,7 +558,7 @@ function cls_import_vehicles_from_csv() {
             ['car_year' => $post['Year']],
             ['body_style' => $post['Body']],
             ['trim' => $post['Trim']],
-            ['doors' => $post['Doors']],
+            ['doors' => array_key_exists('Doors', $post) ? $post['Doors'] : false],
             ['exterior_color' => $post['ExteriorColor']],
             ['interior_color' => $post['InteriorColor']],
             ['engine_cylinder' => $post['EngineCylinders']],
