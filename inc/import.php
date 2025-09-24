@@ -97,6 +97,7 @@ function cls_import_vehicles_from_csv() {
         "city_mpg"              =>  "city_mpg",
         "highway_mpg"           =>  "highway_mpg",
         "drivetrain"            =>  "drivetrain",
+        "vehicleType"           =>  "vehicleType",
     );
 
     // Get the data from all those CSVs!
@@ -127,6 +128,19 @@ function cls_import_vehicles_from_csv() {
 
                     foreach ( $header as $i => $key ) {
                         switch($key) {
+                            case 'interiorColor':
+                                $post['InteriorColor'];
+                                break;
+                            case 'modelCode':
+                                $post['ModelNumber'];
+                                break;
+                            case 'KBB_Retail':
+                                $post['BookValue'];
+                                $post['MSRP'];
+                                break;
+                            case 'invoice':
+                                $post['Invoice'];
+                                break;
                             case 'vin':
                                 $post['VIN'] = $row[$i];
                                 break;
@@ -140,6 +154,7 @@ function cls_import_vehicles_from_csv() {
                                 $post['Model'] = $row[$i];
                                 break;
                             case 'body':
+                                $post['Body'] = $row[$i];
                                 $post['Body'] = $row[$i];
                                 break;
                             case 'trim':
@@ -188,6 +203,9 @@ function cls_import_vehicles_from_csv() {
                                 break;
                             case 'mpgHighway':
                                 $post['HighwayMPG'] = $row[$i];
+                                break;
+                            case 'vehicleType':
+                                $post['vehicle_type'] = $row[$i];
                                 break;
                             default:
                                 $post[$key] = $row[$i];                            
@@ -284,10 +302,10 @@ function cls_import_vehicles_from_csv() {
             "model" => $post["Model"],
             "book_value" => $post["BookValue"],
             "invoice" => $post["Invoice"],
-            "certified" => $post["Certified"],
+            "certified" => array_key_exists("Certified", $post) ? $post["Certified"] : false,
             "date_in_stock" => $post["DateInStock"],
             "options" => $post["Options"],
-            "categorized_options" => $post["Categorized Options"],
+            "categorized_options" => array_key_exists("Categorized Options", $post) ? $post["Categorized Options"] : false,
             "city_mpg" => $post["CityMPG"],
             "highway_mpg" => $post["HighwayMPG"]
         ];
@@ -462,10 +480,13 @@ function cls_import_vehicles_from_csv() {
                 $testing = '';
                 foreach($missing_images as $missing_image) {
 
-                    $image_query = $wpdb->get_col( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' && post_parent = '{$exists_id}' && post_content = '{$missing_image}'" );
-                    wp_delete_attachment( $image_query[0], true );
-                    delete_post_meta( $image_query[0], 'image_order');
-                    delete_post_meta( $image_query[0], 'base');
+                    // $image_query = $wpdb->get_col( "SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' && post_parent = '{$exists_id}' && post_content = '{$missing_image}'" );
+                    $image_query = $wpdb->get_col( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'base' && meta_value = '{$missing_image}'" );
+                    foreach($image_query as $temp) {
+                        wp_delete_attachment( $temp, true );
+                        delete_post_meta( $temp, 'image_order');
+                        delete_post_meta( $temp, 'base');
+                    }
 
                     $testing .= $image_query[0] . ',';
                 
@@ -537,13 +558,14 @@ function cls_import_vehicles_from_csv() {
             ['car_year' => $post['Year']],
             ['body_style' => $post['Body']],
             ['trim' => $post['Trim']],
-            ['doors' => $post['Doors']],
+            ['doors' => array_key_exists('Doors', $post) ? $post['Doors'] : false],
             ['exterior_color' => $post['ExteriorColor']],
             ['interior_color' => $post['InteriorColor']],
             ['engine_cylinder' => $post['EngineCylinders']],
             ['engine_displacement' => $post['EngineDisplacement']],
             ['transmission' => $post['Transmission']],
             ['drivetrain' => $post['Drivetrain']],
+            ['vehicle_type' => $post['vehicle_type']],
         );
 
         // add taxonomies
