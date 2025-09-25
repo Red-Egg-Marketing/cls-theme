@@ -14,7 +14,7 @@ function cls_all_vins_features_lookup() {
         'posts_per_page' => -1
     ];
 
-    $query = new WP_Query($arg);
+    $query = new WP_Query($vehicles);
 
     if ($query->have_posts()) {
         while($query->have_posts()){
@@ -100,7 +100,11 @@ add_action('save_post_vehicle', 'cls_vin_features_lookup');
 
 
 // use to import attributes not available in import file
-function cls_vin_import_check( $post_id ) {
+function cls_vin_import_check( $post_id, $post, $update ) {
+
+    if ( 'trash' === $post->post_status ) {
+        return;
+    }
 
     $post_type = get_post_type($post_id);
 
@@ -160,7 +164,7 @@ function cls_vin_import_check( $post_id ) {
     }
 }
 
-add_action('save_post_vehicle', 'cls_vin_import_check');
+add_action('save_post_vehicle', 'cls_vin_import_check', 10, 3);
 
 
 function cls_rewrite_rules_update( $post_id ) {
