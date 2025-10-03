@@ -174,8 +174,12 @@ function cls_import_vehicles_from_csv() {
                                 break;
                             case 'engine':
                                 $temp = explode(',', $row[$i]);
-                                $post['EngineCylinders'] = $temp[0];
-                                $post['EngineDisplacement'] = $temp[1];
+                                if (array_key_exists(0, $temp)) {
+                                    $post['EngineCylinders'] = $temp[0];
+                                }
+                                if (array_key_exists(1, $temp)) {
+                                    $post['EngineDisplacement'] = $temp[1];
+                                }
                                 break;
                             case 'drive':
                                 $post['Drivetrain'] = $row[$i];
