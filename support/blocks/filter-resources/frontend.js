@@ -6,12 +6,14 @@ const { __ } = wp.i18n;
 import ResourceCard from '../../components/ResourceCard.js';
 import ResourceFilters from '../../components/ResourceLoader.js';
 const apiUrl  = '/wp-json/cls/v2/vehicles';
+const reviewUrl  = '/wp-json/cls/v2/reviews';
 
 const ResourcesRootNew = document.getElementById('ResourcesWrap');
 
 const SaveResources = ( { attributes } ) => {
 	  	
 	  	const [resources, selectResources] = useState(false);
+	  	const [reviews, setReviews] = useState(false);
 	  	const [taxonomy, setTaxes] = useState([]);
   		const [selectTax, setSelectTaxes] = useState([]);
   		const [resourcesEmpty, setEmpty] = useState(false);
@@ -199,9 +201,8 @@ const SaveResources = ( { attributes } ) => {
   			event.preventDefault();
   		}
 
-		if (resources === false && triggered == false) {
+		if (resources === false && triggered == false && reviews == false) {
 			let tempstring = window.location.search == '' ? apiUrl + '?nonce=' + postData.nonce :  apiUrl + window.location.search + '&nonce=' + postData.nonce;
-			console.log(tempstring);
     		wp.apiRequest({
     		    url: tempstring,
     		    method: 'GET',
