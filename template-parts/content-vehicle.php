@@ -42,6 +42,8 @@ $miles = number_format(floatval(get_post_meta($id, 'miles', true)), 0);
 $phone = get_field('business_phone', 'options');
 $stock = get_post_meta($id, 'stock', true);
 $type = has_term('new', 'car_type', $id);
+$reviews = get_field('reviews_for_vehicles', 'options');
+$credit_app = get_field('credit_app', 'options');
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -129,16 +131,21 @@ $type = has_term('new', 'car_type', $id);
 		?>
 		</div>
 		<div class="col flex second-col">
-			<div class="col car-details">
+			<div class="col car-details flex">
 				<a 
 					class="wp-block-button__link wp-element-button" 
 					href="javascript;" 
 					data-src="#modal-form-<?= $modal_form  ?>" 
 					data-fancybox>I'm Interested</a>
+
+					<a 
+					class="wp-block-button__link wp-element-button" 
+					href="javascript;" 
+					data-src="#modal-form-<?= $modal_form  ?>" 
+					data-fancybox>Schedule a Test Drive</a>
+					<p class="phone"><a href="tel:<?php echo $phone; ?>"><? echo $phone; ?></a></p>
 			</div>
-			<div class="col car-details flex-end align-start flex">
-				<p class="phone"><a href="tel:<?php echo $phone; ?>"><? echo $phone; ?></a></p>
-			</div>		
+			
 			<div class="col car-details flex align-start">
 				<div class="flex align-start width-100">
 					<?php if ($miles) { ?>
@@ -171,6 +178,12 @@ $type = has_term('new', 'car_type', $id);
 					<?php } ?>
 					<?php if ($city && $highway) { ?>
 						<p class="attr mpg"><? echo $city . ' City/' . $highway .' Highway MPG'; ?> </p>
+					<?php } ?>
+
+					<?php if ($credit_app) { ?>
+						<a 
+						class="wp-block-button__link wp-element-button get-approved" 
+						href="<?php echo $credit_app; ?>">Get Approved</a>
 					<?php } ?>
 
 					 <?php if ($carfax_link) { ?>
@@ -212,6 +225,15 @@ $type = has_term('new', 'car_type', $id);
 
 			
 		</div>
+		</div><!-- .post-content -->
+		<?php
+			
+			if ($reviews) {
+				$gblock = get_post( $reviews );
+    			echo apply_filters( 'the_content', $gblock->post_content );
+    		}
+		?>
+		<div class="post-content second-cont">
 		<div class="col col-full">
 			<?php if(is_array($mechanical) || is_array($safety) || is_array($feature_exterior) || is_array($feature_interior)) { ?>
 			<h3 style="color: black;">Features</h3>
