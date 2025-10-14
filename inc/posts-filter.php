@@ -14,7 +14,7 @@ function cls_all_vins_features_lookup() {
         'posts_per_page' => -1
     ];
 
-    $query = new WP_Query($arg);
+    $query = new WP_Query($vehicles);
 
     if ($query->have_posts()) {
         while($query->have_posts()){

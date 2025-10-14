@@ -640,11 +640,12 @@ add_action( 'rest_api_init', function () {
 
 
 function cls_return_reviews() {
+	
 	global $wpdb;
 	$id = array_key_exists('post_id', $_POST) ? $_POST['post_id'] : false;
 
 	if ($id) {
-	    	$name = html_entity_decode(get_the_title($id));
+	    $name = html_entity_decode(get_the_title($id));
 			$full = $name;
 			$name = explode(" ", $name);
 			$length = sizeof($name);
