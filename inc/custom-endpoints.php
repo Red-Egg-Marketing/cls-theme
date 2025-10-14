@@ -612,12 +612,40 @@ function cls_resource_card($id, $cats = false) {
 }
 
 
+function cls_return_featured_reviews() {
+	global $wpdb;
+
+	$results = $wpdb->get_results( 
+			"
+				SELECT *
+				FROM {$wpdb->prefix}wpfb_reviews
+				WHERE sort_weight > 0
+				ORDER BY created_time DESC
+				LIMIT 5
+	", OBJECT );
+
+	return $results;
+
+}
+
+add_action( 'rest_api_init', function () {
+  register_rest_route( 'cls/v2', '/featured_reviews/', 
+  	[
+    	'methods' => 'POST, GET',
+    	'callback' => 'cls_return_featured_reviews',
+    	'permission_callback' => '__return_true'
+  	] 
+  );
+ });
+
+
 function cls_return_reviews() {
+	
 	global $wpdb;
 	$id = array_key_exists('post_id', $_POST) ? $_POST['post_id'] : false;
 
 	if ($id) {
-	    	$name = html_entity_decode(get_the_title($id));
+	    $name = html_entity_decode(get_the_title($id));
 			$full = $name;
 			$name = explode(" ", $name);
 			$length = sizeof($name);
@@ -713,6 +741,10 @@ function cls_cache_endpoint( $allowed_endpoints ) {
     		}
     		if (! in_array( 'reviews', $allowed_endpoints[ 'cls/v2' ])) { 
     			$allowed_endpoints[ 'cls/v2' ][] = 'reviews'; 
+    		}
+
+    		if (! in_array( 'featured_reviews', $allowed_endpoints[ 'cls/v2' ])) { 
+    			$allowed_endpoints[ 'cls/v2' ][] = 'featured_reviews'; 
     		}
     }
     return $allowed_endpoints;
