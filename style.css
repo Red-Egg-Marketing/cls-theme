@@ -20373,6 +20373,10 @@ ul.feature {
   display: block;
 }
 
+.related-posts p {
+  color: #00395C;
+}
+
 body.archive .resources-grid .section-header {
   display: none;
 }
