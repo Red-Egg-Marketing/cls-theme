@@ -13780,6 +13780,10 @@ li.menu-item.nav-button a:hover {
   }
 }
 
+.main-navigation .menu-item a {
+  width: auto;
+}
+
 .main-navigation .menu-item a:hover {
   color: #00395C;
 }
@@ -13918,7 +13922,7 @@ li.menu-item.nav-button a:hover {
 }
 
 .main-navigation .menu > .menu-item > .sub-menu {
-  display: block;
+  display: none;
   padding-top: 15px;
 }
 
@@ -19116,20 +19120,23 @@ a.footer-home img {
   width: 100%;
   margin-bottom: 20px;
   margin-top: 30px;
+  grid-column-gap: 20px;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .post-content .car-details:first-of-type {
-    width: 50%;
+    width: 100%;
     margin-bottom: 30px;
     margin-top: 0;
   }
 }
 
-.car-details:first-of-type p {
-  width: 100%;
+/*.car-details:first-of-type p {
+	width: 100%;
 }
-
+*/
 .car-details.flex-end {
   -ms-flex-pack: start;
       justify-content: flex-start;
@@ -19194,6 +19201,22 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
   }
 }
 
+.single.single-vehicle .shortcode-section {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .single.single-vehicle .shortcode-section {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .single.single-vehicle .post-content.second-cont {
+    padding-top: 3rem;
+  }
+}
+
 .post-content .col {
   width: 100%;
 }
@@ -19255,13 +19278,12 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
   font-weight: 700;
   color: #000000;
   line-height: 50px;
-  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .post-content .price {
     line-height: 60px;
-    margin-bottom: 3.125rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -19311,7 +19333,19 @@ p.attr {
 
 @media screen and (min-width: 768px) {
   .car-details .wp-element-button {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.car-details .wp-element-button.get-approved {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .car-details .wp-element-button.get-approved {
+    margin-top: 30px;
+    margin-right: 20px;
   }
 }
 
@@ -19469,6 +19503,7 @@ p.attr {
 .phone {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30.004' viewBox='0 0 30 30.004'%3E%3Cpath id='phone-solid' d='M.044,22.672l1.362,5.907A1.821,1.821,0,0,0,3.191,30,26.839,26.839,0,0,0,30,3.188,1.82,1.82,0,0,0,28.581,1.4L22.674.041a1.839,1.839,0,0,0-2.1,1.062L17.851,7.461A1.834,1.834,0,0,0,18.377,9.6l3.155,2.533a20.49,20.49,0,0,1-9.347,9.347L9.6,18.324A1.823,1.823,0,0,0,7.466,17.8L1.108,20.524A2,2,0,0,0,.044,22.672Z' transform='translate(0 0.006)' fill='%23910035'/%3E%3C/svg%3E%0A") no-repeat left 0px/20px;
   padding-left: 35px;
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
@@ -19485,6 +19520,8 @@ p.attr {
 p.phone {
   color: #910035;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 p.phone a {
@@ -21007,6 +21044,24 @@ button.slickwprev-prev:before {
 
 .wprevpro span.wprevpro_t1_DIV_title {
   display: none;
+}
+
+.bio-component.alternatives div.wprevpro_t1_DIV_2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bio-component.alternatives div.wprev_preview_tcolor2_T1 > div.wprevpro_t1_rname,
+.bio-component.alternatives div.wprevpro_t1_P_3 {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.bio-component.alternatives {
+  margin-bottom: 0;
+  padding: 10px;
 }
 
 .single-member-alt a {

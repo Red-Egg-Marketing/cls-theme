@@ -408,6 +408,10 @@ li.menu-item.nav-button a {
 	}
 }
 
+.main-navigation .menu-item a {
+	width: auto;
+}
+
 .main-navigation .menu-item a:hover {
 	color: $navy;
 }
@@ -509,7 +513,7 @@ li.menu-item.nav-button a {
 }
 
 .main-navigation .menu > .menu-item > .sub-menu {
-	display: block;
+	display: none;
 	padding-top: 15px;
 	@media screen and (min-width:  $med-small-width) {
 		padding-top: 15px;

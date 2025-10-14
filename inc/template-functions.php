@@ -295,6 +295,7 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
 	$taxes = ['make', 'model', 'body'];
 	$make = get_the_terms($id, 'make');
 	$model = get_the_terms($id, 'model');
+	$vehicle_form = get_field('vehicle_application', 'options');
 
 	$args = [
 		'post_type' => $post_types,
@@ -376,7 +377,13 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
 				<div class="swiper-button-prev"></div>
   				<div class="swiper-button-next"></div>
 				</div>
-				
+				<div class="wp-buttons flex j-center">
+					<a 
+						class="wp-block-button__link wp-element-button" 
+						href="javascript;" 
+						data-src="#modal-form-<?= $vehicle_form  ?>" 
+						data-fancybox>Find Me One Like This</a>
+				</div>
 			</div><!-- .resources-grid -->
 			<?php
 			}

@@ -4,14 +4,17 @@ const { RangeControl, PanelBody, TextControl, SelectControl, Button, Toolbar, To
 const { useDispatch, useSelect, replaceInnerBlocks } = wp.data;
 const { __ } = wp.i18n;
 import ResourceCard from '../../components/ResourceCard.js';
+import Bio from '../../components/Bio.js';
 import ResourceFilters from '../../components/ResourceLoader.js';
 const apiUrl  = '/wp-json/cls/v2/vehicles';
+const reviewUrl  = '/wp-json/cls/v2/featured_reviews';
 
 const ResourcesRootNew = document.getElementById('ResourcesWrap');
 
 const SaveResources = ( { attributes } ) => {
 	  	
 	  	const [resources, selectResources] = useState(false);
+	  	const [reviews, setReviews] = useState(false);
 	  	const [taxonomy, setTaxes] = useState([]);
   		const [selectTax, setSelectTaxes] = useState([]);
   		const [resourcesEmpty, setEmpty] = useState(false);
@@ -20,6 +23,8 @@ const SaveResources = ( { attributes } ) => {
   		const [data, setData] = useState({});
   		const [toggleFilters, setToggleFilters] = useState({key: '', active: false});
   		let searchParams =  new URLSearchParams(window.location.search);
+  		let printReview = 5;
+  		let reviewIt = 0;
 
 		document.addEventListener('click', function(event) {
     		let target = event.target;
@@ -199,9 +204,8 @@ const SaveResources = ( { attributes } ) => {
   			event.preventDefault();
   		}
 
-		if (resources === false && triggered == false) {
+		if (resources === false && triggered == false && reviews == false) {
 			let tempstring = window.location.search == '' ? apiUrl + '?nonce=' + postData.nonce :  apiUrl + window.location.search + '&nonce=' + postData.nonce;
-			console.log(tempstring);
     		wp.apiRequest({
     		    url: tempstring,
     		    method: 'GET',
@@ -218,6 +222,12 @@ const SaveResources = ( { attributes } ) => {
     				selectResources(posts);
     			}
     		    buildSearchQueryString(searchParams);
+    		});
+    		wp.apiRequest({
+    			url: reviewUrl,
+    			method: 'GET',
+    		}).then(reviews => {
+    			setReviews(reviews);
     		});
   		}
 
@@ -240,8 +250,26 @@ const SaveResources = ( { attributes } ) => {
 				/>
 				<div className="resources-grid">
 					{ (resourcesEmpty == false && resources.length > 0 && loading == false) && resources.map((resource, resourceIndex) => {
+							
+							let totalReviews = reviews.length;
+							let review = false;
+							if (reviews && resourceIndex == printReview) {
+								let it = 0;
+								review = reviewIt < totalReviews ? reviews[reviewIt] : false;
+								reviewIt++;
+								printReview+=7;
+							}
 							return (
 								<Fragment>
+									{ review && (
+										<Bio.View
+											name={review.reviewer_name}
+											updateResourceImage={review.userpic}
+											text={review.review_text}
+											image={review.userpic}
+											ratingArray={ Array.from({ length: parseInt(review.rating) }, (value, index) => index) }
+										/>
+									)}
 									{ (resourceIndex == 10) && (
 										<div className="alternatives">
 											<div className="wrapper">
@@ -262,16 +290,7 @@ const SaveResources = ( { attributes } ) => {
 											</div>
 										</div>
 									)}
-									{/*{ (resourceIndex == 30) && (
-										<div className="alternatives">
-											<div className="wrapper">
-												<h3>Need Extended Service Contract Info?</h3>
-												<div className="wp-block-button">
-													<a href="/extended-service-agreements/" className="wp-block-button__link">Learn More</a>
-												</div>
-											</div>
-										</div>
-									)}*/}
+							
 									<ResourceCard.View
 										resourceIndex={ resourceIndex }
 										resourceURL={ resource.link }
@@ -296,6 +315,7 @@ const SaveResources = ( { attributes } ) => {
 									)}
 								</Fragment>
 							)
+
 						})
 					}
 					{loading == true && (

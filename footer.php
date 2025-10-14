@@ -104,6 +104,21 @@ if (function_exists('get_field')) {
                 </div>
             </div>
         </div>
+        <?php
+        }
+        $vehicle_form = get_field('vehicle_application', 'options');
+        if ($vehicle_form != 0) {
+        ?>
+        <div style="display: none;">
+            <div 
+                id="modal-form-<?= $vehicle_form ?>"
+            >
+                <div class="wrapper">
+                    <h2 class="header-title">Vehicle Request</h2>
+                    <?php echo do_shortcode('[gravityform id="' . $vehicle_form . '" title="false" description="false" ajax="true"]'); ?>
+                </div>
+            </div>
+        </div>
 
         <!-- disclaimer -->
         <?php

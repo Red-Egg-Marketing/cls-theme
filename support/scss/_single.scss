@@ -23,17 +23,19 @@
 	width: 100%;
 	margin-bottom: 20px;
 	margin-top: 30px;
+	grid-column-gap: 20px;
+	align-items: center;
 	@media screen and (min-width: $small-width) {
-		width: 50%;
+		width: 100%;
 		margin-bottom: 30px;
 		margin-top: 0;
 	}
 }
 
-.car-details:first-of-type p {
+/*.car-details:first-of-type p {
 	width: 100%;
 }
-
+*/
 .car-details.flex-end {
 	justify-content: flex-start;
 	@media screen and (min-width: $small-width) {
@@ -82,6 +84,19 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 		padding-top: 7rem;
 	}
 
+}
+
+.single.single-vehicle .shortcode-section {
+	margin-top: 1.5rem;
+	@media screen and (min-width: $small-width) {
+		margin-top: 3rem;
+	}
+}
+
+.single.single-vehicle .post-content.second-cont {
+	@media screen and (min-width: $small-width) {
+		padding-top: 3rem;
+	}
 }
 
 .post-content .col {
@@ -139,10 +154,9 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
 	font-weight: 700;
 	color: $body-color;
 	line-height: 50px;
-	margin-bottom: 1.5rem;
 	@media screen and (min-width: $small-width) {
 		line-height: 60px;
-		margin-bottom: 3.125rem;
+		margin-bottom: 1.5rem;
 	}
 }
 
@@ -183,7 +197,16 @@ p.attr {
 .car-details .wp-element-button {
 	margin-bottom: 1.5rem;
 	@media screen and (min-width: $small-width) {
-		margin-bottom: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
+.car-details .wp-element-button.get-approved {
+	margin-top: 15px;
+	margin-right: 10px;
+	@media screen and (min-width: $small-width) {
+		margin-top: 30px;
+		margin-right: 20px;
 	}
 }
 
@@ -316,6 +339,7 @@ p.attr {
 .phone {
 	background: url($phone) no-repeat left 0px / 20px;
 	padding-left: 35px;
+	display: inline-block;
 	@media screen and (min-width: $small-width) {
 		background: url($phone) no-repeat left 0px / 30px;
 	}
@@ -329,6 +353,8 @@ p.attr {
 p.phone {
 	color: $red;
 	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
 }
 
 p.phone a {
@@ -1075,3 +1101,4 @@ ul.feature {
 .accordion.active .feature {
 	display: block;
 }
+
