@@ -1007,13 +1007,8 @@ article.type-vehicle .header-title {
 }
 
 article.type-vehicle header {
-	margin-bottom: 15px;
-	display: flex;
-	flex-wrap: wrap;
+	margin-bottom: 0;
 	width: 100%;
-	@media screen and (min-width: $small-width) {
-		margin-bottom: 25px;
-	}
 }
 
 article.type-vehicle h2.price {
