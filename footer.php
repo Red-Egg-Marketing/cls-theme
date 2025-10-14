@@ -9,7 +9,7 @@
  * @package cls
  */
 if (function_exists('get_field')) {
-    
+    global $wpdb;
     $company_settings = [
         'phone'         => get_field('business_phone', 'options'),
         'email'         => get_field('business_email', 'options'),
@@ -23,6 +23,7 @@ if (function_exists('get_field')) {
         'logo'          => get_field('footer_logo', 'options')
     ];
 
+     
 ?>
 
     <footer id="colophon" class="site-footer">
@@ -69,7 +70,7 @@ if (function_exists('get_field')) {
             </div>
             <div class="footer-menu">
                 <p>
-                       Copyright &copy;<?php echo date("Y"); ?> Members Auto Center powered by Centennial Leasing & Sales
+                       Copyright &copy;<?php echo date("Y"); ?> Centennial Leasing & Sales
                 </p> 
                 <?php
                     wp_nav_menu(
@@ -100,6 +101,21 @@ if (function_exists('get_field')) {
                 <div class="wrapper">
                     <h2 class="header-title">Contact Us</h2>
                     <?php echo do_shortcode('[gravityform id="' . $modal_form . '" title="false" description="false" ajax="true"]'); ?>
+                </div>
+            </div>
+        </div>
+        <?php
+        }
+        $vehicle_form = get_field('vehicle_application', 'options');
+        if ($vehicle_form != 0) {
+        ?>
+        <div style="display: none;">
+            <div 
+                id="modal-form-<?= $vehicle_form ?>"
+            >
+                <div class="wrapper">
+                    <h2 class="header-title">Vehicle Request</h2>
+                    <?php echo do_shortcode('[gravityform id="' . $vehicle_form . '" title="false" description="false" ajax="true"]'); ?>
                 </div>
             </div>
         </div>
