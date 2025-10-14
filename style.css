@@ -20284,18 +20284,8 @@ article.type-vehicle .header-title {
 }
 
 article.type-vehicle header {
-  margin-bottom: 15px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin-bottom: 0;
   width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  article.type-vehicle header {
-    margin-bottom: 25px;
-  }
 }
 
 article.type-vehicle h2.price {

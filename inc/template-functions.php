@@ -296,6 +296,7 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
 	$make = get_the_terms($id, 'make');
 	$model = get_the_terms($id, 'model');
 	$vehicle_form = get_field('vehicle_application', 'options');
+	$vehicle_text = get_field('vehicle_text', 'options');
 
 	$args = [
 		'post_type' => $post_types,
@@ -329,6 +330,7 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
 			<div class="resources-block light-blue">
 				<header class="header">
 					<h3><?= $head_title; ?></h3>
+					<?= $vehicle_text; ?>
 				</header>
 				<div class="related-vehicle swiper">
 				<div class="swiper-wrapper">
