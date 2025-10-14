@@ -7,7 +7,7 @@ import ResourceCard from '../../components/ResourceCard.js';
 import Bio from '../../components/Bio.js';
 import ResourceFilters from '../../components/ResourceLoader.js';
 const apiUrl  = '/wp-json/cls/v2/vehicles';
-const reviewUrl  = '/wp-json/cls/v2/reviews';
+const reviewUrl  = '/wp-json/cls/v2/featured_reviews';
 const ResourcesRootNew = document.getElementById('ResourcesWrap');
 
 const SaveResources = ( { attributes } ) => {

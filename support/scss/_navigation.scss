@@ -195,7 +195,7 @@ a.custom-logo-link {
 }
 
 .main-navigation .nav-menu > .menu-item > .sub-menu > .menu-item {
-	width: 100%;
+	width: 100% !important;
 	color: $bg-color-7;
 	@media screen and (min-width: $med-small-width) {
 		margin-left: 0;
@@ -462,7 +462,6 @@ li.menu-item.nav-button a {
 	
 		padding-top: 26px;
 		padding-bottom: 26px;
-		justify-content: center;
 	}
 	@media screen and (min-width: $med-width + 1px) {
 		margin-bottom: 0;
@@ -470,7 +469,6 @@ li.menu-item.nav-button a {
 
 		padding-top: 26px;
 		padding-bottom: 26px;
-		justify-content: center;
 	}
 }
 

@@ -13507,7 +13507,7 @@ a.custom-logo-link {
 }
 
 .main-navigation .nav-menu > .menu-item > .sub-menu > .menu-item {
-  width: 100%;
+  width: 100% !important;
   color: #00395C;
 }
 
@@ -13855,8 +13855,6 @@ li.menu-item.nav-button a:hover {
     width: auto;
     padding-top: 26px;
     padding-bottom: 26px;
-    -ms-flex-pack: center;
-        justify-content: center;
   }
 }
 
@@ -13866,8 +13864,6 @@ li.menu-item.nav-button a:hover {
     width: auto;
     padding-top: 26px;
     padding-bottom: 26px;
-    -ms-flex-pack: center;
-        justify-content: center;
   }
 }
 
