@@ -11,6 +11,7 @@ namespace GSTEAM;
  * @package GS_Team/Templates
  * @version 1.0.3
  */
+if ( plugin()->builder->get_tax_option('enable_group_tax') !== 'on' ) return;
 
 do_action( 'gs_team_before_cats_filters' );
 
@@ -18,7 +19,7 @@ $_group = (array) string_to_array($group);
 $_exclude_group = [];
 
 $terms = get_terms([
-    'taxonomy'  => 'team_group',
+    'taxonomy'  => 'gs_team_group',
     'orderby'   => $taxonomy_orderby,
     'order'     => $taxonomy_order,
     'hide_empty' => $hide_empty,
