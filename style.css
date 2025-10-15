@@ -27180,6 +27180,10 @@ ul.tax-list .tax-wrap {
   }
 }
 
+.contact-section.contact-alt-section .block-content * {
+  width: 100%;
+}
+
 .contact-section.contact-alt-section .block-content {
   -ms-flex-align: start;
       align-items: flex-start;
