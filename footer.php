@@ -107,7 +107,7 @@ if (function_exists('get_field')) {
         <?php
         }
         $vehicle_form = get_field('vehicle_application', 'options');
-        if ($vehicle_form != 0) {
+        if ($vehicle_form != $modal_form) {
         ?>
         <div style="display: none;">
             <div 
