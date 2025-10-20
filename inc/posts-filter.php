@@ -126,7 +126,7 @@ function cls_vin_import_check( $post_id, $post, $update ) {
     );
     $apiURL = "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/";
     $context = stream_context_create($opts);
-    $fp = fopen($apiURL, 'rb', false, $context);
+    $fp = fopen($apiURL, 'rb', false, $context) or die("Could not open file");
     if(!$fp)
     {
         exit;
