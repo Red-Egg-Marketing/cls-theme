@@ -31,7 +31,7 @@ function cls_populate_member_dropdown($form){
                 "order"             => "ASC",
                 "tax_query"         => [
                     [
-                        "taxonomy"  => "team_group",
+                        "taxonomy"  => "gs_team_group",
                         "field"     => "slug",
                         "terms"     => "sales"
                     ]
