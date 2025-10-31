@@ -31,7 +31,7 @@ function cls_populate_member_dropdown($form){
                 "order"             => "ASC",
                 "tax_query"         => [
                     [
-                        "taxonomy"  => "gs_team_group",
+                        "taxonomy"  => "team_group",
                         "field"     => "slug",
                         "terms"     => "sales"
                     ]
@@ -84,6 +84,21 @@ function cls_add_readonly( $input, $field, $value, $lead_id, $form_id ) {
     }
     return $input;
 
+}
+
+
+add_filter( 'gform_pre_render', 'cls_set_conditional_requirement' );
+add_filter( 'gform_pre_validation', 'cls_set_conditional_requirement' );
+function cls_set_conditional_requirement( $form ) {
+ 
+    $value = rgpost( 'input_9' );
+    foreach ( $form['fields'] as &$field ) {
+        if ($field->cssClass == 'conditional-dep' && $value == '') {
+            $field->isRequired = true;
+        }
+    }
+
+    return $form;
 }
 
 add_filter( 'gform_field_input', 'cls_add_oninput', 10, 5 );
