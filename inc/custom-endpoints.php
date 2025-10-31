@@ -56,8 +56,8 @@ function cls_build_post_tax_array($posts, $tax) {
 			$post_label = get_post_type_object($post_type);
 			$post_label = $post_label->labels->singular_name;
 			$post->label = $post_label;
-			$post->price = '$' . number_format(get_post_meta($id, 'selling_price', true), 0);
-			$post->miles = number_format(get_post_meta($id, 'miles', true), 0) . ' mi';
+			$post->price = '$' . number_format(intval(get_post_meta($id, 'selling_price', true)), 0);
+			$post->miles = number_format(intval(get_post_meta($id, 'miles', true)), 0) . ' mi';
 			$year = get_the_terms($id, 'car_year');
 			$year = join(', ', wp_list_pluck($year, 'name'));
 			$trim = get_the_terms($id, 'trim');
@@ -547,8 +547,8 @@ add_action( 'rest_api_init', function () {
 function cls_vehicle_card($id) {
 		$title = get_the_title($id);
 		$url = get_the_permalink($id);
-		$price = '$' . number_format(get_post_meta($id, 'selling_price', true), 0);
-		$miles = number_format(get_post_meta($id, 'miles', true), 0) . ' mi';
+		$price = '$' . number_format(intval(get_post_meta($id, 'selling_price', true)), 0);
+		$miles = number_format(intval(get_post_meta($id, 'miles', true)), 0) . ' mi';
 		$year = get_the_terms($id, 'car_year');
 		$year = join(', ', wp_list_pluck($year, 'name'));
 		$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
