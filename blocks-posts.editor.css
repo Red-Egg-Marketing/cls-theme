@@ -4653,6 +4653,10 @@ form .inner-row select {
   margin-bottom: 10px;
 }
 
+.hide-required .gfield_required {
+  display: none !important;
+}
+
 .editor-styles-wrapper .wp-block {
   max-width: 1120px;
 }

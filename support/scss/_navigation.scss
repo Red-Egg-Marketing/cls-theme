@@ -672,6 +672,18 @@ li.menu-item.nav-button a {
 	}
 }
 
+.menu-secondary-menu-container .menu-item .no-hide {
+	text-indent: 0;
+	display: inline-block;
+	float: left;
+	margin-left: 25px;
+	@media screen and (min-width: $small-width) {
+		margin-left: 0;
+		float: none;
+		display: inline;
+	}
+}
+
 .menu-secondary-menu-container .menu-item a {
 	width: 18px;
 	height: 18px;
@@ -681,14 +693,18 @@ li.menu-item.nav-button a {
 	}
 }
 
+.menu-secondary-menu-container .menu-item.auto-width a {
+	width: auto;
+}
+
 .menu-item.phone {
 	padding-left: 0;
 }
 
 .menu-item.phone a {
-	padding-left: 26px;
-	background: url($phone-white)  no-repeat center center / 18px;
+	background: url($phone-white)  no-repeat center left / 18px;
 	@media screen and (min-width: $small-width) {
+		padding-left: 26px;
 		background: url($phone-white)  no-repeat center left / 20px;
 	}
 }

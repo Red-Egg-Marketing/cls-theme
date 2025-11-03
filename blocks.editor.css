@@ -4680,6 +4680,10 @@ form .inner-row select {
   margin-bottom: 10px;
 }
 
+.hide-required .gfield_required {
+  display: none !important;
+}
+
 /**
  * Swiper 6.0.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
