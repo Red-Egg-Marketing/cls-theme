@@ -1028,3 +1028,7 @@ form .inner-row select {
 	width: 100%;
 	margin-bottom: 10px;
 }
+
+.hide-required .gfield_required {
+	display: none !important;
+}

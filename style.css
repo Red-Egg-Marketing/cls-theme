@@ -18666,6 +18666,10 @@ form .inner-row select {
   margin-bottom: 10px;
 }
 
+.hide-required .gfield_required {
+  display: none !important;
+}
+
 .site-footer {
   padding-top: 60px;
   padding-bottom: 30px;
