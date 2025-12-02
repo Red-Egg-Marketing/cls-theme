@@ -198,7 +198,7 @@ const SaveVehiclesPayment = () => {
 										resourceURL={ resource.link }
 										resourceID={ resource.ID }
 										resourceImg={ resource.media_url }
-										resourceTitle={ resource.post_title  }
+										resourceTitle={ resource.post_title }
 										resourceType={ resource.label  }
 										resourcePrice={ resource.price }
 										resourceMiles={ resource.miles }
