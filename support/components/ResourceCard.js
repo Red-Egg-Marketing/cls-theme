@@ -134,7 +134,7 @@ ResourceCard.View = (props) => {
 
 	}
 
-	let title = props.resourceTrim != '' ? props.resourceTitle + ' ' + props.resourceTrim : props.resourceTitle;
+	let title = props.resourceTrim != undefined ? props.resourceTitle + ' ' + props.resourceTrim : props.resourceTitle;
 
 	return(
 		<Fragment>
