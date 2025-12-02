@@ -95,7 +95,7 @@ function cls_enqueue_main_script() {
             'wp-main-js',
             get_template_directory_uri() . $front_path,
             ['wp-api', 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor'],
-            'v1.0.9',
+            'v1.1.1',
             true
        );
 
