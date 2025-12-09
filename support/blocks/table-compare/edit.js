@@ -29,7 +29,7 @@ const EditTableComparison = ( { attributes, setAttributes } ) => {
 					<div className="block-wrapper">
 						<InnerBlocks
 							template={ template }
-							allowedBlocks={['core/paragraph', 'cls-blocks/header-intro', 'cls-blocks/table']}
+							allowedBlocks={['core/paragraph', 'cls-blocks/header-intro', 'cls-blocks/table', 'core/buttons']}
 						/>
 					</div>
 				</div>
