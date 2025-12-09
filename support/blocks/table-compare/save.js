@@ -5,9 +5,13 @@ const { Button } = wp.components;
 const { __ } = wp.i18n;
 
 const SaveTableComparison = ( { attributes } ) => {
+
+		const {
+			withTableHead, width, border
+		} = attributes;
 	
 		const blockProps = useBlockProps.save({
-			className: 'comparison-table'
+			className: 'comparison-table' + (withTableHead ? '' : ' no-head')  + (width ? ' narrow-width' : '') + (border ? '' : ' no-border')
 		});
 
 		return (

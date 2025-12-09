@@ -11,6 +11,20 @@ registerBlockType( 'cls-blocks/table-compare', {
 	apiVersion: 2,
 	icon: 'align-center',
 	category: 'layout',
+	attributes: {
+		withTableHead: {
+			type: 'boolean',
+			default: true
+		},
+		width: {
+			type: 'boolean',
+			default: false
+		},
+		border: {
+			type: 'boolean',
+			default: true
+		}
+	},
 	edit: edit,
 	save: save,
 } );

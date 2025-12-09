@@ -10685,8 +10685,17 @@ ul.tax-list .tax-wrap {
   max-width: 100%;
 }
 
+.comparison-table.no-border {
+  border-top: none;
+}
+
 .comparison-table {
   border-top: 2px solid #E6E6E6;
+}
+
+.comparison-table.narrow-width .table {
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .comparison-table > .block-wrapper > p {
@@ -10716,6 +10725,12 @@ ul.tax-list .tax-wrap {
 .table-row:first-child .table-cell p {
   color: white;
   font-weight: 900;
+}
+
+.comparison-table.no-head .table-row .table-cell li,
+.comparison-table.no-head .table-row .table-cell p {
+  font-weight: normal;
+  color: #000000;
 }
 
 .table-row .table-cell p:last-of-type:first-of-type,
@@ -10771,10 +10786,23 @@ ul.tax-list .tax-wrap {
   background: #505050;
 }
 
+.comparison-table.no-head .table-row:first-child .table-cell:nth-of-type(odd) {
+  background: #00395C;
+}
+
+.comparison-table.no-head .table-row:first-child .table-cell:nth-of-type(even) {
+  background: #E6E6E6;
+}
+
+.comparison-table.no-head .table-row:first-child .table-cell:nth-of-type(odd) {
+  background: #E2F0F7;
+}
+
 .comparison-table .table-row .table-cell:nth-of-type(odd) {
   background: #E2F0F7;
 }
 
+.comparison-table.no-head .table-row:first-child .table-cell:nth-of-type(odd):before,
 .comparison-table .table-row:not(:first-child) .table-cell:nth-of-type(odd):before {
   content: "";
   display: inline-block;
@@ -10786,6 +10814,7 @@ ul.tax-list .tax-wrap {
   background: url(img/v.svg) no-repeat center center/100%;
 }
 
+.comparison-table.no-head .table-row:first-child .table-cell:nth-of-type(even):before,
 .comparison-table .table-row:not(:first-child) .table-cell:nth-of-type(even):before {
   content: "";
   display: inline-block;
