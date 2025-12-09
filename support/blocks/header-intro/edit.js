@@ -80,7 +80,7 @@ const EditHeaderIntro = ( { attributes, setAttributes } ) => {
 					<div className="block-wrapper">
 						<div className="block-content">
 							<InnerBlocks
-								allowedBlocks={ ['core/heading', 'core/paragraph', 'core/list', 'core/buttons'] }
+								allowedBlocks={ ['core/heading', 'core/paragraph', 'core/list', 'core/buttons', 'core/columns'] }
 								template={ template }
 							/>
 						</div>

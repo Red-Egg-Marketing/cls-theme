@@ -61,7 +61,7 @@ const EditCTAGrid = ( { attributes, setAttributes, clientId } ) => {
 						<div className="block-content">							
 							<InnerBlocks
 								template={ template }
-								allowedBlocks={ ['cls-blocks/text-card', 'cls-blocks/section-header'] }
+								allowedBlocks={ ['cls-blocks/text-card', 'cls-blocks/section-header', 'core/buttons', 'core/paragraph'] }
 							/>
 						</div>
 					</div>

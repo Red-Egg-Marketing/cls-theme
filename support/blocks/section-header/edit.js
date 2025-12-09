@@ -36,7 +36,7 @@ const EditSectionHeader = ( { attributes, setAttributes, clientId } ) => {
 				<div {...blockProps}>
 					<InnerBlocks
 						template={ template }
-						allowedBlocks={ ['core/heading'] }
+						allowedBlocks={ ['core/heading', 'core/paragraph'] }
 					/>
 				</div>
 			</Fragment>

@@ -14941,6 +14941,20 @@ img.lazyloaded {
   padding-right: 1.25rem;
 }
 
+.block-wrapper > .wp-block-buttons,
+.block-content > .wp-block-buttons {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .block-wrapper > .wp-block-buttons,
+  .block-content > .wp-block-buttons {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+}
+
 div.components-select-control {
   display: block;
   height: auto;
