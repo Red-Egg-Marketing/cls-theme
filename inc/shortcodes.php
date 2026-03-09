@@ -13,8 +13,26 @@ function cls_pull_cars_by_attr( $atts ) {
 		'post_type' => ['vehicle'],
 		'post_status' => 'publish',
 		'posts_per_page' => $a['limit'],
-		'orderby' => 'date',
-		'order' => 'DESC',
+		'meta_query' => [
+			'relation' => 'AND',
+			'year_clause' => [
+				'key' => 'year',
+				'compare' => 'EXISTS'
+			],
+			'make_clause' => [
+				'key' => 'make',
+				'compare' => 'EXISTS'
+			],
+			'model_clause' => [
+				'key' => 'model',
+				'compare' => 'EXISTS'
+			],
+		],
+		'orderby' => [
+			'make_clause' => 'ASC',
+			'model_clause' => 'ASC',
+			'year_clause' => 'DESC'
+		],
 		'tax_query' => [
 			'relation' => 'AND'
 		]
