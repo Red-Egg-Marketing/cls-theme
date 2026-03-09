@@ -5,6 +5,7 @@ function cls_pull_cars_by_attr( $atts ) {
 	$a = shortcode_atts( array(
         'body_style' => '',
         'vehicle_make' => '',
+        'type' => '',
         'limit' => -1
     ), $atts );
 
@@ -12,8 +13,26 @@ function cls_pull_cars_by_attr( $atts ) {
 		'post_type' => ['vehicle'],
 		'post_status' => 'publish',
 		'posts_per_page' => $a['limit'],
-		'orderby' => 'date',
-		'order' => 'DESC',
+		'meta_query' => [
+			'relation' => 'AND',
+			'year_clause' => [
+				'key' => 'year',
+				'compare' => 'EXISTS'
+			],
+			'make_clause' => [
+				'key' => 'make',
+				'compare' => 'EXISTS'
+			],
+			'model_clause' => [
+				'key' => 'model',
+				'compare' => 'EXISTS'
+			],
+		],
+		'orderby' => [
+			'make_clause' => 'ASC',
+			'model_clause' => 'ASC',
+			'year_clause' => 'DESC'
+		],
 		'tax_query' => [
 			'relation' => 'AND'
 		]
@@ -32,6 +51,14 @@ function cls_pull_cars_by_attr( $atts ) {
 			'terms' => explode(',', $a['vehicle_make']),
 			'field' => 'name',
 			'taxonomy' => 'make'
+		];
+	}
+
+	if ($a['type'] != '') {
+		$args['tax_query'][] = [
+			'terms' => explode(',', $a['type']),
+			'field' => 'name',
+			'taxonomy' => 'vehicle_type'
 		];
 	}
 
