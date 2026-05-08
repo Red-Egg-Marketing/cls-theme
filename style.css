@@ -19127,7 +19127,7 @@ a.footer-home img {
   width: 100%;
 }
 
-.post-content .car-details:first-of-type {
+.post-content .cta-actions {
   width: 100%;
   margin-bottom: 20px;
   margin-top: 30px;
@@ -19137,17 +19137,29 @@ a.footer-home img {
 }
 
 @media screen and (min-width: 768px) {
-  .post-content .car-details:first-of-type {
+  .post-content .cta-actions {
     width: 100%;
     margin-bottom: 30px;
     margin-top: 0;
   }
 }
 
-/*.car-details:first-of-type p {
-	width: 100%;
+p.disclaimer-lang {
+  text-align: left;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-*/
+
+@media screen and (min-width: 768px) {
+  p.disclaimer-lang {
+    text-align: right;
+    margin-top: -10px;
+    font-size: 15px;
+  }
+}
+
 .car-details.flex-end {
   -ms-flex-pack: start;
       justify-content: flex-start;
@@ -19288,12 +19300,10 @@ div.gs-single-default .gs-team-single-content .gs-sin-mem-desig {
   margin-top: 0;
   font-weight: 700;
   color: #000000;
-  line-height: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .post-content .price {
-    line-height: 60px;
     margin-bottom: 1.5rem;
   }
 }
@@ -20236,7 +20246,7 @@ Single Video
 }
 
 #Payment {
-  color: #FFCB17;
+  color: #003474 !important;
   font-family: "Lato", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -20294,20 +20304,43 @@ article.type-vehicle header {
 
 article.type-vehicle h2.price {
   font-size: 26px;
-  display: inline;
-  width: auto;
-  margin-left: auto;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
   article.type-vehicle h2.price {
     font-size: 33px;
     text-align: right;
+    line-height: 60px;
   }
 }
 
 .hide {
   display: none;
+}
+
+.price-col {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .price-col {
+    margin-bottom: 35px;
+  }
+}
+
+h2.price span {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  h2.price span {
+    font-size: 18px;
+  }
 }
 
 button.read-less,

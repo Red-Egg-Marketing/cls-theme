@@ -13,7 +13,9 @@ $orig_price = get_post_meta($id, 'selling_price', true);
 $city = get_post_meta($id, 'city_mpg', true);
 $highway = get_post_meta($id, 'highway_mpg', true);
 $seats = get_post_meta($id, 'seats', true);
-$price = number_format(floatval($orig_price), 0);
+$doc_fee = get_field('doc_fee', 'options');
+$price = number_format(floatval($orig_price + $doc_fee), 0);
+$orig_price = $orig_price + $doc_fee;
 $year = get_the_terms($id, 'car_year');
 $year = join(', ', wp_list_pluck($year, 'name'));
 $interior = get_the_terms($id, 'interior_color');
@@ -44,6 +46,7 @@ $stock = get_post_meta($id, 'stock', true);
 $type = has_term('new', 'car_type', $id);
 $reviews = get_field('reviews_for_vehicles', 'options');
 $credit_app = get_field('credit_app', 'options');
+$doc_language = get_field('doc_language', 'options');
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -53,7 +56,7 @@ $credit_app = get_field('credit_app', 'options');
 		<div class="col flex main-col">
 			<header>
 			<?php
-				echo '<h1 class="header-title"><span class="price" id="Price" data-price="' . $orig_price . '"> $' . $price . '</span>' . get_the_title() . '</h1>';
+				echo '<h1 class="header-title">' . get_the_title() . '</h1>';
 			?>
 			</header>
 		<?php
@@ -131,7 +134,11 @@ $credit_app = get_field('credit_app', 'options');
 		?>
 		</div>
 		<div class="col flex second-col">
-			<div class="col car-details flex">
+			<div class="col-full col align-start price-col flex">
+				<?php echo '<h2 class="price" id="Price" data-price="' . $orig_price . '"><span>Total Price</span> $' . $price . '</h2>' ?>
+				<p class="disclaimer-lang"><em><?php echo $doc_language; ?></em></p>
+			</div>
+			<div class="col col-full car-details cta-actions flex">
 				<a 
 					class="wp-block-button__link wp-element-button" 
 					href="javascript;" 

@@ -56,7 +56,7 @@ function cls_build_post_tax_array($posts, $tax) {
 			$post_label = get_post_type_object($post_type);
 			$post_label = $post_label->labels->singular_name;
 			$post->label = $post_label;
-			$post->price = '$' . number_format(intval(get_post_meta($id, 'selling_price', true)), 0);
+			$post->price = '$' . number_format(intval(get_post_meta($id, 'selling_price', true) + get_option('options_doc_fee')), 0);
 			$post->miles = number_format(intval(get_post_meta($id, 'miles', true)), 0) . ' mi';
 			$year = get_the_terms($id, 'car_year');
 			$year = join(', ', wp_list_pluck($year, 'name'));
@@ -146,6 +146,7 @@ function cls_return_vehicles() {
 	$search = isset($get['search']) ? $get['search'] : $search;
 	$order = isset($post['order']) ? $post['order'] : false;
 	$order = isset($get['order']) ? $get['order'] : $order;
+	$doc_fee = get_option('options_doc_fee');
 
 	$args = [
 		'post_type' => $post_types,
@@ -338,13 +339,13 @@ function cls_return_vehicles() {
 	if ($min_price || $max_price) {
 	
 		if ($min_price && $max_price) {
-			$price_values = [intval($min_price), intval($max_price)];
+			$price_values = [intval($min_price) - $doc_fee, intval($max_price) - $doc_fee];
 			$compare = 'BETWEEN';	
 		} elseif($min_price && !$max_price) {
-			$price_values = intval($min_price);
+			$price_values = intval($min_price) - $doc_fee;
 			$compare = '>=';
 		} elseif($max_price && !$min_price) {
-			$price_values = intval($max_price);
+			$price_values = intval($max_price) - $doc_fee;
 			$compare = '<=';
 		}
 
@@ -547,7 +548,7 @@ add_action( 'rest_api_init', function () {
 function cls_vehicle_card($id) {
 		$title = get_the_title($id);
 		$url = get_the_permalink($id);
-		$price = '$' . number_format(intval(get_post_meta($id, 'selling_price', true)), 0);
+		$price = '$' . number_format(intval(get_post_meta($id, 'selling_price', true) + get_option('options_doc_fee')), 0);
 		$miles = number_format(intval(get_post_meta($id, 'miles', true)), 0) . ' mi';
 		$year = get_the_terms($id, 'car_year');
 		$year = join(', ', wp_list_pluck($year, 'name'));

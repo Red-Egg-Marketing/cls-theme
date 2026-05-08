@@ -343,7 +343,7 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
 					$year = get_the_terms($id, 'car_year');
 					$year = join(', ', wp_list_pluck($year, 'name'));
 					$miles = number_format(get_post_meta($id, 'miles', true), 0) . ' mi';
-					$price = '$' . number_format(get_post_meta($id, 'selling_price', true), 0);
+					$price = '$' . number_format(get_post_meta($id, 'selling_price', true)  + get_option('options_doc_fee'), 0);
 					$thumbnail = get_the_post_thumbnail_url($id, 'post-landscape') != false ? get_the_post_thumbnail_url($id, 'post-landscape') : get_the_post_thumbnail_url($id, 'thumbnail');
 					$thumbnail = $thumbnail == false ? get_stylesheet_directory_uri() . '/img/listing_vehicle_placeholder.jpg' : $thumbnail;
 
