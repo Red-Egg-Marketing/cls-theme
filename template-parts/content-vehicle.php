@@ -47,6 +47,7 @@ $type = has_term('new', 'car_type', $id);
 $reviews = get_field('reviews_for_vehicles', 'options');
 $credit_app = get_field('credit_app', 'options');
 $doc_language = get_field('doc_language', 'options');
+$disclaimer =get_field('disclaimer', 'options');
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -305,17 +306,17 @@ $doc_language = get_field('doc_language', 'options');
 		</div>
 		<div class="col col-full">
 				<a 
-					href="javascript;"
-					style="margin-left: auto; margin-top: 20px; color: black;"
-					data-src="#disclaimer-form" 
-					data-fancybox>Disclaimer</a>
-			</div>
-			<div class="col col-full">
-				<a 
 					class="wp-block-button__link wp-element-button" 
 					href="javascript;" 
 					data-src="#modal-form-<?= $modal_form  ?>" 
 					data-fancybox>I'm Interested</a>
+		</div>
+		<div class="col col-full">
+			<div class="disclaimer">
+				 <h3>Disclaimer</h3>
+
+				<?php echo $disclaimer; ?>
+
 			</div>
 		</div>
 	</div><!-- .post-content -->

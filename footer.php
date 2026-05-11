@@ -155,16 +155,7 @@ if (function_exists('get_field')) {
         <?php
         }
         ?>
-        <div style="display: none;">
-            <div 
-                id="disclaimer-form"
-            >
-                <div class="wrapper">
-                    <h2 class="header-title">Disclaimer</h2>
-                    <?php echo $company_settings['disclaimer']; ?>
-                </div>
-            </div>
-        </div>
+    
         <?php
 }
 wp_footer(); 
