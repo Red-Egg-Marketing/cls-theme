@@ -19168,20 +19168,39 @@ a.footer-home img {
   }
 }
 
+.disclaimer p,
 p.disclaimer-lang {
   text-align: left;
   font-size: 14px;
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 20px;
 }
 
 @media screen and (min-width: 768px) {
+  .disclaimer p,
   p.disclaimer-lang {
     text-align: right;
     margin-top: -10px;
     font-size: 15px;
   }
+}
+
+.disclaimer p {
+  text-align: left;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .disclaimer p {
+    text-align: left;
+  }
+}
+
+.disclaimer {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /*.car-details:first-of-type p {
