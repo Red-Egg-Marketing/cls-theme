@@ -141,20 +141,20 @@ $disclaimer = get_field('disclaimer', 'options');
 				<p class="disclaimer-lang"><em><?php echo $doc_language; ?></em></p>
 			</div>
 			<div class="col col-full car-details cta-actions flex">
-				<a 
-					class="wp-block-button__link wp-element-button" 
-					href="javascript;" 
-					data-src="#modal-form-<?= $modal_form  ?>" 
-					data-fancybox>I'm Interested</a>
+				<button
+					class="wp-block-button__link wp-element-button"
+					type="button"
+					data-src="#modal-form-<?= $modal_form  ?>"
+					data-fancybox>I'm Interested</button>
 
-					<a 
-					class="wp-block-button__link wp-element-button" 
-					href="javascript;" 
-					data-src="#modal-form-<?= $modal_form  ?>" 
-					data-fancybox>Schedule a Test Drive</a>
+					<button
+					class="wp-block-button__link wp-element-button"
+					type="button"
+					data-src="#modal-form-<?= $modal_form  ?>"
+					data-fancybox>Schedule a Test Drive</button>
 					<p class="phone"><a href="tel:<?php echo $phone; ?>"><? echo $phone; ?></a></p>
 			</div>
-			
+
 			<div class="col car-details flex align-start">
 				<div class="flex align-start width-100">
 					<?php if ($miles) { ?>
@@ -190,8 +190,8 @@ $disclaimer = get_field('disclaimer', 'options');
 					<?php } ?>
 
 					<?php if ($credit_app) { ?>
-						<a 
-						class="wp-block-button__link wp-element-button get-approved" 
+						<a
+						class="wp-block-button__link wp-element-button get-approved"
 						href="<?php echo $credit_app; ?>">Get Approved</a>
 					<?php } ?>
 
@@ -202,8 +202,8 @@ $disclaimer = get_field('disclaimer', 'options');
 			</div>
 			<div id="PaymentCalculator" class="loading">
 			</div>
-			
-			
+
+
 			<div class="col-full col">
 					<h5>Vehicle Information</h5>
 					<div class="read-less-block">
@@ -232,11 +232,11 @@ $disclaimer = get_field('disclaimer', 'options');
 					</div>
 			</div>
 
-			
+
 		</div>
 		</div><!-- .post-content -->
 		<?php
-			
+
 			if ($reviews) {
 				$gblock = get_post( $reviews );
     			echo apply_filters( 'the_content', $gblock->post_content );
@@ -303,14 +303,14 @@ $disclaimer = get_field('disclaimer', 'options');
 				</div>
 				<?php } ?>
 			</div>
-			
+
 		</div>
 		<div class="col col-full">
-				<a 
-					class="wp-block-button__link wp-element-button" 
-					href="javascript;" 
-					data-src="#modal-form-<?= $modal_form  ?>" 
-					data-fancybox>I'm Interested</a>
+				<button
+					class="wp-block-button__link wp-element-button"
+					type="button"
+					data-src="#modal-form-<?= $modal_form  ?>"
+					data-fancybox>I'm Interested</button>
 		</div>
 		<div class="col col-full">
 			<div class="disclaimer">
