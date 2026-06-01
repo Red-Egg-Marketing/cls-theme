@@ -1,11 +1,11 @@
 <?php
 namespace GSTEAM;
 /**
- * GS Team - Single Template 
+ * GS Team - Single Template
  * @author GS Plugins <hello@gsplugins.com>
- * 
+ *
  * This template can be overridden by copying it to yourtheme/gs-team/gs-team-layout-single.php
- * 
+ *
  * @package GS_Team/Templates
  * @version 1.0.2
  */
@@ -25,31 +25,31 @@ $review = get_field('review_link', 'options');
 <div class="gs-team-single-content <?= $class ?>" itemscope="" itemtype="http://schema.org/Person">
 
     <div class="gs_member_img">
-        
+
         <div class="gs_ribon_wrapper">
-            
+
             <!-- Team Image -->
             <?php member_thumbnail( 'full', true ); ?>
             <?php do_action( 'gs_team_after_member_thumbnail' ); ?>
 
             <!-- Ribbon -->
             <?php include Template_Loader::locate_template( 'partials/gs-team-layout-ribon.php' ); ?>
-            
+
         </div>
 
         <!-- Meta Details -->
         <?php include Template_Loader::locate_template( 'partials/gs-team-layout-meta-details.php' ); ?>
         <?php if (in_array('sales', $terms)) { ?>
             <div class="col col-full">
-                <a 
-                    class="wp-block-button__link wp-element-button" 
-                    href="javascript;" 
-                    data-src="#modal-form-<?= $modal_form  ?>" 
-                    data-fancybox>Contact <?= $title; ?></a>
-                <a 
+                <button
+                    class="wp-block-button__link wp-element-button"
+                    type="button"
+                    data-src="#modal-form-<?= $modal_form  ?>"
+                    data-fancybox>Contact <?= $title; ?></button>
+                <a
                     class="wp-block-button__link wp-element-button"
                     href="<?= $review; ?>"
-                    target="_blank" 
+                    target="_blank"
                 >
                     Review <?= $title; ?>
                 </a>
@@ -73,10 +73,10 @@ $review = get_field('review_link', 'options');
         <!-- Description -->
         <div class="gs-member-desc" itemprop="description"><?php echo wpautop( do_shortcode( get_the_content() ) ); ?></div>
         <?php do_action( 'gs_team_after_member_details' ); ?>
-        
+
         <!-- Skills -->
         <?php include Template_Loader::locate_template( 'partials/gs-team-layout-skills.php' ); ?>
-        
+
     </div>
 
 </div>

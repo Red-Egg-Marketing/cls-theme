@@ -104,13 +104,13 @@ function cls_posts_topics_list(int $id, string $tax = 'category') {
 			foreach($topics as $key => $topic) {
 				$t_id = $topic->term_id;
 				$t_name = $topic->name;
-				$del = $key != ($size - 1) ? $del : ''; 
+				$del = $key != ($size - 1) ? $del : '';
 				// $t_link = get_term_link($t_id, $tax);
 				$html .= '<li class="tax-item">' . $t_name . $del . '</li>';
 			}
 			$html .= '</ul>';
 			return $html;
-	} 
+	}
 }
 
 
@@ -251,7 +251,7 @@ function cls_posts_pagination() {
 			$post_type = $post_type->labels->singular_name;
 			$post_type = $post_type == 'post' ? 'insights' : $post_type;
 			$cta = strtolower($post_type) == 'videos' ? 'Watch Video' : 'Read More';
-			
+
 				$html .= '<div class="resource-card">';
 					$html .= '<div class="resource-extra">';
 						$html .= '<a class="resource-wrap" href="' . $permalink . '">';
@@ -263,7 +263,7 @@ function cls_posts_pagination() {
 							}
 							$html .= '<div class="content">';
 								$html .=  '<h3 class="resource-title">' . $title . '</h3>';
-								if ($excerpt != '') { 
+								if ($excerpt != '') {
 									$html .= '<p class="resource-excerpt">' . $excerpt . '</p>';
 								}
 							$html .= '</div>';
@@ -272,12 +272,12 @@ function cls_posts_pagination() {
 						$html .= '</a>';
 					$html .= '</div>';
 				$html .= '</div>';
-				
+
 		}
 	}
 
 	$html .= '<div class="pagination">';
-	$html .= paginate_links(array(  'total' => $query->max_num_pages, 
+	$html .= paginate_links(array(  'total' => $query->max_num_pages,
                 'base'      => add_query_arg('paged','%#%'),
                 'format'    => '?paged=%#%',
                 'current'   => max(1, get_query_var('paged'))
@@ -380,11 +380,11 @@ function cls_vehicle_footer(int $id, $post_type = 'vehicle', $head_title = 'Inve
   				<div class="swiper-button-next"></div>
 				</div>
 				<div class="wp-buttons flex j-center">
-					<a 
-						class="wp-block-button__link wp-element-button" 
-						href="javascript;" 
-						data-src="#modal-form-<?= $vehicle_form  ?>" 
-						data-fancybox>Find Me One Like This</a>
+					<button
+						class="wp-block-button__link wp-element-button"
+						type="button"
+						data-src="#modal-form-<?= $vehicle_form  ?>"
+						data-fancybox>Find Me One Like This</button>
 				</div>
 			</div><!-- .resources-grid -->
 			<?php
@@ -519,7 +519,7 @@ function cls_post_video(int $id) {
 					(function(){
 						function CustomVideoControls() {
 							var bttn = document.querySelector('.video-cont button.play');
-		
+
 							if (bttn != null) {
 								var vid = bttn.previousElementSibling;
 								var par = bttn.parentNode;
@@ -529,15 +529,15 @@ function cls_post_video(int $id) {
 							}
 
 							function customPause() {
-								
+
 								let seek = vid.seeking;
-			
+
 								if (seek == false) {
 									par.classList.remove('playing');
 									vid.setAttribute('controls', false);
 									vid.controls = false;
 								}
-			
+
 							}
 
 							function customPlay() {
