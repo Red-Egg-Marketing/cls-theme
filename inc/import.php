@@ -339,7 +339,7 @@ function cls_import_vehicles_from_csv() {
                     "post_title" => $post["title"],
                     "post_content" => $post["content"],
                     "post_type" => $vehicle["custom-post-type"],
-                    "post_name" => $post['Year'] . ' ' . $post["Model"],
+                    "post_name" => $post['Year'] . ' ' . $post["Model"] . ' ' . $post['Stock'],
                     "post_status" => "publish",
                     "meta_input" => $meta_info
                 ]

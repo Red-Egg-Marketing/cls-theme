@@ -54,10 +54,14 @@ add_filter( 'rewrite_rules_array', 'cls_vehicle_add_rewrite_rules' );
 
 function cls_filter_post_type_link( $link, $post ) {
   if ( $post->post_type == 'vehicle' ) {
-    if ( $make = get_the_terms( $post->ID, 'make' ) ) {
-      	$link = str_replace( '%make%', current( $make )->slug, $link );
+  	$make = get_the_terms( $post->ID, 'make' );
+    if ($make && ! is_wp_error( $make )) {
+      	$link = str_replace( '%make%', current( $make )->slug  , $link );
+    } else {
+    		$link = str_replace( '%make%', 'unknown', $link );
     }
   }
+  
   return $link;
 }
 add_filter( 'post_type_link', 'cls_filter_post_type_link', 10, 2 );
