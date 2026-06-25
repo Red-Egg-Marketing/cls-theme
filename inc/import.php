@@ -48,17 +48,6 @@ function cls_cron_schedules($schedules){
 }
 add_filter('cron_schedules','cls_cron_schedules');
 
-if (!wp_next_scheduled('cls_vehicles_set_vehicle_transient')) {
-    wp_schedule_event( time(), '3hrs', 'cls_vehicles_set_vehicle_transient' );
-}
-add_action ( 'cls_vehicles_set_vehicle_transient', 'test_transient' );
-
-function test_transient() {
-    delete_transient('_vehicles_transient');
-    $object = wp_remote_post('https://denver.clscars.com/wp-json/cls/v2/vehicles');
-    $body = $object['body'];
-    set_transient('_vehicles_transient', $body, 21600);
-}
 
 if (!wp_next_scheduled('cls_vehicles_csv_hook')) {
     wp_schedule_event( time(), '3hrs', 'cls_vehicles_csv_hook' );

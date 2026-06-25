@@ -1,63 +1,73 @@
 <?php
-
-
-if (!wp_next_scheduled('cls_vehicles_carfax_outbound')) {
-    wp_schedule_event( strtotime('today midnight'), '24hrs', 'cls_vehicles_carfax_outbound' );
+if ( ! wp_next_scheduled( 'cls_vehicles_carfax_outbound' ) ) {
+    wp_schedule_event( strtotime( 'today midnight' ), '24hrs', 'cls_vehicles_carfax_outbound' );
 }
-
-add_action ( 'cls_vehicles_carfax_outbound', 'car_fax_ftp_outbound' );
+add_action( 'cls_vehicles_carfax_outbound', 'car_fax_ftp_outbound' );
 
 function car_fax_ftp_outbound() {
     global $wpdb;
+
     $server = 'data.carfax.com';
-    $user = 'REDEGGMRKT_get';
-    $pass = 'proposed-fast-carriage-agency';
-    $date =  date('mdY');
+    $user   = 'REDEGGMRKT_get';
+    $pass   = 'proposed-fast-carriage-agency';
+
+    $date     = date( 'mdY' );
     $filename = 'REDEGGMRKT_cfx_' . $date . '_return_file.txt';
-    $conn_id = ftp_connect($server);
-    $login_result = ftp_login($conn_id, $user, $pass);
-    ftp_pasv($conn_id, true);
+    $local    = trailingslashit( wp_upload_dir()['basedir'] ) . $filename;
 
-    if ($login_result == true) {
-       
-        $success = ftp_get($conn_id, $filename, $filename, FTP_ASCII);
-
-        if ($success) {
-            // parse file
-            if ( ! is_readable( $filename ) ) {
-                chmod( $filename, 0744 );
-            }
-            if ($import = fopen($filename,'r')) {
-                while (!feof($import)) {
-                    $line = fgets($import);
-                    $line = explode('|', $line);
-                    $vin = array_key_exists(1 , $line) ? $line[1] : false;
-                    $link = array_key_exists(2 , $line) ? $line[2] : false;
-                    $image = array_key_exists(3 , $line) ? $line[3] : false;
-
-                    if ($vin) {
-                        $post = $wpdb->get_col( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'vin' && meta_value = '{$vin}'" );
-                        $vehicle = $post[0];
-                        $meta_info = [
-                            "carfax_image" => $image,
-                            "carfax_link" => $link
-                        ];
-
-                        wp_update_post(
-                            [
-                                "ID" => $vehicle,
-                                "meta_input" => $meta_info
-                            ]
-                        );   
-                    }
-
-                }
-                fclose($import);
-            }
-        unlink($filename);            
-        }
+    $conn_id = ftp_connect( $server );
+    if ( ! $conn_id ) {
+        error_log( 'carfax: ftp_connect failed to ' . $server );
+        return;
     }
-    ftp_close($conn_id);
+    if ( ! ftp_login( $conn_id, $user, $pass ) ) {
+        error_log( 'carfax: ftp_login failed' );
+        ftp_close( $conn_id );
+        return;
+    }
+    ftp_pasv( $conn_id, true );
+
+    if ( ! ftp_get( $conn_id, $local, $filename, FTP_ASCII ) ) {
+        error_log( 'carfax: ftp_get failed for ' . $filename );
+        ftp_close( $conn_id );
+        return;
+    }
+    ftp_close( $conn_id );
+
+    $import = fopen( $local, 'r' );
+    if ( ! $import ) {
+        error_log( 'carfax: could not open ' . $local );
+        return;
+    }
+
+    while ( ! feof( $import ) ) {
+        $line  = explode( '|', fgets( $import ) );
+        $vin   = $line[1] ?? false;
+        $link  = $line[2] ?? false;
+        $image = $line[3] ?? false;
+
+        if ( ! $vin ) {
+            continue;
+        }
+
+        $post = $wpdb->get_col( $wpdb->prepare(
+            "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'vin' AND meta_value = %s",
+            $vin
+        ) );
+
+        if ( empty( $post ) ) {
+            continue;
+        }
+
+        wp_update_post( [
+            'ID'         => $post[0],
+            'meta_input' => [
+                'carfax_image' => $image,
+                'carfax_link'  => $link,
+            ],
+        ] );
+    }
+
+    fclose( $import );
+    unlink( $local );
 }
-
-
