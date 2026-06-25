@@ -15,6 +15,15 @@ function car_fax_ftp_outbound() {
     $date =  date('mdY');
     $filename = 'REDEGGMRKT_cfx_' . $date . '_return_file.txt';
     $conn_id = ftp_connect($server);
+    if ( ! $conn_id ) {
+        error_log( 'carfax: ftp_connect failed to ' . $server );
+        return;
+    }
+    if ( ! ftp_login( $conn_id, $user, $pass ) ) {
+        error_log( 'carfax: ftp_login failed' );
+        ftp_close( $conn_id );
+        return;
+    }
     $login_result = ftp_login($conn_id, $user, $pass);
     ftp_pasv($conn_id, true);
 
