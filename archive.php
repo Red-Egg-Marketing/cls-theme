@@ -7,6 +7,10 @@
  * @package cls
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // No direct access.
+}
+
 get_header();
 ?>
 

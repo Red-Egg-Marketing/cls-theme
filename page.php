@@ -11,7 +11,9 @@
  *
  * @package cls
  */
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // No direct access.
+}
 get_header();
 ?>
 	<main id="primary" class="site-main">

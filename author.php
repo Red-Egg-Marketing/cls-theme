@@ -7,6 +7,10 @@ $author = get_queried_object();
 $author_id = $author->ID;
 $author_name = $author->data->display_name;
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // No direct access.
+}
+
 get_header();
 ?>
 

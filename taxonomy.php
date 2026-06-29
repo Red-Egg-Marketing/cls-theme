@@ -8,7 +8,9 @@ $term_id = $tax->term_id;
 $term_name = $tax->name;
 $tax_name = $tax->taxonomy;
 $tax_labels = get_taxonomy($tax_name)->labels->name;
-
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // No direct access.
+}
 get_header();
 
 ?>

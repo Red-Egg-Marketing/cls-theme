@@ -7,7 +7,9 @@ $tax = get_queried_object();
 $term_id = $tax->term_id;
 $term_name = $tax->name;
 $tax_name = $tax->taxonomy;
-
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // No direct access.
+}
 get_header();
 ?>
 
