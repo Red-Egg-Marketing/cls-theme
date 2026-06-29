@@ -3,6 +3,9 @@
 * Template Name: Boilerplate (narrow width)
 *
 */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // No direct access.
+}
 
 get_header();
 ?>

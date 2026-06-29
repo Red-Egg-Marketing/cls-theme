@@ -8,6 +8,9 @@
  *
  * @package cls
  */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // No direct access.
+}
 
 $phone = get_field('business_phone', 'options');
 $phone_tag = get_field('phone_tagline', 'options');

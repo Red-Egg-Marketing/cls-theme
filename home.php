@@ -3,6 +3,9 @@
 * Taxonomy template
  */
 global $is_IE;
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // No direct access.
+}
 
 get_header();
 ?>
