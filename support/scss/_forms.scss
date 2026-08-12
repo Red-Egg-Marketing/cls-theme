@@ -432,6 +432,7 @@ div.gform_wrapper textarea {
 	resize: none;
 }
 
+div.gform_wrapper button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file])	
  {
 	@extend .wp-block-button__link;
