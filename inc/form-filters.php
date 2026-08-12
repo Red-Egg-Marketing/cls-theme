@@ -237,7 +237,12 @@ add_filter( 'gform_pre_validation', 'cls_set_conditional_requirement' );
  * asynchronously with no page context available.
  */
 function cls_notify_consultant( $notification, $form, $entry ) {
-    $post_id   = (int) rgar( $entry, 'post_id' );
+    $post_id = (int) gform_get_meta( rgar( $entry, 'id' ), 'cls_embed_post_id' );
+
+    if ( ! $post_id ) {
+        $post_id = (int) url_to_postid( (string) rgar( $entry, 'source_url' ) );
+    }
+
     $post_type = $post_id ? get_post_type( $post_id ) : '';
 
     $title = 'Website';
@@ -294,3 +299,22 @@ add_filter( 'gform_notification', 'cls_notify_consultant', 10, 3 );
  */
 
 add_filter( 'gform_confirmation_anchor', '__return_true' );
+
+
+/**
+ * Record which page the form was embedded on, while page context still exists.
+ */
+function cls_store_embed_post_id( $entry, $form ) {
+    $post_id = cls_current_post_id();
+
+    if ( ! $post_id ) {
+        $post_id = (int) url_to_postid( (string) rgar( $entry, 'source_url' ) );
+    }
+
+    if ( $post_id ) {
+        gform_update_meta( $entry['id'], 'cls_embed_post_id', $post_id );
+    }
+
+    return $entry;
+}
+add_filter( 'gform_entry_post_save', 'cls_store_embed_post_id', 10, 2 );
