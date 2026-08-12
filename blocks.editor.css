@@ -1278,6 +1278,7 @@ button.wprevpro_load_more_btn,
 .wp-block-button__link,
 div.gs_team_area .gs-team-filter-cats li a,
 a[download],
+div.gform_wrapper button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link,
 div.gs_team_area .gs-team-filter-cats li a,
@@ -1307,6 +1308,7 @@ button.wp-button {
   .wp-block-button__link.is-small,
   div.gs_team_area .gs-team-filter-cats li a.is-small,
   a.is-small[download],
+  div.gform_wrapper button.is-small[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
   div.gform_wrapper input.is-small[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
   a.wp-block-button__link.is-small,
   div.gs_team_area .gs-team-filter-cats li a.is-small,
@@ -1329,10 +1331,12 @@ button.wprevpro_load_more_btn.bp-secondary-action, button.wprevpro_load_more_btn
 .wp-block-button__link.bp-secondary-action,
 div.gs_team_area .gs-team-filter-cats li a.bp-secondary-action,
 a.bp-secondary-action[download],
+div.gform_wrapper button.bp-secondary-action[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input.bp-secondary-action[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button__link.wp-cancel-pw,
 div.gs_team_area .gs-team-filter-cats li a.wp-cancel-pw,
 a.wp-cancel-pw[download],
+div.gform_wrapper button.wp-cancel-pw[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input.wp-cancel-pw[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link.bp-secondary-action,
 div.gs_team_area .gs-team-filter-cats li a.bp-secondary-action,
@@ -1357,10 +1361,12 @@ button.wprevpro_load_more_btn.bp-secondary-action:hover, button.wprevpro_load_mo
 .wp-block-button__link.bp-secondary-action:hover,
 div.gs_team_area .gs-team-filter-cats li a.bp-secondary-action:hover,
 a.bp-secondary-action:hover[download],
+div.gform_wrapper button.bp-secondary-action:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input.bp-secondary-action:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button__link.wp-cancel-pw:hover,
 div.gs_team_area .gs-team-filter-cats li a.wp-cancel-pw:hover,
 a.wp-cancel-pw:hover[download],
+div.gform_wrapper button.wp-cancel-pw:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input.wp-cancel-pw:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link.bp-secondary-action:hover,
 div.gs_team_area .gs-team-filter-cats li a.bp-secondary-action:hover,
@@ -1384,6 +1390,7 @@ button.wp-button.wp-cancel-pw:hover {
   .wp-block-button__link,
   div.gs_team_area .gs-team-filter-cats li a,
   a[download],
+  div.gform_wrapper button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
   div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
   a.wp-block-button__link,
   div.gs_team_area .gs-team-filter-cats li a,
@@ -1403,6 +1410,7 @@ button.wprevpro_load_more_btn:visited,
 .wp-block-button__link:visited,
 div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
+div.gform_wrapper button:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link:visited,
 div.gs_team_area .gs-team-filter-cats li a:visited,
@@ -1419,6 +1427,7 @@ button.wprevpro_load_more_btn:hover,
 .wp-block-button__link:hover,
 div.gs_team_area .gs-team-filter-cats li a:hover,
 a:hover[download],
+div.gform_wrapper button:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link:hover,
 div.gs_team_area .gs-team-filter-cats li a:hover,
@@ -1436,6 +1445,7 @@ button.wprevpro_load_more_btn[disabled],
 .wp-block-button__link[disabled],
 div.gs_team_area .gs-team-filter-cats li a[disabled],
 a[disabled][download],
+div.gform_wrapper button[disabled][type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input[disabled][type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 a.wp-block-button__link[disabled],
 div.gs_team_area .gs-team-filter-cats li a[disabled],
@@ -1541,6 +1551,8 @@ ul.gs-team-filter-cats li.filter.active > a {
 .wp-block-button.is-style-solid-yellow-arrow div.gs_team_area .gs-team-filter-cats li a:after,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-yellow-arrow a:after,
 .wp-block-button.is-style-solid-yellow-arrow a[download]:after,
+.wp-block-button.is-style-solid-yellow-arrow div.gform_wrapper button:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after,
+div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow button:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after,
 .wp-block-button.is-style-solid-yellow-arrow div.gform_wrapper input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after,
 div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after {
   content: "";
@@ -1559,6 +1571,8 @@ div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow input:not([type=f
 .wp-block-button.is-style-solid-yellow-arrow:hover div.gs_team_area .gs-team-filter-cats li a:after,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-yellow-arrow:hover a:after,
 .wp-block-button.is-style-solid-yellow-arrow:hover a[download]:after,
+.wp-block-button.is-style-solid-yellow-arrow:hover div.gform_wrapper button:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after,
+div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow:hover button:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after,
 .wp-block-button.is-style-solid-yellow-arrow:hover div.gform_wrapper input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after,
 div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow:hover input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:after {
   background: url(img/right-chevron-yellow.svg) no-repeat center center/15px;
@@ -1569,6 +1583,8 @@ div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow:hover input:not([
 .wp-block-button.is-style-solid-yellow-arrow div.gs_team_area .gs-team-filter-cats li a:hover:after,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-yellow-arrow a:hover:after,
 .wp-block-button.is-style-solid-yellow-arrow a[download]:hover:after,
+.wp-block-button.is-style-solid-yellow-arrow div.gform_wrapper button:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:hover:after,
+div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow button:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:hover:after,
 .wp-block-button.is-style-solid-yellow-arrow div.gform_wrapper input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:hover:after,
 div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:hover:after {
   transform: translateX(5px);
@@ -1579,66 +1595,83 @@ div.gform_wrapper .wp-block-button.is-style-solid-yellow-arrow input:not([type=f
 .wp-block-button.is-style-solid-yellow div.gs_team_area .gs-team-filter-cats li a,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-yellow a,
 .wp-block-button.is-style-solid-yellow a[download],
+.wp-block-button.is-style-solid-yellow div.gform_wrapper button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper .wp-block-button.is-style-solid-yellow button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-solid-yellow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-yellow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: #F79A6C;
   color: #FFCB17;
 }
 
-.wp-block-button__link.is-style-solid-blue-green, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green, a.is-style-solid-blue-green[download], div.gform_wrapper input.is-style-solid-blue-green[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-solid-blue-green, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green, a.is-style-solid-blue-green[download], div.gform_wrapper button.is-style-solid-blue-green[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper input.is-style-solid-blue-green[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-solid-blue-green,
 .wp-block-button.is-style-solid-blue-green .wp-block-button__link,
 .wp-block-button.is-style-solid-blue-green div.gs_team_area .gs-team-filter-cats li a,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-green a,
 .wp-block-button.is-style-solid-blue-green a[download],
+.wp-block-button.is-style-solid-blue-green div.gform_wrapper button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper .wp-block-button.is-style-solid-blue-green button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-solid-blue-green div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-blue-green input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: #008FA0;
   color: white;
 }
 
-.wp-block-button__link.is-style-solid-blue-green:hover, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green:hover, a.is-style-solid-blue-green:hover[download], div.gform_wrapper input.is-style-solid-blue-green:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-solid-blue-green:hover, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-blue-green:hover, a.is-style-solid-blue-green:hover[download], div.gform_wrapper button.is-style-solid-blue-green:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper input.is-style-solid-blue-green:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-solid-blue-green:hover,
 .wp-block-button.is-style-solid-blue-green .wp-block-button__link:hover,
 .wp-block-button.is-style-solid-blue-green div.gs_team_area .gs-team-filter-cats li a:hover,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-blue-green a:hover,
 .wp-block-button.is-style-solid-blue-green a:hover[download],
+.wp-block-button.is-style-solid-blue-green div.gform_wrapper button:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper .wp-block-button.is-style-solid-blue-green button:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-solid-blue-green div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-blue-green input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   color: #003474;
   background: #FFCB17;
 }
 
-.wp-block-button__link.is-style-solid-navy, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-navy, a.is-style-solid-navy[download], div.gform_wrapper input.is-style-solid-navy[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-solid-navy, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-navy, a.is-style-solid-navy[download], div.gform_wrapper button.is-style-solid-navy[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper input.is-style-solid-navy[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-solid-navy,
 .wp-block-button.is-style-solid-navy .wp-block-button__link,
 .wp-block-button.is-style-solid-navy div.gs_team_area .gs-team-filter-cats li a,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a,
 .wp-block-button.is-style-solid-navy a[download],
+.wp-block-button.is-style-solid-navy div.gform_wrapper button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper .wp-block-button.is-style-solid-navy button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-solid-navy div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: #003474;
   color: white;
 }
 
-.wp-block-button__link.is-style-solid-navy:hover, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-navy:hover, a.is-style-solid-navy:hover[download], div.gform_wrapper input.is-style-solid-navy:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-solid-navy:hover, div.gs_team_area .gs-team-filter-cats li a.is-style-solid-navy:hover, a.is-style-solid-navy:hover[download], div.gform_wrapper button.is-style-solid-navy:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper input.is-style-solid-navy:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-solid-navy:hover,
 .wp-block-button.is-style-solid-navy .wp-block-button__link:hover,
 .wp-block-button.is-style-solid-navy div.gs_team_area .gs-team-filter-cats li a:hover,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-solid-navy a:hover,
 .wp-block-button.is-style-solid-navy a:hover[download],
+.wp-block-button.is-style-solid-navy div.gform_wrapper button:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper .wp-block-button.is-style-solid-navy button:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-solid-navy div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-solid-navy input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   color: white;
   background: #003474;
 }
 
-.wp-block-button__link.is-style-text-yellow-arrow, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow, a.is-style-text-yellow-arrow[download], div.gform_wrapper input.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-text-yellow-arrow, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow, a.is-style-text-yellow-arrow[download], div.gform_wrapper button.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper input.is-style-text-yellow-arrow[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-text-yellow-arrow,
 .wp-block-button.is-style-text-yellow-arrow .wp-block-button__link,
 .wp-block-button.is-style-text-yellow-arrow div.gs_team_area .gs-team-filter-cats li a,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-text-yellow-arrow a,
 .wp-block-button.is-style-text-yellow-arrow a[download],
+.wp-block-button.is-style-text-yellow-arrow div.gform_wrapper button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: none;
@@ -1650,12 +1683,15 @@ div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input[type="submit
   background: url(img/right-arrow.svg) no-repeat center right/7px;
 }
 
-.wp-block-button__link.is-style-text-yellow-arrow:hover, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow:hover, a.is-style-text-yellow-arrow:hover[download], div.gform_wrapper input.is-style-text-yellow-arrow:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+.wp-block-button__link.is-style-text-yellow-arrow:hover, div.gs_team_area .gs-team-filter-cats li a.is-style-text-yellow-arrow:hover, a.is-style-text-yellow-arrow:hover[download], div.gform_wrapper button.is-style-text-yellow-arrow:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper input.is-style-text-yellow-arrow:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-button.is-style-text-yellow-arrow:hover,
 .wp-block-button.is-style-text-yellow-arrow .wp-block-button__link:hover,
 .wp-block-button.is-style-text-yellow-arrow div.gs_team_area .gs-team-filter-cats li a:hover,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-text-yellow-arrow a:hover,
 .wp-block-button.is-style-text-yellow-arrow a:hover[download],
+.wp-block-button.is-style-text-yellow-arrow div.gform_wrapper button:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
+div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow button:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   color: navy;
@@ -1667,6 +1703,8 @@ div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input:hover[type="
 .wp-block-button.is-style-text-yellow-arrow div.gs_team_area .gs-team-filter-cats li a:hover:after,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-text-yellow-arrow a:hover:after,
 .wp-block-button.is-style-text-yellow-arrow a[download]:hover:after,
+.wp-block-button.is-style-text-yellow-arrow div.gform_wrapper button:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:hover:after,
+div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow button:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:hover:after,
 .wp-block-button.is-style-text-yellow-arrow div.gform_wrapper input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:hover:after,
 div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input:not([type=file]):not([type=image]):not([type=checkbox])[type="submit"]:hover:after {
   transform: translateX(5px);
@@ -1676,10 +1714,12 @@ div.gform_wrapper .wp-block-button.is-style-text-yellow-arrow input:not([type=fi
 .wp-block-button.is-style-outline > .wp-block-button__link,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a,
 .wp-block-button.is-style-outline > a[download],
+div.gform_wrapper .wp-block-button.is-style-outline > button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-outline > input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color),
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:not(.has-text-color),
 .wp-block-button.is-style-outline > a:not(.has-text-color)[download],
+div.gform_wrapper .wp-block-button.is-style-outline > button:not(.has-text-color)[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color)[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   border: 2px solid white;
   color: white;
@@ -1689,10 +1729,12 @@ div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color)
 .wp-block-button.is-style-outline > .wp-block-button__link:hover,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:hover,
 .wp-block-button.is-style-outline > a:hover[download],
+div.gform_wrapper .wp-block-button.is-style-outline > button:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-outline > input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):hover,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:not(.has-text-color):hover,
 .wp-block-button.is-style-outline > a:not(.has-text-color):hover[download],
+div.gform_wrapper .wp-block-button.is-style-outline > button:not(.has-text-color):hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
   color: black;
@@ -1702,10 +1744,12 @@ div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color)
 .wp-block-button.is-style-outline > .wp-block-button__link:visited,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:visited,
 .wp-block-button.is-style-outline > a:visited[download],
+div.gform_wrapper .wp-block-button.is-style-outline > button:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-outline > input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):visited,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:not(.has-text-color):visited,
 .wp-block-button.is-style-outline > a:not(.has-text-color):visited[download],
+div.gform_wrapper .wp-block-button.is-style-outline > button:not(.has-text-color):visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
   color: white;
@@ -1715,10 +1759,12 @@ div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color)
 .wp-block-button.is-style-outline > .wp-block-button__link:hover:visited,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:hover:visited,
 .wp-block-button.is-style-outline > a:hover:visited[download],
+div.gform_wrapper .wp-block-button.is-style-outline > button:hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-outline > input:hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):hover:visited,
 div.gs_team_area .gs-team-filter-cats li .wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited,
 .wp-block-button.is-style-outline > a:not(.has-text-color):hover:visited[download],
+div.gform_wrapper .wp-block-button.is-style-outline > button:not(.has-text-color):hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color):hover:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   background: rgba(255, 255, 255, 0.8);
   color: black;
@@ -1728,6 +1774,7 @@ div.gform_wrapper .wp-block-button.is-style-outline > input:not(.has-text-color)
 .wp-block-button__link:visited,
 div.gs_team_area .gs-team-filter-cats li a:visited,
 a:visited[download],
+div.gform_wrapper button:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input:visited[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:visited {
   color: #FFCB17;
@@ -1737,6 +1784,7 @@ button.wp-button:visited {
 .wp-block-button__link:hover,
 div.gs_team_area .gs-team-filter-cats li a:hover,
 a:hover[download],
+div.gform_wrapper button:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input:hover[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 button.wp-button:hover {
   color: white;
@@ -3972,6 +4020,7 @@ div.gform_wrapper textarea {
   resize: none;
 }
 
+div.gform_wrapper button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
 div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
   min-height: 52px;
   width: auto;
@@ -3979,6 +4028,7 @@ div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):no
 }
 
 @media only screen and (max-width: 641px) {
+  div.gform_wrapper button[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]),
   div.gform_wrapper input[type="submit"]:not([type=checkbox]):not([type=image]):not([type=file]) {
     line-height: inherit !important;
     width: auto;
