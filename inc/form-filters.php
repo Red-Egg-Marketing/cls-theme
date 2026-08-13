@@ -258,31 +258,35 @@ function cls_notify_consultant( $notification, $form, $entry ) {
     // Rename the notification in the GF UI and this stops matching.
     $is_admin_notification = strcasecmp( trim( (string) rgar( $notification, 'name' ) ), 'Admin Notification' ) === 0;
 
-    if ( $is_admin_notification ) {
-        foreach ( $form['fields'] as $field ) {
-            if ( $field->type !== 'select' || ! cls_field_has_class( $field, 'preferred-consultant' ) ) {
-                continue;
-            }
+    $consultant_email = '';
 
-            $value = rgar( $entry, (string) $field->id );
-
-            if ( $value === '' || $value === 'no preference' ) {
-                continue;
-            }
-
-            $parts     = explode( ',', $value );
-            $member_id = (int) trim( end( $parts ) );
-
-            if ( ! $member_id ) {
-                continue;
-            }
-
-            $email = get_post_meta( $member_id, '_gs_email', true );
-
-            if ( $email && is_email( $email ) ) {
-                $notification['to'] .= ', ' . $email;
-            }
+    foreach ( $form['fields'] as $field ) {
+        if ( $field->type !== 'select' || ! cls_field_has_class( $field, 'preferred-consultant' ) ) {
+            continue;
         }
+
+        $value = (string) rgar( $entry, (string) $field->id );
+
+        if ( $value === '' || strcasecmp( $value, 'no preference' ) === 0 ) {
+            continue;
+        }
+
+        $parts     = array_map( 'trim', explode( ',', $value ) );
+        $member_id = (int) end( $parts );
+
+        if ( ! $member_id ) {
+            continue;
+        }
+
+        $email = get_post_meta( $member_id, '_gs_email', true );
+
+        if ( $email && is_email( $email ) ) {
+            $consultant_email = $email;
+        }
+    }
+
+    if ( $is_admin_notification && $consultant_email ) {
+        $notification['to'] .= ', ' . $consultant_email;
     }
 
     $notification['message'] .= '<br /> Form Embedded On: ' . $title;
@@ -290,6 +294,19 @@ function cls_notify_consultant( $notification, $form, $entry ) {
     return $notification;
 }
 add_filter( 'gform_notification', 'cls_notify_consultant', 10, 3 );
+
+/**
+ * Output the stored value for the preferred consultant field rather than the
+ * choice label, so the CRM contact_id survives into notifications.
+ */
+function cls_consultant_raw_value( $value, $merge_tag, $modifier, $field, $raw_value, $format ) {
+    if ( $field && $field->type === 'select' && cls_field_has_class( $field, 'preferred-consultant' ) ) {
+        return is_scalar( $raw_value ) ? (string) $raw_value : $value;
+    }
+
+    return $value;
+}
+add_filter( 'gform_merge_tag_filter', 'cls_consultant_raw_value', 10, 6 );
 
 
 /*
